@@ -1,0 +1,26 @@
+{
+    "products": [
+      {
+        "nombre": "Piña 1",
+        "categoria": "verdura",
+        "precio": 29.99,
+        "descuento": 10,
+        "mas_vendido": true,
+        "oferta": false,
+        "imagenes": ["piña.jpg"],
+        "descripcion": "informacion de piña 1",
+        "disponibilidad": true
+      },
+      {
+        "nombre": "Pina 2",
+        "categoria": "fruta",
+        "precio": 89.99,
+        "descuento": 20,
+        "mas_vendido": false,
+        "oferta": true,
+        "imagenes": ["piña.jpg"],
+        "descripcion": "informacion de piña 2",
+        "disponibilidad": true
+      }
+    ]
+  }
