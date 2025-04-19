@@ -7,7 +7,7 @@
         "descuento": 10,
         "mas_vendido": true,
         "oferta": false,
-        "imagenes": ["piña.jpg"],
+        "imagenes": ["pina.jpg"],
         "descripcion": "informacion de piña 1",
         "disponibilidad": true
       },
@@ -18,7 +18,7 @@
         "descuento": 20,
         "mas_vendido": false,
         "oferta": true,
-        "imagenes": ["piña.jpg"],
+        "imagenes": ["pina.jpg"],
         "descripcion": "informacion de piña 2",
         "disponibilidad": true
       }
