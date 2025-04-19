@@ -57,7 +57,7 @@ function renderProducts() {
                 ${product.oferta ? '<span class="badge oferta">OFERTA</span>' : ''}
                 ${product.mas_vendido ? '<span class="badge mas-vendido">MÁS VENDIDO</span>' : ''}
             </div>
-            <img src="images/products/${product.imagenes[0]}" 
+            <img src="Images/products/${product.imagenes[0]}" 
                  class="product-image" 
                  alt="${product.nombre}"
                  onclick="showProductDetail('${encodeURIComponent(product.nombre)}')">
@@ -104,7 +104,7 @@ function showProductDetail(productName) {
     if (!detailContainer || !productsContainer) return;
 
     detailContainer.innerHTML = `
-        <img src="images/products/${product.imagenes[0]}" class="detail-image" alt="${product.nombre}">
+        <img src="Images/products/${product.imagenes[0]}" class="detail-image" alt="${product.nombre}">
         <div class="detail-info">
             <h2>${product.nombre}</h2>
             <p class="description">${product.descripcion}</p>
@@ -187,7 +187,7 @@ function updateCart() {
         const itemEl = document.createElement('div');
         itemEl.className = 'cart-item';
         itemEl.innerHTML = `
-            <img src="images/products/${item.product.imagenes[0]}" alt="${item.product.nombre}">
+            <img src="Images/products/${item.product.imagenes[0]}" alt="${item.product.nombre}">
             <div class="cart-item-info">
                 <p>${item.product.nombre}</p>
                 <p>$${item.product.precio.toFixed(2)} c/u</p>
