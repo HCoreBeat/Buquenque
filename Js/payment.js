@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function showPaymentSection() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     if (cart.length === 0) {
-        alert('Tu carrito está vacío. Añade productos antes de finalizar la compra.');
+        showEmptyCartModal();
         return;
     }
 
@@ -24,10 +24,22 @@ function showPaymentSection() {
     const paymentSection = document.getElementById('payment-section');
     paymentSection.classList.add('active');
 
+    // Crear overlay si no existe
+    if (!document.querySelector('.payment-overlay')) {
+        const overlay = document.createElement('div');
+        overlay.className = 'payment-overlay';
+        overlay.onclick = hidePaymentSection;
+        document.body.appendChild(overlay);
+        setTimeout(() => overlay.classList.add('active'), 10);
+    }
+
+    // Deshabilitar scroll del body
+    document.body.style.overflow = 'hidden';
+
     // Actualizar el resumen del pedido
     updateOrderSummary();
 
-    // Deshabilitar el carrito mientras el formulario de pago está abierto
+    // Cerrar el carrito si está abierto
     const cartSidebar = document.getElementById('cart');
     if (cartSidebar) {
         cartSidebar.classList.remove('active');
@@ -37,32 +49,37 @@ function showPaymentSection() {
 function hidePaymentSection() {
     const paymentSection = document.getElementById('payment-section');
     paymentSection.classList.remove('active');
+
+    // Eliminar overlay
+    const overlay = document.querySelector('.payment-overlay');
+    if (overlay) {
+        overlay.classList.remove('active');
+        setTimeout(() => overlay.remove(), 300);
+    }
+
+    // Restaurar scroll del body
+    document.body.style.overflow = '';
 }
 
 function updateOrderSummary() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const orderSummary = document.getElementById('order-summary');
+    const orderSummary = document.getElementById('summary-items');
     const paymentTotal = document.getElementById('payment-total');
 
     if (!orderSummary || !paymentTotal) return;
 
-    orderSummary.innerHTML = '';
-    let total = 0;
+    // Limpiar y crear la tabla
+    orderSummary.innerHTML = cart.map(item => `
+        <tr>
+            <td class="order-item-name">${item.product.nombre}</td>
+            <td class="order-item-quantity">${item.quantity}</td>
+            <td class="order-item-price">$${item.product.precio.toFixed(2)}</td>
+            <td class="order-item-total">$${(item.product.precio * item.quantity).toFixed(2)}</td>
+        </tr>
+    `).join('');
 
-    cart.forEach(item => {
-        const itemTotal = item.product.precio * item.quantity;
-        total += itemTotal;
-
-        const itemElement = document.createElement('div');
-        itemElement.className = 'order-item';
-        itemElement.innerHTML = `
-            <div class="order-item-name">${item.product.nombre}</div>
-            <div class="order-item-quantity">${item.quantity}</div>
-            <div class="order-item-price">$${itemTotal.toFixed(2)}</div>
-        `;
-        orderSummary.appendChild(itemElement);
-    });
-
+    // Calcular total
+    const total = cart.reduce((sum, item) => sum + (item.product.precio * item.quantity), 0);
     paymentTotal.textContent = total.toFixed(2);
 }
 
@@ -92,13 +109,11 @@ async function processPayment(e) {
     }
 
     try {
-        // Aquí normalmente harías una llamada a tu API/backend
-        // Simulamos un retraso de red
+        // Simular procesamiento de pago
         await new Promise(resolve => setTimeout(resolve, 1500));
         
-        // Éxito - limpiar carrito y mostrar mensaje
-        localStorage.removeItem('cart');
-        updateCartCount();
+        // Limpiar carrito completamente
+        clearCart(); // Esta función está en script.js
         hidePaymentSection();
         
         // Mostrar notificación de éxito
@@ -148,6 +163,22 @@ paymentStyle.textContent = `
 }
 .payment-notification.show {
     opacity: 1;
+}
+.payment-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2999;
+    opacity: 0;
+    transition: opacity 0.3s;
+    visibility: hidden;
+}
+.payment-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
 `;
 document.head.appendChild(paymentStyle);
