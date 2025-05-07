@@ -9,12 +9,48 @@
     <base href="./">
 </head>
 <body>
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- Menú lateral para móvil -->
+    <aside class="sidebar" id="sidebar">
+        <button class="close-sidebar" id="close-sidebar">×</button>
+        <h3>Categorías</h3>
+        <ul class="sidebar-categories" id="sidebar-categories">
+            <!-- Las categorías se llenarán dinámicamente -->
+        </ul>
+    </aside>
+
     <header class="header">
-        <h1 class="logo" onclick="goToHome()">BUQUENQUE</h1>
-        <button class="cart-btn" onclick="toggleCart()">
-            <i class="fas fa-shopping-cart"></i>
-            <span id="cart-count">0</span>
-        </button>
+        <div class="header-top">
+            <!-- Menú hamburguesa solo en móvil -->
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Logo -->
+            <h1 class="logo" onclick="goToHome()">BUQUENQUE</h1>
+            
+            <!-- Barra de búsqueda -->
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar productos..." oninput="searchProducts()">
+                <button class="search-btn" onclick="searchProducts()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <!-- Carrito -->
+            <button class="cart-btn" onclick="toggleCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </button>
+        </div>
+        
+        <!-- Categorías (solo en desktop) -->
+        <nav class="categories-nav">
+            <ul class="categories-list" id="categories-list">
+                <!-- Las categorías se llenarán dinámicamente -->
+            </ul>
+        </nav>
     </header>
 
     <main id="main-content">
@@ -31,6 +67,16 @@
         <div class="cart-total">
             <p>Total: $<span id="total">0.00</span></p>
             <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Panel de carrito vacío -->
+    <div class="empty-cart-modal" id="empty-cart-modal">
+        <div class="empty-cart-content">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>Tu carrito está vacío</h3>
+            <p>Añade productos para continuar con tu compra</p>
+            <button class="continue-shopping-btn" onclick="closeEmptyCartModal()">Seguir comprando</button>
         </div>
     </div>
 
@@ -70,11 +116,23 @@
 
                 <h3 class="order-summary-title"><i class="fas fa-shopping-cart"></i> Resumen de tu Pedido</h3>
                 <div class="order-summary" id="order-summary">
-                    <!-- Los productos se llenarán dinámicamente aquí -->
+                    <table>
+                      <thead>
+                        <tr>
+                          <th><i class="fas fa-box-open"></i> Producto</th>
+                          <th><i class="fas fa-hashtag"></i> Cantidad</th>
+                          <th><i class="fas fa-tag"></i> Precio Unitario</th>
+                          <th><i class="fas fa-calculator"></i> Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="summary-items">
+                        <!-- Productos se llenan dinámicamente -->
+                      </tbody>
+                    </table>
                 </div>
                 
                 <div class="order-total">
-                    <p>Total: $<span id="payment-total">0.00</span></p>
+                    <p>Total a pagar: $<span id="payment-total">0.00</span></p>
                 </div>
 
                 <div class="payment-actions">
@@ -87,7 +145,7 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>V1.3.1   © 2024 Buquenque y afiliados H.A - Todos los derechos reservados</p>
+            <p>V1.5.5  © 2024 Buquenque y afiliados H.A - Todos los derechos reservados</p>
             <div class="social-links">
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
