@@ -3,7 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Configurar el evento para el botón de finalizar compra
     const checkoutBtn = document.querySelector('.checkout-btn');
     if (checkoutBtn) {
-        checkoutBtn.addEventListener('click', showPaymentSection);
+        checkoutBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            showPaymentSection();
+        });
     }
 
     // Configurar el formulario de pago
@@ -14,16 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function showPaymentSection() {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    if (cart.length === 0) {
-        showEmptyCartModal();
-        return;
-    }
-
-    // Mostrar la sección de pago
+    // Cerrar el carrito si está abierto
+    closeCart();
+    
     const paymentSection = document.getElementById('payment-section');
     paymentSection.classList.add('active');
-
+    
     // Crear overlay si no existe
     if (!document.querySelector('.payment-overlay')) {
         const overlay = document.createElement('div');
@@ -32,18 +31,9 @@ function showPaymentSection() {
         document.body.appendChild(overlay);
         setTimeout(() => overlay.classList.add('active'), 10);
     }
-
-    // Deshabilitar scroll del body
-    document.body.style.overflow = 'hidden';
-
-    // Actualizar el resumen del pedido
+    
+    // Actualizar el resumen del pedido con precios correctos
     updateOrderSummary();
-
-    // Cerrar el carrito si está abierto
-    const cartSidebar = document.getElementById('cart');
-    if (cartSidebar) {
-        cartSidebar.classList.remove('active');
-    }
 }
 
 function hidePaymentSection() {
@@ -62,65 +52,122 @@ function hidePaymentSection() {
 }
 
 function updateOrderSummary() {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const orderSummary = document.getElementById('summary-items');
     const paymentTotal = document.getElementById('payment-total');
-
+    
     if (!orderSummary || !paymentTotal) return;
-
-    // Limpiar y crear la tabla
-    orderSummary.innerHTML = cart.map(item => `
-        <tr>
-            <td class="order-item-name">${item.product.nombre}</td>
-            <td class="order-item-quantity">${item.quantity}</td>
-            <td class="order-item-price">$${item.product.precio.toFixed(2)}</td>
-            <td class="order-item-total">$${(item.product.precio * item.quantity).toFixed(2)}</td>
-        </tr>
-    `).join('');
-
-    // Calcular total
-    const total = cart.reduce((sum, item) => sum + (item.product.precio * item.quantity), 0);
+    
+    // Obtener el carrito del localStorage
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+    let total = 0;
+    orderSummary.innerHTML = cart.map(item => {
+        const isOnSale = item.product.oferta && item.product.descuento > 0;
+        const unitPrice = isOnSale 
+            ? item.product.precio * (1 - item.product.descuento/100)
+            : item.product.precio;
+        const itemTotal = unitPrice * item.quantity;
+        total += itemTotal;
+        
+        return `
+            <tr>
+                <td class="order-item-name">
+                    ${item.product.nombre}
+                    ${isOnSale ? '<span class="order-item-badge">OFERTA</span>' : ''}
+                </td>
+                <td class="order-item-quantity">${item.quantity}</td>
+                <td class="order-item-price">
+                    ${isOnSale ? `
+                        <span class="original-price">$${item.product.precio.toFixed(2)}</span>
+                        <span class="discounted-price">$${unitPrice.toFixed(2)}</span>
+                    ` : `$${unitPrice.toFixed(2)}`}
+                </td>
+                <td class="order-item-total">$${itemTotal.toFixed(2)}</td>
+            </tr>
+        `;
+    }).join('');
+    
     paymentTotal.textContent = total.toFixed(2);
-}
+} 
 
 async function processPayment(e) {
-    e.preventDefault();
+    if (e) e.preventDefault();
     
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    if (cart.length === 0) {
-        alert('Error: No hay productos en el carrito.');
-        return;
-    }
-
-    // Obtener datos del formulario
-    const formData = {
-        name: document.getElementById('full-name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        address: document.getElementById('address').value,
-        items: cart,
-        total: parseFloat(document.getElementById('payment-total').textContent)
-    };
-
-    // Validación básica
-    if (!formData.name || !formData.email || !formData.phone || !formData.address) {
-        alert('Por favor completa todos los campos requeridos.');
-        return;
-    }
-
     try {
-        // Simular procesamiento de pago
+        // Validar carrito
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        if (cart.length === 0) {
+            showPaymentNotification('Tu carrito está vacío', 'error');
+            return;
+        }
+        
+        // Simular procesamiento (remover en producción)
+        showPaymentNotification('Procesando pago...', 'info');
         await new Promise(resolve => setTimeout(resolve, 1500));
         
-        // Limpiar carrito completamente
-        clearCart(); // Esta función está en script.js
+        // Limpiar y mostrar confirmación
+        clearCart();
         hidePaymentSection();
+        showOrderConfirmation();
         
-        // Mostrar notificación de éxito
-        showPaymentNotification('¡Pedido realizado con éxito!', 'success');
     } catch (error) {
-        console.error('Error al procesar el pago:', error);
-        showPaymentNotification('Error al procesar el pedido. Inténtalo de nuevo.', 'error');
+        console.error('Error en processPayment:', error);
+        showPaymentNotification('Error al procesar el pago', 'error');
+    }
+}
+
+// Función para mostrar confirmación de pedido
+function showOrderConfirmation() {
+    try {
+        // Cerrar otros modales primero
+        hidePaymentSection();
+        closeCart();
+        closeEmptyCartModal();
+        
+        const modal = document.getElementById('order-confirmation-modal');
+        if (!modal) {
+            console.error('Elemento order-confirmation-modal no encontrado');
+            return;
+        }
+        
+        // Configurar el modal
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        
+        // Pequeño retraso para la animación
+        setTimeout(() => {
+            modal.classList.add('active');
+        }, 10);
+        
+    } catch (error) {
+        console.error('Error al mostrar confirmación:', error);
+        // Fallback: Redirigir al inicio si hay error
+        setTimeout(goToHome, 1000);
+    }
+}
+
+// Función para cerrar confirmación y volver al inicio
+function closeConfirmationAndGoHome() {
+    try {
+        const modal = document.getElementById('order-confirmation-modal');
+        if (!modal) {
+            goToHome();
+            return;
+        }
+        
+        // Iniciar animación de salida
+        modal.classList.remove('active');
+        
+        // Esperar a que termine la animación antes de ocultar
+        setTimeout(() => {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+            goToHome();
+        }, 300);
+        
+    } catch (error) {
+        console.error('Error al cerrar confirmación:', error);
+        goToHome();
     }
 }
 
