@@ -2476,13 +2476,3 @@ body.sidebar-open {
     70% { transform: scale(0.95); }
     100% { transform: scale(1); opacity: 1; }
 }
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.03); }
-    100% { transform: scale(1); }
-}
-
-.product-card.pulse {
-    animation: pulse 1.5s infinite;
-}
