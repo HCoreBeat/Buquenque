@@ -34,6 +34,7 @@ async function loadProducts() {
         // Extraer categorías únicas y añadir "Todo"
         categories = ['Todo', ...new Set(products.map(product => product.categoria))];
         renderCategories();
+        initPriceFilter();
         renderProducts();
         updateCartCount();
         updateCart();
@@ -58,17 +59,117 @@ function renderCategories() {
     const sidebarCategories = document.getElementById('sidebar-categories');
     const desktopCategories = document.getElementById('categories-list');
     
-    if (sidebarCategories) {
-        sidebarCategories.innerHTML = categories.map(category => `
-            <li onclick="filterByCategory('${category}')">${category}</li>
-        `).join('');
+    const categoryItems = categories.map(category => `
+        <li onclick="filterByCategory('${category}')">
+            <i class="fas fa-${getCategoryIcon(category)}"></i>
+            ${category}
+        </li>
+    `).join('');
+    
+    if (sidebarCategories) sidebarCategories.innerHTML = categoryItems;
+    if (desktopCategories) desktopCategories.innerHTML = categoryItems;
+}
+// Función auxiliar para iconos de categorías
+function getCategoryIcon(category) {
+    const icons = {
+        'Todo': 'th-large',
+        'Electrónica': 'mobile-alt',
+        'Ropa': 'tshirt',
+        'Hogar': 'home',
+        'Deportes': 'running',
+        'Juguetes': 'gamepad'
+    };
+    return icons[category] || 'tag';
+}
+
+function initPriceFilter() {
+    const minPriceInput = document.getElementById('min-price');
+    const maxPriceInput = document.getElementById('max-price');
+    const minPriceSlider = document.getElementById('price-slider-min');
+    const maxPriceSlider = document.getElementById('price-slider-max');
+    const applyFilterBtn = document.getElementById('apply-price-filter');
+    
+    if (!minPriceInput || !maxPriceInput || !minPriceSlider || !maxPriceSlider) return;
+    
+    // Valores iniciales basados en los productos
+    const prices = products.map(p => p.precio);
+    const minPrice = Math.floor(Math.min(...prices));
+    const maxPrice = Math.ceil(Math.max(...prices));
+    
+    // Configurar sliders
+    minPriceSlider.min = minPrice;
+    minPriceSlider.max = maxPrice;
+    minPriceSlider.value = minPrice;
+    
+    maxPriceSlider.min = minPrice;
+    maxPriceSlider.max = maxPrice;
+    maxPriceSlider.value = maxPrice;
+    
+    // Actualizar inputs cuando se mueven los sliders
+    minPriceSlider.addEventListener('input', () => {
+        minPriceInput.value = minPriceSlider.value;
+        updatePriceSlider();
+    });
+    
+    maxPriceSlider.addEventListener('input', () => {
+        maxPriceInput.value = maxPriceSlider.value;
+        updatePriceSlider();
+    });
+    
+    // Actualizar sliders cuando se editan los inputs
+    minPriceInput.addEventListener('change', () => {
+        minPriceSlider.value = minPriceInput.value || minPrice;
+        updatePriceSlider();
+    });
+    
+    maxPriceInput.addEventListener('change', () => {
+        maxPriceSlider.value = maxPriceInput.value || maxPrice;
+        updatePriceSlider();
+    });
+    
+    // Aplicar filtros
+    applyFilterBtn.addEventListener('click', applyPriceFilter);
+    
+    // Función para actualizar el track del slider
+    function updatePriceSlider() {
+        const minVal = parseInt(minPriceSlider.value);
+        const maxVal = parseInt(maxPriceSlider.value);
+
+        if (minVal > maxVal) {
+            minPriceSlider.value = maxVal;
+            minPriceInput.value = maxVal;
+        }
+
+        const track = document.querySelector('.price-slider-track');
+        if (track) {
+            const minPercent = ((minVal - minPriceSlider.min) / (maxPriceSlider.max - minPriceSlider.min)) * 100;
+            const maxPercent = ((maxVal - minPriceSlider.min) / (maxPriceSlider.max - minPriceSlider.min)) * 100;
+
+            track.style.left = `${minPercent}%`;
+            track.style.width = `${maxPercent - minPercent}%`; // Ajuste de anchura en lugar de right
+        }
     }
     
-    if (desktopCategories) {
-        desktopCategories.innerHTML = categories.map(category => `
-            <li onclick="filterByCategory('${category}')">${category}</li>
-        `).join('');
+    // Función para aplicar filtros
+    function applyPriceFilter() {
+        const minPrice = parseInt(minPriceInput.value) || 0;
+        const maxPrice = parseInt(maxPriceInput.value) || Infinity;
+        
+        const filteredProducts = products.filter(product => {
+            const finalPrice = product.oferta && product.descuento > 0 
+                ? product.precio * (1 - product.descuento / 100)
+                : product.precio;
+            return finalPrice >= minPrice && finalPrice <= maxPrice;
+        });
+        
+        renderProducts(filteredProducts);
+        closeSidebar();
     }
+    
+    // Inicializar valores
+    minPriceInput.placeholder = `$${minPrice}`;
+    maxPriceInput.placeholder = `$${maxPrice}`;
+    updatePriceSlider();
 }
 
 // Filtrar por categoría
@@ -111,17 +212,52 @@ function toggleSidebar() {
     if (window.innerWidth > 768) return;
     
     const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('overlay');
+    const sidebarOverlay = document.getElementById('sidebar-overlay');
     
     if (!sidebar) return;
+
+    const isOpening = !sidebar.classList.contains('active');
     
+    // Cerrar carrito si está abierto
+    closeCart();
+    
+    // Alternar estado del sidebar
     sidebar.classList.toggle('active');
-    overlay.classList.toggle('active');
-    
-    if (sidebar.classList.contains('active')) {
-        document.body.classList.add('no-scroll');
+    document.body.classList.toggle('sidebar-open', isOpening);
+
+    // Manejar el overlay
+    if (isOpening) {
+        if (!sidebarOverlay) {
+            const overlay = document.createElement('div');
+            overlay.id = 'sidebar-overlay';
+            overlay.className = 'sidebar-overlay';
+            overlay.onclick = closeSidebar;
+            document.body.appendChild(overlay);
+            setTimeout(() => overlay.classList.add('active'), 10);
+        } else {
+            sidebarOverlay.classList.add('active');
+        }
     } else {
-        document.body.classList.remove('no-scroll');
+        closeSidebar();
+    }
+}
+
+function closeSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const sidebarOverlay = document.getElementById('sidebar-overlay');
+    
+    if (sidebar && sidebar.classList.contains('active')) {
+        sidebar.classList.remove('active');
+        document.body.classList.remove('sidebar-open');
+    }
+    
+    if (sidebarOverlay) {
+        sidebarOverlay.classList.remove('active');
+        setTimeout(() => {
+            if (sidebarOverlay && !sidebarOverlay.classList.contains('active')) {
+                sidebarOverlay.remove();
+            }
+        }, 300);
     }
 }
 
@@ -158,36 +294,53 @@ function renderProducts(productsToRender = products) {
         const productEl = document.createElement('div');
         productEl.className = 'product-card';
         
-        // Calcular precio original si hay descuento
-        const hasDiscount = product.descuento > 0;
-        const originalPrice = hasDiscount ? (product.precio / (1 - product.descuento/100)).toFixed(2) : null;
+        const isOnSale = product.oferta && product.descuento > 0;
+        const finalPrice = isOnSale 
+            ? (product.precio * (1 - product.descuento/100)).toFixed(2)
+            : product.precio.toFixed(2);
         
         productEl.innerHTML = `
-            <div class="product-badges">
-                ${product.oferta ? '<span class="badge oferta">OFERTA</span>' : ''}
-                ${product.mas_vendido ? '<span class="badge mas-vendido">MÁS VENDIDO</span>' : ''}
+            <div class="product-image-container">
+                <div class="product-badges">
+                    ${product.nuevo ? '<span class="badge nuevo"><i class="fas fa-star"></i> NUEVO</span>' : ''}
+                    ${product.oferta ? '<span class="badge oferta"><i class="fas fa-tag"></i> OFERTA</span>' : ''}
+                    ${product.mas_vendido ? '<span class="badge mas-vendido"><i class="fas fa-trophy"></i> TOP</span>' : ''}
+                </div>
+                <img src="Images/products/${product.imagenes[0]}" 
+                    class="product-image" 
+                    alt="${product.nombre}"
+                    onclick="showProductDetail('${encodeURIComponent(product.nombre)}')">
             </div>
-            <img src="Images/products/${product.imagenes[0]}" 
-                 class="product-image" 
-                 alt="${product.nombre}"
-                 onclick="showProductDetail('${encodeURIComponent(product.nombre)}')">
+            
             <div class="product-info">
-                <h3 onclick="showProductDetail('${encodeURIComponent(product.nombre)}')">${product.nombre}</h3>
+                <h3 class="product-title" onclick="showProductDetail('${encodeURIComponent(product.nombre)}')">
+                    ${product.nombre}
+                </h3>
+                
                 <div class="price-container">
-                    ${hasDiscount ? `
-                        <span class="original-price">$${originalPrice}</span>
+                    ${isOnSale ? `
+                        <span class="original-price">$${product.precio.toFixed(2)}</span>
                         <span class="discount-percent">-${product.descuento}%</span>
                     ` : ''}
-                    <span class="current-price">$${product.precio.toFixed(2)}</span>
+                    <span class="current-price">$${finalPrice}</span>
                 </div>
-                <div class="quantity-controls">
-                    <button class="quantity-btn" onclick="adjustQuantity(this, -1, '${cleanName}', event)">-</button>
-                    <span class="product-quantity" id="quantity-${cleanName}">1</span>
-                    <button class="quantity-btn" onclick="adjustQuantity(this, 1, '${cleanName}', event)">+</button>
+                
+                <div class="quantity-section">
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="adjustQuantity(this, -1, '${cleanName}', event)">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <span class="product-quantity" id="quantity-${cleanName}">1</span>
+                        <button class="quantity-btn" onclick="adjustQuantity(this, 1, '${cleanName}', event)">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    
+                    <button class="add-to-cart" onclick="addToCart('${cleanName}', false, event)">
+                        <i class="fas fa-cart-plus"></i>
+                        <span>Añadir al carrito</span>
+                    </button>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('${cleanName}', false, event)">
-                    Añadir al Carrito
-                </button>
             </div>
         `;
         container.appendChild(productEl);
@@ -213,33 +366,78 @@ function showProductDetail(productName) {
 
     if (!detailContainer || !productsContainer) return;
 
-    // Calcular precio original si hay descuento
-    const hasDiscount = product.descuento > 0;
-    const originalPrice = hasDiscount ? (product.precio / (1 - product.descuento/100)).toFixed(2) : null;
+    const isOnSale = product.oferta && product.descuento > 0;
+    const finalPrice = isOnSale 
+        ? (product.precio * (1 - product.descuento/100)).toFixed(2)
+        : product.precio.toFixed(2);
+    const priceSave = isOnSale ? (product.precio - finalPrice).toFixed(2) : 0;
+
+    // Generar miniaturas
+
+    // Generar badges
+    const badges = [];
+    if (product.nuevo) badges.push('<span class="detail-badge nuevo"><i class="fas fa-star"></i> Nuevo</span>');
+    if (product.oferta) badges.push(`<span class="detail-badge oferta"><i class="fas fa-tag"></i> -${product.descuento}%</span>`);
+    if (product.mas_vendido) badges.push('<span class="detail-badge mas-vendido"><i class="fas fa-trophy"></i> Más Vendido</span>');
+
+    // Generar especificaciones
+    const specs = [
+        `<li><strong>Categoría</strong> ${product.categoria}</li>`,
+        `<li><strong>Disponibilidad</strong> ${product.disponibilidad ? 'En stock' : 'Agotado'}</li>`,
+        ...(product.especificaciones || []).map(spec => `<li><strong>${spec.key}</strong> ${spec.value}</li>`)
+    ];
 
     detailContainer.innerHTML = `
-        <img src="Images/products/${product.imagenes[0]}" class="detail-image" alt="${product.nombre}">
-        <div class="detail-info">
-            <h2>${product.nombre}</h2>
-            <p class="description">${product.descripcion}</p>
-            <div class="price-container">
-                ${hasDiscount ? `
-                    <span class="original-price">$${originalPrice}</span>
-                    <span class="discount-percent">-${product.descuento}%</span>
-                ` : ''}
-                <span class="current-price">$${product.precio.toFixed(2)}</span>
+        <div class="detail-container">
+            <div class="detail-gallery">
+                <div class="main-image-container">
+                    <img src="Images/products/${product.imagenes[0]}" class="main-image" alt="${product.nombre}" id="main-product-image">
+                </div>
             </div>
-            <p><strong>Categoría:</strong> ${product.categoria}</p>
-            <p><strong>Disponibilidad:</strong> ${product.disponibilidad ? 'En stock' : 'Agotado'}</p>
-            <div class="quantity-controls">
-                <button class="quantity-btn" onclick="adjustDetailQuantity(-1, event)">-</button>
-                <span class="quantity" id="detail-quantity">1</span>
-                <button class="quantity-btn" onclick="adjustDetailQuantity(1, event)">+</button>
+            
+            <div class="detail-info">
+                <h1 class="detail-title">${product.nombre}</h1>
+                ${badges.length ? `<div class="detail-badges">${badges.join('')}</div>` : ''}
+                
+                <div class="price-section">
+                    ${isOnSale ? `
+                        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.5rem;">
+                            <span class="price-original">$${product.precio.toFixed(2)}</span>
+                            <span class="price-current">$${finalPrice}</span>
+                        </div>
+                        <div class="price-save">Ahorras $${priceSave} (${product.descuento}%)</div>
+                    ` : `<span class="price-current">$${finalPrice}</span>`}
+                </div>
+                
+                <div class="product-description">
+                    <p>${product.descripcion}</p>
+                </div>
+                
+                <div class="quantity-section">
+                    <label class="quantity-label">Cantidad:</label>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="adjustDetailQuantity(-1, event)">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <span class="quantity-display" id="detail-quantity">1</span>
+                        <button class="quantity-btn" onclick="adjustDetailQuantity(1, event)">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <button class="add-to-cart-btn" onclick="addToCart('${cleanName}', true, event)">
+                    <i class="fas fa-cart-plus"></i>
+                    Añadir al carrito
+                </button>
+                
+                <div class="product-specs">
+                    <h3 class="specs-title">Especificaciones</h3>
+                    <ul class="specs-list">
+                        ${specs.join('')}
+                    </ul>
+                </div>
             </div>
-            <button class="add-to-cart" onclick="addToCart('${cleanName}', true, event)">
-                Añadir al Carrito
-            </button>
-            <button class="back-btn" onclick="goBackToProducts()">← Volver</button>
         </div>
     `;
 
@@ -248,10 +446,17 @@ function showProductDetail(productName) {
     currentProduct = product;
 }
 
-// Volver a los productos
-function goBackToProducts() {
-    window.location.hash = '';
-    hideProductDetail();
+// Función auxiliar para cambiar imagen principal
+function changeMainImage(imgSrc) {
+    const mainImg = document.getElementById('main-product-image');
+    if (mainImg) {
+        mainImg.src = `Images/products/${imgSrc}`;
+        mainImg.style.opacity = '0';
+        setTimeout(() => {
+            mainImg.style.opacity = '1';
+            mainImg.style.transition = 'opacity 0.3s ease';
+        }, 10);
+    }
 }
 
 // Ocultar detalle
@@ -294,35 +499,84 @@ function addToCart(productName, fromDetail = false, event) {
 function updateCart() {
     const cartItems = document.getElementById('cart-items');
     const totalElement = document.getElementById('total');
-    if (!cartItems || !totalElement) return;
+    const emptyPanel = document.getElementById('empty-cart-panel');
+    const cartSidebar = document.getElementById('cart');
+    
+    if (!cartItems || !totalElement || !emptyPanel || !cartSidebar) return;
     
     cartItems.innerHTML = '';
     let total = 0;
     
-    cart.forEach((item, index) => {
-        const itemTotal = item.product.precio * item.quantity;
-        total += itemTotal;
+    if (cart.length === 0) {
+        cartSidebar.classList.add('empty');
+    } else {
+        cartSidebar.classList.remove('empty');
         
-        const itemEl = document.createElement('div');
-        itemEl.className = 'cart-item';
-        itemEl.innerHTML = `
-            <img src="Images/products/${item.product.imagenes[0]}" alt="${item.product.nombre}">
-            <div class="cart-item-info">
-                <p>${item.product.nombre}</p>
-                <p>$${item.product.precio.toFixed(2)} c/u</p>
-                <div class="cart-item-controls">
-                    <button onclick="updateCartQuantity(${index}, -1, event)">-</button>
-                    <span>${item.quantity}</span>
-                    <button onclick="updateCartQuantity(${index}, 1, event)">+</button>
+        cart.forEach((item, index) => {
+            // Calcular precio con descuento si aplica
+            const isOnSale = item.product.oferta && item.product.descuento > 0;
+            const unitPrice = isOnSale 
+                ? item.product.precio * (1 - item.product.descuento/100)
+                : item.product.precio;
+            
+            const itemTotal = unitPrice * item.quantity;
+            total += itemTotal;
+            
+            const itemEl = document.createElement('div');
+            itemEl.className = 'cart-item';
+            itemEl.innerHTML = `
+                ${isOnSale ? '<span class="cart-item-badge oferta">OFERTA</span>' : ''}
+                <img src="Images/products/${item.product.imagenes[0]}" alt="${item.product.nombre}">
+                <div class="cart-item-info">
+                    <p>${item.product.nombre}</p>
+                    <p>$${unitPrice.toFixed(2)} c/u</p>
+                    <div class="cart-item-controls">
+                        <button class="cart-quantity-btn decrease-btn" onclick="updateCartQuantity(${index}, -1, event)">-</button>
+                        <span class="cart-quantity">${item.quantity}</span>
+                        <button class="cart-quantity-btn increase-btn" onclick="updateCartQuantity(${index}, 1, event)">+</button>
+                        <button class="delete-item-btn" onclick="removeFromCart(${index}, event)">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                    <p>Total: $${itemTotal.toFixed(2)}</p>
                 </div>
-                <p>Total: $${itemTotal.toFixed(2)}</p>
-            </div>
-        `;
-        cartItems.appendChild(itemEl);
-    });
+            `;
+            cartItems.appendChild(itemEl);
+        });
+        
+        totalElement.textContent = total.toFixed(2);
+    }
     
-    totalElement.textContent = total.toFixed(2);
     updateCartCount();
+}
+
+function removeFromCart(index, event) {
+    if (event) event.stopPropagation();
+    
+    if (cart[index]) {
+        const productName = cart[index].product.nombre;
+        cart.splice(index, 1);
+        updateCart();
+        saveCart();
+        
+        // Mostrar notificación de eliminación
+        showRemoveNotification(productName);
+    }
+}
+
+function showRemoveNotification(productName) {
+    const notification = document.createElement('div');
+    notification.className = 'cart-notification removed';
+    notification.innerHTML = `
+        <p>${productName} eliminado del carrito</p>
+    `;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => notification.classList.add('show'), 10);
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => notification.remove(), 300);
+    }, 3000);
 }
 
 function updateCartQuantity(index, change, event) {
@@ -382,30 +636,52 @@ function adjustDetailQuantity(change, event) {
 
 function toggleCart() {
     const cart = document.getElementById('cart');
-    const overlay = document.querySelector('.overlay');
+    const cartOverlay = document.getElementById('cart-overlay');
     
-    if (cart) {
-        cart.classList.toggle('active');
-        
-        if (cart.classList.contains('active')) {
-            document.body.classList.add('no-scroll');
-            if (!overlay) {
-                const newOverlay = document.createElement('div');
-                newOverlay.className = 'overlay';
-                newOverlay.onclick = toggleCart;
-                document.body.appendChild(newOverlay);
-            }
-            setTimeout(() => {
-                const overlay = document.querySelector('.overlay');
-                if (overlay) overlay.classList.add('active');
-            }, 10);
+    if (!cart) return;
+
+    const isOpening = !cart.classList.contains('active');
+    
+    // Cerrar sidebar si está abierto
+    closeSidebar();
+    
+    // Alternar estado del carrito
+    cart.classList.toggle('active');
+    document.body.classList.toggle('cart-open', isOpening);
+
+    // Manejar el overlay
+    if (isOpening) {
+        if (!cartOverlay) {
+            const overlay = document.createElement('div');
+            overlay.id = 'cart-overlay';
+            overlay.className = 'cart-overlay';
+            overlay.onclick = closeCart;
+            document.body.appendChild(overlay);
+            setTimeout(() => overlay.classList.add('active'), 10);
         } else {
-            document.body.classList.remove('no-scroll');
-            if (overlay) {
-                overlay.classList.remove('active');
-                setTimeout(() => overlay.remove(), 300);
-            }
+            cartOverlay.classList.add('active');
         }
+    } else {
+        closeCart();
+    }
+}
+
+function closeCart() {
+    const cart = document.getElementById('cart');
+    const cartOverlay = document.getElementById('cart-overlay');
+    
+    if (cart && cart.classList.contains('active')) {
+        cart.classList.remove('active');
+        document.body.classList.remove('cart-open');
+    }
+    
+    if (cartOverlay) {
+        cartOverlay.classList.remove('active');
+        setTimeout(() => {
+            if (cartOverlay && !cartOverlay.classList.contains('active')) {
+                cartOverlay.remove();
+            }
+        }, 300);
     }
 }
 
@@ -425,15 +701,19 @@ function saveCart() {
 document.addEventListener('click', (e) => {
     const cart = document.getElementById('cart');
     const cartBtn = document.querySelector('.cart-btn');
+    const sidebar = document.getElementById('sidebar');
+    const menuToggle = document.getElementById('menu-toggle');
     
-    if (cart && cartBtn && !cart.contains(e.target) && e.target !== cartBtn && !cartBtn.contains(e.target)) {
-        cart.classList.remove('active');
-        document.body.classList.remove('no-scroll');
-        const overlay = document.querySelector('.overlay');
-        if (overlay) {
-            overlay.classList.remove('active');
-            setTimeout(() => overlay.remove(), 300);
-        }
+    // Manejar cierre del carrito
+    if (cart && cartBtn && cart.classList.contains('active') && 
+        !cart.contains(e.target) && e.target !== cartBtn && !cartBtn.contains(e.target)) {
+        closeCart();
+    }
+    
+    // Manejar cierre del sidebar
+    if (sidebar && menuToggle && sidebar.classList.contains('active') && 
+        !sidebar.contains(e.target) && e.target !== menuToggle && !menuToggle.contains(e.target)) {
+        closeSidebar();
     }
 });
 
