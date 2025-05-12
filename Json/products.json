@@ -6,6 +6,7 @@
         "precio": 29.99,
         "descuento": 10,
         "mas_vendido": true,
+        "nuevo": true,
         "oferta": false,
         "imagenes": ["pina.jpg"],
         "descripcion": "informacion de piña 1",
@@ -14,12 +15,37 @@
       {
         "nombre": "Pina 2",
         "categoria": "fruta",
-        "precio": 89.99,
+        "precio": 99.99,
         "descuento": 20,
-        "mas_vendido": false,
+        "mas_vendido": true,
+        "nuevo": true,
         "oferta": true,
         "imagenes": ["pina.jpg"],
         "descripcion": "informacion de piña 2",
+        "disponibilidad": true
+      },
+      {
+        "nombre": "Pina 3",
+        "categoria": "fruta",
+        "precio": 5.12,
+        "descuento": 15,
+        "mas_vendido": true,
+        "nuevo": false,
+        "oferta": true,
+        "imagenes": ["pina.jpg"],
+        "descripcion": "informacion de piña 3",
+        "disponibilidad": true
+      },
+      {
+        "nombre": "Pina 4",
+        "categoria": "fruta",
+        "precio": 32.22,
+        "descuento": 10,
+        "mas_vendido": false,
+        "nuevo": true,
+        "oferta": true,
+        "imagenes": ["pina.jpg"],
+        "descripcion": "informacion de piña 4",
         "disponibilidad": true
       }
     ]
