@@ -72,15 +72,34 @@ function renderCategories() {
 // Función auxiliar para iconos de categorías
 function getCategoryIcon(category) {
     const icons = {
-        'Todo': 'th-large',
-        'Electrónica': 'mobile-alt',
-        'Ropa': 'tshirt',
-        'Hogar': 'home',
-        'Deportes': 'running',
-        'Juguetes': 'gamepad'
+        'todo': 'th-large',
+        'electrónica': 'mobile-alt',
+        'ropa': 'tshirt',
+        'hogar': 'home',
+        'deportes': 'running',
+        'juguetes': 'gamepad',
+        'salud': 'heartbeat',
+        'belleza': 'spa',
+        'automóviles': 'car',
+        'herramientas': 'wrench',
+        'comida': 'utensils',
+        'bebidas': 'wine-glass-alt',
+        'postres': 'cookie-bite',
+        'frutas': 'apple-alt',
+        'verduras': 'carrot',
+        'carnes': 'drumstick-bite',
+        'pescado': 'fish',
+        'panadería': 'bread-slice',
+        'lácteos': 'cheese',
+        'cafetería': 'coffee',
+        'rápida': 'hamburger',
+        'despensa': 'shopping-basket',
+        'snacks': 'pizza-slice'
     };
-    return icons[category] || 'tag';
+
+    return icons[category.toLowerCase().trim()] || 'tag'; // Convertimos a minúsculas y eliminamos espacios extra
 }
+
 
 function initPriceFilter() {
     const minPriceInput = document.getElementById('min-price');
@@ -105,6 +124,13 @@ function initPriceFilter() {
     maxPriceSlider.max = maxPrice;
     maxPriceSlider.value = maxPrice;
     
+    // Set initial input values
+    minPriceInput.value = minPrice;
+    maxPriceInput.value = maxPrice;
+    
+    // Update slider track initially
+    updatePriceSlider();
+    
     // Actualizar inputs cuando se mueven los sliders
     minPriceSlider.addEventListener('input', () => {
         minPriceInput.value = minPriceSlider.value;
@@ -118,12 +144,16 @@ function initPriceFilter() {
     
     // Actualizar sliders cuando se editan los inputs
     minPriceInput.addEventListener('change', () => {
-        minPriceSlider.value = minPriceInput.value || minPrice;
+        let value = Math.max(minPrice, Math.min(maxPrice, parseInt(minPriceInput.value) || minPrice));
+        minPriceSlider.value = value;
+        minPriceInput.value = value;
         updatePriceSlider();
     });
     
     maxPriceInput.addEventListener('change', () => {
-        maxPriceSlider.value = maxPriceInput.value || maxPrice;
+        let value = Math.max(minPrice, Math.min(maxPrice, parseInt(maxPriceInput.value) || maxPrice));
+        maxPriceSlider.value = value;
+        maxPriceInput.value = value;
         updatePriceSlider();
     });
     
@@ -134,19 +164,23 @@ function initPriceFilter() {
     function updatePriceSlider() {
         const minVal = parseInt(minPriceSlider.value);
         const maxVal = parseInt(maxPriceSlider.value);
-
+        
+        // Prevent sliders from crossing
         if (minVal > maxVal) {
             minPriceSlider.value = maxVal;
             minPriceInput.value = maxVal;
+        } else if (maxVal < minVal) {
+            maxPriceSlider.value = minVal;
+            maxPriceInput.value = minVal;
         }
-
+        
         const track = document.querySelector('.price-slider-track');
         if (track) {
-            const minPercent = ((minVal - minPriceSlider.min) / (maxPriceSlider.max - minPriceSlider.min)) * 100;
-            const maxPercent = ((maxVal - minPriceSlider.min) / (maxPriceSlider.max - minPriceSlider.min)) * 100;
-
+            const minPercent = ((minPriceSlider.value - minPrice) / (maxPrice - minPrice)) * 100;
+            const maxPercent = ((maxPriceSlider.value - minPrice) / (maxPrice - minPrice)) * 100;
+            
             track.style.left = `${minPercent}%`;
-            track.style.width = `${maxPercent - minPercent}%`; // Ajuste de anchura en lugar de right
+            track.style.width = `${maxPercent - minPercent}%`;
         }
     }
     
@@ -165,36 +199,55 @@ function initPriceFilter() {
         renderProducts(filteredProducts);
         closeSidebar();
     }
-    
-    // Inicializar valores
-    minPriceInput.placeholder = `$${minPrice}`;
-    maxPriceInput.placeholder = `$${maxPrice}`;
-    updatePriceSlider();
 }
 
 // Filtrar por categoría
 function filterByCategory(category) {
+    // Ocultar mensaje de no resultados si está visible
+    hideNoResultsMessage();
+    
+    // Limpiar campo de búsqueda
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.value = '';
+    }
+    
+    // Ocultar detalle de producto si está visible
+    if (document.getElementById('product-detail')?.style.display === 'block') {
+        hideProductDetail();
+    }
+    
+    // Filtrar productos
     const filteredProducts = category === 'Todo' 
         ? products 
         : products.filter(product => product.categoria === category);
     
     renderProducts(filteredProducts);
     
-    // Solo intentar cerrar el sidebar si existe y estamos en móvil
+    // Cerrar sidebar en móvil
     if (window.innerWidth <= 768) {
-        toggleSidebar();
+        closeSidebar();
     }
 }
 
 // Buscar productos (ahora en tiempo real)
 function searchProducts() {
     const searchInput = document.getElementById('search-input');
-    if (!searchInput) return;
+    const productsContainer = document.getElementById('products-container');
+    const noResultsMessage = document.getElementById('no-results-message');
+    
+    if (!searchInput || !productsContainer) return;
+    
+    // Ocultar detalle de producto si está visible
+    if (document.getElementById('product-detail')?.style.display === 'block') {
+        hideProductDetail();
+    }
     
     const searchTerm = searchInput.value.toLowerCase().trim();
     
     if (!searchTerm) {
         renderProducts();
+        hideNoResultsMessage();
         return;
     }
     
@@ -204,7 +257,57 @@ function searchProducts() {
         product.categoria.toLowerCase().includes(searchTerm)
     );
     
-    renderProducts(filteredProducts);
+    if (filteredProducts.length > 0) {
+        renderProducts(filteredProducts);
+        hideNoResultsMessage();
+    } else {
+        productsContainer.innerHTML = '';
+        showNoResultsMessage(searchTerm);
+    }
+}
+
+function showNoResultsMessage(searchTerm) {
+    let noResultsMessage = document.getElementById('no-results-message');
+    
+    // Crear el mensaje si no existe
+    if (!noResultsMessage) {
+        noResultsMessage = document.createElement('div');
+        noResultsMessage.id = 'no-results-message';
+        noResultsMessage.className = 'no-results-container';
+        noResultsMessage.innerHTML = `
+            <div class="no-results-content">
+                <i class="fas fa-search no-results-icon"></i>
+                <h3 class="no-results-title">No encontramos resultados</h3>
+                <p class="no-results-message">No hay productos que coincidan con "<span class="no-results-term">${searchTerm}</span>"</p>
+                <button class="clear-search-btn" onclick="clearSearch()">
+                    <i class="fas fa-times"></i> Limpiar búsqueda
+                </button>
+            </div>
+        `;
+        document.getElementById('main-content').appendChild(noResultsMessage);
+    } else {
+        // Actualizar el mensaje existente
+        noResultsMessage.querySelector('.no-results-term').textContent = searchTerm;
+        noResultsMessage.style.display = 'block';
+    }
+}
+
+function hideNoResultsMessage() {
+    const noResultsMessage = document.getElementById('no-results-message');
+    if (noResultsMessage) {
+        noResultsMessage.style.display = 'none';
+    }
+}
+
+// Función para limpiar la búsqueda
+function clearSearch() {
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.value = '';
+        searchInput.focus();
+    }
+    renderProducts();
+    hideNoResultsMessage();
 }
 
 // Toggle del menú lateral
@@ -319,10 +422,10 @@ function renderProducts(productsToRender = products) {
                 
                 <div class="price-container">
                     ${isOnSale ? `
-                        <span class="original-price">$${product.precio.toFixed(2)}</span>
+                        <span class="original-price">${product.precio.toFixed(2)}cup</span>
                         <span class="discount-percent">-${product.descuento}%</span>
                     ` : ''}
-                    <span class="current-price">$${finalPrice}</span>
+                    <span class="current-price">${finalPrice} cup</span>
                 </div>
                 
                 <div class="quantity-section">
@@ -372,8 +475,6 @@ function showProductDetail(productName) {
         : product.precio.toFixed(2);
     const priceSave = isOnSale ? (product.precio - finalPrice).toFixed(2) : 0;
 
-    // Generar miniaturas
-
     // Generar badges
     const badges = [];
     if (product.nuevo) badges.push('<span class="detail-badge nuevo"><i class="fas fa-star"></i> Nuevo</span>');
@@ -402,15 +503,11 @@ function showProductDetail(productName) {
                 <div class="price-section">
                     ${isOnSale ? `
                         <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.5rem;">
-                            <span class="price-original">$${product.precio.toFixed(2)}</span>
-                            <span class="price-current">$${finalPrice}</span>
+                            <span class="price-original">${product.precio.toFixed(2)} cup</span>
+                            <span class="price-current">Precio: ${finalPrice} cup</span>
                         </div>
-                        <div class="price-save">Ahorras $${priceSave} (${product.descuento}%)</div>
-                    ` : `<span class="price-current">$${finalPrice}</span>`}
-                </div>
-                
-                <div class="product-description">
-                    <p>${product.descripcion}</p>
+                        <div class="price-save">Ahorras ${priceSave} cup (${product.descuento}%)</div>
+                    ` : `<span class="price-current">Precio: ${finalPrice} cup</span>`}
                 </div>
                 
                 <div class="quantity-section">
@@ -425,25 +522,62 @@ function showProductDetail(productName) {
                         </button>
                     </div>
                 </div>
-                
+
                 <button class="add-to-cart-btn" onclick="addToCart('${cleanName}', true, event)">
                     <i class="fas fa-cart-plus"></i>
                     Añadir al carrito
                 </button>
                 
+                <div class="product-description">
+                    <h4 class="description-title"><i class="fas fa-align-left"></i> Descripción Detallada</h4>
+                    <div class="description-content">
+                        ${formatProductDescription(product.descripcion)}
+                    </div>
+                </div>
+                
                 <div class="product-specs">
-                    <h3 class="specs-title">Especificaciones</h3>
+                    <h3 class="specs-title"><i class="fas fa-list-ul"></i> Especificaciones</h3>
                     <ul class="specs-list">
                         ${specs.join('')}
                     </ul>
                 </div>
             </div>
         </div>
+        
+        <button class="back-btn" onclick="hideProductDetail()">
+            <i class="fas fa-arrow-left"></i> Volver a productos
+        </button>
     `;
 
     productsContainer.style.display = 'none';
     detailContainer.style.display = 'block';
     currentProduct = product;
+}
+
+// Función auxiliar para formatear la descripción
+function formatProductDescription(description) {
+    if (!description) return '<p class="no-description">No hay descripción disponible</p>';
+    
+    // Dividir en oraciones considerando múltiples signos de puntuación
+    const sentences = description.split(/(?<=[.!?])\s+/).filter(s => s.trim().length > 0);
+    
+    return sentences.map(sentence => {
+        const trimmedSentence = sentence.trim();
+        // Destacar oraciones importantes
+        const isImportant = /(garantiza|ideal|perfecto|exclusiv|especial)/i.test(trimmedSentence);
+        
+        return `
+            <div class="description-sentence ${isImportant ? 'important-sentence' : ''}">
+                <div class="sentence-icon">
+                    <i class="fas ${isImportant ? 'fa-star' : 'fa-angle-right'}"></i>
+                </div>
+                <div class="sentence-text">
+                    ${trimmedSentence}
+                    ${!trimmedSentence.endsWith('.') && !trimmedSentence.endsWith('!') && !trimmedSentence.endsWith('?') ? '.' : ''}
+                </div>
+            </div>
+        `;
+    }).join('');
 }
 
 // Función auxiliar para cambiar imagen principal
@@ -460,13 +594,23 @@ function changeMainImage(imgSrc) {
 }
 
 // Ocultar detalle
+// Función para ocultar el detalle del producto
 function hideProductDetail() {
     const productsContainer = document.getElementById('products-container');
     const detailContainer = document.getElementById('product-detail');
     
-    if (productsContainer) productsContainer.style.display = 'grid';
-    if (detailContainer) detailContainer.style.display = 'none';
+    if (productsContainer) {
+        productsContainer.style.display = 'grid';
+        productsContainer.style.animation = 'fadeIn 0.4s ease-out';
+    }
+    
+    if (detailContainer) {
+        detailContainer.style.display = 'none';
+        detailContainer.innerHTML = '';
+    }
+    
     currentProduct = null;
+    window.location.hash = '';
 }
 
 // Carrito
@@ -716,6 +860,18 @@ document.addEventListener('click', (e) => {
         closeSidebar();
     }
 });
+
+/**
+ * Abre WhatsApp con mensaje predeterminado
+ */
+function openWhatsApp() {
+    const phoneNumber = '+5355543772';
+    const message = encodeURIComponent('Estoy interesado en los productos que vi en su tienda. ¿Podrían ayudarme?');
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+    
+    // Abrir en una nueva pestaña
+    window.open(url, '_blank');
+}
 
 // Estilos para notificación
 const style = document.createElement('style');
