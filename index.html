@@ -38,11 +38,11 @@
                 <div class="price-inputs">
                     <div class="price-input-group">
                         <label for="min-price">Mínimo</label>
-                        <input type="number" id="min-price" placeholder="€0" min="0">
+                        <input type="number" id="min-price" placeholder="0 cup" min="0">
                     </div>
                     <div class="price-input-group">
                         <label for="max-price">Máximo</label>
-                        <input type="number" id="max-price" placeholder="€1000" min="0">
+                        <input type="number" id="max-price" placeholder="Max cup" min="0">
                     </div>
                 </div>
                 <div class="price-slider">
@@ -190,11 +190,10 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>V1.7.1  © 2025 Buquenque y afiliados H.A - Todos los derechos reservados</p>
+            <p>V1.7.9  © 2025 Buquenque y afiliados H.A - Todos los derechos reservados</p>
             <div class="social-links">
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>
@@ -219,6 +218,13 @@
         </div>
     </div>
 
+    <!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <img src="Images/whatsapp.svg" alt="Contactar por WhatsApp" class="whatsapp-icon">
+        <span class="whatsapp-tooltip">¡Contáctanos!</span>
+    </div>
+
+    <script src="Js/afiliados.js"></script>
     <script src="Js/script.js"></script>
     <script src="Js/payment.js"></script>
 </body>
