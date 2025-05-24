@@ -1,5 +1,9 @@
+const BACKEND_STATS = 'https://server-stats-buquenque.onrender.com';
+const BACKEND_CORREO = 'https://server-mail-buquenque.onrender.com';
+
 document.addEventListener('DOMContentLoaded', () => {
     initializePaymentSystem();
+    sendPageViewStatistics(); // Enviar estadísticas al cargar la página
 });
 
 function initializePaymentSystem() {
@@ -21,9 +25,127 @@ function initializePaymentSystem() {
     injectPaymentStyles();
 }
 
+// Función para enviar estadísticas de visualización de página
+async function sendPageViewStatistics() {
+    try {
+        const userData = await gatherUserData();
+        const pageLoadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+        
+        const statsData = {
+            ip: userData.ip,
+            pais: userData.country,
+            origen: window.location.href,
+            afiliado: getCurrentAffiliate()?.nombre || "Ninguno",
+            tiempo_carga_pagina_ms: pageLoadTime,
+            navegador: getBrowserInfo(),
+            sistema_operativo: getOSInfo(),
+            fuente_trafico: document.referrer || "Directo"
+        };
+
+        await sendStatisticsToBackend(statsData);
+    } catch (error) {
+        console.error('Error enviando estadísticas de página:', error);
+    }
+}
+
+// Función para enviar estadísticas de compra (se mantiene por si la usas para otros fines)
+async function sendPurchaseStatistics(orderData) {
+    try {
+        const userData = await gatherUserData();
+        const cart = getValidatedCart();
+        
+        const statsData = {
+            ip: userData.ip,
+            pais: userData.country,
+            origen: window.location.href,
+            afiliado: getCurrentAffiliate()?.nombre || "Ninguno",
+            nombre_comprador: orderData.customer['full-name'],
+            telefono_comprador: orderData.customer.phone || "N/A",
+            correo_comprador: orderData.customer.email,
+            direccion_envio: orderData.customer.address,
+            compras: prepareOrderItems(cart),
+            precio_compra_total: calculateOrderTotal(cart),
+            navegador: getBrowserInfo(),
+            sistema_operativo: getOSInfo(),
+            fuente_trafico: document.referrer || "Directo"
+        };
+
+        await sendStatisticsToBackend(statsData);
+    } catch (error) {
+        console.error('Error enviando estadísticas de compra:', error);
+    }
+}
+
+// Función para obtener datos del usuario
+async function gatherUserData() {
+    try {
+        const response = await fetch('https://ipapi.co/json/');
+        if (!response.ok) throw new Error('Error obteniendo datos de IP');
+        return await response.json();
+    } catch (error) {
+        console.error('Error obteniendo datos del usuario:', error);
+        return {
+            ip: 'Desconocido',
+            country: 'Desconocido'
+        };
+    }
+}
+
+// Función para enviar datos al backend
+async function sendStatisticsToBackend(data) {
+    try {
+        const response = await fetch(`${BACKEND_STATS}/guardar-estadistica`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+
+        if (!response.ok) {
+            throw new Error('Error enviando estadísticas');
+        }
+
+        return await response.json();
+    } catch (error) {
+        console.error('Error en sendStatisticsToBackend:', error);
+        throw error;
+    }
+}
+
+// Funciones auxiliares para obtener información del navegador y SO
+function getBrowserInfo() {
+    const userAgent = navigator.userAgent;
+    let browser = "Desconocido";
+    
+    if (userAgent.includes("Firefox")) browser = "Firefox";
+    else if (userAgent.includes("SamsungBrowser")) browser = "Samsung Browser";
+    else if (userAgent.includes("Opera") || userAgent.includes("OPR")) browser = "Opera";
+    else if (userAgent.includes("Trident")) browser = "Internet Explorer";
+    else if (userAgent.includes("Edge")) browser = "Edge";
+    else if (userAgent.includes("Chrome")) browser = "Chrome";
+    else if (userAgent.includes("Safari")) browser = "Safari";
+    
+    return browser;
+}
+
+function getOSInfo() {
+    const userAgent = navigator.userAgent;
+    let os = "Desconocido";
+    
+    if (userAgent.includes("Windows")) os = "Windows";
+    else if (userAgent.includes("Mac")) os = "MacOS";
+    else if (userAgent.includes("Linux")) os = "Linux";
+    else if (userAgent.includes("Android")) os = "Android";
+    else if (userAgent.includes("iOS") || userAgent.includes("iPhone") || userAgent.includes("iPad")) os = "iOS";
+    
+    return os;
+}
+
 function showPaymentSection() {
-    closeCart();
-    closeSidebar();
+    // Asegúrate de que estas funciones (closeCart, closeSidebar) existan en tu código
+    if (typeof closeCart === 'function') closeCart();
+    if (typeof closeSidebar === 'function') closeSidebar();
 
     const paymentSection = document.getElementById('payment-section');
     if (!paymentSection) return;
@@ -101,6 +223,7 @@ function updateOrderSummary() {
 
 async function processPayment(e) {
     e.preventDefault();
+    const loadingNotification = showPaymentNotification('Procesando tu pedido...', 'loading');
 
     try {
         const cart = getValidatedCart();
@@ -108,30 +231,79 @@ async function processPayment(e) {
             throw new Error('Tu carrito está vacío');
         }
 
-        const formData = validateForm();
-        const orderData = {
-            customer: formData,
-            items: prepareOrderItems(cart),
-            total: calculateOrderTotal(cart),
-            date: new Date().toISOString(),
-            affiliate: getCurrentAffiliate()
-        };
+        const formData = validateForm(); // Info del cliente del formulario
+        const userData = await gatherUserData(); // Info de IP y país
+        const affiliateInfo = getCurrentAffiliate(); // Objeto de afiliado
 
-        showPaymentNotification('Procesando tu pedido...', 'loading');
-        const response = await sendPaymentToServer(orderData);
+        // Prepara el payload completo que se enviará al backend y luego a Apps Script
+        const orderPayload = {
+            ip: userData.ip,
+            pais: userData.country,
+            origen: window.location.href,
+            afiliado: affiliateInfo?.nombre || "Ninguno", // Nombre del afiliado (string)
+            nombre_comprador: formData['full-name'],
+            telefono_comprador: formData.phone || "N/A",
+            correo_comprador: formData.email,
+            direccion_envio: formData.address,
+            compras: prepareOrderItems(cart), // Artículos del carrito formateados
+            precio_compra_total: calculateOrderTotal(cart), // Precio total
+            navegador: getBrowserInfo(), // Info del navegador
+            sistema_operativo: getOSInfo(), // Info del SO
+            fuente_trafico: document.referrer || "Directo", // Fuente de tráfico
+            fecha_pedido: new Date().toISOString() // Marca de tiempo del pedido
+        };
+        
+        // Envía el payload completo al backend (que lo reenvía a Apps Script)
+        const response = await sendPaymentToServer(orderPayload); // <--- CAMBIO CLAVE AQUÍ
 
         if (!response.success) {
             throw new Error(response.message || 'Error en el pedido');
         }
 
+        // Cerrar notificación de carga primero
+        if (loadingNotification) {
+            loadingNotification.classList.remove('show');
+            setTimeout(() => loadingNotification.remove(), 300);
+        }
+
         clearCart();
         hidePaymentSection();
-        showPaymentNotification('¡Pedido confirmado con éxito!', 'success');
+        showOrderConfirmationModal();
 
     } catch (error) {
         console.error('Error en processPayment:', error);
-        showPaymentNotification(error.message, 'error');
+        // Cerrar notificación de carga si hay error
+        if (loadingNotification) {
+            loadingNotification.classList.remove('show');
+            setTimeout(() => {
+                loadingNotification.remove();
+                showPaymentNotification(error.message, 'error');
+            }, 300);
+        }
     }
+}
+
+function showOrderConfirmationModal() {
+    const modal = document.getElementById('order-confirmation-modal');
+    if (!modal) return;
+    
+    modal.style.display = 'flex';
+    setTimeout(() => {
+        modal.classList.add('active');
+    }, 10);
+}
+
+// También necesitamos la función para cerrar el modal (ya está en el HTML pero no en el JS)
+function closeConfirmationAndGoHome() {
+    const modal = document.getElementById('order-confirmation-modal');
+    if (!modal) return;
+    
+    modal.classList.remove('active');
+    setTimeout(() => {
+        modal.style.display = 'none';
+        // Asegúrate de que goToHome() exista en tu script.js o donde sea
+        if (typeof goToHome === 'function') goToHome(); 
+    }, 300);
 }
 
 function showPaymentNotification(message, type = 'info') {
@@ -183,7 +355,7 @@ function getValidatedCart() {
 
 function validateForm() {
     const form = document.getElementById('payment-form');
-    const requiredFields = ['full-name', 'email', 'address'];
+    const requiredFields = ['full-name', 'email', 'phone', 'address'];
     const formData = {};
 
     requiredFields.forEach(field => {
@@ -200,7 +372,7 @@ function validateForm() {
 function prepareOrderItems(cart) {
     return cart.map(item => ({
         id: item.product.id || null,
-        name: item.product.nombre,
+        name: item.product.nombre, // Asegúrate de que 'nombre' es la clave correcta en item.product
         quantity: item.quantity,
         unitPrice: item.product.oferta
             ? item.product.precio * (1 - item.product.descuento / 100)
@@ -218,17 +390,29 @@ function calculateOrderTotal(cart) {
     }, 0).toFixed(2);
 }
 
-async function sendPaymentToServer(orderData) {
-    console.log('Enviando pedido:', orderData);
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    const success = Math.random() > 0.1;
+// Esta función ahora enviará el payload completo a tu backend Node.js
+async function sendPaymentToServer(orderPayload) { // <-- Ahora recibe el payload completo
+    console.log('Enviando pedido a tu backend Node.js:', orderPayload);
+    
+    try {
+        const response = await fetch(`${BACKEND_CORREO}/send-pedido`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(orderPayload) // <-- Envía el payload completo
+        });
 
-    return {
-        success,
-        message: success ? 'Pedido procesado correctamente' : 'Error en la transacción',
-        orderId: success ? 'ORD-' + Date.now().toString(36).toUpperCase() : null,
-        timestamp: new Date().toISOString()
-    };
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`Error del backend: ${response.status} - ${errorText}`);
+        }
+
+        return await response.json();
+    } catch (error) {
+        console.error('Error en sendPaymentToServer (frontend):', error);
+        throw error;
+    }
 }
 
 function createPaymentOverlay() {
@@ -249,7 +433,6 @@ function removePaymentOverlay() {
         setTimeout(() => overlay.remove(), 300);
     }
 }
-
 
 function injectPaymentStyles() {
     const styleId = 'payment-styles';
