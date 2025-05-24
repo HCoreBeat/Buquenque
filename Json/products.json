@@ -97,7 +97,7 @@
         "disponibilidad": true
       },
       {
-        "nombre": "Toallas Finas",
+        "nombre": "Toallas Femeninas",
         "categoria": "Belleza",
         "precio": 480,
         "descuento": 10,
@@ -105,11 +105,11 @@
         "nuevo": true,
         "oferta": false,
         "imagenes": ["toallas_finas.jpg"],
-        "descripcion": "Descubre el paquete de protectores diarios Allison Toallas Finas, diseñado con un elegante empaque en tonos rosa, morado y blanco, que refleja la modernidad y el cuidado que ofrecen. Este protector diario se destaca por brindar absorción instantánea y protección durante todo el día, siendo ultra delgado y cómodo para adaptarse a tu ritmo sin marcarse. Con 20 unidades por paquete, es la solución ideal para quienes buscan higiene y seguridad en cada momento, convirtiéndose en un imprescindible para el cuidado personal en tu tienda en línea.",
+        "descripcion": "Descubre el paquete de protectores diarios Allison Toallas Finas, diseñado con un elegante empaque en tonos rosa, morado y blanco, que refleja la modernidad y el cuidado que ofrecen. Este protector diario se destaca por brindar absorción instantánea y protección durante todo el día, siendo ultra delgado y cómodo para adaptarse a tu ritmo sin marcarse. Con 20 unidades por paquete, es la solución ideal para quienes buscan higiene y seguridad en cada momento, convirtiéndose en un imprescindible para el cuidado personal.",
         "disponibilidad": true
       },
       {
-        "nombre": "Galletas Luanesco Fresa (115g)",
+        "nombre": "Galletas Luanesco (Fresa) (115g)",
         "categoria": "Snacks",
         "precio": 220,
         "descuento": 10,
@@ -121,7 +121,7 @@
         "disponibilidad": true
       },
       {
-        "nombre": "Galletas Luanesco Vainilla (115g)",
+        "nombre": "Galletas Luanesco (Vainilla) (115g)",
         "categoria": "Snacks",
         "precio": 220,
         "descuento": 10,
