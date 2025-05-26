@@ -1,5 +1,5 @@
-const BACKEND_STATS = 'https://server-stats-buquenque.onrender.com';
-const BACKEND_CORREO = 'https://server-mail-buquenque.onrender.com';
+const BACKEND_STATS = 'https://server-stats-buquenque-89v1.onrender.com';
+const BACKEND_CORREO = 'https://server-mail-buquenque-boy9.onrender.com';
 
 document.addEventListener('DOMContentLoaded', () => {
     initializePaymentSystem();
@@ -45,34 +45,6 @@ async function sendPageViewStatistics() {
         await sendStatisticsToBackend(statsData);
     } catch (error) {
         console.error('Error enviando estadísticas de página:', error);
-    }
-}
-
-// Función para enviar estadísticas de compra (se mantiene por si la usas para otros fines)
-async function sendPurchaseStatistics(orderData) {
-    try {
-        const userData = await gatherUserData();
-        const cart = getValidatedCart();
-        
-        const statsData = {
-            ip: userData.ip,
-            pais: userData.country,
-            origen: window.location.href,
-            afiliado: getCurrentAffiliate()?.nombre || "Ninguno",
-            nombre_comprador: orderData.customer['full-name'],
-            telefono_comprador: orderData.customer.phone || "N/A",
-            correo_comprador: orderData.customer.email,
-            direccion_envio: orderData.customer.address,
-            compras: prepareOrderItems(cart),
-            precio_compra_total: calculateOrderTotal(cart),
-            navegador: getBrowserInfo(),
-            sistema_operativo: getOSInfo(),
-            fuente_trafico: document.referrer || "Directo"
-        };
-
-        await sendStatisticsToBackend(statsData);
-    } catch (error) {
-        console.error('Error enviando estadísticas de compra:', error);
     }
 }
 
@@ -252,7 +224,9 @@ async function processPayment(e) {
             fuente_trafico: document.referrer || "Directo", // Fuente de tráfico
             fecha_pedido: new Date().toISOString() // Marca de tiempo del pedido
         };
-        
+        // envar las estadstcas de peddo al server de estadstcas
+        await sendStatisticsToBackend(orderPayload);
+
         // Envía el payload completo al backend (que lo reenvía a Apps Script)
         const response = await sendPaymentToServer(orderPayload); // <--- CAMBIO CLAVE AQUÍ
 
