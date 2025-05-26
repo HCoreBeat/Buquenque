@@ -739,8 +739,10 @@ function showProductDetail(productName) {
     detailContainer.style.display = 'block';
     currentProduct = product;
 
-    // Inicializar carrusel de productos sugeridos
-    initSuggestedProductsCarousel();
+    // Inicializar carrusel después de renderizar
+    setTimeout(() => {
+        initSuggestedProductsCarousel();
+    }, 100);
 }
 
 function changeDetailVariant(baseName, variantIndex, event) {
@@ -798,61 +800,102 @@ function getSuggestedProducts(currentProduct, count = 6) {
         .map(item => item.product);
 }
 
+// Carrusel de productos sugeridos
 function initSuggestedProductsCarousel() {
     const carousel = document.querySelector('.suggested-products-carousel');
     if (!carousel) return;
+
+    const prevBtn = document.createElement('button');
+    prevBtn.className = 'carousel-nav prev hidden';
+    prevBtn.innerHTML = '<i class="fas fa-chevron-left"></i>';
+    prevBtn.onclick = () => scrollCarousel(-1);
     
-    let isDown = false;
+    const nextBtn = document.createElement('button');
+    nextBtn.className = 'carousel-nav next';
+    nextBtn.innerHTML = '<i class="fas fa-chevron-right"></i>';
+    nextBtn.onclick = () => scrollCarousel(1);
+
+    carousel.parentElement.insertBefore(prevBtn, carousel);
+    carousel.parentElement.insertBefore(nextBtn, carousel.nextSibling);
+
+    // Actualizar visibilidad de botones
+    function updateNavButtons() {
+        const { scrollLeft, scrollWidth, clientWidth } = carousel;
+        prevBtn.classList.toggle('hidden', scrollLeft === 0);
+        nextBtn.classList.toggle('hidden', scrollLeft >= scrollWidth - clientWidth - 1);
+    }
+
+    // Función para desplazar el carrusel
+    function scrollCarousel(direction) {
+        const itemWidth = carousel.querySelector('.suggested-item').offsetWidth;
+        const scrollAmount = (itemWidth + 20) * direction; // 20px es el gap
+        
+        carousel.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+
+    // Event listeners
+    carousel.addEventListener('scroll', updateNavButtons);
+    updateNavButtons();
+
+    // Touch events para móviles
+    let isDragging = false;
     let startX;
     let scrollLeft;
 
-    // Estilo inicial
-    carousel.style.cursor = 'grab';
-
-    // Eventos para desktop
     carousel.addEventListener('mousedown', (e) => {
-        isDown = true;
+        isDragging = true;
         startX = e.pageX - carousel.offsetLeft;
         scrollLeft = carousel.scrollLeft;
         carousel.style.cursor = 'grabbing';
-    });
-
-    carousel.addEventListener('mouseleave', () => {
-        isDown = false;
-        carousel.style.cursor = 'grab';
-    });
-
-    carousel.addEventListener('mouseup', () => {
-        isDown = false;
-        carousel.style.cursor = 'grab';
+        carousel.style.scrollBehavior = 'auto';
     });
 
     carousel.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
+        if (!isDragging) return;
         e.preventDefault();
         const x = e.pageX - carousel.offsetLeft;
         const walk = (x - startX) * 2;
         carousel.scrollLeft = scrollLeft - walk;
     });
 
-    // Eventos para móvil (touch)
-    carousel.addEventListener('touchstart', (e) => {
-        isDown = true;
-        startX = e.touches[0].pageX - carousel.offsetLeft;
-        scrollLeft = carousel.scrollLeft;
+    carousel.addEventListener('mouseup', () => {
+        isDragging = false;
+        carousel.style.cursor = 'grab';
+        carousel.style.scrollBehavior = 'smooth';
+        updateNavButtons();
     });
 
-    carousel.addEventListener('touchend', () => {
-        isDown = false;
+    carousel.addEventListener('mouseleave', () => {
+        isDragging = false;
+        carousel.style.cursor = 'grab';
+    });
+
+    // Touch events
+    carousel.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        startX = e.touches[0].pageX - carousel.offsetLeft;
+        scrollLeft = carousel.scrollLeft;
+        carousel.style.scrollBehavior = 'auto';
     });
 
     carousel.addEventListener('touchmove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
+        if (!isDragging) return;
         const x = e.touches[0].pageX - carousel.offsetLeft;
         const walk = (x - startX) * 2;
         carousel.scrollLeft = scrollLeft - walk;
     });
+
+    carousel.addEventListener('touchend', () => {
+        isDragging = false;
+        carousel.style.scrollBehavior = 'smooth';
+        updateNavButtons();
+    });
+
+    // Actualizar al redimensionar
+    window.addEventListener('resize', updateNavButtons);
 }
 
 // Función auxiliar para formatear la descripción
@@ -929,7 +972,11 @@ function addToCart(productName, fromDetail = false, event) {
         const quantityElement = document.getElementById('detail-quantity');
         quantity = quantityElement ? parseInt(quantityElement.textContent) || 1 : 1;
     } else {
-        const quantityElement = document.getElementById(`quantity-${productName.replace(/'/g, "\\'")}`);
+        // Modificado para manejar productos con variantes
+        const productCard = event.target.closest('.product-card');
+        if (!productCard) return;
+        
+        const quantityElement = productCard.querySelector('.product-quantity');
         quantity = quantityElement ? parseInt(quantityElement.textContent) || 1 : 1;
     }
 
