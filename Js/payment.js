@@ -1,5 +1,4 @@
-const BACKEND_STATS = 'https://server-stats-buquenque-89v1.onrender.com';
-const BACKEND_CORREO = 'https://server-mail-buquenque-boy9.onrender.com';
+const BACKEND = 'https://server-stats-buquenque-89v1.onrender.com';
 
 document.addEventListener('DOMContentLoaded', () => {
     initializePaymentSystem();
@@ -33,7 +32,7 @@ async function sendPageViewStatistics() {
         
         const statsData = {
             ip: userData.ip,
-            pais: userData.country,
+            pais: userData.country_name,
             origen: window.location.href,
             afiliado: getCurrentAffiliate()?.nombre || "Ninguno",
             tiempo_carga_pagina_ms: pageLoadTime,
@@ -66,7 +65,7 @@ async function gatherUserData() {
 // Función para enviar datos al backend
 async function sendStatisticsToBackend(data) {
     try {
-        const response = await fetch(`${BACKEND_STATS}/guardar-estadistica`, {
+        const response = await fetch(`${BACKEND}/guardar-estadistica`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -369,7 +368,7 @@ async function sendPaymentToServer(orderPayload) { // <-- Ahora recibe el payloa
     console.log('Enviando pedido a tu backend Node.js:', orderPayload);
     
     try {
-        const response = await fetch(`${BACKEND_CORREO}/send-pedido`, {
+        const response = await fetch(`${BACKEND}/send-pedido`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
