@@ -206,7 +206,6 @@ async function processPayment(e) {
         const userData = await gatherUserData(); // Info de IP y país
         const affiliateInfo = getCurrentAffiliate(); // Objeto de afiliado
 
-        // Prepara el payload completo que se enviará al backend y luego a Apps Script
         const orderPayload = {
             ip: userData.ip,
             pais: userData.country,
@@ -223,11 +222,9 @@ async function processPayment(e) {
             fuente_trafico: document.referrer || "Directo", // Fuente de tráfico
             fecha_pedido: new Date().toISOString() // Marca de tiempo del pedido
         };
-        // envar las estadstcas de peddo al server de estadstcas
         await sendStatisticsToBackend(orderPayload);
 
-        // Envía el payload completo al backend (que lo reenvía a Apps Script)
-        const response = await sendPaymentToServer(orderPayload); // <--- CAMBIO CLAVE AQUÍ
+        const response = await sendPaymentToServer(orderPayload);
 
         if (!response.success) {
             throw new Error(response.message || 'Error en el pedido');
@@ -266,7 +263,6 @@ function showOrderConfirmationModal() {
     }, 10);
 }
 
-// También necesitamos la función para cerrar el modal (ya está en el HTML pero no en el JS)
 function closeConfirmationAndGoHome() {
     const modal = document.getElementById('order-confirmation-modal');
     if (!modal) return;
