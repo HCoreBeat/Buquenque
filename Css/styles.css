@@ -1,7 +1,7 @@
 /* Variables de color mejoradas */
 :root {
-    --rojo-claro: #ff3535;
-    --rojo-claro-pastel: #ff9999;
+    --color-principal: #ffffff;
+    --color-principal-pastel: #ff9999;
     --negro: #121212;
     --negro-claro: #1E1E1E;
     --gris-oscuro: #2D2D2D;
@@ -91,7 +91,7 @@ body.sidebar-open {
 
 .empty-cart-content i {
     font-size: 3.5rem;
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     margin-bottom: 1.25rem;
 }
 
@@ -109,7 +109,7 @@ body.sidebar-open {
 }
 
 .continue-shopping-btn {
-    background-color: var(--rojo-claro);
+    background-color: var(--color-principal);
     color: var(--negro);
     border: none;
     padding: 0.85rem 1.75rem;
@@ -124,7 +124,7 @@ body.sidebar-open {
 }
 
 .continue-shopping-btn:hover {
-    background-color: var(--rojo-claro-pastel);
+    background-color: var(--color-principal-pastel);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -224,7 +224,7 @@ body.sidebar-open {
 }
 
 .sidebar-title i {
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     font-size: 0.9rem;
 }
 
@@ -264,7 +264,7 @@ body.sidebar-open {
 }
 
 .price-input-group input:focus {
-    border-color: var(--rojo-claro);
+    border-color: var(--color-principal);
     outline: none;
     box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
 }
@@ -282,7 +282,7 @@ body.sidebar-open {
     height: 100%;
     left: 25%;
     right: 25%;
-    background: var(--rojo-claro);
+    background: var(--color-principal);
     border-radius: 2px;
 }
 
@@ -312,7 +312,7 @@ body.sidebar-open {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: var(--rojo-claro);
+    background: var(--color-principal);
     border: 2px solid white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     -webkit-appearance: none;
@@ -327,7 +327,7 @@ body.sidebar-open {
 .apply-filter-btn {
     width: 100%;
     padding: 0.85rem;
-    background: var(--rojo-claro);
+    background: var(--color-principal);
     color: #2c3e50;
     border: none;
     border-radius: 6px;
@@ -339,10 +339,11 @@ body.sidebar-open {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    border: 2px solid var(--color-principal-pastel);
 }
 
 .apply-filter-btn:hover {
-    background: var(--rojo-claro-pastel);
+    background: var(--color-principal-pastel);
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
 }
@@ -367,7 +368,7 @@ body.sidebar-open {
 }
 
 .sidebar-categories li i {
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     font-size: 0.8rem;
     width: 20px;
     text-align: center;
@@ -375,13 +376,13 @@ body.sidebar-open {
 
 .sidebar-categories li:hover {
     background: rgba(212, 175, 55, 0.1);
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     padding-left: 1.25rem;
 }
 
 .sidebar-categories li.active {
     background: rgba(212, 175, 55, 0.2);
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     font-weight: 600;
 }
 
@@ -414,7 +415,7 @@ body.sidebar-open {
     display: flex;
     flex-direction: column;
     background-color: var(--negro);
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -437,7 +438,7 @@ body.sidebar-open {
 .menu-toggle {
     background: none;
     border: none;
-    color: var(--rojo-claro);
+    color: var(--color-principal-pastel);
     font-size: 1.6rem;
     cursor: pointer;
     padding: 0.5rem;
@@ -477,7 +478,7 @@ body.sidebar-open {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--rojo-claro);
+    background-color: var(--color-principal);
     transition: var(--transicion);
 }
 
@@ -492,7 +493,7 @@ body.sidebar-open {
 /* Carrito mejorado */
 .cart-btn {
     background-color: transparent;
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     border: none;
     font-size: 1.6rem;
     cursor: pointer;
@@ -506,6 +507,7 @@ body.sidebar-open {
     width: 42px;
     height: 42px;
     border-radius: 50%;
+    color: var(--color-principal-pastel);
 }
 
 .cart-btn:hover {
@@ -517,7 +519,7 @@ body.sidebar-open {
     position: absolute;
     top: -2px;
     right: -2px;
-    background-color: var(--rojo-claro);
+    background-color: var(--color-principal-pastel);
     color: var(--negro);
     border-radius: 50%;
     width: 22px;
@@ -548,17 +550,17 @@ body.sidebar-open {
     border-radius: 30px 0 0 30px;
     font-size: 1rem;
     outline: none;
-    background-color: var(--blanco);
+    background-color: var(--gris-claro);
     transition: var(--transicion);
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 #search-input:focus {
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px var(--rojo-claro);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px var(--color-principal);
 }
 
 .search-btn {
-    background-color: var(--rojo-claro);
+    background-color: var(--color-principal);
     color: var(--negro);
     border: none;
     padding: 0 1.75rem;
@@ -572,14 +574,14 @@ body.sidebar-open {
 }
 
 .search-btn:hover {
-    background-color: var(--rojo-claro-pastel);
+    background-color: var(--color-principal-pastel);
 }
 
 /* Categorías mejoradas */
 .categories-nav {
     display: none;
     background-color: var(--gris-oscuro);
-    border-top: 1px solid var(--rojo-claro);
+    border-top: 1px solid var(--color-principal);
     order: 3;
     width: 100%;
 }
@@ -614,13 +616,13 @@ body.sidebar-open {
     left: 50%;
     width: 0;
     height: 2px;
-    background-color: var(--rojo-claro);
+    background-color: var(--color-principal);
     transition: var(--transicion);
     transform: translateX(-50%);
 }
 
 .categories-list li:hover {
-    color: var(--rojo-claro);
+    color: var(--color-principal);
 }
 
 .categories-list li:hover::after {
@@ -667,7 +669,7 @@ body.sidebar-open {
 .product-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-    border-color: var(--rojo-claro);
+    border-color: var(--color-principal);
 }
 
 /* Badges más compactos */
@@ -716,7 +718,7 @@ body.sidebar-open {
 }
 
 .badge.nuevo {
-    background-color: var(--rojo-claro);
+    background-color: var(--color-principal);
     color: var(--negro);
 }
 
@@ -766,7 +768,7 @@ body.sidebar-open {
 }
 
 .product-info h3:hover {
-    color: var(--rojo-claro);
+    color: var(--color-principal);
 }
 
 .product-title {
@@ -784,7 +786,7 @@ body.sidebar-open {
 }
 
 .product-title:hover {
-    color: var(--rojo-claro);
+    color: var(--color-principal);
 }
 
 .price-container {
@@ -833,7 +835,7 @@ body.sidebar-open {
 }
 
 .shipping-info i {
-    color: var(--rojo-claro);
+    color: var(--color-principal);
 }
 
 .rating {
@@ -912,7 +914,7 @@ body.sidebar-open {
 
 .quantity-btn:hover {
     background: #f5f5f5;
-    border-color: var(--rojo-claro);
+    border-color: var(--color-principal);
 }
 
 .quantity-display {
@@ -930,7 +932,7 @@ body.sidebar-open {
 }
 
 .add-to-cart {
-    background: var(--rojo-claro);
+    background: var(--color-principal);
     color: var(--negro);
     border: none;
     border-radius: 50px;
@@ -945,16 +947,17 @@ body.sidebar-open {
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
+    border: 2px solid var(--color-principal-pastel);
 }
 
 .add-to-cart:hover {
-    background: var(--rojo-claro-pastel);
+    background: var(--color-principal-pastel);
     transform: translateY(-2px);
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
 .add-to-cart-btn {
-    background: var(--rojo-claro);
+    background: var(--color-principal);
     color: var(--negro);
     border: none;
     border-radius: 6px;
@@ -973,7 +976,7 @@ body.sidebar-open {
 }
 
 .add-to-cart-btn:hover {
-    background: var(--rojo-claro-pastel);
+    background: var(--color-principal-pastel);
     transform: translateY(-2px);
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
@@ -1060,7 +1063,7 @@ body.sidebar-open {
 }
 
 .detail-badge.nuevo {
-    background: var(--rojo-claro);
+    background: var(--color-principal);
     color: var(--negro);
 }
 
@@ -1220,7 +1223,7 @@ body.sidebar-open {
 }
 
 .detail-quantity-btn:hover {
-    background: var(--rojo-claro);
+    background: var(--color-principal);
     color: white;
 }
 
@@ -1233,7 +1236,7 @@ body.sidebar-open {
 
 /* Botón de añadir en detalle */
 .detail-add-to-cart {
-    background: var(--rojo-claro);
+    background: var(--color-principal);
     color: var(--negro);
     border: none;
     border-radius: var(--borde-radius);
@@ -1250,7 +1253,7 @@ body.sidebar-open {
 }
 
 .detail-add-to-cart:hover {
-    background: var(--rojo-claro-pastel);
+    background: var(--color-principal-pastel);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
 }
@@ -1275,7 +1278,7 @@ body.sidebar-open {
 }
 
 .detail-meta-item i {
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     width: 20px;
     text-align: center;
 }
@@ -1294,8 +1297,8 @@ body.sidebar-open {
 
 .back-btn {
     background-color: transparent;
-    color: var(--rojo-claro);
-    border: 2px solid var(--rojo-claro);
+    color: var(--color-principal);
+    border: 2px solid var(--color-principal);
     padding: 0.85rem 1.75rem;
     border-radius: var(--borde-radius);
     font-weight: 600;
@@ -1308,7 +1311,7 @@ body.sidebar-open {
 }
 
 .back-btn:hover {
-    background-color: var(--rojo-claro);
+    background-color: var(--color-principal);
     color: var(--negro);
     transform: translateY(-2px);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
@@ -1345,18 +1348,19 @@ body.sidebar-open {
     align-items: center;
     border-bottom: 1px solid var(--gris-claro);
     background-color: var(--negro);
-    color: var(--rojo-claro);
+    color: var(--color-principal);
 }
 
 .cart-header h2 {
     font-size: 1.4rem;
     font-weight: 600;
+    color: var(--rojo-oferta);
 }
 
 .close-btn {
     background: none;
     border: none;
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     font-size: 1.6rem;
     cursor: pointer;
     transition: var(--transicion);
@@ -1506,7 +1510,7 @@ body.sidebar-open {
 }
 
 .cart-quantity-btn:hover {
-    background-color: var(--rojo-claro);
+    background-color: var(--color-principal);
     color: var(--blanco);
 }
 
@@ -1542,7 +1546,7 @@ body.sidebar-open {
 }
 
 .cart-total {
-    padding: 1.25rem 1.75rem;
+    padding: 1rem 1rem 5rem 1rem;
     border-top: 1px solid var(--gris-claro);
     background-color: var(--gris-claro);
 }
@@ -1572,7 +1576,7 @@ body.sidebar-open {
 
 .empty-cart-panel i {
     font-size: 3.5rem;
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     margin-bottom: 1.5rem;
     opacity: 0.8;
 }
@@ -1593,7 +1597,7 @@ body.sidebar-open {
 }
 
 .continue-btn {
-    background-color: var(--rojo-claro);
+    background-color: var(--color-principal);
     color: var(--negro);
     border: none;
     padding: 0.85rem 2rem;
@@ -1607,7 +1611,7 @@ body.sidebar-open {
 }
 
 .continue-btn:hover {
-    background-color: var(--rojo-claro-pastel);
+    background-color: var(--color-principal-pastel);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
 }
@@ -1628,7 +1632,7 @@ body.sidebar-open {
 }
 
 .checkout-btn {
-    background-color: var(--rojo-claro);
+    background-color: var(--color-principal);
     color: var(--negro);
     border: none;
     padding: 0.9rem;
@@ -1642,10 +1646,11 @@ body.sidebar-open {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    border: 2px solid var(--color-principal-pastel);
 }
 
 .checkout-btn:hover {
-    background-color: var(--rojo-claro-pastel);
+    background-color: var(--color-principal-pastel);
     transform: translateY(-2px);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
@@ -1696,7 +1701,7 @@ body.sidebar-open {
     align-items: center;
     border-bottom: 1px solid var(--gris-claro);
     background-color: var(--negro);
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     position: sticky;
     top: 0;
     z-index: 10;
@@ -1746,7 +1751,7 @@ body.sidebar-open {
 }
 
 .form-group input:focus {
-    border-color: var(--rojo-claro);
+    border-color: var(--color-principal);
     outline: none;
     box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
     background-color: var(--blanco);
@@ -1761,7 +1766,7 @@ body.sidebar-open {
     align-items: center;
     gap: 0.75rem;
     font-size: 0.95rem;
-    border-left: 4px solid var(--rojo-claro);
+    border-left: 4px solid var(--color-principal);
 }
 
 .order-summary-title {
@@ -1775,7 +1780,7 @@ body.sidebar-open {
 }
 
 .order-summary-title i {
-    color: var(--rojo-claro);
+    color: var(--color-principal);
 }
 
 .order-summary {
@@ -1806,7 +1811,7 @@ body.sidebar-open {
 
 .order-summary th i {
     margin-right: 0.5rem;
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     font-size: 0.9rem;
 }
 
@@ -1869,7 +1874,7 @@ body.sidebar-open {
 }
 
 .submit-btn {
-    background-color: var(--rojo-claro);
+    background-color: var(--color-principal);
     color: var(--negro);
     border: none;
     padding: 1rem 1.75rem;
@@ -1886,7 +1891,7 @@ body.sidebar-open {
 }
 
 .submit-btn:hover {
-    background-color: var(--rojo-claro-pastel);
+    background-color: var(--color-principal-pastel);
     transform: translateY(-2px);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
@@ -2395,7 +2400,7 @@ body.sidebar-open {
 
 .confirmation-icon {
     font-size: 4.5rem;
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     margin-bottom: 1.5rem;
     animation: bounceIn 0.6s ease-out;
 }
@@ -2421,7 +2426,7 @@ body.sidebar-open {
     padding: 1rem;
     background-color: rgba(212, 175, 55, 0.05);
     border-radius: 8px;
-    border-left: 3px solid var(--rojo-claro);
+    border-left: 3px solid var(--color-principal);
 }
 
 .contact-info p {
@@ -2435,12 +2440,12 @@ body.sidebar-open {
 }
 
 .contact-info i {
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     width: 20px;
 }
 
 .back-to-home-btn {
-    background-color: var(--rojo-claro);
+    background-color: var(--color-principal);
     color: var(--negro);
     border: none;
     padding: 0.9rem 1.5rem;
@@ -2459,7 +2464,7 @@ body.sidebar-open {
 }
 
 .back-to-home-btn:hover {
-    background-color: var(--rojo-claro-pastel);
+    background-color: var(--color-principal-pastel);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
 }
@@ -2506,12 +2511,12 @@ body.sidebar-open {
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, var(--rojo-claro), var(--rojo-claro-pastel));
+    background: linear-gradient(90deg, var(--color-principal), var(--color-principal-pastel));
 }
 
 .no-results-icon {
     font-size: 3rem;
-    color: var(--rojo-claro);
+    color: var(--color-principal);
     margin-bottom: 1.5rem;
     display: inline-block;
     animation: bounce 1s ease infinite alternate;
@@ -2533,7 +2538,7 @@ body.sidebar-open {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: var(--rojo-claro);
+    background: var(--color-principal);
     border-radius: 3px;
 }
 
@@ -2551,7 +2556,7 @@ body.sidebar-open {
 }
 
 .clear-search-btn {
-    background: var(--rojo-claro);
+    background: var(--color-principal);
     color: var(--negro);
     border: none;
     padding: 0.9rem 2rem;
@@ -2568,7 +2573,7 @@ body.sidebar-open {
 }
 
 .clear-search-btn:hover {
-    background: var(--rojo-claro-pastel);
+    background: var(--color-principal-pastel);
     transform: translateY(-2px);
     box-shadow: 0 7px 14px rgba(212, 175, 55, 0.3);
 }
@@ -2652,7 +2657,7 @@ body.sidebar-open {
 
 .description-sentence.important-sentence {
     background: rgba(212, 175, 55, 0.08);
-    border-left: 3px solid var(--rojo-claro);
+    border-left: 3px solid var(--color-principal);
     padding-left: 0.8rem;
     margin-left: -0.8rem;
 }
@@ -2792,7 +2797,7 @@ body.sidebar-open {
 }
 
 .variant-thumb.active {
-    border-color: var(--rojo-claro);
+    border-color: var(--color-principal);
     transform: scale(1.1);
     box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.3);
 }
@@ -2874,7 +2879,7 @@ body.sidebar-open {
     top: 50%;
     width: 50px;
     height: 2px;
-    background: var(--rojo-claro);
+    background: var(--color-principal);
 }
 
 .section-title::before {
@@ -3004,7 +3009,7 @@ body.sidebar-open {
 }
 
 .suggested-name:hover {
-    color: var(--rojo-claro);
+    color: var(--color-principal);
 }
 
 .suggested-price {
@@ -3027,7 +3032,7 @@ body.sidebar-open {
 .add-to-cart-mini {
     width: 100%;
     padding: 8px;
-    background: var(--rojo-claro);
+    background: var(--color-principal);
     color: var(--negro);
     border: none;
     border-radius: var(--borde-radius);
@@ -3041,7 +3046,7 @@ body.sidebar-open {
 }
 
 .add-to-cart-mini:hover {
-    background: var(--rojo-claro-pastel);
+    background: var(--color-principal-pastel);
 }
 
 @media (max-width: 768px) {
