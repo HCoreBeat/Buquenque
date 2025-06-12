@@ -23,6 +23,8 @@ function handleRouteChange() {
     }
 }
 
+const bannerContainer = document.querySelector('.banner-container'); // <-- Nueva referencia al banner
+
 // Cargar productos
 async function loadProducts() {
     try {
@@ -428,6 +430,12 @@ function closeEmptyCartModal() {
 // Renderizar productos con precios corregidos
 function renderProducts(productsToRender = products) {
     const container = document.getElementById('products-container');
+
+    // Asegurar que el banner esté visible al renderizar productos
+    if (bannerContainer) {
+        bannerContainer.style.display = 'block'; // O 'flex', 'grid', según cómo lo tengas en CSS
+    }
+
     if (!container) return;
     container.innerHTML = '';
 
@@ -537,6 +545,11 @@ function changeProductVariant(thumbElement, baseName, variantIndex, event) {
 function showProductDetail(productName) {
     window.scrollTo({top: 0});
     const decodedName = decodeURIComponent(productName);
+
+    // Ocultar el banner al entrar al detalle del producto
+    if (bannerContainer) {
+        bannerContainer.style.display = 'none'; // <-- OCULTA EL BANNER
+    }
     
     // Buscar el producto principal
     let product = products.find(p => p.nombre === decodedName);
@@ -936,6 +949,11 @@ function hideProductDetail() {
     if (productsContainer) {
         productsContainer.style.display = 'grid';
         productsContainer.style.animation = 'fadeIn 0.4s ease-out';
+    }
+
+    // Mostrar el banner cuando se vuelve a la página principal
+    if (bannerContainer) {
+        bannerContainer.style.display = 'block'; // <-- MUESTRA EL BANNER
     }
     
     if (detailContainer) {
