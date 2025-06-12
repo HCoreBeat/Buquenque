@@ -487,16 +487,6 @@ function renderProducts(productsToRender = products) {
                 </div>
                 
                 <div class="quantity-section">
-                    <div class="quantity-controls">
-                        <button class="quantity-btn" onclick="adjustQuantity(this, -1, '${cleanName}', event)">
-                            <i class="fas fa-minus"></i>
-                        </button>
-                        <span class="product-quantity" id="quantity-${cleanName}">1</span>
-                        <button class="quantity-btn" onclick="adjustQuantity(this, 1, '${cleanName}', event)">
-                            <i class="fas fa-plus"></i>
-                        </button>
-                    </div>
-                    
                     <button class="add-to-cart" onclick="addToCart('${displayProduct.nombre}', false, event)">
                         <i class="fas fa-cart-plus"></i>
                         <span>Añadir al carrito</span>
@@ -1224,6 +1214,33 @@ function openWhatsApp() {
     // Abrir en una nueva pestaña
     window.open(url, '_blank');
 }
+
+// --- Funcionalidad para ocultar/mostrar header al hacer scroll ---
+
+let lastScrollY = 0;
+const header = document.querySelector('.header');
+const headerHeight = header ? header.offsetHeight : 60; // Obtiene la altura del header, o usa un valor por defecto
+
+window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+
+    // Si estás en la parte superior de la página, asegúrate de que el header esté visible
+    if (currentScrollY <= headerHeight / 2) { // Un pequeño umbral para mostrarlo al principio
+        header.classList.remove('header-hidden');
+    } 
+    // Si haces scroll hacia abajo Y has pasado el header
+    else if (currentScrollY > lastScrollY && currentScrollY > headerHeight) {
+        header.classList.add('header-hidden');
+    } 
+    // Si haces scroll hacia arriba
+    else if (currentScrollY < lastScrollY) {
+        header.classList.remove('header-hidden');
+    }
+
+    lastScrollY = currentScrollY;
+});
+
+// --- Fin de la funcionalidad del header ---
 
 // Inicialización
 document.addEventListener('DOMContentLoaded', loadProducts);
