@@ -135,7 +135,7 @@ function getCategoryIcon(category) {
         'cafetería': 'coffee',
         'rápida': 'hamburger',
         'despensa': 'shopping-basket',
-        'snacks': 'pizza-slice'
+        'confituras': 'pizza-slice'
     };
 
     return icons[category.toLowerCase().trim()] || 'tag'; // Convertimos a minúsculas y eliminamos espacios extra
@@ -480,10 +480,13 @@ function renderProducts(productsToRender = products) {
             </div>
             
             <div class="product-info">
+                <div class="product-category">
+                    ${displayProduct.categoria}
+                </div>
+
                 <h3 class="product-title" onclick="showProductDetail('${encodeURIComponent(displayProduct.nombre)}')">
                     ${displayProduct.cleanName}
                 </h3>
-                
                 ${variantThumbnails}
                 
                 <div class="price-container">
