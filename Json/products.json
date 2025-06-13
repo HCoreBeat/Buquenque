@@ -1,18 +1,6 @@
 {
     "products": [
       {
-        "nombre": "Compuesto lácteo Do Bon",
-        "categoria": "Lácteos",
-        "precio": 3200,
-        "descuento": 10,
-        "mas_vendido": false,
-        "nuevo": true,
-        "oferta": false,
-        "imagenes": ["compuesto_lacteo_do_bon.jpg"],
-        "descripcion": "Disfruta el delicioso compuesto lácteo Do Bon, una fuente rica en calcio, hierro y vitaminas esenciales. Con su fórmula equilibrada y suero de leche, es perfecto para una nutrición completa en cada porción. Ideal para bebidas, recetas y un estilo de vida saludable.",
-        "disponibilidad": true
-      },
-      {
         "nombre": "Ketchup Dino Food",
         "categoria": "Despensa",
         "precio": 900,
@@ -25,8 +13,92 @@
         "disponibilidad": true
       },
       {
+        "nombre": "Paquete de salchichas (350g) 7u",
+        "categoria": "Carnes",
+        "precio": 400,
+        "descuento": 0,
+        "mas_vendido": false,
+        "nuevo": true,
+        "oferta": false,
+        "imagenes": [
+          "salchichas_quality_chibs.jpg"
+        ],
+        "descripcion": "Disfruta de la calidad y el sabor de las salchichas Quality Chib's, presentadas en un práctico paquete de 350g con 7 unidades. Estas salchichas, ideales para hot dogs, asados o como ingrediente en tus platillos favoritos, ofrecen una textura firme y un delicioso sabor que complacerá a toda la familia. Elaboradas con carne de ave y cerdo, son una opción versátil y conveniente para tus comidas diarias. ¡Añádelas a tu carrito y disfruta de su practicidad y sabor!",
+        "disponibilidad": true
+      },
+      {
+        "nombre": "Mollejas de Pollo (1kg)",
+        "categoria": "Carnes",
+        "precio": 1300,
+        "descuento": 0,
+        "mas_vendido": false,
+        "nuevo": true,
+        "oferta": false,
+        "imagenes": [
+          "mollejas_de_pollo.jpg"
+        ],
+        "descripcion": "Descubre la versatilidad de las mollejas de pollo congeladas Sadia, presentadas en un conveniente paquete de 1kg. Perfectas para guisos, estofados, asados o para preparar a la parrilla, estas mollejas son una excelente fuente de proteínas y añaden un sabor único a tus platillos. Sadia garantiza la calidad y frescura de sus productos, asegurando una experiencia culinaria deliciosa. Mantener congelado a -18°C. ¡Ideal para tener siempre a mano en tu congelador!",
+        "disponibilidad": true
+      },
+      {
+        "nombre": "Hígado de Pollo (1kg)",
+        "categoria": "Carnes",
+        "precio": 1200,
+        "descuento": 0,
+        "mas_vendido": false,
+        "nuevo": true,
+        "oferta": false,
+        "imagenes": [
+          "higado_de_pollo.jpg"
+        ],
+        "descripcion": "Enriquece tus comidas con el hígado de pollo congelado Sadia, presentado en un práctico paquete de 1kg. Este producto es una excelente fuente de hierro y otros nutrientes esenciales, ideal para preparar patés, salteados, o añadir un toque nutritivo a tus guisos. Sadia asegura la máxima calidad y frescura en sus productos avícolas. Mantener congelado a -18°C. ¡Una opción saludable y versátil para tu cocina!",
+        "disponibilidad": true
+      },
+      {
+        "nombre": "Leche en Polvo Sabor Fresa (1kg)",
+        "categoria": "Lácteos",
+        "precio": 2700,
+        "descuento": 0,
+        "mas_vendido": false,
+        "nuevo": true,
+        "oferta": false,
+        "imagenes": [
+          "leche_en_polvo_fresa.jpg"
+        ],
+        "descripcion": "Disfruta de la Leche en Polvo Sabor a Frutilla de Macro Food, en un práctico envase de 1kg. Ideal para preparar bebidas refrescantes con el delicioso y dulce sabor de la fresa. Perfecta para el desayuno, la merienda o para añadir un toque frutal a tus recetas favoritas. Fácil de preparar, solo tienes que mezclar con agua para obtener una bebida deliciosa y nutritiva. Un producto versátil para toda la familia.",
+        "disponibilidad": true
+      },
+      {
+        "nombre": "Jamón Bravo Rápido (2kg)",
+        "categoria": "Carnes",
+        "precio": 7200,
+        "descuento": 0,
+        "mas_vendido": false,
+        "nuevo": true,
+        "oferta": false,
+        "imagenes": [
+          "jamon_bravo_rapido.jpg"
+        ],
+        "descripcion": "Disfruta del auténtico sabor del Jamón Bravo Rápido, presentado en una pieza de 2kg. Este jamón es ideal para tus sándwiches, ensaladas, o como ingrediente en tus platillos favoritos. Su textura y sabor lo hacen perfecto para cualquier ocasión, brindando practicidad y calidad a tu mesa. Bravo es sinónimo de tradición y buen gusto en carnes frías. ¡Ten siempre a mano esta deliciosa opción!",
+        "disponibilidad": true
+      },
+      {
+        "nombre": "Saco de Arroz Importado (100lbs)",
+        "categoria": "Despensa",
+        "precio": 28000,
+        "descuento": 0,
+        "mas_vendido": false,
+        "nuevo": true,
+        "oferta": false,
+        "imagenes": [
+          "saco_de_arroz_importado.jpg"
+        ],
+        "descripcion": "Abastece tu despensa con este saco de arroz importado de 100lbs. Ideal para el consumo familiar o para negocios, este arroz de alta calidad es perfecto para preparar una variedad de platillos, desde acompañamientos básicos hasta recetas más elaboradas. Un grano esencial en la cocina, garantizando rendimiento y buen sabor en cada preparación. ¡Asegura tu suministro de arroz con esta opción práctica y económica!",
+        "disponibilidad": true
+      },
+      {
         "nombre": "Galletas Marie",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 320,
         "descuento": 15,
         "mas_vendido": false,
@@ -37,7 +109,7 @@
         "disponibilidad": true
       },
       {
-        "nombre": "Fragancia en spray Violeta",
+        "nombre": "Colonia Violeta",
         "categoria": "Belleza",
         "precio": 1250,
         "descuento": 10,
@@ -45,11 +117,11 @@
         "nuevo": true,
         "oferta": false,
         "imagenes": ["fragancia_cubana.jpg"],
-        "descripcion": "La fragancia en spray Violeta de Suchel es una esencia cubana que combina frescura y elegancia en un práctico formato de 120 ml. Su aroma evoca notas florales y suaves, ideales para un toque ligero y refrescante durante el día. Con su presentación en un envase púrpura y un atomizador blanco, es una opción cómoda y versátil para quienes buscan una fragancia cotidiana con un aire distintivo. Su fecha de vencimiento en abril de 2026 garantiza su durabilidad y calidad. Perfecta para quienes prefieren aromas clásicos con un toque tropical.",
+        "descripcion": "La colonia Violeta de Suchel es una esencia cubana que combina frescura y elegancia en un práctico formato de 120 ml. Su aroma evoca notas florales y suaves, ideales para un toque ligero y refrescante durante el día. Con su presentación en un envase púrpura y un atomizador blanco, es una opción cómoda y versátil para quienes buscan una fragancia cotidiana con un aire distintivo. Su fecha de vencimiento en abril de 2026 garantiza su durabilidad y calidad. Perfecta para quienes prefieren aromas clásicos con un toque tropical.",
         "disponibilidad": true
       },
       {
-        "nombre": "Pollo Golden Phoenix",
+        "nombre": "Pollo Golden Phoenix (2kg)",
         "categoria": "Carnes",
         "precio": 1650,
         "descuento": 10,
@@ -74,7 +146,7 @@
       },
       {
         "nombre": "Galletas Petit Beurre",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 220,
         "descuento": 10,
         "mas_vendido": false,
@@ -98,7 +170,7 @@
       },
       {
         "nombre": "Galletas de soda Goya",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 4800,
         "descuento": 10,
         "mas_vendido": false,
@@ -122,7 +194,7 @@
       },
       {
         "nombre": "Galletas Luanesco (Fresa) (115g)",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 220,
         "descuento": 10,
         "mas_vendido": false,
@@ -134,7 +206,7 @@
       },
       {
         "nombre": "Galletas Luanesco (Vainilla) (115g)",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 220,
         "descuento": 10,
         "mas_vendido": false,
@@ -145,8 +217,8 @@
         "disponibilidad": true
       },
       {
-        "nombre": "Choco Stick Bon o Bon",
-        "categoria": "Snacks",
+        "nombre": "Barra de Chocolate Bon o Bon",
+        "categoria": "Confituras",
         "precio": 150,
         "descuento": 10,
         "mas_vendido": false,
@@ -158,7 +230,7 @@
       },
       {
         "nombre": "Galletas Wafer",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 270,
         "descuento": 10,
         "mas_vendido": false,
@@ -170,7 +242,7 @@
       },
       {
         "nombre": "Galletas Cremelo (Vainilla)",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 60,
         "descuento": 10,
         "mas_vendido": false,
@@ -182,7 +254,7 @@
       },
       {
         "nombre": "Galletas Cremelo (Fresa)",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 60,
         "descuento": 10,
         "mas_vendido": false,
@@ -194,7 +266,7 @@
       },
       {
         "nombre": "Galletas Cremelo (Chocolate)",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 60,
         "descuento": 10,
         "mas_vendido": false,
@@ -206,7 +278,7 @@
       },
       {
         "nombre": "Galletas Renata (Vainilla)",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 220,
         "descuento": 10,
         "mas_vendido": false,
@@ -218,7 +290,7 @@
       },
       {
         "nombre": "Galletas Renata (Chocolate)",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 220,
         "descuento": 10,
         "mas_vendido": false,
@@ -230,7 +302,7 @@
       },
       {
         "nombre": "Galletas Luanitos de Fresa",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 220,
         "descuento": 10,
         "mas_vendido": false,
@@ -301,15 +373,17 @@
         "disponibilidad": true
       },
       {
-        "nombre": "Paquete de Arroz (1 kg)",
+        "nombre": "Paquete de Arroz (1kg)",
         "categoria": "Despensa",
-        "precio": 750,
-        "descuento": 10,
+        "precio": 700,
+        "descuento": 0,
         "mas_vendido": false,
         "nuevo": true,
         "oferta": false,
-        "imagenes": ["arroz_1kg.jpg"],
-        "descripcion": "Optimiza tus comidas diarias con este paquete de 1 kg de Energy Long Grain White Rice. Este arroz de grano largo es un alimento básico versátil y esencial para cualquier despensa, perfecto para preparar una amplia variedad de platos. Su calidad superior asegura una textura suave y un sabor consistente, convirtiéndolo en el acompañamiento ideal para tus recetas favoritas.",
+        "imagenes": [
+          "arroz_1kg.jpg"
+        ],
+        "descripcion": "Disfruta de la calidad del Arroz Branco Rainha Brasil, en un paquete de 1kg. Este arroz de grano largo y fino es ideal para todas tus recetas, garantizando una cocción perfecta y un sabor delicioso. Es 100% granos nobles, no precisa lavar ni escurrir. Un básico esencial en tu cocina para acompañar tus platillos favoritos.",
         "disponibilidad": true
       },
       {
@@ -337,7 +411,7 @@
         "disponibilidad": true
       },
       {
-        "nombre": "Spaghetti Belina",
+        "nombre": "Spagueti Belina",
         "categoria": "Despensa",
         "precio":350,
         "descuento": 10,
@@ -398,7 +472,7 @@
       },
       {
         "nombre": "Galletas Bora Bora (Chocolate)",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 170,
         "descuento": 10,
         "mas_vendido": false,
@@ -410,7 +484,7 @@
       },
       {
         "nombre": "Galletas Bora Bora (Fresa)",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 170,
         "descuento": 10,
         "mas_vendido": false,
@@ -422,7 +496,7 @@
       },
       {
         "nombre": "Galletas Bora Bora (Vainilla)",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 170,
         "descuento": 10,
         "mas_vendido": false,
@@ -434,7 +508,7 @@
       },
       {
         "nombre": "Sorbeto Renata (Chocolate)",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 300,
         "descuento": 10,
         "mas_vendido": false,
@@ -446,7 +520,7 @@
       },
       {
         "nombre": "Sorbeto Renata (Fresa)",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 300,
         "descuento": 10,
         "mas_vendido": false,
@@ -458,7 +532,7 @@
       },
       {
         "nombre": "Sorbeto Renata (Limón)",
-        "categoria": "Snacks",
+        "categoria": "Confituras",
         "precio": 300,
         "descuento": 10,
         "mas_vendido": false,
