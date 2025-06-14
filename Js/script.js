@@ -128,12 +128,12 @@ function getCategoryIcon(category) {
         'postres': 'cookie-bite',
         'frutas': 'apple-alt',
         'verduras': 'carrot',
-        'carnes': 'drumstick-bite',
+        'cárnicos': 'drumstick-bite',
         'pescado': 'fish',
         'panadería': 'bread-slice',
         'lácteos': 'cheese',
         'cafetería': 'coffee',
-        'rápida': 'hamburger',
+        'embutidos': 'hamburger',
         'despensa': 'shopping-basket',
         'confituras': 'pizza-slice'
     };
