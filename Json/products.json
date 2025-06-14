@@ -1,20 +1,8 @@
 {
     "products": [
       {
-        "nombre": "Ketchup Dino Food",
-        "categoria": "Despensa",
-        "precio": 900,
-        "descuento": 20,
-        "mas_vendido": false,
-        "nuevo": true,
-        "oferta": false,
-        "imagenes": ["ketchup_dino_food.jpg"],
-        "descripcion": "El ketchup Dino Food, con su fórmula sin gluten y sistema antigoteo, es una opción perfecta para quienes buscan sabor y practicidad en cada comida. Con cada porción de 17 g, aporta 93 kJ (22 kcal), lo que lo convierte en un complemento ligero para tus platillos favoritos. Su textura suave y el toque delicioso realzan cualquier receta, mientras su práctico envase evita derrames. Ideal para quienes desean disfrutar de un condimento versátil y de calidad.",
-        "disponibilidad": true
-      },
-      {
         "nombre": "Paquete de salchichas (350g) 7u",
-        "categoria": "Carnes",
+        "categoria": "Embutidos",
         "precio": 400,
         "descuento": 0,
         "mas_vendido": false,
@@ -28,7 +16,7 @@
       },
       {
         "nombre": "Mollejas de Pollo (1kg)",
-        "categoria": "Carnes",
+        "categoria": "Cárnicos",
         "precio": 1300,
         "descuento": 0,
         "mas_vendido": false,
@@ -42,7 +30,7 @@
       },
       {
         "nombre": "Hígado de Pollo (1kg)",
-        "categoria": "Carnes",
+        "categoria": "Cárnicos",
         "precio": 1200,
         "descuento": 0,
         "mas_vendido": false,
@@ -70,7 +58,7 @@
       },
       {
         "nombre": "Jamón Bravo Rápido (2kg)",
-        "categoria": "Carnes",
+        "categoria": "Embutidos",
         "precio": 7200,
         "descuento": 0,
         "mas_vendido": false,
@@ -79,7 +67,7 @@
         "imagenes": [
           "jamon_bravo_rapido.jpg"
         ],
-        "descripcion": "Disfruta del auténtico sabor del Jamón Bravo Rápido, presentado en una pieza de 2kg. Este jamón es ideal para tus sándwiches, ensaladas, o como ingrediente en tus platillos favoritos. Su textura y sabor lo hacen perfecto para cualquier ocasión, brindando practicidad y calidad a tu mesa. Bravo es sinónimo de tradición y buen gusto en carnes frías. ¡Ten siempre a mano esta deliciosa opción!",
+        "descripcion": "Disfruta del auténtico sabor del Jamón Bravo Rápido, presentado en una pieza de 2kg. Este jamón es ideal para tus sándwiches, ensaladas, o como ingrediente en tus platillos favoritos. Su textura y sabor lo hacen perfecto para cualquier ocasión, brindando practicidad y calidad a tu mesa. Bravo es sinónimo de tradición y buen gusto en Cárnicos frías. ¡Ten siempre a mano esta deliciosa opción!",
         "disponibilidad": true
       },
       {
@@ -122,7 +110,7 @@
       },
       {
         "nombre": "Pollo Golden Phoenix (2kg)",
-        "categoria": "Carnes",
+        "categoria": "Cárnicos",
         "precio": 1650,
         "descuento": 10,
         "mas_vendido": false,
@@ -133,8 +121,8 @@
         "disponibilidad": true
       },
       {
-        "nombre": "Pollo Gold Leaf (4.53kg)",
-        "categoria": "Carnes",
+        "nombre": "Pollo Gold Leaf (10lb)",
+        "categoria": "Cárnicos",
         "precio": 3700,
         "descuento": 10,
         "mas_vendido": false,
@@ -166,18 +154,6 @@
         "oferta": false,
         "imagenes": ["frijoles_rojos.jpg"],
         "descripcion": "Paquete de frijoles rojos de la marca La Cata. El paquete tiene un peso de 500 gramos.",
-        "disponibilidad": true
-      },
-      {
-        "nombre": "Galletas de soda Goya",
-        "categoria": "Confituras",
-        "precio": 4800,
-        "descuento": 10,
-        "mas_vendido": false,
-        "nuevo": true,
-        "oferta": false,
-        "imagenes": ["galletas_soda.jpg"],
-        "descripcion": "Las galletas de soda Goya ofrecen una combinación perfecta de textura crujiente y sabor ligero, ideales como snack o acompañamiento para sopas y ensaladas. Su presentación en lata resistente de 680 gramos garantiza una conservación óptima, manteniendo la frescura por más tiempo. Su etiqueta bilingüe facilita la accesibilidad para distintos mercados, mientras que su diseño atractivo complementa la experiencia del cliente. Este producto es una excelente opción para quienes buscan calidad y versatilidad en alimentos básicos, asegurando una compra práctica y deliciosa para cualquier ocasión.",
         "disponibilidad": true
       },
       {
@@ -217,7 +193,7 @@
         "disponibilidad": true
       },
       {
-        "nombre": "Barra de Chocolate Bon o Bon",
+        "nombre": "Sorbeto de Chocolate Bon o Bon",
         "categoria": "Confituras",
         "precio": 150,
         "descuento": 10,
@@ -229,7 +205,7 @@
         "disponibilidad": true
       },
       {
-        "nombre": "Galletas Wafer",
+        "nombre": "Sorbeto de Frutos Secos",
         "categoria": "Confituras",
         "precio": 270,
         "descuento": 10,
@@ -640,7 +616,7 @@
       },
       {
         "nombre": "Mortadella de pollo 1kg",
-        "categoria": "Carnes",
+        "categoria": "Embutidos",
         "precio": 1500,
         "descuento": 10,
         "mas_vendido": false,
@@ -652,7 +628,7 @@
       },
       {
         "nombre": "Salchichas de Pollo",
-        "categoria": "Carnes",
+        "categoria": "Embutidos",
         "precio": 450,
         "descuento": 10,
         "mas_vendido": false,
