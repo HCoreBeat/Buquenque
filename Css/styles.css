@@ -2402,7 +2402,7 @@ body.sidebar-open {
 
 .confirmation-icon {
     font-size: 4.5rem;
-    color: var(--color-principal);
+    color: var(--color-principal-pastel);
     margin-bottom: 1.5rem;
     animation: bounceIn 0.6s ease-out;
 }
@@ -2442,7 +2442,7 @@ body.sidebar-open {
 }
 
 .contact-info i {
-    color: var(--color-principal);
+    color: var(--color-principal-pastel);
     width: 20px;
 }
 
