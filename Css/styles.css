@@ -960,7 +960,7 @@ body.sidebar-open {
 }
 
 .add-to-cart-btn {
-    background: var(--color-principal);
+    background: var(--color-principal-pastel);
     color: var(--negro);
     border: none;
     border-radius: 6px;
@@ -1300,8 +1300,8 @@ body.sidebar-open {
 
 .back-btn {
     background-color: transparent;
-    color: var(--color-principal);
-    border: 2px solid var(--color-principal);
+    color: var(--color-principal-pastel);
+    border: 2px solid var(--color-principal-pastel);
     padding: 0.85rem 1.75rem;
     border-radius: var(--borde-radius);
     font-weight: 600;
@@ -3149,4 +3149,20 @@ body.sidebar-open {
 /* Estilos adicionales para el header oculto */
 .header.header-hidden {
     transform: translateY(-100%); /* Mueve el header completamente hacia arriba */
+}
+
+.delivery-info{
+    background:#f8f9fa;
+    border-left:4px solid var(--rojo-oscuro);
+    padding:12px 16px;
+    margin:18px 0 10px 0;
+    border-radius:4px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.delivery-info i {
+    color: var(--rojo-oscuro);
+    font-size: 1.5rem;
 }
