@@ -697,6 +697,13 @@ function showProductDetail(productName) {
                         <span class="price-current">${finalPrice} cup</span>
                     `}
                 </div>
+
+                <!-- AVISO DE COSTO DE DOMICILIO -->
+                <div class="delivery-info">
+                    <i class="fas fa-truck"></i>
+                    <span style="font-size:1em;color:#333;">El costo del domicilio varía según la distancia de la entrega.</span>
+                </div>
+                <!-- FIN AVISO DOMICILIO -->
                 
                 <div class="quantity-section">
                     <label class="quantity-label">Cantidad:</label>
@@ -1225,7 +1232,7 @@ document.addEventListener('click', (e) => {
 });
 
 /**
- * Abre WhatsApp con mensaje predeterminado
+ * Abre WhatsApp with mensaje predeterminado
  */
 function openWhatsApp() {
     const phoneNumber = '+5355543772';
