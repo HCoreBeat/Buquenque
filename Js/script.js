@@ -1272,6 +1272,3 @@ window.addEventListener('scroll', () => {
 
 // Inicialización
 document.addEventListener('DOMContentLoaded', loadProducts);
-
-
-,
