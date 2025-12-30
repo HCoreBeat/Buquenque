@@ -1,0 +1,163 @@
+/* ========== CARRUSEL DE BANNERS ========== */
+
+/* Contenedor del Carrusel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 2rem;
+    height: 350px;
+}
+
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/* Slides del Carrusel */
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Overlay de Texto */
+.carousel-text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(44, 44, 44, 0.25) 0%, rgba(44, 44, 44, 0.1) 50%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    z-index: 15;
+}
+
+/* Texto del Carrusel */
+.carousel-title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.carousel-subtitle {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Animaciones de Texto - Mejoradas */
+.carousel-slide.active .animate-text {
+    animation: slideInUpFade 0.85s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s both;
+}
+
+.carousel-slide.active .animate-text-delay {
+    animation: slideInUpFade 0.85s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s both;
+}
+
+/* Botones de Navegación */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.85);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 1.2rem;
+    color: var(--color-principal);
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-btn-prev {
+    left: 20px;
+}
+
+.carousel-btn-next {
+    right: 20px;
+}
+
+/* Indicadores de Slides */
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 20;
+}
+
+.carousel-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicator.active {
+    background: rgba(255, 255, 255, 0.95);
+    width: 32px;
+    border-radius: 6px;
+}
+
+.carousel-indicator:hover {
+    border-color: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.7);
+}

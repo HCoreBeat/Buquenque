@@ -1,0 +1,249 @@
+/* ========== HEADER Y NAVEGACIÓN ========== */
+
+/* Header mejorado */
+.header {
+    display: flex;
+    flex-direction: column;
+    background: var(--negro);
+    color: var(--negro);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease-in-out;
+    border-bottom: 2px solid var(--gris-claro);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: relative;
+    order: 1;
+    flex-wrap: wrap;
+}
+
+/* Menú hamburguesa mejorado */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--melocoton-pastel);
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: none;
+    z-index: 1001;
+    transition: var(--transicion);
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle:hover {
+    background-color: var(--gris-claro);
+    color: var(--color-principal-pastel);
+}
+
+/* Logo mejorado */
+.logo {
+    cursor: pointer;
+    transition: var(--transicion);
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+/* Logo como imagen */
+.logo-img {
+    height: 50px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    transition: var(--transicion-lenta);
+}
+
+.logo-img:hover {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15)) brightness(1.05);
+    transform: scale(1.03);
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-principal);
+    transition: var(--transicion);
+}
+
+.logo:hover {
+    color: var(--blanco);
+}
+
+.logo:hover::after {
+    width: 100%;
+}
+
+/* Carrito mejorado */
+.cart-btn {
+    background-color: transparent;
+    color: var(--melocoton-pastel);
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    padding: 0.5rem;
+    transition: var(--transicion);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.cart-btn:hover {
+    background-color: var(--gris-claro);
+    color: var(--color-principal-pastel);
+}
+
+#cart-count {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background: var(--rojo-oscuro);
+    color: var(--blanco);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid var(--blanco);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra de búsqueda mejorada */
+.search-container {
+    padding: 0 1.5rem 1.25rem;
+    background: var(--negro);
+    display: flex;
+    justify-content: center;
+    order: 2;
+    width: 100%;
+}
+
+#search-input {
+    flex-grow: 1;
+    max-width: 650px;
+    padding: 0.85rem 1.25rem;
+    border: 2px solid var(--gris-claro);
+    border-radius: 30px 0 0 30px;
+    font-size: 1rem;
+    outline: none;
+    background-color: var(--blanco);
+    color: var(--negro);
+    transition: var(--transicion);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#search-input::placeholder {
+    color: var(--gris-medio);
+}
+
+#search-input:focus {
+    border-color: var(--color-principal-pastel);
+    box-shadow: 0 2px 8px rgba(255, 182, 182, 0.15);
+}
+
+.search-btn {
+    background: linear-gradient(135deg, var(--color-principal-pastel), var(--rojo-oferta));
+    color: var(--blanco);
+    border: none;
+    padding: 0 1.75rem;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    transition: var(--transicion);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.search-btn:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+/* Categorías mejoradas */
+.categories-nav {
+    display: none;
+    background: linear-gradient(135deg, #FAFAFA 0%, #F3F4F6 100%);
+    border-top: 1px solid var(--gris-claro);
+    border-bottom: 1px solid var(--gris-claro);
+    order: 3;
+    width: 100%;
+}
+
+.categories-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1.25rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.categories-list li {
+    color: var(--negro);
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--borde-radius);
+    transition: var(--transicion);
+    font-weight: 500;
+    white-space: nowrap;
+    font-size: 0.95rem;
+    position: relative;
+    background: transparent;
+}
+
+.categories-list li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-principal-pastel), var(--rojo-oferta));
+    transition: var(--transicion);
+    transform: translateX(-50%);
+}
+
+.categories-list li:hover {
+    color: var(--color-principal-pastel);
+    background-color: rgba(255, 182, 182, 0.08);
+}
+
+.categories-list li:hover::after {
+    width: calc(100% - 2rem);
+}
+
+/* Estilos adicionales para el header oculto */
+.header.header-hidden {
+    transform: translateY(-100%);
+}

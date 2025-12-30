@@ -1,18 +1,42 @@
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-let products = [];
-let currentProduct = null;
-let categories = [];
+/**
+ * ========== SCRIPT PRINCIPAL - ORCHESTRACIÓN ==========
+ * Carga todos los módulos e inicializa la aplicación
+ * Version: 2.5
+ * 
+ * ORDEN DE CARGA CRÍTICO:
+ * 1. 1-config-security.js (setup BuquenqueApp)
+ * 2. 2-carousel.js (depende de BuquenqueApp)
+ * 3. 3-products.js (depende de BuquenqueApp)
+ * 4. 4-cart.js (depende de BuquenqueApp y módulos previos)
+ * 5. 5-ui-navigation.js (depende de todos los anteriores)
+ * 6. 6-utilities.js (depende de módulos previos)
+ * 7. 7-router.js (depende de todos los anteriores)
+ * 8. Este archivo (script.js) - Inicialización final
+ */
 
-// ========== VARIABLES DEL CARRUSEL ==========
-let currentSlide = 0;
-let carouselAutoplayInterval = null;
-const CAROUSEL_AUTOPLAY_DELAY = 5000; // 5 segundos
+'use strict';
 
-// Función para ir al inicio
-function goToHome() {
-    window.location.hash = '';
-    hideProductDetail();
-    renderProducts();
+// Verificar que todos los módulos estén cargados
+function verifyModulesLoaded() {
+    const modules = [
+        'BuquenqueApp',
+        'CarouselModule',
+        'ProductsModule',
+        'CartModule',
+        'UIModule',
+        'UtilitiesModule',
+        'RouterModule'
+    ];
+
+    const missing = modules.filter(module => typeof window[module] === 'undefined');
+
+    if (missing.length > 0) {
+        console.error('❌ Módulos faltantes:', missing);
+        throw new Error(`Módulos no cargados: ${missing.join(', ')}`);
+    }
+
+    console.log('✅ Todos los módulos cargados correctamente');
+    return true;
 }
 
 // Manejo del historial con hash

@@ -18,7 +18,19 @@
     <link rel="icon" type="image/png" href="Images/favicon.png">
     <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
 
-    <link rel="stylesheet" href="Css/styles.css">
+    <!-- CSS Modular -->
+    <link rel="stylesheet" href="Css/1-variables-reset.css">
+    <link rel="stylesheet" href="Css/2-header-navbar.css">
+    <link rel="stylesheet" href="Css/3-sidebar-filters.css">
+    <link rel="stylesheet" href="Css/4-products-grid-cards.css">
+    <link rel="stylesheet" href="Css/5-cart-sidebar.css">
+    <link rel="stylesheet" href="Css/6-product-detail.css">
+    <link rel="stylesheet" href="Css/7-payment.css">
+    <link rel="stylesheet" href="Css/8-carousel.css">
+    <link rel="stylesheet" href="Css/9-components.css">
+    <link rel="stylesheet" href="Css/10-animations-utilities.css">
+    <link rel="stylesheet" href="Css/11-responsive.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <base href="./">
 </head>
@@ -79,7 +91,7 @@
             </button>
             
             <!-- Logo -->
-            <h1 class="logo" onclick="goToHome()">BUQUENQUE</h1>
+            <img src="Images/LOGO.png" alt="Buquenque Logo" class="logo logo-img" onclick="goToHome()">
             
             <!-- Barra de búsqueda -->
             <div class="search-container">
@@ -104,8 +116,51 @@
         </nav>
     </header>
 
-    <div class="banner-container">
-        <img src="Images/banner.jpg" alt="Ofertas Especiales" class="banner-image">
+    <!-- Carrusel de Banners -->
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active" data-slide="0">
+                <img src="Images/Banner_1.jpg" alt="Banner 1" class="carousel-image">
+                <div class="carousel-text-overlay">
+                    <h2 class="carousel-title animate-text">Prueba Buquenque.</h2>
+                    <p class="carousel-subtitle animate-text-delay">Explora sus sabores.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide" data-slide="1">
+                <img src="Images/Banner_2.jpg" alt="Banner 2" class="carousel-image">
+                <div class="carousel-text-overlay">
+                    <h2 class="carousel-title animate-text">Comer bien nunca</h2>
+                    <p class="carousel-subtitle animate-text-delay">fue tan fácil.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide" data-slide="2">
+                <img src="Images/Banner_3.jpg" alt="Banner 3" class="carousel-image">
+                <div class="carousel-text-overlay">
+                    <h2 class="carousel-title animate-text">Comida rápida,</h2>
+                    <p class="carousel-subtitle animate-text-delay">compra inteligente.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones de navegación -->
+        <button class="carousel-btn carousel-btn-prev" id="carousel-prev" aria-label="Slide anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn carousel-btn-next" id="carousel-next" aria-label="Siguiente slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <!-- Indicadores de slides -->
+        <div class="carousel-indicators">
+            <button class="carousel-indicator active" data-slide="0" aria-label="Ir al slide 1"></button>
+            <button class="carousel-indicator" data-slide="1" aria-label="Ir al slide 2"></button>
+            <button class="carousel-indicator" data-slide="2" aria-label="Ir al slide 3"></button>
+        </div>
     </div>
 
     <main id="main-content">

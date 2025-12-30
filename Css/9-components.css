@@ -1,0 +1,209 @@
+/* ========== COMPONENTES - MODALES, NOTIFICACIONES, FOOTER ========== */
+
+/* Modal de confirmación de pedido */
+.order-confirmation-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(44, 44, 44, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 5000;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    backdrop-filter: blur(5px);
+}
+
+.order-confirmation-modal.active {
+    opacity: 1;
+}
+
+.order-confirmation-content {
+    background-color: var(--blanco);
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    transform: translateY(20px);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.confirmation-icon {
+    font-size: 4.5rem;
+    color: var(--color-principal-pastel);
+    margin-bottom: 1.5rem;
+    animation: bounceIn 0.6s ease-out;
+}
+
+.order-confirmation-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--negro);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.confirmation-message {
+    color: var(--gris-medio);
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+.contact-info {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: rgba(212, 175, 55, 0.05);
+    border-radius: 8px;
+    border-left: 3px solid var(--color-principal);
+}
+
+.contact-info p {
+    margin: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    color: var(--gris-oscuro);
+    font-size: 0.95rem;
+}
+
+.contact-info i {
+    color: var(--color-principal-pastel);
+    width: 20px;
+}
+
+.back-to-home-btn {
+    background-color: var(--color-principal);
+    color: var(--negro);
+    border: none;
+    padding: 0.9rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    max-width: 220px;
+    justify-content: center;
+}
+
+.back-to-home-btn:hover {
+    background-color: var(--color-principal-pastel);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+/* Notificaciones del carrito */
+.cart-notification {
+    background: #ff3535;
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--negro);
+    padding: 1.1rem 2.2rem;
+    border-radius: var(--borde-radius);
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 3001;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.cart-notification.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(to right, var(--negro), var(--negro-claro));
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 100%;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-version {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.footer-text {
+    font-size: 14px;
+    opacity: 0.85;
+    letter-spacing: 0.5px;
+}
+
+/* Botón flotante WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    z-index: 999;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-icon {
+    width: 36px;
+    height: 36px;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.whatsapp-tooltip {
+    position: absolute;
+    right: 70px;
+    background: #075E54;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+    opacity: 1;
+}
