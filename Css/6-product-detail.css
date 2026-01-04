@@ -4,7 +4,6 @@
 .product-detail {
     background-color: white;
     padding: 2rem;
-    margin: 1.5rem auto;
     max-width: 1200px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
@@ -43,7 +42,7 @@
 }
 
 .detail-badge.mas-vendido {
-    background: var(--verde-mas-vendido);
+    background: var(--rojo-mas-vendido);
 }
 
 /* Container del detalle */
@@ -179,7 +178,8 @@
     font-weight: 700;
     color: var(--negro);
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    gap: 0.3rem;
 }
 
 .price-original {
@@ -187,12 +187,18 @@
     color: var(--gris-medio);
     text-decoration: line-through;
     margin-right: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
 }
 
 .price-save {
     font-size: 1rem;
     color: var(--rojo-oferta);
     margin-top: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
 }
 
 /* Cantidad */
@@ -285,8 +291,8 @@
 
 /* Botón de agregar al carrito */
 .add-to-cart-btn {
-    background: var(--color-principal-pastel);
-    color: var(--negro);
+    background: var(--rojo-mas-vendido);
+    color: var(--blanco);
     border: none;
     border-radius: 6px;
     padding: 0.9rem;

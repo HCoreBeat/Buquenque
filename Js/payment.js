@@ -1,5 +1,4 @@
-const BACKEND_STATS = 'https://server-stats-buquenque-89v1.onrender.com';
-const BACKEND_CORREO = 'https://server-mail-buquenque-boy9.onrender.com';
+const BACKEND = 'https://backend-buquenque.onrender.com';
 
 document.addEventListener('DOMContentLoaded', () => {
     initializePaymentSystem();
@@ -66,7 +65,7 @@ async function gatherUserData() {
 // Función para enviar datos al backend
 async function sendStatisticsToBackend(data) {
     try {
-        const response = await fetch(`${BACKEND_STATS}/guardar-estadistica`, {
+        const response = await fetch(`${BACKEND}/guardar-estadistica`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -125,6 +124,12 @@ function showPaymentSection() {
     paymentSection.classList.add('active');
     document.body.style.overflow = 'hidden';
     createPaymentOverlay();
+    
+    // Inicializar autocompletado de datos de pago
+    if (typeof paymentAutofill !== 'undefined') {
+        paymentAutofill.initialize();
+    }
+    
     try {
         updateOrderSummary();
     } catch (error) {
@@ -207,6 +212,15 @@ async function processPayment(e) {
         const userData = await gatherUserData(); // Info de IP y país
         const affiliateInfo = getCurrentAffiliate(); // Objeto de afiliado
 
+        // Guardar datos de pago en localStorage para futuro autocompletado
+        if (typeof paymentAutofill !== 'undefined') {
+            paymentAutofill.saveData(
+                formData['full-name'],
+                formData.email,
+                formData.phone
+            );
+        }
+
         // Prepara el payload completo que se enviará al backend y luego a Apps Script
         const orderPayload = {
             ip: userData.ip,
@@ -261,10 +275,29 @@ function showOrderConfirmationModal() {
     const modal = document.getElementById('order-confirmation-modal');
     if (!modal) return;
     
+    // Generar número de referencia único
+    const orderReference = generateOrderReference();
+    const referenceElement = document.getElementById('order-reference-number');
+    if (referenceElement) {
+        referenceElement.textContent = orderReference;
+    }
+    
     modal.style.display = 'flex';
     setTimeout(() => {
         modal.classList.add('active');
     }, 10);
+}
+
+/**
+ * Genera un número de referencia único para la orden
+ */
+function generateOrderReference() {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    const random = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
+    return `#ORD-${year}${month}${day}${random}`;
 }
 
 // También necesitamos la función para cerrar el modal (ya está en el HTML pero no en el JS)
@@ -369,12 +402,12 @@ async function sendPaymentToServer(orderPayload) { // <-- Ahora recibe el payloa
     console.log('Enviando pedido a tu backend Node.js:', orderPayload);
     
     try {
-        const response = await fetch(`${BACKEND_CORREO}/send-pedido`, {
+        const response = await fetch(`${BACKEND}/send-pedido`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(orderPayload) // <-- Envía el payload completo
+            body: JSON.stringify(orderPayload)
         });
 
         if (!response.ok) {

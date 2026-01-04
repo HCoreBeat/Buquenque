@@ -3,7 +3,7 @@
 /* Main content mejorado */
 #main-content {
     flex: 1;
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.5rem;
     max-width: 1600px;
     margin: 0 auto;
     width: 100%;
@@ -80,7 +80,7 @@
 }
 
 .badge.mas-vendido {
-    background-color: var(--verde-mas-vendido);
+    background-color: var(--rojo-mas-vendido);
 }
 
 .badge.destacado {
@@ -178,6 +178,9 @@
     font-size: calc(var(--price-font) - 0.2rem);
     color: var(--gris-medio);
     text-decoration: line-through;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
 } 
 
 .discount-percent {
@@ -193,13 +196,9 @@
     font-size: var(--price-font);
     font-weight: 700;
     color: var(--negro);
-}
-
-.current-price .currency {
-    font-size: 0.85rem;
-    position: relative;
-    top: 0.15em;
-    margin-right: 0.15em;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
 }
 
 /* Información adicional */

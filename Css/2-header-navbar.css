@@ -28,7 +28,7 @@
 .menu-toggle {
     background: none;
     border: none;
-    color: var(--melocoton-pastel);
+    color: var(--rojo-oferta);
     font-size: 1.6rem;
     cursor: pointer;
     padding: 0.5rem;
@@ -96,7 +96,7 @@
 /* Carrito mejorado */
 .cart-btn {
     background-color: transparent;
-    color: var(--melocoton-pastel);
+    color: var(--rojo-oferta);
     border: none;
     font-size: 1.6rem;
     cursor: pointer;
@@ -113,8 +113,8 @@
 }
 
 .cart-btn:hover {
-    background-color: var(--gris-claro);
-    color: var(--color-principal-pastel);
+    background-color: var(--rojo-oscuro);
+    color: var(--gris-claro);
 }
 
 #cart-count {
@@ -148,9 +148,9 @@
 #search-input {
     flex-grow: 1;
     max-width: 650px;
-    padding: 0.85rem 1.25rem;
+    padding: 0.55rem 1.25rem;
+    border-radius: 5px 0 0 5px;
     border: 2px solid var(--gris-claro);
-    border-radius: 30px 0 0 30px;
     font-size: 1rem;
     outline: none;
     background-color: var(--blanco);
@@ -172,8 +172,8 @@
     background: linear-gradient(135deg, var(--color-principal-pastel), var(--rojo-oferta));
     color: var(--blanco);
     border: none;
+    border-radius: 0 5px 5px 0;
     padding: 0 1.75rem;
-    border-radius: 0 30px 30px 0;
     cursor: pointer;
     transition: var(--transicion);
     font-size: 1.1rem;
@@ -235,7 +235,7 @@
 }
 
 .categories-list li:hover {
-    color: var(--color-principal-pastel);
+    color: var(--rojo-oferta);
     background-color: rgba(255, 182, 182, 0.08);
 }
 

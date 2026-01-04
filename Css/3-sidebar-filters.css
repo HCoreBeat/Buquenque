@@ -97,7 +97,7 @@
 }
 
 .sidebar-categories li i {
-    color: var(--color-principal-pastel);
+    color: var(--rojo-mas-vendido);
     font-size: 0.8rem;
     width: 20px;
     text-align: center;
@@ -183,7 +183,7 @@
 .price-slider {
     position: relative;
     height: 4px;
-    background: #e0e0e0;
+    background: var(--rojo-mas-vendido);
     border-radius: 2px;
     margin-bottom: 1.5rem;
 }

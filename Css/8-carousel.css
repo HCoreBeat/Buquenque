@@ -5,10 +5,22 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    border-radius: 0 0 30px 30px;
     margin-bottom: 2rem;
-    height: 350px;
+    height: 450px;
 }
+
+.carousel-container::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 150px; /* Ajusta según qué tan alto quieres el degradado */
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 60%, #fafafa 100%);
+    z-index: 25; /* Debe estar por encima de la imagen pero debajo del texto si quieres */
+}
+
 
 .carousel-wrapper {
     position: relative;
@@ -54,7 +66,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     padding: 2rem;
     z-index: 15;
@@ -94,9 +106,9 @@
 /* Botones de Navegación */
 .carousel-btn {
     position: absolute;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.25);
     border: none;
     width: 50px;
     height: 50px;
@@ -133,7 +145,7 @@
 /* Indicadores de Slides */
 .carousel-indicators {
     position: absolute;
-    bottom: 20px;
+    bottom: 30%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

@@ -29,6 +29,7 @@ function handleRouteChange() {
 }
 
 const bannerContainer = document.querySelector('.carousel-container'); // <-- Nueva referencia al carrusel
+const bestSellersSection = document.querySelector('.best-sellers-section'); // <-- Referencia a best-sellers
 
 // ========== FUNCIONES DEL CARRUSEL ==========
 
@@ -185,6 +186,7 @@ async function loadProducts() {
         renderCategories();
         initPriceFilter();
         renderProducts();
+        renderBestSellers();
         updateCartCount();
         updateCart();
         
@@ -344,6 +346,7 @@ function initPriceFilter() {
         });
         
         renderProducts(filteredProducts);
+        renderBestSellers();
         closeSidebar();
     }
 }
@@ -370,6 +373,7 @@ function filterByCategory(category) {
         : products.filter(product => product.categoria === category);
     
     renderProducts(filteredProducts);
+    renderBestSellers();
     
     // Cerrar sidebar en móvil
     if (window.innerWidth <= 768) {
@@ -394,6 +398,7 @@ function searchProducts() {
     
     if (!searchTerm) {
         renderProducts();
+        renderBestSellers();
         hideNoResultsMessage();
         return;
     }
@@ -406,6 +411,7 @@ function searchProducts() {
     
     if (filteredProducts.length > 0) {
         renderProducts(filteredProducts);
+        renderBestSellers();
         hideNoResultsMessage();
     } else {
         productsContainer.innerHTML = '';
@@ -597,10 +603,10 @@ function renderProducts(productsToRender = products) {
                 
                 <div class="price-container">
                     ${isOnSale ? `
-                        <span class="original-price">${displayProduct.precio.toFixed(2)}cup</span>
+                        <span class="original-price">${displayProduct.precio.toFixed(2)}<img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></span>
                         <span class="discount-percent">-${displayProduct.descuento}%</span>
                     ` : ''}
-                    <span class="current-price">${finalPrice} cup</span>
+                    <span class="current-price">${finalPrice} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></span>
                 </div>
                 
                 <div class="quantity-section">
@@ -650,6 +656,71 @@ function changeProductVariant(thumbElement, baseName, variantIndex, event) {
     });
 }
 
+/**
+ * Renderiza los productos más vendidos en una sección horizontal con scroll
+ */
+function renderBestSellers() {
+    const bestSellersScroll = document.getElementById('best-sellers-scroll');
+    
+    if (!bestSellersScroll) return;
+    
+    // Filtrar solo productos con mas_vendido: true
+    const bestSellers = products.filter(product => product.mas_vendido === true);
+    
+    // Si no hay productos, ocultar la sección
+    if (bestSellers.length === 0) {
+        document.querySelector('.best-sellers-section').style.display = 'none';
+        return;
+    }
+    
+    // Limpiar el contenedor
+    bestSellersScroll.innerHTML = '';
+    
+    // Crear cards para cada producto más vendido
+    bestSellers.forEach(product => {
+        const displayProduct = product.isGrouped ? product.variants[product.currentVariant] : product;
+        const isOnSale = displayProduct.oferta && displayProduct.descuento > 0;
+        const finalPrice = isOnSale 
+            ? (displayProduct.precio * (1 - displayProduct.descuento / 100)).toFixed(2)
+            : displayProduct.precio.toFixed(2);
+        
+        const card = document.createElement('div');
+        card.className = 'best-seller-card';
+        card.onclick = () => showProductDetail(encodeURIComponent(displayProduct.nombre));
+        
+        card.innerHTML = `
+            <div class="best-seller-image-container">
+                <span class="best-seller-badge">
+                    <i class="fas fa-fire"></i> TOP
+                </span>
+                <img src="Images/products/${displayProduct.imagenes[0]}" 
+                     class="best-seller-image" 
+                     alt="${displayProduct.nombre}">
+            </div>
+            
+            <div class="best-seller-info">
+                <div class="best-seller-category">
+                    ${displayProduct.categoria}
+                </div>
+                
+                <h3 class="best-seller-title">
+                    ${displayProduct.nombre}
+                </h3>
+                
+                <div class="best-seller-price">
+                    ${isOnSale ? `
+                        <span class="best-seller-price-original">${displayProduct.precio.toFixed(2)} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-xs"></span>
+                        <span class="best-seller-discount">-${displayProduct.descuento}%</span>
+                    ` : ''}
+                    <span class="best-seller-price-current">${finalPrice} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-xs"></span>
+                </div>
+            </div>
+        `;
+        
+        bestSellersScroll.appendChild(card);
+    });
+}
+
 // Mostrar detalle del producto con precios corregidos
 function showProductDetail(productName) {
     window.scrollTo({top: 0});
@@ -658,6 +729,11 @@ function showProductDetail(productName) {
     // Ocultar el banner al entrar al detalle del producto
     if (bannerContainer) {
         bannerContainer.style.display = 'none'; // <-- OCULTA EL BANNER
+    }
+
+    // Ocultar la sección de best-sellers al entrar al detalle del producto
+    if (bestSellersSection) {
+        bestSellersSection.style.display = 'none'; // <-- OCULTA LOS BEST-SELLERS
     }
     
     // Buscar el producto principal
@@ -761,10 +837,10 @@ function showProductDetail(productName) {
                                 </h4>
                                 <div class="suggested-price">
                                     ${isOnSaleSuggested ? `
-                                        <span class="original-price">${suggested.precio.toFixed(2)} cup</span>
-                                        <span class="current-price">${finalPriceSuggested} cup</span>
+                                        <span class="original-price">${suggested.precio.toFixed(2)} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></span>
+                                        <span class="current-price">${finalPriceSuggested} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></span>
                                     ` : `
-                                        <span class="current-price">${finalPriceSuggested} cup</span>
+                                        <span class="current-price">${finalPriceSuggested} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></span>
                                     `}
                                 </div>
                                 <button class="add-to-cart-mini" onclick="addToCart('${suggested.nombre}', false, event)">
@@ -794,13 +870,13 @@ function showProductDetail(productName) {
                 <div class="price-section">
                     ${isOnSale ? `
                         <div class="price-with-discount">
-                            <span class="price-original">${product.precio.toFixed(2)} cup</span>
+                            <span class="price-original">${product.precio.toFixed(2)} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-lg"></span>
                             <span class="discount-percent">-${product.descuento}%</span>
                         </div>
-                        <span class="price-current">${finalPrice} cup</span>
-                        <div class="price-save">Ahorras ${priceSave} cup</div>
+                        <span class="price-current">${finalPrice} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-lg"></span>
+                        <div class="price-save">Ahorras ${priceSave} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></div>
                     ` : `
-                        <span class="price-current">${finalPrice} cup</span>
+                        <span class="price-current">${finalPrice} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-lg"></span>
                     `}
                 </div>
 
@@ -1070,6 +1146,11 @@ function hideProductDetail() {
     // Mostrar el banner cuando se vuelve a la página principal
     if (bannerContainer) {
         bannerContainer.style.display = 'block'; // <-- MUESTRA EL BANNER
+    }
+
+    // Mostrar la sección de best-sellers cuando se vuelve a la página principal
+    if (bestSellersSection) {
+        bestSellersSection.style.display = 'block'; // <-- MUESTRA LOS BEST-SELLERS
     }
     
     if (detailContainer) {
@@ -1341,7 +1422,7 @@ document.addEventListener('click', (e) => {
  * Abre WhatsApp with mensaje predeterminado
  */
 function openWhatsApp() {
-    const phoneNumber = '+5355543772';
+    const phoneNumber = '+5355884661';
     const message = encodeURIComponent('Estoy interesado en los productos que vi en su tienda. ¿Podrían ayudarme?');
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     

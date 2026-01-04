@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="Css/9-components.css">
     <link rel="stylesheet" href="Css/10-animations-utilities.css">
     <link rel="stylesheet" href="Css/11-responsive.css">
+    <link rel="stylesheet" href="Css/12-best-sellers.css">
+    <link rel="stylesheet" href="Css/13-notifications.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <base href="./">
@@ -163,6 +165,15 @@
         </div>
     </div>
 
+    <!-- Sección de Productos Más Vendidos -->
+    <section class="best-sellers-section">
+        <div class="best-sellers-container">
+            <div class="best-sellers-scroll" id="best-sellers-scroll">
+                <!-- Cards de productos más vendidos se cargarán aquí -->
+            </div>
+        </div>
+    </section>
+
     <main id="main-content">
         <div class="products-grid" id="products-container"></div>
         <div class="product-detail" id="product-detail" style="display: none;"></div>
@@ -205,6 +216,41 @@
                 <h2><i class="fas fa-file-invoice-dollar"></i> Finalizar Compra</h2>
                 <button class="close-btn" onclick="hidePaymentSection()">×</button>
             </div>
+
+            <!-- Segmento de Información de Seguridad -->
+            <div class="security-notice-container">
+                <div class="security-notice">
+                    <div class="security-notice-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="security-notice-content">
+                        <h3 class="security-notice-title">
+                            <i class="fas fa-lock"></i> Tu Seguridad es Nuestra Prioridad
+                        </h3>
+                        <p class="security-notice-text">
+                            Esta tienda no cuenta con pasarela de pago integrada, lo que hace que tu información sea <strong>completamente segura</strong>. Tus datos de tarjeta nunca serán procesados a través de nuestro sistema ya que no necesita agregarla para proceder con la compra.
+                        </p>
+                        <p class="security-notice-text">
+                            Una vez confirmes tu pedido, nos pondremos en contacto directo contigo para coordinar los detalles de pago y la confirmación de tu compra. Trabajamos con los métodos más seguros disponibles en tu área.
+                        </p>
+                        <div class="security-features">
+                            <div class="security-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Datos seguros</span>
+                            </div>
+                            <div class="security-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Contacto personalizado</span>
+                            </div>
+                            <div class="security-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Confirmación directa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <form id="payment-form">
                 <div class="form-row">
                     <div class="form-group">
@@ -263,27 +309,71 @@
 
     <footer class="footer">
         <div class="footer-container">
-            <p class="footer-text">V2.3  © 2025 Buquenque y afiliados H.A - Todos los derechos reservados</p>
+            <p class="footer-text">V2.7.3 © 2026 Buquenque y afiliados HLab - Todos los derechos reservados</p>
         </div>
     </footer>
 
     <!-- Panel de confirmación de compra -->
     <div class="order-confirmation-modal" id="order-confirmation-modal">
         <div class="order-confirmation-content">
-            <div class="confirmation-icon">
-                <i class="fas fa-check-circle"></i>
+            <div class="confirmation-header">
+                <div class="confirmation-icon-wrapper">
+                    <div class="confirmation-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="confirmation-icon-glow"></div>
+                </div>
             </div>
-            <h2>¡Pedido Confirmado!</h2>
-            <p class="confirmation-message">Gracias por tu compra. Estamos procesando tu pedido y te contactaremos pronto.</p>
-            
-            <div class="contact-info">
-                <p><i class="fas fa-phone-alt"></i> +53 55543772</p>
-                <p><i class="fas fa-envelope"></i> soporte.buquenque@gmail.com</p>
+
+            <div class="confirmation-main">
+                <h2>¡Pedido Confirmado!</h2>
+                <p class="confirmation-message">Gracias por tu compra en Buquenque Shop. Estamos procesando tu pedido y nos pondremos en contacto contigo pronto.</p>
+                
+                <div class="order-status-steps">
+                    <div class="step-item completed">
+                        <div class="step-icon"><i class="fas fa-credit-card"></i></div>
+                        <div class="step-label">Pedido realizado</div>
+                    </div>
+                    <div class="step-divider"></div>
+                    <div class="step-item active">
+                        <div class="step-icon"><i class="fas fa-box-open"></i></div>
+                        <div class="step-label">Procesando</div>
+                    </div>
+                    <div class="step-divider"></div>
+                    <div class="step-item">
+                        <div class="step-icon"><i class="fas fa-truck"></i></div>
+                        <div class="step-label">En Envío</div>
+                    </div>
+                </div>
+
+                <div class="order-reference">
+                    <p class="reference-label">Número de Referencia</p>
+                    <p class="reference-number" id="order-reference-number">#ORD-2026010001</p>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-detail">
+                            <p class="contact-label">Teléfono</p>
+                            <p class="contact-value">+53 55884661</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-detail">
+                            <p class="contact-label">Correo</p>
+                            <p class="contact-value">soporte.buquenque@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="confirmation-actions">
+                    <button class="back-to-home-btn" onclick="closeConfirmationAndGoHome()">
+                        <i class="fas fa-chevron-left"></i> Volver a la tienda
+                    </button>
+                </div>
             </div>
-            
-            <button class="back-to-home-btn" onclick="closeConfirmationAndGoHome()">
-                <i class="fas fa-chevron-left"></i> Volver a la tienda
-            </button>
         </div>
     </div>
 
@@ -293,8 +383,10 @@
         <span class="whatsapp-tooltip">¡Contáctanos!</span>
     </div>
 
+    <script src="Js/notifications.js"></script>
     <script src="Js/afiliados.js"></script>
     <script src="Js/script.js"></script>
+    <script src="Js/payment-autofill.js"></script>
     <script src="Js/payment.js"></script>
 </body>
 </html>

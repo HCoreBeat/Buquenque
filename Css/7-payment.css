@@ -60,6 +60,106 @@
     font-weight: 600;
 }
 
+/* Segmento de Aviso de Seguridad */
+.security-notice-container {
+    padding: 0 1.75rem 0 1.75rem;
+    background: linear-gradient(135deg, #f0f8ff 0%, #e6f2ff 100%);
+}
+
+.security-notice {
+    display: flex;
+    gap: 1.25rem;
+    background: var(--blanco);
+    border: 2px solid #4a9eff;
+    border-radius: var(--borde-radius);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 12px rgba(74, 158, 255, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.security-notice::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4a9eff, #7cb3ff);
+}
+
+.security-notice-icon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0.25rem;
+    font-size: 2rem;
+    color: #4a9eff;
+    min-width: 60px;
+}
+
+.security-notice-icon i {
+    filter: drop-shadow(0 2px 4px rgba(74, 158, 255, 0.3));
+}
+
+.security-notice-content {
+    flex: 1;
+}
+
+.security-notice-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--negro);
+    margin: 0 0 0.75rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.security-notice-title i {
+    color: #4a9eff;
+    font-size: 1rem;
+}
+
+.security-notice-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--gris-oscuro);
+    margin: 0.75rem 0;
+    text-align: justify;
+}
+
+.security-notice-text strong {
+    color: var(--negro);
+    font-weight: 600;
+}
+
+.security-features {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.security-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #f0f8ff;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: var(--gris-oscuro);
+    font-weight: 500;
+}
+
+.security-feature i {
+    color: #4caf50;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
 #payment-form {
     padding: 1.75rem;
 }
@@ -241,7 +341,7 @@
 }
 
 .submit-btn {
-    background-color: var(--color-principal);
+    background-color: var(--melocoton-pastel);
     color: var(--negro);
     border: none;
     padding: 1rem 1.75rem;

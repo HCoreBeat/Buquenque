@@ -1,0 +1,8 @@
+{
+    "id": 1,
+    "titulo": "¡Bienvenido a Buquenque Shop!",
+    "mensaje": "Descubre nuestras ofertas especiales en productos frescos y alimentos de calidad. ¡Entrega rápida en tu domicilio!",
+    "subtitulo": "Oferta válida hasta el 31 de enero",
+    "tipo": "promo",
+    "icono": "fas fa-gift"
+}

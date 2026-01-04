@@ -221,7 +221,7 @@
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: var(--rojo-oferta);
+    color: var(--rojo-mas-vendido);
     cursor: pointer;
     transition: var(--transicion);
     width: 50px;
