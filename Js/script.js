@@ -3,6 +3,22 @@ let products = [];
 let currentProduct = null;
 let categories = [];
 
+// Caches y utilidades para optimización
+let carouselSlidesCache = null;
+let carouselIndicatorsCache = null;
+const PRODUCTS_CACHE_KEY = 'products_cache_v1';
+const PRODUCTS_CACHE_TTL = 1000 * 60 * 15; // 15 minutos
+
+// Debounce helper
+function debounce(fn, wait) {
+    let t = null;
+    return function(...args) {
+        clearTimeout(t);
+        t = setTimeout(() => fn.apply(this, args), wait);
+    };
+}
+const SEARCH_DEBOUNCE_MS = 250;
+
 // ========== VARIABLES DEL CARRUSEL ==========
 let currentSlide = 0;
 let carouselAutoplayInterval = null;
@@ -40,6 +56,11 @@ function initCarousel() {
     const prevBtn = document.getElementById('carousel-prev');
     const nextBtn = document.getElementById('carousel-next');
     const indicators = document.querySelectorAll('.carousel-indicator');
+    const slides = document.querySelectorAll('.carousel-slide');
+
+    // Cachear nodos para evitar búsquedas repetidas
+    carouselSlidesCache = slides;
+    carouselIndicatorsCache = indicators;
 
     // Event listeners para los botones
     if (prevBtn) prevBtn.addEventListener('click', () => changeSlide(-1));
@@ -95,22 +116,16 @@ function goToSlide(index) {
  * Actualiza la visualización del carrusel
  */
 function updateCarousel() {
-    const slides = document.querySelectorAll('.carousel-slide');
-    const indicators = document.querySelectorAll('.carousel-indicator');
+    const slides = carouselSlidesCache || document.querySelectorAll('.carousel-slide');
+    const indicators = carouselIndicatorsCache || document.querySelectorAll('.carousel-indicator');
 
-    // Remover clase active de todos los slides
-    slides.forEach(slide => slide.classList.remove('active'));
-    
-    // Remover clase active de todos los indicadores
-    indicators.forEach(indicator => indicator.classList.remove('active'));
-
-    // Agregar clase active al slide y indicador actual
-    if (slides[currentSlide]) {
-        slides[currentSlide].classList.add('active');
-    }
-    if (indicators[currentSlide]) {
-        indicators[currentSlide].classList.add('active');
-    }
+    // Remover/añadir clase active de forma eficiente
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === currentSlide);
+    });
+    indicators.forEach((indicator, i) => {
+        indicator.classList.toggle('active', i === currentSlide);
+    });
 }
 
 /**
@@ -135,9 +150,30 @@ function pauseCarouselAutoplay() {
 // Cargar productos
 async function loadProducts() {
     try {
-        const response = await fetch('Json/products.json');
-        if (!response.ok) throw new Error('Error al cargar productos');
-        const data = await response.json();
+        // Intentar cargar desde cache local para evitar fetchs repetidos
+        let data = null;
+        const cached = localStorage.getItem(PRODUCTS_CACHE_KEY);
+        if (cached) {
+            try {
+                const parsed = JSON.parse(cached);
+                if (parsed.timestamp && Date.now() - parsed.timestamp < PRODUCTS_CACHE_TTL && parsed.data) {
+                    data = parsed.data;
+                }
+            } catch (e) {
+                data = null;
+            }
+        }
+
+        if (!data) {
+            const response = await fetch('Json/products.json');
+            if (!response.ok) throw new Error('Error al cargar productos');
+            data = await response.json();
+            try {
+                localStorage.setItem(PRODUCTS_CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data }));
+            } catch (e) {
+                // ignore storage errors
+            }
+        }
         
         // Procesar productos para manejar variantes
         const productGroups = {};
@@ -236,14 +272,21 @@ function getCategoryIcon(category) {
         'postres': 'cookie-bite',
         'frutas': 'apple-alt',
         'verduras': 'carrot',
-        'cárnicos': 'drumstick-bite',
+        'cárnicos y embutidos': 'drumstick-bite',
         'pescado': 'fish',
         'panadería': 'bread-slice',
         'lácteos': 'cheese',
         'cafetería': 'coffee',
         'embutidos': 'hamburger',
         'despensa': 'shopping-basket',
-        'confituras': 'pizza-slice'
+        'confitura': 'pizza-slice',
+        'bebidas no alcohólicas': 'glass-whiskey',
+        'utiles del hogar': 'broom',
+        'aseo y belleza': 'soap',
+        'tecnología': 'laptop',
+        'aderezos': 'spoon',
+        'bebidas alcohólicas': 'cocktail',
+        'electrodomésticos': 'blender',
     };
 
     return icons[category.toLowerCase().trim()] || 'tag'; // Convertimos a minúsculas y eliminamos espacios extra
@@ -570,7 +613,7 @@ function renderProducts(productsToRender = products) {
                     ${product.variants.map((variant, index) => `
                         <div class="variant-thumb ${index === product.currentVariant ? 'active' : ''}" 
                              onclick="changeProductVariant(this, '${product.baseName}', ${index}, event)">
-                            <img src="Images/products/${variant.imagenes[0]}" alt="${variant.variantName}">
+                            <img src="Images/products/${variant.imagenes[0]}" alt="${variant.variantName}" loading="lazy" decoding="async">
                             <span class="variant-tooltip">${variant.variantName}</span>
                         </div>
                     `).join('')}
@@ -588,6 +631,8 @@ function renderProducts(productsToRender = products) {
                 <img src="Images/products/${displayProduct.imagenes[0]}" 
                     class="product-image" 
                     alt="${displayProduct.cleanName}"
+                    loading="lazy"
+                    decoding="async"
                     onclick="showProductDetail('${encodeURIComponent(displayProduct.nombre)}')">
             </div>
             
@@ -693,9 +738,9 @@ function renderBestSellers() {
                 <span class="best-seller-badge">
                     <i class="fas fa-fire"></i> TOP
                 </span>
-                <img src="Images/products/${displayProduct.imagenes[0]}" 
+                 <img src="Images/products/${displayProduct.imagenes[0]}" 
                      class="best-seller-image" 
-                     alt="${displayProduct.nombre}">
+                     alt="${displayProduct.nombre}" loading="lazy" decoding="async">
             </div>
             
             <div class="best-seller-info">
@@ -786,7 +831,7 @@ function showProductDetail(productName) {
                 ${mainProduct.variants.map((v, index) => `
                     <div class="variant-thumb ${index === variantIndex ? 'active' : ''}" 
                          onclick="changeDetailVariant('${mainProduct.baseName}', ${index}, event)">
-                        <img src="Images/products/${v.imagenes[0]}" alt="${v.variantName}">
+                        <img src="Images/products/${v.imagenes[0]}" alt="${v.variantName}" loading="lazy" decoding="async">
                         <span class="variant-tooltip">${v.variantName}</span>
                     </div>
                 `).join('')}
@@ -829,7 +874,7 @@ function showProductDetail(productName) {
                                 ${suggested.mas_vendido ? '<span class="badge mas-vendido">TOP</span>' : ''}
                             </div>
                             <div class="suggested-image" onclick="showProductDetail('${encodeURIComponent(suggested.nombre)}')">
-                                <img src="Images/products/${suggested.imagenes[0]}" alt="${suggested.cleanName || suggested.nombre}">
+                                <img src="Images/products/${suggested.imagenes[0]}" alt="${suggested.cleanName || suggested.nombre}" loading="lazy" decoding="async">
                             </div>
                             <div class="suggested-details">
                                 <h4 class="suggested-name" onclick="showProductDetail('${encodeURIComponent(suggested.nombre)}')">
@@ -858,7 +903,7 @@ function showProductDetail(productName) {
         <div class="detail-container">
             <div class="detail-gallery">
                 <div class="main-image-container">
-                    <img src="Images/products/${product.imagenes[0]}" class="main-image" alt="${product.cleanName}" id="main-product-image">
+                    <img src="Images/products/${product.imagenes[0]}" class="main-image" alt="${product.cleanName}" id="main-product-image" loading="lazy" decoding="async">
                 </div>
             </div>
             
@@ -1430,30 +1475,36 @@ function openWhatsApp() {
     window.open(url, '_blank');
 }
 
-// --- Funcionalidad para ocultar/mostrar header al hacer scroll ---
+// --- Funcionalidad para ocultar/mostrar header al hacer scroll (throttled con rAF) ---
 
 let lastScrollY = 0;
 const header = document.querySelector('.header');
-const headerHeight = header ? header.offsetHeight : 60; // Obtiene la altura del header, o usa un valor por defecto
+const headerHeight = header ? header.offsetHeight : 60;
+let ticking = false;
 
-window.addEventListener('scroll', () => {
+function handleScrollRaf() {
     const currentScrollY = window.scrollY;
 
-    // Si estás en la parte superior de la página, asegúrate de que el header esté visible
-    if (currentScrollY <= headerHeight / 2) { // Un pequeño umbral para mostrarlo al principio
+    if (!header) { ticking = false; return; }
+
+    if (currentScrollY <= headerHeight / 2) {
         header.classList.remove('header-hidden');
-    } 
-    // Si haces scroll hacia abajo Y has pasado el header
-    else if (currentScrollY > lastScrollY && currentScrollY > headerHeight) {
+    } else if (currentScrollY > lastScrollY && currentScrollY > headerHeight) {
         header.classList.add('header-hidden');
-    } 
-    // Si haces scroll hacia arriba
-    else if (currentScrollY < lastScrollY) {
+    } else if (currentScrollY < lastScrollY) {
         header.classList.remove('header-hidden');
     }
 
     lastScrollY = currentScrollY;
-});
+    ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(handleScrollRaf);
+    }
+}, { passive: true });
 
 // --- Fin de la funcionalidad del header ---
 
@@ -1461,4 +1512,10 @@ window.addEventListener('scroll', () => {
 document.addEventListener('DOMContentLoaded', () => {
     loadProducts();
     initCarousel();
+
+    // Debounce para búsqueda en tiempo real
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.addEventListener('input', debounce(searchProducts, SEARCH_DEBOUNCE_MS));
+    }
 });
