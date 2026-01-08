@@ -45,6 +45,12 @@
     background: var(--rojo-mas-vendido);
 }
 
+.detail-badge.agotado {
+    background: #dc3545;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
 /* Container del detalle */
 .detail-container {
     display: grid;
@@ -315,6 +321,23 @@
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
+.add-to-cart-btn.disabled,
+.add-to-cart-btn:disabled {
+    background: #dc3545;
+    color: white;
+    cursor: not-allowed;
+    border: none;
+    opacity: 0.85;
+    font-weight: 700;
+}
+
+.add-to-cart-btn.disabled:hover,
+.add-to-cart-btn:disabled:hover {
+    background: #dc3545;
+    transform: none;
+    box-shadow: none;
+}
+
 .detail-add-to-cart {
     background: var(--color-principal);
     color: var(--negro);
@@ -514,8 +537,8 @@
 
 .variant-thumb.active {
     border-color: var(--color-principal);
-    transform: scale(1.1);
-    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.3);
+    transform: scale(1.25);
+    box-shadow: 0 0 0 2px rgb(255, 0, 0);
 }
 
 .variant-thumb img {

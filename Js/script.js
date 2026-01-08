@@ -6,8 +6,6 @@ let categories = [];
 // Caches y utilidades para optimización
 let carouselSlidesCache = null;
 let carouselIndicatorsCache = null;
-const PRODUCTS_CACHE_KEY = 'products_cache_v1';
-const PRODUCTS_CACHE_TTL = 1000 * 60 * 15; // 15 minutos
 
 // Debounce helper
 function debounce(fn, wait) {
@@ -150,30 +148,10 @@ function pauseCarouselAutoplay() {
 // Cargar productos
 async function loadProducts() {
     try {
-        // Intentar cargar desde cache local para evitar fetchs repetidos
-        let data = null;
-        const cached = localStorage.getItem(PRODUCTS_CACHE_KEY);
-        if (cached) {
-            try {
-                const parsed = JSON.parse(cached);
-                if (parsed.timestamp && Date.now() - parsed.timestamp < PRODUCTS_CACHE_TTL && parsed.data) {
-                    data = parsed.data;
-                }
-            } catch (e) {
-                data = null;
-            }
-        }
-
-        if (!data) {
-            const response = await fetch('Json/products.json');
-            if (!response.ok) throw new Error('Error al cargar productos');
-            data = await response.json();
-            try {
-                localStorage.setItem(PRODUCTS_CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data }));
-            } catch (e) {
-                // ignore storage errors
-            }
-        }
+        // Siempre hacer fetch fresco para evitar problemas con cambios en products.json
+        const response = await fetch('Json/products.json');
+        if (!response.ok) throw new Error('Error al cargar productos');
+        const data = await response.json();
         
         // Procesar productos para manejar variantes
         const productGroups = {};
@@ -204,13 +182,17 @@ async function loadProducts() {
             
             if (group.variants.length > 1) {
                 // Producto con variantes
+                // Encontrar la primera variante disponible, sino usar la primera
+                const availableIndex = group.variants.findIndex(v => v.disponibilidad === true);
+                const defaultVariantIndex = availableIndex !== -1 ? availableIndex : 0;
+                
                 products.push({
                     ...group.variants[0],
                     id: `group_${baseName}`, // ID único para grupos
                     isGrouped: true,
                     baseName: baseName,
                     variants: group.variants,
-                    currentVariant: 0
+                    currentVariant: defaultVariantIndex
                 });
             } else {
                 // Producto sin variantes
@@ -622,11 +604,12 @@ function renderProducts(productsToRender = products) {
         ` : '';
 
         productEl.innerHTML = `
-            <div class="product-image-container">
+            <div class="product-image-container ${!displayProduct.disponibilidad ? 'unavailable' : ''}">
                 <div class="product-badges">
                     ${displayProduct.nuevo ? '<span class="badge nuevo"><i class="fas fa-star"></i> NUEVO</span>' : ''}
                     ${displayProduct.oferta ? '<span class="badge oferta"><i class="fas fa-tag"></i> OFERTA</span>' : ''}
                     ${displayProduct.mas_vendido ? '<span class="badge mas-vendido"><i class="fas fa-trophy"></i> TOP</span>' : ''}
+                    ${!displayProduct.disponibilidad ? '<span class="badge agotado"><i class="fas fa-ban"></i> AGOTADO</span>' : ''}
                 </div>
                 <img src="Images/products/${displayProduct.imagenes[0]}" 
                     class="product-image" 
@@ -655,9 +638,11 @@ function renderProducts(productsToRender = products) {
                 </div>
                 
                 <div class="quantity-section">
-                    <button class="add-to-cart" onclick="addToCart('${displayProduct.nombre}', false, event)">
-                        <i class="fas fa-cart-plus"></i>
-                        <span>Añadir al carrito</span>
+                    <button class="add-to-cart ${!displayProduct.disponibilidad ? 'disabled' : ''}" 
+                            onclick="addToCart('${displayProduct.nombre}', false, event)"
+                            ${!displayProduct.disponibilidad ? 'disabled' : ''}>
+                        <i class="fas fa-${!displayProduct.disponibilidad ? 'lock' : 'cart-plus'}"></i>
+                        <span>${!displayProduct.disponibilidad ? 'Agotado' : 'Añadir al carrito'}</span>
                     </button>
                 </div>
             </div>
@@ -677,18 +662,59 @@ function changeProductVariant(thumbElement, baseName, variantIndex, event) {
     // Actualizar la variante actual
     product.currentVariant = variantIndex;
     const variant = product.variants[variantIndex];
+    const isOnSale = variant.oferta && variant.descuento > 0;
+    const finalPrice = isOnSale 
+        ? (variant.precio * (1 - variant.descuento/100)).toFixed(2)
+        : variant.precio.toFixed(2);
     
     // Actualizar la imagen principal
     productCard.querySelector('.product-image').src = `Images/products/${variant.imagenes[0]}`;
     productCard.querySelector('.product-image').alt = variant.cleanName;
     productCard.querySelector('.product-image').setAttribute('onclick', `showProductDetail('${encodeURIComponent(variant.nombre)}')`);
     
+    // Actualizar el contenedor de imagen (estado disponible/no disponible)
+    const imageContainer = productCard.querySelector('.product-image-container');
+    if (!variant.disponibilidad) {
+        imageContainer.classList.add('unavailable');
+    } else {
+        imageContainer.classList.remove('unavailable');
+    }
+    
+    // Actualizar los badges
+    const badgesContainer = imageContainer.querySelector('.product-badges');
+    const badgesHTML = `
+        ${variant.nuevo ? '<span class="badge nuevo"><i class="fas fa-star"></i> NUEVO</span>' : ''}
+        ${variant.oferta ? '<span class="badge oferta"><i class="fas fa-tag"></i> OFERTA</span>' : ''}
+        ${variant.mas_vendido ? '<span class="badge mas-vendido"><i class="fas fa-trophy"></i> TOP</span>' : ''}
+        ${!variant.disponibilidad ? '<span class="badge agotado"><i class="fas fa-ban"></i> AGOTADO</span>' : ''}
+    `;
+    badgesContainer.innerHTML = badgesHTML;
+    
     // Actualizar el título
     productCard.querySelector('.product-title').textContent = variant.cleanName;
     productCard.querySelector('.product-title').setAttribute('onclick', `showProductDetail('${encodeURIComponent(variant.nombre)}')`);
     
+    // Actualizar los precios
+    const priceContainer = productCard.querySelector('.price-container');
+    const priceHTML = `
+        ${isOnSale ? `
+            <span class="original-price">${variant.precio.toFixed(2)}<img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></span>
+            <span class="discount-percent">-${variant.descuento}%</span>
+        ` : ''}
+        <span class="current-price">${finalPrice} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></span>
+    `;
+    priceContainer.innerHTML = priceHTML;
+    
     // Actualizar el botón de añadir al carrito
-    productCard.querySelector('.add-to-cart').setAttribute('onclick', `addToCart('${variant.nombre}', false, event)`);
+    const addButton = productCard.querySelector('.add-to-cart');
+    const buttonClass = !variant.disponibilidad ? 'add-to-cart disabled' : 'add-to-cart';
+    addButton.className = buttonClass;
+    addButton.disabled = !variant.disponibilidad;
+    addButton.setAttribute('onclick', `addToCart('${variant.nombre}', false, event)`);
+    addButton.innerHTML = `
+        <i class="fas fa-${!variant.disponibilidad ? 'lock' : 'cart-plus'}"></i>
+        <span>${!variant.disponibilidad ? 'Agotado' : 'Añadir al carrito'}</span>
+    `;
     
     // Actualizar las miniaturas activas
     const thumbs = productCard.querySelectorAll('.variant-thumb');
@@ -844,6 +870,7 @@ function showProductDetail(productName) {
     if (product.nuevo) badges.push('<span class="detail-badge nuevo"><i class="fas fa-star"></i> Nuevo</span>');
     if (product.oferta) badges.push(`<span class="detail-badge oferta"><i class="fas fa-tag"></i> -${product.descuento}%</span>`);
     if (product.mas_vendido) badges.push('<span class="detail-badge mas-vendido"><i class="fas fa-trophy"></i> Más Vendido</span>');
+    if (!product.disponibilidad) badges.push('<span class="detail-badge agotado"><i class="fas fa-ban"></i> AGOTADO</span>');
 
     // Especificaciones
     const specs = [
@@ -945,9 +972,11 @@ function showProductDetail(productName) {
                     </div>
                 </div>
 
-                <button class="add-to-cart-btn" onclick="addToCart('${product.nombre}', true, event)">
-                    <i class="fas fa-cart-plus"></i>
-                    Añadir al carrito
+                <button class="add-to-cart-btn ${!product.disponibilidad ? 'disabled' : ''}" 
+                        onclick="addToCart('${product.nombre}', true, event)"
+                        ${!product.disponibilidad ? 'disabled' : ''}>
+                    <i class="fas fa-${!product.disponibilidad ? 'lock' : 'cart-plus'}"></i>
+                    ${!product.disponibilidad ? 'Producto Agotado' : 'Añadir al carrito'}
                 </button>
                 
                 <div class="product-description">
@@ -1217,6 +1246,12 @@ function addToCart(productName, fromDetail = false, event) {
     
     if (!product) return;
 
+    // Validar disponibilidad
+    if (!product.disponibilidad) {
+        showCartNotification('Este producto está agotado', 1, 'error');
+        return;
+    }
+
     let quantity;
     if (fromDetail) {
         const quantityElement = document.getElementById('detail-quantity');
@@ -1336,12 +1371,18 @@ function updateCartQuantity(index, change, event) {
     }
 }
 
-function showCartNotification(productName, quantity) {
+function showCartNotification(productName, quantity, type = 'success') {
     const notification = document.createElement('div');
-    notification.className = 'cart-notification';
-    notification.innerHTML = `
-        <p>${quantity}x ${productName} añadido al carrito</p>
-    `;
+    notification.className = `cart-notification notification-${type}`;
+    
+    let message = '';
+    if (type === 'error') {
+        message = `<i class="fas fa-exclamation-circle"></i> ${productName}`;
+    } else {
+        message = `<i class="fas fa-check-circle"></i> ${quantity}x ${productName} añadido al carrito`;
+    }
+    
+    notification.innerHTML = `<p>${message}</p>`;
     document.body.appendChild(notification);
     
     setTimeout(() => notification.classList.add('show'), 10);

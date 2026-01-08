@@ -3,360 +3,420 @@
     {
       "nombre": "Azúcar blanca x lb",
       "categoria": "Despensa",
-      "precio": 1,
+      "precio": 1.25,
       "descuento": 0,
       "mas_vendido": true,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Azúcar_blanca_x_lb.jpg"],
+      "imagenes": [
+        "Azucar_blanca_x_lb.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Azúcar blanca x lb, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Chupa Chupa x unidad",
       "categoria": "Confitura",
-      "precio": 2,
+      "precio": 0.25,
       "descuento": 0,
       "mas_vendido": true,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Chupa_Chupa_x_unidad.jpg"],
+      "imagenes": [
+        "Chupa_Chupa_x_unidad.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Chupa Chupa x unidad, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Pastilla de Pollo x unidad",
       "categoria": "Despensa",
-      "precio": 3,
+      "precio": 0.15,
       "descuento": 0,
       "mas_vendido": true,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pastilla_de_Pollo_x_unidad.jpg"],
+      "imagenes": [
+        "Pastilla_de_Pollo_x_unidad.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pastilla de Pollo x unidad, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Espaguetis (500g)",
       "categoria": "Despensa",
-      "precio": 4,
+      "precio": 1.12,
       "descuento": 0,
       "mas_vendido": true,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Espaguetis_(500g).jpg"],
+      "imagenes": [
+        "Espaguetis_(500g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Espaguetis (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Cartón de Huevos",
       "categoria": "Despensa",
-      "precio": 5,
+      "precio": 10.5,
       "descuento": 0,
       "mas_vendido": true,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Cartón_de_Huevos.jpg"],
+      "imagenes": [
+        "Carton_de_Huevos.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Paquete de cuartos de pollo 10 lbs",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 6,
+      "precio": 14.0,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Paquete_de_cuartos_de_pollo_10_lbs.jpg"],
+      "imagenes": [
+        "Paquete_de_cuartos_de_pollo_10_lbs.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Refresco Instantáneo (3Lt)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 7,
+      "precio": 0.25,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Refresco_Instantáneo_(3Lt).jpg"],
+      "imagenes": [
+        "Refresco_Instantaneo_(3Lt).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Refresco Instantáneo (3Lt), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Aceite (900ml)",
       "categoria": "Despensa",
-      "precio": 8,
+      "precio": 3.65,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Aceite_(900ml).jpg"],
+      "imagenes": [
+        "Aceite_(900ml).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Aceite (900ml), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Arroz Importado 1Lb",
       "categoria": "Despensa",
-      "precio": 9,
+      "precio": 1.2,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Arroz_Importado_1Lb.jpg"],
+      "imagenes": [
+        "Arroz_Importado_1Lb.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Arroz Importado 1Lb, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Sopa instantánea sabor Pollo (80g)",
       "categoria": "Despensa",
-      "precio": 10,
+      "precio": 0.8,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Sopa_instantánea_sabor_Pollo_(80g).jpg"],
+      "imagenes": [
+        "Sopa_instantanea_sabor_Pollo_(80g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Sopa instantánea sabor Pollo (80g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Arroz (1Kg)",
       "categoria": "Despensa",
-      "precio": 11,
+      "precio": 2.4,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Arroz_(1Kg).jpg"],
+      "imagenes": [
+        "Arroz_(1Kg).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Arroz (1Kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Galletas de soda Salricas 3 Tacos",
       "categoria": "Confitura",
-      "precio": 12,
+      "precio": 2.05,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Galletas_de_soda_Salricas_3_Tacos.jpg"],
+      "imagenes": [
+        "Galletas_de_soda_Salricas_3_Tacos.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Galletas de soda Salricas 3 Tacos, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Mortadela de Pollo (500g)",
+      "nombre": "Mortadella de Pollo",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 13,
+      "precio": 2.25,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Mortadela_de_Pollo_(500g).jpg"],
-      "descripcion": "Disfruta de la calidad de Mortadela de Pollo (500g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
+      "imagenes": [
+        "Mortadella_de_Pollo.jpg"
+      ],
+      "descripcion": "Disfruta de la calidad de Mortadella de Pollo, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Paquete de picadillo de pollo 1kg",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 14,
+      "precio": 2.7,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
-      "imagenes": ["Paquete_de_picadillo_de_pollo_1kg.jpg"],
+      "imagenes": [
+        "Paquete_de_picadillo_de_pollo_1kg.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Paquete de picadillo de pollo 1kg, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Refresco Limón (330ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 15,
+      "precio": 0.98,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Refresco_Limón_(330ml).jpg"],
+      "imagenes": [
+        "Refresco_Limon_(330ml).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Refresco Limón (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Gelatina sabor Frutos Rojos 🍓 (40g)",
+      "nombre": "Gelatina sabor (Frutos Rojos 🍓) (40g)",
       "categoria": "Confitura",
-      "precio": 16,
+      "precio": 2.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
-      "imagenes": ["Gelatina_sabor_Frutos_Rojos_🍓_(40g).jpg"],
+      "imagenes": [
+        "Gelatina_sabor_Frutos_Rojos_(40g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Gelatina sabor Frutos Rojos 🍓 (40g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
-      "nombre": "Caja de Malta Bucanero",
+      "nombre": "Caja de Malta",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 17,
+      "precio": 25.0,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Caja_de_Malta_Bucanero.jpg"],
+      "imagenes": [
+        "Caja_de_Malta.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Caja de Malta Bucanero, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Frazada de Piso",
       "categoria": "Utiles del Hogar",
-      "precio": 18,
+      "precio": 1.05,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Frazada_de_Piso.jpg"],
+      "imagenes": [
+        "Frazada_de_Piso.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Frazada de Piso, una excelente opción de nuestra categoría Utiles del Hogar. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Manzana 🍎 x unidad",
       "categoria": "Despensa",
-      "precio": 19,
+      "precio": 1.25,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Manzana_🍎_x_unidad.jpg"],
+      "imagenes": [
+        "Manzana.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Manzana 🍎 x unidad, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Garbanzos (500g)",
       "categoria": "Despensa",
-      "precio": 20,
+      "precio": 2.15,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
-      "imagenes": ["Garbanzos_(500g).jpg"],
+      "imagenes": [
+        "Garbanzos_(500g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Garbanzos (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Azúcar Blanca (1Kg)",
       "categoria": "Despensa",
-      "precio": 21,
+      "precio": 2.16,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Azúcar_Blanca_(1Kg).jpg"],
+      "imagenes": [
+        "Azucar_Blanca_(1Kg).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Azúcar Blanca (1Kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Galletas Marías (80g)",
       "categoria": "Confitura",
-      "precio": 22,
+      "precio": 0.9,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
-      "imagenes": ["Galletas_Marías_(80g).jpg"],
+      "imagenes": [
+        "Galletas_Marias_(80g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Galletas Marías (80g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Galletas de Soda con Mantequilla Doricas",
       "categoria": "Confitura",
-      "precio": 23,
+      "precio": 5.0,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Galletas_de_Soda_con_Mantequilla_Doricas.jpg"],
+      "imagenes": [
+        "Galletas_de_Soda_con_Mantequilla_Doricas.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Galletas de Soda con Mantequilla Doricas, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Codito (500g)",
       "categoria": "Despensa",
-      "precio": 24,
+      "precio": 1.17,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Codito_(500g).jpg"],
+      "imagenes": [
+        "Codito_(500g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Codito (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Leche en polvo \"DoBon\" (1kg)",
+      "nombre": "Leche en polvo (1kg)",
       "categoria": "Despensa",
-      "precio": 25,
+      "precio": 9.0,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Leche_en_polvo_\"DoBon\"_(1kg).jpg"],
-      "descripcion": "Disfruta de la calidad de Leche en polvo \"DoBon\" (1kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
+      "imagenes": [
+        "Leche_en_polvo_(1kg).jpg"
+      ],
+      "descripcion": "Disfruta de la calidad de Leche en polvo (1kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Gelatina sabor Uva 🍇 (40g)",
+      "nombre": "Gelatina sabor (Uva 🍇) (40g)",
       "categoria": "Confitura",
-      "precio": 26,
+      "precio": 2.49,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
-      "imagenes": ["Gelatina_sabor_Uva_🍇_(40g).jpg"],
+      "imagenes": [
+        "Gelatina_sabor_Uva_(40g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Gelatina sabor Uva 🍇 (40g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Nutella de Chocolate (350g)",
       "categoria": "Confitura",
-      "precio": 27,
+      "precio": 3.85,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Nutella_de_Chocolate_(350g).jpg"],
+      "imagenes": [
+        "Nutella_de_Chocolate_(350g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Nutella de Chocolate (350g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Paquete de Harina (1kg)",
       "categoria": "Despensa",
-      "precio": 28,
+      "precio": 2.45,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Paquete_de_Harina_(1kg).jpg"],
+      "imagenes": [
+        "Paquete_de_Harina_(1kg).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Paquete de Harina (1kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Galletas Lamore (150g)",
       "categoria": "Confitura",
-      "precio": 29,
+      "precio": 1.49,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Galletas_Lamore_(150g).jpg"],
+      "imagenes": [
+        "Galletas_Lamore_(150g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Galletas Lamore (150g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Leche Condensada Azucarada Castellum (390g)",
       "categoria": "Despensa",
-      "precio": 30,
+      "precio": 1.15,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Leche_Condensada_Azucarada_Castellum_(390g).jpg"],
+      "imagenes": [
+        "Leche_Condensada_Azucarada_Castellum_(390g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Leche Condensada Azucarada Castellum (390g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
@@ -368,103 +428,121 @@
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Caja_de_cuartos_de_pollo_40lbs.jpg"],
+      "imagenes": [
+        "Caja_de_cuartos_de_pollo_40lbs.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Caja de cuartos de pollo 40lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Frijol Negro (500g)",
       "categoria": "Despensa",
-      "precio": 32,
+      "precio": 2.05,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Frijol_Negro_(500g).jpg"],
+      "imagenes": [
+        "Frijol_Negro_(500g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Frijol Negro (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Gelatina sabor Naranja 🍊 (40g)",
+      "nombre": "Gelatina sabor (Naranja 🍊) (40g)",
       "categoria": "Confitura",
       "precio": 33,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Gelatina_sabor_Naranja_🍊_(40g).jpg"],
+      "imagenes": [
+        "Gelatina_sabor_Naranja_(40g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Gelatina sabor Naranja 🍊 (40g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Papel Sanitario",
       "categoria": "Aseo y Belleza",
-      "precio": 34,
+      "precio": 2.45,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Papel_Sanitario.jpg"],
+      "imagenes": [
+        "Papel_Sanitario.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Papel Sanitario, una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Jamón Bravo Rápido (2kg)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 35,
+      "precio": 22.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Jamón_Bravo_Rápido_(2kg).jpg"],
+      "imagenes": [
+        "Jamon_Bravo_Rapido_(2kg).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Jamón Bravo Rápido (2kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Sorbeto de Fresa Renata (115g)",
+      "nombre": "Sorbeto de (Fresa Renata) (115g)",
       "categoria": "Confitura",
-      "precio": 36,
+      "precio": 1.15,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Sorbeto_de_Fresa_Renata_(115g).jpg"],
+      "imagenes": [
+        "Sorbeto_de_Fresa_Renata_(115g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Sorbeto de Fresa Renata (115g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Jabón de Baño \"Florona\" (75g)",
       "categoria": "Aseo y Belleza",
-      "precio": 37,
+      "precio": 0.7,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Jabón_de_Baño_\"Florona\"_(75g).jpg"],
+      "imagenes": [
+        "Jabon_de_Baño_(75g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Jabón de Baño \"Florona\" (75g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Detergente (500g)",
       "categoria": "Aseo y Belleza",
-      "precio": 38,
+      "precio": 1.7,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Detergente_(500g).jpg"],
+      "imagenes": [
+        "Detergente_(500g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Detergente (500g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Bizcocho Marwa Chocolate (40g)",
       "categoria": "Confitura",
-      "precio": 39,
+      "precio": 0.65,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Bizcocho_Marwa_Chocolate_(40g).jpg"],
+      "imagenes": [
+        "Bizcocho_Marwa_Chocolate_(40g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Bizcocho Marwa Chocolate (40g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
@@ -476,787 +554,919 @@
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Galletas_Renata_'Maizena'_(170g).jpg"],
+      "imagenes": [
+        "Galletas_Renata_Maizena_(170g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Galletas Renata 'Maizena' (170g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Pack x 6 Manzana 🍎",
       "categoria": "Despensa",
-      "precio": 41,
+      "precio": 6.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pack_x_6_Manzana_🍎.jpg"],
+      "imagenes": [
+        "Pack_x_6_Manzana.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pack x 6 Manzana 🍎, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Galletas de soda Salricas 7 Tacos",
       "categoria": "Confitura",
-      "precio": 42,
+      "precio": 4.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Galletas_de_soda_Salricas_7_Tacos.jpg"],
+      "imagenes": [
+        "Galletas_de_soda_Salricas_7_Tacos.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Galletas de soda Salricas 7 Tacos, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Caja de refresco Limón",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 43,
+      "precio": 1.9,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Caja_de_refresco_Limón.jpg"],
+      "imagenes": [
+        "Caja_de_refresco_Limon.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Caja de refresco Limón, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Pechuga de pollo (1Kg)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 44,
+      "precio": 20.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pechuga_de_pollo_(1Kg).jpg"],
+      "imagenes": [
+        "Pechuga_de_pollo_(1Kg).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pechuga de pollo (1Kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Paquete de íntima 10u",
       "categoria": "Aseo y Belleza",
-      "precio": 45,
+      "precio": 9.0,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
-      "imagenes": ["Paquete_de_íntima_10u.jpg"],
+      "imagenes": [
+        "Paquete_de_intima_10u.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Paquete de íntima 10u, una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Galletas Monro Vainilla (50g)",
       "categoria": "Confitura",
-      "precio": 46,
+      "precio": 5.97,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Galletas_Monro_Vainilla_(50g).jpg"],
+      "imagenes": [
+        "Galletas_Monro_Vainilla_(50g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Galletas Monro Vainilla (50g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Pack x 6 maltas Guajira (6x330ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 47,
+      "precio": 0.6,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
-      "imagenes": ["Pack_x_6_maltas_Guajira_(6x330ml).jpg"],
+      "imagenes": [
+        "Pack_x_6_maltas_Guajira.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pack x 6 maltas Guajira (6x330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Paquete de salchichas (340g)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 48,
+      "precio": 1.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Paquete_de_salchichas_(340g).jpg"],
+      "imagenes": [
+        "Paquete_de_salchichas_(340g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Paquete de salchichas (340g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Café \"Purasangre\" (250g)",
       "categoria": "Despensa",
-      "precio": 49,
+      "precio": 6.0,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Café_\"Purasangre\"_(250g).jpg"],
+      "imagenes": [
+        "Cafe_Purasangre_(250g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Café \"Purasangre\" (250g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Alubia Pinta (500g)",
       "categoria": "Despensa",
-      "precio": 50,
+      "precio": 2.05,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Alubia_Pinta_(500g).jpg"],
+      "imagenes": [
+        "Alubia_Pinta_(500g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Alubia Pinta (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Protector Diario (18u)",
       "categoria": "Aseo y Belleza",
-      "precio": 51,
+      "precio": 1.45,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Protector_Diario_(18u).jpg"],
+      "imagenes": [
+        "Protector_Diario_(18u).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Protector Diario (18u), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Jugo de Mango (200ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 52,
+      "precio": 0.85,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Jugo_de_Mango_(200ml).jpg"],
+      "imagenes": [
+        "Jugo_de_Mango_(200ml).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Jugo de Mango (200ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Mayonesa \"Victoria\" (500ml)",
       "categoria": "Aderezos",
-      "precio": 53,
+      "precio": 3.9,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Mayonesa_\"Victoria\"_(500ml).jpg"],
+      "imagenes": [
+        "Mayonesa_Victoria_(500ml).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Mayonesa \"Victoria\" (500ml), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Pack x 12 Sal y Pimienta \"Vima",
       "categoria": "Aderezos",
-      "precio": 54,
+      "precio": 1.35,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pack_x_12_Sal_y_Pimienta_\"Vima.jpg"],
+      "imagenes": [
+        "Pack_x_12_Sal_y_Pimienta.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pack x 12 Sal y Pimienta \"Vima, una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Pack de 4 yogurts de Fresa \"Asturiana\"",
+      "nombre": "Pack de 4 yogurts de (Fresa) \"Asturiana\"",
       "categoria": "Lácteos",
-      "precio": 55,
+      "precio": 3.16,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pack_de_4_yogurts_de_Fresa_\"Asturiana\".jpg"],
+      "imagenes": [
+        "Pack_de_4_yogurts_de_Fresa.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pack de 4 yogurts de Fresa \"Asturiana\", una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Galletas \"ShowGol\" Dulce de Leche (76g)",
+      "nombre": "Galletas ShowGol (Dulce de Leche) (76g)",
       "categoria": "Confitura",
-      "precio": 56,
+      "precio": 0.7,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Galletas_\"ShowGol\"_Dulce_de_Leche_(76g).jpg"],
+      "imagenes": [
+        "Galletas_ShowGol_Dulce_de_Leche_(76g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Galletas \"ShowGol\" Dulce de Leche (76g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Galletas \"ShowGol\" Chocolate (76g)",
+      "nombre": "Galletas ShowGol (Chocolate) (76g)",
       "categoria": "Confitura",
-      "precio": 57,
+      "precio": 0.7,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Galletas_\"ShowGol\"_Chocolate_(76g).jpg"],
+      "imagenes": [
+        "Galletas_ShowGol_Chocolate_(76g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Galletas \"ShowGol\" Chocolate (76g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Hígado de pollo (1Kg)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 58,
+      "precio": 3.05,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Hígado_de_pollo_(1Kg).jpg"],
+      "imagenes": [
+        "Higado_de_pollo_(1Kg).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Hígado de pollo (1Kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Jugo Tuana Piña (200ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 59,
+      "precio": 0.75,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Jugo_Tuana_Piña_(200ml).jpg"],
+      "imagenes": [
+        "Jugo_Tuana_Piña_(200ml).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Jugo Tuana Piña (200ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Acondicionador SEDAL (620ml)",
       "categoria": "Aseo y Belleza",
-      "precio": 60,
+      "precio": 8.25,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Acondicionador_SEDAL_(620ml).jpg"],
+      "imagenes": [
+        "Acondicionador_SEDAL_(620ml).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Acondicionador SEDAL (620ml), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Atún en Aceite Vegetal (170g)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 61,
+      "precio": 2.35,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Atún_en_Aceite_Vegetal_(170g).jpg"],
+      "imagenes": [
+        "Atun_en_Aceite_Vegetal_(170g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Atún en Aceite Vegetal (170g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Toallitas Húmedas (80u)",
       "categoria": "Aseo y Belleza",
-      "precio": 62,
+      "precio": 3.8,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Toallitas_Húmedas_(80u).jpg"],
+      "imagenes": [
+        "Toallitas_Humedas_(80u).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Toallitas Húmedas (80u), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Pack de 4 yogurts de Platanito \"Asturiana\"",
+      "nombre": "Pack de 4 yogurts de (Platanito) \"Asturiana\"",
       "categoria": "Lácteos",
-      "precio": 63,
+      "precio": 3.15,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pack_de_4_yogurts_de_Platanito_\"Asturiana\".jpg"],
+      "imagenes": [
+        "Pack_de_4_yogurts_de_Platanito_Asturiana.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pack de 4 yogurts de Platanito \"Asturiana\", una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Sorbeto de Limón Renata (115g)",
+      "nombre": "Sorbeto de (Limón Renata) (115g)",
       "categoria": "Confitura",
-      "precio": 64,
+      "precio": 1.15,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Sorbeto_de_Limón_Renata_(115g).jpg"],
+      "imagenes": [
+        "Sorbeto_de_Limon_Renata_(115g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Sorbeto de Limón Renata (115g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Pack de 4 yogurts de Multifruta \"Asturiana\"",
+      "nombre": "Pack de 4 yogurts de (Multifruta) \"Asturiana\"",
       "categoria": "Lácteos",
-      "precio": 65,
+      "precio": 3.15,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pack_de_4_yogurts_de_Multifruta_\"Asturiana\".jpg"],
+      "imagenes": [
+        "Pack_de_4_yogurts_de_Multifruta_Asturiana.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pack de 4 yogurts de Multifruta \"Asturiana\", una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Galletas Snack (30g)",
       "categoria": "Confitura",
-      "precio": 66,
+      "precio": 0.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Galletas_Snack_(30g).jpg"],
+      "imagenes": [
+        "Galletas_Snack_(30g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Galletas Snack (30g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Spam de Pollo (340g)",
+      "nombre": "Spam de (Pollo) (340g)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 67,
+      "precio": 2.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Spam_de_Pollo_(340g).jpg"],
+      "imagenes": [
+        "Spam_de_Pollo_(340g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Spam de Pollo (340g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Servilletas (100u)",
       "categoria": "Aseo y Belleza",
-      "precio": 68,
+      "precio": 1.9,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Servilletas_(100u).jpg"],
+      "imagenes": [
+        "Servilletas_(100u).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Servilletas (100u), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Cerveza \"Calatrava\" (330ml)",
       "categoria": "Bebidas alcohólicas",
-      "precio": 69,
+      "precio": 1.05,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Cerveza_\"Calatrava\"_(330ml).jpg"],
+      "imagenes": [
+        "Cerveza_Calatrava_(330ml).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Cerveza \"Calatrava\" (330ml), una excelente opción de nuestra categoría Bebidas alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Spam de Cerdo (340g)",
+      "nombre": "Spam de (Cerdo) (340g)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 70,
+      "precio": 2.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Spam_de_Cerdo_(340g).jpg"],
+      "imagenes": [
+        "Spam_de_Cerdo_(340g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Spam de Cerdo (340g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Cepillo de diente (/u)",
       "categoria": "Aseo y Belleza",
-      "precio": 71,
+      "precio": 0.6,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Cepillo_de_diente_(/u).jpg"],
+      "imagenes": [
+        "Cepillo_de_diente.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Cepillo de diente (/u), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Sazón completo (340g)",
       "categoria": "Aderezos",
-      "precio": 72,
+      "precio": 0.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Sazón_completo_(340g).jpg"],
+      "imagenes": [
+        "Sazon_completo_(340g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Sazón completo (340g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Paquete de Chupa Chupa (48/u)",
       "categoria": "Confitura",
-      "precio": 73,
+      "precio": 4.75,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Paquete_de_Chupa_Chupa_(48/u).jpg"],
+      "imagenes": [
+        "Paquete_de_Chupa_Chupa.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Paquete de Chupa Chupa (48/u), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Olla a Presión Eléctrica \"Eko\" (6 L)",
       "categoria": "Electrodomésticos",
-      "precio": 74,
+      "precio": 8.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Olla_a_Presión_Eléctrica_\"Eko\"_(6_L).jpg"],
+      "imagenes": [
+        "Olla_a_Presion_Electrica.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Olla a Presión Eléctrica \"Eko\" (6 L), una excelente opción de nuestra categoría Electrodomésticos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Galletas \"Hello\" Fresa (50g)",
+      "nombre": "Galletas \"Hello\" (Fresa) (50g)",
       "categoria": "Confitura",
-      "precio": 75,
+      "precio": 87.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Galletas_\"Hello\"_Fresa_(50g).jpg"],
+      "imagenes": [
+        "Galletas_Hello_Fresa_(50g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Galletas \"Hello\" Fresa (50g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Pechuga de pollo (2Kg)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 76,
+      "precio": 16.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pechuga_de_pollo_(2Kg).jpg"],
+      "imagenes": [
+        "Pechuga_de_pollo_(2Kg).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pechuga de pollo (2Kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Refresco Gaseado Limón (1.5Lt) Cero Calorías",
+      "nombre": "Refresco Gaseado Limón (1.5Lt)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 77,
+      "precio": 2.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Refresco_Gaseado_Limón_(1.5Lt)_Cero_Calorías.jpg"],
+      "imagenes": [
+        "Refresco_Gaseado_Limon.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Refresco Gaseado Limón (1.5Lt) Cero Calorías, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Queso Gouda (3Kg)",
       "categoria": "Lácteos",
-      "precio": 78,
+      "precio": 0.6,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Queso_Gouda_(3Kg).jpg"],
+      "imagenes": [
+        "Queso_Gouda_(3Kg).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Queso Gouda (3Kg), una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Set de Estropajos",
       "categoria": "Utiles del Hogar",
-      "precio": 79,
+      "precio": 1.45,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Set_de_Estropajos.jpg"],
+      "imagenes": [
+        "Set_de_Estropajos.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Set de Estropajos, una excelente opción de nuestra categoría Utiles del Hogar. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Olla Arrocera",
       "categoria": "Electrodomésticos",
-      "precio": 80,
+      "precio": 35.0,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Olla_Arrocera.jpg"],
+      "imagenes": [
+        "Olla_Arrocera.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Olla Arrocera, una excelente opción de nuestra categoría Electrodomésticos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Pack x 6 Refresco Gaseado Limón (1.5Lt) Cero Calorías",
+      "nombre": "Pack x 6 Refresco Gaseado Limón (1.5Lt)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 81,
+      "precio": 56.0,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pack_x_6_Refresco_Gaseado_Limón_(1.5Lt)_Cero_Calorías.jpg"],
+      "imagenes": [
+        "Pack_x_6_Refresco_Gaseado_Limon.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pack x 6 Refresco Gaseado Limón (1.5Lt) Cero Calorías, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Comino Molido (171.1g)",
       "categoria": "Aderezos",
-      "precio": 82,
+      "precio": 14.4,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Comino_Molido_(171.1g).jpg"],
+      "imagenes": [
+        "Comino_Molido.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Comino Molido (171.1g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Galletas \"Hello\" Vainilla (50g)",
+      "nombre": "Galletas \"Hello\" (Vainilla) (50g)",
       "categoria": "Confitura",
-      "precio": 83,
+      "precio": 4.45,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Galletas_\"Hello\"_Vainilla_(50g).jpg"],
+      "imagenes": [
+        "Galletas_Hello_Vainilla_(50g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Galletas \"Hello\" Vainilla (50g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Caja de jugos sabor Piña (27 x 200ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 84,
+      "precio": 18.6,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Caja_de_jugos_sabor_Piña_(27_x_200ml).jpg"],
+      "imagenes": [
+        "Caja_de_jugos_sabor_Piña.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Caja de jugos sabor Piña (27 x 200ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Talco para Bebé (200g)",
       "categoria": "Aseo y Belleza",
-      "precio": 85,
+      "precio": 3.8,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Talco_para_Bebé_(200g).jpg"],
+      "imagenes": [
+        "Talco_para_Bebe_(200g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Talco para Bebé (200g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Pack de 12 Estropajos",
       "categoria": "Utiles del Hogar",
-      "precio": 86,
+      "precio": 3.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pack_de_12_Estropajos.jpg"],
+      "imagenes": [
+        "Pack_de_12_Estropajos.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pack de 12 Estropajos, una excelente opción de nuestra categoría Utiles del Hogar. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Caja de jugos sabor Mango (30 x 200ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 87,
+      "precio": 22.0,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Caja_de_jugos_sabor_Mango_(30_x_200ml).jpg"],
+      "imagenes": [
+        "Caja_de_jugos_sabor_Mango.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Caja de jugos sabor Mango (30 x 200ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Refresco Gaseado Mate (1.5Lt) Cero Calorías",
+      "nombre": "Refresco Gaseado Mate (1.5Lt)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 88,
+      "precio": 2.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Refresco_Gaseado_Mate_(1.5Lt)_Cero_Calorías.jpg"],
+      "imagenes": [
+        "Refresco_Gaseado_Mate.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Refresco Gaseado Mate (1.5Lt) Cero Calorías, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Ajo Granulado (255g)",
       "categoria": "Aderezos",
-      "precio": 89,
+      "precio": 4.45,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Ajo_Granulado_(255g).jpg"],
+      "imagenes": [
+        "Ajo_Granulado_(255g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Ajo Granulado (255g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Pomo de Gelatina (50/u)",
       "categoria": "Confitura",
-      "precio": 90,
+      "precio": 22.0,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pomo_de_Gelatina_(50/u).jpg"],
+      "imagenes": [
+        "Pomo_de_Gelatina.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pomo de Gelatina (50/u), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Pack x 6 Refresco Gaseado Mate (1.5Lt) Cero Calorías",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 91,
+      "precio": 15.97,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pack_x_6_Refresco_Gaseado_Mate_(1.5Lt)_Cero_Calorías.jpg"],
+      "imagenes": [
+        "Pack_x_6_Refresco_Gaseado_Mate.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pack x 6 Refresco Gaseado Mate (1.5Lt) Cero Calorías, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Pack x 12 Néctar de Pera 🍐 (12x330ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 92,
+      "precio": 1.85,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pack_x_12_Néctar_de_Pera_🍐_(12x330ml).jpg"],
+      "imagenes": [
+        "Pack_x_12_Nectar_de_Pera.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pack x 12 Néctar de Pera 🍐 (12x330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Caja de Cerveza \"Calatrava\"",
       "categoria": "Bebidas alcohólicas",
-      "precio": 93,
+      "precio": 14.4,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Caja_de_Cerveza_\"Calatrava\".jpg"],
+      "imagenes": [
+        "Caja_de_Cerveza_Calatrava.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Caja de Cerveza \"Calatrava\", una excelente opción de nuestra categoría Bebidas alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Sazonador de carnes (396g)",
       "categoria": "Aderezos",
-      "precio": 94,
+      "precio": 15.97,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Sazonador_de_carnes_(396g).jpg"],
+      "imagenes": [
+        "Sazonador_de_carnes_(396g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Sazonador de carnes (396g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Bicarbonato (453g)",
       "categoria": "Aderezos",
-      "precio": 95,
+      "precio": 22.0,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Bicarbonato_(453g).jpg"],
+      "imagenes": [
+        "Bicarbonato_(453g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Bicarbonato (453g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Nevera Eko (3.5 pies)",
       "categoria": "Electrodomésticos",
-      "precio": 96,
+      "precio": 4.45,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Nevera_Eko_(3.5_pies).jpg"],
+      "imagenes": [
+        "Nevera_Eko.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Nevera Eko (3.5 pies), una excelente opción de nuestra categoría Electrodomésticos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Néctar de Pera 🍐 (330ml)",
+      "nombre": "Néctar de (Pera 🍐) (330ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 97,
+      "precio": 5.0,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Néctar_de_Pera_🍐_(330ml).jpg"],
+      "imagenes": [
+        "Nectar_de_Pera.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Néctar de Pera 🍐 (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
-      "nombre": "Néctar de Manzana 🍎 (330ml)",
+      "nombre": "Néctar de (Manzana 🍎) (330ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 98,
+      "precio": 260.0,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Néctar_de_Manzana_🍎_(330ml).jpg"],
+      "imagenes": [
+        "Nectar_de_Manzana.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Néctar de Manzana 🍎 (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Pack x 12 Néctar de Manzana 🍎 (12x330ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 99,
+      "precio": 1.45,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pack_x_12_Néctar_de_Manzana_🍎_(12x330ml).jpg"],
+      "imagenes": [
+        "Pack_x_12_Néctar_de_Manzana.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pack x 12 Néctar de Manzana 🍎 (12x330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Cerveza \"Parranda\" (330ml)",
       "categoria": "Bebidas alcohólicas",
-      "precio": 100,
+      "precio": 1.45,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Cerveza_\"Parranda\"_(330ml).jpg"],
+      "imagenes": [
+        "Cerveza_Parranda_(330ml).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Cerveza \"Parranda\" (330ml), una excelente opción de nuestra categoría Bebidas alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Pack x 6 Cerveza \"Parranda\" (6x330ml)",
       "categoria": "Bebidas alcohólicas",
-      "precio": 101,
+      "precio": 0.8,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pack_x_6_Cerveza_\"Parranda\"_(6x330ml).jpg"],
+      "imagenes": [
+        "Pack_x_6_Cerveza_Parranda_(6x330ml).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pack x 6 Cerveza \"Parranda\" (6x330ml), una excelente opción de nuestra categoría Bebidas alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Pasta de Tomate 🍅 \"Oderich\" (350g)",
       "categoria": "Despensa",
-      "precio": 102,
+      "precio": 4.15,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Pasta_de_Tomate_🍅_\"Oderich\"_(350g).jpg"],
+      "imagenes": [
+        "Pasta_de_Tomate_Oderich_(350g).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Pasta de Tomate 🍅 \"Oderich\" (350g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Caja de Pechuga de Pollo (12Kg)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 103,
+      "precio": 95.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Caja_de_Pechuga_de_Pollo_(12Kg).jpg"],
+      "imagenes": [
+        "Caja_de_Pechuga_de_Pollo_(12Kg).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Caja de Pechuga de Pollo (12Kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "EcoFlow DELTA 2",
       "categoria": "Electrodomésticos",
-      "precio": 104,
+      "precio": 800.0,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["EcoFlow_DELTA_2.jpg"],
+      "imagenes": [
+        "EcoFlow_DELTA_2.jpg"
+      ],
       "descripcion": "Disfruta de la calidad de EcoFlow DELTA 2, una excelente opción de nuestra categoría Electrodomésticos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
       "nombre": "Malta Guajira (330ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 105,
+      "precio": 1.15,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
-      "imagenes": ["Malta_Guajira_(330ml).jpg"],
+      "imagenes": [
+        "Malta_Guajira_(330ml).jpg"
+      ],
       "descripcion": "Disfruta de la calidad de Malta Guajira (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     }
