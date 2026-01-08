@@ -380,20 +380,21 @@
 }
 
 .description-content {
-    color: var(--gris-medio);
+    color: var(--gris-oscuro);
     line-height: 1.7;
     font-size: 1.05rem;
 }
 
 .description-sentence.important-sentence {
-    background: rgba(212, 175, 55, 0.08);
+    background: rgb(255 0 0 / 8%);
     border-left: 3px solid var(--color-principal);
     padding-left: 0.8rem;
     margin-left: -0.8rem;
 }
 
 .description-sentence.important-sentence .sentence-icon {
-    color: var(--rojo-oscuro);
+    color: yellow;
+    text-shadow: 2px 2px 3px var(--color-principal-pastel);
 }
 
 .no-description {

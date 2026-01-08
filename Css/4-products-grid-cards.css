@@ -121,6 +121,7 @@
     content: '';
     position: absolute;
     inset: 0;
+    pointer-events: none;
     background: repeating-linear-gradient(
         45deg,
         rgba(220, 53, 69, 0.1),
