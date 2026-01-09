@@ -183,7 +183,7 @@
     {
       "nombre": "Gelatina sabor (Frutos Rojos 🍓) (40g)",
       "categoria": "Confitura",
-      "precio": 2.5,
+      "precio": 2.25,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -303,7 +303,7 @@
     {
       "nombre": "Gelatina sabor (Uva 🍇) (40g)",
       "categoria": "Confitura",
-      "precio": 2.49,
+      "precio": 2.25,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -387,14 +387,14 @@
     {
       "nombre": "Gelatina sabor (Naranja 🍊) (40g)",
       "categoria": "Confitura",
-      "precio": 33,
+      "precio": 2.25,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": ["Gelatina_sabor_Naranja_(40g).jpg"],
       "descripcion": "Disfruta de la calidad de Gelatina sabor Naranja 🍊 (40g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Papel Sanitario",
@@ -1562,3 +1562,4 @@
     }
   ]
 }
+
