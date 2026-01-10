@@ -24,6 +24,9 @@
     --morado-pastel: #D4A8E8;
     --melocoton-pastel: #FFDAB4;
     --menta-pastel: #B8E6D5;
+
+    --delivery--color: #22c55e;
+    --delivery-background-color: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
     
     /* Efectos y Transiciones */
     --sombra: 0 2px 10px rgba(0, 0, 0, 0.06);

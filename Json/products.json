@@ -1559,7 +1559,126 @@
       "imagenes": ["Paquete_de_muslo_de_pollo_(2kg).jpg"],
       "descripcion": "Disfruta de la calidad de Paquete de muslo de pollo (2kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
+    },
+    {
+      "nombre": "Papas tostadas 30g",
+      "categoria": "Confitura",
+      "precio": 0.9,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": ["Papas_tostadas_30g.jpg"],
+      "descripcion": "Disfruta de la calidad de Papas tostadas 30g, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Tanqueta de mayonesa 4lts",
+      "categoria": "Aderezos",
+      "precio": 17.0,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": ["Tanqueta_de_mayonesa_4lts.jpg"],
+      "descripcion": "Disfruta de la calidad de Tanqueta de mayonesa 4lts, una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Bolsa de pan 10u",
+      "categoria": "Despensa",
+      "precio": 1.8,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": ["Bolsa_de_pan_10u.jpg"],
+      "descripcion": "Disfruta de la calidad de Bolsa de pan 10u, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Hígado de pollo 1kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 2.85,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": ["Higado_de_pollo_1kg.jpg"],
+      "descripcion": "Disfruta de la calidad de Hígado de pollo 1kg, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Carne de ovejo x lbs",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 2.0,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": ["Carne_de_ovejo_x_lbs.jpg"],
+      "descripcion": "Disfruta de la calidad de Carne de ovejo x lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Galletas Petit Biscuits de coco 80g",
+      "categoria": "Confitura",
+      "precio": 0.8,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": ["Galletas_Petit_Biscuits_de_coco_80g.jpg"],
+      "descripcion": "Disfruta de la calidad de Galletas Petit Biscuits de coco 80g, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Caja de galletas de soda Saltine 227g",
+      "categoria": "Confitura",
+      "precio": 1.9,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": ["Caja_de_galletas_de_soda_Saltine_227g.jpg"],
+      "descripcion": "Disfruta de la calidad de Caja de galletas de soda Saltine 227g, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Carne de cerdo x lbs",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 2.8,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": ["Carne_de_cerdo_x_lbs.jpg"],
+      "descripcion": "Disfruta de la calidad de Carne de cerdo x lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Pernil asado de 20lbs",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 60.0,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": ["Pernil_asado_de_20lbs.jpg"],
+      "descripcion": "Disfruta de la calidad de Pernil asado de 20lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Chicle sin azúcar 70u",
+      "categoria": "Confitura",
+      "precio": 4.5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": ["Chicle_sin_azucar_70u.jpg"],
+      "descripcion": "Disfruta de la calidad de Chicle sin azúcar 70u, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
+      "disponibilidad": true
     }
   ]
 }
-

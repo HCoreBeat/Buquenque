@@ -537,4 +537,55 @@
     .cart-sidebar {
         max-width: 100%;
     }
-}
+
+    /* Responsive para formulario de pago */
+    .payment-container {
+        width: 95%;
+        max-width: 100%;
+        max-height: 95vh;
+        padding: 0 1rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .payment-header {
+        padding: 1rem;
+    }
+
+    .payment-header h2 {
+        font-size: 1.1rem;
+    }
+
+    #payment-form {
+        padding: 1rem;
+    }
+
+    .security-notice {
+        flex-direction: column;
+    }
+
+    .security-notice-icon {
+        min-width: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .delivery-message {
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .delivery-info-item {
+        gap: 0.75rem;
+    }
+
+    .delivery-info-item i {
+        font-size: 1.1rem;
+    }
