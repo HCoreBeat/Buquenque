@@ -247,3 +247,58 @@
 .header.header-hidden {
     transform: translateY(-100%);
 }
+
+/* ========== PANEL DE UBICACIÓN ========== */
+
+.location-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.65rem 1.5rem;
+    border-top: 1px solid var(--gris-claro);
+    border-bottom: 2px solid var(--color-principal-pastel);
+    order: 3;
+    width: 100%;
+}
+
+.location-icon {
+    font-size: 1.3rem;
+    color: var(--rojo-oferta);
+    flex-shrink: 0;
+    animation: pulse-location 2s ease-in-out infinite;
+}
+
+.location-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.location-label {
+    font-size: 0.75rem;
+    color: var(--gris-medio);
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.location-city {
+    font-size: 1rem;
+    color: var(--rojo-oferta);
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.3px;
+}
+
+@keyframes pulse-location {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+}

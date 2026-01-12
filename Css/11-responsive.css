@@ -46,9 +46,11 @@
     
     .header-top {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         padding: 1rem 2rem;
+        position: relative;
+        gap: 0;
     }
     
     .menu-toggle {
@@ -56,19 +58,49 @@
     }
     
     .logo {
-        margin-right: auto;
+        margin-right: 1.5rem;
         text-align: left;
         flex-grow: 0;
     }
     
     .search-container {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 45%;
+        flex: 1;
+        margin: 0 1rem;
         padding: 0;
         background: transparent;
         order: 0;
+        max-width: 500px;
+    }
+
+    /* Panel de ubicación en desktop */
+    .location-panel {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.5rem;
+        padding: 0.3rem 1rem 0.3rem 1.2rem;
+        border: none;
+        border-left: 2px solid var(--color-principal-pastel);
+        width: auto;
+        order: 0;
+        margin-left: auto;
+    }
+
+    .location-label {
+        font-size: 0.6rem;
+    }
+
+    .location-city {
+        font-size: 0.85rem;
+    }
+
+    .location-icon {
+        font-size: 1rem;
+    }
+    
+    .cart-btn {
+        margin-left: 1rem;
+        flex-shrink: 0;
     }
     
     .categories-nav {
@@ -91,6 +123,37 @@
     .header-top {
         order: 1;
         padding: 1rem;
+        position: static;
+        flex-wrap: wrap;
+    }
+
+    .location-panel {
+        margin-top: 0.5rem;
+        margin-bottom: -10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.6rem 1rem;
+        border: none;
+        border-top: 1px solid var(--gris-claro);
+        border-bottom: 2px solid var(--color-principal-pastel);
+        width: 100%;
+        height: 40px;
+        margin-left: 0;
+        order: 5;
+    }
+
+    .location-label {
+        font-size: 0.7rem;
+    }
+
+    .location-city {
+        font-size: 0.95rem;
+    }
+
+    .location-icon {
+        font-size: 1.2rem;
     }
     
     .menu-toggle {
@@ -589,3 +652,4 @@
     .delivery-info-item i {
         font-size: 1.1rem;
     }
+}
