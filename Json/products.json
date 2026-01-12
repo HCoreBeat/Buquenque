@@ -430,7 +430,7 @@
       "oferta": false,
       "imagenes": ["Sorbeto_de_Fresa_Renata_(115g).jpg"],
       "descripcion": "Disfruta de la calidad de Sorbeto de Fresa Renata (115g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Jabón de Baño Florona (75g)",
@@ -442,7 +442,7 @@
       "oferta": false,
       "imagenes": ["Jabon_de_Baño_(75g).jpg"],
       "descripcion": "Disfruta de la calidad de Jabón de Baño \"Florona\" (75g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Detergente (500g)",
@@ -469,9 +469,9 @@
       "disponibilidad": true
     },
     {
-      "nombre": "Galletas Renata 'Maizena' (170g)",
+      "nombre": "Galletas Renata Maizena (170g)",
       "categoria": "Confitura",
-      "precio": 40,
+      "precio": 0.95,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -526,7 +526,7 @@
       "oferta": false,
       "imagenes": ["Pechuga_de_pollo_(1Kg).jpg"],
       "descripcion": "Disfruta de la calidad de Pechuga de pollo (1Kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Paquete de íntima 10u",
@@ -550,7 +550,7 @@
       "oferta": false,
       "imagenes": ["Galletas_Monro_Vainilla_(50g).jpg"],
       "descripcion": "Disfruta de la calidad de Galletas Monro Vainilla (50g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Pack x 6 maltas Guajira (6x330ml)",
@@ -637,7 +637,7 @@
       "disponibilidad": true
     },
     {
-      "nombre": "Pack x 12 Sal y Pimienta \"Vima",
+      "nombre": "Pack x 12 Sal y Pimienta Vima",
       "categoria": "Aderezos",
       "precio": 1.39,
       "descuento": 0,
@@ -649,7 +649,7 @@
       "disponibilidad": true
     },
     {
-      "nombre": "Pack de 4 yogurts de (Fresa) \"Asturiana\"",
+      "nombre": "Pack de 4 yogurts de (Fresa) Asturiana",
       "categoria": "Lácteos",
       "precio": 3.25,
       "descuento": 0,
@@ -745,7 +745,7 @@
       "disponibilidad": true
     },
     {
-      "nombre": "Pack de 4 yogurts de (Platanito) \"Asturiana\"",
+      "nombre": "Pack de 4 yogurts de (Platanito) Asturiana",
       "categoria": "Lácteos",
       "precio": 3.15,
       "descuento": 0,
@@ -769,7 +769,7 @@
       "disponibilidad": true
     },
     {
-      "nombre": "Pack de 4 yogurts de (Multifruta) \"Asturiana\"",
+      "nombre": "Pack de 4 yogurts de (Multifruta) Asturiana",
       "categoria": "Lácteos",
       "precio": 3.15,
       "descuento": 0,
@@ -843,7 +843,7 @@
     {
       "nombre": "Cepillo de diente (/u)",
       "categoria": "Aseo y Belleza",
-      "precio": 0.5,
+      "precio": 1.07,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -1390,7 +1390,7 @@
       "oferta": false,
       "imagenes": ["Yogurt_probiotico_de_1L.jpg"],
       "descripcion": "Disfruta de la calidad de Yogurt probiótico de 1L (fresa y platanito), una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Paquete de azúcar 1kg",
@@ -1426,7 +1426,7 @@
       "oferta": false,
       "imagenes": ["Paquete_de_salchichas_de_pollo_Bello_(3kg).jpg"],
       "descripcion": "Disfruta de la calidad de Paquete de salchichas de pollo Bello (3kg), una excelente opción de nuestra categoría Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Paquete de papas Idaho (5lbs)",
