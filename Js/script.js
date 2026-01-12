@@ -866,7 +866,7 @@ function renderBestSellers() {
 
   // Filtrar solo productos con mas_vendido: true
   const bestSellers = products.filter(
-    (product) => product.mas_vendido === true
+    (product) => product.mas_vendido === true && product.disponibilidad
   );
 
   // Si no hay productos, ocultar la sección

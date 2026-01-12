@@ -247,7 +247,7 @@
 
     .best-seller-title {
         font-size: 0.75rem;
-        min-height: 2.2rem;
+        min-height: auto;
     }
 
     .best-seller-price-current {
