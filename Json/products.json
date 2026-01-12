@@ -713,11 +713,23 @@
       "categoria": "Cárnicos y Embutidos",
       "precio": 3.43,
       "descuento": 0,
-      "mas_vendido": false,
+      "mas_vendido": true,
       "nuevo": false,
       "oferta": false,
       "imagenes": ["Higado_de_pollo_(1Kg).jpg"],
       "descripcion": "Disfruta de la calidad de Hígado de pollo (1Kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Cuartos de Pierna de Pollo (10 lbs)",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 14.0,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": ["Cuartos_de_Pollo.jpg"],
+      "descripcion": "Cuartos de pierna de pollo (thigh and drumstick) de la marca Delightful Farms. Producto importado de USA, presentado en un formato de 10 lbs (4.53 kg). Ideal para preparaciones familiares, garantizando frescura y calidad en nuestra categoría de carnes.",
       "disponibilidad": true
     },
     {
@@ -1645,7 +1657,7 @@
       "disponibilidad": true
     },
     {
-      "nombre": "Hígado de pollo 1kg",
+      "nombre": "Hígado de pollo (1kg)",
       "categoria": "Cárnicos y Embutidos",
       "precio": 2.85,
       "descuento": 0,
@@ -1654,7 +1666,7 @@
       "oferta": false,
       "imagenes": ["Higado_de_pollo_1kg.jpg"],
       "descripcion": "Disfruta de la calidad de Hígado de pollo 1kg, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": false
     },
     {
       "nombre": "Carne de ovejo x lbs",
