@@ -1393,7 +1393,7 @@
       "disponibilidad": true
     },
     {
-      "nombre": "Caja de Helados Nestlé sabor Chocolate",
+      "nombre": "Caja de Helados Nestlé sabor (Chocolate)",
       "categoria": "Postre",
       "precio": 20.0,
       "descuento": 0,
@@ -1402,6 +1402,18 @@
       "oferta": false,
       "imagenes": ["Caja_de_Helado_Chocolate.jpg"],
       "descripcion": "Caja de helados marca Nestlé, sabor chocolate. Producto de alta calidad ideal para compartir, debe mantenerse a una temperatura de -18°C para conservar su frescura y sabor.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Caja de Helados Nestlé sabor (Vainilla)",
+      "categoria": "Postre",
+      "precio": 20.0,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": ["Caja_de_Helado_Vainilla.jpg"],
+      "descripcion": "Caja de helados marca Nestlé, sabor vainilla. Producto de alta calidad ideal para compartir, debe mantenerse a una temperatura de -18°C para conservar su frescura y sabor.",
       "disponibilidad": true
     },
     {
