@@ -2689,7 +2689,7 @@
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "imagen-png_1768509565248.png"
       ],
@@ -2708,7 +2708,11 @@
         "_comapplepasteboardioamhh_1768509715969.png"
       ],
       "descripcion": "Vinagre gourmet elaborado con una cuidadosa mezcla de especias, ideal para realzar el sabor de ensaladas, carnes, marinados y aderezos. Aporta un toque intenso y aromático a tus comidas.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768510028106_su58dqn4t",
+      "precioFinal": 2.14,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/_comapplepasteboardioamhh_1768509715969.png",
+      "searchText": "vinagre gourmet con especias – 500 ml aderezos vinagre gourmet elaborado con una cuidadosa mezcla de especias, ideal para realzar el sabor de ensaladas, carnes, marinados y aderezos. aporta un toque intenso y aromático a tus comidas."
     },
     {
       "nombre": "Bombones Bon o Bon Blanco con Relleno de Maní – 210 g caja de 18u",
