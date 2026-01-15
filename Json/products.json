@@ -57,7 +57,7 @@
     {
       "nombre": "Espaguetis (500g)",
       "categoria": "Despensa",
-      "precio": 1.12,
+      "precio": 1.07,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -66,11 +66,7 @@
         "Espaguetis_(500g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Espaguetis (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_gkp20pj1x",
-      "precioFinal": 1.12,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Espaguetis_(500g).jpg",
-      "searchText": "espaguetis (500g) despensa disfruta de la calidad de espaguetis (500g), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Cartón de Huevos",
@@ -102,7 +98,11 @@
         "Paquete_de_cuartos_de_pollo_10_lbs.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768443205852_gmj18aycr",
+      "precioFinal": 13,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Paquete_de_cuartos_de_pollo_10_lbs.jpg",
+      "searchText": "paquete de cuartos de pollo 10 lbs cárnicos y embutidos disfruta de la calidad de paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Vino Espumoso La Baronne Demi-Sec Rosé (750 ml)",
@@ -2564,7 +2564,11 @@
         "Carne_de_cerdo_x_lbs.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Carne de cerdo x lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768443205852_ac2tz1k6u",
+      "precioFinal": 3,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Carne_de_cerdo_x_lbs.jpg",
+      "searchText": "carne de cerdo x lbs cárnicos y embutidos disfruta de la calidad de carne de cerdo x lbs, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Pernil asado de 20lbs",
@@ -2632,7 +2636,11 @@
         "imagen-jpeg_1768441843131.jpeg"
       ],
       "descripcion": "Disfruta de la calidad y frescura del pimiento x lb rico en fibra , vitamina c y antioxidantes ejemplar para su plato",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768443205852_jk51wnt6q",
+      "precioFinal": 2.97,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/imagen-jpeg_1768441843131.jpeg",
+      "searchText": "pimiento x lb verduras disfruta de la calidad y frescura del pimiento x lb rico en fibra , vitamina c y antioxidantes ejemplar para su plato"
     },
     {
       "nombre": "Cebolla morada x lb",
@@ -2646,7 +2654,11 @@
         "imagen-jpeg_1768442318661.jpeg"
       ],
       "descripcion": "Disfruta de la calidad y el sabor de la cebolla morada x lb producto q no puede faltar en tu mesa",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768443205852_qlg8xocr5",
+      "precioFinal": 3.37,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/imagen-jpeg_1768442318661.jpeg",
+      "searchText": "cebolla morada x lb verduras disfruta de la calidad y el sabor de la cebolla morada x lb producto q no puede faltar en tu mesa"
     },
     {
       "nombre": "Cebolla blanca x lb",
@@ -2660,7 +2672,11 @@
         "img_1973_1768442526492.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de la cebolla blanca x lb ideal para su mesa",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768443205852_grvowt193",
+      "precioFinal": 3.37,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_1973_1768442526492.jpeg",
+      "searchText": "cebolla blanca x lb verduras disfruta de la calidad de la cebolla blanca x lb ideal para su mesa"
     },
     {
       "nombre": "Chuleta de cerdo x lb",
@@ -2674,7 +2690,11 @@
         "img_1974_1768442898458.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de la chuleta de cerdo natural ideal para tus cenas",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768443205852_risjygd0q",
+      "precioFinal": 3.31,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_1974_1768442898458.jpeg",
+      "searchText": "chuleta de cerdo x lb cárnicos y embutidos disfruta de la calidad de la chuleta de cerdo natural ideal para tus cenas"
     }
   ]
 }
