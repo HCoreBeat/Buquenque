@@ -102,7 +102,11 @@
         "Paquete_de_cuartos_de_pollo_10_lbs.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768509219912_abv0u9lj0",
+      "precioFinal": 13,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Paquete_de_cuartos_de_pollo_10_lbs.jpg",
+      "searchText": "paquete de cuartos de pollo 10 lbs cárnicos y embutidos disfruta de la calidad de paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Vino Espumoso La Baronne Demi-Sec Rosé (750 ml)",
@@ -386,7 +390,11 @@
         "Galletas_Marias_(80g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Galletas Marías (80g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768509219912_orvyg0rkr",
+      "precioFinal": 0.9,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Galletas_Marias_(80g).jpg",
+      "searchText": "galletas marías (80g) confitura disfruta de la calidad de galletas marías (80g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Galletas de Soda con Mantequilla Doricas",
@@ -436,7 +444,11 @@
         "Leche_en_polvo_(1kg).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Leche en polvo (1kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768509219912_r1ox9v6i6",
+      "precioFinal": 8,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Leche_en_polvo_(1kg).jpg",
+      "searchText": "leche en polvo (1kg) despensa disfruta de la calidad de leche en polvo (1kg), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Gelatina sabor (Uva 🍇) (40g)",
@@ -936,7 +948,11 @@
         "Mayonesa_Victoria_(500ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Mayonesa \"Victoria\" (500ml), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768509219912_tvj6iq15t",
+      "precioFinal": 2.47,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Mayonesa_Victoria_(500ml).jpg",
+      "searchText": "mayonesa victoria (250ml) aderezos disfruta de la calidad de mayonesa \"victoria\" (500ml), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Pack x 12 Sal y Pimienta Vima",
@@ -1040,7 +1056,11 @@
         "Cuartos_de_Pollo.jpg"
       ],
       "descripcion": "Cuartos de pierna de pollo (thigh and drumstick) de la marca Delightful Farms. Producto importado de USA, presentado en un formato de 10 lbs (4.53 kg). Ideal para preparaciones familiares, garantizando frescura y calidad en nuestra categoría de carnes.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768509219912_38gjp703m",
+      "precioFinal": 13,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Cuartos_de_Pollo.jpg",
+      "searchText": "cuartos de pierna de pollo (10 lbs) cárnicos y embutidos cuartos de pierna de pollo (thigh and drumstick) de la marca delightful farms. producto importado de usa, presentado en un formato de 10 lbs (4.53 kg). ideal para preparaciones familiares, garantizando frescura y calidad en nuestra categoría de carnes."
     },
     {
       "nombre": "Jugo Tuana Piña (200ml)",
@@ -1090,7 +1110,11 @@
         "Atun_en_Aceite_Vegetal_(170g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Atún en Aceite Vegetal (170g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false
+      "disponibilidad": false,
+      "id": "prod_1768509219912_3y2mxkpgx",
+      "precioFinal": 2.35,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Atun_en_Aceite_Vegetal_(170g).jpg",
+      "searchText": "atún en aceite vegetal (170g) cárnicos y embutidos disfruta de la calidad de atún en aceite vegetal (170g), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Toallitas Húmedas (80u)",
@@ -1140,7 +1164,11 @@
         "Sorbeto_de_Limon_Renata_(115g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Sorbeto de Limón Renata (115g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768509219912_8zv9x9m9l",
+      "precioFinal": 1.15,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Sorbeto_de_Limon_Renata_(115g).jpg",
+      "searchText": "sorbeto de (limón renata) (115g) confitura disfruta de la calidad de sorbeto de limón renata (115g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Sorbeto de (Chocolate Renata) (115g)",
@@ -1154,7 +1182,11 @@
         "Sorbeto_de_Chocolate_Renata_(115g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Sorbeto de Chocolate Renata (115g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768509219912_clmam94tm",
+      "precioFinal": 1.15,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Sorbeto_de_Chocolate_Renata_(115g).jpg",
+      "searchText": "sorbeto de (chocolate renata) (115g) confitura disfruta de la calidad de sorbeto de chocolate renata (115g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Pack de 4 yogurts de (Multifruta) Asturiana",
@@ -1924,7 +1956,11 @@
         "Caja_de_cerveza_Cristal_(24_unidades).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Caja de cerveza Cristal (24 unidades), una excelente opción de nuestra categoría Bebidas alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768509219912_pb6y62qrk",
+      "precioFinal": 22.5,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Caja_de_cerveza_Cristal_(24_unidades).jpg",
+      "searchText": "caja de cerveza cristal (24 unidades) bebidas alcohólicas disfruta de la calidad de caja de cerveza cristal (24 unidades), una excelente opción de nuestra categoría bebidas alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Banderillas Gourmet (picantes y dulce) 330g",
@@ -2082,7 +2118,11 @@
         "Chorizos_en_manteca_625g.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Chorizos en manteca 625g, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768509219912_3qawyeeca",
+      "precioFinal": 14.28,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Chorizos_en_manteca_625g.jpg",
+      "searchText": "chorizos en manteca 625g cárnicos y embutidos disfruta de la calidad de chorizos en manteca 625g, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Compuesto lácteo 400g",
@@ -2096,7 +2136,11 @@
         "Compuesto_lacteo_400g.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Compuesto lácteo 400g, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768509219912_nas7owss0",
+      "precioFinal": 2.45,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Compuesto_lacteo_400g.jpg",
+      "searchText": "compuesto lácteo 400g lácteos disfruta de la calidad de compuesto lácteo 400g, una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Yogurt probiótico de 1L (fresa y platanito)",
@@ -2308,7 +2352,11 @@
         "Paquete_de_cafe_La_Llave_(284g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de café La Llave (284g), una excelente opción de nuestra categoría Cafetería. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768509219912_s0kpsdz2q",
+      "precioFinal": 7.99,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Paquete_de_cafe_La_Llave_(284g).jpg",
+      "searchText": "paquete de café la llave (284g) despensa disfruta de la calidad de paquete de café la llave (284g), una excelente opción de nuestra categoría cafetería. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Caja de muslo de pollo (6 paquetes de 2kg)",
@@ -2340,7 +2388,11 @@
         "Paquete_de_cafe_Dufiltro_(250g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de café Dufiltro (250g), una excelente opción de nuestra categoría Cafetería. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768509219912_z5o3fp5c1",
+      "precioFinal": 4,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Paquete_de_cafe_Dufiltro_(250g).jpg",
+      "searchText": "paquete de café dufiltro (250g) despensa disfruta de la calidad de paquete de café dufiltro (250g), una excelente opción de nuestra categoría cafetería. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Paquete de muslo de pollo (2kg)",
@@ -2390,7 +2442,11 @@
         "Tanqueta_de_mayonesa_4lts.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Tanqueta de mayonesa 4lts, una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768509219912_k6prz00ge",
+      "precioFinal": 16,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Tanqueta_de_mayonesa_4lts.jpg",
+      "searchText": "tanqueta de mayonesa 4lts aderezos disfruta de la calidad de tanqueta de mayonesa 4lts, una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Bolsa de pan 10u",
@@ -2512,7 +2568,11 @@
         "Pernil_asado_de_20lbs.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pernil asado de 20lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768509219912_h61h4xal8",
+      "precioFinal": 60,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Pernil_asado_de_20lbs.jpg",
+      "searchText": "pernil asado de 20lbs cárnicos y embutidos disfruta de la calidad de pernil asado de 20lbs, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Chicle sin azúcar 70u",
@@ -2621,6 +2681,46 @@
       "precioFinal": 3.31,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_1974_1768442898458.jpeg",
       "searchText": "chuleta de cerdo x lb cárnicos y embutidos disfruta de la calidad de la chuleta de cerdo natural ideal para tus cenas"
+    },
+    {
+      "nombre": "Sándwich de nata (helado tipo sándwich de vainilla)50g",
+      "categoria": "Postres",
+      "precio": 1.14,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "imagen-png_1768509565248.png"
+      ],
+      "descripcion": "Delicioso sándwich helado elaborado con suaves galletas tipo bizcocho rellenas de cremosa nata sabor vainilla. Ideal para disfrutar bien frío, perfecto como postre o merienda refrescante.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Vinagre Gourmet con Especias – 500 ml",
+      "categoria": "Aderezos",
+      "precio": 2.14,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": true,
+      "imagenes": [
+        "_comapplepasteboardioamhh_1768509715969.png"
+      ],
+      "descripcion": "Vinagre gourmet elaborado con una cuidadosa mezcla de especias, ideal para realzar el sabor de ensaladas, carnes, marinados y aderezos. Aporta un toque intenso y aromático a tus comidas.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Bombones Bon o Bon Blanco con Relleno de Maní – 210 g caja de 18u",
+      "categoria": "Confitura",
+      "precio": 6.85,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": true,
+      "imagenes": [],
+      "descripcion": "Deliciosos bombones de chocolate blanco con oblea crujiente y suave relleno de crema de maní. Ideales para compartir, regalar o disfrutar en cualquier momento.\nX cajas de 18u",
+      "disponibilidad": true
     }
   ]
 }
