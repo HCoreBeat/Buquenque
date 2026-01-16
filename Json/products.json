@@ -2730,6 +2730,24 @@
         "imagen-png_1768510722217.png"
       ],
       "descripcion": "Deliciosos bombones de chocolate blanco con oblea crujiente y suave relleno de crema de maní. Ideales para compartir, regalar o disfrutar en cualquier momento.\nX cajas de 18u",
+      "disponibilidad": true,
+      "id": "prod_1768591398796_15vnm0r9q",
+      "precioFinal": 6.85,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/imagen-png_1768510722217.png",
+      "searchText": "bombones bon o bon blanco con relleno de maní – 210 g caja de 18u confitura deliciosos bombones de chocolate blanco con oblea crujiente y suave relleno de crema de maní. ideales para compartir, regalar o disfrutar en cualquier momento.\nx cajas de 18u"
+    },
+    {
+      "nombre": "Pollo entero(3lbs)",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 6.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_1999_1768592587385.jpeg"
+      ],
+      "descripcion": "Pollo entero fresco\nPollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. Carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales.",
       "disponibilidad": true
     }
   ]
