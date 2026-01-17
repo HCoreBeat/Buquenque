@@ -79,7 +79,7 @@
       "descuento": 21.74,
       "mas_vendido": true,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "Carton_de_Huevos.jpg"
       ],
@@ -99,7 +99,7 @@
       ],
       "descripcion": "Disfruta de la calidad de Paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
-      "id": "prod_1768679686987_kkoo7rdas",
+      "id": "prod_1768679794475_s112jvux0",
       "precioFinal": 12,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Paquete_de_cuartos_de_pollo_10_lbs.jpg",
       "searchText": "paquete de cuartos de pollo 10 lbs cárnicos y embutidos disfruta de la calidad de paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
