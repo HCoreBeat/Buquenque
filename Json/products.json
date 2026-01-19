@@ -84,7 +84,11 @@
         "Carton_de_Huevos.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768783820711_rmnry541r",
+      "precioFinal": 9,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Carton_de_Huevos.jpg",
+      "searchText": "cartón de huevos despensa disfruta de la calidad de cartón de huevos, una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Paquete de cuartos de pollo 10 lbs",
@@ -890,11 +894,7 @@
         "Alubia_Pinta_(500g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Alubia Pinta (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_u0uvfx59r",
-      "precioFinal": 1.99,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Alubia_Pinta_(500g).jpg",
-      "searchText": "alubia pinta (500g) despensa disfruta de la calidad de alubia pinta (500g), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": false
     },
     {
       "nombre": "Protector Diario (18u)",
@@ -1988,11 +1988,7 @@
         "Sardina_en_aceite_vegetal_125g.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Sardina en aceite vegetal 125g, una excelente opción de nuestra categoría Pescado. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_0t532tupj",
-      "precioFinal": 1.99,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Sardina_en_aceite_vegetal_125g.jpg",
-      "searchText": "sardina en aceite vegetal 125g cárnicos y embutidos disfruta de la calidad de sardina en aceite vegetal 125g, una excelente opción de nuestra categoría pescado. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": false
     },
     {
       "nombre": "Lomitos de Atún en agua 160g",
@@ -2127,16 +2123,12 @@
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "Compuesto_lacteo_400g.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Compuesto lácteo 400g, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768509219912_nas7owss0",
-      "precioFinal": 2.45,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Compuesto_lacteo_400g.jpg",
-      "searchText": "compuesto lácteo 400g lácteos disfruta de la calidad de compuesto lácteo 400g, una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": false
     },
     {
       "nombre": "Yogurt probiótico de 1L (fresa y platanito)",
@@ -2376,19 +2368,15 @@
       "nombre": "Paquete de café Dufiltro (250g)",
       "categoria": "Despensa",
       "precio": 4,
-      "descuento": 0,
+      "descuento": 2.5,
       "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
+      "nuevo": false,
+      "oferta": true,
       "imagenes": [
         "Paquete_de_cafe_Dufiltro_(250g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de café Dufiltro (250g), una excelente opción de nuestra categoría Cafetería. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768509219912_z5o3fp5c1",
-      "precioFinal": 4,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Paquete_de_cafe_Dufiltro_(250g).jpg",
-      "searchText": "paquete de café dufiltro (250g) despensa disfruta de la calidad de paquete de café dufiltro (250g), una excelente opción de nuestra categoría cafetería. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Paquete de muslo de pollo (2kg)",
