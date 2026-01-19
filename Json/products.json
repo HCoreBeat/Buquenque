@@ -2759,7 +2759,7 @@
       "categoria": "Lácteos",
       "precio": 12,
       "descuento": 0,
-      "mas_vendido": false,
+      "mas_vendido": true,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
@@ -2773,7 +2773,7 @@
       "categoria": "Cárnicos y Embutidos",
       "precio": 11,
       "descuento": 0,
-      "mas_vendido": false,
+      "mas_vendido": true,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
@@ -2787,7 +2787,7 @@
       "categoria": "Cárnicos y Embutidos",
       "precio": 22,
       "descuento": 0,
-      "mas_vendido": false,
+      "mas_vendido": true,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
