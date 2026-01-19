@@ -642,11 +642,7 @@
         "Jabon_de_Baño_(75g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Jabón de Baño \"Florona\" (75g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "id": "prod_1768441690510_jv9runvnm",
-      "precioFinal": 0.8,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Jabon_de_Baño_(75g).jpg",
-      "searchText": "jabón de baño florona (75g) aseo y belleza disfruta de la calidad de jabón de baño \"florona\" (75g), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Jabón Belleza MARWA (100g)",
@@ -822,11 +818,7 @@
         "Galletas_Monro_Vainilla_(50g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Galletas Monro Vainilla (50g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "id": "prod_1768441690510_37bangtyi",
-      "precioFinal": 0.7,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Galletas_Monro_Vainilla_(50g).jpg",
-      "searchText": "galletas monro vainilla (50g) confitura disfruta de la calidad de galletas monro vainilla (50g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Pack x 6 maltas Guajira (6x330ml)",
@@ -2766,7 +2758,11 @@
         "img_2056_1768837498703.jpeg"
       ],
       "descripcion": "Disfruta del queso gouda Aldaketa x kg excelente producto para sus desayunos y meriendas",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768844669044_rk0xekg7j",
+      "precioFinal": 12,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2056_1768837498703.jpeg",
+      "searchText": "1kg de queso gouda lácteos disfruta del queso gouda aldaketa x kg excelente producto para sus desayunos y meriendas"
     },
     {
       "nombre": "Jamón bravo(1kg)",
@@ -2780,7 +2776,11 @@
         "img_2057_1768837728137.jpeg"
       ],
       "descripcion": "Disfruta del jamón bravo x (kg)\nExcelente producto para disfrutar de un buen desayuno o una buena merienda.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768844669044_ghnvk7l1k",
+      "precioFinal": 11,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2057_1768837728137.jpeg",
+      "searchText": "jamón bravo(1kg) cárnicos y embutidos disfruta del jamón bravo x (kg)\nexcelente producto para disfrutar de un buen desayuno o una buena merienda."
     },
     {
       "nombre": "Jamón bravo(1kg)- Queso gouda(1kg)",
@@ -2794,6 +2794,24 @@
         "3c6e18e2-9e90-437d-96c2-fc4a2be0d6f5_1768838111426.jpeg"
       ],
       "descripcion": "Disfruta de la combinación perfecta del queso gouda y jamón bravo x (kg) excelente para desayunos y meriendas",
+      "disponibilidad": true,
+      "id": "prod_1768844669044_3f89efrkk",
+      "precioFinal": 22,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/3c6e18e2-9e90-437d-96c2-fc4a2be0d6f5_1768838111426.jpeg",
+      "searchText": "jamón bravo(1kg)- queso gouda(1kg) cárnicos y embutidos disfruta de la combinación perfecta del queso gouda y jamón bravo x (kg) excelente para desayunos y meriendas"
+    },
+    {
+      "nombre": "Frijoles rojos x(lbs)",
+      "categoria": "Despensa",
+      "precio": 1.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_2048_1768845035900.jpeg"
+      ],
+      "descripcion": "Disfruta de los frijoles colorados x (lbs)\nExcelente para almuerzos y cenas",
       "disponibilidad": true
     }
   ]
