@@ -894,7 +894,11 @@
         "Alubia_Pinta_(500g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Alubia Pinta (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false
+      "disponibilidad": false,
+      "id": "prod_1768837249013_sz9uw9fds",
+      "precioFinal": 1.99,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Alubia_Pinta_(500g).jpg",
+      "searchText": "alubia pinta (500g) despensa disfruta de la calidad de alubia pinta (500g), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Protector Diario (18u)",
@@ -1988,7 +1992,11 @@
         "Sardina_en_aceite_vegetal_125g.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Sardina en aceite vegetal 125g, una excelente opción de nuestra categoría Pescado. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false
+      "disponibilidad": false,
+      "id": "prod_1768837249014_8fmjzxxta",
+      "precioFinal": 1.99,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Sardina_en_aceite_vegetal_125g.jpg",
+      "searchText": "sardina en aceite vegetal 125g cárnicos y embutidos disfruta de la calidad de sardina en aceite vegetal 125g, una excelente opción de nuestra categoría pescado. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Lomitos de Atún en agua 160g",
@@ -2128,7 +2136,11 @@
         "Compuesto_lacteo_400g.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Compuesto lácteo 400g, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false
+      "disponibilidad": false,
+      "id": "prod_1768837249014_tysts1utg",
+      "precioFinal": 2.45,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Compuesto_lacteo_400g.jpg",
+      "searchText": "compuesto lácteo 400g lácteos disfruta de la calidad de compuesto lácteo 400g, una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Yogurt probiótico de 1L (fresa y platanito)",
@@ -2376,7 +2388,11 @@
         "Paquete_de_cafe_Dufiltro_(250g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de café Dufiltro (250g), una excelente opción de nuestra categoría Cafetería. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768837249014_0e8hctca5",
+      "precioFinal": 3.9,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Paquete_de_cafe_Dufiltro_(250g).jpg",
+      "searchText": "paquete de café dufiltro (250g) despensa disfruta de la calidad de paquete de café dufiltro (250g), una excelente opción de nuestra categoría cafetería. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Paquete de muslo de pollo (2kg)",
@@ -2737,6 +2753,48 @@
       "precioFinal": 6.99,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_1999_1768592587385.jpeg",
       "searchText": "pollo entero(3lbs) cárnicos y embutidos pollo entero fresco\npollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales."
+    },
+    {
+      "nombre": "1kg de queso gouda",
+      "categoria": "Lácteos",
+      "precio": 12,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_2056_1768837498703.jpeg"
+      ],
+      "descripcion": "Disfruta del queso gouda Aldaketa x kg excelente producto para sus desayunos y meriendas",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Jamón bravo(1kg)",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 11,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_2057_1768837728137.jpeg"
+      ],
+      "descripcion": "Disfruta del jamón bravo x (kg)\nExcelente producto para disfrutar de un buen desayuno o una buena merienda.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Jamón bravo(1kg)- Queso gouda(1kg)",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 22,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "3c6e18e2-9e90-437d-96c2-fc4a2be0d6f5_1768838111426.jpeg"
+      ],
+      "descripcion": "Disfruta de la combinación perfecta del queso gouda y jamón bravo x (kg) excelente para desayunos y meriendas",
+      "disponibilidad": true
     }
   ]
 }
