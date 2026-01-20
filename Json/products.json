@@ -2838,6 +2838,24 @@
         "img_2088_1768919882647.jpeg"
       ],
       "descripcion": "Disfruta del refresco de naranja x cajas de 24u ideal para meriendas",
+      "disponibilidad": true,
+      "id": "prod_1768920078698_xdo268cet",
+      "precioFinal": 17.97,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2088_1768919882647.jpeg",
+      "searchText": "caja de refresco naranja(24u) bebidas no alcohólicas disfruta del refresco de naranja x cajas de 24u ideal para meriendas"
+    },
+    {
+      "nombre": "Refresco naranja(330ml)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 0.8,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_2090_1768920359065.jpeg"
+      ],
+      "descripcion": "Disfruta del refresco de naranja x unidad excelente producto para meriendas",
       "disponibilidad": true
     }
   ]
