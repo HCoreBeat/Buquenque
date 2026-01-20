@@ -2,14 +2,14 @@
 
 /* Desktop Grande (1600px+) */
 @media (min-width: 1600px) {
-    .products-grid {
+    .category-products-grid {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
 }
 
 /* Desktop Estándar (1199px - 1599px) */
 @media (max-width: 1199px) {
-    .products-grid {
+    .category-products-grid {
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     }
     
@@ -20,7 +20,7 @@
 
 /* Tablets Grandes (992px - 1199px) */
 @media (max-width: 992px) {
-    .products-grid {
+    .category-products-grid {
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         gap: 1.25rem;
     }
@@ -127,6 +127,14 @@
         flex-wrap: wrap;
     }
 
+    .price-section {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
     .location-panel {
         margin-top: 0.5rem;
         margin-bottom: -10px;
@@ -134,7 +142,7 @@
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
-        padding: 0.6rem 1rem;
+        padding: 1.5rem 1rem;
         border: none;
         border-top: 1px solid var(--gris-claro);
         border-bottom: 2px solid var(--color-principal-pastel);
@@ -198,7 +206,7 @@
         transform: translateX(300px);
     }
     
-    .products-grid {
+    .category-products-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 1rem;
     }
@@ -427,7 +435,7 @@
 
 /* Smartphones (481px - 576px) */
 @media (max-width: 576px) {
-    .products-grid {
+    .category-products-grid {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
         gap: 0.75rem;
     }
@@ -445,7 +453,7 @@
     }
     
     .current-price {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     
     .add-to-cart {
@@ -518,7 +526,7 @@
 
 /* Smartphones Pequeños (400px - 480px) */
 @media (max-width: 480px) {
-    .products-grid {
+    .category-products-grid {
         grid-template-columns: 1fr 1fr;
     }
     
@@ -585,7 +593,7 @@
 
 /* Ultra pequeños (menos de 400px) */
 @media (max-width: 400px) {
-    .products-grid {
+    .category-products-grid {
         grid-template-columns: 1fr 1fr;
     }
     

@@ -20,7 +20,7 @@ const SEARCH_DEBOUNCE_MS = 250;
 // ========== VARIABLES DEL CARRUSEL ==========
 let currentSlide = 0;
 let carouselAutoplayInterval = null;
-const CAROUSEL_AUTOPLAY_DELAY = 5000; // 5 segundos
+const CAROUSEL_AUTOPLAY_DELAY = 10000; // 10 segundos
 
 // Función para ir al inicio
 function goToHome() {
@@ -592,150 +592,187 @@ function closeEmptyCartModal() {
   }, 300);
 }
 
-// Renderizar productos con precios corregidos
+// Renderizar productos agrupados por categoría
 function renderProducts(productsToRender = products) {
   const container = document.getElementById("products-container");
 
   // Asegurar que el banner esté visible al renderizar productos
   if (bannerContainer) {
-    bannerContainer.style.display = "block"; // O 'flex', 'grid', según cómo lo tengas en CSS
+    bannerContainer.style.display = "block";
   }
 
   if (!container) return;
   container.innerHTML = "";
 
+  // Agrupar productos por categoría
+  const groupedByCategory = {};
+  
   productsToRender.forEach((product) => {
-    const displayProduct = product.isGrouped
-      ? product.variants[product.currentVariant]
-      : product;
-    const cleanName = displayProduct.nombre.replace(/'/g, "\\'");
+    const category = product.categoria || "Sin categoría";
+    if (!groupedByCategory[category]) {
+      groupedByCategory[category] = [];
+    }
+    groupedByCategory[category].push(product);
+  });
 
-    const productEl = document.createElement("div");
-    productEl.className = "product-card";
+  // Ordenar categorías alfabéticamente
+  const sortedCategories = Object.keys(groupedByCategory).sort();
 
-    const isOnSale = displayProduct.oferta && displayProduct.descuento > 0;
-    const finalPrice = isOnSale
-      ? (displayProduct.precio * (1 - displayProduct.descuento / 100)).toFixed(
-          2
-        )
-      : displayProduct.precio.toFixed(2);
+  // Crear panel para cada categoría
+  sortedCategories.forEach((category) => {
+    const categoryPanel = document.createElement("div");
+    categoryPanel.className = "category-panel";
+    categoryPanel.setAttribute("data-category", category);
 
-    // Miniaturas de variantes
-    const variantThumbnails = product.isGrouped
-      ? `
-            <div class="variant-thumbnails-container">
-                <div class="variant-thumbnails">
-                    ${product.variants
-                      .map(
-                        (variant, index) => `
-                        <div class="variant-thumb ${
-                          index === product.currentVariant ? "active" : ""
-                        }" 
-                             onclick="changeProductVariant(this, '${
-                               product.baseName
-                             }', ${index}, event)">
-                            <img src="Images/products/${
-                              variant.imagenes[0]
-                            }" alt="${
-                          variant.variantName
-                        }" loading="lazy" decoding="async">
-                            <span class="variant-tooltip">${
-                              variant.variantName
-                            }</span>
-                        </div>
-                    `
-                      )
-                      .join("")}
-                </div>
-            </div>
-        `
-      : "";
+    // Encabezado de la categoría
+    const categoryHeader = document.createElement("div");
+    categoryHeader.className = "category-header";
+    categoryHeader.innerHTML = `
+      <div class="category-header-content">
+        <i class="fas fa-${getCategoryIcon(category)}"></i>
+        <h2 class="category-title">${category}</h2>
+        <span class="category-count">${groupedByCategory[category].length}</span>
+      </div>
+    `;
+    categoryPanel.appendChild(categoryHeader);
 
-    productEl.innerHTML = `
-            <div class="product-image-container ${
-              !displayProduct.disponibilidad ? "unavailable" : ""
-            }">
-                <div class="product-badges">
-                    ${
-                      displayProduct.nuevo
-                        ? '<span class="badge nuevo"><i class="fas fa-star"></i> NUEVO</span>'
-                        : ""
-                    }
-                    ${
-                      displayProduct.oferta
-                        ? '<span class="badge oferta"><i class="fas fa-tag"></i> OFERTA</span>'
-                        : ""
-                    }
-                    ${
-                      displayProduct.mas_vendido
-                        ? '<span class="badge mas-vendido"><i class="fas fa-trophy"></i> TOP</span>'
-                        : ""
-                    }
-                    ${
-                      !displayProduct.disponibilidad
-                        ? '<span class="badge agotado"><i class="fas fa-ban"></i> AGOTADO</span>'
-                        : ""
-                    }
-                </div>
-                <img src="Images/products/${displayProduct.imagenes[0]}" 
-                    class="product-image" 
-                    alt="${displayProduct.cleanName}"
-                    loading="lazy"
-                    decoding="async"
-                    onclick="showProductDetail('${encodeURIComponent(
-                      displayProduct.nombre
-                    )}')">
-            </div>
-            
-            <div class="product-info">
-                <div class="product-category">
-                    ${displayProduct.categoria}
-                </div>
+    // Grid de productos de esta categoría
+    const productsGrid = document.createElement("div");
+    productsGrid.className = "category-products-grid";
 
-                <h3 class="product-title" onclick="showProductDetail('${encodeURIComponent(
-                  displayProduct.nombre
-                )}')">
-                    ${displayProduct.cleanName}
-                </h3>
-                ${variantThumbnails}
-                
-                <div class="price-container">
-                    ${
-                      isOnSale
-                        ? `
-                        <span class="original-price">${displayProduct.precio.toFixed(
-                          2
-                        )}<img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></span>
-                        <span class="discount-percent">-${
-                          displayProduct.descuento
-                        }%</span>
-                    `
-                        : ""
-                    }
-                    <span class="current-price">${finalPrice} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></span>
-                </div>
-                
-                <div class="quantity-section">
-                    <button class="add-to-cart ${
-                      !displayProduct.disponibilidad ? "disabled" : ""
-                    }" 
-                            onclick="addToCart('${
-                              displayProduct.nombre
-                            }', false, event)"
-                            ${!displayProduct.disponibilidad ? "disabled" : ""}>
-                        <i class="fas fa-${
-                          !displayProduct.disponibilidad ? "lock" : "cart-plus"
-                        }"></i>
-                        <span>${
-                          !displayProduct.disponibilidad
-                            ? "Agotado"
-                            : "Añadir al carrito"
-                        }</span>
-                    </button>
-                </div>
-            </div>
-        `;
-    container.appendChild(productEl);
+    // Renderizar cada producto
+    groupedByCategory[category].forEach((product) => {
+      const displayProduct = product.isGrouped
+        ? product.variants[product.currentVariant]
+        : product;
+      const cleanName = displayProduct.nombre.replace(/'/g, "\\'");
+
+      const productEl = document.createElement("div");
+      productEl.className = "product-card";
+
+      const isOnSale = displayProduct.oferta && displayProduct.descuento > 0;
+      const finalPrice = isOnSale
+        ? (displayProduct.precio * (1 - displayProduct.descuento / 100)).toFixed(2)
+        : displayProduct.precio.toFixed(2);
+
+      // Miniaturas de variantes
+      const variantThumbnails = product.isGrouped
+        ? `
+              <div class="variant-thumbnails-container">
+                  <div class="variant-thumbnails">
+                      ${product.variants
+                        .map(
+                          (variant, index) => `
+                          <div class="variant-thumb ${
+                            index === product.currentVariant ? "active" : ""
+                          }" 
+                               onclick="changeProductVariant(this, '${
+                                 product.baseName
+                               }', ${index}, event)">
+                              <img src="Images/products/${
+                                variant.imagenes[0]
+                              }" alt="${
+                            variant.variantName
+                          }" loading="lazy" decoding="async">
+                              <span class="variant-tooltip">${
+                                variant.variantName
+                              }</span>
+                          </div>
+                      `
+                        )
+                        .join("")}
+                  </div>
+              </div>
+          `
+        : "";
+
+      productEl.innerHTML = `
+              <div class="product-image-container ${
+                !displayProduct.disponibilidad ? "unavailable" : ""
+              }">
+                  <div class="product-badges">
+                      ${
+                        displayProduct.nuevo
+                          ? '<span class="badge nuevo"><i class="fas fa-star"></i> NUEVO</span>'
+                          : ""
+                      }
+                      ${
+                        displayProduct.oferta
+                          ? '<span class="badge oferta"><i class="fas fa-tag"></i> OFERTA</span>'
+                          : ""
+                      }
+                      ${
+                        displayProduct.mas_vendido
+                          ? '<span class="badge mas-vendido"><i class="fas fa-trophy"></i> TOP</span>'
+                          : ""
+                      }
+                      ${
+                        !displayProduct.disponibilidad
+                          ? '<span class="badge agotado"><i class="fas fa-ban"></i> AGOTADO</span>'
+                          : ""
+                      }
+                  </div>
+                  <img src="Images/products/${displayProduct.imagenes[0]}" 
+                      class="product-image" 
+                      alt="${displayProduct.cleanName}"
+                      loading="lazy"
+                      decoding="async"
+                      onclick="showProductDetail('${encodeURIComponent(
+                        displayProduct.nombre
+                      )}')">
+              </div>
+              
+              <div class="product-info">
+                  <div class="product-category">
+                      ${displayProduct.categoria}
+                  </div>
+
+                  <h3 class="product-title" onclick="showProductDetail('${encodeURIComponent(
+                    displayProduct.nombre
+                  )}')">
+                      ${displayProduct.cleanName}
+                  </h3>
+                  ${variantThumbnails}
+                  
+                  <div class="price-container">
+                      ${
+                        isOnSale
+                          ? `
+                          <span class="original-price">${displayProduct.precio.toFixed(
+                            2
+                          )}<img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></span>
+                          <span class="discount-percent">${Math.round(displayProduct.descuento)}% OFF</span>
+                      `
+                          : ""
+                      }
+                      <span class="current-price">${finalPrice} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></span>
+                  </div>
+                  
+                  <div class="quantity-section">
+                      <button class="add-to-cart ${
+                        !displayProduct.disponibilidad ? "disabled" : ""
+                      }" 
+                              onclick="addToCart('${
+                                displayProduct.nombre
+                              }', false, event)"
+                              ${!displayProduct.disponibilidad ? "disabled" : ""}>
+                          <i class="fas fa-${
+                            !displayProduct.disponibilidad ? "lock" : "cart-plus"
+                          }"></i>
+                          <span>${
+                            !displayProduct.disponibilidad
+                              ? "Agotado"
+                              : "Añadir al carrito"
+                          }</span>
+                      </button>
+                  </div>
+              </div>
+          `;
+      productsGrid.appendChild(productEl);
+    });
+
+    categoryPanel.appendChild(productsGrid);
+    container.appendChild(categoryPanel);
   });
 }
 
@@ -819,7 +856,7 @@ function changeProductVariant(thumbElement, baseName, variantIndex, event) {
             <span class="original-price">${variant.precio.toFixed(
               2
             )}<img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></span>
-            <span class="discount-percent">-${variant.descuento}%</span>
+            <span class="discount-percent">${Math.round(variant.descuento)}% OFF</span>
         `
             : ""
         }
@@ -923,9 +960,7 @@ function renderBestSellers() {
                         <span class="best-seller-price-original">${displayProduct.precio.toFixed(
                           2
                         )} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-xs"></span>
-                        <span class="best-seller-discount">-${
-                          displayProduct.descuento
-                        }%</span>
+                        <span class="best-seller-discount">-${Math.round(displayProduct.descuento)}%</span>
                     `
                         : ""
                     }
@@ -1033,7 +1068,7 @@ function showProductDetail(productName) {
     );
   if (product.oferta)
     badges.push(
-      `<span class="detail-badge oferta"><i class="fas fa-tag"></i> -${product.descuento}%</span>`
+      `<span class="detail-badge oferta"><i class="fas fa-tag"></i> ${Math.round(product.descuento)}% OFF</span>`
     );
   if (product.mas_vendido)
     badges.push(
@@ -1165,18 +1200,16 @@ function showProductDetail(productName) {
                       isOnSale
                         ? `
                         <div class="price-with-discount">
+                        PVPR:
                             <span class="price-original">${product.precio.toFixed(
                               2
-                            )} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-lg"></span>
-                            <span class="discount-percent">-${
-                              product.descuento
-                            }%</span>
+                            )} </span>
                         </div>
-                        <span class="price-current">${finalPrice} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-lg"></span>
-                        <div class="price-save">Ahorras ${priceSave} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></div>
+                        <span class="price-current">Precio: ${finalPrice} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-lg"></span>
+                        <div class="price-save">Ahorras ${priceSave} </div>
                     `
                         : `
-                        <span class="price-current">${finalPrice} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-lg"></span>
+                        <span class="price-current">Precio: ${finalPrice} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-lg"></span>
                     `
                     }
                 </div>

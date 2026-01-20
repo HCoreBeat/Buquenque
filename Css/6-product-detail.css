@@ -20,7 +20,7 @@
 .detail-badge {
     font-size: 0.75rem;
     padding: 0.3rem 0.7rem;
-    border-radius: 12px;
+    border-radius: 5px;
     font-weight: 700;
     color: white;
     display: inline-flex;
@@ -38,7 +38,7 @@
 }
 
 .detail-badge.oferta {
-    background: var(--rojo-oferta);
+    background: var(--oferta);
 }
 
 .detail-badge.mas-vendido {
@@ -188,6 +188,10 @@
     gap: 0.3rem;
 }
 
+.price-with-discount {
+    display: ruby;
+}
+
 .price-original {
     font-size: 1.2rem;
     color: var(--gris-medio);
@@ -195,16 +199,16 @@
     margin-right: 0.8rem;
     display: flex;
     align-items: center;
-    gap: 0.2rem;
+    margin-bottom: 10px;
 }
 
 .price-save {
     font-size: 1rem;
+    font-weight: 600;
     color: var(--rojo-oferta);
     margin-top: 0.3rem;
     display: flex;
     align-items: center;
-    gap: 0.2rem;
 }
 
 /* Cantidad */

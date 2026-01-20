@@ -130,7 +130,7 @@
 }
 
 .best-seller-category {
-    font-size: 0.75rem;
+    font-size: 0.55rem;
     color: var(--gris-medio);
     font-weight: 600;
     text-transform: uppercase;
@@ -162,6 +162,7 @@
     align-items: baseline;
     gap: 0.4rem;
     margin-top: auto;
+    flex-wrap: wrap;
 }
 
 .best-seller-price-current {
@@ -184,10 +185,10 @@
 
 .best-seller-discount {
     font-size: 0.75rem;
-    color: var(--rojo-oferta);
+    color: var(--oferta);
     font-weight: 600;
     padding: 0.1rem 0.4rem;
-    background: rgba(255, 107, 107, 0.1);
+    background: rgba(255, 107, 107, 0.3);
     border-radius: 4px;
     margin-left: auto;
 }

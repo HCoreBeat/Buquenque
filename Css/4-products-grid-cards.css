@@ -76,7 +76,8 @@
 }
 
 .badge.oferta {
-    background-color: var(--rojo-oferta);
+    background-color: #ff0000;
+    border: 1px solid #cc0000;
 }
 
 .badge.mas-vendido {
@@ -210,7 +211,7 @@
 } 
 
 .discount-percent {
-    background: var(--rojo-oferta);
+    background: var(--oferta);
     color: white;
     padding: 0.2rem 0.5rem;
     border-radius: 3px;
@@ -410,4 +411,441 @@
 
 .clear-search-btn:hover i {
     transform: translateX(3px);
+}
+
+/* ========== CATEGORY PANELS - AGRUPACIÓN POR CATEGORÍA ========== */
+
+/* Contenedor de productos rediseñado */
+#products-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Panel de categoría */
+.category-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: transparent;
+    border: none;
+    border-radius: 0.75rem;
+    padding: 0;
+    animation: slideInUp 0.5s ease-out;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.category-panel:hover {
+    transform: none;
+}
+
+/* Encabezado de categoría - Más compacto */
+.category-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.9rem 1rem;
+    background: linear-gradient(135deg, #FDF6E9 0%, #FAF0DB 100%);
+    border-radius: 0.6rem;
+    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.12);
+    animation: slideInLeft 0.5s ease-out;
+    border-left: 4px solid var(--color-principal);
+    border-bottom: 2px solid rgba(212, 175, 55, 0.25);
+}
+
+.category-header-content {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex: 1;
+}
+
+.category-header i {
+    font-size: 1.5rem;
+    color: #ff4d4d;
+    opacity: 1;
+    flex-shrink: 0;
+}
+
+.category-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--negro);
+    margin: 0;
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.category-count {
+    background: var(--color-principal);
+    color: var(--negro);
+    padding: 0.35rem 0.8rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    margin-left: auto;
+    border: 2px solid rgba(212, 175, 55, 0.4);
+    flex-shrink: 0;
+}
+
+/* Grid de productos por categoría */
+.category-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+    animation: fadeIn 0.6s ease-out 0.1s both;
+}
+
+/* Animaciones */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ========== RESPONSIVE PARA CATEGORY PANELS ========== */
+
+/* Desktop Grande (1400px+) */
+@media (min-width: 1400px) {
+    .category-products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+/* Desktop Estándar (1200px - 1399px) */
+@media (max-width: 1399px) {
+    .category-products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.4rem;
+    }
+}
+
+/* Tablets Grandes (992px - 1199px) */
+@media (max-width: 1199px) {
+    #products-container {
+        gap: 2rem;
+    }
+
+    .category-header {
+        padding: 0.8rem 0.9rem;
+        gap: 0.75rem;
+    }
+
+    .category-header i {
+        font-size: 1.4rem;
+    }
+
+    .category-title {
+        font-size: 1.1rem;
+    }
+
+    .category-count {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.7rem;
+    }
+
+    .category-products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1.2rem;
+    }
+}
+
+/* Tablets (769px - 991px) */
+@media (max-width: 991px) {
+    #products-container {
+        gap: 1.8rem;
+    }
+
+    .category-panel {
+        gap: 1rem;
+    }
+
+    .category-header {
+        padding: 0.75rem 0.85rem;
+        gap: 0.65rem;
+    }
+
+    .category-header i {
+        font-size: 1.3rem;
+    }
+
+    .category-title {
+        font-size: 1.05rem;
+    }
+
+    .category-count {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.65rem;
+    }
+
+    .category-products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1rem;
+    }
+}
+
+/* Tablets Medianos (768px - 768px) */
+@media (max-width: 768px) {
+    #main-content {
+        padding: 0.75rem 1rem;
+    }
+
+    #products-container {
+        gap: 1.5rem;
+    }
+
+    .category-panel {
+        gap: 0.9rem;
+    }
+
+    .category-header {
+        padding: 0.7rem 0.8rem;
+        gap: 0.6rem;
+    }
+
+    .category-header i {
+        font-size: 1.25rem;
+    }
+
+    .category-title {
+        font-size: 1rem;
+    }
+
+    .category-count {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.6rem;
+    }
+
+    .category-products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 0.9rem;
+    }
+
+    .product-card {
+        --image-height: 140px;
+        --title-font: 0.85rem;
+        --price-font: 1rem;
+        --btn-font: 0.8rem;
+    }
+
+    .product-info {
+        padding: 0.65rem;
+    }
+
+    .product-title {
+        font-size: 0.85rem;
+    }
+
+    .price-container {
+        margin-bottom: 0.6rem;
+    }
+
+    .add-to-cart {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Móviles Grandes (480px - 767px) */
+@media (max-width: 767px) {
+    #main-content {
+        padding: 0.5rem 0.75rem;
+    }
+
+    #products-container {
+        gap: 1.2rem;
+    }
+
+    .category-panel {
+        gap: 0.8rem;
+    }
+
+    .category-header {
+        padding: 0.65rem 0.75rem;
+        gap: 0.55rem;
+        border-bottom: 2px solid var(--color-principal-pastel);
+    }
+
+    .category-header i {
+        font-size: 1.2rem;
+    }
+
+    .category-title {
+        font-size: 0.95rem;
+    }
+
+    .category-count {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.55rem;
+    }
+
+    .category-products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 0.8rem;
+    }
+
+    .product-card {
+        --image-height: 130px;
+        --title-font: 0.8rem;
+        --price-font: 0.95rem;
+        --btn-font: 0.75rem;
+    }
+
+    .product-info {
+        padding: 0.6rem;
+    }
+
+    .product-title {
+        font-size: 0.8rem;
+    }
+
+    .price-container {
+        margin-bottom: 0.5rem;
+        gap: 0.3rem;
+    }
+
+    .original-price {
+        font-size: 0.75rem;
+    }
+
+    .discount-percent {
+        font-size: 0.65rem;
+        padding: 0.15rem 0.4rem;
+    }
+
+    .current-price {
+        font-size: 0.9rem;
+    }
+
+    .add-to-cart {
+        padding: 0.7rem;
+        font-size: 0.8rem;
+        gap: 0.4rem;
+    }
+
+    .add-to-cart i {
+        font-size: 0.85rem;
+    }
+}
+
+/* Móviles Pequeños (hasta 479px) */
+@media (max-width: 479px) {
+    #main-content {
+        padding: 0.5rem 0.5rem;
+    }
+
+    #products-container {
+        gap: 3rem;
+    }
+
+    .category-panel {
+        gap: 0.7rem;
+    }
+
+    .category-header {
+        padding: 0.6rem 0.7rem;
+        gap: 0.5rem;
+    }
+
+    .category-header-content {
+        gap: 0.6rem;
+    }
+
+    .category-header i {
+        font-size: 1.1rem;
+    }
+
+    .category-title {
+        font-size: 0.9rem;
+    }
+
+    .category-count {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .category-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.7rem;
+    }
+
+    .product-card {
+        --image-height: 120px;
+        --title-font: 0.75rem;
+        --price-font: 0.9rem;
+        --btn-font: 0.7rem;
+    }
+
+    .product-info {
+        padding: 0.5rem;
+    }
+
+    .product-title {
+        font-size: 0.75rem;
+        max-height: 2.5rem;
+    }
+
+    .product-category {
+        font-size: 0.7rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .price-container {
+        margin-bottom: 0.4rem;
+        gap: 0.2rem;
+    }
+
+    .original-price {
+        font-size: 1rem;
+    }
+
+    .discount-percent {
+        font-size: 0.6rem;
+        padding: 0.1rem 0.35rem;
+    }
+
+    .current-price {
+        font-size: 0.85rem;
+    }
+
+    .add-to-cart {
+        padding: 0.6rem;
+        font-size: 0.7rem;
+        gap: 0.3rem;
+    }
+
+    .add-to-cart i {
+        font-size: 0.75rem;
+    }
 }
