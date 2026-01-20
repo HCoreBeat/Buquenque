@@ -112,15 +112,19 @@
       "nombre": "Vino Espumoso La Baronne Demi-Sec Rosé (750 ml)",
       "categoria": "Bebidas alcohólicas",
       "precio": 7,
-      "descuento": 0.14,
+      "descuento": 0,
       "mas_vendido": true,
-      "nuevo": false,
-      "oferta": true,
+      "nuevo": true,
+      "oferta": false,
       "imagenes": [
         "La_Baronne.jpg"
       ],
       "descripcion": "Elegante Vino Espumoso La Baronne Demi-Sec Rosé, con un contenido de 750 ml y 10% de volumen de alcohol. Ideal para celebraciones y brindis especiales.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768441690510_04plz6eri",
+      "precioFinal": 7,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/La_Baronne.jpg",
+      "searchText": "vino espumoso la baronne demi-sec rosé (750 ml) bebidas alcohólicas elegante vino espumoso la baronne demi-sec rosé, con un contenido de 750 ml y 10% de volumen de alcohol. ideal para celebraciones y brindis especiales."
     },
     {
       "nombre": "Refresco Instantáneo (3Lt)",
@@ -252,15 +256,19 @@
       "nombre": "Refresco Limón (330ml)",
       "categoria": "Bebidas no alcohólicas",
       "precio": 0.98,
-      "descuento": 18.37,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "Refresco_Limon_(330ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Refresco Limón (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768441690510_fmpcg849v",
+      "precioFinal": 0.98,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Refresco_Limon_(330ml).jpg",
+      "searchText": "refresco limón (330ml) bebidas no alcohólicas disfruta de la calidad de refresco limón (330ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Gelatina sabor (Frutos Rojos 🍓) (40g)",
@@ -662,19 +670,15 @@
       "nombre": "Detergente (500g)",
       "categoria": "Aseo y Belleza",
       "precio": 1.75,
-      "descuento": 0,
+      "descuento": 26.29,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
-        "Detergente_(500g).jpg"
+        "img_2086_1768919335450.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Detergente (500g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_cl4roeyke",
-      "precioFinal": 1.75,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Detergente_(500g).jpg",
-      "searchText": "detergente (500g) aseo y belleza disfruta de la calidad de detergente (500g), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Bizcocho Marwa Chocolate (40g)",
@@ -749,22 +753,18 @@
       "searchText": "galletas de soda salricas 7 tacos confitura disfruta de la calidad de galletas de soda salricas 7 tacos, una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
-      "nombre": "Caja de refresco Limón",
+      "nombre": "Caja de refresco Limón(24u)",
       "categoria": "Bebidas no alcohólicas",
       "precio": 20,
-      "descuento": 0,
+      "descuento": 10.15,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "Caja_de_refresco_Limon.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Caja de refresco Limón, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_sy0372m1p",
-      "precioFinal": 20,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Caja_de_refresco_Limon.jpg",
-      "searchText": "caja de refresco limón bebidas no alcohólicas disfruta de la calidad de caja de refresco limón, una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Pechuga de pollo (1Kg)",
@@ -932,19 +932,15 @@
       "nombre": "Mayonesa Victoria (250ml)",
       "categoria": "Aderezos",
       "precio": 2.47,
-      "descuento": 0,
+      "descuento": 8.91,
       "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
+      "nuevo": false,
+      "oferta": true,
       "imagenes": [
         "Mayonesa_Victoria_(500ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Mayonesa \"Victoria\" (500ml), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768509219912_tvj6iq15t",
-      "precioFinal": 2.47,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Mayonesa_Victoria_(500ml).jpg",
-      "searchText": "mayonesa victoria (250ml) aderezos disfruta de la calidad de mayonesa \"victoria\" (500ml), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Pack x 12 Sal y Pimienta Vima",
@@ -1940,19 +1936,15 @@
       "nombre": "Caja de cerveza Cristal (24 unidades)",
       "categoria": "Bebidas alcohólicas",
       "precio": 22.5,
-      "descuento": 0,
+      "descuento": 2.22,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "Caja_de_cerveza_Cristal_(24_unidades).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Caja de cerveza Cristal (24 unidades), una excelente opción de nuestra categoría Bebidas alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768509219912_pb6y62qrk",
-      "precioFinal": 22.5,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Caja_de_cerveza_Cristal_(24_unidades).jpg",
-      "searchText": "caja de cerveza cristal (24 unidades) bebidas alcohólicas disfruta de la calidad de caja de cerveza cristal (24 unidades), una excelente opción de nuestra categoría bebidas alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Banderillas Gourmet (picantes y dulce) 330g",
@@ -2573,16 +2565,12 @@
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "Chicle_sin_azucar_70u.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Chicle sin azúcar 70u, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_5huk1nzry",
-      "precioFinal": 4.5,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Chicle_sin_azucar_70u.jpg",
-      "searchText": "chicle sin azúcar 70u confitura disfruta de la calidad de chicle sin azúcar 70u, una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Rayan Chocolate",
