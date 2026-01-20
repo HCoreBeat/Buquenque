@@ -127,22 +127,18 @@
       "searchText": "vino espumoso la baronne demi-sec rosé (750 ml) bebidas alcohólicas elegante vino espumoso la baronne demi-sec rosé, con un contenido de 750 ml y 10% de volumen de alcohol. ideal para celebraciones y brindis especiales."
     },
     {
-      "nombre": "Refresco Instantáneo (3Lt)",
+      "nombre": "Refresco instantáneos (2lts)",
       "categoria": "Bebidas no alcohólicas",
       "precio": 0.25,
-      "descuento": 0,
+      "descuento": 32,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
-        "Refresco_Instantaneo_(3Lt).jpg"
+        "img_2062_1768919051468.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Refresco Instantáneo (3Lt), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_62x16njac",
-      "precioFinal": 0.25,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Refresco_Instantaneo_(3Lt).jpg",
-      "searchText": "refresco instantáneo (3lt) bebidas no alcohólicas disfruta de la calidad de refresco instantáneo (3lt), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Aceite (900ml)",
@@ -256,19 +252,15 @@
       "nombre": "Refresco Limón (330ml)",
       "categoria": "Bebidas no alcohólicas",
       "precio": 0.98,
-      "descuento": 0,
+      "descuento": 18.37,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "Refresco_Limon_(330ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Refresco Limón (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_fmpcg849v",
-      "precioFinal": 0.98,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Refresco_Limon_(330ml).jpg",
-      "searchText": "refresco limón (330ml) bebidas no alcohólicas disfruta de la calidad de refresco limón (330ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Gelatina sabor (Frutos Rojos 🍓) (40g)",
@@ -642,7 +634,11 @@
         "Jabon_de_Baño_(75g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Jabón de Baño \"Florona\" (75g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768918643793_v1ax5w4ut",
+      "precioFinal": 0.8,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Jabon_de_Baño_(75g).jpg",
+      "searchText": "jabón de baño florona (75g) aseo y belleza disfruta de la calidad de jabón de baño \"florona\" (75g), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Jabón Belleza MARWA (100g)",
@@ -818,7 +814,11 @@
         "Galletas_Monro_Vainilla_(50g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Galletas Monro Vainilla (50g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768918643793_umkfz2iov",
+      "precioFinal": 0.7,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Galletas_Monro_Vainilla_(50g).jpg",
+      "searchText": "galletas monro vainilla (50g) confitura disfruta de la calidad de galletas monro vainilla (50g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Pack x 6 maltas Guajira (6x330ml)",
@@ -2812,7 +2812,11 @@
         "img_2048_1768845035900.jpeg"
       ],
       "descripcion": "Disfruta de los frijoles colorados x (lbs)\nExcelente para almuerzos y cenas",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768918643793_wff5w2f61",
+      "precioFinal": 1.99,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2048_1768845035900.jpeg",
+      "searchText": "frijoles rojos x(lbs) despensa disfruta de los frijoles colorados x (lbs)\nexcelente para almuerzos y cenas"
     }
   ]
 }
