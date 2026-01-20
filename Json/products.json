@@ -111,7 +111,7 @@
     {
       "nombre": "Vino Espumoso La Baronne Demi-Sec Rosé (750 ml)",
       "categoria": "Bebidas alcohólicas",
-      "precio": 7,
+      "precio": 6.99,
       "descuento": 0,
       "mas_vendido": true,
       "nuevo": true,
@@ -120,11 +120,7 @@
         "La_Baronne.jpg"
       ],
       "descripcion": "Elegante Vino Espumoso La Baronne Demi-Sec Rosé, con un contenido de 750 ml y 10% de volumen de alcohol. Ideal para celebraciones y brindis especiales.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_04plz6eri",
-      "precioFinal": 7,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/La_Baronne.jpg",
-      "searchText": "vino espumoso la baronne demi-sec rosé (750 ml) bebidas alcohólicas elegante vino espumoso la baronne demi-sec rosé, con un contenido de 750 ml y 10% de volumen de alcohol. ideal para celebraciones y brindis especiales."
+      "disponibilidad": true
     },
     {
       "nombre": "Refresco Instantáneo (3Lt)",
@@ -678,7 +674,11 @@
         "img_2086_1768920818978.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Detergente (500g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768922459552_dk1e98z0g",
+      "precioFinal": 1.29,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2086_1768920818978.jpeg",
+      "searchText": "detergente (500g) aseo y belleza disfruta de la calidad de detergente (500g), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Bizcocho Marwa Chocolate (40g)",
