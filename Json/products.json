@@ -120,25 +120,25 @@
         "La_Baronne.jpg"
       ],
       "descripcion": "Elegante Vino Espumoso La Baronne Demi-Sec Rosé, con un contenido de 750 ml y 10% de volumen de alcohol. Ideal para celebraciones y brindis especiales.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768923054742_dhekmp0os",
+      "precioFinal": 6.99,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/La_Baronne.jpg",
+      "searchText": "vino espumoso la baronne demi-sec rosé (750 ml) bebidas alcohólicas elegante vino espumoso la baronne demi-sec rosé, con un contenido de 750 ml y 10% de volumen de alcohol. ideal para celebraciones y brindis especiales."
     },
     {
-      "nombre": "Refresco Instantáneo (3Lt)",
+      "nombre": "Refresco Instantáneo (2Lt)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 0.25,
+      "precio": 0.17,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "Refresco_Instantaneo_(3Lt).jpg"
+        "14649_1768923556748.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Refresco Instantáneo (3Lt), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_62x16njac",
-      "precioFinal": 0.25,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Refresco_Instantaneo_(3Lt).jpg",
-      "searchText": "refresco instantáneo (3lt) bebidas no alcohólicas disfruta de la calidad de refresco instantáneo (3lt), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Aceite (900ml)",
@@ -251,7 +251,7 @@
     {
       "nombre": "Refresco Limón (330ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 0.98,
+      "precio": 0.8,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -260,11 +260,7 @@
         "Refresco_Limon_(330ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Refresco Limón (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_fmpcg849v",
-      "precioFinal": 0.98,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Refresco_Limon_(330ml).jpg",
-      "searchText": "refresco limón (330ml) bebidas no alcohólicas disfruta de la calidad de refresco limón (330ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Gelatina sabor (Frutos Rojos 🍓) (40g)",
@@ -755,7 +751,7 @@
     {
       "nombre": "Caja de refresco Limón",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 20,
+      "precio": 17.97,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -764,11 +760,7 @@
         "Caja_de_refresco_Limon.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Caja de refresco Limón, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_sy0372m1p",
-      "precioFinal": 20,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Caja_de_refresco_Limon.jpg",
-      "searchText": "caja de refresco limón bebidas no alcohólicas disfruta de la calidad de caja de refresco limón, una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Pechuga de pollo (1Kg)",
