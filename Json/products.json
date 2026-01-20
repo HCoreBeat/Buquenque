@@ -127,18 +127,22 @@
       "searchText": "vino espumoso la baronne demi-sec rosé (750 ml) bebidas alcohólicas elegante vino espumoso la baronne demi-sec rosé, con un contenido de 750 ml y 10% de volumen de alcohol. ideal para celebraciones y brindis especiales."
     },
     {
-      "nombre": "Refresco Instantáneo (2lts)",
+      "nombre": "Refresco Instantáneo (3Lt)",
       "categoria": "Bebidas no alcohólicas",
       "precio": 0.25,
-      "descuento": 32,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
-        "img_2062_1768920734817.jpeg"
+        "Refresco_Instantaneo_(3Lt).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Refresco Instantáneo (3Lt), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768441690510_62x16njac",
+      "precioFinal": 0.25,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Refresco_Instantaneo_(3Lt).jpg",
+      "searchText": "refresco instantáneo (3lt) bebidas no alcohólicas disfruta de la calidad de refresco instantáneo (3lt), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Aceite (900ml)",
@@ -666,19 +670,15 @@
       "nombre": "Detergente (500g)",
       "categoria": "Aseo y Belleza",
       "precio": 1.75,
-      "descuento": 0,
+      "descuento": 26.29,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
-        "Detergente_(500g).jpg"
+        "img_2086_1768920818978.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Detergente (500g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_cl4roeyke",
-      "precioFinal": 1.75,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Detergente_(500g).jpg",
-      "searchText": "detergente (500g) aseo y belleza disfruta de la calidad de detergente (500g), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Bizcocho Marwa Chocolate (40g)",
