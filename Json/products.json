@@ -132,12 +132,12 @@
       "precio": 0.17,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "14649_1768923556748.jpg"
       ],
-      "descripcion": "Disfruta de la calidad de Refresco Instantáneo (3Lt), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
+      "descripcion": "Disfruta de la calidad de Refresco Instantáneo (2Lt), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true
     },
     {
@@ -260,7 +260,11 @@
         "Refresco_Limon_(330ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Refresco Limón (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768923781803_n2hnqahbv",
+      "precioFinal": 0.8,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Refresco_Limon_(330ml).jpg",
+      "searchText": "refresco limón (330ml) bebidas no alcohólicas disfruta de la calidad de refresco limón (330ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Gelatina sabor (Frutos Rojos 🍓) (40g)",
@@ -760,7 +764,11 @@
         "Caja_de_refresco_Limon.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Caja de refresco Limón, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768923781803_6nigzuz4y",
+      "precioFinal": 17.97,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Caja_de_refresco_Limon.jpg",
+      "searchText": "caja de refresco limón bebidas no alcohólicas disfruta de la calidad de caja de refresco limón, una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Pechuga de pollo (1Kg)",
