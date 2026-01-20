@@ -112,19 +112,15 @@
       "nombre": "Vino Espumoso La Baronne Demi-Sec Rosé (750 ml)",
       "categoria": "Bebidas alcohólicas",
       "precio": 7,
-      "descuento": 0,
+      "descuento": 0.14,
       "mas_vendido": true,
-      "nuevo": true,
-      "oferta": false,
+      "nuevo": false,
+      "oferta": true,
       "imagenes": [
         "La_Baronne.jpg"
       ],
       "descripcion": "Elegante Vino Espumoso La Baronne Demi-Sec Rosé, con un contenido de 750 ml y 10% de volumen de alcohol. Ideal para celebraciones y brindis especiales.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_04plz6eri",
-      "precioFinal": 7,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/La_Baronne.jpg",
-      "searchText": "vino espumoso la baronne demi-sec rosé (750 ml) bebidas alcohólicas elegante vino espumoso la baronne demi-sec rosé, con un contenido de 750 ml y 10% de volumen de alcohol. ideal para celebraciones y brindis especiales."
+      "disponibilidad": true
     },
     {
       "nombre": "Refresco Instantáneo (3Lt)",
@@ -2856,7 +2852,11 @@
         "img_2090_1768920359065.jpeg"
       ],
       "descripcion": "Disfruta del refresco de naranja x unidad excelente producto para meriendas",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768920589823_5nbf1b3sb",
+      "precioFinal": 0.8,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2090_1768920359065.jpeg",
+      "searchText": "refresco naranja(330ml) bebidas no alcohólicas disfruta del refresco de naranja x unidad excelente producto para meriendas"
     }
   ]
 }
