@@ -212,6 +212,7 @@ async function loadProducts() {
     initPriceFilter();
     renderProducts();
     renderBestSellers();
+    renderCategoriesCircle();
     updateCartCount();
     updateCart();
 
@@ -398,6 +399,7 @@ function initPriceFilter() {
 
     renderProducts(filteredProducts);
     renderBestSellers();
+    renderCategoriesCircle();
     closeSidebar();
   }
 }
@@ -426,6 +428,7 @@ function filterByCategory(category) {
 
   renderProducts(filteredProducts);
   renderBestSellers();
+  renderCategoriesCircle();
 
   // Cerrar sidebar en móvil
   if (window.innerWidth <= 768) {
@@ -451,6 +454,7 @@ function searchProducts() {
   if (!searchTerm) {
     renderProducts();
     renderBestSellers();
+    renderCategoriesCircle();
     hideNoResultsMessage();
     return;
   }
@@ -465,6 +469,7 @@ function searchProducts() {
   if (filteredProducts.length > 0) {
     renderProducts(filteredProducts);
     renderBestSellers();
+    renderCategoriesCircle();
     hideNoResultsMessage();
   } else {
     productsContainer.innerHTML = "";
@@ -973,6 +978,83 @@ function renderBestSellers() {
   });
 }
 
+// Función para renderizar categorías en forma circular
+function renderCategoriesCircle() {
+  const categoriesCircleScroll = document.getElementById("categories-circle-scroll");
+  const categoriesSectionCircle = document.querySelector(".categories-circle-section");
+
+  if (!categoriesCircleScroll || !categoriesSectionCircle) return;
+
+  // Filtrar "Todo" de las categorías circulares (queremos solo categorías específicas)
+  const displayCategories = categories.filter(cat => cat !== "Todo");
+
+  // Si no hay categorías, ocultar la sección
+  if (displayCategories.length === 0) {
+    categoriesSectionCircle.style.display = "none";
+    return;
+  }
+
+  // Limpiar el contenedor
+  categoriesCircleScroll.innerHTML = "";
+
+  // Crear cards para cada categoría
+  displayCategories.forEach((category, index) => {
+    // Contar productos en cada categoría
+    const productsInCategory = products.filter(
+      p => p.categoria === category && p.disponibilidad
+    ).length;
+
+    // Mapeo de nombres de categorías a nombres de archivos de imagen
+    const categoryImageMap = {
+      "Despensa": "despensa.jpg",
+      "Confitura": "confitura.jpg",
+      "Bebidas": "bebidas.jpg",
+      "Lácteos": "lacteos.jpg",
+      "Carnes": "carnes.jpg",
+      "Verduras": "verduras.jpg",
+      "Frutas": "frutas.jpg",
+      "Panadería": "panaderia.jpg",
+      "Snacks": "snacks.jpg",
+      "Higiene": "higiene.jpg",
+      "Limpieza": "limpieza.jpg",
+      "Mascotas": "mascotas.jpg",
+      "Electrónica": "electronica.jpg",
+      "Hogar": "hogar.jpg",
+      "Deportes": "deportes.jpg",
+      "Belleza": "belleza.jpg",
+      "Farmacia": "farmacia.jpg",
+      "Accesorios": "accesorios.jpg"
+    };
+
+    // Obtener nombre de la imagen o usar uno por defecto
+    const imageName = categoryImageMap[category] || `${category.toLowerCase().replace(/\s+/g, "_")}.jpg`;
+
+    const card = document.createElement("div");
+    card.className = "category-circle-card";
+    card.style.animationDelay = `${index * 0.05}s`;
+    
+    // Hacer clickeable para filtrar por categoría
+    card.onclick = () => filterByCategory(category);
+
+    card.innerHTML = `
+      <div class="category-circle">
+        <img 
+          src="Images/Categories/${imageName}" 
+          alt="${category}"
+          class="category-circle-image"
+          loading="lazy"
+          decoding="async"
+          onerror="this.src='Images/categories-placeholder.jpg'"
+        >
+        ${productsInCategory > 0 ? `<div class="category-circle-badge">${productsInCategory}</div>` : ''}
+      </div>
+      <p class="category-circle-name">${category}</p>
+    `;
+
+    categoriesCircleScroll.appendChild(card);
+  });
+}
+
 // Mostrar detalle del producto con precios corregidos
 function showProductDetail(productName) {
   window.scrollTo({ top: 0 });
@@ -986,6 +1068,12 @@ function showProductDetail(productName) {
   // Ocultar la sección de best-sellers al entrar al detalle del producto
   if (bestSellersSection) {
     bestSellersSection.style.display = "none"; // <-- OCULTA LOS BEST-SELLERS
+  }
+
+  // Ocultar la sección de categorías circulares al entrar al detalle del producto
+  const categoriesCircleSection = document.querySelector(".categories-circle-section");
+  if (categoriesCircleSection) {
+    categoriesCircleSection.style.display = "none"; // <-- OCULTA LAS CATEGORÍAS CIRCULARES
   }
 
   // Buscar el producto principal
@@ -1530,6 +1618,12 @@ function hideProductDetail() {
   // Mostrar la sección de best-sellers cuando se vuelve a la página principal
   if (bestSellersSection) {
     bestSellersSection.style.display = "block"; // <-- MUESTRA LOS BEST-SELLERS
+  }
+
+  // Mostrar la sección de categorías circulares cuando se vuelve a la página principal
+  const categoriesCircleSection = document.querySelector(".categories-circle-section");
+  if (categoriesCircleSection) {
+    categoriesCircleSection.style.display = "block"; // <-- MUESTRA LAS CATEGORÍAS CIRCULARES
   }
 
   if (detailContainer) {

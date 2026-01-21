@@ -1,0 +1,266 @@
+/* ========== CATEGORÍAS CIRCULARES ========== */
+
+/* Sección de Categorías Circulares */
+.categories-circle-section {
+    width: 100%;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 2rem 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+/* Contenedor Principal */
+.categories-circle-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Título de la Sección */
+.categories-circle-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--negro);
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+/* Contenedor scrolleable */
+.categories-circle-scroll {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-principal) #f0f0f0;
+    flex-wrap: nowrap;
+}
+
+/* Scrollbar para navegadores Webkit */
+.categories-circle-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.categories-circle-scroll::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 3px;
+}
+
+.categories-circle-scroll::-webkit-scrollbar-thumb {
+    background: var(--color-principal);
+    border-radius: 3px;
+}
+
+.categories-circle-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--color-principal-pastel);
+}
+
+/* Card de Categoría Circular */
+.category-circle-card {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-align: center;
+    min-width: fit-content;
+}
+
+.category-circle-card:hover {
+    transform: scale(1.1);
+}
+
+/* Circle Container */
+.category-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--blanco) 0%, #f9f9f9 100%);
+    border: 2px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+}
+
+.category-circle-card:hover .category-circle {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-color: var(--color-principal);
+    background: linear-gradient(135deg, #f0f7ff 0%, var(--blanco) 100%);
+}
+
+/* Imagen dentro del círculo */
+.category-circle-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.category-circle-card:hover .category-circle-image {
+    transform: scale(1.12);
+}
+
+/* Badge de conteo (opcional) */
+.category-circle-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--rojo-mas-vendido);
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.category-circle-card:hover .category-circle-badge {
+    opacity: 1;
+}
+
+/* Nombre de la Categoría */
+.category-circle-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--negro);
+    transition: color 0.3s ease;
+    word-break: break-word;
+    max-width: 150px;
+    line-height: 1.2;
+}
+
+.category-circle-card:hover .category-circle-name {
+    color: var(--color-principal-pastel);
+}
+
+/* Responsivo - Tablet */
+@media (max-width: 1024px) {
+    .category-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .category-circle-name {
+        font-size: 0.88rem;
+    }
+
+    .categories-circle-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsivo - Móvil */
+@media (max-width: 768px) {
+    .categories-circle-section {
+        padding: 0.5rem 0;
+    }
+
+    .categories-circle-container {
+        padding: 0 0.5rem;
+    }
+
+    .categories-circle-title {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .categories-circle-scroll {
+        gap: 1rem;
+        padding-left: 0.5rem;
+    }
+
+    .category-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .category-circle-name {
+        font-size: 0.75rem;
+        max-width: 120px;
+    }
+
+    .category-circle-badge {
+        width: 24px;
+        height: 24px;
+        font-size: 0.65rem;
+    }
+}
+
+/* Responsivo - Mobile pequeño */
+@media (max-width: 480px) {
+    .categories-circle-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .categories-circle-scroll {
+        gap: 0.75rem;
+    }
+
+    .category-circle {
+        width: 85px;
+        height: 85px;
+    }
+
+    .category-circle-name {
+        font-size: 0.65rem;
+        max-width: 100px;
+    }
+}
+
+/* Animaciones de entrada */
+@keyframes categoryCircleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.category-circle-card {
+    animation: categoryCircleIn 0.4s ease-out forwards;
+}
+
+.category-circle-card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.category-circle-card:nth-child(2) {
+    animation-delay: 0.05s;
+}
+
+.category-circle-card:nth-child(3) {
+    animation-delay: 0.1s;
+}
+
+.category-circle-card:nth-child(4) {
+    animation-delay: 0.15s;
+}
+
+.category-circle-card:nth-child(5) {
+    animation-delay: 0.2s;
+}
+
+.category-circle-card:nth-child(6) {
+    animation-delay: 0.25s;
+}
+
+.category-circle-card:nth-child(n+7) {
+    animation-delay: 0.3s;
+}
