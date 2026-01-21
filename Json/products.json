@@ -138,7 +138,11 @@
         "14649_1768923556748.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Refresco Instantáneo (2Lt), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769030417838_noe5sa2wa",
+      "precioFinal": 0.17,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/14649_1768923556748.jpg",
+      "searchText": "refresco instantáneo (2lt) bebidas no alcohólicas disfruta de la calidad de refresco instantáneo (2lt), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Aceite (900ml)",
@@ -2857,6 +2861,20 @@
       "precioFinal": 0.8,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2090_1768920359065.jpeg",
       "searchText": "refresco naranja(330ml) bebidas no alcohólicas disfruta del refresco de naranja x unidad excelente producto para meriendas"
+    },
+    {
+      "nombre": "Helado Nestlé sabor fresa(4.5lt)",
+      "categoria": "Lácteos",
+      "precio": 20,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "12c8690f-01e7-424b-a11a-f23059a56c9c_1769030558353.jpeg"
+      ],
+      "descripcion": "Disfruta del cremoso helado Nestlé de fresa ideal para meriendas y acompañar cualquier tipo de dulce o confitura",
+      "disponibilidad": true
     }
   ]
 }
