@@ -2437,16 +2437,12 @@
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "Tanqueta_de_mayonesa_4lts.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Tanqueta de mayonesa 4lts, una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768509219912_k6prz00ge",
-      "precioFinal": 16,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Tanqueta_de_mayonesa_4lts.jpg",
-      "searchText": "tanqueta de mayonesa 4lts aderezos disfruta de la calidad de tanqueta de mayonesa 4lts, una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": false
     },
     {
       "nombre": "Bolsa de pan 10u",
@@ -2874,7 +2870,11 @@
         "12c8690f-01e7-424b-a11a-f23059a56c9c_1769030558353.jpeg"
       ],
       "descripcion": "Disfruta del cremoso helado Nestlé de fresa ideal para meriendas y acompañar cualquier tipo de dulce o confitura",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769031566853_kvxhnd4d3",
+      "precioFinal": 20,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/12c8690f-01e7-424b-a11a-f23059a56c9c_1769030558353.jpeg",
+      "searchText": "helado nestlé sabor fresa(4.5lt) lácteos disfruta del cremoso helado nestlé de fresa ideal para meriendas y acompañar cualquier tipo de dulce o confitura"
     }
   ]
 }
