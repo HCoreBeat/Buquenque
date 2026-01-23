@@ -2064,7 +2064,11 @@
         "Caja_de_Helado_Chocolate.jpg"
       ],
       "descripcion": "Caja de helados marca Nestlé, sabor chocolate. Producto de alta calidad ideal para compartir, debe mantenerse a una temperatura de -18°C para conservar su frescura y sabor.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769206851243_d390hov51",
+      "precioFinal": 20,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Caja_de_Helado_Chocolate.jpg",
+      "searchText": "caja de helados nestlé sabor (chocolate) lácteos caja de helados marca nestlé, sabor chocolate. producto de alta calidad ideal para compartir, debe mantenerse a una temperatura de -18°c para conservar su frescura y sabor."
     },
     {
       "nombre": "Caja de Helados Nestlé sabor (Vainilla)",
@@ -2078,7 +2082,11 @@
         "Caja_de_Helado_Vainilla.jpg"
       ],
       "descripcion": "Caja de helados marca Nestlé, sabor vainilla. Producto de alta calidad ideal para compartir, debe mantenerse a una temperatura de -18°C para conservar su frescura y sabor.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769206851243_ck15mfemw",
+      "precioFinal": 20,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Caja_de_Helado_Vainilla.jpg",
+      "searchText": "caja de helados nestlé sabor (vainilla) lácteos caja de helados marca nestlé, sabor vainilla. producto de alta calidad ideal para compartir, debe mantenerse a una temperatura de -18°c para conservar su frescura y sabor."
     },
     {
       "nombre": "Leche condensada 390g",
@@ -2143,14 +2151,10 @@
       "nuevo": false,
       "oferta": true,
       "imagenes": [
-        "c0811eb9-1c8b-4dd8-b509-48f7dceb90f4_1769183181314.jpeg"
+        "20053_1769206888567.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Yogurt probiótico de 1L (fresa y platanito), una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1769199921535_xycdemtsy",
-      "precioFinal": 5.8,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/c0811eb9-1c8b-4dd8-b509-48f7dceb90f4_1769183181314.jpeg",
-      "searchText": "yogurt probiótico de 1l (fresa-natural- guanábana) lácteos disfruta de la calidad de yogurt probiótico de 1l (fresa y platanito), una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Paquete de azúcar 1kg",
@@ -2866,7 +2870,11 @@
         "12c8690f-01e7-424b-a11a-f23059a56c9c_1769030558353.jpeg"
       ],
       "descripcion": "Disfruta del cremoso helado Nestlé de fresa ideal para meriendas y acompañar cualquier tipo de dulce o confitura",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769206851244_od2h62nc3",
+      "precioFinal": 20,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/12c8690f-01e7-424b-a11a-f23059a56c9c_1769030558353.jpeg",
+      "searchText": "caja de helados nestlé sabor (fresa) lácteos disfruta del cremoso helado nestlé de fresa ideal para meriendas y acompañar cualquier tipo de dulce o confitura"
     },
     {
       "nombre": "Galletas de Sal Criollas – Paquete Tradicional",
