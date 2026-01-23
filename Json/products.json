@@ -2892,11 +2892,15 @@
         "paquete_galleta_de_sal_1769200017513.jpg"
       ],
       "descripcion": "Disfruta el sabor auténtico de nuestras galletas de sal criollas, elaboradas con receta tradicional y textura crujiente. Perfectas para acompañar desayunos, meriendas o como base para tus combinaciones favoritas. Empacadas con cuidado en bolsa transparente para conservar su frescura y calidad.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769200481205_vpc09blss",
+      "precioFinal": 3.74,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/paquete_galleta_de_sal_1769200017513.jpg",
+      "searchText": "galletas de sal criollas – paquete tradicional confitura disfruta el sabor auténtico de nuestras galletas de sal criollas, elaboradas con receta tradicional y textura crujiente. perfectas para acompañar desayunos, meriendas o como base para tus combinaciones favoritas. empacadas con cuidado en bolsa transparente para conservar su frescura y calidad."
     },
     {
       "nombre": "Salsa de Tomate Rayan – 340g",
-      "categoria": "Despensa",
+      "categoria": "Aderezos",
       "precio": 2.14,
       "descuento": 0,
       "mas_vendido": false,
@@ -2910,7 +2914,7 @@
     },
     {
       "nombre": "Ketchup Cosami Original",
-      "categoria": "Despensa",
+      "categoria": "Aderezos",
       "precio": 1.99,
       "descuento": 0,
       "mas_vendido": false,
@@ -2924,7 +2928,7 @@
     },
     {
       "nombre": "Giardino Mostaza Premium – 300g",
-      "categoria": "Despensa",
+      "categoria": "Aderezos",
       "precio": 2.7,
       "descuento": 0,
       "mas_vendido": false,
