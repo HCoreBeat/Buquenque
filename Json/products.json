@@ -2154,7 +2154,11 @@
         "c0811eb9-1c8b-4dd8-b509-48f7dceb90f4_1769183181314.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Yogurt probiótico de 1L (fresa y platanito), una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769199921535_xycdemtsy",
+      "precioFinal": 5.8,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/c0811eb9-1c8b-4dd8-b509-48f7dceb90f4_1769183181314.jpeg",
+      "searchText": "yogurt probiótico de 1l (fresa-natural- guanábana) lácteos disfruta de la calidad de yogurt probiótico de 1l (fresa y platanito), una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Paquete de azúcar 1kg",
@@ -2875,6 +2879,62 @@
       "precioFinal": 20,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/12c8690f-01e7-424b-a11a-f23059a56c9c_1769030558353.jpeg",
       "searchText": "helado nestlé sabor fresa(4.5lt) lácteos disfruta del cremoso helado nestlé de fresa ideal para meriendas y acompañar cualquier tipo de dulce o confitura"
+    },
+    {
+      "nombre": "Galletas de Sal Criollas – Paquete Tradicional",
+      "categoria": "Confitura",
+      "precio": 3.74,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "paquete_galleta_de_sal_1769200017513.jpg"
+      ],
+      "descripcion": "Disfruta el sabor auténtico de nuestras galletas de sal criollas, elaboradas con receta tradicional y textura crujiente. Perfectas para acompañar desayunos, meriendas o como base para tus combinaciones favoritas. Empacadas con cuidado en bolsa transparente para conservar su frescura y calidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Salsa de Tomate Rayan – 340g",
+      "categoria": "Despensa",
+      "precio": 2.14,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "rayan_ketchup_1769200070307.jpg"
+      ],
+      "descripcion": "Dale sabor a tus comidas con la clásica salsa de tomate Rayan. Elaborada con tomates seleccionados, esta presentación de 340 g es perfecta para acompañar pastas, carnes, snacks y recetas criollas. Su textura suave y sabor equilibrado la convierten en un básico imprescindible en tu cocina.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Ketchup Cosami Original",
+      "categoria": "Despensa",
+      "precio": 1.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "ketchup_cosami_1769200134781.jpg"
+      ],
+      "descripcion": "Descubre el sabor tradicional con el ketchup original de Cosami. Elaborado con tomates frescos y un toque criollo, esta salsa es perfecta para acompañar papas fritas, hamburguesas, carnes y snacks. Su presentación en botella roja con tapa blanca garantiza conservación y fácil aplicación.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Giardino Mostaza Premium – 300g",
+      "categoria": "Despensa",
+      "precio": 2.7,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "mustard_1769200168758.jpg"
+      ],
+      "descripcion": "Agrega sabor y estilo a tus comidas con la mostaza Giardino. Su fórmula cremosa y equilibrada realza hamburguesas, hot dogs, sándwiches y platos criollos. Presentada en botella amarilla con tapa negra, incluye diseño visual atractivo y sello de calidad premium.",
+      "disponibilidad": true
     }
   ]
 }
