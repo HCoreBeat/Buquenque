@@ -2054,7 +2054,7 @@
     },
     {
       "nombre": "Caja de Helados Nestlé sabor (Chocolate)",
-      "categoria": "Postres",
+      "categoria": "Lácteos",
       "precio": 20,
       "descuento": 0,
       "mas_vendido": true,
@@ -2064,15 +2064,11 @@
         "Caja_de_Helado_Chocolate.jpg"
       ],
       "descripcion": "Caja de helados marca Nestlé, sabor chocolate. Producto de alta calidad ideal para compartir, debe mantenerse a una temperatura de -18°C para conservar su frescura y sabor.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_bb3r4ampt",
-      "precioFinal": 20,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Caja_de_Helado_Chocolate.jpg",
-      "searchText": "caja de helados nestlé sabor (chocolate) postres caja de helados marca nestlé, sabor chocolate. producto de alta calidad ideal para compartir, debe mantenerse a una temperatura de -18°c para conservar su frescura y sabor."
+      "disponibilidad": true
     },
     {
       "nombre": "Caja de Helados Nestlé sabor (Vainilla)",
-      "categoria": "Postres",
+      "categoria": "Lácteos",
       "precio": 20,
       "descuento": 0,
       "mas_vendido": true,
@@ -2082,11 +2078,7 @@
         "Caja_de_Helado_Vainilla.jpg"
       ],
       "descripcion": "Caja de helados marca Nestlé, sabor vainilla. Producto de alta calidad ideal para compartir, debe mantenerse a una temperatura de -18°C para conservar su frescura y sabor.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_749e3i9co",
-      "precioFinal": 20,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Caja_de_Helado_Vainilla.jpg",
-      "searchText": "caja de helados nestlé sabor (vainilla) postres caja de helados marca nestlé, sabor vainilla. producto de alta calidad ideal para compartir, debe mantenerse a una temperatura de -18°c para conservar su frescura y sabor."
+      "disponibilidad": true
     },
     {
       "nombre": "Leche condensada 390g",
@@ -2863,7 +2855,7 @@
       "searchText": "refresco naranja(330ml) bebidas no alcohólicas disfruta del refresco de naranja x unidad excelente producto para meriendas"
     },
     {
-      "nombre": "Helado Nestlé sabor fresa(4.5lt)",
+      "nombre": "Caja de Helados Nestlé sabor (Fresa)",
       "categoria": "Lácteos",
       "precio": 20,
       "descuento": 0,
@@ -2874,11 +2866,7 @@
         "12c8690f-01e7-424b-a11a-f23059a56c9c_1769030558353.jpeg"
       ],
       "descripcion": "Disfruta del cremoso helado Nestlé de fresa ideal para meriendas y acompañar cualquier tipo de dulce o confitura",
-      "disponibilidad": true,
-      "id": "prod_1769031566853_kvxhnd4d3",
-      "precioFinal": 20,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/12c8690f-01e7-424b-a11a-f23059a56c9c_1769030558353.jpeg",
-      "searchText": "helado nestlé sabor fresa(4.5lt) lácteos disfruta del cremoso helado nestlé de fresa ideal para meriendas y acompañar cualquier tipo de dulce o confitura"
+      "disponibilidad": true
     },
     {
       "nombre": "Galletas de Sal Criollas – Paquete Tradicional",
@@ -2910,7 +2898,11 @@
         "rayan_ketchup_1769200070307.jpg"
       ],
       "descripcion": "Dale sabor a tus comidas con la clásica salsa de tomate Rayan. Elaborada con tomates seleccionados, esta presentación de 340 g es perfecta para acompañar pastas, carnes, snacks y recetas criollas. Su textura suave y sabor equilibrado la convierten en un básico imprescindible en tu cocina.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769202654831_llgiogu7v",
+      "precioFinal": 2.14,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/rayan_ketchup_1769200070307.jpg",
+      "searchText": "salsa de tomate rayan – 340g aderezos dale sabor a tus comidas con la clásica salsa de tomate rayan. elaborada con tomates seleccionados, esta presentación de 340 g es perfecta para acompañar pastas, carnes, snacks y recetas criollas. su textura suave y sabor equilibrado la convierten en un básico imprescindible en tu cocina."
     },
     {
       "nombre": "Ketchup Cosami Original",
@@ -2924,7 +2916,11 @@
         "ketchup_cosami_1769200134781.jpg"
       ],
       "descripcion": "Descubre el sabor tradicional con el ketchup original de Cosami. Elaborado con tomates frescos y un toque criollo, esta salsa es perfecta para acompañar papas fritas, hamburguesas, carnes y snacks. Su presentación en botella roja con tapa blanca garantiza conservación y fácil aplicación.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769202654831_u5kvi6lhi",
+      "precioFinal": 1.99,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/ketchup_cosami_1769200134781.jpg",
+      "searchText": "ketchup cosami original aderezos descubre el sabor tradicional con el ketchup original de cosami. elaborado con tomates frescos y un toque criollo, esta salsa es perfecta para acompañar papas fritas, hamburguesas, carnes y snacks. su presentación en botella roja con tapa blanca garantiza conservación y fácil aplicación."
     },
     {
       "nombre": "Giardino Mostaza Premium – 300g",
@@ -2938,7 +2934,11 @@
         "mustard_1769200168758.jpg"
       ],
       "descripcion": "Agrega sabor y estilo a tus comidas con la mostaza Giardino. Su fórmula cremosa y equilibrada realza hamburguesas, hot dogs, sándwiches y platos criollos. Presentada en botella amarilla con tapa negra, incluye diseño visual atractivo y sello de calidad premium.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769202654831_7rc37gvmx",
+      "precioFinal": 2.7,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/mustard_1769200168758.jpg",
+      "searchText": "giardino mostaza premium – 300g aderezos agrega sabor y estilo a tus comidas con la mostaza giardino. su fórmula cremosa y equilibrada realza hamburguesas, hot dogs, sándwiches y platos criollos. presentada en botella amarilla con tapa negra, incluye diseño visual atractivo y sello de calidad premium."
     }
   ]
 }
