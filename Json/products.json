@@ -2143,22 +2143,18 @@
       "searchText": "compuesto lácteo 400g lácteos disfruta de la calidad de compuesto lácteo 400g, una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
-      "nombre": "Yogurt probiótico de 1L (fresa y platanito)",
+      "nombre": "Yogurt probiótico de 1L (fresa-natural- guanábana)",
       "categoria": "Lácteos",
       "precio": 6,
-      "descuento": 0,
-      "mas_vendido": false,
+      "descuento": 3.33,
+      "mas_vendido": true,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
-        "Yogurt_probiotico_de_1L.jpg"
+        "c0811eb9-1c8b-4dd8-b509-48f7dceb90f4_1769183181314.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Yogurt probiótico de 1L (fresa y platanito), una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "id": "prod_1768441690510_krlgcje26",
-      "precioFinal": 6,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Yogurt_probiotico_de_1L.jpg",
-      "searchText": "yogurt probiótico de 1l (fresa y platanito) lácteos disfruta de la calidad de yogurt probiótico de 1l (fresa y platanito), una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Paquete de azúcar 1kg",
@@ -2442,7 +2438,11 @@
         "Tanqueta_de_mayonesa_4lts.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Tanqueta de mayonesa 4lts, una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false
+      "disponibilidad": false,
+      "id": "prod_1769183074158_cdylhgc2i",
+      "precioFinal": 16,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Tanqueta_de_mayonesa_4lts.jpg",
+      "searchText": "tanqueta de mayonesa 4lts aderezos disfruta de la calidad de tanqueta de mayonesa 4lts, una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Bolsa de pan 10u",
