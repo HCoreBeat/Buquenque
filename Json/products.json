@@ -112,7 +112,7 @@
       "nombre": "Vino Espumoso La Baronne Demi-Sec Rosé (750 ml)",
       "categoria": "Bebidas alcohólicas",
       "precio": 6.99,
-      "descuento": 14.16,
+      "descuento": 0,
       "mas_vendido": true,
       "nuevo": true,
       "oferta": false,
@@ -120,7 +120,11 @@
         "La_Baronne.jpg"
       ],
       "descripcion": "Elegante Vino Espumoso La Baronne Demi-Sec Rosé, con un contenido de 750 ml y 10% de volumen de alcohol. Ideal para celebraciones y brindis especiales.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768923054742_dhekmp0os",
+      "precioFinal": 6.99,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/La_Baronne.jpg",
+      "searchText": "vino espumoso la baronne demi-sec rosé (750 ml) bebidas alcohólicas elegante vino espumoso la baronne demi-sec rosé, con un contenido de 750 ml y 10% de volumen de alcohol. ideal para celebraciones y brindis especiales."
     },
     {
       "nombre": "Refresco Instantáneo (2Lt)",
@@ -501,24 +505,6 @@
       "searchText": "frijol negro (500g) despensa disfruta de la calidad de frijol negro (500g), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
-      "nombre": "Gelatina sabor (Naranja 🍊) (40g)",
-      "categoria": "Confitura",
-      "precio": 2.25,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Gelatina_sabor_Naranja_(40g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Gelatina sabor Naranja 🍊 (40g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "id": "prod_1768441690510_30zfabvov",
-      "precioFinal": 2.25,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Gelatina_sabor_Naranja_(40g).jpg",
-      "searchText": "gelatina sabor (naranja 🍊) (40g) confitura disfruta de la calidad de gelatina sabor naranja 🍊 (40g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
-    },
-    {
       "nombre": "Papel Sanitario",
       "categoria": "Aseo y Belleza",
       "precio": 2.4,
@@ -769,24 +755,6 @@
       "precioFinal": 0.7,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Galletas_Monro_Vainilla_(50g).jpg",
       "searchText": "galletas monro vainilla (50g) confitura disfruta de la calidad de galletas monro vainilla (50g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
-    },
-    {
-      "nombre": "Pack x 6 maltas Guajira (6x330ml)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 6.45,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Pack_x_6_maltas_Guajira.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Pack x 6 maltas Guajira (6x330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "id": "prod_1768441690510_mbqpl3pc0",
-      "precioFinal": 6.45,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Pack_x_6_maltas_Guajira.jpg",
-      "searchText": "pack x 6 maltas guajira (6x330ml) bebidas no alcohólicas disfruta de la calidad de pack x 6 maltas guajira (6x330ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Paquete de salchichas (340g)",
