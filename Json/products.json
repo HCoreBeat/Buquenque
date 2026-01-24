@@ -2118,7 +2118,11 @@
         "Chorizos_en_manteca_625g.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Chorizos en manteca 625g, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769289684179_esbsqd20h",
+      "precioFinal": 12,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Chorizos_en_manteca_625g.jpg",
+      "searchText": "chorizos en manteca 625g cárnicos y embutidos disfruta de la calidad de chorizos en manteca 625g, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Compuesto lácteo 400g",
@@ -2726,7 +2730,11 @@
         "img_1999_1768592587385.jpeg"
       ],
       "descripcion": "Pollo entero fresco\nPollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. Carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales.",
-      "disponibilidad": false
+      "disponibilidad": false,
+      "id": "prod_1769289684179_yqgb2rzip",
+      "precioFinal": 6.99,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_1999_1768592587385.jpeg",
+      "searchText": "pollo entero(3lbs) cárnicos y embutidos pollo entero fresco\npollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales."
     },
     {
       "nombre": "1kg de queso gouda",
@@ -2925,6 +2933,34 @@
       "precioFinal": 2.7,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/mustard_1769200168758.jpg",
       "searchText": "giardino mostaza premium – 300g aderezos agrega sabor y estilo a tus comidas con la mostaza giardino. su fórmula cremosa y equilibrada realza hamburguesas, hot dogs, sándwiches y platos criollos. presentada en botella amarilla con tapa negra, incluye diseño visual atractivo y sello de calidad premium."
+    },
+    {
+      "nombre": "Bacon Almirez ElPozo – Paquete 3kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 28,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "23115_1769289701125.jpg"
+      ],
+      "descripcion": "Calidad profesional para tu cocina o negocio. El bacon Almirez de ElPozo está diseñado para hostelería, con cortes precisos y sin impurezas. Libre de gluten, lactosa, piel, ternilla y fécula, este producto garantiza sabor puro y textura ideal para desayunos, sándwiches, pizzas y platos criollos.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Salchicha Sublime de Pollo – 1kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 3.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "23116_1769289785185.jpg"
+      ],
+      "descripcion": "Versátil, sabrosa y lista para usar. Las salchichas Sublime de pollo están curadas, cocidas al vapor, ahumadas y homogenizadas para ofrecer una textura suave y sabor equilibrado. Ideales para hot dogs, desayunos, picaderas o platos rápidos. Fabricadas en la UE con estándares de calidad.",
+      "disponibilidad": true
     }
   ]
 }
