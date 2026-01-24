@@ -675,14 +675,10 @@
       "nuevo": false,
       "oferta": true,
       "imagenes": [
-        "img_2086_1768920818978.jpeg"
+        "20261_1769214002102.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Detergente (500g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768922459552_dk1e98z0g",
-      "precioFinal": 1.29,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2086_1768920818978.jpeg",
-      "searchText": "detergente (500g) aseo y belleza disfruta de la calidad de detergente (500g), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Bizcocho Marwa Chocolate (40g)",
@@ -2154,7 +2150,11 @@
         "20053_1769206888567.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Yogurt probiótico de 1L (fresa y platanito), una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769213534534_s8dqaxn10",
+      "precioFinal": 5.8,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/20053_1769206888567.jpg",
+      "searchText": "yogurt probiótico de 1l (fresa-natural- guanábana) lácteos disfruta de la calidad de yogurt probiótico de 1l (fresa y platanito), una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Paquete de azúcar 1kg",
