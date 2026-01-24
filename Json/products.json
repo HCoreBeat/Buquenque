@@ -2753,6 +2753,20 @@
       "precioFinal": 3.75,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/23116_1769289785185.jpg",
       "searchText": "salchicha sublime de pollo – 1kg cárnicos y embutidos versátil, sabrosa y lista para usar. las salchichas sublime de pollo están curadas, cocidas al vapor, ahumadas y homogenizadas para ofrecer una textura suave y sabor equilibrado. ideales para hot dogs, desayunos, picaderas o platos rápidos. fabricadas en la ue con estándares de calidad."
+    },
+    {
+      "nombre": "Nutella Ferreo(350g)",
+      "categoria": "Confitura",
+      "precio": 7.67,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "90efea5c-8865-4fc0-81d5-28e921765b9b_1769298368244.jpeg"
+      ],
+      "descripcion": "Con su sabor único, Nutella® es la crema de avellanas más icónica en el mundo. Una receta única con ingredientes cuidadosamente seleccionados. Lo que hace a la receta de Nutella® tan deliciosa es el cuidado y pasión que ponemos en cada paso de la producción, para ofrecerte una gran experiencia.",
+      "disponibilidad": true
     }
   ]
 }
