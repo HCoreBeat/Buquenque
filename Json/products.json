@@ -2730,7 +2730,11 @@
         "imagen-png_1768510722217_1769227881539.jpg"
       ],
       "descripcion": "Deliciosos bombones de chocolate blanco con oblea crujiente y suave relleno de crema de maní. Ideales para compartir, regalar o disfrutar en cualquier momento.\nX cajas de 18u",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769284628775_hh6gz5s8j",
+      "precioFinal": 6.85,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/imagen-png_1768510722217_1769227881539.jpg",
+      "searchText": "bombones bon o bon blanco con relleno de maní – 210 g caja de 18u confitura deliciosos bombones de chocolate blanco con oblea crujiente y suave relleno de crema de maní. ideales para compartir, regalar o disfrutar en cualquier momento.\nx cajas de 18u"
     },
     {
       "nombre": "Pollo entero(3lbs)",
@@ -2947,6 +2951,20 @@
       "precioFinal": 2.7,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/mustard_1769200168758.jpg",
       "searchText": "giardino mostaza premium – 300g aderezos agrega sabor y estilo a tus comidas con la mostaza giardino. su fórmula cremosa y equilibrada realza hamburguesas, hot dogs, sándwiches y platos criollos. presentada en botella amarilla con tapa negra, incluye diseño visual atractivo y sello de calidad premium."
+    },
+    {
+      "nombre": "Bacon Almirez ElPozo(3kg)",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 30,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1eeb4937-3da0-4179-98bc-f872a70403d4_1769284767609.png"
+      ],
+      "descripcion": "Bacon Almirez ElPozo - 3 kg\nBacon ahumado de calidad profesional, ideal para cocinar. Sin gluten ni lactosa.\nPerfecto para pizzas, desayunos y platos calientes.",
+      "disponibilidad": true
     }
   ]
 }
