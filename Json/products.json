@@ -238,19 +238,15 @@
       "nombre": "Mortadella de Pollo",
       "categoria": "Cárnicos y Embutidos",
       "precio": 2.49,
-      "descuento": 0,
+      "descuento": 19.68,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "Mortadella_de_Pollo.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Mortadella de Pollo, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_ulqwprz4q",
-      "precioFinal": 2.49,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Mortadella_de_Pollo.jpg",
-      "searchText": "mortadella de pollo cárnicos y embutidos disfruta de la calidad de mortadella de pollo, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Refresco Limón (330ml)",
@@ -269,24 +265,6 @@
       "precioFinal": 0.8,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Refresco_Limon_(330ml).jpg",
       "searchText": "refresco limón (330ml) bebidas no alcohólicas disfruta de la calidad de refresco limón (330ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares."
-    },
-    {
-      "nombre": "Gelatina sabor (Frutos Rojos 🍓) (40g)",
-      "categoria": "Confitura",
-      "precio": 2.25,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Gelatina_sabor_Frutos_Rojos_(40g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Gelatina sabor Frutos Rojos 🍓 (40g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "id": "prod_1768441690510_dlhbz3kk1",
-      "precioFinal": 2.25,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Gelatina_sabor_Frutos_Rojos_(40g).jpg",
-      "searchText": "gelatina sabor (frutos rojos 🍓) (40g) confitura disfruta de la calidad de gelatina sabor frutos rojos 🍓 (40g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Caja de Malta",
@@ -341,24 +319,6 @@
       "precioFinal": 1.15,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Manzana.jpg",
       "searchText": "manzana 🍎 x unidad despensa disfruta de la calidad de manzana 🍎 x unidad, una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
-    },
-    {
-      "nombre": "Garbanzos (500g)",
-      "categoria": "Despensa",
-      "precio": 2.15,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Garbanzos_(500g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Garbanzos (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "id": "prod_1768441690510_x473dggre",
-      "precioFinal": 2.15,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Garbanzos_(500g).jpg",
-      "searchText": "garbanzos (500g) despensa disfruta de la calidad de garbanzos (500g), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Azúcar Blanca (1Kg)",
@@ -451,40 +411,18 @@
       "searchText": "leche en polvo (1kg) despensa disfruta de la calidad de leche en polvo (1kg), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
-      "nombre": "Gelatina sabor (Uva 🍇) (40g)",
-      "categoria": "Confitura",
-      "precio": 2.25,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Gelatina_sabor_Uva_(40g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Gelatina sabor Uva 🍇 (40g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "id": "prod_1768441690510_bjehv5l94",
-      "precioFinal": 2.25,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Gelatina_sabor_Uva_(40g).jpg",
-      "searchText": "gelatina sabor (uva 🍇) (40g) confitura disfruta de la calidad de gelatina sabor uva 🍇 (40g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
-    },
-    {
       "nombre": "Nutella de Chocolate (350g)",
       "categoria": "Confitura",
       "precio": 3.25,
-      "descuento": 0,
+      "descuento": 7.69,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "Nutella_de_Chocolate_(350g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Nutella de Chocolate (350g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_q89c4ms26",
-      "precioFinal": 3.25,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Nutella_de_Chocolate_(350g).jpg",
-      "searchText": "nutella de chocolate (350g) confitura disfruta de la calidad de nutella de chocolate (350g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Paquete de Harina (1kg)",
@@ -883,24 +821,6 @@
       "searchText": "café purasangre (250g) despensa disfruta de la calidad de café \"purasangre\" (250g), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
-      "nombre": "Alubia Pinta (500g)",
-      "categoria": "Despensa",
-      "precio": 1.99,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Alubia_Pinta_(500g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Alubia Pinta (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "id": "prod_1768837249013_sz9uw9fds",
-      "precioFinal": 1.99,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Alubia_Pinta_(500g).jpg",
-      "searchText": "alubia pinta (500g) despensa disfruta de la calidad de alubia pinta (500g), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
-    },
-    {
       "nombre": "Protector Diario (18u)",
       "categoria": "Aseo y Belleza",
       "precio": 1.4,
@@ -953,42 +873,6 @@
       "precioFinal": 2.47,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Mayonesa_Victoria_(500ml).jpg",
       "searchText": "mayonesa victoria (250ml) aderezos disfruta de la calidad de mayonesa \"victoria\" (500ml), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares."
-    },
-    {
-      "nombre": "Pack x 12 Sal y Pimienta Vima",
-      "categoria": "Aderezos",
-      "precio": 1.39,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Pack_x_12_Sal_y_Pimienta.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Pack x 12 Sal y Pimienta \"Vima, una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_4pbdq2xgv",
-      "precioFinal": 1.39,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Pack_x_12_Sal_y_Pimienta.jpg",
-      "searchText": "pack x 12 sal y pimienta vima aderezos disfruta de la calidad de pack x 12 sal y pimienta \"vima, una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares."
-    },
-    {
-      "nombre": "Pack de 4 yogurts de (Fresa) Asturiana",
-      "categoria": "Lácteos",
-      "precio": 3.25,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Pack_de_4_yogurts_de_Fresa.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Pack de 4 yogurts de Fresa \"Asturiana\", una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_uzxo6vrhg",
-      "precioFinal": 3.25,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Pack_de_4_yogurts_de_Fresa.jpg",
-      "searchText": "pack de 4 yogurts de (fresa) asturiana lácteos disfruta de la calidad de pack de 4 yogurts de fresa \"asturiana\", una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Galletas ShowGol (Dulce de Leche) (76g)",
@@ -1110,11 +994,7 @@
         "Atun_en_Aceite_Vegetal_(170g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Atún en Aceite Vegetal (170g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "id": "prod_1768509219912_3y2mxkpgx",
-      "precioFinal": 2.35,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Atun_en_Aceite_Vegetal_(170g).jpg",
-      "searchText": "atún en aceite vegetal (170g) cárnicos y embutidos disfruta de la calidad de atún en aceite vegetal (170g), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Toallitas Húmedas (80u)",
@@ -1133,24 +1013,6 @@
       "precioFinal": 3.8,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Toallitas_Humedas_(80u).jpg",
       "searchText": "toallitas húmedas (80u) aseo y belleza disfruta de la calidad de toallitas húmedas (80u), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares."
-    },
-    {
-      "nombre": "Pack de 4 yogurts de (Platanito) Asturiana",
-      "categoria": "Lácteos",
-      "precio": 3.15,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Pack_de_4_yogurts_de_Platanito_Asturiana.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Pack de 4 yogurts de Platanito \"Asturiana\", una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_s2q33ky52",
-      "precioFinal": 3.15,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Pack_de_4_yogurts_de_Platanito_Asturiana.jpg",
-      "searchText": "pack de 4 yogurts de (platanito) asturiana lácteos disfruta de la calidad de pack de 4 yogurts de platanito \"asturiana\", una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Sorbeto de (Limón Renata) (115g)",
@@ -1187,24 +1049,6 @@
       "precioFinal": 1.15,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Sorbeto_de_Chocolate_Renata_(115g).jpg",
       "searchText": "sorbeto de (chocolate renata) (115g) confitura disfruta de la calidad de sorbeto de chocolate renata (115g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
-    },
-    {
-      "nombre": "Pack de 4 yogurts de (Multifruta) Asturiana",
-      "categoria": "Lácteos",
-      "precio": 3.15,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Pack_de_4_yogurts_de_Multifruta_Asturiana.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Pack de 4 yogurts de Multifruta \"Asturiana\", una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_21u43v7yp",
-      "precioFinal": 3.15,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Pack_de_4_yogurts_de_Multifruta_Asturiana.jpg",
-      "searchText": "pack de 4 yogurts de (multifruta) asturiana lácteos disfruta de la calidad de pack de 4 yogurts de multifruta \"asturiana\", una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Galletas Snack (30g)",
@@ -1300,7 +1144,7 @@
       "nombre": "Cepillo de diente (/u)",
       "categoria": "Aseo y Belleza",
       "precio": 1.07,
-      "descuento": 0,
+      "descuento": 25.23,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
@@ -1308,11 +1152,7 @@
         "Cepillo_de_diente.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cepillo de diente (/u), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_mdulf05de",
-      "precioFinal": 1.07,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Cepillo_de_diente.jpg",
-      "searchText": "cepillo de diente (/u) aseo y belleza disfruta de la calidad de cepillo de diente (/u), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Sazón completo (340g)",
@@ -1426,19 +1266,15 @@
       "nombre": "Queso Gouda (3Kg)",
       "categoria": "Lácteos",
       "precio": 38,
-      "descuento": 0,
+      "descuento": 7.89,
       "mas_vendido": true,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
-        "Queso_Gouda_(3Kg).jpg"
+        "c48fcb12-52ba-44af-bd94-3d6491ddfdce_1769296310864.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Queso Gouda (3Kg), una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_1kvuqw0v5",
-      "precioFinal": 38,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Queso_Gouda_(3Kg).jpg",
-      "searchText": "queso gouda (3kg) lácteos disfruta de la calidad de queso gouda (3kg), una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Set de Estropajos",
@@ -1981,24 +1817,6 @@
       "searchText": "banderillas gourmet (picantes y dulce) 330g despensa disfruta de la calidad de banderillas gourmet (picantes y dulce) 330g, una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
-      "nombre": "Sardina en aceite vegetal 125g",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 1.99,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Sardina_en_aceite_vegetal_125g.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Sardina en aceite vegetal 125g, una excelente opción de nuestra categoría Pescado. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "id": "prod_1768837249014_8fmjzxxta",
-      "precioFinal": 1.99,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Sardina_en_aceite_vegetal_125g.jpg",
-      "searchText": "sardina en aceite vegetal 125g cárnicos y embutidos disfruta de la calidad de sardina en aceite vegetal 125g, una excelente opción de nuestra categoría pescado. ideal para el hogar y elaborado con los mejores estándares."
-    },
-    {
       "nombre": "Lomitos de Atún en agua 160g",
       "categoria": "Cárnicos y Embutidos",
       "precio": 2.35,
@@ -2125,24 +1943,6 @@
       "searchText": "chorizos en manteca 625g cárnicos y embutidos disfruta de la calidad de chorizos en manteca 625g, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
-      "nombre": "Compuesto lácteo 400g",
-      "categoria": "Lácteos",
-      "precio": 2.45,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Compuesto_lacteo_400g.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Compuesto lácteo 400g, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "id": "prod_1768837249014_tysts1utg",
-      "precioFinal": 2.45,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Compuesto_lacteo_400g.jpg",
-      "searchText": "compuesto lácteo 400g lácteos disfruta de la calidad de compuesto lácteo 400g, una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares."
-    },
-    {
       "nombre": "Yogurt probiótico de 1L (fresa-natural- guanábana)",
       "categoria": "Lácteos",
       "precio": 6,
@@ -2182,7 +1982,7 @@
       "nombre": "Ketchup Pramesa (300g)",
       "categoria": "Aderezos",
       "precio": 1.8,
-      "descuento": 0,
+      "descuento": 16.67,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -2190,11 +1990,7 @@
         "Ketchup_Pramesa_(300g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Ketchup Pramesa (300g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_gj5fvs8pt",
-      "precioFinal": 1.8,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Ketchup_Pramesa_(300g).jpg",
-      "searchText": "ketchup pramesa (300g) aderezos disfruta de la calidad de ketchup pramesa (300g), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Paquete de papas Idaho (5lbs)",
@@ -2236,19 +2032,15 @@
       "nombre": "Mayonesa HollandPark (250ml)",
       "categoria": "Aderezos",
       "precio": 2.85,
-      "descuento": 0,
+      "descuento": 15.09,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "Mayonesa_HollandPark_(250ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Mayonesa HollandPark (250ml), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_jqepou68h",
-      "precioFinal": 2.85,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Mayonesa_HollandPark_(250ml).jpg",
-      "searchText": "mayonesa hollandpark (250ml) aderezos disfruta de la calidad de mayonesa hollandpark (250ml), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Paquete de mollejas de pollo (5lbs)",
@@ -2381,18 +2173,14 @@
       "categoria": "Cárnicos y Embutidos",
       "precio": 5.5,
       "descuento": 0,
-      "mas_vendido": true,
+      "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
       "imagenes": [
         "Paquete_de_muslo_de_pollo_(2kg).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de muslo de pollo (2kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_es81l5mn5",
-      "precioFinal": 5.5,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Paquete_de_muslo_de_pollo_(2kg).jpg",
-      "searchText": "paquete de muslo de pollo (2kg) cárnicos y embutidos disfruta de la calidad de paquete de muslo de pollo (2kg), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": false
     },
     {
       "nombre": "Papas tostadas 30g",
@@ -2453,18 +2241,14 @@
       "categoria": "Cárnicos y Embutidos",
       "precio": 2.85,
       "descuento": 0,
-      "mas_vendido": true,
+      "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
       "imagenes": [
         "Higado_de_pollo_1kg.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Hígado de pollo 1kg, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "id": "prod_1768441690510_7k8qdahc4",
-      "precioFinal": 2.85,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Higado_de_pollo_1kg.jpg",
-      "searchText": "hígado de pollo (1kg) cárnicos y embutidos disfruta de la calidad de hígado de pollo 1kg, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": false
     },
     {
       "nombre": "Carne de ovejo x lbs",
@@ -2671,16 +2455,12 @@
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "imagen-png_1768509565248.png"
       ],
       "descripcion": "Delicioso sándwich helado elaborado con suaves galletas tipo bizcocho rellenas de cremosa nata sabor vainilla. Ideal para disfrutar bien frío, perfecto como postre o merienda refrescante.",
-      "disponibilidad": true,
-      "id": "prod_1768510434444_s3h91d9fp",
-      "precioFinal": 1.14,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/imagen-png_1768509565248.png",
-      "searchText": "sándwich de nata (helado tipo sándwich de vainilla)50g postres delicioso sándwich helado elaborado con suaves galletas tipo bizcocho rellenas de cremosa nata sabor vainilla. ideal para disfrutar bien frío, perfecto como postre o merienda refrescante."
+      "disponibilidad": true
     },
     {
       "nombre": "Vinagre Gourmet con Especias – 500 ml",
@@ -2689,16 +2469,12 @@
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "_comapplepasteboardioamhh_1768509715969.png"
       ],
       "descripcion": "Vinagre gourmet elaborado con una cuidadosa mezcla de especias, ideal para realzar el sabor de ensaladas, carnes, marinados y aderezos. Aporta un toque intenso y aromático a tus comidas.",
-      "disponibilidad": true,
-      "id": "prod_1768510028106_su58dqn4t",
-      "precioFinal": 2.14,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/_comapplepasteboardioamhh_1768509715969.png",
-      "searchText": "vinagre gourmet con especias – 500 ml aderezos vinagre gourmet elaborado con una cuidadosa mezcla de especias, ideal para realzar el sabor de ensaladas, carnes, marinados y aderezos. aporta un toque intenso y aromático a tus comidas."
+      "disponibilidad": true
     },
     {
       "nombre": "Bombones Bon o Bon Blanco con Relleno de Maní – 210 g caja de 18u",
@@ -2707,34 +2483,26 @@
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "imagen-png_1768510722217_1769227881539.jpg"
       ],
       "descripcion": "Deliciosos bombones de chocolate blanco con oblea crujiente y suave relleno de crema de maní. Ideales para compartir, regalar o disfrutar en cualquier momento.\nX cajas de 18u",
-      "disponibilidad": true,
-      "id": "prod_1769284628775_hh6gz5s8j",
-      "precioFinal": 6.85,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/imagen-png_1768510722217_1769227881539.jpg",
-      "searchText": "bombones bon o bon blanco con relleno de maní – 210 g caja de 18u confitura deliciosos bombones de chocolate blanco con oblea crujiente y suave relleno de crema de maní. ideales para compartir, regalar o disfrutar en cualquier momento.\nx cajas de 18u"
+      "disponibilidad": true
     },
     {
       "nombre": "Pollo entero(3lbs)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 6.99,
+      "precio": 8,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "img_1999_1768592587385.jpeg"
       ],
       "descripcion": "Pollo entero fresco\nPollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. Carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales.",
-      "disponibilidad": false,
-      "id": "prod_1769289684179_yqgb2rzip",
-      "precioFinal": 6.99,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_1999_1768592587385.jpeg",
-      "searchText": "pollo entero(3lbs) cárnicos y embutidos pollo entero fresco\npollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales."
+      "disponibilidad": true
     },
     {
       "nombre": "1kg de queso gouda",
@@ -2946,7 +2714,11 @@
         "23115_1769289701125.jpg"
       ],
       "descripcion": "Calidad profesional para tu cocina o negocio. El bacon Almirez de ElPozo está diseñado para hostelería, con cortes precisos y sin impurezas. Libre de gluten, lactosa, piel, ternilla y fécula, este producto garantiza sabor puro y textura ideal para desayunos, sándwiches, pizzas y platos criollos.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769295656223_amswxv2gt",
+      "precioFinal": 28,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/23115_1769289701125.jpg",
+      "searchText": "bacon almirez elpozo – paquete 3kg cárnicos y embutidos calidad profesional para tu cocina o negocio. el bacon almirez de elpozo está diseñado para hostelería, con cortes precisos y sin impurezas. libre de gluten, lactosa, piel, ternilla y fécula, este producto garantiza sabor puro y textura ideal para desayunos, sándwiches, pizzas y platos criollos."
     },
     {
       "nombre": "Salchicha Sublime de Pollo – 1kg",
@@ -2960,7 +2732,11 @@
         "23116_1769289785185.jpg"
       ],
       "descripcion": "Versátil, sabrosa y lista para usar. Las salchichas Sublime de pollo están curadas, cocidas al vapor, ahumadas y homogenizadas para ofrecer una textura suave y sabor equilibrado. Ideales para hot dogs, desayunos, picaderas o platos rápidos. Fabricadas en la UE con estándares de calidad.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769295656223_5sbmcfw58",
+      "precioFinal": 3.75,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/23116_1769289785185.jpg",
+      "searchText": "salchicha sublime de pollo – 1kg cárnicos y embutidos versátil, sabrosa y lista para usar. las salchichas sublime de pollo están curadas, cocidas al vapor, ahumadas y homogenizadas para ofrecer una textura suave y sabor equilibrado. ideales para hot dogs, desayunos, picaderas o platos rápidos. fabricadas en la ue con estándares de calidad."
     }
   ]
 }
