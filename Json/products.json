@@ -246,7 +246,11 @@
         "Mortadella_de_Pollo.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Mortadella de Pollo, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769297047198_nmf1afesj",
+      "precioFinal": 2,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Mortadella_de_Pollo.jpg",
+      "searchText": "mortadella de pollo cárnicos y embutidos disfruta de la calidad de mortadella de pollo, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Refresco Limón (330ml)",
@@ -422,7 +426,11 @@
         "Nutella_de_Chocolate_(350g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Nutella de Chocolate (350g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769297047198_y0tyyf6j5",
+      "precioFinal": 3,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Nutella_de_Chocolate_(350g).jpg",
+      "searchText": "nutella de chocolate (350g) confitura disfruta de la calidad de nutella de chocolate (350g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Paquete de Harina (1kg)",
@@ -536,19 +544,15 @@
       "nombre": "Jamón Bravo Rápido (2kg)",
       "categoria": "Cárnicos y Embutidos",
       "precio": 22.5,
-      "descuento": 0,
+      "descuento": 6.67,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "Jamon_Bravo_Rapido_(2kg).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Jamón Bravo Rápido (2kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_jt1miixex",
-      "precioFinal": 22.5,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Jamon_Bravo_Rapido_(2kg).jpg",
-      "searchText": "jamón bravo rápido (2kg) cárnicos y embutidos disfruta de la calidad de jamón bravo rápido (2kg), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Sorbeto de (Fresa Renata) (115g)",
@@ -994,7 +998,11 @@
         "Atun_en_Aceite_Vegetal_(170g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Atún en Aceite Vegetal (170g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769297047198_d212kjx65",
+      "precioFinal": 2.35,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Atun_en_Aceite_Vegetal_(170g).jpg",
+      "searchText": "atún en aceite vegetal (170g) cárnicos y embutidos disfruta de la calidad de atún en aceite vegetal (170g), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Toallitas Húmedas (80u)",
@@ -1152,7 +1160,11 @@
         "Cepillo_de_diente.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cepillo de diente (/u), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769297047198_potvnpkmi",
+      "precioFinal": 1.07,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Cepillo_de_diente.jpg",
+      "searchText": "cepillo de diente (/u) aseo y belleza disfruta de la calidad de cepillo de diente (/u), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Sazón completo (340g)",
@@ -1274,7 +1286,11 @@
         "c48fcb12-52ba-44af-bd94-3d6491ddfdce_1769296310864.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Queso Gouda (3Kg), una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769297047198_sntkaud4m",
+      "precioFinal": 35,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/c48fcb12-52ba-44af-bd94-3d6491ddfdce_1769296310864.jpeg",
+      "searchText": "queso gouda (3kg) lácteos disfruta de la calidad de queso gouda (3kg), una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Set de Estropajos",
@@ -1990,7 +2006,11 @@
         "Ketchup_Pramesa_(300g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Ketchup Pramesa (300g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769297047198_4w2zdm1dl",
+      "precioFinal": 1.8,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Ketchup_Pramesa_(300g).jpg",
+      "searchText": "ketchup pramesa (300g) aderezos disfruta de la calidad de ketchup pramesa (300g), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Paquete de papas Idaho (5lbs)",
@@ -2040,7 +2060,11 @@
         "Mayonesa_HollandPark_(250ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Mayonesa HollandPark (250ml), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769297047198_0cmljau1v",
+      "precioFinal": 2.42,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Mayonesa_HollandPark_(250ml).jpg",
+      "searchText": "mayonesa hollandpark (250ml) aderezos disfruta de la calidad de mayonesa hollandpark (250ml), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Paquete de mollejas de pollo (5lbs)",
@@ -2180,7 +2204,11 @@
         "Paquete_de_muslo_de_pollo_(2kg).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de muslo de pollo (2kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false
+      "disponibilidad": false,
+      "id": "prod_1769297047198_yicgq984d",
+      "precioFinal": 5.5,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Paquete_de_muslo_de_pollo_(2kg).jpg",
+      "searchText": "paquete de muslo de pollo (2kg) cárnicos y embutidos disfruta de la calidad de paquete de muslo de pollo (2kg), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Papas tostadas 30g",
@@ -2248,7 +2276,11 @@
         "Higado_de_pollo_1kg.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Hígado de pollo 1kg, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false
+      "disponibilidad": false,
+      "id": "prod_1769297047198_k1v18ytq9",
+      "precioFinal": 2.85,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Higado_de_pollo_1kg.jpg",
+      "searchText": "hígado de pollo (1kg) cárnicos y embutidos disfruta de la calidad de hígado de pollo 1kg, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Carne de ovejo x lbs",
@@ -2460,7 +2492,11 @@
         "imagen-png_1768509565248.png"
       ],
       "descripcion": "Delicioso sándwich helado elaborado con suaves galletas tipo bizcocho rellenas de cremosa nata sabor vainilla. Ideal para disfrutar bien frío, perfecto como postre o merienda refrescante.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769297047198_fxmoqix8r",
+      "precioFinal": 1.14,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/imagen-png_1768509565248.png",
+      "searchText": "sándwich de nata (helado tipo sándwich de vainilla)50g postres delicioso sándwich helado elaborado con suaves galletas tipo bizcocho rellenas de cremosa nata sabor vainilla. ideal para disfrutar bien frío, perfecto como postre o merienda refrescante."
     },
     {
       "nombre": "Vinagre Gourmet con Especias – 500 ml",
@@ -2474,7 +2510,11 @@
         "_comapplepasteboardioamhh_1768509715969.png"
       ],
       "descripcion": "Vinagre gourmet elaborado con una cuidadosa mezcla de especias, ideal para realzar el sabor de ensaladas, carnes, marinados y aderezos. Aporta un toque intenso y aromático a tus comidas.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769297047198_ctnkj0ti6",
+      "precioFinal": 2.14,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/_comapplepasteboardioamhh_1768509715969.png",
+      "searchText": "vinagre gourmet con especias – 500 ml aderezos vinagre gourmet elaborado con una cuidadosa mezcla de especias, ideal para realzar el sabor de ensaladas, carnes, marinados y aderezos. aporta un toque intenso y aromático a tus comidas."
     },
     {
       "nombre": "Bombones Bon o Bon Blanco con Relleno de Maní – 210 g caja de 18u",
@@ -2488,7 +2528,11 @@
         "imagen-png_1768510722217_1769227881539.jpg"
       ],
       "descripcion": "Deliciosos bombones de chocolate blanco con oblea crujiente y suave relleno de crema de maní. Ideales para compartir, regalar o disfrutar en cualquier momento.\nX cajas de 18u",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769297047198_mti27webj",
+      "precioFinal": 6.85,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/imagen-png_1768510722217_1769227881539.jpg",
+      "searchText": "bombones bon o bon blanco con relleno de maní – 210 g caja de 18u confitura deliciosos bombones de chocolate blanco con oblea crujiente y suave relleno de crema de maní. ideales para compartir, regalar o disfrutar en cualquier momento.\nx cajas de 18u"
     },
     {
       "nombre": "Pollo entero(3lbs)",
@@ -2502,7 +2546,11 @@
         "img_1999_1768592587385.jpeg"
       ],
       "descripcion": "Pollo entero fresco\nPollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. Carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769297047198_ya9u4a16u",
+      "precioFinal": 8,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_1999_1768592587385.jpeg",
+      "searchText": "pollo entero(3lbs) cárnicos y embutidos pollo entero fresco\npollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales."
     },
     {
       "nombre": "1kg de queso gouda",
