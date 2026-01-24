@@ -1650,7 +1650,11 @@
         "gemini_generated_image_wguyagwguyagwguy_1769227195926.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pomo de Gelatina (50/u), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769227733184_kw7ouwd8b",
+      "precioFinal": 22,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/gemini_generated_image_wguyagwguyagwguy_1769227195926.jpg",
+      "searchText": "pomo de gelatina (50/u) confitura disfruta de la calidad de pomo de gelatina (50/u), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Pack x 6 Refresco Gaseado Mate (1.5Lt) Cero Calorías",
@@ -2723,14 +2727,10 @@
       "nuevo": true,
       "oferta": true,
       "imagenes": [
-        "imagen-png_1768510722217.png"
+        "imagen-png_1768510722217_1769227881539.jpg"
       ],
       "descripcion": "Deliciosos bombones de chocolate blanco con oblea crujiente y suave relleno de crema de maní. Ideales para compartir, regalar o disfrutar en cualquier momento.\nX cajas de 18u",
-      "disponibilidad": true,
-      "id": "prod_1768591398796_15vnm0r9q",
-      "precioFinal": 6.85,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/imagen-png_1768510722217.png",
-      "searchText": "bombones bon o bon blanco con relleno de maní – 210 g caja de 18u confitura deliciosos bombones de chocolate blanco con oblea crujiente y suave relleno de crema de maní. ideales para compartir, regalar o disfrutar en cualquier momento.\nx cajas de 18u"
+      "disponibilidad": true
     },
     {
       "nombre": "Pollo entero(3lbs)",
