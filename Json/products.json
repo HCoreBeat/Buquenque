@@ -112,15 +112,19 @@
       "nombre": "Vino Espumoso La Baronne Demi-Sec Rosé (750 ml)",
       "categoria": "Bebidas alcohólicas",
       "precio": 6.99,
-      "descuento": 14.16,
+      "descuento": 0,
       "mas_vendido": true,
-      "nuevo": false,
-      "oferta": true,
+      "nuevo": true,
+      "oferta": false,
       "imagenes": [
         "La_Baronne.jpg"
       ],
       "descripcion": "Elegante Vino Espumoso La Baronne Demi-Sec Rosé, con un contenido de 750 ml y 10% de volumen de alcohol. Ideal para celebraciones y brindis especiales.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1768923054742_dhekmp0os",
+      "precioFinal": 6.99,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/La_Baronne.jpg",
+      "searchText": "vino espumoso la baronne demi-sec rosé (750 ml) bebidas alcohólicas elegante vino espumoso la baronne demi-sec rosé, con un contenido de 750 ml y 10% de volumen de alcohol. ideal para celebraciones y brindis especiales."
     },
     {
       "nombre": "Refresco Instantáneo (2Lt)",
@@ -2109,34 +2113,12 @@
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "Paquete_de_cafe_La_Llave_(284g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de café La Llave (284g), una excelente opción de nuestra categoría Cafetería. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768509219912_s0kpsdz2q",
-      "precioFinal": 7.99,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Paquete_de_cafe_La_Llave_(284g).jpg",
-      "searchText": "paquete de café la llave (284g) despensa disfruta de la calidad de paquete de café la llave (284g), una excelente opción de nuestra categoría cafetería. ideal para el hogar y elaborado con los mejores estándares."
-    },
-    {
-      "nombre": "Caja de muslo de pollo (6 paquetes de 2kg)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 30,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Caja_de_muslo_de_pollo.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Caja de muslo de pollo (6 paquetes de 2kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_5azthp2ru",
-      "precioFinal": 30,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Caja_de_muslo_de_pollo.jpg",
-      "searchText": "caja de muslo de pollo (6 paquetes de 2kg) cárnicos y embutidos disfruta de la calidad de caja de muslo de pollo (6 paquetes de 2kg), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Paquete de café Dufiltro (250g)",
