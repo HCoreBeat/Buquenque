@@ -1,8 +1,8 @@
 {
-    "id": 2,
-    "titulo": "¡Bienvenido a Buquenque Shop!",
-    "mensaje": "Descubre nuestras ofertas especiales en productos frescos y alimentos de calidad. ¡Entrega rápida en tu domicilio!",
-    "subtitulo": "Oferta válida hasta el 30 de enero",
-    "tipo": "promo",
-    "icono": "fas fa-medal"
+    "id": 3,
+    "titulo": "¡Próximamente!",
+    "mensaje": "Los Packs llegarán a Buquenque...✨\nDisfruta de los nuevos packs para toda la familia. Forma fácil y completa en un solo toque. ",
+    "subtitulo": "Buquenque te aprecia. ",
+    "tipo": "info",
+    "icono": "fas fa-calendar-alt"
 }
