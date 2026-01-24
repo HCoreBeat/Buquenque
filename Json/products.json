@@ -678,7 +678,11 @@
         "20261_1769214002102.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Detergente (500g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769226986599_pfsrf2pax",
+      "precioFinal": 1.29,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/20261_1769214002102.jpg",
+      "searchText": "detergente (500g) aseo y belleza disfruta de la calidad de detergente (500g), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Bizcocho Marwa Chocolate (40g)",
@@ -1643,14 +1647,10 @@
       "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "Pomo_de_Gelatina.jpg"
+        "gemini_generated_image_wguyagwguyagwguy_1769227195926.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pomo de Gelatina (50/u), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_ttecrmqru",
-      "precioFinal": 22,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Pomo_de_Gelatina.jpg",
-      "searchText": "pomo de gelatina (50/u) confitura disfruta de la calidad de pomo de gelatina (50/u), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Pack x 6 Refresco Gaseado Mate (1.5Lt) Cero Calorías",
