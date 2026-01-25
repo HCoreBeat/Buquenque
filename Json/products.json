@@ -534,7 +534,11 @@
         "Jamon_Bravo_Rapido_(2kg).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Jamón Bravo Rápido (2kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769358949851_dzn6agegg",
+      "precioFinal": 21,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Jamon_Bravo_Rapido_(2kg).jpg",
+      "searchText": "jamón bravo rápido (2kg) cárnicos y embutidos disfruta de la calidad de jamón bravo rápido (2kg), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Sorbeto de (Fresa Renata) (115g)",
@@ -2749,6 +2753,20 @@
       "precioFinal": 4,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2336_1769357906479.webp",
       "searchText": "lomo de cerdo ahumado x (lbs) cárnicos y embutidos lomo de cerdo ahumado cuidadosamente, de textura tierna y jugosa, con un sabor profundo y equilibrado. su proceso de ahumado realza la carne y le aporta un aroma irresistible.\nideal para servir frío o caliente, en comidas especiales o del día a día.\n\n💯 calidad superior y sabor auténtic"
+    },
+    {
+      "nombre": "Pollo entero asado",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 10,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_2338_1769359038485.jpeg"
+      ],
+      "descripcion": "Pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. Sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nIdeal para compartir y disfrutar en cualquier ocasión.\n\n💯 Calidad, sabor y frescura garantizados",
+      "disponibilidad": true
     }
   ]
 }
