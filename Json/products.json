@@ -2766,6 +2766,24 @@
         "img_2338_1769359038485.jpeg"
       ],
       "descripcion": "Pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. Sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nIdeal para compartir y disfrutar en cualquier ocasión.\n\n💯 Calidad, sabor y frescura garantizados",
+      "disponibilidad": true,
+      "id": "prod_1769366938429_m55g2rehm",
+      "precioFinal": 10,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2338_1769359038485.jpeg",
+      "searchText": "pollo entero asado cárnicos y embutidos pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nideal para compartir y disfrutar en cualquier ocasión.\n\n💯 calidad, sabor y frescura garantizados"
+    },
+    {
+      "nombre": "Coffee Mate(155porciones)",
+      "categoria": "Despensa",
+      "precio": 5.5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_2343_1769367903617.png"
+      ],
+      "descripcion": "Sabor equilibrado que complementa sin opacar el café. Textura liviana que aporta cremosidad sin necesidad de lácteos. Fácil de disolver, ideal para usar en servicio rápido o autoservicio.",
       "disponibilidad": true
     }
   ]
