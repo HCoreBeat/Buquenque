@@ -912,7 +912,11 @@
         "Cuartos_de_Pollo.jpg"
       ],
       "descripcion": "Cuartos de pierna de pollo (thigh and drumstick) de la marca Delightful Farms. Producto importado de USA, presentado en un formato de 10 lbs (4.53 kg). Ideal para preparaciones familiares, garantizando frescura y calidad en nuestra categoría de carnes.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769357390791_h9ang5l6m",
+      "precioFinal": 12,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Cuartos_de_Pollo.jpg",
+      "searchText": "cuartos de pierna de pollo (10 lbs) cárnicos y embutidos cuartos de pierna de pollo (thigh and drumstick) de la marca delightful farms. producto importado de usa, presentado en un formato de 10 lbs (4.53 kg). ideal para preparaciones familiares, garantizando frescura y calidad en nuestra categoría de carnes."
     },
     {
       "nombre": "Jugo Tuana Piña (200ml)",
@@ -2731,6 +2735,20 @@
       "precioFinal": 3.75,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/23116_1769289785185.jpg",
       "searchText": "salchicha sublime de pollo – 1kg cárnicos y embutidos versátil, sabrosa y lista para usar. las salchichas sublime de pollo están curadas, cocidas al vapor, ahumadas y homogenizadas para ofrecer una textura suave y sabor equilibrado. ideales para hot dogs, desayunos, picaderas o platos rápidos. fabricadas en la ue con estándares de calidad."
+    },
+    {
+      "nombre": "Pollo entero asado",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 10,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_2338_1769357644964.jpeg"
+      ],
+      "descripcion": "🍗 Pollo Entero Asado\nPollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. Sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nIdeal para compartir y disfrutar en cualquier ocasión.\n💯 Calidad, sabor y frescura garantizados",
+      "disponibilidad": true
     }
   ]
 }
