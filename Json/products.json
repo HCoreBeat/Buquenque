@@ -526,19 +526,15 @@
       "nombre": "Jamón Bravo Rápido (2kg)",
       "categoria": "Cárnicos y Embutidos",
       "precio": 22.5,
-      "descuento": 0,
+      "descuento": 6.67,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "Jamon_Bravo_Rapido_(2kg).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Jamón Bravo Rápido (2kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_jt1miixex",
-      "precioFinal": 22.5,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Jamon_Bravo_Rapido_(2kg).jpg",
-      "searchText": "jamón bravo rápido (2kg) cárnicos y embutidos disfruta de la calidad de jamón bravo rápido (2kg), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Sorbeto de (Fresa Renata) (115g)",
@@ -2748,7 +2744,11 @@
         "img_2336_1769357906479.webp"
       ],
       "descripcion": "Lomo de cerdo ahumado cuidadosamente, de textura tierna y jugosa, con un sabor profundo y equilibrado. Su proceso de ahumado realza la carne y le aporta un aroma irresistible.\nIdeal para servir frío o caliente, en comidas especiales o del día a día.\n\n💯 Calidad superior y sabor auténtic",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769358289233_nt5i5yc2h",
+      "precioFinal": 4,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2336_1769357906479.webp",
+      "searchText": "lomo de cerdo ahumado x (lbs) cárnicos y embutidos lomo de cerdo ahumado cuidadosamente, de textura tierna y jugosa, con un sabor profundo y equilibrado. su proceso de ahumado realza la carne y le aporta un aroma irresistible.\nideal para servir frío o caliente, en comidas especiales o del día a día.\n\n💯 calidad superior y sabor auténtic"
     }
   ]
 }
