@@ -901,6 +901,20 @@
       "searchText": "hígado de pollo (1kg) cárnicos y embutidos disfruta de la calidad de hígado de pollo (1kg), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
+      "nombre": "Cuartos de Pierna de Pollo (10 lbs)",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 13,
+      "descuento": 7.69,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": true,
+      "imagenes": [
+        "Cuartos_de_Pollo.jpg"
+      ],
+      "descripcion": "Cuartos de pierna de pollo (thigh and drumstick) de la marca Delightful Farms. Producto importado de USA, presentado en un formato de 10 lbs (4.53 kg). Ideal para preparaciones familiares, garantizando frescura y calidad en nuestra categoría de carnes.",
+      "disponibilidad": true
+    },
+    {
       "nombre": "Jugo Tuana Piña (200ml)",
       "categoria": "Bebidas no alcohólicas",
       "precio": 0.7,
