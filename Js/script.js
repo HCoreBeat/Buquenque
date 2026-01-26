@@ -29,16 +29,68 @@ function goToHome() {
   renderProducts();
 }
 
-// Manejo del historial con hash
+// Manejo del historial con hash y pushState
 window.addEventListener("popstate", handleRouteChange);
 window.addEventListener("hashchange", handleRouteChange);
 
 function handleRouteChange() {
-  const productName = decodeURIComponent(window.location.hash.substring(1));
-  if (!productName) {
+  const hash = window.location.hash.substring(1);
+  const backBtnWrapper = document.getElementById("category-back-button-wrapper");
+
+  if (!hash) {
+    // Al volver a la raíz: ocultar detalles y el botón de volver a categorías
+    if (backBtnWrapper) backBtnWrapper.style.display = "none";
     hideProductDetail();
+    hidePackDetail();
+    hidePacksDetail();
+
+    // Restaurar vista 'Todo' (sin modificar el historial)
+    const categoryCardSection = document.getElementById("category-card-section");
+    const categoriesCircleSection = document.querySelector(".categories-circle-section");
+    const banner = document.querySelector(".carousel-container");
+    const productsContainer = document.getElementById("products-container");
+
+    if (categoryCardSection) categoryCardSection.style.display = "block";
+    if (categoriesCircleSection) categoriesCircleSection.style.display = "block";
+    if (banner) banner.style.display = "block";
+    if (productsContainer) productsContainer.style.display = "grid";
+
+    // Renderizar todos los productos y secciones relacionadas
+    renderProducts();
+    renderBestSellers();
+    renderCategoriesCircle();
+
+    return;
+  }
+
+  const decodedHash = decodeURIComponent(hash);
+
+  // Detectar si es una categoría (formato: category=NombreCategoria)
+  if (decodedHash.startsWith("category=")) {
+    const categoryName = decodedHash.substring(9); // Remove "category=" prefix
+    filterByCategory(categoryName);
+    return;
+  }
+
+  // Para otras rutas (packs, producto, pack) asegurar que el botón de volver esté oculto
+  if (backBtnWrapper) backBtnWrapper.style.display = "none";
+
+  // Caso especial: panel de packs
+  if (decodedHash === 'packs') {
+    // Mostrar panel de packs
+    renderPacksDetail();
+    return;
+  }
+
+  // Detectar si es un pack o un producto
+  const isPack = packs.find((p) => p.nombre === decodedHash);
+
+  if (isPack) {
+    // Es un pack
+    showPackDetail(decodedHash);
   } else {
-    showProductDetail(productName);
+    // Es un producto
+    showProductDetail(decodedHash);
   }
 }
 
@@ -215,10 +267,6 @@ async function loadProducts() {
     renderCategoriesCircle();
     updateCartCount();
     updateCart();
-
-    if (window.location.hash) {
-      handleRouteChange();
-    }
 
     document
       .getElementById("close-sidebar")
@@ -420,6 +468,48 @@ function filterByCategory(category) {
     hideProductDetail();
   }
 
+  // Elementos a controlar
+  const categoryCardSection = document.getElementById("category-card-section");
+  const bestSellersSection = document.querySelector(".best-sellers-section");
+  const categoryBackButtonWrapper = document.getElementById("category-back-button-wrapper");
+
+  // Mostrar/ocultar botón de atrás según la categoría
+  if (category !== "Todo") {
+    // Mostrar botón si es una categoría específica
+    if (categoryBackButtonWrapper) {
+      categoryBackButtonWrapper.style.display = "block";
+    }
+    // Ocultar packs, category-card y best-sellers
+    hidePacksDetail();
+    if (categoryCardSection) {
+      categoryCardSection.style.display = "none";
+    }
+    if (bestSellersSection) {
+      bestSellersSection.style.display = "none";
+    }
+    // Actualizar URL con pushState para la categoría
+    const categoryHash = `category=${encodeURIComponent(category)}`;
+    if (window.location.hash.substring(1) !== categoryHash) {
+      window.history.pushState({ category: category }, `Categoría: ${category}`, `#${categoryHash}`);
+    }
+  } else {
+    // Ocultar botón si es "Todo"
+    if (categoryBackButtonWrapper) {
+      categoryBackButtonWrapper.style.display = "none";
+    }
+    // Mostrar el category-card y best-sellers
+    if (categoryCardSection) {
+      categoryCardSection.style.display = "block";
+    }
+    if (bestSellersSection) {
+      bestSellersSection.style.display = "block";
+    }
+    // Limpiar URL cuando vuelve a "Todo"
+    if (window.location.hash) {
+      window.history.pushState({ category: "Todo" }, "Todas las categorías", "#");
+    }
+  }
+
   // Filtrar productos
   const filteredProducts =
     category === "Todo"
@@ -450,6 +540,36 @@ function searchProducts() {
   }
 
   const searchTerm = searchInput.value.toLowerCase().trim();
+
+  // Obtener elementos que necesitamos controlar
+  const packsDetailContainer = document.getElementById("packs-detail");
+  const categoriesCircleSection = document.querySelector(".categories-circle-section");
+  const categoryCardSection = document.getElementById("category-card-section");
+  const bannerContainer = document.querySelector(".carousel-container");
+  const bestSellersSection = document.querySelector(".best-sellers-section");
+
+  if (searchTerm) {
+    // Cuando hay búsqueda activa: mostrar SOLO productos
+    // Ocultar packs-detail y category-card
+    if (packsDetailContainer) packsDetailContainer.style.display = "none";
+    if (categoryCardSection) categoryCardSection.style.display = "none";
+    if (categoriesCircleSection) categoriesCircleSection.style.display = "none";
+    
+    // Mostrar explícitamente products-container (puede estar oculto si estábamos en packs-detail)
+    if (productsContainer) productsContainer.style.display = "grid";
+    
+    // Mostrar banner y best-sellers para contexto
+    if (bannerContainer) bannerContainer.style.display = "block";
+    if (bestSellersSection) bestSellersSection.style.display = "block";
+  } else {
+    // Cuando se limpia búsqueda: restaurar home completo
+    if (productsContainer) productsContainer.style.display = "grid";
+    if (bannerContainer) bannerContainer.style.display = "block";
+    if (bestSellersSection) bestSellersSection.style.display = "block";
+    if (categoryCardSection) categoryCardSection.style.display = "block";
+    if (categoriesCircleSection) categoriesCircleSection.style.display = "block";
+    if (packsDetailContainer) packsDetailContainer.style.display = "none";
+  }
 
   if (!searchTerm) {
     renderProducts();
@@ -985,8 +1105,8 @@ function renderCategoriesCircle() {
 
   if (!categoriesCircleScroll || !categoriesSectionCircle) return;
 
-  // Filtrar "Todo" de las categorías circulares (queremos solo categorías específicas)
-  const displayCategories = categories.filter(cat => cat !== "Todo");
+  // Comenzar con "All"/"Todo"
+  const displayCategories = ["Todo", ...categories.filter(cat => cat !== "Todo")];
 
   // Si no hay categorías, ocultar la sección
   if (displayCategories.length === 0) {
@@ -1000,12 +1120,18 @@ function renderCategoriesCircle() {
   // Crear cards para cada categoría
   displayCategories.forEach((category, index) => {
     // Contar productos en cada categoría
-    const productsInCategory = products.filter(
-      p => p.categoria === category && p.disponibilidad
-    ).length;
+    let productsInCategory;
+    if (category === "Todo") {
+      productsInCategory = products.filter(p => p.disponibilidad).length;
+    } else {
+      productsInCategory = products.filter(
+        p => p.categoria === category && p.disponibilidad
+      ).length;
+    }
 
     // Mapeo de nombres de categorías a nombres de archivos de imagen
     const categoryImageMap = {
+      "Todo": "all.jpg",
       "Despensa": "despensa.jpg",
       "Confitura": "confitura.jpg",
       "Bebidas": "bebidas.jpg",
@@ -1074,6 +1200,12 @@ function showProductDetail(productName) {
   const categoriesCircleSection = document.querySelector(".categories-circle-section");
   if (categoriesCircleSection) {
     categoriesCircleSection.style.display = "none"; // <-- OCULTA LAS CATEGORÍAS CIRCULARES
+  }
+
+  // Ocultar el panel de packs al entrar al detalle del producto
+  const categoryCardSection = document.getElementById("category-card-section");
+  if (categoryCardSection) {
+    categoryCardSection.style.display = "none"; // <-- OCULTA EL CATEGORY CARD
   }
 
   // Buscar el producto principal
@@ -1626,6 +1758,12 @@ function hideProductDetail() {
     categoriesCircleSection.style.display = "block"; // <-- MUESTRA LAS CATEGORÍAS CIRCULARES
   }
 
+  // Mostrar el panel de packs cuando se vuelve a la página principal
+  const categoryCardSection = document.getElementById("category-card-section");
+  if (categoryCardSection) {
+    categoryCardSection.style.display = "block"; // <-- MUESTRA EL CATEGORY CARD
+  }
+
   if (detailContainer) {
     detailContainer.style.display = "none";
     detailContainer.innerHTML = "";
@@ -1667,7 +1805,10 @@ function addToCart(productName, fromDetail = false, event) {
     quantity = quantityElement ? parseInt(quantityElement.textContent) || 1 : 1;
   }
 
-  const existingItem = cart.find((item) => item.product.nombre === decodedName);
+  const existingItem = cart.find((item) => {
+    const itemData = item.product || item.pack;
+    return itemData && itemData.nombre === decodedName;
+  });
   if (existingItem) {
     existingItem.quantity += quantity;
   } else {
@@ -1696,28 +1837,40 @@ function updateCart() {
     cartSidebar.classList.remove("empty");
 
     cart.forEach((item, index) => {
+      // Determinar si es pack o producto
+      const isPack = item.isPack || item.pack;
+      const itemData = isPack ? item.pack : item.product;
+      
+      if (!itemData) return;
+      
       // Calcular precio con descuento si aplica
-      const isOnSale = item.product.oferta && item.product.descuento > 0;
+      const isOnSale = itemData.oferta && itemData.descuento > 0;
       const unitPrice = isOnSale
-        ? item.product.precio * (1 - item.product.descuento / 100)
-        : item.product.precio;
+        ? itemData.precio * (1 - itemData.descuento / 100)
+        : itemData.precio;
 
       const itemTotal = unitPrice * item.quantity;
       total += itemTotal;
 
+      // Determinar imagen (packs usan imagen, productos usan imagenes[0])
+      const imageSrc = isPack 
+        ? `Images/Packs/${itemData.imagen}`
+        : `Images/products/${itemData.imagenes[0]}`;
+      
+      const badgeType = isPack ? 'pack' : 'product';
+
       const itemEl = document.createElement("div");
-      itemEl.className = "cart-item";
+      itemEl.className = `cart-item cart-item-${badgeType}`;
       itemEl.innerHTML = `
                 ${
                   isOnSale
                     ? '<span class="cart-item-badge oferta">OFERTA</span>'
                     : ""
                 }
-                <img src="Images/products/${item.product.imagenes[0]}" alt="${
-        item.product.nombre
-      }">
+                <img src="${imageSrc}" alt="${itemData.nombre}">
                 <div class="cart-item-info">
-                    <p>${item.product.nombre}</p>
+                    <p>${itemData.nombre}</p>
+                    <p class="cart-item-type">${isPack ? '[Pack]' : '[Producto]'}</p>
                     <p>$${unitPrice.toFixed(2)} c/u</p>
                     <div class="cart-item-controls">
                         <button class="cart-quantity-btn decrease-btn" onclick="updateCartQuantity(${index}, -1, event)">-</button>
@@ -1739,17 +1892,54 @@ function updateCart() {
   updateCartCount();
 }
 
+/**
+ * Agregar un pack al carrito
+ */
+function addPackToCart(packName, event) {
+  if (event) event.stopPropagation();
+
+  const decodedName = decodeURIComponent(packName);
+  const pack = packs.find((p) => p.nombre === decodedName);
+
+  if (!pack) return;
+
+  // Validar disponibilidad
+  if (!pack.disponible) {
+    showCartNotification("Este pack está agotado", 1, "error");
+    return;
+  }
+
+  // Buscar si el pack ya está en el carrito
+  const existingItem = cart.find((item) => item.pack && item.pack.nombre === decodedName);
+  
+  if (existingItem) {
+    existingItem.quantity += 1;
+  } else {
+    // Agregar pack con estructura similar a productos
+    cart.push({ 
+      pack: pack, 
+      quantity: 1,
+      isPack: true  // Flag para identificar packs
+    });
+  }
+
+  updateCart();
+  saveCart();
+  showCartNotification(pack.nombre, 1);
+}
+
 function removeFromCart(index, event) {
   if (event) event.stopPropagation();
 
   if (cart[index]) {
-    const productName = cart[index].product.nombre;
+    const isPack = cart[index].isPack || cart[index].pack;
+    const itemName = isPack ? cart[index].pack.nombre : cart[index].product.nombre;
     cart.splice(index, 1);
     updateCart();
     saveCart();
 
     // Mostrar notificación de eliminación
-    showRemoveNotification(productName);
+    showRemoveNotification(itemName);
   }
 }
 
@@ -1978,10 +2168,469 @@ window.addEventListener(
 
 // --- Fin de la funcionalidad del header ---
 
+/* ========== CATEGORY CARD - PACKS ========== */
+
+let packs = [];
+
+/**
+ * Cargar datos de packs desde JSON
+ */
+async function loadPacks() {
+  try {
+    const response = await fetch("Json/packs.json");
+    if (!response.ok) throw new Error("Error al cargar packs");
+    const data = await response.json();
+    packs = data.packs || [];
+    renderCategoryCard();
+  } catch (error) {
+    console.error("Error al cargar packs:", error);
+  }
+}
+
+/**
+ * Renderizar Category Card con los primeros 4 packs
+ */
+function renderCategoryCard() {
+  const categoryCardItems = document.getElementById("category-card-items");
+  
+  if (!categoryCardItems) return;
+  
+  // Obtener solo los primeros 4 packs
+  const displayPacks = packs.slice(0, 4);
+  
+  // Si no hay packs, ocultar la sección
+  if (displayPacks.length === 0) {
+    document.querySelector(".category-card-section").style.display = "none";
+    return;
+  }
+  
+  // Limpiar el contenedor
+  categoryCardItems.innerHTML = "";
+  
+  // Crear items para cada pack
+  displayPacks.forEach((pack) => {
+    const item = document.createElement("div");
+    item.className = "category-card-item";
+    item.style.cursor = "pointer";
+    item.onclick = () => showPackDetail(encodeURIComponent(pack.nombre));
+    
+    // Construir ruta de imagen
+    const imagePath = `Images/Packs/${pack.imagen}`;
+    
+    item.innerHTML = `
+      <div class="category-card-image-container">
+        <img src="${imagePath}" 
+             alt="${pack.nombre}" 
+             class="category-card-image"
+             loading="lazy" 
+             decoding="async"
+             onerror="this.src='Images/pack-placeholder.svg'">
+      </div>
+      <div class="category-card-label">${pack.nombre}</div>
+    `;
+    
+    categoryCardItems.appendChild(item);
+  });
+}
+
+/**
+ * Función para mostrar todos los packs en un panel tipo detail
+ */
+function showAllPacks() {
+  window.scrollTo({ top: 0 });
+  
+  // Actualizar historial con hash "packs"
+  const currentHashDecoded = decodeURIComponent(window.location.hash.substring(1) || '');
+  if (currentHashDecoded !== 'packs') {
+    window.location.hash = encodeURIComponent('packs');
+  }
+  
+  // Ocultar elementos principales
+  const categoryCardSection = document.getElementById("category-card-section");
+  const categoriesCircleSection = document.querySelector(".categories-circle-section");
+  const bannerContainer = document.querySelector(".carousel-container");
+  const bestSellersSection = document.querySelector(".best-sellers-section");
+  const productsContainer = document.getElementById("products-container");
+  
+  if (categoryCardSection) categoryCardSection.style.display = "none";
+  if (categoriesCircleSection) categoriesCircleSection.style.display = "none";
+  if (bannerContainer) bannerContainer.style.display = "none";
+  if (bestSellersSection) bestSellersSection.style.display = "none";
+  if (productsContainer) productsContainer.style.display = "none";
+  
+  // Mostrar panel de packs
+  renderPacksDetail();
+}
+
+/**
+ * Renderizar el panel de detalle de packs (estilo Amazon)
+ */
+function renderPacksDetail() {
+  const packsDetailContainer = document.getElementById("packs-detail");
+  
+  if (!packsDetailContainer) return;
+  
+  // Ocultar elementos principales para mostrar el panel de packs
+  const categoryCardSection = document.getElementById("category-card-section");
+  const categoriesCircleSection = document.querySelector(".categories-circle-section");
+  const bannerContainer = document.querySelector(".carousel-container");
+  const bestSellersSection = document.querySelector(".best-sellers-section");
+  const productsContainer = document.getElementById("products-container");
+  const detailContainer = document.getElementById("product-detail");
+
+  if (categoryCardSection) categoryCardSection.style.display = "none";
+  if (categoriesCircleSection) categoriesCircleSection.style.display = "none";
+  if (bannerContainer) bannerContainer.style.display = "none";
+  if (bestSellersSection) bestSellersSection.style.display = "none";
+  if (productsContainer) productsContainer.style.display = "none";
+  if (detailContainer) {
+    detailContainer.style.display = "none";
+    detailContainer.innerHTML = "";
+  }
+  
+  // Construir HTML del panel
+  let packsHTML = `
+    <button class="back-button-packs" onclick="window.history.back()">
+      <i class="fas fa-chevron-left"></i> Volver
+    </button>
+    
+    <div class="packs-detail-header">
+      <h1 class="packs-detail-title">Todos los Packs Disponibles</h1>
+      <button class="packs-detail-close" onclick="window.history.back()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    
+    <div class="packs-grid" id="packs-grid">
+  `;
+  
+  // Iterar sobre todos los packs y crear tarjetas
+  packs.forEach(pack => {
+    let badges = '';
+    if (pack.top) badges += `<span class="pack-badge top"><i class="fas fa-star"></i> Nº1 Vendido</span>`;
+    if (pack.oferta) badges += `<span class="pack-badge oferta"><i class="fas fa-tag"></i> Oferta</span>`;
+    if (pack.nuevo) badges += `<span class="pack-badge nuevo"><i class="fas fa-star-half"></i> Nuevo</span>`;
+    
+    const caracteristicas = pack.caracteristicas.map(item => `<li class="pack-content-item">${item}</li>`).join('');
+    const imagePath = `Images/Packs/${pack.imagen}`;
+    const finalPrice = pack.descuento > 0 
+      ? (pack.precio * (1 - pack.descuento / 100)).toFixed(2)
+      : pack.precio.toFixed(2);
+    const discountText = pack.descuento > 0 
+      ? `<div class="pack-discount">Ahorras un ${pack.descuento}%</div>`
+      : '';
+    
+    packsHTML += `
+      <article class="pack-card" style="cursor: pointer;" onclick="showPackDetail('${encodeURIComponent(pack.nombre)}', event)">
+        <div class="pack-badge-row">${badges}</div>
+        
+        <div class="pack-img-container">
+          <img src="${imagePath}" 
+               alt="${pack.nombre}" 
+               class="pack-img"
+               loading="lazy" 
+               decoding="async"
+               onerror="this.src='Images/pack-placeholder.svg'">
+        </div>
+        
+        <h2 class="pack-name">${pack.nombre}</h2>
+        <p class="pack-desc">${pack.descripcion}</p>
+        
+        <div class="pack-content-box">
+          <span class="pack-content-title">Contenido del Pack:</span>
+          <ul class="pack-content-list">${caracteristicas}</ul>
+        </div>
+        
+        <div class="pack-price-section">
+          <div class="pack-price">
+            <span class="pack-price-symbol">$</span>${finalPrice}
+          </div>
+          ${discountText}
+        </div>
+        
+        <button class="pack-btn" 
+                onclick="addPackToCart('${pack.nombre}', event)"
+                ${!pack.disponible ? 'disabled' : ''}>
+          ${pack.disponible ? 'Agregar al carrito' : 'No disponible'}
+        </button>
+      </article>
+    `;
+  });
+  
+  packsHTML += `
+    </div>
+  `;
+  
+  packsDetailContainer.innerHTML = packsHTML;
+  packsDetailContainer.classList.add('active');
+  packsDetailContainer.style.display = "block";
+}
+
+/**
+ * Mostrar detalle del pack
+ */
+function showPackDetail(packName, event) {
+  if (event) event.stopPropagation();
+  
+  window.scrollTo({ top: 0 });
+  const decodedName = decodeURIComponent(packName);
+  const pack = packs.find((p) => p.nombre === decodedName);
+  
+  // Actualizar historial con hash
+  const currentHashDecoded = decodeURIComponent(window.location.hash.substring(1) || '');
+  if (currentHashDecoded !== decodedName) {
+    window.location.hash = encodeURIComponent(decodedName);
+  }
+  
+  if (!pack) {
+    console.error("Pack no encontrado:", decodedName);
+    return;
+  }
+  
+  // Ocultar elementos principales
+  const categoryCardSection = document.getElementById("category-card-section");
+  const categoriesCircleSection = document.querySelector(".categories-circle-section");
+  const bannerContainer = document.querySelector(".carousel-container");
+  const bestSellersSection = document.querySelector(".best-sellers-section");
+  const productsContainer = document.getElementById("products-container");
+  const packsDetailContainer = document.getElementById("packs-detail");
+  
+  if (categoryCardSection) categoryCardSection.style.display = "none";
+  if (categoriesCircleSection) categoriesCircleSection.style.display = "none";
+  if (bannerContainer) bannerContainer.style.display = "none";
+  if (bestSellersSection) bestSellersSection.style.display = "none";
+  if (productsContainer) productsContainer.style.display = "none";
+  if (packsDetailContainer) packsDetailContainer.style.display = "none";
+  
+  // Determinar precio final
+  const isOnSale = pack.oferta && pack.descuento > 0;
+  const finalPrice = isOnSale
+    ? (pack.precio * (1 - pack.descuento / 100)).toFixed(2)
+    : pack.precio.toFixed(2);
+  const priceSave = isOnSale ? (pack.precio - finalPrice).toFixed(2) : 0;
+  
+  // Construir badges
+  const badges = [];
+  if (pack.nuevo) badges.push('<span class="detail-badge nuevo"><i class="fas fa-star"></i> Nuevo</span>');
+  if (pack.oferta) badges.push(`<span class="detail-badge oferta"><i class="fas fa-tag"></i> ${Math.round(pack.descuento)}% OFF</span>`);
+  if (pack.top) badges.push('<span class="detail-badge mas-vendido"><i class="fas fa-trophy"></i> Nº1 Vendido</span>');
+  if (!pack.disponible) badges.push('<span class="detail-badge agotado"><i class="fas fa-ban"></i> AGOTADO</span>');
+  
+  // Construir características como especificaciones
+  const caracteristicasHTML = pack.caracteristicas.map(item => 
+    `<li><strong>Incluye:</strong> ${item}</li>`
+  ).join('');
+  
+  // Mostrar detalle del pack en el contenedor de product-detail
+  const detailContainer = document.getElementById("product-detail");
+  if (!detailContainer) return;
+  
+  const imagePath = `Images/Packs/${pack.imagen}`;
+  
+  detailContainer.innerHTML = `
+    <div class="detail-container">
+      <div class="detail-gallery">
+        <div class="main-image-container">
+          <img src="${imagePath}" 
+               class="main-image" 
+               alt="${pack.nombre}" 
+               loading="lazy" 
+               decoding="async"
+               onerror="this.src='Images/pack-placeholder.svg'">
+        </div>
+      </div>
+      
+      <div class="detail-info">
+        <h1 class="detail-title">${pack.nombre}</h1>
+        ${badges.length ? `<div class="detail-badges">${badges.join('')}</div>` : ''}
+        
+        <div class="price-section">
+          ${isOnSale ? `
+            <div class="price-with-discount">
+              PVPR:
+              <span class="price-original">${pack.precio.toFixed(2)}</span>
+            </div>
+            <span class="price-current">Precio: ${finalPrice} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-lg"></span>
+            <div class="price-save">Ahorras ${priceSave}</div>
+          ` : `
+            <span class="price-current">Precio: ${finalPrice} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-lg"></span>
+          `}
+        </div>
+        
+        <!-- AVISO DE COSTO DE DOMICILIO -->
+        <div class="delivery-info">
+          <span style="display:block; padding:12px 16px; background:#ffffff; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); font-size:1em; color:#2c2c2c; line-height:1.55;">
+            <span class="envio-badge">✓ Envío</span>
+            <i class="fas fa-truck-fast"></i>
+            <br>
+            Envío gratuito dentro del municipio. Entrega en 24–48 horas. Para envíos
+            fuera del municipio, el costo del domicilio se coordina al confirmar el
+            pedido.
+          </span>
+        </div>
+        <!-- FIN AVISO DOMICILIO -->
+        
+        <div class="quantity-section">
+          <label class="quantity-label">Cantidad:</label>
+          <div class="quantity-controls">
+            <button class="quantity-btn" onclick="adjustDetailQuantity(-1, event)">
+              <i class="fas fa-minus"></i>
+            </button>
+            <span class="quantity-display" id="detail-quantity">1</span>
+            <button class="quantity-btn" onclick="adjustDetailQuantity(1, event)">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </div>
+        
+        <button class="add-to-cart-btn ${!pack.disponible ? 'disabled' : ''}" 
+                onclick="addPackToCartFromDetail('${pack.nombre}', event)"
+                ${!pack.disponible ? 'disabled' : ''}>
+          <i class="fas fa-${!pack.disponible ? 'lock' : 'cart-plus'}"></i>
+          ${!pack.disponible ? 'Pack Agotado' : 'Agregar al carrito'}
+        </button>
+        
+        <div class="product-description">
+          <h4 class="description-title"><i class="fas fa-align-left"></i> Descripción</h4>
+          <div class="description-content">
+            <p>${pack.descripcion}</p>
+          </div>
+        </div>
+        
+        <div class="product-specs">
+          <h3 class="specs-title"><i class="fas fa-list-ul"></i> Contenido del Pack</h3>
+          <ul class="specs-list">
+            ${caracteristicasHTML}
+          </ul>
+        </div>
+      </div>
+      
+      <div class="back-btn-container">
+        <button class="back-btn" onclick="window.history.back()">
+          <i class="fas fa-arrow-left"></i> Volver
+        </button>
+      </div>
+    </div>
+  `;
+  
+  detailContainer.style.display = "block";
+}
+
+/**
+ * Ocultar detalle del pack y volver
+ */
+function hidePackDetail() {
+  const detailContainer = document.getElementById("product-detail");
+  const categoryCardSection = document.getElementById("category-card-section");
+  const categoriesCircleSection = document.querySelector(".categories-circle-section");
+  const bannerContainer = document.querySelector(".carousel-container");
+  const bestSellersSection = document.querySelector(".best-sellers-section");
+  const productsContainer = document.getElementById("products-container");
+  
+  if (detailContainer) {
+    detailContainer.style.display = "none";
+    detailContainer.innerHTML = "";
+  }
+  
+  // Limpiar hash del historial
+  window.location.hash = "";
+  
+  // Mostrar elementos principales
+  if (categoryCardSection) categoryCardSection.style.display = "block";
+  if (categoriesCircleSection) categoriesCircleSection.style.display = "block";
+  if (bannerContainer) bannerContainer.style.display = "block";
+  if (bestSellersSection) bestSellersSection.style.display = "block";
+  if (productsContainer) productsContainer.style.display = "grid";
+}
+
+/**
+ * Agregar pack al carrito desde el detail view
+ */
+function addPackToCartFromDetail(packName, event) {
+  if (event) event.stopPropagation();
+
+  const decodedName = decodeURIComponent(packName);
+  const pack = packs.find((p) => p.nombre === decodedName);
+
+  if (!pack) return;
+
+  // Validar disponibilidad
+  if (!pack.disponible) {
+    showCartNotification("Este pack está agotado", 1, "error");
+    return;
+  }
+
+  // Obtener cantidad del input de cantidad
+  const quantityElement = document.getElementById("detail-quantity");
+  const quantity = quantityElement ? parseInt(quantityElement.textContent) || 1 : 1;
+
+  // Buscar si el pack ya está en el carrito
+  const existingItem = cart.find((item) => item.pack && item.pack.nombre === decodedName);
+  
+  if (existingItem) {
+    existingItem.quantity += quantity;
+  } else {
+    // Agregar pack con estructura similar a productos
+    cart.push({ 
+      pack: pack, 
+      quantity: quantity,
+      isPack: true
+    });
+  }
+
+  updateCart();
+  saveCart();
+  showCartNotification(pack.nombre, quantity);
+}
+
+/**
+ * Ocultar panel de packs y volver a la página principal
+ */
+function hidePacksDetail() {
+  const packsDetailContainer = document.getElementById("packs-detail");
+  const detailContainer = document.getElementById("product-detail");
+  const categoryCardSection = document.getElementById("category-card-section");
+  const categoriesCircleSection = document.querySelector(".categories-circle-section");
+  const bannerContainer = document.querySelector(".carousel-container");
+  const bestSellersSection = document.querySelector(".best-sellers-section");
+  const productsContainer = document.getElementById("products-container");
+  
+  if (packsDetailContainer) {
+    packsDetailContainer.style.display = "none";
+    packsDetailContainer.classList.remove('active');
+    packsDetailContainer.innerHTML = "";
+  }
+  
+  if (detailContainer) {
+    detailContainer.style.display = "none";
+    detailContainer.innerHTML = "";
+  }
+  
+  // Limpiar hash del historial (si venía de #packs)
+  const currentHashDecoded = decodeURIComponent(window.location.hash.substring(1) || '');
+  if (currentHashDecoded === 'packs') {
+    // Si el hash es 'packs' dejarlo vacío para volver al contenido principal
+    window.location.hash = "";
+  }
+  
+  // Mostrar elementos principales
+  if (categoryCardSection) categoryCardSection.style.display = "block";
+  if (categoriesCircleSection) categoriesCircleSection.style.display = "block";
+  if (bannerContainer) bannerContainer.style.display = "block";
+  if (bestSellersSection) bestSellersSection.style.display = "block";
+  if (productsContainer) productsContainer.style.display = "grid";
+}
+
 // Inicialización
-document.addEventListener("DOMContentLoaded", () => {
-  loadProducts();
+document.addEventListener("DOMContentLoaded", async () => {
+  // Cargar productos y packs en paralelo y esperar ambos para que el manejo de rutas tenga ambos datasets disponibles
+  await Promise.all([loadProducts(), loadPacks()]);
   initCarousel();
+
+  // Si hay un hash en la URL al cargar la página, procesarlo ahora que tenemos products y packs
+  if (window.location.hash) {
+    handleRouteChange();
+  }
 
   // Debounce para búsqueda en tiempo real
   const searchInput = document.getElementById("search-input");

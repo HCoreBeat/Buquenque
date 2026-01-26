@@ -209,6 +209,23 @@
             </div>
         </section>
 
+        <!-- Sección de Category Card - Packs -->
+        <section class="category-card-section" id="category-card-section">
+            <div class="category-card-container">
+                <div id="category-card-panel" class="category-card">
+                    <div class="category-card-header">
+                        <h2 class="category-card-title">Packs Disponibles</h2>
+                    </div>
+                    <div class="category-card-body" id="category-card-items">
+                        <!-- Los packs se cargarán dinámicamente aquí -->
+                    </div>
+                    <div class="category-card-footer">
+                        <button class="category-card-link" onclick="showAllPacks()">Ver más packs disponibles</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Sección de Categorías Circulares -->
         <section class="categories-circle-section">
             <div class="categories-circle-container">
@@ -220,8 +237,15 @@
         </section>
 
         <main id="main-content">
+            <div class="category-back-button-wrapper" id="category-back-button-wrapper" style="display: none;">
+                <button class="category-back-button" onclick="filterByCategory('Todo')">
+                    <i class="fas fa-chevron-left"></i> Volver a todas las categorías
+                </button>
+            </div>
             <div class="products-grid" id="products-container"></div>
             <div class="product-detail" id="product-detail"
+                style="display: none;"></div>
+            <div class="packs-detail" id="packs-detail"
                 style="display: none;"></div>
         </main>
 
@@ -392,8 +416,21 @@
 
         <footer class="footer">
             <div class="footer-container">
-                <p class="footer-text">V2.7.3 © 2026 Buquenque y afiliados HLab
-                    - Todos los derechos reservados</p>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3 class="footer-brand">Buquenque Shop</h3>
+                        <p class="footer-tagline">Tu tienda online de confianza para productos frescos y esenciales</p>
+                    </div>
+                    <div class="footer-divider"></div>
+                    <div class="footer-section">
+                        <p class="footer-info"><i class="fas fa-phone"></i> +53 55884661</p>
+                        <p class="footer-info"><i class="fas fa-envelope"></i> soporte.buquenque@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-credits">
+                    <p class="footer-text">© 2026 Buquenque y Afiliados. Todos los derechos reservados.</p>
+                    <p class="footer-developer">Desarrollado por <strong>HLab</strong></p>
+                </div>
             </div>
         </footer>
 

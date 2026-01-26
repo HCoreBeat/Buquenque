@@ -438,3 +438,21 @@
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+/* Estilos para items de Packs en el carrito */
+.cart-item-type {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--azul-destacado);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 !important;
+}
+
+.cart-item-pack {
+    border-left: 3px solid var(--azul-destacado);
+}
+
+.cart-item-pack .cart-item-info p:first-child {
+    color: var(--azul-destacado);
+    font-weight: 700;
+}

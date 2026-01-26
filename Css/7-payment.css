@@ -472,3 +472,30 @@
     font-weight: 600;
     margin-bottom: 10px;
 }
+/* Estilos para items de Packs en el resumen de pago */
+.item-type-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.item-type-badge.pack-badge {
+    background-color: rgba(0, 123, 133, 0.2);
+    color: var(--azul-destacado);
+    border: 1px solid var(--azul-destacado);
+}
+
+.order-item-pack {
+    border-left: 3px solid var(--azul-destacado);
+    background-color: rgba(0, 123, 133, 0.05);
+}
+
+.order-item-pack .order-item-name {
+    color: var(--azul-destacado);
+    font-weight: 600;
+}

@@ -34,6 +34,7 @@
     scrollbar-width: thin;
     scrollbar-color: var(--color-principal) #f0f0f0;
     flex-wrap: nowrap;
+    padding-bottom: 12px;
 }
 
 /* Scrollbar para navegadores Webkit */

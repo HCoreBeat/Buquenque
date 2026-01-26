@@ -660,4 +660,32 @@
     .delivery-info-item i {
         font-size: 1.1rem;
     }
+
+    /* Footer responsive para desktop */
+    .footer-content {
+        justify-content: space-around;
+    }
+
+    .footer-divider {
+        height: 100px;
+    }
+}
+
+/* Mobile (hasta 768px) */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-divider {
+        width: 60%;
+        height: 1px;
+        margin: 0 auto;
+    }
+
+    .footer {
+        padding: 30px 15px;
+    }
 }

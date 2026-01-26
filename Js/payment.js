@@ -160,23 +160,32 @@ function updateOrderSummary() {
     let total = 0;
 
     orderSummary.innerHTML = cart.map(item => {
-        const isOnSale = item.product.oferta && item.product.descuento > 0;
+        // Determinar si es pack o producto
+        const isPack = item.isPack || item.pack;
+        const itemData = isPack ? item.pack : item.product;
+        
+        if (!itemData) return '';
+        
+        const isOnSale = itemData.oferta && itemData.descuento > 0;
         const unitPrice = isOnSale
-            ? item.product.precio * (1 - item.product.descuento / 100)
-            : item.product.precio;
+            ? itemData.precio * (1 - itemData.descuento / 100)
+            : itemData.precio;
         const itemTotal = unitPrice * item.quantity;
         total += itemTotal;
 
+        const itemType = isPack ? '<span class="item-type-badge pack-badge">Pack</span>' : '';
+
         return `
-            <tr>
+            <tr class="${isPack ? 'order-item-pack' : 'order-item-product'}">
                 <td class="order-item-name">
-                    ${item.product.nombre}
+                    ${itemData.nombre}
+                    ${itemType}
                     ${isOnSale ? '<span class="order-item-badge">OFERTA</span>' : ''}
                 </td>
                 <td class="order-item-quantity">${item.quantity}</td>
                 <td class="order-item-price">
                     ${isOnSale ? `
-                        <span class="original-price">$${item.product.precio.toFixed(2)}</span>
+                        <span class="original-price">$${itemData.precio.toFixed(2)}</span>
                         <span class="discounted-price">$${unitPrice.toFixed(2)}</span>
                     ` : `$${unitPrice.toFixed(2)}`}
                 </td>
@@ -357,7 +366,8 @@ function getValidatedCart() {
     if (!Array.isArray(cart)) {
         throw new Error('Formato de carrito inválido');
     }
-    return cart.filter(item => item.product && item.quantity > 0);
+    // Permitir tanto productos como packs
+    return cart.filter(item => (item.product || item.pack) && item.quantity > 0);
 }
 
 function validateForm() {
@@ -377,22 +387,35 @@ function validateForm() {
 }
 
 function prepareOrderItems(cart) {
-    return cart.map(item => ({
-        id: item.product.id || null,
-        name: item.product.nombre, // Asegúrate de que 'nombre' es la clave correcta en item.product
-        quantity: item.quantity,
-        unitPrice: item.product.oferta
-            ? item.product.precio * (1 - item.product.descuento / 100)
-            : item.product.precio,
-        discount: item.product.oferta ? item.product.descuento : 0
-    }));
+    return cart.map(item => {
+        const isPack = item.isPack || item.pack;
+        const itemData = isPack ? item.pack : item.product;
+        
+        if (!itemData) return null;
+        
+        return {
+            id: itemData.id || null,
+            name: itemData.nombre,
+            quantity: item.quantity,
+            type: isPack ? 'pack' : 'product',
+            unitPrice: itemData.oferta
+                ? itemData.precio * (1 - itemData.descuento / 100)
+                : itemData.precio,
+            discount: itemData.oferta ? itemData.descuento : 0
+        };
+    }).filter(item => item !== null);
 }
 
 function calculateOrderTotal(cart) {
     return cart.reduce((total, item) => {
-        const price = item.product.oferta
-            ? item.product.precio * (1 - item.product.descuento / 100)
-            : item.product.precio;
+        const isPack = item.isPack || item.pack;
+        const itemData = isPack ? item.pack : item.product;
+        
+        if (!itemData) return total;
+        
+        const price = itemData.oferta
+            ? itemData.precio * (1 - itemData.descuento / 100)
+            : itemData.precio;
         return total + (price * item.quantity);
     }, 0).toFixed(2);
 }
