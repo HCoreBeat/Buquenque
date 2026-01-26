@@ -1,0 +1,100 @@
+{
+  "packs": [
+    {
+      "id": "1",
+      "nombre": "Combo Esencial Familiar",
+      "disponible": true,
+      "top": false,
+      "oferta": false,
+      "nuevo": true,
+      "precio": 25,
+      "descuento": 0,
+      "descripcion": "La solución perfecta para asegurar los alimentos fundamentales de tu hogar. Este pack está diseñado para cubrir las necesidades básicas de proteínas y granos, ofreciendo productos de calidad a un precio inigualable. Ideal para quienes buscan practicidad y ahorro en su compra semanal.",
+      "caracteristicas": [
+        "x1 Paquete de cuartos de pollo 10 lbs",
+        "x2 Bolsas de arroz 1 kg cada bolsa",
+        "x1 Pomo de aceite 900 ml",
+        "x1 Pasta de tomate 400 g"
+      ],
+      "imagen": "pack_1.jpg",
+      "categoria": "Pack"
+    },
+    {
+      "id": "2",
+      "nombre": "Combo Banquete Criollo",
+      "disponible": true,
+      "top": true,
+      "oferta": false,
+      "nuevo": false,
+      "precio": 15,
+      "descuento": 0,
+      "descripcion": "Disfruta del auténtico sabor tradicional con nuestra selección más popular. Este pack combina la frescura del queso criollo con la versatilidad de la pasta y el jamoncillo, ideal para crear cenas memorables en familia. Es nuestro combo más solicitado gracias a su equilibrio perfecto entre calidad y sabor artesanal.",
+      "caracteristicas": [
+        "x2 Spaguetis",
+        "x2 Libras de queso criollo",
+        "x1 Pasta de Tomate",
+        "x1 Jamoncillo de Pollo"
+      ],
+      "imagen": "pack_2.jpg",
+      "categoria": "Pack"
+    },
+    {
+      "id": "3",
+      "nombre": "Pack Hogar Criollo",
+      "disponible": true,
+      "top": false,
+      "oferta": false,
+      "nuevo": true,
+      "precio": 18.0,
+      "descuento": 0,
+      "descripcion": "Un pack práctico y completo para el día a día del hogar, con alimentos básicos y frescos ideales para comidas criollas.",
+      "caracteristicas": [
+        "x3 lbs de carne de cerdo",
+        "x2 bolsas de arroz de 1kg",
+        "x1 paquete de frijoles negros 500g",
+        "x10 plátanos macho"
+      ],
+      "imagen": "pack_hogar_criollo.jpg",
+      "categoria": "Pack"
+    },
+    {
+      "id": "4",
+      "nombre": "Pack Desayuno Energético",
+      "disponible": true,
+      "top": false,
+      "oferta": false,
+      "nuevo": true,
+      "precio": 24.0,
+      "descuento": 0,
+      "descripcion": "Un pack ideal para comenzar el día con energía. Incluye café, leche, chocolate y Coffy Mate para preparar desayunos completos y deliciosos.",
+      "caracteristicas": [
+        "x1 Café La Llave",
+        "x1 Coffy Mate",
+        "x1 Leche entera",
+        "x1 Chocolate"
+      ],
+      "imagen": "pack_desayuno_energetico.jpg",
+      "categoria": "Pack"
+    },
+    {
+      "id": "5",
+      "nombre": "Pack Merienda Familiar",
+      "disponible": true,
+      "top": false,
+      "oferta": false,
+      "nuevo": true,
+      "precio": 30.0,
+      "descuento": 0,
+      "descripcion": "Un combo ideal para preparar meriendas abundantes y deliciosas. Incluye pan, lácteos y embutidos frescos para toda la familia.",
+      "caracteristicas": [
+        "x1 Bolsa de pan",
+        "x1 Mayonesa",
+        "x1 Kilo de jamón",
+        "x1 Kilo de queso",
+        "x1 Bolsa de leche"
+      ],
+      "imagen": "pack_merienda_familiar.jpg",
+      "categoria": "Pack"
+    }
+  ]
+}
