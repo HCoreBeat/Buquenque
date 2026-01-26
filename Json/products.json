@@ -2820,6 +2820,24 @@
         "img_2289_1769400259827.jpeg"
       ],
       "descripcion": "Disfruta de la delicia y frescura del jugo de piña y de frutas mixtas ideal para meriendas y refrescar en cualquier horario",
+      "disponibilidad": true,
+      "id": "prod_1769400654498_fwtwre5cr",
+      "precioFinal": 0.7,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2289_1769400259827.jpeg",
+      "searchText": "jugos de piña y frutas mixtas(200ml) bebidas no alcohólicas disfruta de la delicia y frescura del jugo de piña y de frutas mixtas ideal para meriendas y refrescar en cualquier horario"
+    },
+    {
+      "nombre": "Macarela al natural(425g)",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 2.8,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_2354_1769401017890.jpeg"
+      ],
+      "descripcion": "Disfruta de la Macarela un producto importado de Europa rinde para 4 personas ideal para cenas almuerzos y más",
       "disponibilidad": true
     }
   ]
