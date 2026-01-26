@@ -2457,14 +2457,10 @@
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "_comapplepasteboardioamhh_1768509715969.png"
+        "24581_1769417124019.jpg"
       ],
       "descripcion": "Vinagre gourmet elaborado con una cuidadosa mezcla de especias, ideal para realzar el sabor de ensaladas, carnes, marinados y aderezos. Aporta un toque intenso y aromático a tus comidas.",
-      "disponibilidad": true,
-      "id": "prod_1769297232608_ti3qgc5vt",
-      "precioFinal": 2.14,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/_comapplepasteboardioamhh_1768509715969.png",
-      "searchText": "vinagre gourmet con especias – 500 ml aderezos vinagre gourmet elaborado con una cuidadosa mezcla de especias, ideal para realzar el sabor de ensaladas, carnes, marinados y aderezos. aporta un toque intenso y aromático a tus comidas."
+      "disponibilidad": true
     },
     {
       "nombre": "Bombones Bon o Bon Blanco con Relleno de Maní – 210 g caja de 18u",
@@ -2838,7 +2834,11 @@
         "img_2354_1769401017890.jpeg"
       ],
       "descripcion": "Disfruta de la Macarela un producto importado de Europa rinde para 4 personas ideal para cenas almuerzos y más",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769417103253_731ryndkm",
+      "precioFinal": 2.8,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2354_1769401017890.jpeg",
+      "searchText": "macarela al natural(425g) cárnicos y embutidos disfruta de la macarela un producto importado de europa rinde para 4 personas ideal para cenas almuerzos y más"
     }
   ]
 }
