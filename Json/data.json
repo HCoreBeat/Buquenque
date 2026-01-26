@@ -1,8 +1,8 @@
 {
-    "id": 3,
-    "titulo": "¡Próximamente!",
-    "mensaje": "Los Packs llegarán a Buquenque...✨\nDisfruta de los nuevos packs para toda la familia. Forma fácil y completa en un solo toque. ",
-    "subtitulo": "Buquenque te aprecia. ",
-    "tipo": "info",
-    "icono": "fas fa-calendar-alt"
+    "id": 1,
+    "titulo": "¡Finalmente✨!",
+    "mensaje": "Los Packs han llegado a Buquenque...\nDisfruta de nuestro conjunto de productos diseñados especialmente para ti. Todo más rápido y sencillo",
+    "subtitulo": "\"Aprovecha ahora, que el 14 de febrero está casi aquí\" ",
+    "tipo": "success",
+    "icono": "fas fa-gift"
 }
