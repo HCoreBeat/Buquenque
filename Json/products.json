@@ -1174,19 +1174,15 @@
       "nombre": "Olla a Presión Eléctrica Eko (6 L)",
       "categoria": "Electrodomésticos",
       "precio": 87.52,
-      "descuento": 0,
+      "descuento": 31.44,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "Olla_a_Presion_Electrica.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Olla a Presión Eléctrica \"Eko\" (6 L), una excelente opción de nuestra categoría Electrodomésticos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_x8mo0fa06",
-      "precioFinal": 87.52,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Olla_a_Presion_Electrica.jpg",
-      "searchText": "olla a presión eléctrica eko (6 l) electrodomésticos disfruta de la calidad de olla a presión eléctrica \"eko\" (6 l), una excelente opción de nuestra categoría electrodomésticos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Galletas Hello (Fresa) (50g)",
@@ -2784,7 +2780,11 @@
         "img_2343_1769367903617.png"
       ],
       "descripcion": "Sabor equilibrado que complementa sin opacar el café. Textura liviana que aporta cremosidad sin necesidad de lácteos. Fácil de disolver, ideal para usar en servicio rápido o autoservicio.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769398503693_qcw6jw6ui",
+      "precioFinal": 5.5,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2343_1769367903617.png",
+      "searchText": "coffee mate(155porciones) despensa sabor equilibrado que complementa sin opacar el café. textura liviana que aporta cremosidad sin necesidad de lácteos. fácil de disolver, ideal para usar en servicio rápido o autoservicio."
     }
   ]
 }
