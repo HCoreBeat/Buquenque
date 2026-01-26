@@ -2802,6 +2802,24 @@
         "90efea5c-8865-4fc0-81d5-28e921765b9b_1769399647305.jpeg"
       ],
       "descripcion": "Disfruta de la crema de avellanas con cacao Nutella Ferreo de 350g ideal para desayunos,meriendas y para compartir en familia y amigos",
+      "disponibilidad": true,
+      "id": "prod_1769399997761_cesvzwr9h",
+      "precioFinal": 7.67,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/90efea5c-8865-4fc0-81d5-28e921765b9b_1769399647305.jpeg",
+      "searchText": "nutella ferreo(350g) confitura disfruta de la crema de avellanas con cacao nutella ferreo de 350g ideal para desayunos,meriendas y para compartir en familia y amigos"
+    },
+    {
+      "nombre": "Jugos de piña y frutas mixtas(200ml)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 0.7,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_2289_1769400259827.jpeg"
+      ],
+      "descripcion": "Disfruta de la delicia y frescura del jugo de piña y de frutas mixtas ideal para meriendas y refrescar en cualquier horario",
       "disponibilidad": true
     }
   ]
