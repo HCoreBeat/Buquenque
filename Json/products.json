@@ -1174,19 +1174,15 @@
       "nombre": "Olla a Presión Eléctrica Eko (6 L)",
       "categoria": "Electrodomésticos",
       "precio": 87.52,
-      "descuento": 0,
+      "descuento": 20.02,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "Olla_a_Presion_Electrica.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Olla a Presión Eléctrica \"Eko\" (6 L), una excelente opción de nuestra categoría Electrodomésticos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768441690510_x8mo0fa06",
-      "precioFinal": 87.52,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Olla_a_Presion_Electrica.jpg",
-      "searchText": "olla a presión eléctrica eko (6 l) electrodomésticos disfruta de la calidad de olla a presión eléctrica \"eko\" (6 l), una excelente opción de nuestra categoría electrodomésticos. ideal para el hogar y elaborado con los mejores estándares."
+      "disponibilidad": true
     },
     {
       "nombre": "Galletas Hello (Fresa) (50g)",
@@ -1722,7 +1718,11 @@
         "19e8b363-aeb1-4ce5-a570-0f54b02ec5c8_1769398843533.jpeg"
       ],
       "descripcion": "Cable EcoFlow Serie DLETA con Estación de Energía Portátil DELTA 3 Clásica (Gris Claro), Carga 7 Veces Más Rápida, 45min 80% Cargado, Batería LiFePO4 de 1024Wh para 10 Años, Salida Potente de 1800W, Expansión Flexible, Batería Solar para Uso en el Hogar o al Aire Libre",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769399190414_5i0kj0s7k",
+      "precioFinal": 750,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/19e8b363-aeb1-4ce5-a570-0f54b02ec5c8_1769398843533.jpeg",
+      "searchText": "ecoflow delta 3 (clásica) electrodomésticos cable ecoflow serie dleta con estación de energía portátil delta 3 clásica (gris claro), carga 7 veces más rápida, 45min 80% cargado, batería lifepo4 de 1024wh para 10 años, salida potente de 1800w, expansión flexible, batería solar para uso en el hogar o al aire libre"
     },
     {
       "nombre": "Malta Guajira (330ml)",
