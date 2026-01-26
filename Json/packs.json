@@ -2,7 +2,7 @@
   "packs": [
     {
       "id": "1",
-      "nombre": "Combo Esencial Familiar",
+      "nombre": "Pack Esencial Familiar",
       "disponible": true,
       "top": false,
       "oferta": false,
@@ -21,7 +21,7 @@
     },
     {
       "id": "2",
-      "nombre": "Combo Banquete Criollo",
+      "nombre": "Pack Banquete Criollo",
       "disponible": true,
       "top": true,
       "oferta": false,
