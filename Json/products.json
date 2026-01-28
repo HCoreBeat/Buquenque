@@ -2485,18 +2485,22 @@
       "searchText": "bombones bon o bon blanco con relleno de maní – 210 g caja de 18u confitura deliciosos bombones de chocolate blanco con oblea crujiente y suave relleno de crema de maní. ideales para compartir, regalar o disfrutar en cualquier momento.\nx cajas de 18u"
     },
     {
-      "nombre": "Pollo entero Seara(1300g)",
+      "nombre": "Pollo entero(3lbs)",
       "categoria": "Cárnicos y Embutidos",
       "precio": 8,
-      "descuento": 12.5,
+      "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
-      "oferta": true,
+      "nuevo": true,
+      "oferta": false,
       "imagenes": [
-        "img_2404_1769613080006.webp"
+        "img_1999_1768592587385.jpeg"
       ],
       "descripcion": "Pollo entero fresco\nPollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. Carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769297232608_e5wbqov9g",
+      "precioFinal": 8,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_1999_1768592587385.jpeg",
+      "searchText": "pollo entero(3lbs) cárnicos y embutidos pollo entero fresco\npollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales."
     },
     {
       "nombre": "1kg de queso gouda",
@@ -2751,7 +2755,7 @@
       "searchText": "lomo de cerdo ahumado x (lbs) cárnicos y embutidos lomo de cerdo ahumado cuidadosamente, de textura tierna y jugosa, con un sabor profundo y equilibrado. su proceso de ahumado realza la carne y le aporta un aroma irresistible.\nideal para servir frío o caliente, en comidas especiales o del día a día.\n\n💯 calidad superior y sabor auténtic"
     },
     {
-      "nombre": "Pollo entero asado",
+      "nombre": "Pollo entero Asado(1300g)",
       "categoria": "Cárnicos y Embutidos",
       "precio": 10,
       "descuento": 0,
@@ -2759,14 +2763,10 @@
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "img_2338_1769359038485.jpeg"
+        "img_2402_1769613196267.jpeg"
       ],
       "descripcion": "Pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. Sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nIdeal para compartir y disfrutar en cualquier ocasión.\n\n💯 Calidad, sabor y frescura garantizados",
-      "disponibilidad": true,
-      "id": "prod_1769366938429_m55g2rehm",
-      "precioFinal": 10,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2338_1769359038485.jpeg",
-      "searchText": "pollo entero asado cárnicos y embutidos pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nideal para compartir y disfrutar en cualquier ocasión.\n\n💯 calidad, sabor y frescura garantizados"
+      "disponibilidad": true
     },
     {
       "nombre": "Coffee Mate(155porciones)",
