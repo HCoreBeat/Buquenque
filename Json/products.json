@@ -91,6 +91,24 @@
       "searchText": "cartón de huevos despensa disfruta de la calidad de cartón de huevos, una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
+      "nombre": "Paquete de cuartos de pollo 10 lbs",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 13,
+      "descuento": 7.69,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": true,
+      "imagenes": [
+        "Paquete_de_cuartos_de_pollo_10_lbs.jpg"
+      ],
+      "descripcion": "Disfruta de la calidad de Paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
+      "disponibilidad": true,
+      "id": "prod_1768679794475_s112jvux0",
+      "precioFinal": 12,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Paquete_de_cuartos_de_pollo_10_lbs.jpg",
+      "searchText": "paquete de cuartos de pollo 10 lbs cárnicos y embutidos disfruta de la calidad de paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
+    },
+    {
       "nombre": "Vino Espumoso La Baronne Demi-Sec Rosé (750 ml)",
       "categoria": "Bebidas alcohólicas",
       "precio": 6.99,
@@ -2737,7 +2755,7 @@
       "searchText": "lomo de cerdo ahumado x (lbs) cárnicos y embutidos lomo de cerdo ahumado cuidadosamente, de textura tierna y jugosa, con un sabor profundo y equilibrado. su proceso de ahumado realza la carne y le aporta un aroma irresistible.\nideal para servir frío o caliente, en comidas especiales o del día a día.\n\n💯 calidad superior y sabor auténtic"
     },
     {
-      "nombre": "Pollo entero asado",
+      "nombre": "Pollo entero asado(1300g)",
       "categoria": "Cárnicos y Embutidos",
       "precio": 10,
       "descuento": 0,
@@ -2745,14 +2763,10 @@
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "img_2338_1769359038485.jpeg"
+        "img_2402_1769613700909.jpeg"
       ],
       "descripcion": "Pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. Sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nIdeal para compartir y disfrutar en cualquier ocasión.\n\n💯 Calidad, sabor y frescura garantizados",
-      "disponibilidad": true,
-      "id": "prod_1769366938429_m55g2rehm",
-      "precioFinal": 10,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2338_1769359038485.jpeg",
-      "searchText": "pollo entero asado cárnicos y embutidos pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nideal para compartir y disfrutar en cualquier ocasión.\n\n💯 calidad, sabor y frescura garantizados"
+      "disponibilidad": true
     },
     {
       "nombre": "Coffee Mate(155porciones)",
