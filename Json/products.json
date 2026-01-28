@@ -91,24 +91,6 @@
       "searchText": "cartón de huevos despensa disfruta de la calidad de cartón de huevos, una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
-      "nombre": "Paquete de cuartos de pollo 10 lbs",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 13,
-      "descuento": 7.69,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": true,
-      "imagenes": [
-        "Paquete_de_cuartos_de_pollo_10_lbs.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "id": "prod_1768679794475_s112jvux0",
-      "precioFinal": 12,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Paquete_de_cuartos_de_pollo_10_lbs.jpg",
-      "searchText": "paquete de cuartos de pollo 10 lbs cárnicos y embutidos disfruta de la calidad de paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares."
-    },
-    {
       "nombre": "Vino Espumoso La Baronne Demi-Sec Rosé (750 ml)",
       "categoria": "Bebidas alcohólicas",
       "precio": 6.99,
@@ -2496,7 +2478,11 @@
         "img_2404_1769613438329.webp"
       ],
       "descripcion": "Pollo entero fresco\nPollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. Carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769613603917_5rg815imv",
+      "precioFinal": 7,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2404_1769613438329.webp",
+      "searchText": "pollo entero saera(1300g) cárnicos y embutidos pollo entero fresco\npollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales."
     },
     {
       "nombre": "1kg de queso gouda",
