@@ -2436,17 +2436,13 @@
       "precio": 1.14,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "imagen-png_1768509565248.png"
       ],
       "descripcion": "Delicioso sándwich helado elaborado con suaves galletas tipo bizcocho rellenas de cremosa nata sabor vainilla. Ideal para disfrutar bien frío, perfecto como postre o merienda refrescante.",
-      "disponibilidad": true,
-      "id": "prod_1769297232608_m4gacojad",
-      "precioFinal": 1.14,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/imagen-png_1768509565248.png",
-      "searchText": "sándwich de nata (helado tipo sándwich de vainilla)50g postres delicioso sándwich helado elaborado con suaves galletas tipo bizcocho rellenas de cremosa nata sabor vainilla. ideal para disfrutar bien frío, perfecto como postre o merienda refrescante."
+      "disponibilidad": false
     },
     {
       "nombre": "Vinagre Gourmet con Especias – 500 ml",
@@ -2856,7 +2852,11 @@
         "img_2321_1769646593861.jpeg"
       ],
       "descripcion": "Picadillo de Res Mulata Banina\nPicadillo de res procesado, ideal para preparar comidas rápidas y sabrosas. De textura suave y sabor tradicional, perfecto para picadillo a la habanera, rellenos y múltiples recetas. Producto rendidor y práctico, listo para cocinar.",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769697355677_bmk197yks",
+      "precioFinal": 3,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2321_1769646593861.jpeg",
+      "searchText": "picadillo de res mulata bonita(500g) cárnicos y embutidos picadillo de res mulata banina\npicadillo de res procesado, ideal para preparar comidas rápidas y sabrosas. de textura suave y sabor tradicional, perfecto para picadillo a la habanera, rellenos y múltiples recetas. producto rendidor y práctico, listo para cocinar."
     }
   ]
 }
