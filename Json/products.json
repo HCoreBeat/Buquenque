@@ -2766,7 +2766,11 @@
         "img_2402_1769613700909.jpeg"
       ],
       "descripcion": "Pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. Sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nIdeal para compartir y disfrutar en cualquier ocasión.\n\n💯 Calidad, sabor y frescura garantizados",
-      "disponibilidad": true
+      "disponibilidad": true,
+      "id": "prod_1769646278472_1pdpqliu2",
+      "precioFinal": 10,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2402_1769613700909.jpeg",
+      "searchText": "pollo entero asado(1300g) cárnicos y embutidos pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nideal para compartir y disfrutar en cualquier ocasión.\n\n💯 calidad, sabor y frescura garantizados"
     },
     {
       "nombre": "Coffee Mate(155porciones)",
@@ -2839,6 +2843,20 @@
       "precioFinal": 2.8,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2354_1769401017890.jpeg",
       "searchText": "macarela al natural(425g) cárnicos y embutidos disfruta de la macarela un producto importado de europa rinde para 4 personas ideal para cenas almuerzos y más"
+    },
+    {
+      "nombre": "Picadillo de Res Mulata Bonita(500g)",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 3,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_2321_1769646593861.jpeg"
+      ],
+      "descripcion": "Picadillo de Res Mulata Banina\nPicadillo de res procesado, ideal para preparar comidas rápidas y sabrosas. De textura suave y sabor tradicional, perfecto para picadillo a la habanera, rellenos y múltiples recetas. Producto rendidor y práctico, listo para cocinar.",
+      "disponibilidad": true
     }
   ]
 }
