@@ -135,28 +135,6 @@
       "searchText": "pack merienda familiar pack un combo ideal para preparar meriendas abundantes y deliciosas. incluye pan, lácteos y embutidos frescos para toda la familia.",
       "created_at": null,
       "modified_at": null
-    },
-    {
-      "nombre": "pack test",
-      "categoria": "Pack",
-      "precio": 1,
-      "descuento": 0,
-      "top": false,
-      "nuevo": true,
-      "oferta": false,
-      "disponible": true,
-      "imagenes": [
-        "pack_premium_1769931376669.jpg"
-      ],
-      "imagen": "pack_premium_1769931376669.jpg",
-      "descripcion": "hola de descripcion",
-      "caracteristicas": [
-        "x1 de cualquier cosa",
-        "x2 de otra cosa mas",
-        "x3 de eso mismo"
-      ],
-      "created_at": "2026-02-01T07:36:33.406Z",
-      "modified_at": "2026-02-01T07:36:33.406Z"
     }
   ]
 }
