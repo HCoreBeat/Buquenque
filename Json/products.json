@@ -3069,16 +3069,12 @@
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "img_2402_1769613700909.jpeg"
+        "29035_1769920673262.jpg"
       ],
       "descripcion": "Pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. Sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nIdeal para compartir y disfrutar en cualquier ocasión.\n\n💯 Calidad, sabor y frescura garantizados",
       "disponibilidad": true,
-      "id": "prod_1769646278472_1pdpqliu2",
-      "precioFinal": 10,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2402_1769613700909.jpeg",
-      "searchText": "pollo entero asado(1300g) cárnicos y embutidos pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nideal para compartir y disfrutar en cualquier ocasión.\n\n💯 calidad, sabor y frescura garantizados",
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-01T04:45:43.920Z"
     },
     {
       "nombre": "Coffee Mate(155porciones)",
@@ -3117,26 +3113,6 @@
       "precioFinal": 7.67,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/90efea5c-8865-4fc0-81d5-28e921765b9b_1769399647305.jpeg",
       "searchText": "nutella ferreo(350g) confitura disfruta de la crema de avellanas con cacao nutella ferreo de 350g ideal para desayunos,meriendas y para compartir en familia y amigos",
-      "created_at": null,
-      "modified_at": null
-    },
-    {
-      "nombre": "Jugos de piña y frutas mixtas(200ml)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 0.7,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "img_2289_1769400259827.jpeg"
-      ],
-      "descripcion": "Disfruta de la delicia y frescura del jugo de piña y de frutas mixtas ideal para meriendas y refrescar en cualquier horario",
-      "disponibilidad": true,
-      "id": "prod_1769400654498_fwtwre5cr",
-      "precioFinal": 0.7,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/img_2289_1769400259827.jpeg",
-      "searchText": "jugos de piña y frutas mixtas(200ml) bebidas no alcohólicas disfruta de la delicia y frescura del jugo de piña y de frutas mixtas ideal para meriendas y refrescar en cualquier horario",
       "created_at": null,
       "modified_at": null
     },
@@ -3194,7 +3170,11 @@
       "descripcion": "Déjate cautivar por el aroma y la suavidad del Néctar de Guayaba Nezska. Elaborado con la mejor selección de frutas, este néctar de 250 ml ofrece un equilibrio perfecto entre dulzor y frescura, manteniendo la esencia auténtica de la guayaba rosada. Su presentación premium en botella de vidrio asegura que cada sorbo mantenga su calidad excepcional, siendo una opción saludable y deliciosa para toda la familia.",
       "disponibilidad": true,
       "created_at": "2026-02-01T04:25:50.595Z",
-      "modified_at": "2026-02-01T04:25:50.595Z"
+      "modified_at": "2026-02-01T04:25:50.595Z",
+      "id": "prod_1769920633225_ucn5piqej",
+      "precioFinal": 1.16,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/28973_1769919496657.jpg",
+      "searchText": "jugo nezka de (guayaba) bebidas no alcohólicas déjate cautivar por el aroma y la suavidad del néctar de guayaba nezska. elaborado con la mejor selección de frutas, este néctar de 250 ml ofrece un equilibrio perfecto entre dulzor y frescura, manteniendo la esencia auténtica de la guayaba rosada. su presentación premium en botella de vidrio asegura que cada sorbo mantenga su calidad excepcional, siendo una opción saludable y deliciosa para toda la familia."
     },
     {
       "nombre": "Jugo Nezka de (Mango)",
@@ -3210,7 +3190,11 @@
       "descripcion": "Disfruta de la explosión tropical y la dulzura natural con el Néctar de Mango Nezska. Este refrescante jugo viene en una práctica presentación de 250 ml (8.5 fl oz) en envase de vidrio, ideal para conservar su frescura y ese color vibrante que lo caracteriza. Con una textura suave y un sabor intenso a mango maduro, es el acompañante perfecto para tus desayunos o para refrescar cualquier momento del día.",
       "disponibilidad": true,
       "created_at": "2026-02-01T04:25:51.710Z",
-      "modified_at": "2026-02-01T04:25:51.710Z"
+      "modified_at": "2026-02-01T04:25:51.710Z",
+      "id": "prod_1769920633225_st28ei1l0",
+      "precioFinal": 1.16,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/28974_1769919601035.jpg",
+      "searchText": "jugo nezka de (mango) bebidas no alcohólicas disfruta de la explosión tropical y la dulzura natural con el néctar de mango nezska. este refrescante jugo viene en una práctica presentación de 250 ml (8.5 fl oz) en envase de vidrio, ideal para conservar su frescura y ese color vibrante que lo caracteriza. con una textura suave y un sabor intenso a mango maduro, es el acompañante perfecto para tus desayunos o para refrescar cualquier momento del día."
     },
     {
       "nombre": "Mayonesa Victoria Garden",
@@ -3226,7 +3210,11 @@
       "descripcion": "Dale un toque irresistible a tus comidas con la Mayonesa Victoria Garden. Definida por su textura rica, cremosa y suave, esta mayonesa es el ingrediente secreto para elevar el sabor de tus hamburguesas, sándwiches y ensaladas. Presentada en un generoso frasco de vidrio con tapa hermética azul, garantiza una frescura duradera y una consistencia profesional que hará que cada bocado sea una experiencia gourmet en casa.",
       "disponibilidad": true,
       "created_at": "2026-02-01T04:25:53.048Z",
-      "modified_at": "2026-02-01T04:25:53.048Z"
+      "modified_at": "2026-02-01T04:25:53.048Z",
+      "id": "prod_1769920633225_aw89nywas",
+      "precioFinal": 4,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/28918_1769919763267.jpg",
+      "searchText": "mayonesa victoria garden despensa dale un toque irresistible a tus comidas con la mayonesa victoria garden. definida por su textura rica, cremosa y suave, esta mayonesa es el ingrediente secreto para elevar el sabor de tus hamburguesas, sándwiches y ensaladas. presentada en un generoso frasco de vidrio con tapa hermética azul, garantiza una frescura duradera y una consistencia profesional que hará que cada bocado sea una experiencia gourmet en casa."
     },
     {
       "nombre": "Carne de Res enlatada Sublime",
@@ -3242,7 +3230,43 @@
       "descripcion": "Para una comida rápida, nutritiva y deliciosa, la Carne de Res Sublime (Carne de Rês) es tu mejor aliada. Esta conserva de calidad premium destaca por ser rica en proteínas y totalmente libre de gluten, lo que la hace ideal para diversos estilos de dieta. Ya sea para dorar en la sartén, acompañar tus pastas o preparar bocaditos rápidos, su sabor auténtico y su textura firme te ofrecen la practicidad que necesitas sin sacrificar la calidad.",
       "disponibilidad": true,
       "created_at": "2026-02-01T04:25:54.206Z",
-      "modified_at": "2026-02-01T04:25:54.206Z"
+      "modified_at": "2026-02-01T04:25:54.206Z",
+      "id": "prod_1769920633225_umws2zt0k",
+      "precioFinal": 2.5,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/28912_1769919939950.jpg",
+      "searchText": "carne de res enlatada sublime despensa para una comida rápida, nutritiva y deliciosa, la carne de res sublime (carne de rês) es tu mejor aliada. esta conserva de calidad premium destaca por ser rica en proteínas y totalmente libre de gluten, lo que la hace ideal para diversos estilos de dieta. ya sea para dorar en la sartén, acompañar tus pastas o preparar bocaditos rápidos, su sabor auténtico y su textura firme te ofrecen la practicidad que necesitas sin sacrificar la calidad."
+    },
+    {
+      "nombre": "Jugo de (Piña)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 0.7,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "29034_1769920829022.jpg"
+      ],
+      "descripcion": "Disfruta de la delicia y frescura del jugo de piña. ideal para meriendas y refrescar en cualquier horario",
+      "disponibilidad": true,
+      "created_at": "2026-02-01T04:45:45.320Z",
+      "modified_at": "2026-02-01T04:45:45.320Z"
+    },
+    {
+      "nombre": "Jugo de (Frutas Mixtas)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 0.7,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "29033_1769921130545.jpg"
+      ],
+      "descripcion": "Disfruta de la delicia y frescura del jugo de frutas mixtas ideal para meriendas y refrescar en cualquier horario",
+      "disponibilidad": true,
+      "created_at": "2026-02-01T04:45:46.636Z",
+      "modified_at": "2026-02-01T04:45:46.636Z"
     }
   ]
 }
