@@ -138,7 +138,7 @@
     },
     {
       "id": "6",
-      "nombre": "lola",
+      "nombre": "lola eñeñe",
       "categoria": "Pack",
       "precio": 1,
       "descuento": 50,
@@ -154,10 +154,11 @@
       "caracteristicas": [
         "x1 lola",
         "x2 lola",
-        "x3 lola"
+        "x3 lola",
+        "x1 Manzana 🍎 x unidad"
       ],
       "created_at": "2026-02-01T09:03:14.094Z",
-      "modified_at": "2026-02-01T09:03:14.094Z"
+      "modified_at": "2026-02-01T09:06:18.664Z"
     }
   ]
 }
