@@ -17,7 +17,15 @@
         "x1 Pasta de tomate 400 g"
       ],
       "imagen": "pack_1.jpg",
-      "categoria": "Pack"
+      "categoria": "Pack",
+      "precioFinal": 25,
+      "imagenes": [
+        "pack_1.jpg"
+      ],
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/Packs/pack_1.jpg",
+      "searchText": "pack esencial familiar pack la solución perfecta para asegurar los alimentos fundamentales de tu hogar. este pack está diseñado para cubrir las necesidades básicas de proteínas y granos, ofreciendo productos de calidad a un precio inigualable. ideal para quienes buscan practicidad y ahorro en su compra semanal.",
+      "created_at": null,
+      "modified_at": null
     },
     {
       "id": "2",
@@ -36,7 +44,15 @@
         "x1 Jamoncillo de Pollo"
       ],
       "imagen": "pack_2.jpg",
-      "categoria": "Pack"
+      "categoria": "Pack",
+      "precioFinal": 15,
+      "imagenes": [
+        "pack_2.jpg"
+      ],
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/Packs/pack_2.jpg",
+      "searchText": "pack banquete criollo pack disfruta del auténtico sabor tradicional con nuestra selección más popular. este pack combina la frescura del queso criollo con la versatilidad de la pasta y el jamoncillo, ideal para crear cenas memorables en familia. es nuestro combo más solicitado gracias a su equilibrio perfecto entre calidad y sabor artesanal.",
+      "created_at": null,
+      "modified_at": null
     },
     {
       "id": "3",
@@ -45,7 +61,7 @@
       "top": false,
       "oferta": false,
       "nuevo": true,
-      "precio": 18.0,
+      "precio": 18,
       "descuento": 0,
       "descripcion": "Un pack práctico y completo para el día a día del hogar, con alimentos básicos y frescos ideales para comidas criollas.",
       "caracteristicas": [
@@ -55,7 +71,15 @@
         "x10 plátanos macho"
       ],
       "imagen": "pack_hogar_criollo.jpg",
-      "categoria": "Pack"
+      "categoria": "Pack",
+      "precioFinal": 18,
+      "imagenes": [
+        "pack_hogar_criollo.jpg"
+      ],
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/Packs/pack_hogar_criollo.jpg",
+      "searchText": "pack hogar criollo pack un pack práctico y completo para el día a día del hogar, con alimentos básicos y frescos ideales para comidas criollas.",
+      "created_at": null,
+      "modified_at": null
     },
     {
       "id": "4",
@@ -64,7 +88,7 @@
       "top": false,
       "oferta": false,
       "nuevo": true,
-      "precio": 24.0,
+      "precio": 24,
       "descuento": 0,
       "descripcion": "Un pack ideal para comenzar el día con energía. Incluye café, leche, chocolate y Coffy Mate para preparar desayunos completos y deliciosos.",
       "caracteristicas": [
@@ -74,7 +98,15 @@
         "x1 Chocolate"
       ],
       "imagen": "pack_desayuno_energetico.jpg",
-      "categoria": "Pack"
+      "categoria": "Pack",
+      "precioFinal": 24,
+      "imagenes": [
+        "pack_desayuno_energetico.jpg"
+      ],
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/Packs/pack_desayuno_energetico.jpg",
+      "searchText": "pack desayuno energético pack un pack ideal para comenzar el día con energía. incluye café, leche, chocolate y coffy mate para preparar desayunos completos y deliciosos.",
+      "created_at": null,
+      "modified_at": null
     },
     {
       "id": "5",
@@ -83,7 +115,7 @@
       "top": false,
       "oferta": false,
       "nuevo": true,
-      "precio": 30.0,
+      "precio": 30,
       "descuento": 0,
       "descripcion": "Un combo ideal para preparar meriendas abundantes y deliciosas. Incluye pan, lácteos y embutidos frescos para toda la familia.",
       "caracteristicas": [
@@ -94,7 +126,37 @@
         "x1 Bolsa de leche"
       ],
       "imagen": "pack_merienda_familiar.jpg",
-      "categoria": "Pack"
+      "categoria": "Pack",
+      "precioFinal": 30,
+      "imagenes": [
+        "pack_merienda_familiar.jpg"
+      ],
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/Packs/pack_merienda_familiar.jpg",
+      "searchText": "pack merienda familiar pack un combo ideal para preparar meriendas abundantes y deliciosas. incluye pan, lácteos y embutidos frescos para toda la familia.",
+      "created_at": null,
+      "modified_at": null
+    },
+    {
+      "nombre": "pack test",
+      "categoria": "Pack",
+      "precio": 1,
+      "descuento": 0,
+      "top": false,
+      "nuevo": true,
+      "oferta": false,
+      "disponible": true,
+      "imagenes": [
+        "pack_premium_1769931376669.jpg"
+      ],
+      "imagen": "pack_premium_1769931376669.jpg",
+      "descripcion": "hola de descripcion",
+      "caracteristicas": [
+        "x1 de cualquier cosa",
+        "x2 de otra cosa mas",
+        "x3 de eso mismo"
+      ],
+      "created_at": "2026-02-01T07:36:33.406Z",
+      "modified_at": "2026-02-01T07:36:33.406Z"
     }
   ]
 }
