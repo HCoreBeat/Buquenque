@@ -22,7 +22,7 @@
       "imagenes": [
         "pack_1.jpg"
       ],
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/Packs/pack_1.jpg",
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/Packs/pack_1.jpg",
       "searchText": "pack esencial familiar pack la solución perfecta para asegurar los alimentos fundamentales de tu hogar. este pack está diseñado para cubrir las necesidades básicas de proteínas y granos, ofreciendo productos de calidad a un precio inigualable. ideal para quienes buscan practicidad y ahorro en su compra semanal.",
       "created_at": null,
       "modified_at": null
@@ -49,7 +49,7 @@
       "imagenes": [
         "pack_2.jpg"
       ],
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/Packs/pack_2.jpg",
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/Packs/pack_2.jpg",
       "searchText": "pack banquete criollo pack disfruta del auténtico sabor tradicional con nuestra selección más popular. este pack combina la frescura del queso criollo con la versatilidad de la pasta y el jamoncillo, ideal para crear cenas memorables en familia. es nuestro combo más solicitado gracias a su equilibrio perfecto entre calidad y sabor artesanal.",
       "created_at": null,
       "modified_at": null
@@ -76,7 +76,7 @@
       "imagenes": [
         "pack_hogar_criollo.jpg"
       ],
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/Packs/pack_hogar_criollo.jpg",
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/Packs/pack_hogar_criollo.jpg",
       "searchText": "pack hogar criollo pack un pack práctico y completo para el día a día del hogar, con alimentos básicos y frescos ideales para comidas criollas.",
       "created_at": null,
       "modified_at": null
@@ -103,7 +103,7 @@
       "imagenes": [
         "pack_desayuno_energetico.jpg"
       ],
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/Packs/pack_desayuno_energetico.jpg",
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/Packs/pack_desayuno_energetico.jpg",
       "searchText": "pack desayuno energético pack un pack ideal para comenzar el día con energía. incluye café, leche, chocolate y coffy mate para preparar desayunos completos y deliciosos.",
       "created_at": null,
       "modified_at": null
@@ -131,34 +131,10 @@
       "imagenes": [
         "pack_merienda_familiar.jpg"
       ],
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/Packs/pack_merienda_familiar.jpg",
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/Packs/pack_merienda_familiar.jpg",
       "searchText": "pack merienda familiar pack un combo ideal para preparar meriendas abundantes y deliciosas. incluye pan, lácteos y embutidos frescos para toda la familia.",
       "created_at": null,
       "modified_at": null
-    },
-    {
-      "id": "6",
-      "nombre": "lola eñeñe",
-      "categoria": "Pack",
-      "precio": 1,
-      "descuento": 50,
-      "top": false,
-      "nuevo": true,
-      "oferta": true,
-      "disponible": false,
-      "imagenes": [
-        "pack_premium_1769936558996.jpg"
-      ],
-      "imagen": "pack_premium_1769936558996.jpg",
-      "descripcion": "lola 123",
-      "caracteristicas": [
-        "x1 lola",
-        "x2 lola",
-        "x3 lola",
-        "x1 Manzana 🍎 x unidad"
-      ],
-      "created_at": "2026-02-01T09:03:14.094Z",
-      "modified_at": "2026-02-01T09:12:20.927Z"
     }
   ]
 }
