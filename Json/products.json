@@ -454,7 +454,11 @@
       "descripcion": "Disfruta de la calidad de Leche en polvo (1kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-01-31T00:58:53.284Z"
+      "modified_at": "2026-01-31T00:58:53.284Z",
+      "id": "prod_1769919470708_wghwn1olf",
+      "precioFinal": 8,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/Leche_en_polvo_(1kg).jpg",
+      "searchText": "leche en polvo (1kg) despensa disfruta de la calidad de leche en polvo (1kg), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Nutella de Chocolate (350g)",
@@ -3175,6 +3179,70 @@
       "searchText": "picadillo de res mulata bonita(500g) cárnicos y embutidos picadillo de res mulata banina\npicadillo de res procesado, ideal para preparar comidas rápidas y sabrosas. de textura suave y sabor tradicional, perfecto para picadillo a la habanera, rellenos y múltiples recetas. producto rendidor y práctico, listo para cocinar.",
       "created_at": null,
       "modified_at": null
+    },
+    {
+      "nombre": "Jugo Nezka de (Guayaba)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 1.16,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "28973_1769919496657.jpg"
+      ],
+      "descripcion": "Déjate cautivar por el aroma y la suavidad del Néctar de Guayaba Nezska. Elaborado con la mejor selección de frutas, este néctar de 250 ml ofrece un equilibrio perfecto entre dulzor y frescura, manteniendo la esencia auténtica de la guayaba rosada. Su presentación premium en botella de vidrio asegura que cada sorbo mantenga su calidad excepcional, siendo una opción saludable y deliciosa para toda la familia.",
+      "disponibilidad": true,
+      "created_at": "2026-02-01T04:25:50.595Z",
+      "modified_at": "2026-02-01T04:25:50.595Z"
+    },
+    {
+      "nombre": "Jugo Nezka de (Mango)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 1.16,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "28974_1769919601035.jpg"
+      ],
+      "descripcion": "Disfruta de la explosión tropical y la dulzura natural con el Néctar de Mango Nezska. Este refrescante jugo viene en una práctica presentación de 250 ml (8.5 fl oz) en envase de vidrio, ideal para conservar su frescura y ese color vibrante que lo caracteriza. Con una textura suave y un sabor intenso a mango maduro, es el acompañante perfecto para tus desayunos o para refrescar cualquier momento del día.",
+      "disponibilidad": true,
+      "created_at": "2026-02-01T04:25:51.710Z",
+      "modified_at": "2026-02-01T04:25:51.710Z"
+    },
+    {
+      "nombre": "Mayonesa Victoria Garden",
+      "categoria": "Despensa",
+      "precio": 4,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "28918_1769919763267.jpg"
+      ],
+      "descripcion": "Dale un toque irresistible a tus comidas con la Mayonesa Victoria Garden. Definida por su textura rica, cremosa y suave, esta mayonesa es el ingrediente secreto para elevar el sabor de tus hamburguesas, sándwiches y ensaladas. Presentada en un generoso frasco de vidrio con tapa hermética azul, garantiza una frescura duradera y una consistencia profesional que hará que cada bocado sea una experiencia gourmet en casa.",
+      "disponibilidad": true,
+      "created_at": "2026-02-01T04:25:53.048Z",
+      "modified_at": "2026-02-01T04:25:53.048Z"
+    },
+    {
+      "nombre": "Carne de Res enlatada Sublime",
+      "categoria": "Despensa",
+      "precio": 2.5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "28912_1769919939950.jpg"
+      ],
+      "descripcion": "Para una comida rápida, nutritiva y deliciosa, la Carne de Res Sublime (Carne de Rês) es tu mejor aliada. Esta conserva de calidad premium destaca por ser rica en proteínas y totalmente libre de gluten, lo que la hace ideal para diversos estilos de dieta. Ya sea para dorar en la sartén, acompañar tus pastas o preparar bocaditos rápidos, su sabor auténtico y su textura firme te ofrecen la practicidad que necesitas sin sacrificar la calidad.",
+      "disponibilidad": true,
+      "created_at": "2026-02-01T04:25:54.206Z",
+      "modified_at": "2026-02-01T04:25:54.206Z"
     }
   ]
 }
