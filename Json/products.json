@@ -2804,6 +2804,23 @@
       "disponibilidad": true,
       "created_at": "2026-02-02T21:08:14.224Z",
       "modified_at": "2026-02-02T21:08:14.224Z"
+    },
+    {
+      "id": "prod_1770068151315_vd46lv3pi",
+      "nombre": "Mdm Polaco 11kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 20,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "picadillo_mdm_1770068151335.jpg"
+      ],
+      "descripcion": "Mdm Polaco de alta calida. Tabletas de 11kg",
+      "disponibilidad": true,
+      "created_at": "2026-02-02T21:36:01.806Z",
+      "modified_at": "2026-02-02T21:36:01.806Z"
     }
   ]
 }
