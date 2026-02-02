@@ -2789,19 +2789,19 @@
       "modified_at": "2026-02-01T04:45:46.636Z"
     },
     {
-      "id": "prod_1770020530640_ae29itj76",
-      "nombre": "test",
+      "id": "prod_1770020616267_pdkqnerdq",
+      "nombre": "Buenas noches",
       "categoria": "Aderezos",
-      "precio": 1,
+      "precio": 2,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
       "imagenes": [],
-      "descripcion": "1",
+      "descripcion": "sdfasdfa",
       "disponibilidad": false,
-      "created_at": "2026-02-02T08:22:38.420Z",
-      "modified_at": "2026-02-02T08:22:38.420Z"
+      "created_at": "2026-02-02T08:23:51.862Z",
+      "modified_at": "2026-02-02T08:23:51.862Z"
     }
   ]
 }
