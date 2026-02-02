@@ -2847,6 +2847,21 @@
       "disponibilidad": false,
       "created_at": "2026-02-02T07:23:47.368Z",
       "modified_at": "2026-02-02T07:23:47.368Z"
+    },
+    {
+      "id": "prod_1770019832710_8ue2wv4pc",
+      "nombre": "test 5",
+      "categoria": "Aderezos",
+      "precio": 1,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [],
+      "descripcion": "1",
+      "disponibilidad": false,
+      "created_at": "2026-02-02T08:10:38.302Z",
+      "modified_at": "2026-02-02T08:10:38.302Z"
     }
   ]
 }
