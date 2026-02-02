@@ -191,7 +191,7 @@
       "id": "prod_1768441690510_x6vswdewh",
       "nombre": "Arroz (1Kg)",
       "categoria": "Despensa",
-      "precio": 2.4,
+      "precio": 2.17,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -202,7 +202,7 @@
       "descripcion": "Disfruta de la calidad de Arroz (1Kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-02T21:08:11.362Z"
     },
     {
       "id": "prod_1768441690510_a5q147wl5",
@@ -226,7 +226,7 @@
       "nombre": "Mortadella de Pollo",
       "categoria": "Cárnicos y Embutidos",
       "precio": 2.49,
-      "descuento": 19.68,
+      "descuento": 35.74,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": true,
@@ -236,7 +236,7 @@
       "descripcion": "Disfruta de la calidad de Mortadella de Pollo, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-02T21:08:11.359Z"
     },
     {
       "id": "prod_1768923781803_n2hnqahbv",
@@ -531,7 +531,7 @@
       "id": "prod_1768918643793_v1ax5w4ut",
       "nombre": "Jabón de Baño Florona (75g)",
       "categoria": "Aseo y Belleza",
-      "precio": 0.8,
+      "precio": 0.6,
       "descuento": 0,
       "mas_vendido": true,
       "nuevo": false,
@@ -542,7 +542,7 @@
       "descripcion": "Disfruta de la calidad de Jabón de Baño \"Florona\" (75g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-02T21:08:11.363Z"
     },
     {
       "id": "prod_1768441690510_hx4fk9hy1",
@@ -2787,6 +2787,23 @@
       "disponibilidad": true,
       "created_at": "2026-02-01T04:45:46.636Z",
       "modified_at": "2026-02-01T04:45:46.636Z"
+    },
+    {
+      "id": "prod_1770066469203_y2eeslg2t",
+      "nombre": "Pasta de Tomate (Holland Park)",
+      "categoria": "Despensa",
+      "precio": 1.35,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1377fbfe-49b3-4a92-8515-13149de037da_1770066469220.jpg"
+      ],
+      "descripcion": "Pasta de Tomate Holland Park Eleva el sabor de tus recetas con la Pasta de Tomate Holland Park. Esta pasta concentrada de alta calidad viene en una práctica presentación de lata de 400g, ideal para aportar un color rojo intenso y una textura espesa a tus salsas, guisos y estofados. Elaborada con tomates seleccionados, es un producto libre de organismos genéticamente modificados (GMO FREE), garantizando un ingrediente más natural y saludable para tu cocina. Su sabor profundo y auténtico es la bas",
+      "disponibilidad": true,
+      "created_at": "2026-02-02T21:08:14.224Z",
+      "modified_at": "2026-02-02T21:08:14.224Z"
     }
   ]
 }
