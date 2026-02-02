@@ -18,26 +18,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Paquete_de_cuartos_de_pollo_10_lbs.jpg",
       "searchText": "paquete de cuartos de pollo 10 lbs cárnicos y embutidos disfruta de la calidad de paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768679794475_s112jvux0",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T04:49:07.830Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768679794475_s112jvux0",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T04:49:07.830Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Azúcar blanca x lb",
@@ -57,26 +38,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Azucar_blanca_x_lb.jpg",
       "searchText": "azúcar blanca x lb despensa disfruta de la calidad de azúcar blanca x lb, una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_piqbut8gb",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T02:58:44.376Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_piqbut8gb",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T02:58:44.376Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Chupa Chupa x unidad",
@@ -96,26 +58,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Chupa_Chupa_x_unidad.jpg",
       "searchText": "chupa chupa x unidad confitura disfruta de la calidad de chupa chupa x unidad, una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_lx2ochyll",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T02:59:12.874Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_lx2ochyll",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T02:59:12.874Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pastilla de Pollo x unidad",
@@ -135,26 +78,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Pastilla_de_Pollo_x_unidad.jpg",
       "searchText": "pastilla de pollo x unidad despensa disfruta de la calidad de pastilla de pollo x unidad, una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_8ocdeke0z",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_8ocdeke0z",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Espaguetis (500g)",
@@ -174,26 +98,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Espaguetis_(500g).jpg",
       "searchText": "espaguetis (500g) despensa disfruta de la calidad de espaguetis (500g), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_gkp20pj1x",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_gkp20pj1x",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Cartón de Huevos",
@@ -213,26 +118,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Carton_de_Huevos.jpg",
       "searchText": "cartón de huevos despensa disfruta de la calidad de cartón de huevos, una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768783820711_rmnry541r",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768783820711_rmnry541r",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Vino Espumoso La Baronne Demi-Sec Rosé (750 ml)",
@@ -252,26 +138,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/La_Baronne.jpg",
       "searchText": "vino espumoso la baronne demi-sec rosé (750 ml) bebidas alcohólicas elegante vino espumoso la baronne demi-sec rosé, con un contenido de 750 ml y 10% de volumen de alcohol. ideal para celebraciones y brindis especiales.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768923054742_dhekmp0os",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768923054742_dhekmp0os",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Refresco Instantáneo (2Lt)",
@@ -291,26 +158,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/14649_1768923556748.jpg",
       "searchText": "refresco instantáneo (2lt) bebidas no alcohólicas disfruta de la calidad de refresco instantáneo (2lt), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769030417838_noe5sa2wa",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769030417838_noe5sa2wa",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Aceite (900ml)",
@@ -330,26 +178,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Aceite_(900ml).jpg",
       "searchText": "aceite (900ml) despensa disfruta de la calidad de aceite (900ml), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_ma2k8r01f",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_ma2k8r01f",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Arroz Importado 1Lb",
@@ -369,26 +198,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Arroz_Importado_1Lb.jpg",
       "searchText": "arroz importado 1lb despensa disfruta de la calidad de arroz importado 1lb, una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_ijaa8o33p",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_ijaa8o33p",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Sopa instantánea sabor Pollo (80g)",
@@ -408,26 +218,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Sopa_instantanea_sabor_Pollo_(80g).jpg",
       "searchText": "sopa instantánea sabor pollo (80g) despensa disfruta de la calidad de sopa instantánea sabor pollo (80g), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_ovzxwkud2",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_ovzxwkud2",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Arroz (1Kg)",
@@ -447,26 +238,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Arroz_(1Kg).jpg",
       "searchText": "arroz (1kg) despensa disfruta de la calidad de arroz (1kg), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_x6vswdewh",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_x6vswdewh",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Galletas de soda Salricas 3 Tacos",
@@ -486,26 +258,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Galletas_de_soda_Salricas_3_Tacos.jpg",
       "searchText": "galletas de soda salricas 3 tacos confitura disfruta de la calidad de galletas de soda salricas 3 tacos, una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_a5q147wl5",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_a5q147wl5",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Mortadella de Pollo",
@@ -525,26 +278,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Mortadella_de_Pollo.jpg",
       "searchText": "mortadella de pollo cárnicos y embutidos disfruta de la calidad de mortadella de pollo, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769297232608_fwssmtz8c",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769297232608_fwssmtz8c",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Refresco Limón (330ml)",
@@ -564,26 +298,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Refresco_Limon_(330ml).jpg",
       "searchText": "refresco limón (330ml) bebidas no alcohólicas disfruta de la calidad de refresco limón (330ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768923781803_n2hnqahbv",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768923781803_n2hnqahbv",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Caja de Malta",
@@ -603,26 +318,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Caja_de_Malta.jpg",
       "searchText": "caja de malta bebidas no alcohólicas disfruta de la calidad de caja de malta bucanero, una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_jiwy36eez",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_jiwy36eez",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Frazada de Piso",
@@ -642,26 +338,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Frazada_de_Piso.jpg",
       "searchText": "frazada de piso utiles del hogar disfruta de la calidad de frazada de piso, una excelente opción de nuestra categoría utiles del hogar. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_lmfmz1hj5",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_lmfmz1hj5",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Manzana 🍎 x unidad",
@@ -681,26 +358,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Manzana.jpg",
       "searchText": "manzana 🍎 x unidad despensa disfruta de la calidad de manzana 🍎 x unidad, una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_nm24ia7xr",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_nm24ia7xr",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Azúcar Blanca (1Kg)",
@@ -720,26 +378,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Azucar_Blanca_(1Kg).jpg",
       "searchText": "azúcar blanca (1kg) despensa disfruta de la calidad de azúcar blanca (1kg), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_a8hfmrs15",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_a8hfmrs15",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Galletas Marías (80g)",
@@ -759,26 +398,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Galletas_Marias_(80g).jpg",
       "searchText": "galletas marías (80g) confitura disfruta de la calidad de galletas marías (80g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768509219912_orvyg0rkr",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768509219912_orvyg0rkr",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Galletas de Soda con Mantequilla Doricas",
@@ -798,26 +418,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Galletas_de_Soda_con_Mantequilla_Doricas.jpg",
       "searchText": "galletas de soda con mantequilla doricas confitura disfruta de la calidad de galletas de soda con mantequilla doricas, una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_ehifoffi7",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_ehifoffi7",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Codito (500g)",
@@ -837,26 +438,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Codito_(500g).jpg",
       "searchText": "codito (500g) despensa disfruta de la calidad de codito (500g), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_7gy02c75y",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_7gy02c75y",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Leche en polvo (1kg)",
@@ -876,26 +458,7 @@
       "id": "prod_1769919470708_wghwn1olf",
       "precioFinal": 8,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Leche_en_polvo_(1kg).jpg",
-      "searchText": "leche en polvo (1kg) despensa disfruta de la calidad de leche en polvo (1kg), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
-      "inventory": {
-        "product_id": "prod_1769919470708_wghwn1olf",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769919470708_wghwn1olf",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "searchText": "leche en polvo (1kg) despensa disfruta de la calidad de leche en polvo (1kg), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares."
     },
     {
       "nombre": "Nutella de Chocolate (350g)",
@@ -915,26 +478,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Nutella_de_Chocolate_(350g).jpg",
       "searchText": "nutella de chocolate (350g) confitura disfruta de la calidad de nutella de chocolate (350g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769297232608_yu795qbia",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769297232608_yu795qbia",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Paquete de Harina (1kg)",
@@ -954,26 +498,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Paquete_de_Harina_(1kg).jpg",
       "searchText": "paquete de harina (1kg) despensa disfruta de la calidad de paquete de harina (1kg), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_giw45i4dl",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_giw45i4dl",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Galletas Lamore (150g)",
@@ -993,26 +518,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Galletas_Lamore_(150g).jpg",
       "searchText": "galletas lamore (150g) confitura disfruta de la calidad de galletas lamore (150g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_daeyrjgpn",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_daeyrjgpn",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Leche Condensada Azucarada Castellum (390g)",
@@ -1032,26 +538,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Leche_Condensada_Azucarada_Castellum_(390g).jpg",
       "searchText": "leche condensada azucarada castellum (390g) despensa disfruta de la calidad de leche condensada azucarada castellum (390g), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_bluy6jgyz",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_bluy6jgyz",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Frijol Negro (500g)",
@@ -1071,26 +558,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Frijol_Negro_(500g).jpg",
       "searchText": "frijol negro (500g) despensa disfruta de la calidad de frijol negro (500g), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_tf4rwuo62",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_tf4rwuo62",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Papel Sanitario",
@@ -1110,26 +578,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Papel_Sanitario.jpg",
       "searchText": "papel sanitario aseo y belleza disfruta de la calidad de papel sanitario, una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_ify26lfde",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_ify26lfde",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Jamón Bravo Rápido (2kg)",
@@ -1149,26 +598,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Jamon_Bravo_Rapido_(2kg).jpg",
       "searchText": "jamón bravo rápido (2kg) cárnicos y embutidos disfruta de la calidad de jamón bravo rápido (2kg), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769358949851_dzn6agegg",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769358949851_dzn6agegg",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Sorbeto de (Fresa Renata) (115g)",
@@ -1188,26 +618,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Sorbeto_de_Fresa_Renata_(115g).jpg",
       "searchText": "sorbeto de (fresa renata) (115g) confitura disfruta de la calidad de sorbeto de fresa renata (115g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_eolc54k6n",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_eolc54k6n",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Jabón de Baño Florona (75g)",
@@ -1227,26 +638,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Jabon_de_Baño_(75g).jpg",
       "searchText": "jabón de baño florona (75g) aseo y belleza disfruta de la calidad de jabón de baño \"florona\" (75g), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768918643793_v1ax5w4ut",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768918643793_v1ax5w4ut",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Jabón Belleza MARWA (100g)",
@@ -1266,26 +658,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Jabon_de_Baño_Marwa.jpg",
       "searchText": "jabón belleza marwa (100g) aseo y belleza jabón de belleza marca marwa, enriquecido con extracto de polvo de carbón y certificado como producto vegano. con un peso neto de 100g, es una opción excelente para el cuidado de la piel dentro de nuestra categoría de aseo y belleza.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_hx4fk9hy1",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_hx4fk9hy1",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Detergente (500g)",
@@ -1305,26 +678,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/20261_1769214002102.jpg",
       "searchText": "detergente (500g) aseo y belleza disfruta de la calidad de detergente (500g), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769226986599_pfsrf2pax",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769226986599_pfsrf2pax",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Bizcocho Marwa Chocolate (40g)",
@@ -1344,26 +698,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Bizcocho_Marwa_Chocolate_(40g).jpg",
       "searchText": "bizcocho marwa chocolate (40g) confitura disfruta de la calidad de bizcocho marwa chocolate (40g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_2gldw5j03",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_2gldw5j03",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Galletas Renata Maizena (170g)",
@@ -1383,26 +718,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Galletas_Renata_Maizena_(170g).jpg",
       "searchText": "galletas renata maizena (170g) confitura disfruta de la calidad de galletas renata 'maizena' (170g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_8asugkx1n",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_8asugkx1n",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pack x 6 Manzana 🍎",
@@ -1422,26 +738,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Pack_x_6_Manzana.jpg",
       "searchText": "pack x 6 manzana 🍎 despensa disfruta de la calidad de pack x 6 manzana 🍎, una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_p8q4pyl2i",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_p8q4pyl2i",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Galletas de soda Salricas 7 Tacos",
@@ -1461,26 +758,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Galletas_de_soda_Salricas_7_Tacos.jpg",
       "searchText": "galletas de soda salricas 7 tacos confitura disfruta de la calidad de galletas de soda salricas 7 tacos, una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_katqqvatc",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_katqqvatc",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Caja de refresco Limón",
@@ -1500,26 +778,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Caja_de_refresco_Limon.jpg",
       "searchText": "caja de refresco limón bebidas no alcohólicas disfruta de la calidad de caja de refresco limón, una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768923781803_6nigzuz4y",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768923781803_6nigzuz4y",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pechuga de pollo (1Kg)",
@@ -1539,26 +798,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Pechuga_de_pollo_(1Kg).jpg",
       "searchText": "pechuga de pollo (1kg) cárnicos y embutidos disfruta de la calidad de pechuga de pollo (1kg), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_lmdloikfh",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_lmdloikfh",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Paquete de íntima 10u",
@@ -1578,26 +818,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Paquete_de_intima_10u.jpg",
       "searchText": "paquete de íntima 10u aseo y belleza disfruta de la calidad de paquete de íntima 10u, una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_7odn1isoo",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_7odn1isoo",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Galletas Monro Vainilla (50g)",
@@ -1617,26 +838,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Galletas_Monro_Vainilla_(50g).jpg",
       "searchText": "galletas monro vainilla (50g) confitura disfruta de la calidad de galletas monro vainilla (50g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768918643793_umkfz2iov",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768918643793_umkfz2iov",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Paquete de salchichas (340g)",
@@ -1656,26 +858,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Paquete_de_salchichas_(340g).jpg",
       "searchText": "paquete de salchichas (340g) cárnicos y embutidos disfruta de la calidad de paquete de salchichas (340g), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_2ee9c6jft",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_2ee9c6jft",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Café Purasangre (250g)",
@@ -1695,26 +878,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Cafe_Purasangre_(250g).jpg",
       "searchText": "café purasangre (250g) despensa disfruta de la calidad de café \"purasangre\" (250g), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_5krgoxpvo",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_5krgoxpvo",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Protector Diario (18u)",
@@ -1734,26 +898,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Protector_Diario_(18u).jpg",
       "searchText": "protector diario (18u) aseo y belleza disfruta de la calidad de protector diario (18u), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_3adjmtv4j",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_3adjmtv4j",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Jugo de Mango (200ml)",
@@ -1773,26 +918,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Jugo_de_Mango_(200ml).jpg",
       "searchText": "jugo de mango (200ml) bebidas no alcohólicas disfruta de la calidad de jugo de mango (200ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_ui7btz3uy",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_ui7btz3uy",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Mayonesa Victoria (250ml)",
@@ -1812,26 +938,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Mayonesa_Victoria_(500ml).jpg",
       "searchText": "mayonesa victoria (250ml) aderezos disfruta de la calidad de mayonesa \"victoria\" (500ml), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768509219912_tvj6iq15t",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768509219912_tvj6iq15t",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Galletas ShowGol (Dulce de Leche) (76g)",
@@ -1851,26 +958,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Galletas_ShowGol_Dulce_de_Leche_(76g).jpg",
       "searchText": "galletas showgol (dulce de leche) (76g) confitura disfruta de la calidad de galletas \"showgol\" dulce de leche (76g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_u0qqsmz96",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_u0qqsmz96",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Galletas ShowGol (Chocolate) (76g)",
@@ -1890,26 +978,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Galletas_ShowGol_Chocolate_(76g).jpg",
       "searchText": "galletas showgol (chocolate) (76g) confitura disfruta de la calidad de galletas \"showgol\" chocolate (76g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_ya1ksp6k7",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_ya1ksp6k7",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Hígado de pollo (1Kg)",
@@ -1929,26 +998,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Higado_de_pollo_(1Kg).jpg",
       "searchText": "hígado de pollo (1kg) cárnicos y embutidos disfruta de la calidad de hígado de pollo (1kg), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_ufxhzyokh",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_ufxhzyokh",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Cuartos de Pierna de Pollo (10 lbs)",
@@ -1968,26 +1018,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Cuartos_de_Pollo.jpg",
       "searchText": "cuartos de pierna de pollo (10 lbs) cárnicos y embutidos cuartos de pierna de pollo (thigh and drumstick) de la marca delightful farms. producto importado de usa, presentado en un formato de 10 lbs (4.53 kg). ideal para preparaciones familiares, garantizando frescura y calidad en nuestra categoría de carnes.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769357390791_h9ang5l6m",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769357390791_h9ang5l6m",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Jugo Tuana Piña (200ml)",
@@ -2007,26 +1038,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Jugo_Tuana_Piña_(200ml).jpg",
       "searchText": "jugo tuana piña (200ml) bebidas no alcohólicas disfruta de la calidad de jugo tuana piña (200ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_pk9eys33x",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_pk9eys33x",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Acondicionador SEDAL (620ml)",
@@ -2046,26 +1058,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Acondicionador_SEDAL_(620ml).jpg",
       "searchText": "acondicionador sedal (620ml) aseo y belleza disfruta de la calidad de acondicionador sedal (620ml), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_35bofl7sg",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_35bofl7sg",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Atún en Aceite Vegetal (170g)",
@@ -2085,26 +1078,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Atun_en_Aceite_Vegetal_(170g).jpg",
       "searchText": "atún en aceite vegetal (170g) cárnicos y embutidos disfruta de la calidad de atún en aceite vegetal (170g), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769297232608_t1t8j7j86",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769297232608_t1t8j7j86",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Toallitas Húmedas (80u)",
@@ -2124,26 +1098,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Toallitas_Humedas_(80u).jpg",
       "searchText": "toallitas húmedas (80u) aseo y belleza disfruta de la calidad de toallitas húmedas (80u), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_nrgnaj8mu",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_nrgnaj8mu",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Sorbeto de (Limón Renata) (115g)",
@@ -2163,26 +1118,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Sorbeto_de_Limon_Renata_(115g).jpg",
       "searchText": "sorbeto de (limón renata) (115g) confitura disfruta de la calidad de sorbeto de limón renata (115g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768509219912_8zv9x9m9l",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768509219912_8zv9x9m9l",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Sorbeto de (Chocolate Renata) (115g)",
@@ -2202,26 +1138,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Sorbeto_de_Chocolate_Renata_(115g).jpg",
       "searchText": "sorbeto de (chocolate renata) (115g) confitura disfruta de la calidad de sorbeto de chocolate renata (115g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768509219912_clmam94tm",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768509219912_clmam94tm",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Galletas Snack (30g)",
@@ -2241,26 +1158,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Galletas_Snack_(30g).jpg",
       "searchText": "galletas snack (30g) confitura disfruta de la calidad de galletas snack (30g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_hsxlkh07e",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_hsxlkh07e",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Spam de (Pollo) (340g)",
@@ -2280,26 +1178,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Spam_de_Pollo_(340g).jpg",
       "searchText": "spam de (pollo) (340g) cárnicos y embutidos disfruta de la calidad de spam de pollo (340g), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_jeg5mb96s",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_jeg5mb96s",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Servilletas (100u)",
@@ -2319,26 +1198,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Servilletas_(100u).jpg",
       "searchText": "servilletas (100u) aseo y belleza disfruta de la calidad de servilletas (100u), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_jnja8jl1s",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_jnja8jl1s",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Cerveza Calatrava (330ml)",
@@ -2358,26 +1218,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Cerveza_Calatrava_(330ml).jpg",
       "searchText": "cerveza calatrava (330ml) bebidas alcohólicas disfruta de la calidad de cerveza \"calatrava\" (330ml), una excelente opción de nuestra categoría bebidas alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_nim7b1t3a",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_nim7b1t3a",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Spam de (Cerdo) (340g)",
@@ -2397,26 +1238,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Spam_de_Cerdo_(340g).jpg",
       "searchText": "spam de (cerdo) (340g) cárnicos y embutidos disfruta de la calidad de spam de cerdo (340g), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_ae5wvb8h0",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_ae5wvb8h0",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Cepillo de diente (/u)",
@@ -2436,26 +1258,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Cepillo_de_diente.jpg",
       "searchText": "cepillo de diente (/u) aseo y belleza disfruta de la calidad de cepillo de diente (/u), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769297232608_1rpawqvbr",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769297232608_1rpawqvbr",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Sazón completo (340g)",
@@ -2475,26 +1278,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Sazon_completo_(340g).jpg",
       "searchText": "sazón completo (340g) aderezos disfruta de la calidad de sazón completo (340g), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_lwhf9zf9m",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_lwhf9zf9m",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Paquete de Chupa Chupa (48/u)",
@@ -2514,26 +1298,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Paquete_de_Chupa_Chupa.jpg",
       "searchText": "paquete de chupa chupa (48/u) confitura disfruta de la calidad de paquete de chupa chupa (48/u), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_vxcu9hmme",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_vxcu9hmme",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Olla a Presión Eléctrica Eko (6 L)",
@@ -2553,26 +1318,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Olla_a_Presion_Electrica.jpg",
       "searchText": "olla a presión eléctrica eko (6 l) electrodomésticos disfruta de la calidad de olla a presión eléctrica \"eko\" (6 l), una excelente opción de nuestra categoría electrodomésticos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_x8mo0fa06",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_x8mo0fa06",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Galletas Hello (Fresa) (50g)",
@@ -2592,26 +1338,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Galletas_Hello_Fresa_(50g).jpg",
       "searchText": "galletas hello (fresa) (50g) confitura disfruta de la calidad de galletas \"hello\" fresa (50g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_4kd0mttf1",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_4kd0mttf1",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pechuga de pollo (2Kg)",
@@ -2631,26 +1358,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Pechuga_de_pollo_(2Kg).jpg",
       "searchText": "pechuga de pollo (2kg) cárnicos y embutidos disfruta de la calidad de pechuga de pollo (2kg), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_4sqo3j0w6",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_4sqo3j0w6",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Refresco Gaseado Limón (1.5Lt)",
@@ -2670,26 +1378,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Refresco_Gaseado_Limon.jpg",
       "searchText": "refresco gaseado limón (1.5lt) bebidas no alcohólicas disfruta de la calidad de refresco gaseado limón (1.5lt) cero calorías, una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_cgr6pnapy",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_cgr6pnapy",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Queso Gouda (3Kg)",
@@ -2709,26 +1398,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/c48fcb12-52ba-44af-bd94-3d6491ddfdce_1769296310864.jpeg",
       "searchText": "queso gouda (3kg) lácteos disfruta de la calidad de queso gouda (3kg), una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769297232608_616ijabck",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769297232608_616ijabck",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Set de Estropajos",
@@ -2748,26 +1418,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Set_de_Estropajos.jpg",
       "searchText": "set de estropajos utiles del hogar disfruta de la calidad de set de estropajos, una excelente opción de nuestra categoría utiles del hogar. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_yv6cayff0",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_yv6cayff0",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Olla Arrocera",
@@ -2787,26 +1438,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Olla_Arrocera.jpg",
       "searchText": "olla arrocera electrodomésticos disfruta de la calidad de olla arrocera, una excelente opción de nuestra categoría electrodomésticos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_vkkhmof4o",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_vkkhmof4o",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pack x 6 Refresco Gaseado Limón (1.5Lt)",
@@ -2826,26 +1458,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Pack_x_6_Refresco_Gaseado_Limon.jpg",
       "searchText": "pack x 6 refresco gaseado limón (1.5lt) bebidas no alcohólicas disfruta de la calidad de pack x 6 refresco gaseado limón (1.5lt) cero calorías, una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_9r6kpw7pk",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_9r6kpw7pk",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Comino Molido (171.1g)",
@@ -2865,26 +1478,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Comino_Molido.jpg",
       "searchText": "comino molido (171.1g) aderezos disfruta de la calidad de comino molido (171.1g), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_ioggj7ulz",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_ioggj7ulz",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Galletas Hello (Vainilla) (50g)",
@@ -2904,26 +1498,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Galletas_Hello_Vainilla_(50g).jpg",
       "searchText": "galletas hello (vainilla) (50g) confitura disfruta de la calidad de galletas \"hello\" vainilla (50g), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_fud7rcsve",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_fud7rcsve",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Caja de jugos sabor Piña (27 x 200ml)",
@@ -2943,26 +1518,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Caja_de_jugos_sabor_Piña.jpg",
       "searchText": "caja de jugos sabor piña (27 x 200ml) bebidas no alcohólicas disfruta de la calidad de caja de jugos sabor piña (27 x 200ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_8sc6ztvh1",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_8sc6ztvh1",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Talco para Bebé (200g)",
@@ -2982,26 +1538,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Talco_para_Bebe_(200g).jpg",
       "searchText": "talco para bebé (200g) aseo y belleza disfruta de la calidad de talco para bebé (200g), una excelente opción de nuestra categoría aseo y belleza. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_3zn04c14a",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_3zn04c14a",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pack de 12 Estropajos",
@@ -3021,26 +1558,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Pack_de_12_Estropajos.jpg",
       "searchText": "pack de 12 estropajos utiles del hogar disfruta de la calidad de pack de 12 estropajos, una excelente opción de nuestra categoría utiles del hogar. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_w8rkr6cte",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_w8rkr6cte",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Caja de jugos sabor Mango (30 x 200ml)",
@@ -3060,26 +1578,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Caja_de_jugos_sabor_Mango.jpg",
       "searchText": "caja de jugos sabor mango (30 x 200ml) bebidas no alcohólicas disfruta de la calidad de caja de jugos sabor mango (30 x 200ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_ewx9ktgvg",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_ewx9ktgvg",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Refresco Gaseado Mate (1.5Lt)",
@@ -3099,26 +1598,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Refresco_Gaseado_Mate.jpg",
       "searchText": "refresco gaseado mate (1.5lt) bebidas no alcohólicas disfruta de la calidad de refresco gaseado mate (1.5lt) cero calorías, una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_hj37vemry",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_hj37vemry",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Ajo Granulado (255g)",
@@ -3138,26 +1618,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Ajo_Granulado_(255g).jpg",
       "searchText": "ajo granulado (255g) aderezos disfruta de la calidad de ajo granulado (255g), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_cep037qmr",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_cep037qmr",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pomo de Gelatina (50/u)",
@@ -3177,26 +1638,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/gemini_generated_image_wguyagwguyagwguy_1769227195926.jpg",
       "searchText": "pomo de gelatina (50/u) confitura disfruta de la calidad de pomo de gelatina (50/u), una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769227733184_kw7ouwd8b",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769227733184_kw7ouwd8b",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pack x 6 Refresco Gaseado Mate (1.5Lt) Cero Calorías",
@@ -3216,26 +1658,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Pack_x_6_Refresco_Gaseado_Mate.jpg",
       "searchText": "pack x 6 refresco gaseado mate (1.5lt) cero calorías bebidas no alcohólicas disfruta de la calidad de pack x 6 refresco gaseado mate (1.5lt) cero calorías, una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_9wq6k0k1z",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_9wq6k0k1z",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pack x 12 Néctar de Pera 🍐 (12x330ml)",
@@ -3255,26 +1678,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Pack_x_12_Nectar_de_Pera.jpg",
       "searchText": "pack x 12 néctar de pera 🍐 (12x330ml) bebidas no alcohólicas disfruta de la calidad de pack x 12 néctar de pera 🍐 (12x330ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_6xn0n5bsd",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_6xn0n5bsd",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Caja de Cerveza Calatrava",
@@ -3294,26 +1698,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Caja_de_Cerveza_Calatrava.jpg",
       "searchText": "caja de cerveza calatrava bebidas alcohólicas disfruta de la calidad de caja de cerveza \"calatrava\", una excelente opción de nuestra categoría bebidas alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_gbbyirl3n",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_gbbyirl3n",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Sazonador de carnes (396g)",
@@ -3333,26 +1718,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Sazonador_de_carnes_(396g).jpg",
       "searchText": "sazonador de carnes (396g) aderezos disfruta de la calidad de sazonador de carnes (396g), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_kmipcz11d",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_kmipcz11d",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Bicarbonato (453g)",
@@ -3372,26 +1738,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Bicarbonato_(453g).jpg",
       "searchText": "bicarbonato (453g) aderezos disfruta de la calidad de bicarbonato (453g), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_4m16b3ly0",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_4m16b3ly0",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Nevera Eko (3.5 pies)",
@@ -3411,26 +1758,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Nevera_Eko.jpg",
       "searchText": "nevera eko (3.5 pies) electrodomésticos disfruta de la calidad de nevera eko (3.5 pies), una excelente opción de nuestra categoría electrodomésticos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_kn64b8pa8",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_kn64b8pa8",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Néctar de (Pera 🍐) (330ml)",
@@ -3450,26 +1778,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Nectar_de_Pera.jpg",
       "searchText": "néctar de (pera 🍐) (330ml) bebidas no alcohólicas disfruta de la calidad de néctar de pera 🍐 (330ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_8y1zmbeir",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_8y1zmbeir",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Néctar de (Manzana 🍎) (330ml)",
@@ -3489,26 +1798,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Nectar_de_Manzana.jpg",
       "searchText": "néctar de (manzana 🍎) (330ml) bebidas no alcohólicas disfruta de la calidad de néctar de manzana 🍎 (330ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_oqd90ndvr",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_oqd90ndvr",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pack x 12 Néctar de Manzana 🍎 (12x330ml)",
@@ -3528,26 +1818,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Pack_x_12_Néctar_de_Manzana.jpg",
       "searchText": "pack x 12 néctar de manzana 🍎 (12x330ml) bebidas no alcohólicas disfruta de la calidad de pack x 12 néctar de manzana 🍎 (12x330ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_renf0iq34",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_renf0iq34",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Cerveza Parranda (330ml)",
@@ -3567,26 +1838,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Cerveza_Parranda_(330ml).jpg",
       "searchText": "cerveza parranda (330ml) bebidas alcohólicas disfruta de la calidad de cerveza \"parranda\" (330ml), una excelente opción de nuestra categoría bebidas alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_vau86780j",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_vau86780j",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pack x 6 Cerveza Parranda (6x330ml)",
@@ -3606,26 +1858,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Pack_x_6_Cerveza_Parranda_(6x330ml).jpg",
       "searchText": "pack x 6 cerveza parranda (6x330ml) bebidas alcohólicas disfruta de la calidad de pack x 6 cerveza \"parranda\" (6x330ml), una excelente opción de nuestra categoría bebidas alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_49wu34kui",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_49wu34kui",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pasta de Tomate 🍅 Oderich (350g)",
@@ -3645,26 +1878,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Pasta_de_Tomate_Oderich_(350g).jpg",
       "searchText": "pasta de tomate 🍅 oderich (350g) despensa disfruta de la calidad de pasta de tomate 🍅 \"oderich\" (350g), una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_7pj6exbyx",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_7pj6exbyx",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Caja de Pechuga de Pollo (12Kg)",
@@ -3684,26 +1898,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Caja_de_Pechuga_de_Pollo_(12Kg).jpg",
       "searchText": "caja de pechuga de pollo (12kg) cárnicos y embutidos disfruta de la calidad de caja de pechuga de pollo (12kg), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_pmrqvhwq7",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_pmrqvhwq7",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "EcoFlow DELTA 3 (Clásica)",
@@ -3723,26 +1918,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/19e8b363-aeb1-4ce5-a570-0f54b02ec5c8_1769398843533.jpeg",
       "searchText": "ecoflow delta 3 (clásica) electrodomésticos cable ecoflow serie dleta con estación de energía portátil delta 3 clásica (gris claro), carga 7 veces más rápida, 45min 80% cargado, batería lifepo4 de 1024wh para 10 años, salida potente de 1800w, expansión flexible, batería solar para uso en el hogar o al aire libre",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769399408048_hbcs3qv16",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769399408048_hbcs3qv16",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Malta Guajira (330ml)",
@@ -3762,26 +1938,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Malta_Guajira_(330ml).jpg",
       "searchText": "malta guajira (330ml) bebidas no alcohólicas disfruta de la calidad de malta guajira (330ml), una excelente opción de nuestra categoría bebidas no alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_ok1axebuc",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_ok1axebuc",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Cabeza de Ajo",
@@ -3801,26 +1958,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Cabeza_de_Ajo.jpg",
       "searchText": "cabeza de ajo aderezos disfruta de la calidad de cabeza de ajo, una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_14e74xnoh",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_14e74xnoh",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Caja de cerveza Cristal (24 unidades)",
@@ -3840,26 +1978,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Caja_de_cerveza_Cristal_(24_unidades).jpg",
       "searchText": "caja de cerveza cristal (24 unidades) bebidas alcohólicas disfruta de la calidad de caja de cerveza cristal (24 unidades), una excelente opción de nuestra categoría bebidas alcohólicas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768509219912_pb6y62qrk",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768509219912_pb6y62qrk",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Banderillas Gourmet (picantes y dulce) 330g",
@@ -3879,26 +1998,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Banderillas_Gourmet_330g.jpg",
       "searchText": "banderillas gourmet (picantes y dulce) 330g despensa disfruta de la calidad de banderillas gourmet (picantes y dulce) 330g, una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_9jjkyfkfj",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_9jjkyfkfj",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Lomitos de Atún en agua 160g",
@@ -3918,26 +2018,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Lomitos_de_Atun_en_agua_160g.jpg",
       "searchText": "lomitos de atún en agua 160g cárnicos y embutidos disfruta de la calidad de lomitos de atún en agua 160g, una excelente opción de nuestra categoría pescado. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_qmortiuo4",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_qmortiuo4",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Cake tres leches",
@@ -3957,26 +2038,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Cake_tres_leches.jpg",
       "searchText": "cake tres leches postres disfruta de la calidad de cake tres leches, una excelente opción de nuestra categoría postres. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_adx9eyskg",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_adx9eyskg",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Cake Volteado de piña",
@@ -3996,26 +2058,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Cake_Volteado_de_pina.jpg",
       "searchText": "cake volteado de piña postres disfruta de la calidad de cake volteado de piña, una excelente opción de nuestra categoría postres. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_xc116ddyp",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_xc116ddyp",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Caja de Helados Nestlé sabor (Chocolate)",
@@ -4035,26 +2078,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Caja_de_Helado_Chocolate.jpg",
       "searchText": "caja de helados nestlé sabor (chocolate) lácteos caja de helados marca nestlé, sabor chocolate. producto de alta calidad ideal para compartir, debe mantenerse a una temperatura de -18°c para conservar su frescura y sabor.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769206851243_d390hov51",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769206851243_d390hov51",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Caja de Helados Nestlé sabor (Vainilla)",
@@ -4074,26 +2098,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Caja_de_Helado_Vainilla.jpg",
       "searchText": "caja de helados nestlé sabor (vainilla) lácteos caja de helados marca nestlé, sabor vainilla. producto de alta calidad ideal para compartir, debe mantenerse a una temperatura de -18°c para conservar su frescura y sabor.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769206851243_ck15mfemw",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769206851243_ck15mfemw",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Leche condensada 390g",
@@ -4113,26 +2118,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Leche_condensada_390g.jpg",
       "searchText": "leche condensada 390g lácteos disfruta de la calidad de leche condensada 390g, una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_5stmkk7i6",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_5stmkk7i6",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Chorizos en manteca 625g",
@@ -4152,26 +2138,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Chorizos_en_manteca_625g.jpg",
       "searchText": "chorizos en manteca 625g cárnicos y embutidos disfruta de la calidad de chorizos en manteca 625g, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769289684179_esbsqd20h",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769289684179_esbsqd20h",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Yogurt probiótico de 1L (fresa-natural- guanábana)",
@@ -4191,26 +2158,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/20053_1769206888567.jpg",
       "searchText": "yogurt probiótico de 1l (fresa-natural- guanábana) lácteos disfruta de la calidad de yogurt probiótico de 1l (fresa y platanito), una excelente opción de nuestra categoría lácteos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769213534534_s8dqaxn10",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769213534534_s8dqaxn10",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Paquete de azúcar 1kg",
@@ -4230,26 +2178,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Paquete_de_azucar_1kg.jpg",
       "searchText": "paquete de azúcar 1kg despensa disfruta de la calidad de paquete de azúcar 1kg, una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_ynzwusik9",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_ynzwusik9",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Ketchup Pramesa (300g)",
@@ -4269,26 +2198,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Ketchup_Pramesa_(300g).jpg",
       "searchText": "ketchup pramesa (300g) aderezos disfruta de la calidad de ketchup pramesa (300g), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769297232608_32lds3bdy",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769297232608_32lds3bdy",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Paquete de papas Idaho (5lbs)",
@@ -4308,26 +2218,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Paquete_de_papas_Idaho_(5lbs).jpg",
       "searchText": "paquete de papas idaho (5lbs) verduras disfruta de la calidad de paquete de papas idaho (5lbs), una excelente opción de nuestra categoría verduras. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_p9644ie5y",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_p9644ie5y",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Mano de plátano burro",
@@ -4347,26 +2238,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Mano_de_platano_burro.jpg",
       "searchText": "mano de plátano burro frutas disfruta de la calidad de mano de plátano burro, una excelente opción de nuestra categoría frutas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_covgyshrh",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_covgyshrh",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Mayonesa HollandPark (250ml)",
@@ -4386,26 +2258,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Mayonesa_HollandPark_(250ml).jpg",
       "searchText": "mayonesa hollandpark (250ml) aderezos disfruta de la calidad de mayonesa hollandpark (250ml), una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769297232608_j4a56xz23",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769297232608_j4a56xz23",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Paquete de mollejas de pollo (5lbs)",
@@ -4425,26 +2278,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Paquete_de_mollejas_de_pollo_(5lbs).jpg",
       "searchText": "paquete de mollejas de pollo (5lbs) cárnicos y embutidos disfruta de la calidad de paquete de mollejas de pollo (5lbs), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_g343p4gpl",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_g343p4gpl",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Tanqueta de ensalada fría (4lts)",
@@ -4464,26 +2298,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Tanqueta_de_ensalada_fria_(4lts).jpg",
       "searchText": "tanqueta de ensalada fría (4lts) confitura disfruta de la calidad de tanqueta de ensalada fría (4lts), una excelente opción de nuestra categoría comida. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_hfzpznn1o",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_hfzpznn1o",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Plátano (por unidad)",
@@ -4503,26 +2318,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Platano_(por_unidad).jpg",
       "searchText": "plátano (por unidad) frutas disfruta de la calidad de plátano (por unidad), una excelente opción de nuestra categoría frutas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_1q2faykkk",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_1q2faykkk",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Limón (por libra)",
@@ -4542,26 +2338,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Limon_(por_libra).jpg",
       "searchText": "limón (por libra) frutas disfruta de la calidad de limón (por libra), una excelente opción de nuestra categoría frutas. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_8q6y9td5k",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_8q6y9td5k",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Paquete de café La Llave (284g)",
@@ -4581,26 +2358,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Paquete_de_cafe_La_Llave_(284g).jpg",
       "searchText": "paquete de café la llave (284g) despensa disfruta de la calidad de paquete de café la llave (284g), una excelente opción de nuestra categoría cafetería. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769299337399_whcc4wirj",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769299337399_whcc4wirj",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Paquete de café Dufiltro (250g)",
@@ -4620,26 +2378,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Paquete_de_cafe_Dufiltro_(250g).jpg",
       "searchText": "paquete de café dufiltro (250g) despensa disfruta de la calidad de paquete de café dufiltro (250g), una excelente opción de nuestra categoría cafetería. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768837249014_0e8hctca5",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768837249014_0e8hctca5",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Paquete de muslo de pollo (2kg)",
@@ -4659,26 +2398,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Paquete_de_muslo_de_pollo_(2kg).jpg",
       "searchText": "paquete de muslo de pollo (2kg) cárnicos y embutidos disfruta de la calidad de paquete de muslo de pollo (2kg), una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769297232608_u1gkj9nbs",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769297232608_u1gkj9nbs",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Papas tostadas 30g",
@@ -4698,26 +2418,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Papas_tostadas_30g.jpg",
       "searchText": "papas tostadas 30g confitura disfruta de la calidad de papas tostadas 30g, una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_3cdu00quq",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_3cdu00quq",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Tanqueta de mayonesa 4lts",
@@ -4737,26 +2438,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Tanqueta_de_mayonesa_4lts.jpg",
       "searchText": "tanqueta de mayonesa 4lts aderezos disfruta de la calidad de tanqueta de mayonesa 4lts, una excelente opción de nuestra categoría aderezos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769183074158_cdylhgc2i",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769183074158_cdylhgc2i",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Bolsa de pan 10u",
@@ -4776,26 +2458,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Bolsa_de_pan_10u.jpg",
       "searchText": "bolsa de pan 10u despensa disfruta de la calidad de bolsa de pan 10u, una excelente opción de nuestra categoría despensa. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_ujn45fhvi",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_ujn45fhvi",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Hígado de pollo (1kg)",
@@ -4815,26 +2478,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Higado_de_pollo_1kg.jpg",
       "searchText": "hígado de pollo (1kg) cárnicos y embutidos disfruta de la calidad de hígado de pollo 1kg, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769297232608_vfb9igku5",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769297232608_vfb9igku5",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Carne de ovejo x lbs",
@@ -4854,26 +2498,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Carne_de_ovejo_x_lbs.jpg",
       "searchText": "carne de ovejo x lbs cárnicos y embutidos disfruta de la calidad de carne de ovejo x lbs, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_h5qqrqz06",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_h5qqrqz06",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Galletas Petit Biscuits de coco 80g",
@@ -4893,26 +2518,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Galletas_Petit_Biscuits_de_coco_80g.jpg",
       "searchText": "galletas petit biscuits de coco 80g confitura disfruta de la calidad de galletas petit biscuits de coco 80g, una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_5bquahf1q",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_5bquahf1q",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Caja de galletas de soda Saltine 227g",
@@ -4932,26 +2538,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Caja_de_galletas_de_soda_Saltine_227g.jpg",
       "searchText": "caja de galletas de soda saltine 227g confitura disfruta de la calidad de caja de galletas de soda saltine 227g, una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_oc7mknmxt",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_oc7mknmxt",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Carne de cerdo x lbs",
@@ -4971,26 +2558,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Carne_de_cerdo_x_lbs.jpg",
       "searchText": "carne de cerdo x lbs cárnicos y embutidos disfruta de la calidad de carne de cerdo x lbs, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768443205852_ac2tz1k6u",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768443205852_ac2tz1k6u",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pernil asado de 20lbs",
@@ -5010,26 +2578,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Pernil_asado_de_20lbs.jpg",
       "searchText": "pernil asado de 20lbs cárnicos y embutidos disfruta de la calidad de pernil asado de 20lbs, una excelente opción de nuestra categoría cárnicos y embutidos. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768509219912_h61h4xal8",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768509219912_h61h4xal8",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Chicle sin azúcar 70u",
@@ -5049,26 +2598,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/Chicle_sin_azucar_70u.jpg",
       "searchText": "chicle sin azúcar 70u confitura disfruta de la calidad de chicle sin azúcar 70u, una excelente opción de nuestra categoría confitura. ideal para el hogar y elaborado con los mejores estándares.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_5huk1nzry",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_5huk1nzry",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Rayan Chocolate",
@@ -5088,26 +2618,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/rayan_chocolate.jpg",
       "searchText": "rayan chocolate despensa mezcla en polvo sabor chocolate para preparar bebidas cremosas. presentación llamativa con personaje infantil, ideal para atraer a niños y familias. contiene leche y cacao, y se promociona como un producto nuevo.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768441690510_aa0pwzj5i",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768441690510_aa0pwzj5i",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pimiento x lb",
@@ -5127,26 +2638,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/imagen-jpeg_1768441843131.jpeg",
       "searchText": "pimiento x lb verduras disfruta de la calidad y frescura del pimiento x lb rico en fibra , vitamina c y antioxidantes ejemplar para su plato",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768443205852_jk51wnt6q",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768443205852_jk51wnt6q",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Cebolla morada x lb",
@@ -5166,26 +2658,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/imagen-jpeg_1768442318661.jpeg",
       "searchText": "cebolla morada x lb verduras disfruta de la calidad y el sabor de la cebolla morada x lb producto q no puede faltar en tu mesa",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768443205852_qlg8xocr5",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768443205852_qlg8xocr5",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Cebolla blanca x lb",
@@ -5205,26 +2678,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/img_1973_1768442526492.jpeg",
       "searchText": "cebolla blanca x lb verduras disfruta de la calidad de la cebolla blanca x lb ideal para su mesa",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768443205852_grvowt193",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768443205852_grvowt193",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Chuleta de cerdo x lb",
@@ -5241,29 +2695,7 @@
       "disponibilidad": true,
       "id": "prod_1769612979664_6f4o3BE2I",
       "created_at": null,
-      "modified_at": "2026-02-01T19:42:59.124Z",
-      "precioFinal": 3.31,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/29333_1769974854563.jpg",
-      "searchText": "chuleta de cerdo x lb cárnicos y embutidos disfruta de la calidad de la chuleta de cerdo natural ideal para tus cenas",
-      "inventory": {
-        "product_id": "prod_1769612979664_6f4o3BE2I",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769612979664_6f4o3BE2I",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": "2026-02-01T19:42:59.124Z"
     },
     {
       "nombre": "Sándwich de nata (helado tipo sándwich de vainilla)50g",
@@ -5280,29 +2712,7 @@
       "disponibilidad": false,
       "id": "prod_1768844669044_qrt1f4m3k",
       "created_at": null,
-      "modified_at": "2026-02-01T19:43:02.128Z",
-      "precioFinal": 1.14,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/29332_1769974867696.jpg",
-      "searchText": "sándwich de nata (helado tipo sándwich de vainilla)50g postres delicioso sándwich helado elaborado con suaves galletas tipo bizcocho rellenas de cremosa nata sabor vainilla. ideal para disfrutar bien frío, perfecto como postre o merienda refrescante.",
-      "inventory": {
-        "product_id": "prod_1768844669044_qrt1f4m3k",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768844669044_qrt1f4m3k",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": "2026-02-01T19:43:02.128Z"
     },
     {
       "nombre": "Vinagre Gourmet con Especias – 500 ml",
@@ -5322,26 +2732,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/24581_1769417124019.jpg",
       "searchText": "vinagre gourmet con especias – 500 ml aderezos vinagre gourmet elaborado con una cuidadosa mezcla de especias, ideal para realzar el sabor de ensaladas, carnes, marinados y aderezos. aporta un toque intenso y aromático a tus comidas.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769612979664_j0trpj4ig",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769612979664_j0trpj4ig",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Bombones Bon o Bon Blanco con Relleno de Maní – 210 g caja de 18u",
@@ -5361,26 +2752,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/imagen-png_1768510722217_1769227881539.jpg",
       "searchText": "bombones bon o bon blanco con relleno de maní – 210 g caja de 18u confitura deliciosos bombones de chocolate blanco con oblea crujiente y suave relleno de crema de maní. ideales para compartir, regalar o disfrutar en cualquier momento.\nx cajas de 18u",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769297232608_xyd0dvbxz",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769297232608_xyd0dvbxz",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Pollo entero Saera(1300g)",
@@ -5400,26 +2772,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/img_2404_1769613438329.webp",
       "searchText": "pollo entero saera(1300g) cárnicos y embutidos pollo entero fresco\npollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769613603917_5rg815imv",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769613603917_5rg815imv",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "1kg de queso gouda",
@@ -5436,29 +2789,7 @@
       "disponibilidad": true,
       "id": "prod_1768844669044_5f4r1k3kk",
       "created_at": null,
-      "modified_at": "2026-02-01T19:43:04.687Z",
-      "precioFinal": 12,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/29331_1769974898927.jpg",
-      "searchText": "1kg de queso gouda lácteos disfruta del queso gouda aldaketa x kg excelente producto para sus desayunos y meriendas",
-      "inventory": {
-        "product_id": "prod_1768844669044_5f4r1k3kk",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768844669044_5f4r1k3kk",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": "2026-02-01T19:43:04.687Z"
     },
     {
       "nombre": "Jamón bravo(1kg)",
@@ -5478,26 +2809,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/img_2057_1768837728137.jpeg",
       "searchText": "jamón bravo(1kg) cárnicos y embutidos disfruta del jamón bravo x (kg)\nexcelente producto para disfrutar de un buen desayuno o una buena merienda.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768844669044_ghnvk7l1k",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768844669044_ghnvk7l1k",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Jamón bravo(1kg)- Queso gouda(1kg)",
@@ -5517,26 +2829,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/3c6e18e2-9e90-437d-96c2-fc4a2be0d6f5_1768838111426.jpeg",
       "searchText": "jamón bravo(1kg)- queso gouda(1kg) cárnicos y embutidos disfruta de la combinación perfecta del queso gouda y jamón bravo x (kg) excelente para desayunos y meriendas",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768844669044_3f89efrkk",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768844669044_3f89efrkk",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Frijoles rojos x(lbs)",
@@ -5556,26 +2849,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/img_2048_1768845035900.jpeg",
       "searchText": "frijoles rojos x(lbs) despensa disfruta de los frijoles colorados x (lbs)\nexcelente para almuerzos y cenas",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768918643793_wff5w2f61",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768918643793_wff5w2f61",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Caja de refresco naranja(24u)",
@@ -5595,26 +2869,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/img_2088_1768919882647.jpeg",
       "searchText": "caja de refresco naranja(24u) bebidas no alcohólicas disfruta del refresco de naranja x cajas de 24u ideal para meriendas",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768920078698_xdo268cet",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768920078698_xdo268cet",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Refresco naranja(330ml)",
@@ -5634,26 +2889,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/img_2090_1768920359065.jpeg",
       "searchText": "refresco naranja(330ml) bebidas no alcohólicas disfruta del refresco de naranja x unidad excelente producto para meriendas",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1768920589823_5nbf1b3sb",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1768920589823_5nbf1b3sb",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Caja de Helados Nestlé sabor (Fresa)",
@@ -5673,26 +2909,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/12c8690f-01e7-424b-a11a-f23059a56c9c_1769030558353.jpeg",
       "searchText": "caja de helados nestlé sabor (fresa) lácteos disfruta del cremoso helado nestlé de fresa ideal para meriendas y acompañar cualquier tipo de dulce o confitura",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769206851244_od2h62nc3",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769206851244_od2h62nc3",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Galletas de Sal Criollas – Paquete Tradicional",
@@ -5712,26 +2929,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/paquete_galleta_de_sal_1769200017513.jpg",
       "searchText": "galletas de sal criollas – paquete tradicional confitura disfruta el sabor auténtico de nuestras galletas de sal criollas, elaboradas con receta tradicional y textura crujiente. perfectas para acompañar desayunos, meriendas o como base para tus combinaciones favoritas. empacadas con cuidado en bolsa transparente para conservar su frescura y calidad.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769200481205_vpc09blss",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769200481205_vpc09blss",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Salsa de Tomate Rayan – 340g",
@@ -5751,26 +2949,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/rayan_ketchup_1769200070307.jpg",
       "searchText": "salsa de tomate rayan – 340g aderezos dale sabor a tus comidas con la clásica salsa de tomate rayan. elaborada con tomates seleccionados, esta presentación de 340 g es perfecta para acompañar pastas, carnes, snacks y recetas criollas. su textura suave y sabor equilibrado la convierten en un básico imprescindible en tu cocina.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769202654831_llgiogu7v",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769202654831_llgiogu7v",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Ketchup Cosami Original",
@@ -5790,26 +2969,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/ketchup_cosami_1769200134781.jpg",
       "searchText": "ketchup cosami original aderezos descubre el sabor tradicional con el ketchup original de cosami. elaborado con tomates frescos y un toque criollo, esta salsa es perfecta para acompañar papas fritas, hamburguesas, carnes y snacks. su presentación en botella roja con tapa blanca garantiza conservación y fácil aplicación.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769202654831_u5kvi6lhi",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769202654831_u5kvi6lhi",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Giardino Mostaza Premium – 300g",
@@ -5829,26 +2989,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/mustard_1769200168758.jpg",
       "searchText": "giardino mostaza premium – 300g aderezos agrega sabor y estilo a tus comidas con la mostaza giardino. su fórmula cremosa y equilibrada realza hamburguesas, hot dogs, sándwiches y platos criollos. presentada en botella amarilla con tapa negra, incluye diseño visual atractivo y sello de calidad premium.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769202654831_7rc37gvmx",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769202654831_7rc37gvmx",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Bacon Almirez ElPozo – Paquete 3kg",
@@ -5868,26 +3009,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/23115_1769289701125.jpg",
       "searchText": "bacon almirez elpozo – paquete 3kg cárnicos y embutidos calidad profesional para tu cocina o negocio. el bacon almirez de elpozo está diseñado para hostelería, con cortes precisos y sin impurezas. libre de gluten, lactosa, piel, ternilla y fécula, este producto garantiza sabor puro y textura ideal para desayunos, sándwiches, pizzas y platos criollos.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769295656223_amswxv2gt",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769295656223_amswxv2gt",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Salchicha Sublime de Pollo – 1kg",
@@ -5907,26 +3029,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/23116_1769289785185.jpg",
       "searchText": "salchicha sublime de pollo – 1kg cárnicos y embutidos versátil, sabrosa y lista para usar. las salchichas sublime de pollo están curadas, cocidas al vapor, ahumadas y homogenizadas para ofrecer una textura suave y sabor equilibrado. ideales para hot dogs, desayunos, picaderas o platos rápidos. fabricadas en la ue con estándares de calidad.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769295656223_5sbmcfw58",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769295656223_5sbmcfw58",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Lomo de cerdo ahumado x (lbs)",
@@ -5943,29 +3046,7 @@
       "disponibilidad": true,
       "id": "prod_1769974779697_582345678",
       "created_at": null,
-      "modified_at": "2026-02-01T19:43:07.695Z",
-      "precioFinal": 4,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/29330_1769974950700.jpg",
-      "searchText": "lomo de cerdo ahumado x (lbs) cárnicos y embutidos lomo de cerdo ahumado cuidadosamente, de textura tierna y jugosa, con un sabor profundo y equilibrado. su proceso de ahumado realza la carne y le aporta un aroma irresistible.\nideal para servir frío o caliente, en comidas especiales o del día a día.\n\n💯 calidad superior y sabor auténtic",
-      "inventory": {
-        "product_id": "prod_1769974779697_582345678",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769974779697_582345678",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": "2026-02-01T19:43:07.695Z"
     },
     {
       "nombre": "Pollo entero asado(1300g)",
@@ -5985,26 +3066,7 @@
       "id": "prod_1769974779697_w3rc3zge7",
       "precioFinal": 10,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/29035_1769920673262.jpg",
-      "searchText": "pollo entero asado(1300g) cárnicos y embutidos pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nideal para compartir y disfrutar en cualquier ocasión.\n\n💯 calidad, sabor y frescura garantizados",
-      "inventory": {
-        "product_id": "prod_1769974779697_w3rc3zge7",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769974779697_w3rc3zge7",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "searchText": "pollo entero asado(1300g) cárnicos y embutidos pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nideal para compartir y disfrutar en cualquier ocasión.\n\n💯 calidad, sabor y frescura garantizados"
     },
     {
       "nombre": "Coffee Mate(155porciones)",
@@ -6024,26 +3086,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/img_2343_1769367903617.png",
       "searchText": "coffee mate(155porciones) despensa sabor equilibrado que complementa sin opacar el café. textura liviana que aporta cremosidad sin necesidad de lácteos. fácil de disolver, ideal para usar en servicio rápido o autoservicio.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769398503693_qcw6jw6ui",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769398503693_qcw6jw6ui",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Nutella Ferreo(350g)",
@@ -6063,26 +3106,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/90efea5c-8865-4fc0-81d5-28e921765b9b_1769399647305.jpeg",
       "searchText": "nutella ferreo(350g) confitura disfruta de la crema de avellanas con cacao nutella ferreo de 350g ideal para desayunos,meriendas y para compartir en familia y amigos",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769399997761_cesvzwr9h",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769399997761_cesvzwr9h",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Macarela al natural(425g)",
@@ -6099,29 +3123,7 @@
       "disponibilidad": true,
       "id": "prod_1769974779697_ub9f4j1l3",
       "created_at": null,
-      "modified_at": "2026-02-01T19:43:12.847Z",
-      "precioFinal": 2.8,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/29337_1769974960573.jpg",
-      "searchText": "macarela al natural(425g) cárnicos y embutidos disfruta de la macarela un producto importado de europa rinde para 4 personas ideal para cenas almuerzos y más",
-      "inventory": {
-        "product_id": "prod_1769974779697_ub9f4j1l3",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769974779697_ub9f4j1l3",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": "2026-02-01T19:43:12.847Z"
     },
     {
       "nombre": "Picadillo de Res Mulata Bonita(500g)",
@@ -6141,26 +3143,7 @@
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/img_2321_1769646593861.jpeg",
       "searchText": "picadillo de res mulata bonita(500g) cárnicos y embutidos picadillo de res mulata banina\npicadillo de res procesado, ideal para preparar comidas rápidas y sabrosas. de textura suave y sabor tradicional, perfecto para picadillo a la habanera, rellenos y múltiples recetas. producto rendidor y práctico, listo para cocinar.",
       "created_at": null,
-      "modified_at": null,
-      "inventory": {
-        "product_id": "prod_1769697355677_bmk197yks",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769697355677_bmk197yks",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "modified_at": null
     },
     {
       "nombre": "Jugo Nezka de (Guayaba)",
@@ -6180,26 +3163,7 @@
       "id": "prod_1769920633225_ucn5piqej",
       "precioFinal": 1.16,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/28973_1769919496657.jpg",
-      "searchText": "jugo nezka de (guayaba) bebidas no alcohólicas déjate cautivar por el aroma y la suavidad del néctar de guayaba nezska. elaborado con la mejor selección de frutas, este néctar de 250 ml ofrece un equilibrio perfecto entre dulzor y frescura, manteniendo la esencia auténtica de la guayaba rosada. su presentación premium en botella de vidrio asegura que cada sorbo mantenga su calidad excepcional, siendo una opción saludable y deliciosa para toda la familia.",
-      "inventory": {
-        "product_id": "prod_1769920633225_ucn5piqej",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769920633225_ucn5piqej",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "searchText": "jugo nezka de (guayaba) bebidas no alcohólicas déjate cautivar por el aroma y la suavidad del néctar de guayaba nezska. elaborado con la mejor selección de frutas, este néctar de 250 ml ofrece un equilibrio perfecto entre dulzor y frescura, manteniendo la esencia auténtica de la guayaba rosada. su presentación premium en botella de vidrio asegura que cada sorbo mantenga su calidad excepcional, siendo una opción saludable y deliciosa para toda la familia."
     },
     {
       "nombre": "Jugo Nezka de (Mango)",
@@ -6219,26 +3183,7 @@
       "id": "prod_1769920633225_st28ei1l0",
       "precioFinal": 1.16,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/28974_1769919601035.jpg",
-      "searchText": "jugo nezka de (mango) bebidas no alcohólicas disfruta de la explosión tropical y la dulzura natural con el néctar de mango nezska. este refrescante jugo viene en una práctica presentación de 250 ml (8.5 fl oz) en envase de vidrio, ideal para conservar su frescura y ese color vibrante que lo caracteriza. con una textura suave y un sabor intenso a mango maduro, es el acompañante perfecto para tus desayunos o para refrescar cualquier momento del día.",
-      "inventory": {
-        "product_id": "prod_1769920633225_st28ei1l0",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769920633225_st28ei1l0",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "searchText": "jugo nezka de (mango) bebidas no alcohólicas disfruta de la explosión tropical y la dulzura natural con el néctar de mango nezska. este refrescante jugo viene en una práctica presentación de 250 ml (8.5 fl oz) en envase de vidrio, ideal para conservar su frescura y ese color vibrante que lo caracteriza. con una textura suave y un sabor intenso a mango maduro, es el acompañante perfecto para tus desayunos o para refrescar cualquier momento del día."
     },
     {
       "nombre": "Mayonesa Victoria Garden",
@@ -6258,26 +3203,7 @@
       "id": "prod_1769920633225_aw89nywas",
       "precioFinal": 4,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/28918_1769919763267.jpg",
-      "searchText": "mayonesa victoria garden despensa dale un toque irresistible a tus comidas con la mayonesa victoria garden. definida por su textura rica, cremosa y suave, esta mayonesa es el ingrediente secreto para elevar el sabor de tus hamburguesas, sándwiches y ensaladas. presentada en un generoso frasco de vidrio con tapa hermética azul, garantiza una frescura duradera y una consistencia profesional que hará que cada bocado sea una experiencia gourmet en casa.",
-      "inventory": {
-        "product_id": "prod_1769920633225_aw89nywas",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769920633225_aw89nywas",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "searchText": "mayonesa victoria garden despensa dale un toque irresistible a tus comidas con la mayonesa victoria garden. definida por su textura rica, cremosa y suave, esta mayonesa es el ingrediente secreto para elevar el sabor de tus hamburguesas, sándwiches y ensaladas. presentada en un generoso frasco de vidrio con tapa hermética azul, garantiza una frescura duradera y una consistencia profesional que hará que cada bocado sea una experiencia gourmet en casa."
     },
     {
       "nombre": "Carne de Res enlatada Sublime",
@@ -6297,26 +3223,7 @@
       "id": "prod_1769920633225_umws2zt0k",
       "precioFinal": 2.5,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/28912_1769919939950.jpg",
-      "searchText": "carne de res enlatada sublime despensa para una comida rápida, nutritiva y deliciosa, la carne de res sublime (carne de rês) es tu mejor aliada. esta conserva de calidad premium destaca por ser rica en proteínas y totalmente libre de gluten, lo que la hace ideal para diversos estilos de dieta. ya sea para dorar en la sartén, acompañar tus pastas o preparar bocaditos rápidos, su sabor auténtico y su textura firme te ofrecen la practicidad que necesitas sin sacrificar la calidad.",
-      "inventory": {
-        "product_id": "prod_1769920633225_umws2zt0k",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769920633225_umws2zt0k",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "searchText": "carne de res enlatada sublime despensa para una comida rápida, nutritiva y deliciosa, la carne de res sublime (carne de rês) es tu mejor aliada. esta conserva de calidad premium destaca por ser rica en proteínas y totalmente libre de gluten, lo que la hace ideal para diversos estilos de dieta. ya sea para dorar en la sartén, acompañar tus pastas o preparar bocaditos rápidos, su sabor auténtico y su textura firme te ofrecen la practicidad que necesitas sin sacrificar la calidad."
     },
     {
       "nombre": "Jugo de (Piña)",
@@ -6336,26 +3243,7 @@
       "id": "prod_1769974779698_q4lst0qbb",
       "precioFinal": 0.7,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/29034_1769920829022.jpg",
-      "searchText": "jugo de (piña) bebidas no alcohólicas disfruta de la delicia y frescura del jugo de piña. ideal para meriendas y refrescar en cualquier horario",
-      "inventory": {
-        "product_id": "prod_1769974779698_q4lst0qbb",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769974779698_q4lst0qbb",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
+      "searchText": "jugo de (piña) bebidas no alcohólicas disfruta de la delicia y frescura del jugo de piña. ideal para meriendas y refrescar en cualquier horario"
     },
     {
       "nombre": "Jugo de (Frutas Mixtas)",
@@ -6375,42 +3263,7 @@
       "id": "prod_1769974779698_8olg1rh5p",
       "precioFinal": 0.7,
       "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/products/29033_1769921130545.jpg",
-      "searchText": "jugo de (frutas mixtas) bebidas no alcohólicas disfruta de la delicia y frescura del jugo de frutas mixtas ideal para meriendas y refrescar en cualquier horario",
-      "inventory": {
-        "product_id": "prod_1769974779698_8olg1rh5p",
-        "stock": 2,
-        "precio_compra": 1000,
-        "proveedor": "null",
-        "notas": "nota",
-        "last_updated": "2026-02-02T03:54:33.706Z",
-        "hasData": true,
-        "rawData": {
-          "product_id": "prod_1769974779698_8olg1rh5p",
-          "stock": 2,
-          "precio_compra": 1000,
-          "proveedor": "null",
-          "notas": "nota",
-          "last_updated": "2026-02-02T03:54:33.706Z"
-        }
-      },
-      "stock": 2,
-      "precio_compra": 1000
-    },
-    {
-      "nombre": "test",
-      "categoria": "Aderezos",
-      "precio": 1,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "pack_premium_1770011616913.jpg"
-      ],
-      "descripcion": "1",
-      "disponibilidad": false,
-      "created_at": "2026-02-02T05:54:01.166Z",
-      "modified_at": "2026-02-02T05:54:01.166Z"
+      "searchText": "jugo de (frutas mixtas) bebidas no alcohólicas disfruta de la delicia y frescura del jugo de frutas mixtas ideal para meriendas y refrescar en cualquier horario"
     }
   ]
 }
