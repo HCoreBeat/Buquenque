@@ -727,9 +727,9 @@
         "Paquete_de_salchichas_(340g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de salchichas (340g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-06T15:19:04.497Z"
     },
     {
       "id": "prod_1768441690510_5krgoxpvo",
@@ -914,9 +914,9 @@
         "Atun_en_Aceite_Vegetal_(170g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Atún en Aceite Vegetal (170g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-06T15:19:04.497Z"
     },
     {
       "id": "prod_1768441690510_nrgnaj8mu",
@@ -2597,9 +2597,9 @@
         "29330_1769974950700.jpg"
       ],
       "descripcion": "Lomo de cerdo ahumado cuidadosamente, de textura tierna y jugosa, con un sabor profundo y equilibrado. Su proceso de ahumado realza la carne y le aporta un aroma irresistible.\nIdeal para servir frío o caliente, en comidas especiales o del día a día.\n\n💯 Calidad superior y sabor auténtic",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-02-01T19:43:07.695Z"
+      "modified_at": "2026-02-06T15:19:04.496Z"
     },
     {
       "id": "prod_1769974779697_w3rc3zge7",
