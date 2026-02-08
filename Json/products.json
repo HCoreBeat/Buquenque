@@ -387,9 +387,9 @@
         "Leche_en_polvo_(1kg).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Leche en polvo (1kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-01-31T00:58:53.284Z"
+      "modified_at": "2026-02-08T17:35:17.712Z"
     },
     {
       "id": "prod_1769297232608_yu795qbia",
@@ -1254,9 +1254,9 @@
         "Comino_Molido.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Comino Molido (171.1g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-08T17:35:17.712Z"
     },
     {
       "id": "prod_1768441690510_fud7rcsve",
@@ -2614,9 +2614,9 @@
         "29035_1769920673262.jpg"
       ],
       "descripcion": "Pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. Sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nIdeal para compartir y disfrutar en cualquier ocasión.\n\n💯 Calidad, sabor y frescura garantizados",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-02-01T04:45:43.920Z"
+      "modified_at": "2026-02-08T17:35:17.711Z"
     },
     {
       "id": "prod_1769398503693_qcw6jw6ui",
