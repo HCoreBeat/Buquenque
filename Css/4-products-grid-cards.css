@@ -307,7 +307,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
-    border: 2px solid var(--color-principal-pastel);
+    border: 2px solid var(--boton-carrito);
 }
 
 .add-to-cart:hover {

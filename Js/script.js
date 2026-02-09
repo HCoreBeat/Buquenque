@@ -729,10 +729,13 @@ function renderProducts(productsToRender = products) {
   if (!container) return;
   container.innerHTML = "";
 
+  // Filtrar solo productos disponibles (no renderizar productos con disponibilidad: false)
+  const availableProducts = productsToRender.filter(product => product.disponibilidad !== false);
+
   // Agrupar productos por categoría
   const groupedByCategory = {};
   
-  productsToRender.forEach((product) => {
+  availableProducts.forEach((product) => {
     const category = product.categoria || "Sin categoría";
     if (!groupedByCategory[category]) {
       groupedByCategory[category] = [];
