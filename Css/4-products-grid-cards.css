@@ -271,6 +271,43 @@
     color: var(--color-principal);
 }
 
+/* Estilos para rating en cards (Amazon-like pequeño) */
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--gris-oscuro);
+}
+
+.product-rating .stars {
+    display: inline-flex;
+    gap: 3px;
+}
+
+.product-rating .star {
+    color: #FFA41C; /* Amazon-like orange */
+    font-size: 1rem;
+    transition: transform 0.12s ease, color 0.12s ease;
+}
+
+.product-rating .star:hover {
+    transform: scale(1.12);
+    cursor: pointer;
+}
+
+.product-rating .avg-rating {
+    font-weight: 700;
+    margin-left: 6px;
+}
+
+.product-rating .total-votes {
+    color: var(--azul-destacado);
+    font-size: 0.85rem;
+}
+
+
 .rating {
     display: flex;
     align-items: center;

@@ -777,6 +777,8 @@ function renderProducts(productsToRender = products) {
 
       const productEl = document.createElement("div");
       productEl.className = "product-card";
+      // Asignar el id esperado por el módulo de ratings: product-<productId>
+      productEl.id = `product-${displayProduct.id}`;
 
       const isOnSale = displayProduct.oferta && displayProduct.descuento > 0;
       const finalPrice = isOnSale
@@ -894,6 +896,15 @@ function renderProducts(productsToRender = products) {
                           }</span>
                       </button>
                   </div>
+
+                  <!-- Contenedor de rating: estrellas, media y votos -->
+                  <div class="product-rating">
+                      <div class="stars" role="img" aria-label="Valoración"></div>
+                      <div class="rating-meta">
+                          <span class="avg-rating">0.00</span>
+                          <span class="total-votes">0 votos</span>
+                      </div>
+                  </div>
               </div>
           `;
       productsGrid.appendChild(productEl);
@@ -902,6 +913,15 @@ function renderProducts(productsToRender = products) {
     categoryPanel.appendChild(productsGrid);
     container.appendChild(categoryPanel);
   });
+
+  // Inicializar widgets de rating para productos renderizados (si está disponible)
+  if (window.initRatings) {
+    try {
+      window.initRatings();
+    } catch (e) {
+      console.warn("initRatings fallo:", e);
+    }
+  }
 }
 
 function changeProductVariant(thumbElement, baseName, variantIndex, event) {
@@ -1418,6 +1438,18 @@ function showProductDetail(productName) {
                     : ""
                 }
                 
+                <!-- Rating estilo Amazon -->
+                <div class="detail-rating" data-product-id="${product.id}">
+                    <div class="detail-rating-top">
+                        <div class="stars"></div>
+                        <div class="detail-rating-meta">
+                            <span class="avg-rating">0.00</span>
+                            <span class="total-votes">0 votos</span>
+                        </div>
+                    </div>
+                    <div class="detail-rate-cta"><small>¿Te gustó el producto? Déjanos tu valoración</small></div>
+                </div>
+
                 <div class="price-section">
                     ${
                       isOnSale
@@ -1513,6 +1545,10 @@ function showProductDetail(productName) {
   // Inicializar carrusel después de renderizar
   setTimeout(() => {
     initSuggestedProductsCarousel();
+    // Inicializar ratings dentro del detalle (si el módulo está cargado)
+    if (window.initRatings) {
+      try { window.initRatings(); } catch (e) { console.warn('initRatings en detail fallo', e); }
+    }
   }, 100);
 }
 

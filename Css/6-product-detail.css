@@ -266,6 +266,54 @@
     margin: 1rem 0;
 }
 
+/* Estilos de rating en detalle (Amazon-like) */
+.detail-rating {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.detail-rating-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.detail-rating .stars {
+    display: inline-flex;
+    gap: 6px;
+}
+
+.detail-rating .star {
+    color: #FFA41C;
+    font-size: 1.6rem;
+    transition: transform 0.12s ease;
+}
+
+.detail-rating .avg-rating {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #111;
+}
+
+.detail-rating .total-votes {
+    color: #007185;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.detail-rate-cta {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .detail-rating .star { font-size: 1.2rem; }
+    .detail-rating .avg-rating { font-size: 1.2rem; }
+}
+
 .detail-quantity-controls {
     display: flex;
     align-items: center;

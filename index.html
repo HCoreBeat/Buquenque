@@ -519,6 +519,10 @@
         <script src="Js/notifications.js"></script>
         <script src="Js/afiliados.js"></script>
         <script src="Js/script.js"></script>
+        <script type="module">
+          import { initRatings } from './Js/rating.js';
+          document.addEventListener('DOMContentLoaded', () => { initRatings(); });
+        </script>
         <script src="Js/payment-autofill.js"></script>
         <script src="Js/payment.js"></script>
     </body>
