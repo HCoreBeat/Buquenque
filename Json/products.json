@@ -2002,9 +2002,9 @@
         "Paquete_de_cafe_La_Llave_(284g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de café La Llave (284g), una excelente opción de nuestra categoría Cafetería. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-09T17:56:41.697Z"
     },
     {
       "id": "prod_1768837249014_0e8hctca5",
