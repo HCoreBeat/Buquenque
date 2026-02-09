@@ -140,8 +140,8 @@
       "id": "prod_1768441690510_ma2k8r01f",
       "nombre": "Aceite (900ml)",
       "categoria": "Despensa",
-      "precio": 3.65,
-      "descuento": 0,
+      "precio": 4.5,
+      "descuento": 18.89,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -151,7 +151,7 @@
       "descripcion": "Disfruta de la calidad de Aceite (900ml), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-09T17:22:32.931Z"
     },
     {
       "id": "prod_1768441690510_ijaa8o33p",
