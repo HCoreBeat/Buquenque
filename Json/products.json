@@ -2481,6 +2481,23 @@
       "disponibilidad": true,
       "created_at": "2026-02-11T14:25:26.248Z",
       "modified_at": "2026-02-11T14:25:26.248Z"
+    },
+    {
+      "id": "prod_1770820966994_c9d402x6t",
+      "nombre": "Paquete de Molleja de pollo 5lb",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 5.5,
+      "descuento": 0,
+      "mas_vendido": true,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "paquete_de_mollejas_de_pollo_5lbs_1770820967011.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-11T14:42:57.739Z",
+      "modified_at": "2026-02-11T14:42:57.739Z"
     }
   ]
 }
