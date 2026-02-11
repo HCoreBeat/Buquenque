@@ -744,7 +744,7 @@ function renderProducts(productsToRender = products) {
   });
 
   // Ordenar categorías alfabéticamente
-  const sortedCategories = Object.keys(groupedByCategory).sort();
+  const sortedCategories = Object.keys(groupedByCategory);
 
   // Crear panel para cada categoría
   sortedCategories.forEach((category) => {
@@ -2680,3 +2680,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     );
   }
 });
+
