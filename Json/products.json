@@ -1616,23 +1616,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1768441690510_qmortiuo4",
-      "nombre": "Lomitos de Atún en agua 160g",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 2.35,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Lomitos_de_Atun_en_agua_160g.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Lomitos de Atún en agua 160g, una excelente opción de nuestra categoría Pescado. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1768441690510_adx9eyskg",
       "nombre": "Cake tres leches",
       "categoria": "Postres",
