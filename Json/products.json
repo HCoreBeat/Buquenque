@@ -792,12 +792,12 @@
       "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "Higado_de_pollo_(1Kg).jpg"
+        "b1aaf34d-29a1-4767-89cd-84106795e1b2_1770819640542.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Hígado de pollo (1Kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-11T14:16:02.609Z"
+      "modified_at": "2026-02-11T14:25:23.115Z"
     },
     {
       "id": "prod_1769357390791_h9ang5l6m",
@@ -2481,6 +2481,23 @@
       "disponibilidad": true,
       "created_at": "2026-02-02T21:36:01.806Z",
       "modified_at": "2026-02-02T21:36:01.806Z"
+    },
+    {
+      "id": "prod_1770819915685_uohxroax1",
+      "nombre": "Saco de Arroz 25Kg",
+      "categoria": "Despensa",
+      "precio": 45,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "3c780799-c4c7-444e-b98b-c75c8f9ed8a7_1770819915698.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-11T14:25:26.248Z",
+      "modified_at": "2026-02-11T14:25:26.248Z"
     }
   ]
 }
