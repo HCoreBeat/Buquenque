@@ -4,18 +4,18 @@
       "id": "prod_1768679794475_s112jvux0",
       "nombre": "Paquete de cuartos de pollo 10 lbs",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 13,
-      "descuento": 7.69,
+      "precio": 15,
+      "descuento": 20,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "Paquete_de_cuartos_de_pollo_10_lbs.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-11T14:16:02.609Z"
     },
     {
       "id": "prod_1768441690510_piqbut8gb",
@@ -140,8 +140,8 @@
       "id": "prod_1768441690510_ma2k8r01f",
       "nombre": "Aceite (900ml)",
       "categoria": "Despensa",
-      "precio": 4.5,
-      "descuento": 18.89,
+      "precio": 4.8,
+      "descuento": 6.25,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -151,7 +151,7 @@
       "descripcion": "Disfruta de la calidad de Aceite (900ml), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-09T17:22:32.931Z"
+      "modified_at": "2026-02-11T14:16:02.609Z"
     },
     {
       "id": "prod_1768441690510_ijaa8o33p",
@@ -191,8 +191,8 @@
       "id": "prod_1768441690510_x6vswdewh",
       "nombre": "Arroz (1Kg)",
       "categoria": "Despensa",
-      "precio": 2.17,
-      "descuento": 0,
+      "precio": 2.5,
+      "descuento": 13.2,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -202,7 +202,7 @@
       "descripcion": "Disfruta de la calidad de Arroz (1Kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-02T21:08:11.362Z"
+      "modified_at": "2026-02-11T14:16:06.292Z"
     },
     {
       "id": "prod_1768441690510_a5q147wl5",
@@ -225,18 +225,18 @@
       "id": "prod_1769297232608_fwssmtz8c",
       "nombre": "Mortadella de Pollo",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 2.49,
-      "descuento": 35.74,
+      "precio": 2.8,
+      "descuento": 42.86,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "Mortadella_de_Pollo.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Mortadella de Pollo, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-02T21:08:11.359Z"
+      "modified_at": "2026-02-11T14:16:02.609Z"
     },
     {
       "id": "prod_1768923781803_n2hnqahbv",
@@ -302,23 +302,6 @@
         "Manzana.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Manzana 🍎 x unidad, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
-      "id": "prod_1768441690510_a8hfmrs15",
-      "nombre": "Azúcar Blanca (1Kg)",
-      "categoria": "Despensa",
-      "precio": 2.05,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Azucar_Blanca_(1Kg).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Azúcar Blanca (1Kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
       "modified_at": null
@@ -715,40 +698,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1768441690510_2ee9c6jft",
-      "nombre": "Paquete de salchichas (340g)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 1.5,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Paquete_de_salchichas_(340g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Paquete de salchichas (340g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-06T15:19:04.497Z"
-    },
-    {
-      "id": "prod_1768441690510_5krgoxpvo",
-      "nombre": "Café Purasangre (250g)",
-      "categoria": "Despensa",
-      "precio": 5.99,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Cafe_Purasangre_(250g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Café \"Purasangre\" (250g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1768441690510_3adjmtv4j",
       "nombre": "Protector Diario (18u)",
       "categoria": "Aseo y Belleza",
@@ -837,7 +786,7 @@
       "id": "prod_1768441690510_ufxhzyokh",
       "nombre": "Hígado de pollo (1Kg)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 3.43,
+      "precio": 3.35,
       "descuento": 0,
       "mas_vendido": true,
       "nuevo": false,
@@ -848,7 +797,7 @@
       "descripcion": "Disfruta de la calidad de Hígado de pollo (1Kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-11T14:16:02.609Z"
     },
     {
       "id": "prod_1769357390791_h9ang5l6m",
@@ -903,20 +852,20 @@
     },
     {
       "id": "prod_1769297232608_t1t8j7j86",
-      "nombre": "Atún en Aceite Vegetal (170g)",
+      "nombre": "Lomitos de Atún en aceite",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 2.35,
-      "descuento": 0,
+      "precio": 2.5,
+      "descuento": 6,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "Atun_en_Aceite_Vegetal_(170g).jpg"
+        "gemini_generated_image_wxgamswxgamswxga_1770818983218.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Atún en Aceite Vegetal (170g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-06T15:19:04.497Z"
+      "modified_at": "2026-02-11T14:16:04.303Z"
     },
     {
       "id": "prod_1768441690510_nrgnaj8mu",
@@ -965,23 +914,6 @@
         "Sorbeto_de_Chocolate_Renata_(115g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Sorbeto de Chocolate Renata (115g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
-      "id": "prod_1768441690510_hsxlkh07e",
-      "nombre": "Galletas Snack (30g)",
-      "categoria": "Confitura",
-      "precio": 0.5,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Galletas_Snack_(30g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Galletas Snack (30g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
       "modified_at": null
@@ -1684,23 +1616,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1768441690510_9jjkyfkfj",
-      "nombre": "Banderillas Gourmet (picantes y dulce) 330g",
-      "categoria": "Despensa",
-      "precio": 4.5,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Banderillas_Gourmet_330g.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Banderillas Gourmet (picantes y dulce) 330g, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1768441690510_qmortiuo4",
       "nombre": "Lomitos de Atún en agua 160g",
       "categoria": "Cárnicos y Embutidos",
@@ -1752,40 +1667,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1769206851243_d390hov51",
-      "nombre": "Caja de Helados Nestlé sabor (Chocolate)",
-      "categoria": "Lácteos",
-      "precio": 20,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "Caja_de_Helado_Chocolate.jpg"
-      ],
-      "descripcion": "Caja de helados marca Nestlé, sabor chocolate. Producto de alta calidad ideal para compartir, debe mantenerse a una temperatura de -18°C para conservar su frescura y sabor.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
-      "id": "prod_1769206851243_ck15mfemw",
-      "nombre": "Caja de Helados Nestlé sabor (Vainilla)",
-      "categoria": "Lácteos",
-      "precio": 20,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "Caja_de_Helado_Vainilla.jpg"
-      ],
-      "descripcion": "Caja de helados marca Nestlé, sabor vainilla. Producto de alta calidad ideal para compartir, debe mantenerse a una temperatura de -18°C para conservar su frescura y sabor.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1768441690510_5stmkk7i6",
       "nombre": "Leche condensada 390g",
       "categoria": "Lácteos",
@@ -1798,23 +1679,6 @@
         "Leche_condensada_390g.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Leche condensada 390g, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
-      "id": "prod_1769289684179_esbsqd20h",
-      "nombre": "Chorizos en manteca 625g",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 14.28,
-      "descuento": 15.97,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": true,
-      "imagenes": [
-        "Chorizos_en_manteca_625g.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Chorizos en manteca 625g, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
       "modified_at": null
@@ -1840,18 +1704,18 @@
       "id": "prod_1768441690510_ynzwusik9",
       "nombre": "Paquete de azúcar 1kg",
       "categoria": "Despensa",
-      "precio": 1.95,
-      "descuento": 0,
+      "precio": 2.25,
+      "descuento": 13.33,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "Paquete_de_azucar_1kg.jpg"
+        "aa58eee2-0e44-479e-959b-88bbd3cb5f2a_1770819322436.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de azúcar 1kg, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-11T14:16:12.266Z"
     },
     {
       "id": "prod_1769297232608_32lds3bdy",
@@ -1922,23 +1786,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1768441690510_g343p4gpl",
-      "nombre": "Paquete de mollejas de pollo (5lbs)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 5.5,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Paquete_de_mollejas_de_pollo_(5lbs).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Paquete de mollejas de pollo (5lbs), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1768441690510_hfzpznn1o",
       "nombre": "Tanqueta de ensalada fría (4lts)",
       "categoria": "Confitura",
@@ -1990,23 +1837,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1769299337399_whcc4wirj",
-      "nombre": "Paquete de café La Llave (284g)",
-      "categoria": "Despensa",
-      "precio": 7.99,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Paquete_de_cafe_La_Llave_(284g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Paquete de café La Llave (284g), una excelente opción de nuestra categoría Cafetería. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-09T17:56:41.697Z"
-    },
-    {
       "id": "prod_1768837249014_0e8hctca5",
       "nombre": "Paquete de café Dufiltro (250g)",
       "categoria": "Despensa",
@@ -2037,23 +1867,6 @@
       ],
       "descripcion": "Disfruta de la calidad de Paquete de muslo de pollo (2kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": false,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
-      "id": "prod_1768441690510_3cdu00quq",
-      "nombre": "Papas tostadas 30g",
-      "categoria": "Confitura",
-      "precio": 0.9,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Papas_tostadas_30g.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Papas tostadas 30g, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
       "created_at": null,
       "modified_at": null
     },
@@ -2092,23 +1905,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1769297232608_vfb9igku5",
-      "nombre": "Hígado de pollo (1kg)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 2.85,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Higado_de_pollo_1kg.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Hígado de pollo 1kg, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1768441690510_h5qqrqz06",
       "nombre": "Carne de ovejo x lbs",
       "categoria": "Cárnicos y Embutidos",
@@ -2138,23 +1934,6 @@
         "Galletas_Petit_Biscuits_de_coco_80g.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Galletas Petit Biscuits de coco 80g, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
-      "id": "prod_1768441690510_oc7mknmxt",
-      "nombre": "Caja de galletas de soda Saltine 227g",
-      "categoria": "Confitura",
-      "precio": 1.9,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Caja_de_galletas_de_soda_Saltine_227g.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Caja de galletas de soda Saltine 227g, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
       "modified_at": null
@@ -2330,23 +2109,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1769297232608_xyd0dvbxz",
-      "nombre": "Bombones Bon o Bon Blanco con Relleno de Maní – 210 g caja de 18u",
-      "categoria": "Confitura",
-      "precio": 6.85,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "imagen-png_1768510722217_1769227881539.jpg"
-      ],
-      "descripcion": "Deliciosos bombones de chocolate blanco con oblea crujiente y suave relleno de crema de maní. Ideales para compartir, regalar o disfrutar en cualquier momento.\nX cajas de 18u",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1769613603917_5rg815imv",
       "nombre": "Pollo entero Saera(1300g)",
       "categoria": "Cárnicos y Embutidos",
@@ -2398,23 +2160,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1768844669044_3f89efrkk",
-      "nombre": "Jamón bravo(1kg)- Queso gouda(1kg)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 22,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "3c6e18e2-9e90-437d-96c2-fc4a2be0d6f5_1768838111426.jpeg"
-      ],
-      "descripcion": "Disfruta de la combinación perfecta del queso gouda y jamón bravo x (kg) excelente para desayunos y meriendas",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1768918643793_wff5w2f61",
       "nombre": "Frijoles rojos x(lbs)",
       "categoria": "Despensa",
@@ -2461,23 +2206,6 @@
         "img_2090_1768920359065.jpeg"
       ],
       "descripcion": "Disfruta del refresco de naranja x unidad excelente producto para meriendas",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
-      "id": "prod_1769206851244_od2h62nc3",
-      "nombre": "Caja de Helados Nestlé sabor (Fresa)",
-      "categoria": "Lácteos",
-      "precio": 20,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "12c8690f-01e7-424b-a11a-f23059a56c9c_1769030558353.jpeg"
-      ],
-      "descripcion": "Disfruta del cremoso helado Nestlé de fresa ideal para meriendas y acompañar cualquier tipo de dulce o confitura",
       "disponibilidad": true,
       "created_at": null,
       "modified_at": null
@@ -2568,23 +2296,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1769295656223_5sbmcfw58",
-      "nombre": "Salchicha Sublime de Pollo – 1kg",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 3.75,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "23116_1769289785185.jpg"
-      ],
-      "descripcion": "Versátil, sabrosa y lista para usar. Las salchichas Sublime de pollo están curadas, cocidas al vapor, ahumadas y homogenizadas para ofrecer una textura suave y sabor equilibrado. Ideales para hot dogs, desayunos, picaderas o platos rápidos. Fabricadas en la UE con estándares de calidad.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1769974779697_582345678",
       "nombre": "Lomo de cerdo ahumado x (lbs)",
       "categoria": "Cárnicos y Embutidos",
@@ -2668,57 +2379,6 @@
       "disponibilidad": true,
       "created_at": null,
       "modified_at": "2026-02-01T19:43:12.847Z"
-    },
-    {
-      "id": "prod_1769697355677_bmk197yks",
-      "nombre": "Picadillo de Res Mulata Bonita(500g)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 3,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "img_2321_1769646593861.jpeg"
-      ],
-      "descripcion": "Picadillo de Res Mulata Banina\nPicadillo de res procesado, ideal para preparar comidas rápidas y sabrosas. De textura suave y sabor tradicional, perfecto para picadillo a la habanera, rellenos y múltiples recetas. Producto rendidor y práctico, listo para cocinar.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
-      "id": "prod_1769920633225_ucn5piqej",
-      "nombre": "Jugo Nezka de (Guayaba)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 1.16,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "28973_1769919496657.jpg"
-      ],
-      "descripcion": "Déjate cautivar por el aroma y la suavidad del Néctar de Guayaba Nezska. Elaborado con la mejor selección de frutas, este néctar de 250 ml ofrece un equilibrio perfecto entre dulzor y frescura, manteniendo la esencia auténtica de la guayaba rosada. Su presentación premium en botella de vidrio asegura que cada sorbo mantenga su calidad excepcional, siendo una opción saludable y deliciosa para toda la familia.",
-      "disponibilidad": true,
-      "created_at": "2026-02-01T04:25:50.595Z",
-      "modified_at": "2026-02-01T04:25:50.595Z"
-    },
-    {
-      "id": "prod_1769920633225_st28ei1l0",
-      "nombre": "Jugo Nezka de (Mango)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 1.16,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "28974_1769919601035.jpg"
-      ],
-      "descripcion": "Disfruta de la explosión tropical y la dulzura natural con el Néctar de Mango Nezska. Este refrescante jugo viene en una práctica presentación de 250 ml (8.5 fl oz) en envase de vidrio, ideal para conservar su frescura y ese color vibrante que lo caracteriza. Con una textura suave y un sabor intenso a mango maduro, es el acompañante perfecto para tus desayunos o para refrescar cualquier momento del día.",
-      "disponibilidad": true,
-      "created_at": "2026-02-01T04:25:51.710Z",
-      "modified_at": "2026-02-01T04:25:51.710Z"
     },
     {
       "id": "prod_1769920633225_aw89nywas",
