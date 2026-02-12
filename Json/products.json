@@ -2481,6 +2481,40 @@
       "disponibilidad": false,
       "created_at": "2026-02-11T14:42:57.739Z",
       "modified_at": "2026-02-12T15:01:18.679Z"
+    },
+    {
+      "id": "prod_1770927044510_a0fr6jdmw",
+      "nombre": "Paquete de cuartos de Pollo",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 15,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "41995_1770927044794.jpg"
+      ],
+      "descripcion": "Paquete de 10 lbs de Cuartos de pollo",
+      "disponibilidad": true,
+      "created_at": "2026-02-12T20:12:15.288Z",
+      "modified_at": "2026-02-12T20:12:15.288Z"
+    },
+    {
+      "id": "prod_1770927123433_kjav7smv7",
+      "nombre": "Caja de pollo",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 60,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "41994_1770927123619.jpg"
+      ],
+      "descripcion": "Esta caja contiene 4 paquetes de 10lbs de cuartos de pollo",
+      "disponibilidad": true,
+      "created_at": "2026-02-12T20:12:17.667Z",
+      "modified_at": "2026-02-12T20:12:17.667Z"
     }
   ]
 }
