@@ -800,23 +800,6 @@
       "modified_at": "2026-02-11T14:25:23.115Z"
     },
     {
-      "id": "prod_1769357390791_h9ang5l6m",
-      "nombre": "Cuartos de Pierna de Pollo (10 lbs)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 13,
-      "descuento": 7.69,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": true,
-      "imagenes": [
-        "Cuartos_de_Pollo.jpg"
-      ],
-      "descripcion": "Cuartos de pierna de pollo (thigh and drumstick) de la marca Delightful Farms. Producto importado de USA, presentado en un formato de 10 lbs (4.53 kg). Ideal para preparaciones familiares, garantizando frescura y calidad en nuestra categoría de carnes.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1768441690510_pk9eys33x",
       "nombre": "Jugo Tuana Piña (200ml)",
       "categoria": "Bebidas no alcohólicas",
