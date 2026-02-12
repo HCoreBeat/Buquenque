@@ -84,12 +84,17 @@
     {
       "id": "4",
       "nombre": "Pack Desayuno Energético",
-      "disponible": true,
-      "top": false,
-      "oferta": false,
-      "nuevo": true,
+      "categoria": "Pack",
       "precio": 24,
       "descuento": 0,
+      "top": false,
+      "nuevo": true,
+      "oferta": false,
+      "disponible": false,
+      "imagenes": [
+        "pack_desayuno_energetico.jpg"
+      ],
+      "imagen": "pack_desayuno_energetico.jpg",
       "descripcion": "Un pack ideal para comenzar el día con energía. Incluye café, leche, chocolate y Coffy Mate para preparar desayunos completos y deliciosos.",
       "caracteristicas": [
         "x1 Café La Llave",
@@ -97,26 +102,23 @@
         "x1 Leche entera",
         "x1 Chocolate"
       ],
-      "imagen": "pack_desayuno_energetico.jpg",
-      "categoria": "Pack",
-      "precioFinal": 24,
-      "imagenes": [
-        "pack_desayuno_energetico.jpg"
-      ],
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/Packs/pack_desayuno_energetico.jpg",
-      "searchText": "pack desayuno energético pack un pack ideal para comenzar el día con energía. incluye café, leche, chocolate y coffy mate para preparar desayunos completos y deliciosos.",
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-12T15:32:28.732Z"
     },
     {
       "id": "5",
       "nombre": "Pack Merienda Familiar",
-      "disponible": true,
-      "top": false,
-      "oferta": false,
-      "nuevo": true,
+      "categoria": "Pack",
       "precio": 30,
       "descuento": 0,
+      "top": false,
+      "nuevo": true,
+      "oferta": false,
+      "disponible": false,
+      "imagenes": [
+        "pack_merienda_familiar.jpg"
+      ],
+      "imagen": "pack_merienda_familiar.jpg",
       "descripcion": "Un combo ideal para preparar meriendas abundantes y deliciosas. Incluye pan, lácteos y embutidos frescos para toda la familia.",
       "caracteristicas": [
         "x1 Bolsa de pan",
@@ -125,16 +127,8 @@
         "x1 Kilo de queso",
         "x1 Bolsa de leche"
       ],
-      "imagen": "pack_merienda_familiar.jpg",
-      "categoria": "Pack",
-      "precioFinal": 30,
-      "imagenes": [
-        "pack_merienda_familiar.jpg"
-      ],
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/Packs/pack_merienda_familiar.jpg",
-      "searchText": "pack merienda familiar pack un combo ideal para preparar meriendas abundantes y deliciosas. incluye pan, lácteos y embutidos frescos para toda la familia.",
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-12T15:32:28.732Z"
     }
   ]
 }
