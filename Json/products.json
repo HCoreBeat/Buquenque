@@ -2469,8 +2469,8 @@
       "id": "prod_1770819915685_uohxroax1",
       "nombre": "Saco de Arroz 25Kg",
       "categoria": "Despensa",
-      "precio": 45,
-      "descuento": 0,
+      "precio": 50,
+      "descuento": 10,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -2480,7 +2480,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-02-11T14:25:26.248Z",
-      "modified_at": "2026-02-11T14:25:26.248Z"
+      "modified_at": "2026-02-12T16:16:04.124Z"
     },
     {
       "id": "prod_1770820966994_c9d402x6t",
