@@ -319,9 +319,9 @@
         "Galletas_Marias_(80g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Galletas Marías (80g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-12T15:01:18.676Z"
     },
     {
       "id": "prod_1768441690510_ehifoffi7",
@@ -1271,9 +1271,9 @@
         "Caja_de_jugos_sabor_Mango.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Caja de jugos sabor Mango (30 x 200ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-12T15:01:18.679Z"
     },
     {
       "id": "prod_1768441690510_hj37vemry",
@@ -2121,9 +2121,9 @@
         "29331_1769974898927.jpg"
       ],
       "descripcion": "Disfruta del queso gouda Aldaketa x kg excelente producto para sus desayunos y meriendas",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-02-01T19:43:04.687Z"
+      "modified_at": "2026-02-12T15:01:18.678Z"
     },
     {
       "id": "prod_1768844669044_ghnvk7l1k",
@@ -2138,9 +2138,9 @@
         "img_2057_1768837728137.jpeg"
       ],
       "descripcion": "Disfruta del jamón bravo x (kg)\nExcelente producto para disfrutar de un buen desayuno o una buena merienda.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-12T15:01:18.679Z"
     },
     {
       "id": "prod_1768918643793_wff5w2f61",
@@ -2495,9 +2495,9 @@
         "paquete_de_mollejas_de_pollo_5lbs_1770820967011.jpg"
       ],
       "descripcion": "Las meores Mollejas del mercado",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-11T14:42:57.739Z",
-      "modified_at": "2026-02-11T15:11:22.601Z"
+      "modified_at": "2026-02-12T15:01:18.679Z"
     }
   ]
 }
