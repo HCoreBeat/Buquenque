@@ -95,12 +95,12 @@
       "nuevo": false,
       "oferta": true,
       "imagenes": [
-        "Carton_de_Huevos.jpg"
+        "huevos_1770917017277.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-12T17:23:51.852Z"
     },
     {
       "id": "prod_1768923054742_dhekmp0os",
