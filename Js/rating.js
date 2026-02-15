@@ -209,12 +209,18 @@ async function fetchRatingOnce(productId) {
   return enqueueFetch(productId);
 }
 
+function formatRating(value) {
+  const n = Number(value) || 0;
+  // Mostrar hasta 2 decimales, pero quitar ceros finales: 5.00 -> "5", 4.50 -> "4.5"
+  return parseFloat(n.toFixed(2)).toString();
+}
+
 export function updateProductUI(productId, avgRating, totalVotes) {
   const nodes = findProductNodes(productId);
   nodes.forEach(node => {
     const avgEl = node.querySelector(`.avg-rating`);
     const votesEl = node.querySelector(`.total-votes`);
-    if (avgEl) avgEl.textContent = Number(avgRating).toFixed(2);
+    if (avgEl) avgEl.textContent = formatRating(avgRating);
     if (votesEl) votesEl.textContent = `${totalVotes} votos`;
   });
   // Re-render stars en todos los nodos
@@ -287,17 +293,19 @@ export function renderStars(productId, avgRating = 0) {
       star.setAttribute('aria-label', `${i} estrellas`);
       star.style.cursor = 'pointer';
 
-      if (i <= full) star.textContent = '★';
-      else if (i === full + 1 && fractional >= 0.5) star.textContent = '⯨'; // aproximación visual a mitad
-      else star.textContent = '☆';
+      // Usar iconos Font Awesome para full / half / empty (evita caracteres raros)
+      if (i <= full) star.innerHTML = '<i class="fa-solid fa-star" aria-hidden="true"></i>';
+      else if (i === full + 1 && fractional >= 0.5) star.innerHTML = '<i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>';
+      else star.innerHTML = '<i class="fa-regular fa-star" aria-hidden="true"></i>';
 
-      // Hover preview: colorear hasta i sin cambiar el state
+      // Hover preview: colorear hasta i sin cambiar el state (usa icons)
       star.addEventListener('mouseenter', () => {
         if (locks.get(productId)) return;
         const siblings = Array.from(container.querySelectorAll('.star'));
         siblings.forEach((s) => {
           const v = Number(s.dataset.value);
-          s.textContent = v <= i ? '★' : '☆';
+          if (v <= i) s.innerHTML = '<i class="fa-solid fa-star" aria-hidden="true"></i>';
+          else s.innerHTML = '<i class="fa-regular fa-star" aria-hidden="true"></i>';
         });
       });
       star.addEventListener('mouseleave', () => {

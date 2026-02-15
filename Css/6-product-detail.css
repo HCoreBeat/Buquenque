@@ -291,7 +291,7 @@
     font-size: 1.6rem;
     transition: transform 0.12s ease;
 }
-
+.detail-rating .star i { color: inherit; font-size: inherit; line-height:1; }
 .detail-rating .avg-rating {
     font-size: 1.6rem;
     font-weight: 800;
@@ -312,6 +312,13 @@
 @media (max-width: 768px) {
     .detail-rating .star { font-size: 1.2rem; }
     .detail-rating .avg-rating { font-size: 1.2rem; }
+}
+
+@media (max-width: 480px) {
+    .detail-rating .star { font-size: 1rem; }
+    .detail-rating .avg-rating { font-size: 1rem; }
+    .detail-rating .total-votes { font-size: 0.9rem; }
+    .detail-rating { gap: 6px; }
 }
 
 .detail-quantity-controls {

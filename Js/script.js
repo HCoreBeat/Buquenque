@@ -17,6 +17,41 @@ function debounce(fn, wait) {
 }
 const SEARCH_DEBOUNCE_MS = 250;
 
+// Normaliza strings eliminando tildes/diacríticos — usado para búsqueda insensible a acentos
+function normalizeString(str) {
+  return str ? String(str).normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/[\u0300-\u036f]/g, '') : '';
+}
+
+// Distancia de Levenshtein (para matching aproximado)
+function levenshtein(a, b) {
+  if (!a) return b.length;
+  if (!b) return a.length;
+  a = String(a).toLowerCase();
+  b = String(b).toLowerCase();
+  const m = a.length;
+  const n = b.length;
+  const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0));
+  for (let i = 0; i <= m; i++) dp[i][0] = i;
+  for (let j = 0; j <= n; j++) dp[0][j] = j;
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + cost);
+    }
+  }
+  return dp[m][n];
+}
+
+// Fuzzy match: devuelve true si el término y el texto son suficientemente similares
+function fuzzyMatch(term, text) {
+  if (!term || !text) return false;
+  const t = String(term).toLowerCase();
+  const s = String(text).toLowerCase();
+  if (s.includes(t)) return true; // rápido: substring
+  const maxDistance = Math.max(1, Math.floor(t.length * 0.35));
+  return levenshtein(t, s) <= maxDistance;
+}
+
 // ========== VARIABLES DEL CARRUSEL ==========
 let currentSlide = 0;
 let carouselAutoplayInterval = null;
@@ -255,6 +290,20 @@ async function loadProducts() {
         products.push(group.variants[0]);
       }
     }
+
+    // Preprocesar (normalizar) campos para búsqueda/auto-complete (insensible a tildes)
+    products.forEach((p) => {
+      p._normalizedNombre = normalizeString(p.nombre).toLowerCase();
+      p._normalizedDescripcion = normalizeString(p.descripcion || '').toLowerCase();
+      p._normalizedCategoria = normalizeString(p.categoria || '').toLowerCase();
+      if (p.variants && Array.isArray(p.variants)) {
+        p.variants.forEach((v) => {
+          v._normalizedNombre = normalizeString(v.nombre).toLowerCase();
+          v._normalizedDescripcion = normalizeString(v.descripcion || '').toLowerCase();
+          v._normalizedCategoria = normalizeString(v.categoria || '').toLowerCase();
+        });
+      }
+    });
 
     categories = [
       "Todo",
@@ -579,12 +628,31 @@ function searchProducts() {
     return;
   }
 
-  const filteredProducts = products.filter(
-    (product) =>
-      product.nombre.toLowerCase().includes(searchTerm) ||
-      product.descripcion.toLowerCase().includes(searchTerm) ||
-      product.categoria.toLowerCase().includes(searchTerm)
-  );
+  const normalizedTerm = normalizeString(searchTerm).toLowerCase();
+  let filteredProducts = [];
+
+  // 1) Coincidencias exactas (substring) sobre campos normalizados
+  const exactMatches = products.filter((product) => {
+    const name = product._normalizedNombre || normalizeString(product.nombre).toLowerCase();
+    const desc = product._normalizedDescripcion || normalizeString(product.descripcion || '').toLowerCase();
+    const cat = product._normalizedCategoria || normalizeString(product.categoria || '').toLowerCase();
+    return name.includes(normalizedTerm) || desc.includes(normalizedTerm) || cat.includes(normalizedTerm);
+  });
+
+  if (exactMatches.length > 0) {
+    filteredProducts = exactMatches;
+  } else {
+    // 2) Fallback fuzzy (errores tipográficos / faltan acentos)
+    filteredProducts = products.filter((product) => {
+      const name = product._normalizedNombre || normalizeString(product.nombre).toLowerCase();
+      const desc = product._normalizedDescripcion || normalizeString(product.descripcion || '').toLowerCase();
+      return fuzzyMatch(normalizedTerm, name) || fuzzyMatch(normalizedTerm, desc);
+    });
+  }
+
+  // Actualizar dropdown de sugerencias en tiempo real
+  try { renderSearchSuggestions(getSearchSuggestions(normalizedTerm, 6)); } catch(e) { /* safe */ }
+
 
   if (filteredProducts.length > 0) {
     renderProducts(filteredProducts);
@@ -639,6 +707,203 @@ function clearSearch() {
   }
   renderProducts();
   hideNoResultsMessage();
+  clearSearchSuggestions();
+}
+
+// ---------- Helpers para suggestions / búsqueda aproximada ----------
+function getSearchSuggestions(normalizedTerm, limit = 6) {
+  const suggestions = [];
+  if (!normalizedTerm) return suggestions;
+
+  const seen = new Set();
+  const pushSuggestion = (type, data) => {
+    const key = type + '::' + (type === 'category' ? data : (data.id || data.nombre));
+    if (seen.has(key)) return false;
+    seen.add(key);
+    suggestions.push({ type, data });
+    return suggestions.length >= limit;
+  };
+
+  // 1) Productos - coincidencias exactas por nombre
+  const prodExact = products.filter((p) => (p._normalizedNombre || '').includes(normalizedTerm));
+  for (const p of prodExact) {
+    if (pushSuggestion('product', p)) return suggestions;
+  }
+
+  // 2) Packs - coincidencias exactas por nombre o texto de búsqueda
+  const packExact = (packs || []).filter((pack) => {
+    const name = pack._normalizedNombre || normalizeString(pack.nombre).toLowerCase();
+    const desc = pack._normalizedDescripcion || normalizeString(pack.descripcion || pack.searchText || '').toLowerCase();
+    return name.includes(normalizedTerm) || desc.includes(normalizedTerm);
+  });
+  for (const pack of packExact) {
+    if (pushSuggestion('pack', pack)) return suggestions;
+  }
+
+  // 3) Categorías (priorizar coincidencias de categoría)
+  const catExact = (categories || [])
+    .filter((c) => c && c !== 'Todo')
+    .filter((c) => normalizeString(c).toLowerCase().includes(normalizedTerm));
+  for (const c of catExact) {
+    if (pushSuggestion('category', c)) return suggestions;
+  }
+
+  // 4) Productos fuzzy (fallback)
+  const prodFuzzy = products
+    .filter((p) => {
+      const name = p._normalizedNombre || normalizeString(p.nombre).toLowerCase();
+      const desc = p._normalizedDescripcion || normalizeString(p.descripcion || '').toLowerCase();
+      return fuzzyMatch(normalizedTerm, name) || fuzzyMatch(normalizedTerm, desc);
+    })
+    .filter((p) => !seen.has('product::' + (p.id || p.nombre)))
+    .slice(0, limit - suggestions.length);
+
+  for (const p of prodFuzzy) {
+    if (pushSuggestion('product', p)) return suggestions;
+  }
+
+  // 5) Packs fuzzy (Levenshtein)
+  const packFuzzy = (packs || [])
+    .map((pack) => ({ pack, dist: levenshtein(normalizedTerm, pack._normalizedNombre || normalizeString(pack.nombre).toLowerCase()) }))
+    .filter((x) => x.dist <= Math.max(1, Math.floor(normalizedTerm.length * 0.45)))
+    .sort((a, b) => a.dist - b.dist)
+    .map((x) => x.pack)
+    .filter((pack) => !seen.has('pack::' + (pack.id || pack.nombre)))
+    .slice(0, limit - suggestions.length);
+
+  for (const pack of packFuzzy) {
+    if (pushSuggestion('pack', pack)) return suggestions;
+  }
+
+  return suggestions;
+}
+
+function positionSearchSuggestions() {
+  const input = document.getElementById('search-input');
+  const container = document.getElementById('search-suggestions');
+  if (!input || !container || container.style.display === 'none') return;
+
+  const rect = input.getBoundingClientRect();
+  const top = rect.bottom + window.scrollY + 8; // 8px gap
+  const left = rect.left + window.scrollX;
+  const width = Math.min(rect.width, Math.max(200, rect.width));
+
+  container.style.position = 'absolute';
+  container.style.top = `${top}px`;
+  container.style.left = `${left}px`;
+  container.style.width = `${width}px`;
+
+  // Prevent overflow to the right edge
+  const rightOverflow = (left + width) - (window.innerWidth - 8);
+  if (rightOverflow > 0) {
+    container.style.left = `${Math.max(8, left - rightOverflow)}px`;
+  }
+}
+
+function renderSearchSuggestions(suggestions) {
+  const searchInput = document.getElementById('search-input');
+  if (!searchInput) return;
+  let container = document.getElementById('search-suggestions');
+  if (!container) {
+    container = document.createElement('ul');
+    container.id = 'search-suggestions';
+    container.className = 'search-suggestions';
+    container.setAttribute('role', 'listbox');
+    document.body.appendChild(container);
+  }
+
+  // Reset selection index
+  container.dataset.suggestionIndex = '-1';
+
+  if (!suggestions || suggestions.length === 0) {
+    container.innerHTML = '';
+    container.style.display = 'none';
+    searchInput.setAttribute('aria-expanded', 'false');
+    return;
+  }
+
+  container.innerHTML = suggestions.map((sugg, idx) => {
+    let imgSrc = 'Images/no-image.png';
+    let displayName = '';
+    let metaHtml = '';
+    let typeBadge = '';
+
+    if (sugg.type === 'product') {
+      const p = sugg.data;
+      imgSrc = p.imagenes?.[0] ? `Images/products/${p.imagenes[0]}` : 'Images/no-image.png';
+      displayName = p.cleanName || p.nombre || '';
+      const price = typeof p.precio === 'number' ? p.precio : 0;
+      const isOnSale = p.oferta && p.descuento > 0 && typeof p.descuento === 'number';
+      const finalPrice = isOnSale ? ((price * (1 - p.descuento / 100)).toFixed(2)) : price.toFixed(2);
+      metaHtml = `${finalPrice} <img src="Images/Zelle.svg" class="currency-icon price-sm" alt="Zelle">`;
+    } else if (sugg.type === 'pack') {
+      const pack = sugg.data;
+      imgSrc = pack.imagenes?.[0] ? `Images/Packs/${pack.imagenes[0]}` : `Images/pack-placeholder.svg`;
+      displayName = pack.nombre || '';
+      const price = (typeof pack.precio === 'number' && pack.precio !== 0) ? pack.precio : (typeof pack.precioFinal === 'number' ? pack.precioFinal : 0);
+      metaHtml = `${price.toFixed(2)} <img src="Images/Zelle.svg" class="currency-icon price-sm" alt="Zelle">`;
+      typeBadge = `<span class="suggestion-type">Pack</span>`;
+    } else if (sugg.type === 'category') {
+      const cat = sugg.data;
+      imgSrc = `Images/Categories/all.jpg`;
+      displayName = cat || '';
+      metaHtml = `<span class="suggestion-type">Categoría</span>`;
+    }
+
+    return `
+      <li class="search-suggestion-item" data-index="${idx}" data-type="${sugg.type}" tabindex="-1" role="option" id="search-suggestion-${idx}">
+        <img class="suggestion-img" src="${imgSrc}" alt="${displayName}" loading="lazy">
+        <div class="suggestion-body">
+          <div class="suggestion-name">${displayName} ${typeBadge}</div>
+          <div class="suggestion-meta">${metaHtml}</div>
+        </div>
+      </li>
+    `;
+  }).join('');
+
+  container.style.display = 'block';
+  searchInput.setAttribute('aria-expanded', 'true');
+
+  // Posicionar respecto al input (robusto frente a overflow de padres)
+  positionSearchSuggestions();
+
+  // Click / hover handlers
+  container.querySelectorAll('.search-suggestion-item').forEach((el, i) => {
+    el.addEventListener('mousedown', (ev) => {
+      ev.preventDefault(); // evitar blur antes del click
+      const s = suggestions[i];
+      if (!s) return;
+      if (s.type === 'product') {
+        showProductDetail(encodeURIComponent(s.data.nombre));
+        clearSearchSuggestions();
+      } else if (s.type === 'pack') {
+        showPackDetail(encodeURIComponent(s.data.nombre));
+        clearSearchSuggestions();
+      } else if (s.type === 'category') {
+        // aplicar filtro por categoría
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) searchInput.value = '';
+        filterByCategory(s.data);
+        clearSearchSuggestions();
+      }
+    });
+    el.addEventListener('mouseover', () => {
+      container.querySelectorAll('.search-suggestion-item').forEach(x => x.classList.remove('active'));
+      el.classList.add('active');
+      container.dataset.suggestionIndex = String(i);
+    });
+  });
+}
+
+function clearSearchSuggestions() {
+  const container = document.getElementById('search-suggestions');
+  const searchInput = document.getElementById('search-input');
+  if (container) {
+    container.innerHTML = '';
+    container.style.display = 'none';
+    container.dataset.suggestionIndex = '-1';
+  }
+  if (searchInput) searchInput.setAttribute('aria-expanded', 'false');
 }
 
 // Toggle del menú lateral
@@ -734,7 +999,7 @@ function renderProducts(productsToRender = products) {
 
   // Agrupar productos por categoría
   const groupedByCategory = {};
-  
+
   availableProducts.forEach((product) => {
     const category = product.categoria || "Sin categoría";
     if (!groupedByCategory[category]) {
@@ -743,7 +1008,7 @@ function renderProducts(productsToRender = products) {
     groupedByCategory[category].push(product);
   });
 
-  // Ordenar categorías alfabéticamente
+  // Mantener el orden de las categorías según aparecen en el JSON
   const sortedCategories = Object.keys(groupedByCategory);
 
   // Crear panel para cada categoría
@@ -901,7 +1166,7 @@ function renderProducts(productsToRender = products) {
                   <div class="product-rating">
                       <div class="stars" role="img" aria-label="Valoración"></div>
                       <div class="rating-meta">
-                          <span class="avg-rating">0.00</span>
+                          <span class="avg-rating">0</span>
                           <span class="total-votes">0 votos</span>
                       </div>
                   </div>
@@ -1443,7 +1708,7 @@ function showProductDetail(productName) {
                     <div class="detail-rating-top">
                         <div class="stars"></div>
                         <div class="detail-rating-meta">
-                            <span class="avg-rating">0.00</span>
+                            <span class="avg-rating">0</span>
                             <span class="total-votes">0 votos</span>
                         </div>
                     </div>
@@ -2220,6 +2485,13 @@ async function loadPacks() {
     if (!response.ok) throw new Error("Error al cargar packs");
     const data = await response.json();
     packs = data.packs || [];
+
+    // Preprocesar packs para búsqueda (normalize sin tildes)
+    packs.forEach((pack) => {
+      pack._normalizedNombre = normalizeString(pack.nombre).toLowerCase();
+      pack._normalizedDescripcion = normalizeString(pack.descripcion || pack.searchText || '').toLowerCase();
+    });
+
     renderCategoryCard();
   } catch (error) {
     console.error("Error al cargar packs:", error);
@@ -2674,10 +2946,82 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Debounce para búsqueda en tiempo real
   const searchInput = document.getElementById("search-input");
   if (searchInput) {
+    searchInput.setAttribute('aria-haspopup', 'listbox');
+    searchInput.setAttribute('aria-expanded', 'false');
+
     searchInput.addEventListener(
       "input",
-      debounce(searchProducts, SEARCH_DEBOUNCE_MS)
+      debounce(() => {
+        searchProducts();
+        const normalized = normalizeString(searchInput.value || '').toLowerCase().trim();
+        renderSearchSuggestions(getSearchSuggestions(normalized, 6));
+      }, SEARCH_DEBOUNCE_MS)
     );
+
+    // Navegación por teclado dentro del dropdown de sugerencias (usa dataset en el container)
+    searchInput.addEventListener('keydown', (e) => {
+      const container = document.getElementById('search-suggestions');
+      if (!container) return;
+      const items = Array.from(container.querySelectorAll('.search-suggestion-item'));
+      if (!items.length) return;
+
+      let suggestionIndex = parseInt(container.dataset.suggestionIndex || '-1', 10);
+
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        suggestionIndex = Math.min(suggestionIndex + 1, items.length - 1);
+        items.forEach(it => it.classList.remove('active'));
+        items[suggestionIndex].classList.add('active');
+        items[suggestionIndex].scrollIntoView({ block: 'nearest' });
+        container.dataset.suggestionIndex = String(suggestionIndex);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        suggestionIndex = Math.max(suggestionIndex - 1, 0);
+        items.forEach(it => it.classList.remove('active'));
+        items[suggestionIndex].classList.add('active');
+        items[suggestionIndex].scrollIntoView({ block: 'nearest' });
+        container.dataset.suggestionIndex = String(suggestionIndex);
+      } else if (e.key === 'Enter') {
+        const active = container.querySelector('.search-suggestion-item.active');
+        if (active) {
+          e.preventDefault();
+          active.dispatchEvent(new MouseEvent('mousedown'));
+        } else {
+          searchProducts();
+        }
+      } else if (e.key === 'Escape') {
+        clearSearchSuggestions();
+      }
+    });
+
+    // ocultar sugerencias al perder foco (con pequeño delay para permitir click)
+    searchInput.addEventListener('blur', () => setTimeout(() => clearSearchSuggestions(), 120));
+
+    // Mostrar sugerencias al enfocar (cuando el input está vacío) — muestra mas vendidos y categorías
+    searchInput.addEventListener('focus', () => {
+      const val = (searchInput.value || '').trim();
+      if (!val) {
+        const popular = (products || []).filter(p => p.mas_vendido).slice(0,4).map(p => ({ type: 'product', data: p }));
+        const cats = (categories || []).slice(0,2).map(c => ({ type: 'category', data: c }));
+        const defaults = popular.concat(cats).slice(0, 6);
+        if (defaults.length) {
+          renderSearchSuggestions(defaults);
+          positionSearchSuggestions();
+        }
+      }
+    });
+
+    // Reposicionar al hacer resize/scroll para mantener el dropdown pegado al input
+    window.addEventListener('resize', () => positionSearchSuggestions());
+    window.addEventListener('scroll', () => positionSearchSuggestions(), { passive: true });
+
+    // Click fuera -> cerrar
+    document.addEventListener('click', (ev) => {
+      const container = document.getElementById('search-suggestions');
+      if (!container || container.style.display === 'none') return;
+      const input = document.getElementById('search-input');
+      if (ev.target === input || input.contains(ev.target) || container.contains(ev.target)) return;
+      clearSearchSuggestions();
+    });
   }
 });
-
