@@ -392,23 +392,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1768441690510_giw45i4dl",
-      "nombre": "Paquete de Harina (1kg)",
-      "categoria": "Despensa",
-      "precio": 2.25,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Paquete_de_Harina_(1kg).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Paquete de Harina (1kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1768441690510_daeyrjgpn",
       "nombre": "Galletas Lamore (150g)",
       "categoria": "Confitura",
@@ -446,18 +429,18 @@
       "id": "prod_1768441690510_tf4rwuo62",
       "nombre": "Frijol Negro (500g)",
       "categoria": "Despensa",
-      "precio": 1.99,
+      "precio": 1.7,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "Frijol_Negro_(500g).jpg"
+        "44853_1771258483850.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Frijol Negro (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-16T16:17:46.571Z"
     },
     {
       "id": "prod_1768441690510_ify26lfde",
