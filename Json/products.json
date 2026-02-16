@@ -2515,6 +2515,176 @@
       "disponibilidad": true,
       "created_at": "2026-02-12T20:12:17.667Z",
       "modified_at": "2026-02-12T20:12:17.667Z"
+    },
+    {
+      "id": "prod_1771255120206_0qnyt6ot3",
+      "nombre": "Mostaza 300ml",
+      "categoria": "Despensa",
+      "precio": 2.65,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "44789_1771255120410.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-16T15:31:59.586Z",
+      "modified_at": "2026-02-16T15:31:59.586Z"
+    },
+    {
+      "id": "prod_1771255174691_cpxbapmjz",
+      "nombre": "Ketchup 310ml",
+      "categoria": "Despensa",
+      "precio": 2.18,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "44790_1771255174883.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-16T15:32:01.169Z",
+      "modified_at": "2026-02-16T15:32:01.169Z"
+    },
+    {
+      "id": "prod_1771255241157_ynjpgsmfe",
+      "nombre": "Vinagre de vino blanco 1l",
+      "categoria": "Despensa",
+      "precio": 3.9,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "44791_1771255241374.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-16T15:32:02.790Z",
+      "modified_at": "2026-02-16T15:32:02.790Z"
+    },
+    {
+      "id": "prod_1771255296430_p8ultevvt",
+      "nombre": "Pasta para bocaditos",
+      "categoria": "Despensa",
+      "precio": 2.9,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "44792_1771255296666.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-16T15:32:04.846Z",
+      "modified_at": "2026-02-16T15:32:04.846Z"
+    },
+    {
+      "id": "prod_1771255391271_0s958gn5g",
+      "nombre": "Café natural Vima",
+      "categoria": "Despensa",
+      "precio": 8,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "44795_1771255391489.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-16T15:32:07.002Z",
+      "modified_at": "2026-02-16T15:32:07.002Z"
+    },
+    {
+      "id": "prod_1771255455739_z92mxmjqj",
+      "nombre": "Harina de trigo Vima 1kg",
+      "categoria": "Despensa",
+      "precio": 2.5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "44793_1771255455899.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-16T15:32:08.917Z",
+      "modified_at": "2026-02-16T15:32:08.917Z"
+    },
+    {
+      "id": "prod_1771255568932_49z71tujl",
+      "nombre": "Pasta de tomate Vima 400g",
+      "categoria": "Despensa",
+      "precio": 1.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "44796_1771255569089.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-16T15:32:10.534Z",
+      "modified_at": "2026-02-16T15:32:10.534Z"
+    },
+    {
+      "id": "prod_1771255643827_anfwn47zs",
+      "nombre": "Troncho de pescado en tomate 425g",
+      "categoria": "Despensa",
+      "precio": 3.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "44797_1771255644014.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-16T15:32:12.756Z",
+      "modified_at": "2026-02-16T15:32:12.756Z"
+    },
+    {
+      "id": "prod_1771255763596_eaz128kna",
+      "nombre": "Atún premium en aceite vegetal 1000g",
+      "categoria": "Despensa",
+      "precio": 16,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "44798_1771255763805.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-16T15:32:15.125Z",
+      "modified_at": "2026-02-16T15:32:15.125Z"
+    },
+    {
+      "id": "prod_1771255834189_mbvu28jpy",
+      "nombre": "Fiambre de pollo",
+      "categoria": "Despensa",
+      "precio": 4,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "44801_1771255834329.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-16T15:32:16.523Z",
+      "modified_at": "2026-02-16T15:32:16.523Z"
     }
   ]
 }
