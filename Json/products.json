@@ -710,9 +710,9 @@
         "Jugo_de_Mango_(200ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Jugo de Mango (200ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-16T17:26:12.282Z"
     },
     {
       "id": "prod_1768509219912_tvj6iq15t",
