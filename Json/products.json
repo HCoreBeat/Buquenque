@@ -2668,6 +2668,23 @@
       "disponibilidad": true,
       "created_at": "2026-02-16T15:32:16.523Z",
       "modified_at": "2026-02-16T15:32:16.523Z"
+    },
+    {
+      "id": "prod_1771364303825_60754qup9",
+      "nombre": "Paquete de Salchicha 3kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 11,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "45990_1771364304158.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-17T21:38:52.684Z",
+      "modified_at": "2026-02-17T21:38:52.684Z"
     }
   ]
 }
