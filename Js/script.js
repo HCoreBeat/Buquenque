@@ -309,6 +309,12 @@ async function loadProducts() {
       "Todo",
       ...new Set(products.map((product) => product.categoria)),
     ];
+    
+    // ===== INICIALIZAR SISTEMA DINÁMICO =====
+    if (typeof initDynamicSystem === 'function') {
+      initDynamicSystem();
+    }
+    
     renderCategories();
     initPriceFilter();
     renderProducts();
@@ -997,6 +1003,18 @@ function renderProducts(productsToRender = products) {
   // Filtrar solo productos disponibles (no renderizar productos con disponibilidad: false)
   const availableProducts = productsToRender.filter(product => product.disponibilidad !== false);
 
+  // ===== RENDERIZAR SECCIÓN "RECIÉN AÑADIDOS" =====
+  // Solo mostrar si estamos en home (sin filtro de categoría)
+  if (productsToRender === products) {
+    if (typeof renderRecentProductsSection === 'function') {
+      try {
+        renderRecentProductsSection(availableProducts);
+      } catch (e) {
+        console.warn('[Dynamic] Error renderizando recientes:', e);
+      }
+    }
+  }
+
   // Agrupar productos por categoría
   const groupedByCategory = {};
 
@@ -1013,6 +1031,16 @@ function renderProducts(productsToRender = products) {
 
   // Crear panel para cada categoría
   sortedCategories.forEach((category) => {
+    // ===== APLICAR ORDENAMIENTO DINÁMICO =====
+    let categoryProducts = groupedByCategory[category];
+    if (typeof applySortingToCategoryProducts === 'function') {
+      try {
+        categoryProducts = applySortingToCategoryProducts(categoryProducts);
+      } catch (e) {
+        console.warn('[Dynamic] Error ordenando categoría:', e);
+      }
+    }
+    
     const categoryPanel = document.createElement("div");
     categoryPanel.className = "category-panel";
     categoryPanel.setAttribute("data-category", category);
@@ -1024,7 +1052,7 @@ function renderProducts(productsToRender = products) {
       <div class="category-header-content">
         <i class="fas fa-${getCategoryIcon(category)}"></i>
         <h2 class="category-title">${category}</h2>
-        <span class="category-count">${groupedByCategory[category].length}</span>
+        <span class="category-count">${categoryProducts.length}</span>
       </div>
     `;
     categoryPanel.appendChild(categoryHeader);
@@ -1034,7 +1062,7 @@ function renderProducts(productsToRender = products) {
     productsGrid.className = "category-products-grid";
 
     // Renderizar cada producto
-    groupedByCategory[category].forEach((product) => {
+    categoryProducts.forEach((product) => {
       const displayProduct = product.isGrouped
         ? product.variants[product.currentVariant]
         : product;
@@ -1044,6 +1072,12 @@ function renderProducts(productsToRender = products) {
       productEl.className = "product-card";
       // Asignar el id esperado por el módulo de ratings: product-<productId>
       productEl.id = `product-${displayProduct.id}`;
+
+      // ===== AGREGAR CLASE SI ES PRODUCTO RECIENTE =====
+      const recentProducts = getRecentProducts ? getRecentProducts(availableProducts) : [];
+      if (recentProducts.some(p => p.id === product.id)) {
+        productEl.classList.add('is-recent');
+      }
 
       const isOnSale = displayProduct.oferta && displayProduct.descuento > 0;
       const finalPrice = isOnSale
@@ -1105,6 +1139,20 @@ function renderProducts(productsToRender = products) {
                         !displayProduct.disponibilidad
                           ? '<span class="badge agotado"><i class="fas fa-ban"></i> AGOTADO</span>'
                           : ""
+                      }
+                      ${
+                        // ===== BADGES DINÁMICOS =====
+                        (function() {
+                          if (typeof getProductBadges !== 'function') return '';
+                          try {
+                            const dynamicBadges = getProductBadges(product);
+                            return dynamicBadges.map(badge => 
+                              `<span class="badge ${badge.class}"><i class="fas ${badge.icon}"></i> ${badge.label}</span>`
+                            ).join('');
+                          } catch(e) {
+                            return '';
+                          }
+                        })()
                       }
                   </div>
                   <img src="Images/products/${displayProduct.imagenes[0]}" 
@@ -1172,12 +1220,44 @@ function renderProducts(productsToRender = products) {
                   </div>
               </div>
           `;
+      
+      // ===== APLICAR ANIMACIÓN SI ES PRODUCTO RECIENTE =====
+      if (productEl.classList.contains('is-recent')) {
+        if (typeof animateElement === 'function') {
+          try {
+            animateElement(productEl, 'fade-in');
+          } catch(e) {}
+        }
+      }
+      
+      // ===== APLICAR PULSO SUTIL A PRODUCTOS NUEVOS =====
+      if (displayProduct.nuevo) {
+        if (typeof applyNewProductBorderAnimation === 'function') {
+          try {
+            // Stagger muy pequeño (máximo 300ms)
+            const delay = Math.random() * 200;
+            setTimeout(() => {
+              applyNewProductBorderAnimation(productEl);
+            }, delay);
+          } catch(e) {}
+        }
+      }
+      
       productsGrid.appendChild(productEl);
     });
 
     categoryPanel.appendChild(productsGrid);
     container.appendChild(categoryPanel);
   });
+
+  // ===== ACTUALIZAR SISTEMA DINÁMICO (LAYOUT, ETC) =====
+  if (typeof updateDynamicSystem === 'function') {
+    try {
+      updateDynamicSystem();
+    } catch (e) {
+      console.warn('[Dynamic] Error actualizando sistema:', e);
+    }
+  }
 
   // Inicializar widgets de rating para productos renderizados (si está disponible)
   if (window.initRatings) {
@@ -1315,9 +1395,18 @@ function renderBestSellers() {
   if (!bestSellersScroll) return;
 
   // Filtrar solo productos con mas_vendido: true
-  const bestSellers = products.filter(
+  let bestSellers = products.filter(
     (product) => product.mas_vendido === true && product.disponibilidad
   );
+
+  // ===== APLICAR ORDENAMIENTO DINÁMICO A BEST SELLERS =====
+  if (bestSellers.length > 0 && typeof sortBestSellersDynamic === 'function') {
+    try {
+      bestSellers = sortBestSellersDynamic(bestSellers);
+    } catch (e) {
+      console.warn('[Dynamic] Error ordenando best sellers:', e);
+    }
+  }
 
   // Si no hay productos, ocultar la sección
   if (bestSellers.length === 0) {
@@ -1329,7 +1418,7 @@ function renderBestSellers() {
   bestSellersScroll.innerHTML = "";
 
   // Crear cards para cada producto más vendido
-  bestSellers.forEach((product) => {
+  bestSellers.forEach((product, index) => {
     const displayProduct = product.isGrouped
       ? product.variants[product.currentVariant]
       : product;
@@ -1342,6 +1431,7 @@ function renderBestSellers() {
 
     const card = document.createElement("div");
     card.className = "best-seller-card";
+    card.style.animationDelay = `${index * 0.05}s`;
     card.onclick = () =>
       showProductDetail(encodeURIComponent(displayProduct.nombre));
 
