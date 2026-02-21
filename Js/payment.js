@@ -136,7 +136,43 @@ function showPaymentSection() {
         console.error('Error actualizando resumen:', error);
         showPaymentNotification('Error al cargar los productos', 'error');
     }
+
+    // resetear checkbox de confirmación cada vez que se abre el formulario
+    const checkbox = document.getElementById('location-confirm');
+    if (checkbox) checkbox.checked = false;
+
+    // cargar lista de países compatibles
+    loadPaymentCountryList();
 }
+
+/**
+ * Muestra en el formulario el listado de países compatibles
+a partir del JSON de configuración.
+ */
+async function loadPaymentCountryList() {
+    const container = document.getElementById('payment-country-list');
+    if (!container) return;
+
+    try {
+        const resp = await fetch('Json/pay.json');
+        if (!resp.ok) throw new Error('No se pudo cargar el listado de países');
+        const data = await resp.json();
+
+        let html = '<p>Por favor revisa cuidadosamente el listado y confirma que tu país está incluido. Países compatibles con nuestros métodos de pago:</p>';
+        if (Array.isArray(data.iban_countries)) {
+            html += '<h4>IBAN</h4><ul>' + data.iban_countries.map(c => `<li>${c}</li>`).join('') + '</ul>';
+        }
+        if (Array.isArray(data.zelle_countries)) {
+            html += '<h4>Zelle</h4><ul>' + data.zelle_countries.map(c => `<li>${c}</li>`).join('') + '</ul>';
+        }
+
+        container.innerHTML = html;
+    } catch (err) {
+        console.error('Error cargando países de pago:', err);
+        container.innerHTML = '<p>No se pudo cargar la lista de países compatibles.</p>';
+    }
+}
+
 
 function hidePaymentSection() {
     const paymentSection = document.getElementById('payment-section');
@@ -207,8 +243,28 @@ function updateOrderSummary() {
     paymentTotal.textContent = `$${total.toFixed(2)}`;
 }
 
+let isProcessingPayment = false; // bandera para evitar envíos múltiples
+
 async function processPayment(e) {
     e.preventDefault();
+
+    // protección contra doble envío
+    if (isProcessingPayment) {
+        console.warn('El pago ya está en proceso, espera un momento.');
+        return;
+    }
+
+    // chequear checkbox de confirmación de país
+    const checkbox = document.getElementById('location-confirm');
+    if (checkbox && !checkbox.checked) {
+        showPaymentNotification('Marca la casilla después de leer la lista y verificar que tu país aparece entre los compatibles.', 'error');
+        return;
+    }
+
+    isProcessingPayment = true;
+    const submitBtn = e.target.querySelector('.submit-btn');
+    if (submitBtn) submitBtn.disabled = true;
+
     const loadingNotification = showPaymentNotification('Procesando tu pedido...', 'loading');
 
     try {
@@ -277,6 +333,12 @@ async function processPayment(e) {
                 showPaymentNotification(error.message, 'error');
             }, 300);
         }
+    } finally {
+        // restaurar bandera y reactivar botón después de unos segundos
+        setTimeout(() => {
+            isProcessingPayment = false;
+            if (submitBtn) submitBtn.disabled = false;
+        }, 3000);
     }
 }
 

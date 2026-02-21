@@ -28,7 +28,7 @@
 .menu-toggle {
     background: none;
     border: none;
-    color: var(--rojo-oferta);
+    color: var(--searchA);
     font-size: 1.6rem;
     cursor: pointer;
     padding: 0.5rem;
@@ -96,7 +96,7 @@
 /* Carrito mejorado */
 .cart-btn {
     background-color: transparent;
-    color: var(--rojo-oferta);
+    color: var(--blanco);
     border: none;
     font-size: 1.6rem;
     cursor: pointer;
@@ -113,16 +113,16 @@
 }
 
 .cart-btn:hover {
-    background-color: var(--rojo-oscuro);
-    color: var(--gris-claro);
+    background-color: var(--searchA);
+    color: var(--negro);
 }
 
 #cart-count {
     position: absolute;
     top: -2px;
     right: -2px;
-    background: var(--rojo-oscuro);
-    color: var(--blanco);
+    background: var(--searchA);
+    color: var(--negro);
     border-radius: 50%;
     width: 22px;
     height: 22px;
@@ -131,7 +131,7 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    border: 2px solid var(--blanco);
+    border: 2px solid var(--negro);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -246,7 +246,7 @@
 }
 
 .search-btn {
-    background: linear-gradient(135deg, var(--color-principal-pastel), var(--rojo-oferta));
+    background: var(--searchA);
     color: var(--blanco);
     border: none;
     border-radius: 0 5px 5px 0;
@@ -341,7 +341,7 @@
 
 .location-icon {
     font-size: 1.3rem;
-    color: var(--rojo-oferta);
+    color: var(--blanco);
     flex-shrink: 0;
     animation: pulse-location 2s ease-in-out infinite;
 }
@@ -363,7 +363,7 @@
 
 .location-city {
     font-size: 1rem;
-    color: var(--rojo-oferta);
+    color: var(--blanco);
     font-weight: 700;
     margin: 0;
     letter-spacing: 0.3px;

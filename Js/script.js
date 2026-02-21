@@ -17,6 +17,24 @@ function debounce(fn, wait) {
 }
 const SEARCH_DEBOUNCE_MS = 250;
 
+// Helper to determine if a product (or grouped product) should be considered available
+function productIsAvailable(p) {
+  if (!p) return false;
+  // direct availability flag
+  if (p.disponibilidad === false) {
+    // if grouped, check variants as a fallback
+    if (p.isGrouped && Array.isArray(p.variants)) {
+      return p.variants.some((v) => v.disponibilidad !== false);
+    }
+    return false;
+  }
+  // if grouped but main item marked available, we still want to ensure at least one variant is available
+  if (p.isGrouped && Array.isArray(p.variants)) {
+    return p.variants.some((v) => v.disponibilidad !== false);
+  }
+  return true;
+}
+
 // Normaliza strings eliminando tildes/diacríticos — usado para búsqueda insensible a acentos
 function normalizeString(str) {
   return str ? String(str).normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/[\u0300-\u036f]/g, '') : '';
@@ -638,22 +656,26 @@ function searchProducts() {
   let filteredProducts = [];
 
   // 1) Coincidencias exactas (substring) sobre campos normalizados
-  const exactMatches = products.filter((product) => {
-    const name = product._normalizedNombre || normalizeString(product.nombre).toLowerCase();
-    const desc = product._normalizedDescripcion || normalizeString(product.descripcion || '').toLowerCase();
-    const cat = product._normalizedCategoria || normalizeString(product.categoria || '').toLowerCase();
-    return name.includes(normalizedTerm) || desc.includes(normalizedTerm) || cat.includes(normalizedTerm);
-  });
+  const exactMatches = products
+    .filter(productIsAvailable)
+    .filter((product) => {
+      const name = product._normalizedNombre || normalizeString(product.nombre).toLowerCase();
+      const desc = product._normalizedDescripcion || normalizeString(product.descripcion || '').toLowerCase();
+      const cat = product._normalizedCategoria || normalizeString(product.categoria || '').toLowerCase();
+      return name.includes(normalizedTerm) || desc.includes(normalizedTerm) || cat.includes(normalizedTerm);
+    });
 
   if (exactMatches.length > 0) {
     filteredProducts = exactMatches;
   } else {
     // 2) Fallback fuzzy (errores tipográficos / faltan acentos)
-    filteredProducts = products.filter((product) => {
-      const name = product._normalizedNombre || normalizeString(product.nombre).toLowerCase();
-      const desc = product._normalizedDescripcion || normalizeString(product.descripcion || '').toLowerCase();
-      return fuzzyMatch(normalizedTerm, name) || fuzzyMatch(normalizedTerm, desc);
-    });
+    filteredProducts = products
+      .filter(productIsAvailable)
+      .filter((product) => {
+        const name = product._normalizedNombre || normalizeString(product.nombre).toLowerCase();
+        const desc = product._normalizedDescripcion || normalizeString(product.descripcion || '').toLowerCase();
+        return fuzzyMatch(normalizedTerm, name) || fuzzyMatch(normalizedTerm, desc);
+      });
   }
 
   // Actualizar dropdown de sugerencias en tiempo real
@@ -730,8 +752,10 @@ function getSearchSuggestions(normalizedTerm, limit = 6) {
     return suggestions.length >= limit;
   };
 
-  // 1) Productos - coincidencias exactas por nombre
-  const prodExact = products.filter((p) => (p._normalizedNombre || '').includes(normalizedTerm));
+  // 1) Productos - coincidencias exactas por nombre (solo disponibles)
+  const prodExact = products
+    .filter(productIsAvailable)
+    .filter((p) => (p._normalizedNombre || '').includes(normalizedTerm));
   for (const p of prodExact) {
     if (pushSuggestion('product', p)) return suggestions;
   }
@@ -754,8 +778,9 @@ function getSearchSuggestions(normalizedTerm, limit = 6) {
     if (pushSuggestion('category', c)) return suggestions;
   }
 
-  // 4) Productos fuzzy (fallback)
+  // 4) Productos fuzzy (fallback) – únicamente disponibles
   const prodFuzzy = products
+    .filter(productIsAvailable)
     .filter((p) => {
       const name = p._normalizedNombre || normalizeString(p.nombre).toLowerCase();
       const desc = p._normalizedDescripcion || normalizeString(p.descripcion || '').toLowerCase();
@@ -1191,23 +1216,8 @@ function renderProducts(productsToRender = products) {
                       <span class="current-price">${finalPrice} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-sm"></span>
                   </div>
                   
-                  <div class="quantity-section">
-                      <button class="add-to-cart ${
-                        !displayProduct.disponibilidad ? "disabled" : ""
-                      }" 
-                              onclick="addToCart('${
-                                displayProduct.nombre
-                              }', false, event)"
-                              ${!displayProduct.disponibilidad ? "disabled" : ""}>
-                          <i class="fas fa-${
-                            !displayProduct.disponibilidad ? "lock" : "cart-plus"
-                          }"></i>
-                          <span>${
-                            !displayProduct.disponibilidad
-                              ? "Agotado"
-                              : "Añadir al carrito"
-                          }</span>
-                      </button>
+                  <div class="quantity-section" data-product-name="${displayProduct.nombre}">
+                      <!-- Se renderiza dinámicamente por getProductQuantityHTML -->
                   </div>
 
                   <!-- Contenedor de rating: estrellas, media y votos -->
@@ -1267,6 +1277,9 @@ function renderProducts(productsToRender = products) {
       console.warn("initRatings fallo:", e);
     }
   }
+
+  // Actualizar todas las secciones de cantidad dinámicamente
+  updateAllProductQuantitySections();
 }
 
 function changeProductVariant(thumbElement, baseName, variantIndex, event) {
@@ -1357,23 +1370,11 @@ function changeProductVariant(thumbElement, baseName, variantIndex, event) {
     `;
   priceContainer.innerHTML = priceHTML;
 
-  // Actualizar el botón de añadir al carrito
-  const addButton = productCard.querySelector(".add-to-cart");
-  const buttonClass = !variant.disponibilidad
-    ? "add-to-cart disabled"
-    : "add-to-cart";
-  addButton.className = buttonClass;
-  addButton.disabled = !variant.disponibilidad;
-  addButton.setAttribute(
-    "onclick",
-    `addToCart('${variant.nombre}', false, event)`
-  );
-  addButton.innerHTML = `
-        <i class="fas fa-${!variant.disponibilidad ? "lock" : "cart-plus"}"></i>
-        <span>${
-          !variant.disponibilidad ? "Agotado" : "Añadir al carrito"
-        }</span>
-    `;
+  // Actualizar la sección de cantidad (botón o contador)
+  const quantitySectionEl = productCard.querySelector(".quantity-section");
+  if (quantitySectionEl) {
+    quantitySectionEl.innerHTML = getProductQuantityHTML(variant.nombre, variant);
+  }
 
   // Actualizar las miniaturas activas
   const thumbs = productCard.querySelectorAll(".variant-thumb");
@@ -1396,7 +1397,7 @@ function renderBestSellers() {
 
   // Filtrar solo productos con mas_vendido: true
   let bestSellers = products.filter(
-    (product) => product.mas_vendido === true && product.disponibilidad
+    (product) => product.mas_vendido === true && productIsAvailable(product)
   );
 
   // ===== APLICAR ORDENAMIENTO DINÁMICO A BEST SELLERS =====
@@ -1497,13 +1498,13 @@ function renderCategoriesCircle() {
 
   // Crear cards para cada categoría
   displayCategories.forEach((category, index) => {
-    // Contar productos en cada categoría
+    // Contar productos en cada categoría (solo disponibles)
     let productsInCategory;
     if (category === "Todo") {
-      productsInCategory = products.filter(p => p.disponibilidad).length;
+      productsInCategory = products.filter(productIsAvailable).length;
     } else {
       productsInCategory = products.filter(
-        p => p.categoria === category && p.disponibilidad
+        (p) => p.categoria === category && productIsAvailable(p)
       ).length;
     }
 
@@ -1864,7 +1865,7 @@ function showProductDetail(productName) {
                     ${
                       !product.disponibilidad
                         ? "Producto Agotado"
-                        : "Añadir al carrito"
+                        : "Añadir a la cesta"
                     }
                 </button>
                 
@@ -2212,6 +2213,9 @@ function addToCart(productName, fromDetail = false, event) {
   updateCart();
   saveCart();
   showCartNotification(product.cleanName || product.nombre, quantity);
+  
+  // Actualizar la sección de cantidad en la tarjeta del producto
+  updateProductQuantitySection(product.nombre);
 }
 
 function updateCart() {
@@ -2284,6 +2288,9 @@ function updateCart() {
   }
 
   updateCartCount();
+  
+  // Actualizar las secciones de cantidad en los productos visibles
+  updateAllProductQuantitySections();
 }
 
 /**
@@ -2474,6 +2481,216 @@ function updateCartCount() {
 
 function saveCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+/**
+ * Obtiene la cantidad de un producto en el carrito
+ * @param {string} productName - Nombre del producto
+ * @returns {number} Cantidad en carrito o 0
+ */
+function getProductCartQuantity(productName) {
+  const item = cart.find(cartItem => {
+    const itemData = cartItem.product || cartItem.pack;
+    return itemData && itemData.nombre === productName;
+  });
+  return item ? item.quantity : 0;
+}
+
+/**
+ * Genera el HTML para la sección de cantidad: contador o botón de agregar
+ * @param {string} productName - Nombre del producto
+ * @param {object} displayProduct - Datos del producto a mostrar
+ * @returns {string} HTML del contador o botón
+ */
+function getProductQuantityHTML(productName, displayProduct) {
+  const quantity = getProductCartQuantity(productName);
+  
+  if (quantity === 0) {
+    // Mostrar botón de agregar
+    return `
+      <button class="add-to-cart ${!displayProduct.disponibilidad ? "disabled" : ""}" 
+              onclick="addToCart('${displayProduct.nombre}', false, event)"
+              ${!displayProduct.disponibilidad ? "disabled" : ""}>
+        <i class="fas fa-${!displayProduct.disponibilidad ? "lock" : "cart-plus"}"></i>
+        <span>${!displayProduct.disponibilidad ? "Agotado" : "Añadir a la cesta"}</span>
+      </button>
+    `;
+  } else {
+    // Mostrar contador con botones + y -
+    const isTrash = quantity === 1;
+    const decreaseIcon = isTrash ? 'trash-alt' : 'minus';
+    const decreaseClass = isTrash ? 'quantity-btn decrease-btn trash-icon' : 'quantity-btn decrease-btn';
+    
+    return `
+      <div class="quantity-counter">
+        <button class="${decreaseClass}" 
+                onclick="decreaseProductQuantity('${displayProduct.nombre}', event)"
+                title="${isTrash ? 'Eliminar del carrito' : 'Disminuir cantidad'}">
+          <i class="fas fa-${decreaseIcon}"></i>
+        </button>
+        <span class="quantity-display">${quantity}</span>
+        <button class="quantity-btn increase-btn" 
+                onclick="increaseProductQuantity('${displayProduct.nombre}', event)"
+                title="Aumentar cantidad">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+    `;
+  }
+}
+
+/**
+ * Actualiza dinámicamente la sección de cantidad en la tarjeta del producto
+ * @param {string} productName - Nombre del producto
+ */
+function updateProductQuantitySection(productName) {
+  // Buscar todas las tarjetas de productos que coincidan
+  const productCards = document.querySelectorAll('.product-card');
+  
+  productCards.forEach(card => {
+    // Buscar si este card contiene este producto
+    const titleEl = card.querySelector('.product-title');
+    if (titleEl) {
+      const cardProductName = titleEl.textContent.trim();
+      const actualProductName = productName.replace(/\(v\d+\)\s*/g, "").trim();
+      
+      // Comparar nombres básicos (sin variantes)
+      if (cardProductName.includes(actualProductName) || actualProductName.includes(cardProductName)) {
+        const quantitySectionEl = card.querySelector('.quantity-section');
+        if (quantitySectionEl) {
+          // Obtener datos del producto para generar el HTML correcto
+          const product = products.find(p => p.nombre === productName) ||
+                         products.flatMap(p => p.isGrouped ? p.variants : []).find(v => v.nombre === productName);
+          
+          if (product) {
+            const displayProduct = product.isGrouped ? product.variants[product.currentVariant] : product;
+            quantitySectionEl.innerHTML = getProductQuantityHTML(productName, displayProduct);
+          }
+        }
+      }
+    }
+  });
+}
+
+/**
+ * Anima el número de cantidad (sube o baja según la acción)
+ * @param {string} productName - Nombre del producto
+ * @param {string} direction - 'increasing' o 'decreasing'
+ */
+function animateQuantityDisplay(productName, direction) {
+  const productCards = document.querySelectorAll('.product-card');
+  
+  productCards.forEach(card => {
+    const titleEl = card.querySelector('.product-title');
+    if (titleEl) {
+      const cardProductName = titleEl.textContent.trim();
+      const actualProductName = productName.replace(/\(v\d+\)\s*/g, "").trim();
+      
+      if (cardProductName.includes(actualProductName) || actualProductName.includes(cardProductName)) {
+        const quantityDisplay = card.querySelector('.quantity-display');
+        if (quantityDisplay) {
+          // Remover animación anterior si existe
+          quantityDisplay.classList.remove('increasing', 'decreasing');
+          
+          // Forzar reflow para que la animación se reinicie
+          void quantityDisplay.offsetWidth;
+          
+          // Aplicar nueva animación
+          quantityDisplay.classList.add(direction);
+          
+          // Remover clase después de que termine la animación
+          setTimeout(() => {
+            quantityDisplay.classList.remove(direction);
+          }, 400);
+        }
+      }
+    }
+  });
+}
+
+/**
+ * Incrementa la cantidad de un producto en el carrito
+ * @param {string} productName - Nombre del producto
+ * @param {event} event - Evento del click
+ */
+function increaseProductQuantity(productName, event) {
+  if (event) event.stopPropagation();
+  
+  const decodedName = decodeURIComponent(productName);
+  const cartItem = cart.find(item => {
+    const itemData = item.product || item.pack;
+    return itemData && itemData.nombre === decodedName;
+  });
+  
+  if (cartItem) {
+    cartItem.quantity += 1;
+    updateCart();
+    saveCart();
+    
+    // Animar el número después de actualizar
+    setTimeout(() => {
+      animateQuantityDisplay(decodedName, 'increasing');
+    }, 50);
+    
+    updateProductQuantitySection(decodedName);
+  }
+}
+
+/**
+ * Disminuye la cantidad de un producto en el carrito
+ * Si la cantidad llega a 0, lo elimina del carrito
+ * @param {string} productName - Nombre del producto
+ * @param {event} event - Evento del click
+ */
+function decreaseProductQuantity(productName, event) {
+  if (event) event.stopPropagation();
+  
+  const decodedName = decodeURIComponent(productName);
+  const cartIndex = cart.findIndex(item => {
+    const itemData = item.product || item.pack;
+    return itemData && itemData.nombre === decodedName;
+  });
+  
+  if (cartIndex !== -1) {
+    if (cart[cartIndex].quantity === 1) {
+      // Eliminar del carrito si es el último
+      cart.splice(cartIndex, 1);
+    } else {
+      cart[cartIndex].quantity -= 1;
+      
+      // Animar el número solo si no se elimina
+      setTimeout(() => {
+        animateQuantityDisplay(decodedName, 'decreasing');
+      }, 50);
+    }
+    updateCart();
+    saveCart();
+    updateProductQuantitySection(decodedName);
+  }
+}
+
+/**
+ * Actualiza todas las secciones de cantidad en los productos visibles
+ * Se llama después de cambios en el carrito
+ */
+function updateAllProductQuantitySections() {
+  const productCards = document.querySelectorAll('.product-card');
+  
+  productCards.forEach(card => {
+    const quantitySectionEl = card.querySelector('.quantity-section');
+    if (quantitySectionEl && quantitySectionEl.dataset.productName) {
+      const productName = quantitySectionEl.dataset.productName;
+      
+      // Buscar el producto correspondiente
+      const product = products.find(p => p.nombre === productName) ||
+                     products.flatMap(p => p.isGrouped ? p.variants : []).find(v => v.nombre === productName);
+      
+      if (product) {
+        const displayProduct = product.isGrouped ? product.variants[product.currentVariant] : product;
+        quantitySectionEl.innerHTML = getProductQuantityHTML(productName, displayProduct);
+      }
+    }
+  });
 }
 
 // Cerrar carrito al hacer clic fuera

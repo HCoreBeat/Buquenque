@@ -39,16 +39,19 @@
 /* Borde ligero que parpadea para nuevos productos - EXTRA SUTIL y moderno */
 @keyframes newProductPulse {
   0% {
-    box-shadow: inset 0 0 0 0.5px rgba(255, 182, 182, 0.15),
-                0 2px 8px rgba(0, 0, 0, 0.04);
+    box-shadow:
+      inset 0 0 0 0.5px rgba(255, 182, 182, 0.15),
+      0 2px 8px rgba(0, 0, 0, 0.04);
   }
   50% {
-    box-shadow: inset 0 0 0 0.5px rgba(255, 182, 182, 0.4),
-                0 3px 10px rgba(255, 182, 182, 0.06);
+    box-shadow:
+      inset 0 0 0 0.5px rgba(255, 182, 182, 0.4),
+      0 3px 10px rgba(255, 182, 182, 0.06);
   }
   100% {
-    box-shadow: inset 0 0 0 0.5px rgba(255, 182, 182, 0.15),
-                0 2px 8px rgba(0, 0, 0, 0.04);
+    box-shadow:
+      inset 0 0 0 0.5px rgba(255, 182, 182, 0.15),
+      0 2px 8px rgba(0, 0, 0, 0.04);
   }
 }
 
@@ -111,13 +114,17 @@
 
 /* Efecto gradiente sutil al fondo - MÁS ELEGANTE */
 .recent-products-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -30%;
   right: -30%;
   width: 350px;
   height: 350px;
-  background: radial-gradient(circle, rgba(255, 182, 182, 0.02) 0%, transparent 75%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 182, 182, 0.02) 0%,
+    transparent 75%
+  );
   border-radius: 50%;
   pointer-events: none;
 }
@@ -149,7 +156,7 @@
 }
 
 .recent-products-title i {
-  color: var(--color-principal-pastel);
+  color: #f3a847;
   animation: subtleGlimmer 4s ease-in-out infinite;
   font-size: 1.1rem;
 }
@@ -194,13 +201,17 @@
 
 /* Indicador visual de reciente - línea superior EXTRA SUTIL */
 .recent-product-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 0.5px;
-  background: linear-gradient(90deg, rgba(255, 182, 182, 0.4) 0%, rgba(212, 168, 232, 0.3) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 182, 182, 0.4) 0%,
+    rgba(212, 168, 232, 0.3) 100%
+  );
   opacity: 0.6;
   z-index: 3;
 }
@@ -232,7 +243,11 @@
   position: absolute;
   top: 6px;
   right: 6px;
-  background: linear-gradient(135deg, rgba(255, 107, 107, 0.7) 0%, rgba(220, 50, 50, 0.7) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 107, 107, 0.7) 0%,
+    rgba(220, 50, 50, 0.7) 100%
+  );
   color: var(--blanco);
   font-size: 0.55rem;
   font-weight: 700;
@@ -286,7 +301,11 @@
 
 /* Badge temporales - MÁS SUTILES */
 .badge-new-today {
-  background: linear-gradient(135deg, rgba(255, 182, 182, 0.75) 0%, rgba(218, 142, 136, 0.75) 100%) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 182, 182, 0.75) 0%,
+    rgba(218, 142, 136, 0.75) 100%
+  ) !important;
   color: #ffffff !important;
   border: 0.5px solid rgba(255, 150, 150, 0.3) !important;
   animation: fadeInSoft 0.4s ease-out !important;
@@ -297,18 +316,24 @@
 }
 
 .badge-new-week {
-  background: linear-gradient(135deg, rgba(168, 200, 225, 0.7) 0%, rgba(150, 190, 205, 0.7) 100%) !important;
-  color: #ffffff !important;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;;
+  background: var(--botonA) !important;
+  color: var(--negro) !important;
   border: 0.5px solid rgba(150, 190, 205, 0.2) !important;
   animation: fadeInSoft 0.4s ease-out !important;
-  font-size: 8px !important;
+  font-size: 10px !important;
   padding: 1px 5px !important;
   letter-spacing: 0.2px !important;
   font-weight: 600 !important;
 }
 
 .badge-updated {
-  background: linear-gradient(135deg, rgba(212, 168, 232, 0.65) 0%, rgba(200, 168, 232, 0.65) 100%) !important;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: #ff126d9a !important;
   color: #ffffff !important;
   border: 0.5px solid rgba(200, 168, 232, 0.2) !important;
   animation: fadeInSoft 0.4s ease-out !important;
@@ -349,13 +374,18 @@
 
 /* Pequeño brillo al pasar mouse en cards recientes */
 .product-card.is-recent::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -395,12 +425,12 @@
   .recent-products-section {
     margin: 0 1rem 2rem 1rem;
   }
-  
+
   .recent-products-grid {
     grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
     gap: 0.85rem;
   }
-  
+
   .recent-product-image {
     height: 105px;
   }
@@ -411,38 +441,38 @@
     margin: 0 1rem 2rem 1rem;
     padding: 1.2rem;
   }
-  
+
   .recent-products-title {
     font-size: 1.05rem;
     gap: 0.4rem;
   }
-  
+
   .recent-products-subtitle {
     font-size: 0.75rem;
   }
-  
+
   .recent-products-grid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 0.8rem;
   }
-  
+
   .recent-product-image {
     height: 95px;
   }
-  
+
   .recent-product-info {
     padding: 0.6rem;
   }
-  
+
   .recent-product-title {
     font-size: 0.75rem;
     margin-bottom: 0.25rem;
   }
-  
+
   .recent-product-price {
     font-size: 0.85rem;
   }
-  
+
   .recent-product-badge-sale {
     top: 5px;
     right: 5px;
@@ -453,42 +483,42 @@
 
 @media (max-width: 480px) {
   .recent-products-section {
-    margin: 0 0.75rem 1.5rem 0.75rem;
+    margin: 0 0.75rem 0.5rem 0.75rem;
     padding: 0.9rem;
   }
-  
+
   .recent-products-title {
     font-size: 0.95rem;
     gap: 0.3rem;
   }
-  
+
   .recent-products-toolbar {
     gap: 0.5rem;
   }
-  
+
   .recent-products-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.6rem;
   }
-  
+
   .recent-product-image {
     height: 80px;
   }
-  
+
   .recent-product-info {
     padding: 0.5rem;
   }
-  
+
   .recent-product-title {
     font-size: 0.7rem;
     -webkit-line-clamp: 1;
     line-clamp: 1;
   }
-  
+
   .recent-product-price {
     font-size: 0.8rem;
   }
-  
+
   .recent-product-badge-sale {
     font-size: 0.48rem;
     padding: 0.5px 3px;
@@ -513,11 +543,16 @@
 }
 
 .product-card.new-product::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: -1px;
   border-radius: var(--borde-radius);
-  background: linear-gradient(45deg, transparent, rgba(255, 182, 182, 0.1), transparent);
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 182, 182, 0.1),
+    transparent
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;

@@ -352,11 +352,11 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    border: 2px solid var(--color-principal-pastel);
+    border: 2px solid var(--boton-carrito);
 }
 
 .checkout-btn:hover {
-    background-color: var(--color-principal-pastel);
+    background-color: var(--botonA);
     transform: translateY(-2px);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
