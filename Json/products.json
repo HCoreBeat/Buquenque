@@ -370,9 +370,9 @@
         "Leche_en_polvo_(1kg).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Leche en polvo (1kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-08T17:35:17.712Z"
+      "modified_at": "2026-02-22T20:23:37.699Z"
     },
     {
       "id": "prod_1769297232608_yu795qbia",
@@ -1645,9 +1645,9 @@
         "20053_1769206888567.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Yogurt probiótico de 1L (fresa y platanito), una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-22T20:23:37.699Z"
     },
     {
       "id": "prod_1768441690510_ynzwusik9",
