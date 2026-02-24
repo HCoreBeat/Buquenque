@@ -234,9 +234,9 @@
         "Mortadella_de_Pollo.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Mortadella de Pollo, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-02-11T14:16:02.609Z"
+      "modified_at": "2026-02-24T19:59:33.573Z"
     },
     {
       "id": "prod_1768923781803_n2hnqahbv",
@@ -276,8 +276,8 @@
       "id": "prod_1768441690510_lmfmz1hj5",
       "nombre": "Frazada de Piso",
       "categoria": "Utiles del Hogar",
-      "precio": 1,
-      "descuento": 0,
+      "precio": 1.5,
+      "descuento": 33.33,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -287,7 +287,7 @@
       "descripcion": "Disfruta de la calidad de Frazada de Piso, una excelente opción de nuestra categoría Utiles del Hogar. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.577Z"
     },
     {
       "id": "prod_1768441690510_nm24ia7xr",
@@ -795,9 +795,9 @@
         "Jugo_Tuana_Piña_(200ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Jugo Tuana Piña (200ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.572Z"
     },
     {
       "id": "prod_1768441690510_35bofl7sg",
@@ -812,9 +812,9 @@
         "Acondicionador_SEDAL_(620ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Acondicionador SEDAL (620ml), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.578Z"
     },
     {
       "id": "prod_1769297232608_t1t8j7j86",
@@ -846,9 +846,9 @@
         "Toallitas_Humedas_(80u).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Toallitas Húmedas (80u), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.582Z"
     },
     {
       "id": "prod_1768509219912_8zv9x9m9l",
@@ -1101,9 +1101,9 @@
         "Set_de_Estropajos.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Set de Estropajos, una excelente opción de nuestra categoría Utiles del Hogar. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.576Z"
     },
     {
       "id": "prod_1768441690510_vkkhmof4o",
@@ -1186,9 +1186,9 @@
         "Caja_de_jugos_sabor_Piña.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Caja de jugos sabor Piña (27 x 200ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.571Z"
     },
     {
       "id": "prod_1768441690510_3zn04c14a",
@@ -1203,9 +1203,9 @@
         "Talco_para_Bebe_(200g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Talco para Bebé (200g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.578Z"
     },
     {
       "id": "prod_1768441690510_w8rkr6cte",
@@ -1220,9 +1220,9 @@
         "Pack_de_12_Estropajos.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pack de 12 Estropajos, una excelente opción de nuestra categoría Utiles del Hogar. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.575Z"
     },
     {
       "id": "prod_1768441690510_ewx9ktgvg",
@@ -1254,9 +1254,9 @@
         "Refresco_Gaseado_Mate.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Refresco Gaseado Mate (1.5Lt) Cero Calorías, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.570Z"
     },
     {
       "id": "prod_1768441690510_cep037qmr",
@@ -1271,9 +1271,9 @@
         "Ajo_Granulado_(255g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Ajo Granulado (255g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.585Z"
     },
     {
       "id": "prod_1769227733184_kw7ouwd8b",
@@ -1305,9 +1305,9 @@
         "Pack_x_6_Refresco_Gaseado_Mate.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pack x 6 Refresco Gaseado Mate (1.5Lt) Cero Calorías, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.571Z"
     },
     {
       "id": "prod_1768441690510_6xn0n5bsd",
@@ -1356,9 +1356,9 @@
         "Sazonador_de_carnes_(396g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Sazonador de carnes (396g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.585Z"
     },
     {
       "id": "prod_1768441690510_4m16b3ly0",
@@ -1373,9 +1373,9 @@
         "Bicarbonato_(453g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Bicarbonato (453g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.586Z"
     },
     {
       "id": "prod_1768441690510_kn64b8pa8",
@@ -1679,9 +1679,9 @@
         "Ketchup_Pramesa_(300g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Ketchup Pramesa (300g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.586Z"
     },
     {
       "id": "prod_1768441690510_p9644ie5y",
@@ -1725,14 +1725,14 @@
       "descuento": 15.09,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "Mayonesa_HollandPark_(250ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Mayonesa HollandPark (250ml), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.584Z"
     },
     {
       "id": "prod_1768441690510_hfzpznn1o",
@@ -1934,9 +1934,9 @@
         "Chicle_sin_azucar_70u.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Chicle sin azúcar 70u, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.577Z"
     },
     {
       "id": "prod_1768441690510_aa0pwzj5i",
@@ -2183,15 +2183,15 @@
       "precio": 2.14,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "rayan_ketchup_1769200070307.jpg"
       ],
       "descripcion": "Dale sabor a tus comidas con la clásica salsa de tomate Rayan. Elaborada con tomates seleccionados, esta presentación de 340 g es perfecta para acompañar pastas, carnes, snacks y recetas criollas. Su textura suave y sabor equilibrado la convierten en un básico imprescindible en tu cocina.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:59:33.586Z"
     },
     {
       "id": "prod_1769202654831_u5kvi6lhi",
@@ -2370,15 +2370,15 @@
       "precio": 0.7,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "29034_1769920829022.jpg"
       ],
       "descripcion": "Disfruta de la delicia y frescura del jugo de piña. ideal para meriendas y refrescar en cualquier horario",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-01T04:45:45.320Z",
-      "modified_at": "2026-02-01T04:45:45.320Z"
+      "modified_at": "2026-02-24T19:59:33.571Z"
     },
     {
       "id": "prod_1769974779698_8olg1rh5p",
@@ -2557,15 +2557,15 @@
       "precio": 2.9,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "44792_1771255296666.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-16T15:32:04.846Z",
-      "modified_at": "2026-02-16T15:32:04.846Z"
+      "modified_at": "2026-02-24T19:59:33.570Z"
     },
     {
       "id": "prod_1771255391271_0s958gn5g",
@@ -2676,15 +2676,15 @@
       "precio": 11,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "45990_1771364304158.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-17T21:38:52.684Z",
-      "modified_at": "2026-02-17T21:38:52.684Z"
+      "modified_at": "2026-02-24T19:59:33.572Z"
     },
     {
       "id": "prod_1771810113359_uesbogopo",
