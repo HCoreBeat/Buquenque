@@ -90,17 +90,17 @@
       "nombre": "Cartón de Huevos",
       "categoria": "Despensa",
       "precio": 11.5,
-      "descuento": 21.74,
+      "descuento": 17.39,
       "mas_vendido": true,
       "nuevo": false,
       "oferta": true,
       "imagenes": [
-        "huevos_1770917017277.jpg"
+        "050-carton-de-huevos-x-30-u-blancos_1771961041735.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-12T17:23:51.852Z"
+      "modified_at": "2026-02-24T19:24:19.442Z"
     },
     {
       "id": "prod_1768923054742_dhekmp0os",
@@ -517,15 +517,15 @@
       "precio": 0.7,
       "descuento": 0,
       "mas_vendido": true,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "Jabon_de_Baño_Marwa.jpg"
       ],
       "descripcion": "Jabón de belleza marca MARWA, enriquecido con extracto de polvo de carbón y certificado como producto vegano. Con un peso neto de 100g, es una opción excelente para el cuidado de la piel dentro de nuestra categoría de Aseo y Belleza.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:24:15.441Z"
     },
     {
       "id": "prod_1769226986599_pfsrf2pax",
@@ -1084,9 +1084,9 @@
         "c48fcb12-52ba-44af-bd94-3d6491ddfdce_1769296310864.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Queso Gouda (3Kg), una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:24:15.441Z"
     },
     {
       "id": "prod_1768441690510_yv6cayff0",
@@ -1798,9 +1798,9 @@
         "Paquete_de_cafe_Dufiltro_(250g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de café Dufiltro (250g), una excelente opción de nuestra categoría Cafetería. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-24T19:24:15.440Z"
     },
     {
       "id": "prod_1769297232608_u1gkj9nbs",
@@ -2427,9 +2427,9 @@
         "picadillo_mdm_1770068151335.jpg"
       ],
       "descripcion": "Mdm Polaco de alta calida. Tabletas de 11kg",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-02T21:36:01.806Z",
-      "modified_at": "2026-02-02T21:36:01.806Z"
+      "modified_at": "2026-02-24T19:24:15.440Z"
     },
     {
       "id": "prod_1770819915685_uohxroax1",
