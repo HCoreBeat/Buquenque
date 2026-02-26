@@ -1718,23 +1718,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1769297232608_j4a56xz23",
-      "nombre": "Mayonesa HollandPark (250ml)",
-      "categoria": "Aderezos",
-      "precio": 2.85,
-      "descuento": 15.09,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Mayonesa_HollandPark_(250ml).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Mayonesa HollandPark (250ml), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.584Z"
-    },
-    {
       "id": "prod_1768441690510_hfzpznn1o",
       "nombre": "Tanqueta de ensalada fría (4lts)",
       "categoria": "Confitura",
@@ -2770,6 +2753,57 @@
       "disponibilidad": true,
       "created_at": "2026-02-24T17:26:52.227Z",
       "modified_at": "2026-02-24T17:26:52.227Z"
+    },
+    {
+      "id": "prod_1772069781750_na7wo0yhn",
+      "nombre": "Mayonesa HollandPark (500ml)",
+      "categoria": "Aderezos",
+      "precio": 4.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img-20260225-wa0009_1772069781755.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-26T01:40:49.364Z",
+      "modified_at": "2026-02-26T01:40:49.364Z"
+    },
+    {
+      "id": "prod_1772069960674_5cjim17vs",
+      "nombre": "Sumo de Limon 500ml",
+      "categoria": "Despensa",
+      "precio": 4.65,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img-20260225-wa0008_1772069960687.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-26T01:40:51.525Z",
+      "modified_at": "2026-02-26T01:40:51.525Z"
+    },
+    {
+      "id": "prod_1772070039908_h8liucaq8",
+      "nombre": "Cubeta de Galletas de Soda",
+      "categoria": "Confitura",
+      "precio": 11.47,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img-20260225-wa0007_1772070039928.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-26T01:40:53.594Z",
+      "modified_at": "2026-02-26T01:40:53.594Z"
     }
   ]
 }
