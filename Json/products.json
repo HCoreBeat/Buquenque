@@ -1721,8 +1721,8 @@
       "id": "prod_1768441690510_hfzpznn1o",
       "nombre": "Tanqueta de ensalada fría (4lts)",
       "categoria": "Confitura",
-      "precio": 16,
-      "descuento": 0,
+      "precio": 28,
+      "descuento": 42.86,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -1732,7 +1732,7 @@
       "descripcion": "Disfruta de la calidad de Tanqueta de ensalada fría (4lts), una excelente opción de nuestra categoría Comida. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-27T00:49:07.997Z"
     },
     {
       "id": "prod_1768441690510_1q2faykkk",
