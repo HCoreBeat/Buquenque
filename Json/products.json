@@ -90,7 +90,7 @@
       "nombre": "Cartón de Huevos",
       "categoria": "Despensa",
       "precio": 11.5,
-      "descuento": 17.39,
+      "descuento": 4.35,
       "mas_vendido": true,
       "nuevo": false,
       "oferta": true,
@@ -100,7 +100,7 @@
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-24T19:24:19.442Z"
+      "modified_at": "2026-02-28T00:34:13.266Z"
     },
     {
       "id": "prod_1768923054742_dhekmp0os",
@@ -1840,8 +1840,8 @@
       "id": "prod_1768441690510_h5qqrqz06",
       "nombre": "Carne de ovejo x lbs",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 2,
-      "descuento": 0,
+      "precio": 2.37,
+      "descuento": 15.61,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -1851,7 +1851,7 @@
       "descripcion": "Disfruta de la calidad de Carne de ovejo x lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-02-28T00:34:13.264Z"
     },
     {
       "id": "prod_1768441690510_5bquahf1q",
@@ -2804,6 +2804,40 @@
       "disponibilidad": true,
       "created_at": "2026-02-26T01:40:53.594Z",
       "modified_at": "2026-02-26T01:40:53.594Z"
+    },
+    {
+      "id": "prod_1772238681809_9kzilq1ry",
+      "nombre": "Helado Nestle 450ml (Fresa)",
+      "categoria": "Lácteos",
+      "precio": 4.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "53955_1772238682027.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-28T00:34:11.632Z",
+      "modified_at": "2026-02-28T00:34:11.632Z"
+    },
+    {
+      "id": "prod_1772238758846_9o5c439un",
+      "nombre": "Helado Nestle 450ml (Vainilla)",
+      "categoria": "Lácteos",
+      "precio": 4.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "53954_1772238759054.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-02-28T00:34:13.259Z",
+      "modified_at": "2026-02-28T00:34:13.259Z"
     }
   ]
 }
