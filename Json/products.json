@@ -361,8 +361,8 @@
       "id": "prod_1769919470708_wghwn1olf",
       "nombre": "Leche en polvo (1kg)",
       "categoria": "Despensa",
-      "precio": 8,
-      "descuento": 0,
+      "precio": 10,
+      "descuento": 20,
       "mas_vendido": true,
       "nuevo": true,
       "oferta": false,
@@ -372,7 +372,7 @@
       "descripcion": "Disfruta de la calidad de Leche en polvo (1kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-22T20:23:37.699Z"
+      "modified_at": "2026-02-28T03:40:16.782Z"
     },
     {
       "id": "prod_1769297232608_yu795qbia",
@@ -2563,9 +2563,9 @@
         "44795_1771255391489.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-16T15:32:07.002Z",
-      "modified_at": "2026-02-16T15:32:07.002Z"
+      "modified_at": "2026-02-28T03:40:16.781Z"
     },
     {
       "id": "prod_1771255455739_z92mxmjqj",
