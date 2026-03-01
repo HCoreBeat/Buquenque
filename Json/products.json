@@ -727,9 +727,9 @@
         "Mayonesa_Victoria_(500ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Mayonesa \"Victoria\" (500ml), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-01T18:51:14.447Z"
     },
     {
       "id": "prod_1768441690510_u0qqsmz96",
@@ -2325,9 +2325,9 @@
         "28918_1769919763267.jpg"
       ],
       "descripcion": "Dale un toque irresistible a tus comidas con la Mayonesa Victoria Garden. Definida por su textura rica, cremosa y suave, esta mayonesa es el ingrediente secreto para elevar el sabor de tus hamburguesas, sándwiches y ensaladas. Presentada en un generoso frasco de vidrio con tapa hermética azul, garantiza una frescura duradera y una consistencia profesional que hará que cada bocado sea una experiencia gourmet en casa.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-01T04:25:53.048Z",
-      "modified_at": "2026-02-01T04:25:53.048Z"
+      "modified_at": "2026-03-01T18:51:14.448Z"
     },
     {
       "id": "prod_1769920633225_umws2zt0k",
