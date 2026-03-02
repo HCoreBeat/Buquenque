@@ -72,18 +72,18 @@
       "id": "prod_1768441690510_gkp20pj1x",
       "nombre": "Espaguetis (500g)",
       "categoria": "Despensa",
-      "precio": 1.12,
-      "descuento": 0,
+      "precio": 1.16,
+      "descuento": 3.45,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "Espaguetis_(500g).jpg"
+        "e19fff12-cbf6-4ae0-9dfe-37dbe768153a_1772439165704.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Espaguetis (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-02T08:27:53.032Z"
     },
     {
       "id": "prod_1768783820711_rmnry541r",
@@ -138,20 +138,20 @@
     },
     {
       "id": "prod_1768441690510_ma2k8r01f",
-      "nombre": "Aceite (900ml)",
+      "nombre": "Aceite (1L)",
       "categoria": "Despensa",
-      "precio": 4.8,
-      "descuento": 6.25,
+      "precio": 4.87,
+      "descuento": 1.44,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "Aceite_(900ml).jpg"
+        "25b95336-b112-48ef-a3f1-8ebeee4148a7_1772439363384.jpeg"
       ],
-      "descripcion": "Disfruta de la calidad de Aceite (900ml), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
+      "descripcion": "Disfruta de la calidad de Aceite (1L), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-11T14:16:02.609Z"
+      "modified_at": "2026-03-02T08:27:57.016Z"
     },
     {
       "id": "prod_1768441690510_ijaa8o33p",
@@ -191,8 +191,8 @@
       "id": "prod_1768441690510_x6vswdewh",
       "nombre": "Arroz (1Kg)",
       "categoria": "Despensa",
-      "precio": 2.5,
-      "descuento": 13.2,
+      "precio": 2.75,
+      "descuento": 9.09,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -202,7 +202,7 @@
       "descripcion": "Disfruta de la calidad de Arroz (1Kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-11T14:16:06.292Z"
+      "modified_at": "2026-03-02T08:28:02.494Z"
     },
     {
       "id": "prod_1768441690510_a5q147wl5",
@@ -344,18 +344,18 @@
       "id": "prod_1768441690510_7gy02c75y",
       "nombre": "Codito (500g)",
       "categoria": "Despensa",
-      "precio": 1.07,
-      "descuento": 0,
+      "precio": 1.25,
+      "descuento": 14.4,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "Codito_(500g).jpg"
+        "1473fdae-98bc-4aa0-9203-f0df6ded16d8_1772439113364.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Codito (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-02T08:27:50.909Z"
     },
     {
       "id": "prod_1769919470708_wghwn1olf",
@@ -409,23 +409,6 @@
       "modified_at": "2026-02-22T18:38:18.890Z"
     },
     {
-      "id": "prod_1768441690510_bluy6jgyz",
-      "nombre": "Leche Condensada Azucarada Castellum (390g)",
-      "categoria": "Despensa",
-      "precio": 1.42,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Leche_Condensada_Azucarada_Castellum_(390g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Leche Condensada Azucarada Castellum (390g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1768441690510_tf4rwuo62",
       "nombre": "Frijol Negro (500g)",
       "categoria": "Despensa",
@@ -463,18 +446,18 @@
       "id": "prod_1769358949851_dzn6agegg",
       "nombre": "Jamón Bravo Rápido (2kg)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 22.5,
-      "descuento": 6.67,
+      "precio": 24,
+      "descuento": 12.5,
       "mas_vendido": false,
-      "nuevo": false,
-      "oferta": true,
+      "nuevo": true,
+      "oferta": false,
       "imagenes": [
         "Jamon_Bravo_Rapido_(2kg).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Jamón Bravo Rápido (2kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-02T08:28:03.696Z"
     },
     {
       "id": "prod_1768441690510_eolc54k6n",
@@ -492,40 +475,6 @@
       "disponibilidad": false,
       "created_at": null,
       "modified_at": null
-    },
-    {
-      "id": "prod_1768918643793_v1ax5w4ut",
-      "nombre": "Jabón de Baño Florona (75g)",
-      "categoria": "Aseo y Belleza",
-      "precio": 0.6,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Jabon_de_Baño_(75g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Jabón de Baño \"Florona\" (75g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": "2026-02-02T21:08:11.363Z"
-    },
-    {
-      "id": "prod_1768441690510_hx4fk9hy1",
-      "nombre": "Jabón Belleza MARWA (100g)",
-      "categoria": "Aseo y Belleza",
-      "precio": 0.7,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Jabon_de_Baño_Marwa.jpg"
-      ],
-      "descripcion": "Jabón de belleza marca MARWA, enriquecido con extracto de polvo de carbón y certificado como producto vegano. Con un peso neto de 100g, es una opción excelente para el cuidado de la piel dentro de nuestra categoría de Aseo y Belleza.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:24:15.441Z"
     },
     {
       "id": "prod_1769226986599_pfsrf2pax",
@@ -897,9 +846,9 @@
         "Spam_de_Pollo_(340g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Spam de Pollo (340g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-02T08:28:02.495Z"
     },
     {
       "id": "prod_1768441690510_jnja8jl1s",
@@ -948,9 +897,9 @@
         "Spam_de_Cerdo_(340g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Spam de Cerdo (340g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-02T08:28:02.495Z"
     },
     {
       "id": "prod_1769297232608_1rpawqvbr",
@@ -1619,8 +1568,8 @@
       "id": "prod_1768441690510_5stmkk7i6",
       "nombre": "Leche condensada 390g",
       "categoria": "Lácteos",
-      "precio": 1.5,
-      "descuento": 0,
+      "precio": 1.65,
+      "descuento": 9.09,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -1630,7 +1579,7 @@
       "descripcion": "Disfruta de la calidad de Leche condensada 390g, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-02T08:28:03.696Z"
     },
     {
       "id": "prod_1769213534534_s8dqaxn10",
@@ -2075,28 +2024,11 @@
       "modified_at": "2026-02-12T15:01:18.678Z"
     },
     {
-      "id": "prod_1768844669044_ghnvk7l1k",
-      "nombre": "Jamón bravo(1kg)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 11,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "img_2057_1768837728137.jpeg"
-      ],
-      "descripcion": "Disfruta del jamón bravo x (kg)\nExcelente producto para disfrutar de un buen desayuno o una buena merienda.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-12T15:01:18.679Z"
-    },
-    {
       "id": "prod_1768918643793_wff5w2f61",
       "nombre": "Frijoles rojos x(lbs)",
       "categoria": "Despensa",
-      "precio": 1.99,
-      "descuento": 0,
+      "precio": 2.09,
+      "descuento": 4.78,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
@@ -2106,7 +2038,7 @@
       "descripcion": "Disfruta de los frijoles colorados x (lbs)\nExcelente para almuerzos y cenas",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-02T08:28:02.494Z"
     },
     {
       "id": "prod_1768920078698_xdo268cet",
@@ -2387,15 +2319,15 @@
       "precio": 1.35,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1377fbfe-49b3-4a92-8515-13149de037da_1770066469220.jpg"
       ],
       "descripcion": "Pasta de Tomate Holland Park Eleva el sabor de tus recetas con la Pasta de Tomate Holland Park. Esta pasta concentrada de alta calidad viene en una práctica presentación de lata de 400g, ideal para aportar un color rojo intenso y una textura espesa a tus salsas, guisos y estofados. Elaborada con tomates seleccionados, es un producto libre de organismos genéticamente modificados (GMO FREE), garantizando un ingrediente más natural y saludable para tu cocina. Su sabor profundo y auténtico es la bas",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-02T21:08:14.224Z",
-      "modified_at": "2026-02-02T21:08:14.224Z"
+      "modified_at": "2026-03-02T08:28:02.494Z"
     },
     {
       "id": "prod_1770068151315_vd46lv3pi",
@@ -2855,6 +2787,74 @@
       "disponibilidad": true,
       "created_at": "2026-02-28T17:46:04.296Z",
       "modified_at": "2026-02-28T17:46:04.296Z"
+    },
+    {
+      "id": "prod_1772439257972_9nrd57jde",
+      "nombre": "Lomo de cerdo x lbs",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 4.66,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "gemini_generated_image_iycg83iycg83iycg_1772439257986.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T08:27:54.950Z",
+      "modified_at": "2026-03-02T08:27:54.950Z"
+    },
+    {
+      "id": "prod_1772439456822_kktbprsor",
+      "nombre": "Saco de Arroz supreme 55lbs",
+      "categoria": "Despensa",
+      "precio": 50,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "a660893b-e60c-4c3b-95eb-19da7b26f75e_1772439456839.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T08:28:00.164Z",
+      "modified_at": "2026-03-02T08:28:00.164Z"
+    },
+    {
+      "id": "prod_1772439529396_kh3fahrr4",
+      "nombre": "Saco de azúcar blanca 25kg",
+      "categoria": "Despensa",
+      "precio": 45,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "c4c5f51b-6cb1-41f0-bfa0-ffa820643fd0_1772439529416.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T08:28:01.312Z",
+      "modified_at": "2026-03-02T08:28:01.312Z"
+    },
+    {
+      "id": "prod_1772439588460_8m93dd12m",
+      "nombre": "Vino Rose",
+      "categoria": "Bebidas alcohólicas",
+      "precio": 12.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "7f4366cd-137c-45bd-9f15-7f2f1305f218_1772439588470.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T08:28:02.493Z",
+      "modified_at": "2026-03-02T08:28:02.493Z"
     }
   ]
 }
