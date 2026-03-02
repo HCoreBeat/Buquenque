@@ -308,20 +308,20 @@
     },
     {
       "id": "prod_1768509219912_orvyg0rkr",
-      "nombre": "Galletas Marías (80g)",
+      "nombre": "Galletas Marías",
       "categoria": "Confitura",
-      "precio": 0.9,
-      "descuento": 0,
+      "precio": 1.33,
+      "descuento": 32.33,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "Galletas_Marias_(80g).jpg"
+        "12_1772443450964.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Galletas Marías (80g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-12T15:01:18.676Z"
+      "modified_at": "2026-03-02T09:28:18.077Z"
     },
     {
       "id": "prod_1768441690510_ehifoffi7",
@@ -509,23 +509,6 @@
       "disponibilidad": false,
       "created_at": null,
       "modified_at": "2026-02-22T18:38:18.890Z"
-    },
-    {
-      "id": "prod_1768441690510_8asugkx1n",
-      "nombre": "Galletas Renata Maizena (170g)",
-      "categoria": "Confitura",
-      "precio": 0.95,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Galletas_Renata_Maizena_(170g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Galletas Renata 'Maizena' (170g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.891Z"
     },
     {
       "id": "prod_1768441690510_p8q4pyl2i",
@@ -2855,6 +2838,210 @@
       "disponibilidad": true,
       "created_at": "2026-03-02T08:28:02.493Z",
       "modified_at": "2026-03-02T08:28:02.493Z"
+    },
+    {
+      "id": "prod_1772442996727_xhrueb4xd",
+      "nombre": "Bolso",
+      "categoria": "Utiles del Hogar",
+      "precio": 0.79,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1_1772442996785.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T09:28:08.269Z",
+      "modified_at": "2026-03-02T09:28:08.269Z"
+    },
+    {
+      "id": "prod_1772443082815_a8j9zfyoy",
+      "nombre": "Galletas Creme Bite (Fresa)",
+      "categoria": "Confitura",
+      "precio": 0.5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "4_1772443082836.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T09:28:09.573Z",
+      "modified_at": "2026-03-02T09:28:09.573Z"
+    },
+    {
+      "id": "prod_1772443116146_uf8w44jee",
+      "nombre": "Galletas Creme Bite (Vainilla)",
+      "categoria": "Despensa",
+      "precio": 0.5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "2_1772443116169.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T09:28:10.867Z",
+      "modified_at": "2026-03-02T09:28:10.867Z"
+    },
+    {
+      "id": "prod_1772443156297_sas4u1yhr",
+      "nombre": "Galletas Creme Bite (Piña)",
+      "categoria": "Confitura",
+      "precio": 0.5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "3_1772443156319.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T09:28:12.194Z",
+      "modified_at": "2026-03-02T09:28:12.194Z"
+    },
+    {
+      "id": "prod_1772443241201_48vmhs1v2",
+      "nombre": "Harina de Trigo 1Kg",
+      "categoria": "Despensa",
+      "precio": 2.89,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "13_1772443241212.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T09:28:13.442Z",
+      "modified_at": "2026-03-02T09:28:13.442Z"
+    },
+    {
+      "id": "prod_1772443332928_3y6hc8nc9",
+      "nombre": "Jabón de Baño AURA (Rosa)",
+      "categoria": "Utiles del Hogar",
+      "precio": 0.69,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "8_1772443332946.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T09:28:14.614Z",
+      "modified_at": "2026-03-02T09:28:14.614Z"
+    },
+    {
+      "id": "prod_1772443369943_z7ttwozkg",
+      "nombre": "Jabón de Baño AURA (Orquidea)",
+      "categoria": "Utiles del Hogar",
+      "precio": 0.69,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "9_1772443369968.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T09:28:15.663Z",
+      "modified_at": "2026-03-02T09:28:15.663Z"
+    },
+    {
+      "id": "prod_1772443402814_5gmy9e8s0",
+      "nombre": "Jabón de Baño AURA (Aloevera)",
+      "categoria": "Utiles del Hogar",
+      "precio": 0.69,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "10_1772443402831.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T09:28:16.862Z",
+      "modified_at": "2026-03-02T09:28:16.862Z"
+    },
+    {
+      "id": "prod_1772443528708_c9r8jr80o",
+      "nombre": "Galletas Renata (Fresa)",
+      "categoria": "Confitura",
+      "precio": 1.16,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "6_1772443528725.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T09:28:22.234Z",
+      "modified_at": "2026-03-02T09:28:22.234Z"
+    },
+    {
+      "id": "prod_1772443579416_ssrc7h8pg",
+      "nombre": "Galletas Renata (Vainilla)",
+      "categoria": "Confitura",
+      "precio": 1.16,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "7_1772443579439.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T09:28:23.263Z",
+      "modified_at": "2026-03-02T09:28:23.263Z"
+    },
+    {
+      "id": "prod_1772443613305_eh6i8vglo",
+      "nombre": "Galletas Renata (Chocolate)",
+      "categoria": "Confitura",
+      "precio": 1.16,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "5_1772443613342.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T09:28:24.506Z",
+      "modified_at": "2026-03-02T09:28:24.506Z"
+    },
+    {
+      "id": "prod_1772443671662_3zlv75nd6",
+      "nombre": "Leche condensada La Keka",
+      "categoria": "Despensa",
+      "precio": 1.83,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "11_1772443671681.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-02T09:28:25.562Z",
+      "modified_at": "2026-03-02T09:28:25.562Z"
     }
   ]
 }
