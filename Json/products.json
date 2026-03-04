@@ -548,8 +548,8 @@
       "id": "prod_1768923781803_6nigzuz4y",
       "nombre": "Caja de refresco Limón",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 17.97,
-      "descuento": 0,
+      "precio": 20.99,
+      "descuento": 14.39,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -559,7 +559,7 @@
       "descripcion": "Disfruta de la calidad de Caja de refresco Limón, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-04T17:37:15.678Z"
     },
     {
       "id": "prod_1768441690510_lmdloikfh",
@@ -2030,15 +2030,15 @@
       "precio": 17.97,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img_2088_1768919882647.jpeg"
       ],
       "descripcion": "Disfruta del refresco de naranja x cajas de 24u ideal para meriendas",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-04T17:37:15.679Z"
     },
     {
       "id": "prod_1768920589823_5nbf1b3sb",
@@ -2597,9 +2597,9 @@
         "49655_1771810113507.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-23T01:29:52.808Z",
-      "modified_at": "2026-02-23T01:29:52.808Z"
+      "modified_at": "2026-03-04T17:37:15.679Z"
     },
     {
       "id": "prod_1771810173233_jpshzwww8",
@@ -2614,9 +2614,9 @@
         "49658_1771810173377.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-23T01:29:54.739Z",
-      "modified_at": "2026-02-23T01:29:54.739Z"
+      "modified_at": "2026-03-04T17:37:15.679Z"
     },
     {
       "id": "prod_1771953658499_27m8gu8j4",
@@ -3042,6 +3042,23 @@
       "disponibilidad": true,
       "created_at": "2026-03-02T09:28:25.562Z",
       "modified_at": "2026-03-02T09:41:16.896Z"
+    },
+    {
+      "id": "prod_1772645829533_juot68g28",
+      "nombre": "Caja de refresco de cola",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 20.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "shopping_1772645829590.webp"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-04T17:37:18.050Z",
+      "modified_at": "2026-03-04T17:37:18.050Z"
     }
   ]
 }
