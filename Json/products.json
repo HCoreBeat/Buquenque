@@ -3059,6 +3059,40 @@
       "disponibilidad": true,
       "created_at": "2026-03-04T17:37:18.050Z",
       "modified_at": "2026-03-04T17:37:18.050Z"
+    },
+    {
+      "id": "prod_1772732759012_tojcqpnpu",
+      "nombre": "Sorbetes bon o bon",
+      "categoria": "Confitura",
+      "precio": 0.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000010549_1772732759103.webp"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-05T17:46:45.716Z",
+      "modified_at": "2026-03-05T17:46:45.716Z"
+    },
+    {
+      "id": "prod_1772732799999_4pu74vvsy",
+      "nombre": "Crema de Abellanas y Cacao",
+      "categoria": "Confitura",
+      "precio": 3.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000010308_1772732800101.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-05T17:46:47.308Z",
+      "modified_at": "2026-03-05T17:46:47.308Z"
     }
   ]
 }
