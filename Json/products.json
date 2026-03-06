@@ -293,8 +293,8 @@
       "id": "prod_1768441690510_nm24ia7xr",
       "nombre": "Manzana 🍎 x unidad",
       "categoria": "Despensa",
-      "precio": 1.15,
-      "descuento": 0,
+      "precio": 1.5,
+      "descuento": 23.33,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -304,7 +304,7 @@
       "descripcion": "Disfruta de la calidad de Manzana 🍎 x unidad, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-06T21:29:48.097Z"
     },
     {
       "id": "prod_1768509219912_orvyg0rkr",
@@ -523,9 +523,9 @@
         "Pack_x_6_Manzana.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pack x 6 Manzana 🍎, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-06T21:29:43.204Z"
     },
     {
       "id": "prod_1768441690510_katqqvatc",
@@ -1251,12 +1251,12 @@
       "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "Pack_x_12_Nectar_de_Pera.jpg"
+        "1000012332_1772832335861.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pack x 12 Néctar de Pera 🍐 (12x330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-06T18:08:31.249Z"
+      "modified_at": "2026-03-06T21:29:49.718Z"
     },
     {
       "id": "prod_1768441690510_gbbyirl3n",
@@ -1353,12 +1353,12 @@
       "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "Nectar_de_Manzana.jpg"
+        "1000012344_1772832547303.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Néctar de Manzana 🍎 (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-06T18:08:31.248Z"
+      "modified_at": "2026-03-06T21:29:53.228Z"
     },
     {
       "id": "prod_1768441690510_renf0iq34",
@@ -1370,12 +1370,12 @@
       "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "Pack_x_12_Néctar_de_Manzana.jpg"
+        "1000012335_1772832284460.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pack x 12 Néctar de Manzana 🍎 (12x330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-06T18:08:31.248Z"
+      "modified_at": "2026-03-06T21:29:46.672Z"
     },
     {
       "id": "prod_1768441690510_vau86780j",
