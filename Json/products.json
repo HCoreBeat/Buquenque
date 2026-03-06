@@ -1245,8 +1245,8 @@
       "id": "prod_1768441690510_6xn0n5bsd",
       "nombre": "Pack x 12 Néctar de Pera 🍐 (12x330ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 15.97,
-      "descuento": 0,
+      "precio": 15.99,
+      "descuento": 0.13,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -1256,7 +1256,7 @@
       "descripcion": "Disfruta de la calidad de Pack x 12 Néctar de Pera 🍐 (12x330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-06T18:08:31.249Z"
     },
     {
       "id": "prod_1768441690510_gbbyirl3n",
@@ -1328,9 +1328,9 @@
     },
     {
       "id": "prod_1768441690510_8y1zmbeir",
-      "nombre": "Néctar de (Pera 🍐) (330ml)",
+      "nombre": "Néctar de (Pera 🍐) x unidad (330ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 1.43,
+      "precio": 1.4,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -1341,13 +1341,13 @@
       "descripcion": "Disfruta de la calidad de Néctar de Pera 🍐 (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-06T18:08:31.247Z"
     },
     {
       "id": "prod_1768441690510_oqd90ndvr",
-      "nombre": "Néctar de (Manzana 🍎) (330ml)",
+      "nombre": "Néctar de (Manzana 🍎) x unidad (330ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 1.43,
+      "precio": 1.4,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -1358,14 +1358,14 @@
       "descripcion": "Disfruta de la calidad de Néctar de Manzana 🍎 (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-06T18:08:31.248Z"
     },
     {
       "id": "prod_1768441690510_renf0iq34",
       "nombre": "Pack x 12 Néctar de Manzana 🍎 (12x330ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 15.97,
-      "descuento": 0,
+      "precio": 15.99,
+      "descuento": 0.13,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -1375,7 +1375,7 @@
       "descripcion": "Disfruta de la calidad de Pack x 12 Néctar de Manzana 🍎 (12x330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-06T18:08:31.248Z"
     },
     {
       "id": "prod_1768441690510_vau86780j",
@@ -2217,15 +2217,15 @@
       "precio": 2.8,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "29337_1769974960573.jpg"
       ],
       "descripcion": "Disfruta de la Macarela un producto importado de Europa rinde para 4 personas ideal para cenas almuerzos y más",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-02-01T19:43:12.847Z"
+      "modified_at": "2026-03-06T18:08:28.218Z"
     },
     {
       "id": "prod_1769920633225_aw89nywas",
@@ -2489,15 +2489,15 @@
       "precio": 2.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "44793_1771255455899.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-16T15:32:08.917Z",
-      "modified_at": "2026-02-16T15:32:08.917Z"
+      "modified_at": "2026-03-06T18:08:28.219Z"
     },
     {
       "id": "prod_1771255568932_49z71tujl",
@@ -2625,15 +2625,15 @@
       "precio": 27,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img-20260223-wa0003_1771953658515.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-24T17:26:46.378Z",
-      "modified_at": "2026-02-24T17:26:46.378Z"
+      "modified_at": "2026-03-06T18:08:28.218Z"
     },
     {
       "id": "prod_1771953720825_4cyznc1dm",
@@ -2642,15 +2642,15 @@
       "precio": 1.25,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "images_1771953720841.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-24T17:26:48.187Z",
-      "modified_at": "2026-02-24T17:26:48.187Z"
+      "modified_at": "2026-03-06T18:08:28.218Z"
     },
     {
       "id": "prod_1771953998923_b4sri6e8j",
@@ -2710,15 +2710,15 @@
       "precio": 11.47,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img-20260225-wa0007_1772070039928.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-26T01:40:53.594Z",
-      "modified_at": "2026-02-26T01:40:53.594Z"
+      "modified_at": "2026-03-06T18:08:28.219Z"
     },
     {
       "id": "prod_1772238681809_9kzilq1ry",
@@ -3093,6 +3093,23 @@
       "disponibilidad": true,
       "created_at": "2026-03-05T17:46:47.308Z",
       "modified_at": "2026-03-05T17:46:47.308Z"
+    },
+    {
+      "id": "prod_1772820254113_06vdipx9o",
+      "nombre": "Jugo Nezka de Mango",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 1.5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "9e48614d-8e0f-48a2-9f31-041aaecafa33_1772820254147.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-06T18:08:31.245Z",
+      "modified_at": "2026-03-06T18:08:31.245Z"
     }
   ]
 }
