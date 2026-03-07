@@ -97,8 +97,12 @@ function findProductByIdOrName(identifier) {
     return { product, mainProduct: null, isVariant: false, variantIndex: 0, searchedBy: 'id' };
   }
 
-  // 1.2. Buscar por ID exacto en productos agrupados
-  product = products.find((p) => p.isGrouped && p.id && p.id.toString() === decodedId);
+  // 1.2. Buscar por ID exacto en productos agrupados (grupo o ID original de variante)
+  product = products.find((p) => {
+    if (!p.isGrouped) return false;
+    return (p.id && p.id.toString() === decodedId) || 
+           (p.originalId && p.originalId.toString() === decodedId);
+  });
   if (product) {
     return {
       product: product.variants[product.currentVariant || 0],
@@ -244,10 +248,10 @@ function handleRouteChange() {
     return;
   }
 
-  // Es un producto: buscar por ID o nombre
+  // Es un producto: buscar por ID o nombre (handleado dentro de showProductDetail)
   const productInfo = findProductByIdOrName(decodedHash);
   if (productInfo && productInfo.product) {
-    showProductDetail(productInfo.product, productInfo.mainProduct, productInfo.isVariant, productInfo.variantIndex);
+    showProductDetail(decodedHash); // Pasar el ID/nombre completo
   } else {
     // No encontrado, volver al home (sin tocar pathname)
     window.location.hash = "";
@@ -406,6 +410,7 @@ async function loadProducts() {
         products.push({
           ...group.variants[0],
           id: `group_${baseName}`, // ID único para grupos
+          originalId: group.variants[0].id, // Preservar el ID original del primer producto
           isGrouped: true,
           baseName: baseName,
           variants: group.variants,
