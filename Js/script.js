@@ -198,6 +198,13 @@ window.addEventListener("hashchange", () => {
 });
 
 async function handleRouteChange() {
+  // Ruta limpia de producto toma prioridad sin importar el hash
+  const pathMatch = window.location.pathname.match(/^\/p\/([^\/]+)/);
+  if (pathMatch && pathMatch[1]) {
+    await showProductDetail(pathMatch[1]);
+    return; // no ejecutar lógica de hash
+  }
+
   // obtener hash limpio, sin # ni prefijos accidentales
   let hash = window.location.hash.substring(1);
   const backBtnWrapper = document.getElementById("category-back-button-wrapper");
@@ -216,7 +223,7 @@ async function handleRouteChange() {
       if (part) {
         const info = findProductByIdOrName(part);
         if (info && info.product) {
-          showProductDetail(info); // paso el objeto encontrado
+          await showProductDetail(info); // paso el objeto encontrado
           return;
         }
       }
