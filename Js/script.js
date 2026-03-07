@@ -78,8 +78,7 @@ const CAROUSEL_AUTOPLAY_DELAY = 10000; // 10 segundos
 // Función para ir al inicio
 function goToHome() {
   window.location.hash = "";
-  hideProductDetail();
-  renderProducts();
+  // hideProductDetail will be called via handleRouteChange when hash changes
 }
 
 // Función auxiliar: busca un producto por ID o nombre (dual mode)
@@ -171,7 +170,19 @@ function handleRouteChange() {
   const hash = window.location.hash.substring(1);
   const backBtnWrapper = document.getElementById("category-back-button-wrapper");
 
+  // Si no hay hash, tal vez estemos navegando por pathname /p/…
   if (!hash) {
+    if (window.location.pathname.startsWith('/p/')) {
+      const part = window.location.pathname.split('/p/')[1] || '';
+      if (part) {
+        const info = findProductByIdOrName(part);
+        if (info && info.product) {
+          showProductDetail(part);
+          return;
+        }
+      }
+    }
+
     // Al volver a la raíz: ocultar detalles y el botón de volver a categorías
     if (backBtnWrapper) backBtnWrapper.style.display = "none";
     hideProductDetail();
@@ -224,17 +235,16 @@ function handleRouteChange() {
     showPackDetail(decodedHash);
   } else {
     // Verificar si es un pack por ID
-    isPack = packs.find((p) => p.id === decodedHash);
+    isPack = packs.find((p) => p.id && p.id.toString() === decodedHash);
     if (isPack) {
       showPackDetail(isPack.nombre);
     } else {
       // Es un producto: buscar por ID o nombre
       const productInfo = findProductByIdOrName(decodedHash);
       if (productInfo && productInfo.product) {
-        // ✅ FIX: Pasar nombre con encodeURIComponent()
-        showProductDetail(encodeURIComponent(productInfo.product.nombre));
+        showProductDetail(decodedHash);
       } else {
-        // No encontrado, volver al home
+        // No encontrado, volver al home (sin tocar pathname)
         window.location.hash = "";
       }
     }
@@ -671,8 +681,8 @@ function filterByCategory(category) {
     if (bestSellersSection) {
       bestSellersSection.style.display = "block";
     }
-    // Limpiar URL cuando vuelve a "Todo"
-    if (window.location.hash) {
+    // Limpiar URL cuando vuelve a "Todo" (solo si hay hash actual)
+    if (window.location.hash && window.location.hash !== "#") {
       window.history.pushState({ category: "Todo" }, "Todas las categorías", "#");
     }
   }
@@ -1681,60 +1691,36 @@ function showProductDetail(productName) {
     categoryCardSection.style.display = "none"; // <-- OCULTA EL CATEGORY CARD
   }
 
-  // Buscar el producto principal por nombre O por ID si no encuentra por nombre
-  let product = products.find((p) => p.nombre === decodedName);
-  let isVariant = false;
-  let mainProduct = null;
-  let variantIndex = 0;
-
-  if (!product) {
-    // Intentar encontrar por ID si decodedName parece un ID
-    product = products.find((p) => p.id === decodedName);
-    
-    if (!product) {
-      // Usar findProductByIdOrName() para búsqueda inteligente (categorías, variantes, etc)
-      const productInfo = findProductByIdOrName(decodedName);
-      if (productInfo && productInfo.product) {
-        product = productInfo.product;
-        mainProduct = productInfo.mainProduct;
-        isVariant = productInfo.isVariant;
-        variantIndex = productInfo.variantIndex;
-      }
+  // localizar producto usando la nueva función inteligente
+  const info = findProductByIdOrName(decodedName);
+  if (!info || !info.product) {
+    // si estamos navegando a través de pathname /p/ no tocar la URL
+    if (!window.location.pathname.startsWith('/p/')) {
+      window.location.hash = "";
     }
-    
-    // Fallback: buscar en variantes si `findProductByIdOrName()` no lo encontró
-    if (!product) {
-      mainProduct = products.find(
-        (p) => p.isGrouped && p.variants.some((v) => v.nombre === decodedName)
-      );
-
-      if (mainProduct) {
-        isVariant = true;
-        variantIndex = mainProduct.variants.findIndex(
-          (v) => v.nombre === decodedName
-        );
-        product = mainProduct.variants[variantIndex];
-      } else {
-        window.location.hash = "";
-        hideProductDetail();
-        return;
-      }
-    }
-  } else if (product.isGrouped) {
-    mainProduct = product;
-    product = product.variants[0];
-    variantIndex = 0;
+    hideProductDetail();
+    return;
   }
 
+  let product = info.product;
+  const mainProduct = info.mainProduct;
+  const isVariant = info.isVariant;
+  const variantIndex = info.variantIndex || 0;
+
   // Update visible URL to /p/ID without hash
-  // history.replaceState: changes only the current history entry (no new entry added)
-  // Does not interfere with back button or existing hash routing for categories/packs
+  // history.pushState: creates a new history entry so back button works correctly
+  // Preserves navigation chain through categories, products, and other views
   const productId = product.id || encodeURIComponent(product.nombre);
-  history.replaceState(
-    { type: 'product', productName: product.nombre, productId: productId },
-    `${product.cleanName}`,
-    `/p/${productId}`
-  );
+  const newPath = `/p/${productId}`;
+  
+  // Only push state if URL is different to avoid duplicates in history
+  if (window.location.pathname !== newPath) {
+    history.pushState(
+      { type: 'product', productName: product.nombre, productId: productId },
+      `${product.cleanName}`,
+      newPath
+    );
+  }
 
   const detailContainer = document.getElementById("product-detail");
   const productsContainer = document.getElementById("products-container");
@@ -2284,7 +2270,6 @@ function hideProductDetail() {
   }
 
   currentProduct = null;
-  window.location.hash = "";
 }
 
 // Carrito
@@ -3364,8 +3349,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   await Promise.all([loadProducts(), loadPacks()]);
   initCarousel();
 
-  // Si hay un hash en la URL al cargar la página, procesarlo ahora que tenemos products y packs
-  if (window.location.hash) {
+  // Al iniciar, revisar si la URL apunta a un producto por pathname (/p/ID o /p/NOMBRE)
+  const pathMatch = window.location.pathname.match(/^\/p\/([^\/]+)/);
+  if (pathMatch && pathMatch[1]) {
+    // showProductDetail gestionará la búsqueda por id o nombre
+    showProductDetail(pathMatch[1]);
+  } else if (window.location.hash) {
+    // si no hay pathname product, procesar hash como antes
     handleRouteChange();
   }
 
