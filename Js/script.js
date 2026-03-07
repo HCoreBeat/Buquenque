@@ -86,40 +86,34 @@ function goToHome() {
 // Retorna { product, mainProduct, isVariant, variantIndex } o null
 function findProductByIdOrName(identifier) {
   if (!identifier) return null;
-  
+
   const decodedId = decodeURIComponent(identifier).trim();
-  
-  // ============ FASE 1: BUSCAR POR ID (MÁXIMA PRIORIDAD) ============
-  
+
+  // ============ FASE 1: BUSCAR POR ID (PRIORIDAD) ============
+
   // 1.1. Buscar por ID exacto en productos simples
-  let product = products.find((p) => {
-    return !p.isGrouped && p.id && p.id.toString() === decodedId;
-  });
+  let product = products.find((p) => !p.isGrouped && p.id && p.id.toString() === decodedId);
   if (product) {
     return { product, mainProduct: null, isVariant: false, variantIndex: 0, searchedBy: 'id' };
   }
-  
-  // 1.2. Buscar por ID exacto en productos agrupados (retorna el grupo con su variante por defecto)
-  product = products.find((p) => {
-    return p.isGrouped && p.id && p.id.toString() === decodedId;
-  });
+
+  // 1.2. Buscar por ID exacto en productos agrupados
+  product = products.find((p) => p.isGrouped && p.id && p.id.toString() === decodedId);
   if (product) {
     return {
       product: product.variants[product.currentVariant || 0],
       mainProduct: product,
       isVariant: false,
       variantIndex: product.currentVariant || 0,
-      searchedBy: 'id'
+      searchedBy: 'groupId'
     };
   }
-  
+
   // 1.3. Buscar por ID exacto en variantes de productos agrupados
   for (let i = 0; i < products.length; i++) {
     const p = products[i];
     if (p.isGrouped && Array.isArray(p.variants)) {
-      const variantIdIdx = p.variants.findIndex((v) => {
-        return v.id && v.id.toString() === decodedId;
-      });
+      const variantIdIdx = p.variants.findIndex((v) => v.id && v.id.toString() === decodedId);
       if (variantIdIdx !== -1) {
         return {
           product: p.variants[variantIdIdx],
@@ -131,21 +125,17 @@ function findProductByIdOrName(identifier) {
       }
     }
   }
-  
-  // ============ FASE 2: BUSCAR POR NOMBRE (SEGUNDA PRIORIDAD) ============
-  
+
+  // ============ FASE 2: BUSCAR POR NOMBRE (COMPATIBILIDAD) ============
+
   // 2.1. Buscar por nombre exacto en productos simples
-  product = products.find((p) => {
-    return !p.isGrouped && p.nombre === decodedId;
-  });
+  product = products.find((p) => !p.isGrouped && p.nombre === decodedId);
   if (product) {
     return { product, mainProduct: null, isVariant: false, variantIndex: 0, searchedBy: 'name' };
   }
-  
+
   // 2.2. Buscar por nombre del grupo en productos agrupados
-  product = products.find((p) => {
-    return p.isGrouped && p.baseName === decodedId;
-  });
+  product = products.find((p) => p.isGrouped && p.baseName === decodedId);
   if (product) {
     return {
       product: product.variants[product.currentVariant || 0],
@@ -155,7 +145,7 @@ function findProductByIdOrName(identifier) {
       searchedBy: 'groupName'
     };
   }
-  
+
   // 2.3. Buscar por nombre exacto en variantes de productos agrupados
   for (let i = 0; i < products.length; i++) {
     const p = products[i];
@@ -172,9 +162,10 @@ function findProductByIdOrName(identifier) {
       }
     }
   }
-  
+
   return null;
 }
+
 
 // Manejo del historial con hash y pushState
 window.addEventListener("popstate", handleRouteChange);
@@ -191,7 +182,7 @@ function handleRouteChange() {
       if (part) {
         const info = findProductByIdOrName(part);
         if (info && info.product) {
-          showProductDetail(part);
+          showProductDetail(info.product, info.mainProduct, info.isVariant, info.variantIndex);
           return;
         }
       }
@@ -236,35 +227,33 @@ function handleRouteChange() {
 
   // Caso especial: panel de packs
   if (decodedHash === 'packs') {
-    // Mostrar panel de packs
     renderPacksDetail();
     return;
   }
 
-  // Detectar si es un pack o un producto: PRIMERO buscar por ID, LUEGO por nombre
+  // Detectar si es un pack por ID o nombre
   let isPack = packs.find((p) => p.id && p.id.toString() === decodedHash);
-  
   if (isPack) {
-    // Es un pack por ID
     showPackDetail(isPack.nombre);
+    return;
+  }
+
+  isPack = packs.find((p) => p.nombre === decodedHash);
+  if (isPack) {
+    showPackDetail(decodedHash);
+    return;
+  }
+
+  // Es un producto: buscar por ID o nombre
+  const productInfo = findProductByIdOrName(decodedHash);
+  if (productInfo && productInfo.product) {
+    showProductDetail(productInfo.product, productInfo.mainProduct, productInfo.isVariant, productInfo.variantIndex);
   } else {
-    // Intentar buscar pack por nombre exacto
-    isPack = packs.find((p) => p.nombre === decodedHash);
-    if (isPack) {
-      // Es un pack por nombre
-      showPackDetail(decodedHash);
-    } else {
-      // Es un producto: buscar por ID o nombre (ya lo hace findProductByIdOrName)
-      const productInfo = findProductByIdOrName(decodedHash);
-      if (productInfo && productInfo.product) {
-        showProductDetail(decodedHash);
-      } else {
-        // No encontrado, volver al home (sin tocar pathname)
-        window.location.hash = "";
-      }
-    }
+    // No encontrado, volver al home (sin tocar pathname)
+    window.location.hash = "";
   }
 }
+
 
 const bannerContainer = document.querySelector(".carousel-container"); // <-- Nueva referencia al carrusel
 const bestSellersSection = document.querySelector(".best-sellers-section"); // <-- Referencia a best-sellers
