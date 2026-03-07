@@ -82,6 +82,72 @@ function goToHome() {
   renderProducts();
 }
 
+// Función auxiliar: busca un producto por ID o nombre
+// Soporta ID de producto o nombre como identificador
+// Retorna { product, mainProduct, isVariant, variantIndex } o null
+function findProductByIdOrName(identifier) {
+  if (!identifier) return null;
+  
+  const decodedId = decodeURIComponent(identifier);
+  
+  // 1. Buscar por ID exacto
+  let product = products.find((p) => p.id === decodedId);
+  if (product) {
+    if (product.isGrouped) {
+      // Si es un grupo, devolver la primera variante disponible
+      return {
+        product: product.variants[product.currentVariant || 0],
+        mainProduct: product,
+        isVariant: false,
+        variantIndex: product.currentVariant || 0
+      };
+    }
+    return { product, mainProduct: null, isVariant: false, variantIndex: 0 };
+  }
+  
+  // 2. Buscar por nombre exacto en productos simples
+  product = products.find((p) => p.nombre === decodedId);
+  if (product) {
+    if (product.isGrouped) {
+      return {
+        product: product.variants[product.currentVariant || 0],
+        mainProduct: product,
+        isVariant: false,
+        variantIndex: product.currentVariant || 0
+      };
+    }
+    return { product, mainProduct: null, isVariant: false, variantIndex: 0 };
+  }
+  
+  // 3. Buscar en variantes de productos agrupados (por nombre de variante)
+  for (let i = 0; i < products.length; i++) {
+    const p = products[i];
+    if (p.isGrouped && Array.isArray(p.variants)) {
+      const variantIdx = p.variants.findIndex((v) => v.nombre === decodedId);
+      if (variantIdx !== -1) {
+        return {
+          product: p.variants[variantIdx],
+          mainProduct: p,
+          isVariant: true,
+          variantIndex: variantIdx
+        };
+      }
+      // También buscar por ID de variante
+      const variantIdIdx = p.variants.findIndex((v) => v.id === decodedId);
+      if (variantIdIdx !== -1) {
+        return {
+          product: p.variants[variantIdIdx],
+          mainProduct: p,
+          isVariant: true,
+          variantIndex: variantIdIdx
+        };
+      }
+    }
+  }
+  
+  return null;
+}
+
 // Manejo del historial con hash y pushState
 window.addEventListener("popstate", handleRouteChange);
 window.addEventListener("hashchange", handleRouteChange);
@@ -135,15 +201,27 @@ function handleRouteChange() {
     return;
   }
 
-  // Detectar si es un pack o un producto
-  const isPack = packs.find((p) => p.nombre === decodedHash);
-
+  // Detectar si es un pack o un producto: primero by nombre exacto, luego by ID
+  let isPack = packs.find((p) => p.nombre === decodedHash);
+  
   if (isPack) {
-    // Es un pack
+    // Es un pack por nombre
     showPackDetail(decodedHash);
   } else {
-    // Es un producto
-    showProductDetail(decodedHash);
+    // Verificar si es un pack por ID
+    isPack = packs.find((p) => p.id === decodedHash);
+    if (isPack) {
+      showPackDetail(isPack.nombre);
+    } else {
+      // Es un producto: buscar por ID o nombre
+      const productInfo = findProductByIdOrName(decodedHash);
+      if (productInfo && productInfo.product) {
+        showProductDetail(productInfo.product.nombre);
+      } else {
+        // No encontrado, volver al home
+        window.location.hash = "";
+      }
+    }
   }
 }
 
