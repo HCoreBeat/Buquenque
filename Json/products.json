@@ -1704,18 +1704,18 @@
       "id": "prod_1768837249014_0e8hctca5",
       "nombre": "Paquete de café Dufiltro (250g)",
       "categoria": "Despensa",
-      "precio": 4,
-      "descuento": 2.5,
+      "precio": 3.99,
+      "descuento": 2.26,
       "mas_vendido": false,
-      "nuevo": false,
-      "oferta": true,
+      "nuevo": true,
+      "oferta": false,
       "imagenes": [
         "Paquete_de_cafe_Dufiltro_(250g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de café Dufiltro (250g), una excelente opción de nuestra categoría Cafetería. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-24T19:24:15.440Z"
+      "modified_at": "2026-03-07T22:30:01.538Z"
     },
     {
       "id": "prod_1769297232608_u1gkj9nbs",
