@@ -82,64 +82,79 @@ function goToHome() {
   renderProducts();
 }
 
-// Función auxiliar: busca un producto por ID o nombre
+// Función auxiliar: busca un producto por ID o nombre (dual mode)
 // Soporta ID de producto o nombre como identificador
 // Retorna { product, mainProduct, isVariant, variantIndex } o null
 function findProductByIdOrName(identifier) {
   if (!identifier) return null;
   
-  const decodedId = decodeURIComponent(identifier);
+  const decodedId = decodeURIComponent(identifier).trim();
   
-  // 1. Buscar por ID exacto
-  let product = products.find((p) => p.id === decodedId);
-  if (product) {
-    if (product.isGrouped) {
-      // Si es un grupo, devolver la primera variante disponible
-      return {
-        product: product.variants[product.currentVariant || 0],
-        mainProduct: product,
-        isVariant: false,
-        variantIndex: product.currentVariant || 0
-      };
-    }
-    return { product, mainProduct: null, isVariant: false, variantIndex: 0 };
-  }
+  // 1. Buscar por ID exacto (primer intento - más específico)
+  let product = products.find((p) => {
+    return p.id && p.id.toString() === decodedId;
+  });
   
-  // 2. Buscar por nombre exacto en productos simples
-  product = products.find((p) => p.nombre === decodedId);
   if (product) {
     if (product.isGrouped) {
       return {
         product: product.variants[product.currentVariant || 0],
         mainProduct: product,
         isVariant: false,
-        variantIndex: product.currentVariant || 0
+        variantIndex: product.currentVariant || 0,
+        searchedBy: 'id'
       };
     }
-    return { product, mainProduct: null, isVariant: false, variantIndex: 0 };
+    return { product, mainProduct: null, isVariant: false, variantIndex: 0, searchedBy: 'id' };
   }
   
-  // 3. Buscar en variantes de productos agrupados (por nombre de variante)
+  // 2. Buscar por nombre exacto en productos simples (segundo intento)
+  product = products.find((p) => {
+    return !p.isGrouped && p.nombre === decodedId;
+  });
+  
+  if (product) {
+    return { product, mainProduct: null, isVariant: false, variantIndex: 0, searchedBy: 'name' };
+  }
+  
+  // 3. Buscar por nombre en el primer grupo (productos agrupados)
   for (let i = 0; i < products.length; i++) {
     const p = products[i];
-    if (p.isGrouped && Array.isArray(p.variants)) {
+    if (p.isGrouped) {
+      // Buscar por nombre del grupo
+      if (p.baseName === decodedId) {
+        return {
+          product: p.variants[p.currentVariant || 0],
+          mainProduct: p,
+          isVariant: false,
+          variantIndex: p.currentVariant || 0,
+          searchedBy: 'groupName'
+        };
+      }
+      
+      // Buscar en variantes por nombre de variante
       const variantIdx = p.variants.findIndex((v) => v.nombre === decodedId);
       if (variantIdx !== -1) {
         return {
           product: p.variants[variantIdx],
           mainProduct: p,
           isVariant: true,
-          variantIndex: variantIdx
+          variantIndex: variantIdx,
+          searchedBy: 'variantName'
         };
       }
-      // También buscar por ID de variante
-      const variantIdIdx = p.variants.findIndex((v) => v.id === decodedId);
+      
+      // Buscar en variantes por ID de variante
+      const variantIdIdx = p.variants.findIndex((v) => {
+        return v.id && v.id.toString() === decodedId;
+      });
       if (variantIdIdx !== -1) {
         return {
           product: p.variants[variantIdIdx],
           mainProduct: p,
           isVariant: true,
-          variantIndex: variantIdIdx
+          variantIndex: variantIdIdx,
+          searchedBy: 'variantId'
         };
       }
     }
@@ -216,7 +231,8 @@ function handleRouteChange() {
       // Es un producto: buscar por ID o nombre
       const productInfo = findProductByIdOrName(decodedHash);
       if (productInfo && productInfo.product) {
-        showProductDetail(productInfo.product.nombre);
+        // ✅ FIX: Pasar nombre con encodeURIComponent()
+        showProductDetail(encodeURIComponent(productInfo.product.nombre));
       } else {
         // No encontrado, volver al home
         window.location.hash = "";
@@ -1665,27 +1681,44 @@ function showProductDetail(productName) {
     categoryCardSection.style.display = "none"; // <-- OCULTA EL CATEGORY CARD
   }
 
-  // Buscar el producto principal
+  // Buscar el producto principal por nombre O por ID si no encuentra por nombre
   let product = products.find((p) => p.nombre === decodedName);
   let isVariant = false;
   let mainProduct = null;
   let variantIndex = 0;
 
   if (!product) {
-    mainProduct = products.find(
-      (p) => p.isGrouped && p.variants.some((v) => v.nombre === decodedName)
-    );
-
-    if (mainProduct) {
-      isVariant = true;
-      variantIndex = mainProduct.variants.findIndex(
-        (v) => v.nombre === decodedName
+    // Intentar encontrar por ID si decodedName parece un ID
+    product = products.find((p) => p.id === decodedName);
+    
+    if (!product) {
+      // Usar findProductByIdOrName() para búsqueda inteligente (categorías, variantes, etc)
+      const productInfo = findProductByIdOrName(decodedName);
+      if (productInfo && productInfo.product) {
+        product = productInfo.product;
+        mainProduct = productInfo.mainProduct;
+        isVariant = productInfo.isVariant;
+        variantIndex = productInfo.variantIndex;
+      }
+    }
+    
+    // Fallback: buscar en variantes si `findProductByIdOrName()` no lo encontró
+    if (!product) {
+      mainProduct = products.find(
+        (p) => p.isGrouped && p.variants.some((v) => v.nombre === decodedName)
       );
-      product = mainProduct.variants[variantIndex];
-    } else {
-      window.location.hash = "";
-      hideProductDetail();
-      return;
+
+      if (mainProduct) {
+        isVariant = true;
+        variantIndex = mainProduct.variants.findIndex(
+          (v) => v.nombre === decodedName
+        );
+        product = mainProduct.variants[variantIndex];
+      } else {
+        window.location.hash = "";
+        hideProductDetail();
+        return;
+      }
     }
   } else if (product.isGrouped) {
     mainProduct = product;
