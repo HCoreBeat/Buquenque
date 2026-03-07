@@ -207,6 +207,7 @@ async function handleRouteChange() {
   }
   try { hash = decodeURIComponent(hash); } catch (e) {}
   hash = hash.trim();
+  if (hash.endsWith('/')) hash = hash.slice(0, -1);
 
   // Si no hay hash, tal vez estemos navegando por pathname /p/…
   if (!hash) {
@@ -295,7 +296,7 @@ async function handleRouteChange() {
   }
 
   if (productInfo && productInfo.product) {
-    showProductDetail(productInfo);
+    await showProductDetail(productInfo);
   } else {
     // No encontrado, volver al home (sin tocar pathname)
     window.location.hash = "";
@@ -1722,7 +1723,9 @@ function renderCategoriesCircle() {
 // `arg` puede ser el identificador (ID o nombre codificado),
 // un pathname `/p/xxx` o un objeto `productInfo` devuelto por
 // `findProductByIdOrName`. Normalizamos antes de buscar.
-function showProductDetail(arg) {
+// Esta versión es `async` para poder recargar datos desde el repo
+// remoto si el producto no está presente localmente.
+async function showProductDetail(arg) {
   window.scrollTo({ top: 0 });
 
   // determinar `info` de búsqueda o usar el objeto directamente
@@ -1734,8 +1737,20 @@ function showProductDetail(arg) {
     // quitar fragmentos que no formen parte del identificador
     if (lookup.startsWith('/p/')) lookup = lookup.split('/p/')[1];
     if (lookup.startsWith('#')) lookup = lookup.substring(1);
+    if (lookup.endsWith('/')) lookup = lookup.slice(0, -1);
     try { lookup = decodeURIComponent(lookup); } catch (e) {}
     info = findProductByIdOrName(lookup);
+
+    // si no está y nunca intentamos recargar productos, haremos el fetch remoto
+    if ((!info || !info.product) && !window.__remoteAttempted) {
+      window.__remoteAttempted = true;
+      try {
+        await loadProducts('https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Json/products.json');
+      } catch (e) {
+        console.warn('No se pudo cargar productos remotos:', e);
+      }
+      info = findProductByIdOrName(lookup);
+    }
   }
 
   // si el producto no existe no hacemos nada y regresamos al home
@@ -3406,7 +3421,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const pathMatch = window.location.pathname.match(/^\/p\/([^\/]+)/);
   if (pathMatch && pathMatch[1]) {
     // showProductDetail gestionará la búsqueda por id o nombre
-    showProductDetail(pathMatch[1]);
+    await showProductDetail(pathMatch[1]);
   } else if (window.location.hash) {
     // si no hay pathname product, procesar hash como antes
     await handleRouteChange();
