@@ -3,6 +3,16 @@ let products = [];
 let currentProduct = null;
 let categories = [];
 
+// Snapshot del hash inicial proporcionado por el backend (p. ej. index.html#ID)
+// Esto permite restaurarlo si otro script lo limpiara antes de que procesemos rutas.
+const __initialLocationHash = (function () {
+  try {
+    return window.location.hash || "";
+  } catch (e) {
+    return "";
+  }
+})();
+
 // Caches y utilidades para optimización
 let carouselSlidesCache = null;
 let carouselIndicatorsCache = null;
@@ -3420,6 +3430,19 @@ function hidePacksDetail() {
 
 // Inicialización
 document.addEventListener("DOMContentLoaded", async () => {
+  // Restaurar hash inicial si fue limpiado por otros scripts antes de DOMContentLoaded
+  if (!window.location.hash && __initialLocationHash) {
+    try {
+      const u = new URL(window.location);
+      // __initialLocationHash puede incluir '#' o no; normalizar
+      u.hash = __initialLocationHash.startsWith('#') ? __initialLocationHash : '#' + __initialLocationHash;
+      // Reemplazar la entrada actual para no añadir un paso extra en el historial
+      window.history.replaceState(null, '', u.href);
+    } catch (e) {
+      // Fallback sencillo: asignar el hash directamente
+      if (__initialLocationHash) window.location.hash = __initialLocationHash;
+    }
+  }
   // Cargar productos y packs en paralelo y esperar ambos para que el manejo de rutas tenga ambos datasets disponibles
   await Promise.all([loadProducts(), loadPacks()]);
   initCarousel();

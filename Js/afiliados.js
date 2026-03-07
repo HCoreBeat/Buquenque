@@ -21,8 +21,11 @@ async function verifyAffiliate(ref) {
 // Función para limpiar el parámetro 'ref' de la URL
 function cleanRefParameter() {
     const url = new URL(window.location);
+    const currentHash = url.hash || '';
     url.searchParams.delete('ref');
-    window.history.replaceState(null, '', url.href);
+    // Reemplazar solo la parte de path+search+hash para evitar perder el fragmento
+    const newUrl = url.pathname + url.search + (currentHash || '');
+    window.history.replaceState(null, '', newUrl);
 }
 
 // Función principal para manejar la lógica de afiliados
