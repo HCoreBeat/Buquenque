@@ -28,7 +28,11 @@ function initializePaymentSystem() {
 async function sendPageViewStatistics() {
     try {
         const userData = await gatherUserData();
-        const pageLoadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+        // Obtenemos los datos de navegación
+        const navEntry = performance.getEntriesByType('navigation')[0];
+
+        // Calculamos la diferencia
+        const pageLoadTime = navEntry.domContentLoadedEventEnd - navEntry.startTime;
         
         const statsData = {
             ip: userData.ip,
@@ -296,6 +300,8 @@ async function processPayment(e) {
             telefono_comprador: formData.phone || "N/A",
             correo_comprador: formData.email,
             direccion_envio: formData.address,
+            nombre_persona_entrega: formData['delivery-person'],
+            telefono_persona_entrega: formData['delivery-phone'],
             compras: prepareOrderItems(cart), // Artículos del carrito formateados
             precio_compra_total: calculateOrderTotal(cart), // Precio total
             navegador: getBrowserInfo(), // Info del navegador
@@ -434,7 +440,7 @@ function getValidatedCart() {
 
 function validateForm() {
     const form = document.getElementById('payment-form');
-    const requiredFields = ['full-name', 'email', 'phone', 'address'];
+    const requiredFields = ['full-name', 'email', 'phone', 'address', 'delivery-person', 'delivery-phone'];
     const formData = {};
 
     requiredFields.forEach(field => {

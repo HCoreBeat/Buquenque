@@ -1617,6 +1617,12 @@ function showProductDetail(productName) {
 
   window.location.hash = encodeURIComponent(product.nombre);
 
+  // update visible path to /p/ID without reloading and keep hash for router
+  // history.replaceState modifies the current entry (no back-button effect)
+  const productId = product.id || encodeURIComponent(product.nombre);
+  const newPath = `/p/${productId}`;
+  history.replaceState({ productId }, '', newPath + window.location.hash);
+
   const detailContainer = document.getElementById("product-detail");
   const productsContainer = document.getElementById("products-container");
 
