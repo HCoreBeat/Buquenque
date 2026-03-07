@@ -1615,13 +1615,15 @@ function showProductDetail(productName) {
     variantIndex = 0;
   }
 
-  window.location.hash = encodeURIComponent(product.nombre);
-
-  // update visible path to /p/ID without reloading and keep hash for router
-  // history.replaceState modifies the current entry (no back-button effect)
+  // Update visible URL to /p/ID without hash
+  // history.replaceState: changes only the current history entry (no new entry added)
+  // Does not interfere with back button or existing hash routing for categories/packs
   const productId = product.id || encodeURIComponent(product.nombre);
-  const newPath = `/p/${productId}`;
-  history.replaceState({ productId }, '', newPath + window.location.hash);
+  history.replaceState(
+    { type: 'product', productName: product.nombre, productId: productId },
+    `${product.cleanName}`,
+    `/p/${productId}`
+  );
 
   const detailContainer = document.getElementById("product-detail");
   const productsContainer = document.getElementById("products-container");
