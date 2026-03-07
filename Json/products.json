@@ -3110,6 +3110,57 @@
       "disponibilidad": true,
       "created_at": "2026-03-06T18:08:31.245Z",
       "modified_at": "2026-03-06T18:08:31.245Z"
+    },
+    {
+      "id": "prod_1772914860563_b3sx7nre1",
+      "nombre": "Café Candado",
+      "categoria": "Despensa",
+      "precio": 5.95,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000013227_1772914860652.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-07T20:23:37.282Z",
+      "modified_at": "2026-03-07T20:23:37.282Z"
+    },
+    {
+      "id": "prod_1772914905520_up2ong8ic",
+      "nombre": "Café expresso",
+      "categoria": "Despensa",
+      "precio": 6.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000013226_1772914905598.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-07T20:23:38.575Z",
+      "modified_at": "2026-03-07T20:23:38.575Z"
+    },
+    {
+      "id": "prod_1772915007949_dyxi8pspk",
+      "nombre": "Leche en polvo capri",
+      "categoria": "Lácteos",
+      "precio": 11.49,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000013225_1772915008032.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-07T20:23:40.123Z",
+      "modified_at": "2026-03-07T20:23:40.123Z"
     }
   ]
 }
