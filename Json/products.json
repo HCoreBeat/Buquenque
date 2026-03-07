@@ -387,9 +387,9 @@
         "Nutella_de_Chocolate_(350g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Nutella de Chocolate (350g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-07T02:27:27.298Z"
     },
     {
       "id": "prod_1768441690510_daeyrjgpn",
