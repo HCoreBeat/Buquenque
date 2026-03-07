@@ -82,24 +82,43 @@ function goToHome() {
 }
 
 // Función auxiliar: busca un producto por ID o nombre (dual mode)
-// PRIORIDAD: ID siempre se busca primero, luego nombre
+// PRIORIDAD: ID siempre se busca primero, luego nombre.
+// Normalizamos el identificador y quitamos posibles prefijos/path que el
+// rewrite o el backend puedan dejar ("/p/", "#", doble-encoding, etc.).
+// Además probamos con y sin el prefijo "prod_" para enlaces externos.
 // Retorna { product, mainProduct, isVariant, variantIndex, searchedBy } o null
 // Si la lista de productos aún no está poblada, retorna null inmediatamente;
 // el llamador puede decidir recargar desde el repositorio remoto si hace falta.
 function findProductByIdOrName(identifier) {
   if (!identifier || !products || products.length === 0) return null;
 
-  const decodedId = decodeURIComponent(String(identifier)).trim();
+  let decodedId = String(identifier);
+  try { decodedId = decodeURIComponent(decodedId); } catch (e) {}
+  try { decodedId = decodeURIComponent(decodedId); } catch (e) {}
+  decodedId = decodedId.trim();
+
+  // limpiar rutas accidentales
+  if (decodedId.startsWith('/p/')) {
+    decodedId = decodedId.split('/p/')[1];
+  }
+  if (decodedId.startsWith('#')) {
+    decodedId = decodedId.substring(1);
+  }
+
+  // función de ayuda para comparar ids exactos
+  const matchId = (id) => products.find((p) => p.id && String(p.id) === id);
 
   // === 1. BUSQUEDA POR ID ===
-  let product = products.find(
-    (p) => !p.isGrouped && p.id && String(p.id) === decodedId
-  );
-  if (product) {
+  let product = matchId(decodedId);
+  if (!product && !decodedId.startsWith('prod_')) {
+    // probar con prefijo si el hash vino sin él
+    product = matchId('prod_' + decodedId);
+  }
+  if (product && !product.isGrouped) {
     return { product, mainProduct: null, isVariant: false, variantIndex: 0, searchedBy: 'id' };
   }
 
-  // grupo o ID original de variante
+  // grupos y variantes dentro de grupos
   product = products.find((p) => {
     if (!p.isGrouped) return false;
     return (
@@ -117,7 +136,6 @@ function findProductByIdOrName(identifier) {
     };
   }
 
-  // variantes individuales
   for (const p of products) {
     if (p.isGrouped && Array.isArray(p.variants)) {
       const idx = p.variants.findIndex((v) => v.id && String(v.id) === decodedId);
@@ -180,8 +198,15 @@ window.addEventListener("hashchange", () => {
 });
 
 async function handleRouteChange() {
-  const hash = window.location.hash.substring(1);
+  // obtener hash limpio, sin # ni prefijos accidentales
+  let hash = window.location.hash.substring(1);
   const backBtnWrapper = document.getElementById("category-back-button-wrapper");
+
+  if (hash.startsWith('/p/')) {
+    hash = hash.split('/p/')[1];
+  }
+  try { hash = decodeURIComponent(hash); } catch (e) {}
+  hash = hash.trim();
 
   // Si no hay hash, tal vez estemos navegando por pathname /p/…
   if (!hash) {
@@ -221,7 +246,7 @@ async function handleRouteChange() {
     return;
   }
 
-  const decodedHash = decodeURIComponent(hash);
+  const decodedHash = hash; // ya estaba descodificado
 
   // Detectar si es una categoría (formato: category=NombreCategoria)
   if (decodedHash.startsWith("category=")) {
@@ -385,7 +410,7 @@ function pauseCarouselAutoplay() {
 
 // Cargar productos (local o remoto)
 // si se pasa un URL alternativo, se usará en lugar del archivo local.
-async function loadProducts(sourceUrl = "Json/products.json") {
+async function loadProducts(sourceUrl = "/Json/products.json") {
   try {
     // Siempre hacer fetch fresco para evitar problemas con cambios en products.json
     const response = await fetch(sourceUrl);
@@ -1694,8 +1719,9 @@ function renderCategoriesCircle() {
 }
 
 // Mostrar detalle del producto con precios corregidos
-// `arg` puede ser el identificador (ID o nombre codificado) o el objeto
-// `productInfo` devuelto por `findProductByIdOrName`.
+// `arg` puede ser el identificador (ID o nombre codificado),
+// un pathname `/p/xxx` o un objeto `productInfo` devuelto por
+// `findProductByIdOrName`. Normalizamos antes de buscar.
 function showProductDetail(arg) {
   window.scrollTo({ top: 0 });
 
@@ -1704,8 +1730,12 @@ function showProductDetail(arg) {
   if (arg && typeof arg === 'object' && arg.product) {
     info = arg;
   } else {
-    const decodedName = decodeURIComponent(String(arg));
-    info = findProductByIdOrName(decodedName);
+    let lookup = String(arg || '');
+    // quitar fragmentos que no formen parte del identificador
+    if (lookup.startsWith('/p/')) lookup = lookup.split('/p/')[1];
+    if (lookup.startsWith('#')) lookup = lookup.substring(1);
+    try { lookup = decodeURIComponent(lookup); } catch (e) {}
+    info = findProductByIdOrName(lookup);
   }
 
   // si el producto no existe no hacemos nada y regresamos al home
