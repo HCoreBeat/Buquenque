@@ -83,25 +83,29 @@ function goToHome() {
 
 // Función auxiliar: busca un producto por ID o nombre (dual mode)
 // PRIORIDAD: ID siempre se busca primero, luego nombre
-// Retorna { product, mainProduct, isVariant, variantIndex } o null
+// Retorna { product, mainProduct, isVariant, variantIndex, searchedBy } o null
+// Si la lista de productos aún no está poblada, retorna null inmediatamente;
+// el llamador puede decidir recargar desde el repositorio remoto si hace falta.
 function findProductByIdOrName(identifier) {
-  if (!identifier) return null;
+  if (!identifier || !products || products.length === 0) return null;
 
-  const decodedId = decodeURIComponent(identifier).trim();
+  const decodedId = decodeURIComponent(String(identifier)).trim();
 
-  // ============ FASE 1: BUSCAR POR ID (PRIORIDAD) ============
-
-  // 1.1. Buscar por ID exacto en productos simples
-  let product = products.find((p) => !p.isGrouped && p.id && p.id.toString() === decodedId);
+  // === 1. BUSQUEDA POR ID ===
+  let product = products.find(
+    (p) => !p.isGrouped && p.id && String(p.id) === decodedId
+  );
   if (product) {
     return { product, mainProduct: null, isVariant: false, variantIndex: 0, searchedBy: 'id' };
   }
 
-  // 1.2. Buscar por ID exacto en productos agrupados (grupo o ID original de variante)
+  // grupo o ID original de variante
   product = products.find((p) => {
     if (!p.isGrouped) return false;
-    return (p.id && p.id.toString() === decodedId) || 
-           (p.originalId && p.originalId.toString() === decodedId);
+    return (
+      (p.id && String(p.id) === decodedId) ||
+      (p.originalId && String(p.originalId) === decodedId)
+    );
   });
   if (product) {
     return {
@@ -109,36 +113,32 @@ function findProductByIdOrName(identifier) {
       mainProduct: product,
       isVariant: false,
       variantIndex: product.currentVariant || 0,
-      searchedBy: 'groupId'
+      searchedBy: 'groupId',
     };
   }
 
-  // 1.3. Buscar por ID exacto en variantes de productos agrupados
-  for (let i = 0; i < products.length; i++) {
-    const p = products[i];
+  // variantes individuales
+  for (const p of products) {
     if (p.isGrouped && Array.isArray(p.variants)) {
-      const variantIdIdx = p.variants.findIndex((v) => v.id && v.id.toString() === decodedId);
-      if (variantIdIdx !== -1) {
+      const idx = p.variants.findIndex((v) => v.id && String(v.id) === decodedId);
+      if (idx !== -1) {
         return {
-          product: p.variants[variantIdIdx],
+          product: p.variants[idx],
           mainProduct: p,
           isVariant: true,
-          variantIndex: variantIdIdx,
-          searchedBy: 'variantId'
+          variantIndex: idx,
+          searchedBy: 'variantId',
         };
       }
     }
   }
 
-  // ============ FASE 2: BUSCAR POR NOMBRE (COMPATIBILIDAD) ============
-
-  // 2.1. Buscar por nombre exacto en productos simples
+  // === 2. BUSQUEDA POR NOMBRE ===
   product = products.find((p) => !p.isGrouped && p.nombre === decodedId);
   if (product) {
     return { product, mainProduct: null, isVariant: false, variantIndex: 0, searchedBy: 'name' };
   }
 
-  // 2.2. Buscar por nombre del grupo en productos agrupados
   product = products.find((p) => p.isGrouped && p.baseName === decodedId);
   if (product) {
     return {
@@ -146,22 +146,20 @@ function findProductByIdOrName(identifier) {
       mainProduct: product,
       isVariant: false,
       variantIndex: product.currentVariant || 0,
-      searchedBy: 'groupName'
+      searchedBy: 'groupName',
     };
   }
 
-  // 2.3. Buscar por nombre exacto en variantes de productos agrupados
-  for (let i = 0; i < products.length; i++) {
-    const p = products[i];
+  for (const p of products) {
     if (p.isGrouped && Array.isArray(p.variants)) {
-      const variantIdx = p.variants.findIndex((v) => v.nombre === decodedId);
-      if (variantIdx !== -1) {
+      const idx = p.variants.findIndex((v) => v.nombre === decodedId);
+      if (idx !== -1) {
         return {
-          product: p.variants[variantIdx],
+          product: p.variants[idx],
           mainProduct: p,
           isVariant: true,
-          variantIndex: variantIdx,
-          searchedBy: 'variantName'
+          variantIndex: idx,
+          searchedBy: 'variantName',
         };
       }
     }
@@ -172,10 +170,16 @@ function findProductByIdOrName(identifier) {
 
 
 // Manejo del historial con hash y pushState
-window.addEventListener("popstate", handleRouteChange);
-window.addEventListener("hashchange", handleRouteChange);
+// el callback es async; envolverlo para capturar errores y no generar
+// promesas rechazadas no manejadas.
+window.addEventListener("popstate", () => {
+  handleRouteChange().catch(console.error);
+});
+window.addEventListener("hashchange", () => {
+  handleRouteChange().catch(console.error);
+});
 
-function handleRouteChange() {
+async function handleRouteChange() {
   const hash = window.location.hash.substring(1);
   const backBtnWrapper = document.getElementById("category-back-button-wrapper");
 
@@ -186,7 +190,7 @@ function handleRouteChange() {
       if (part) {
         const info = findProductByIdOrName(part);
         if (info && info.product) {
-          showProductDetail(info.product, info.mainProduct, info.isVariant, info.variantIndex);
+          showProductDetail(info); // paso el objeto encontrado
           return;
         }
       }
@@ -248,10 +252,25 @@ function handleRouteChange() {
     return;
   }
 
-  // Es un producto: buscar por ID o nombre (handleado dentro de showProductDetail)
-  const productInfo = findProductByIdOrName(decodedHash);
+  // Es un producto: buscar por ID o nombre
+  let productInfo = findProductByIdOrName(decodedHash);
+
+  // Si no lo encontramos localmente, intentar recargar desde el repo remoto
+  if (!productInfo || !productInfo.product) {
+    if (!window.__remoteAttempted) {
+      window.__remoteAttempted = true;
+      try {
+        // la URL corresponde al raw del branch main
+        await loadProducts('https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Json/products.json');
+      } catch (e) {
+        console.warn('No se pudo cargar productos remotos:', e);
+      }
+      productInfo = findProductByIdOrName(decodedHash);
+    }
+  }
+
   if (productInfo && productInfo.product) {
-    showProductDetail(decodedHash); // Pasar el ID/nombre completo
+    showProductDetail(productInfo);
   } else {
     // No encontrado, volver al home (sin tocar pathname)
     window.location.hash = "";
@@ -364,12 +383,13 @@ function pauseCarouselAutoplay() {
   }
 }
 
-// Cargar productos
-async function loadProducts() {
+// Cargar productos (local o remoto)
+// si se pasa un URL alternativo, se usará en lugar del archivo local.
+async function loadProducts(sourceUrl = "Json/products.json") {
   try {
     // Siempre hacer fetch fresco para evitar problemas con cambios en products.json
-    const response = await fetch("Json/products.json");
-    if (!response.ok) throw new Error("Error al cargar productos");
+    const response = await fetch(sourceUrl);
+    if (!response.ok) throw new Error("Error al cargar productos desde " + sourceUrl);
     const data = await response.json();
 
     // Procesar productos para manejar variantes
@@ -1674,42 +1694,36 @@ function renderCategoriesCircle() {
 }
 
 // Mostrar detalle del producto con precios corregidos
-function showProductDetail(productName) {
+// `arg` puede ser el identificador (ID o nombre codificado) o el objeto
+// `productInfo` devuelto por `findProductByIdOrName`.
+function showProductDetail(arg) {
   window.scrollTo({ top: 0 });
-  const decodedName = decodeURIComponent(productName);
 
-  // Ocultar el banner al entrar al detalle del producto
-  if (bannerContainer) {
-    bannerContainer.style.display = "none"; // <-- OCULTA EL BANNER
+  // determinar `info` de búsqueda o usar el objeto directamente
+  let info;
+  if (arg && typeof arg === 'object' && arg.product) {
+    info = arg;
+  } else {
+    const decodedName = decodeURIComponent(String(arg));
+    info = findProductByIdOrName(decodedName);
   }
 
-  // Ocultar la sección de best-sellers al entrar al detalle del producto
-  if (bestSellersSection) {
-    bestSellersSection.style.display = "none"; // <-- OCULTA LOS BEST-SELLERS
-  }
-
-  // Ocultar la sección de categorías circulares al entrar al detalle del producto
-  const categoriesCircleSection = document.querySelector(".categories-circle-section");
-  if (categoriesCircleSection) {
-    categoriesCircleSection.style.display = "none"; // <-- OCULTA LAS CATEGORÍAS CIRCULARES
-  }
-
-  // Ocultar el panel de packs al entrar al detalle del producto
-  const categoryCardSection = document.getElementById("category-card-section");
-  if (categoryCardSection) {
-    categoryCardSection.style.display = "none"; // <-- OCULTA EL CATEGORY CARD
-  }
-
-  // localizar producto usando la nueva función inteligente
-  const info = findProductByIdOrName(decodedName);
+  // si el producto no existe no hacemos nada y regresamos al home
   if (!info || !info.product) {
-    // si estamos navegando a través de pathname /p/ no tocar la URL
     if (!window.location.pathname.startsWith('/p/')) {
       window.location.hash = "";
     }
     hideProductDetail();
     return;
   }
+
+  // elementos de UI a ocultar antes de mostrar el detalle
+  if (bannerContainer) bannerContainer.style.display = "none";
+  if (bestSellersSection) bestSellersSection.style.display = "none";
+  const categoriesCircleSection = document.querySelector(".categories-circle-section");
+  if (categoriesCircleSection) categoriesCircleSection.style.display = "none";
+  const categoryCardSection = document.getElementById("category-card-section");
+  if (categoryCardSection) categoryCardSection.style.display = "none";
 
   let product = info.product;
   const mainProduct = info.mainProduct;
@@ -3365,7 +3379,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     showProductDetail(pathMatch[1]);
   } else if (window.location.hash) {
     // si no hay pathname product, procesar hash como antes
-    handleRouteChange();
+    await handleRouteChange();
   }
 
   // Debounce para búsqueda en tiempo real
