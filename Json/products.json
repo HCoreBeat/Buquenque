@@ -3212,6 +3212,23 @@
       "disponibilidad": false,
       "created_at": "2026-03-12T17:17:35.495Z",
       "modified_at": "2026-03-12T18:47:37.241Z"
+    },
+    {
+      "id": "prod_1773353745359_tc7llj26g",
+      "nombre": "Lomo de Cerdo deshuesado x Kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 7.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000018111_1773353745450.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-12T22:15:54.305Z",
+      "modified_at": "2026-03-12T22:15:54.305Z"
     }
   ]
 }
