@@ -2588,18 +2588,18 @@
       "id": "prod_1771810113359_uesbogopo",
       "nombre": "Café la llave",
       "categoria": "Despensa",
-      "precio": 11,
+      "precio": 9.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "49655_1771810113507.jpg"
+        "1000017942_1773335569342.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-02-23T01:29:52.808Z",
-      "modified_at": "2026-03-04T17:37:15.679Z"
+      "modified_at": "2026-03-12T17:17:32.642Z"
     },
     {
       "id": "prod_1771810173233_jpshzwww8",
@@ -3195,6 +3195,23 @@
       "disponibilidad": true,
       "created_at": "2026-03-07T20:42:14.137Z",
       "modified_at": "2026-03-07T20:42:14.137Z"
+    },
+    {
+      "id": "prod_1773335786764_jrf2rysk1",
+      "nombre": "Café El Morro",
+      "categoria": "Despensa",
+      "precio": 9.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000017943_1773335786871.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-12T17:17:35.495Z",
+      "modified_at": "2026-03-12T17:17:35.495Z"
     }
   ]
 }
