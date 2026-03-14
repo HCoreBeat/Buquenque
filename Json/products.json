@@ -2333,8 +2333,8 @@
       "id": "prod_1770819915685_uohxroax1",
       "nombre": "Saco de Arroz 25Kg",
       "categoria": "Despensa",
-      "precio": 50,
-      "descuento": 10,
+      "precio": 47,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -2344,7 +2344,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-02-11T14:25:26.248Z",
-      "modified_at": "2026-02-12T16:16:04.124Z"
+      "modified_at": "2026-03-14T00:31:59.757Z"
     },
     {
       "id": "prod_1770820966994_c9d402x6t",
@@ -2792,7 +2792,7 @@
       "id": "prod_1772439456822_kktbprsor",
       "nombre": "Saco de Arroz supreme 55lbs",
       "categoria": "Despensa",
-      "precio": 50,
+      "precio": 47,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -2803,7 +2803,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-02T08:28:00.164Z",
-      "modified_at": "2026-03-02T08:28:00.164Z"
+      "modified_at": "2026-03-14T00:31:59.757Z"
     },
     {
       "id": "prod_1772439529396_kh3fahrr4",
@@ -3158,9 +3158,9 @@
         "1000013225_1772915008032.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-07T20:23:40.123Z",
-      "modified_at": "2026-03-07T20:23:40.123Z"
+      "modified_at": "2026-03-14T00:31:59.756Z"
     },
     {
       "id": "prod_1772916022776_bilx1sk92",
@@ -3229,6 +3229,23 @@
       "disponibilidad": true,
       "created_at": "2026-03-12T22:15:54.305Z",
       "modified_at": "2026-03-12T22:15:54.305Z"
+    },
+    {
+      "id": "prod_1773448315523_sbogqzd9h",
+      "nombre": "Saco de arroz Grano Dorado",
+      "categoria": "Despensa",
+      "precio": 45,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000018949_1773448315601.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-14T00:32:03.512Z",
+      "modified_at": "2026-03-14T00:32:03.512Z"
     }
   ]
 }
