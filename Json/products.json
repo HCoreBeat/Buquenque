@@ -1005,20 +1005,20 @@
     },
     {
       "id": "prod_1769297232608_616ijabck",
-      "nombre": "Queso Gouda (3Kg)",
+      "nombre": "Queso Gouda",
       "categoria": "Lácteos",
-      "precio": 38,
-      "descuento": 7.89,
+      "precio": 37.79,
+      "descuento": 7.38,
       "mas_vendido": true,
-      "nuevo": false,
-      "oferta": true,
+      "nuevo": true,
+      "oferta": false,
       "imagenes": [
-        "c48fcb12-52ba-44af-bd94-3d6491ddfdce_1769296310864.jpeg"
+        "1000019731_1773543864891.jpg"
       ],
-      "descripcion": "Disfruta de la calidad de Queso Gouda (3Kg), una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "descripcion": "Disfruta de la calidad de Queso Gouda, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-24T19:24:15.441Z"
+      "modified_at": "2026-03-15T03:04:35.537Z"
     },
     {
       "id": "prod_1768441690510_yv6cayff0",
