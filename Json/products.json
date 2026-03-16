@@ -91,16 +91,16 @@
       "categoria": "Despensa",
       "precio": 11.5,
       "descuento": 4.35,
-      "mas_vendido": true,
+      "mas_vendido": false,
       "nuevo": false,
       "oferta": true,
       "imagenes": [
         "050-carton-de-huevos-x-30-u-blancos_1771961041735.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-02-28T00:34:13.266Z"
+      "modified_at": "2026-03-16T14:59:34.435Z"
     },
     {
       "id": "prod_1768923054742_dhekmp0os",
