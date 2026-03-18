@@ -3314,6 +3314,40 @@
       "disponibilidad": true,
       "created_at": "2026-03-18T17:58:57.128Z",
       "modified_at": "2026-03-18T17:58:57.128Z"
+    },
+    {
+      "id": "prod_1773859229838_gdak06f1k",
+      "nombre": "Pack x4 Yogurt Vima (Fresa)",
+      "categoria": "Despensa",
+      "precio": 3.25,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000026018_1773859229936.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-18T18:42:30.084Z",
+      "modified_at": "2026-03-18T18:42:30.084Z"
+    },
+    {
+      "id": "prod_1773859339068_wex9cz8jw",
+      "nombre": "Pack x4 Yogurt Vima (Natural)",
+      "categoria": "Despensa",
+      "precio": 3.25,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000026017_1773859339140.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-18T18:42:32.336Z",
+      "modified_at": "2026-03-18T18:42:32.336Z"
     }
   ]
 }
