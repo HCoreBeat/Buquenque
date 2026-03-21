@@ -2132,15 +2132,15 @@
       "precio": 28,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "23115_1769289701125.jpg"
       ],
       "descripcion": "Calidad profesional para tu cocina o negocio. El bacon Almirez de ElPozo está diseñado para hostelería, con cortes precisos y sin impurezas. Libre de gluten, lactosa, piel, ternilla y fécula, este producto garantiza sabor puro y textura ideal para desayunos, sándwiches, pizzas y platos criollos.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-21T23:54:40.023Z"
     },
     {
       "id": "prod_1769974779697_582345678",
@@ -2370,15 +2370,15 @@
       "precio": 15,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "41995_1770927044794.jpg"
       ],
       "descripcion": "Paquete de 10 lbs de Cuartos de pollo",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-12T20:12:15.288Z",
-      "modified_at": "2026-02-12T20:12:15.288Z"
+      "modified_at": "2026-03-21T23:54:40.024Z"
     },
     {
       "id": "prod_1770927123433_kjav7smv7",
@@ -2438,15 +2438,15 @@
       "precio": 3.9,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "44791_1771255241374.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-16T15:32:02.790Z",
-      "modified_at": "2026-02-16T15:32:02.790Z"
+      "modified_at": "2026-03-21T23:54:40.024Z"
     },
     {
       "id": "prod_1771255296430_p8ultevvt",
@@ -3424,15 +3424,15 @@
       "precio": 2.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img_1774062867199.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-21T03:32:47.726Z",
-      "modified_at": "2026-03-21T03:32:47.726Z"
+      "modified_at": "2026-03-21T23:54:40.024Z"
     },
     {
       "id": "prod_1774063422149_kzpdkp3om",
