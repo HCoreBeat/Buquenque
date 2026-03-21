@@ -251,9 +251,9 @@
         "Refresco_Limon_(330ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Refresco Limón (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-21T04:02:57.118Z"
     },
     {
       "id": "prod_1768441690510_jiwy36eez",
@@ -557,9 +557,9 @@
         "Caja_de_refresco_Limon.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Caja de refresco Limón, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-03-04T17:37:15.678Z"
+      "modified_at": "2026-03-21T04:02:57.118Z"
     },
     {
       "id": "prod_1768441690510_lmdloikfh",
@@ -1857,8 +1857,8 @@
       "id": "prod_1768441690510_aa0pwzj5i",
       "nombre": "Rayan Chocolate",
       "categoria": "Despensa",
-      "precio": 4.28,
-      "descuento": 0,
+      "precio": 4.78,
+      "descuento": 10.46,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
@@ -1868,7 +1868,7 @@
       "descripcion": "Mezcla en polvo sabor chocolate para preparar bebidas cremosas. Presentación llamativa con personaje infantil, ideal para atraer a niños y familias. Contiene leche y cacao, y se promociona como un producto nuevo.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-21T04:03:05.564Z"
     },
     {
       "id": "prod_1768443205852_jk51wnt6q",
@@ -2047,15 +2047,15 @@
       "precio": 0.8,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img_2090_1768920359065.jpeg"
       ],
       "descripcion": "Disfruta del refresco de naranja x unidad excelente producto para meriendas",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-21T04:02:57.118Z"
     },
     {
       "id": "prod_1769200481205_vpc09blss",
@@ -3050,15 +3050,15 @@
       "precio": 20.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "shopping_1772645829590.webp"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-04T17:37:18.050Z",
-      "modified_at": "2026-03-04T17:37:18.050Z"
+      "modified_at": "2026-03-21T04:02:57.118Z"
     },
     {
       "id": "prod_1772732759012_tojcqpnpu",
@@ -3450,6 +3450,57 @@
       "disponibilidad": true,
       "created_at": "2026-03-21T03:32:50.297Z",
       "modified_at": "2026-03-21T03:32:50.297Z"
+    },
+    {
+      "id": "prod_1774065369289_dj3b4r62t",
+      "nombre": "Caja de refresco 24u (Cola)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 18.95,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "images_1774065369299.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-21T04:03:01.183Z",
+      "modified_at": "2026-03-21T04:03:01.183Z"
+    },
+    {
+      "id": "prod_1774065409293_ql7mv8a6d",
+      "nombre": "Caja de refresco 24u (Naranja)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 18.95,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "refrescofrisednl_1774065409309.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-21T04:03:03.294Z",
+      "modified_at": "2026-03-21T04:03:03.294Z"
+    },
+    {
+      "id": "prod_1774065730408_js1d1s8e1",
+      "nombre": "Caja de refresco 24u (Limon)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 18.95,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "ckroa2ckroa2ckro_1774065730427.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-21T04:03:05.564Z",
+      "modified_at": "2026-03-21T04:03:05.564Z"
     }
   ]
 }
