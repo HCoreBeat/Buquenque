@@ -4,18 +4,18 @@
       "id": "prod_1768679794475_s112jvux0",
       "nombre": "Paquete de cuartos de pollo 10 lbs",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 15,
-      "descuento": 20,
+      "precio": 14.99,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "Paquete_de_cuartos_de_pollo_10_lbs.jpg"
+        "62e082f4_1774062351324.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-23T01:12:56.321Z"
+      "modified_at": "2026-03-21T03:32:42.416Z"
     },
     {
       "id": "prod_1768441690510_piqbut8gb",
@@ -140,8 +140,8 @@
       "id": "prod_1768441690510_ma2k8r01f",
       "nombre": "Aceite (1L)",
       "categoria": "Despensa",
-      "precio": 4.87,
-      "descuento": 1.44,
+      "precio": 4.29,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
@@ -151,7 +151,7 @@
       "descripcion": "Disfruta de la calidad de Aceite (1L), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-02T08:27:57.016Z"
+      "modified_at": "2026-03-21T03:32:47.728Z"
     },
     {
       "id": "prod_1768441690510_ijaa8o33p",
@@ -327,7 +327,7 @@
       "id": "prod_1768441690510_ehifoffi7",
       "nombre": "Galletas de Soda con Mantequilla Doricas",
       "categoria": "Confitura",
-      "precio": 5,
+      "precio": 3.75,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -336,9 +336,9 @@
         "Galletas_de_Soda_con_Mantequilla_Doricas.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Galletas de Soda con Mantequilla Doricas, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.890Z"
+      "modified_at": "2026-03-21T03:32:40.230Z"
     },
     {
       "id": "prod_1768441690510_7gy02c75y",
@@ -455,9 +455,9 @@
         "Jamon_Bravo_Rapido_(2kg).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Jamón Bravo Rápido (2kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-03-02T08:28:03.696Z"
+      "modified_at": "2026-03-21T03:32:50.298Z"
     },
     {
       "id": "prod_1768441690510_eolc54k6n",
@@ -818,9 +818,9 @@
     },
     {
       "id": "prod_1768441690510_jeg5mb96s",
-      "nombre": "Spam de (Pollo) (340g)",
+      "nombre": "Jamonilla de (Pollo) (340g)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 2.5,
+      "precio": 2.37,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -829,9 +829,9 @@
         "Spam_de_Pollo_(340g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Spam de Pollo (340g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-02T08:28:02.495Z"
+      "modified_at": "2026-03-21T03:32:40.230Z"
     },
     {
       "id": "prod_1768441690510_jnja8jl1s",
@@ -973,7 +973,7 @@
       "id": "prod_1768441690510_4sqo3j0w6",
       "nombre": "Pechuga de pollo (2Kg)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 16.5,
+      "precio": 14.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -984,7 +984,7 @@
       "descripcion": "Disfruta de la calidad de Pechuga de pollo (2Kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-21T03:32:47.729Z"
     },
     {
       "id": "prod_1768441690510_cgr6pnapy",
@@ -1007,7 +1007,7 @@
       "id": "prod_1769297232608_616ijabck",
       "nombre": "Queso Gouda 3Kg",
       "categoria": "Lácteos",
-      "precio": 37,
+      "precio": 34,
       "descuento": 0,
       "mas_vendido": true,
       "nuevo": true,
@@ -1018,7 +1018,7 @@
       "descripcion": "Disfruta de la calidad de Queso Gouda, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-18T17:58:58.830Z"
+      "modified_at": "2026-03-21T03:32:50.297Z"
     },
     {
       "id": "prod_1768441690510_yv6cayff0",
@@ -1441,9 +1441,9 @@
         "Caja_de_Pechuga_de_Pollo_(12Kg).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Caja de Pechuga de Pollo (12Kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-21T03:32:50.298Z"
     },
     {
       "id": "prod_1769399408048_hbcs3qv16",
@@ -1483,7 +1483,7 @@
       "id": "prod_1768441690510_14e74xnoh",
       "nombre": "Cabeza de Ajo",
       "categoria": "Aderezos",
-      "precio": 0.51,
+      "precio": 0.49,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -1494,7 +1494,7 @@
       "descripcion": "Disfruta de la calidad de Cabeza de Ajo, una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-21T03:32:40.228Z"
     },
     {
       "id": "prod_1768509219912_pb6y62qrk",
@@ -1560,9 +1560,9 @@
         "Leche_condensada_390g.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Leche condensada 390g, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-03-02T08:28:03.696Z"
+      "modified_at": "2026-03-21T03:32:50.298Z"
     },
     {
       "id": "prod_1769213534534_s8dqaxn10",
@@ -1687,8 +1687,8 @@
       "id": "prod_1768441690510_8q6y9td5k",
       "nombre": "Limón (por libra)",
       "categoria": "Frutas",
-      "precio": 1.5,
-      "descuento": 0,
+      "precio": 1.99,
+      "descuento": 24.62,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -1698,7 +1698,7 @@
       "descripcion": "Disfruta de la calidad de Limón (por libra), una excelente opción de nuestra categoría Frutas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-21T03:32:40.230Z"
     },
     {
       "id": "prod_1768837249014_0e8hctca5",
@@ -1755,8 +1755,8 @@
       "id": "prod_1768441690510_ujn45fhvi",
       "nombre": "Bolsa de pan 10u",
       "categoria": "Despensa",
-      "precio": 1.8,
-      "descuento": 0,
+      "precio": 1.9,
+      "descuento": 5.26,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -1766,7 +1766,7 @@
       "descripcion": "Disfruta de la calidad de Bolsa de pan 10u, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-21T03:32:45.427Z"
     },
     {
       "id": "prod_1768441690510_h5qqrqz06",
@@ -1798,16 +1798,16 @@
         "Galletas_Petit_Biscuits_de_coco_80g.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Galletas Petit Biscuits de coco 80g, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.893Z"
+      "modified_at": "2026-03-21T03:32:40.230Z"
     },
     {
       "id": "prod_1768443205852_ac2tz1k6u",
       "nombre": "Carne de cerdo x lbs",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 3,
-      "descuento": 0,
+      "precio": 3.07,
+      "descuento": 2.28,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -1817,7 +1817,7 @@
       "descripcion": "Disfruta de la calidad de Carne de cerdo x lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-21T03:32:40.231Z"
     },
     {
       "id": "prod_1768509219912_h61h4xal8",
@@ -1925,8 +1925,8 @@
       "id": "prod_1769612979664_6f4o3BE2I",
       "nombre": "Chuleta de cerdo x lb",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 3.31,
-      "descuento": 0,
+      "precio": 3.37,
+      "descuento": 1.78,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
@@ -1936,7 +1936,7 @@
       "descripcion": "Disfruta de la calidad de la chuleta de cerdo natural ideal para tus cenas",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-01T19:42:59.124Z"
+      "modified_at": "2026-03-21T03:32:40.229Z"
     },
     {
       "id": "prod_1768844669044_qrt1f4m3k",
@@ -2537,7 +2537,7 @@
       "id": "prod_1771255763596_eaz128kna",
       "nombre": "Atún premium en aceite vegetal 1000g",
       "categoria": "Despensa",
-      "precio": 16,
+      "precio": 15.95,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -2548,7 +2548,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-02-16T15:32:15.125Z",
-      "modified_at": "2026-02-16T15:32:15.125Z"
+      "modified_at": "2026-03-21T03:32:36.264Z"
     },
     {
       "id": "prod_1771255834189_mbvu28jpy",
@@ -2673,7 +2673,7 @@
       "id": "prod_1772069781750_na7wo0yhn",
       "nombre": "Mayonesa HollandPark (500ml)",
       "categoria": "Aderezos",
-      "precio": 4.99,
+      "precio": 4.97,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -2684,13 +2684,13 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-02-26T01:40:49.364Z",
-      "modified_at": "2026-02-26T01:40:49.364Z"
+      "modified_at": "2026-03-21T03:32:47.727Z"
     },
     {
       "id": "prod_1772069960674_5cjim17vs",
       "nombre": "Sumo de Limon 500ml",
       "categoria": "Despensa",
-      "precio": 4.65,
+      "precio": 4.17,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -2701,7 +2701,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-02-26T01:40:51.525Z",
-      "modified_at": "2026-02-26T01:40:51.525Z"
+      "modified_at": "2026-03-21T03:32:47.727Z"
     },
     {
       "id": "prod_1772070039908_h8liucaq8",
@@ -2727,15 +2727,15 @@
       "precio": 4.97,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "53955_1772238682027.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-28T00:34:11.632Z",
-      "modified_at": "2026-02-28T00:34:11.632Z"
+      "modified_at": "2026-03-21T03:32:50.303Z"
     },
     {
       "id": "prod_1772238758846_9o5c439un",
@@ -2744,21 +2744,21 @@
       "precio": 4.97,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "53954_1772238759054.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-28T00:34:13.259Z",
-      "modified_at": "2026-02-28T00:34:13.259Z"
+      "modified_at": "2026-03-21T03:32:50.304Z"
     },
     {
       "id": "prod_1772300754323_lz1rnolgm",
       "nombre": "Paquete de Croquetas de pollo 1Kg",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 10,
+      "precio": 9.95,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -2769,7 +2769,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-02-28T17:46:04.296Z",
-      "modified_at": "2026-02-28T17:46:04.296Z"
+      "modified_at": "2026-03-21T03:32:47.728Z"
     },
     {
       "id": "prod_1772439257972_9nrd57jde",
@@ -2784,9 +2784,9 @@
         "gemini_generated_image_iycg83iycg83iycg_1772439257986.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-02T08:27:54.950Z",
-      "modified_at": "2026-03-02T08:27:54.950Z"
+      "modified_at": "2026-03-21T03:32:50.297Z"
     },
     {
       "id": "prod_1772439456822_kktbprsor",
@@ -2809,7 +2809,7 @@
       "id": "prod_1772439529396_kh3fahrr4",
       "nombre": "Saco de azúcar blanca 25kg",
       "categoria": "Despensa",
-      "precio": 45,
+      "precio": 44.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -2820,7 +2820,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-02T08:28:01.312Z",
-      "modified_at": "2026-03-02T08:28:01.312Z"
+      "modified_at": "2026-03-21T03:32:47.728Z"
     },
     {
       "id": "prod_1772439588460_8m93dd12m",
@@ -3030,8 +3030,8 @@
       "id": "prod_1772443671662_3zlv75nd6",
       "nombre": "Leche condensada La Keka",
       "categoria": "Lácteos",
-      "precio": 1.83,
-      "descuento": 0,
+      "precio": 1.97,
+      "descuento": 7.11,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
@@ -3041,7 +3041,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-02T09:28:25.562Z",
-      "modified_at": "2026-03-02T09:41:16.896Z"
+      "modified_at": "2026-03-21T03:32:50.302Z"
     },
     {
       "id": "prod_1772645829533_juot68g28",
@@ -3351,7 +3351,7 @@
     },
     {
       "id": "prod_1773867595760_b5f1ftr6u",
-      "nombre": "Filetes de Salmón",
+      "nombre": "Filetes de Panga",
       "categoria": "Cárnicos y Embutidos",
       "precio": 3.99,
       "descuento": 0,
@@ -3364,7 +3364,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-18T21:00:04.330Z",
-      "modified_at": "2026-03-18T21:00:04.330Z"
+      "modified_at": "2026-03-21T03:32:50.297Z"
     },
     {
       "id": "prod_1773970206536_b6vii0sye",
@@ -3399,6 +3399,57 @@
       "disponibilidad": true,
       "created_at": "2026-03-20T14:10:33.366Z",
       "modified_at": "2026-03-20T14:10:33.366Z"
+    },
+    {
+      "id": "prod_1774061850971_c8jyb0gq1",
+      "nombre": "Ají pimiento",
+      "categoria": "Verduras",
+      "precio": 2.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "pimiento_verde_1774061850980.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-21T03:32:40.227Z",
+      "modified_at": "2026-03-21T03:32:40.227Z"
+    },
+    {
+      "id": "prod_1774062867183_31g8j5q3v",
+      "nombre": "Atún en aceite vegetal 140g",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 2.5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_1774062867199.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-21T03:32:47.726Z",
+      "modified_at": "2026-03-21T03:32:47.726Z"
+    },
+    {
+      "id": "prod_1774063422149_kzpdkp3om",
+      "nombre": "Néctar de Mango 250ml",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 1.5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "oip_1774063422183.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-21T03:32:50.297Z",
+      "modified_at": "2026-03-21T03:32:50.297Z"
     }
   ]
 }
