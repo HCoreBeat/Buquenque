@@ -90,7 +90,7 @@
       "nombre": "Cartón de Huevos",
       "categoria": "Despensa",
       "precio": 11.5,
-      "descuento": 4.35,
+      "descuento": 4.61,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": true,
@@ -98,9 +98,9 @@
         "050-carton-de-huevos-x-30-u-blancos_1771961041735.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-16T14:59:34.435Z"
+      "modified_at": "2026-03-22T23:41:35.204Z"
     },
     {
       "id": "prod_1768923054742_dhekmp0os",
@@ -129,12 +129,12 @@
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "14649_1768923556748.jpg"
+        "1000030509_1774222522175.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Refresco Instantáneo (2Lt), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-22T23:41:31.056Z"
     },
     {
       "id": "prod_1768441690510_ma2k8r01f",
@@ -3501,6 +3501,74 @@
       "disponibilidad": true,
       "created_at": "2026-03-21T04:03:05.564Z",
       "modified_at": "2026-03-21T04:03:05.564Z"
+    },
+    {
+      "id": "prod_1774222439833_s0jwz3gyf",
+      "nombre": "Jamón Bravo 2kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 22.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000030508_1774222439937.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-22T23:41:29.685Z",
+      "modified_at": "2026-03-22T23:41:29.685Z"
+    },
+    {
+      "id": "prod_1774222653850_9m6grgvh0",
+      "nombre": "Queso Gouda 1Kg",
+      "categoria": "Lácteos",
+      "precio": 13.85,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000030505_1774222653906.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-22T23:41:32.672Z",
+      "modified_at": "2026-03-22T23:41:32.672Z"
+    },
+    {
+      "id": "prod_1774222778857_b1qujwhp4",
+      "nombre": "Pack 1Kg Queso Gouda y 1Kg Jamón",
+      "categoria": "Despensa",
+      "precio": 23.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000030506_1774222778932.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-22T23:41:33.926Z",
+      "modified_at": "2026-03-22T23:41:33.926Z"
+    },
+    {
+      "id": "prod_1774222827787_4bvaa0jmo",
+      "nombre": "Anillas de Calamar 1lb",
+      "categoria": "Despensa",
+      "precio": 8.69,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000030507_1774222827857.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-22T23:41:35.203Z",
+      "modified_at": "2026-03-22T23:41:35.203Z"
     }
   ]
 }
