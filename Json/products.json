@@ -647,23 +647,6 @@
       "modified_at": "2026-02-16T17:26:12.282Z"
     },
     {
-      "id": "prod_1768509219912_tvj6iq15t",
-      "nombre": "Mayonesa Victoria (250ml)",
-      "categoria": "Aderezos",
-      "precio": 2.47,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "Mayonesa_Victoria_(500ml).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Mayonesa \"Victoria\" (500ml), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-01T18:51:14.447Z"
-    },
-    {
       "id": "prod_1768441690510_u0qqsmz96",
       "nombre": "Galletas ShowGol (Dulce de Leche) (76g)",
       "categoria": "Confitura",
@@ -2110,9 +2093,9 @@
     },
     {
       "id": "prod_1769202654831_7rc37gvmx",
-      "nombre": "Giardino Mostaza Premium – 300g",
+      "nombre": "Giardino Mostaza Premium – 300ml",
       "categoria": "Aderezos",
-      "precio": 2.7,
+      "precio": 2.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -2123,7 +2106,7 @@
       "descripcion": "Agrega sabor y estilo a tus comidas con la mostaza Giardino. Su fórmula cremosa y equilibrada realza hamburguesas, hot dogs, sándwiches y platos criollos. Presentada en botella amarilla con tapa negra, incluye diseño visual atractivo y sello de calidad premium.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-27T05:24:32.837Z"
     },
     {
       "id": "prod_1769295656223_amswxv2gt",
@@ -2226,23 +2209,6 @@
       "disponibilidad": false,
       "created_at": null,
       "modified_at": "2026-03-06T18:08:28.218Z"
-    },
-    {
-      "id": "prod_1769920633225_aw89nywas",
-      "nombre": "Mayonesa Victoria Garden",
-      "categoria": "Despensa",
-      "precio": 4,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "28918_1769919763267.jpg"
-      ],
-      "descripcion": "Dale un toque irresistible a tus comidas con la Mayonesa Victoria Garden. Definida por su textura rica, cremosa y suave, esta mayonesa es el ingrediente secreto para elevar el sabor de tus hamburguesas, sándwiches y ensaladas. Presentada en un generoso frasco de vidrio con tapa hermética azul, garantiza una frescura duradera y una consistencia profesional que hará que cada bocado sea una experiencia gourmet en casa.",
-      "disponibilidad": false,
-      "created_at": "2026-02-01T04:25:53.048Z",
-      "modified_at": "2026-03-01T18:51:14.448Z"
     },
     {
       "id": "prod_1769920633225_umws2zt0k",
@@ -2398,23 +2364,6 @@
       "modified_at": "2026-02-12T20:12:17.667Z"
     },
     {
-      "id": "prod_1771255120206_0qnyt6ot3",
-      "nombre": "Mostaza 300ml",
-      "categoria": "Despensa",
-      "precio": 2.65,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "44789_1771255120410.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": true,
-      "created_at": "2026-02-16T15:31:59.586Z",
-      "modified_at": "2026-02-16T15:31:59.586Z"
-    },
-    {
       "id": "prod_1771255174691_cpxbapmjz",
       "nombre": "Ketchup 310ml",
       "categoria": "Despensa",
@@ -2450,20 +2399,20 @@
     },
     {
       "id": "prod_1771255296430_p8ultevvt",
-      "nombre": "Pasta para bocaditos",
+      "nombre": "Pasta para bocaditos 225ml",
       "categoria": "Despensa",
-      "precio": 2.9,
+      "precio": 2.65,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "44792_1771255296666.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-02-16T15:32:04.846Z",
-      "modified_at": "2026-02-24T19:59:33.570Z"
+      "modified_at": "2026-03-27T05:24:31.693Z"
     },
     {
       "id": "prod_1771255391271_0s958gn5g",
@@ -2489,15 +2438,15 @@
       "precio": 2.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "44793_1771255455899.jpg"
+        "1e5ea189-5e50-4723-a842-7e857be51e7d-1_1774588319065.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-02-16T15:32:08.917Z",
-      "modified_at": "2026-03-06T18:08:28.219Z"
+      "modified_at": "2026-03-27T05:24:25.179Z"
     },
     {
       "id": "prod_1771255568932_49z71tujl",
@@ -3569,6 +3518,74 @@
       "disponibilidad": true,
       "created_at": "2026-03-22T23:41:35.203Z",
       "modified_at": "2026-03-22T23:41:35.203Z"
+    },
+    {
+      "id": "prod_1774588013360_4mvfuxndo",
+      "nombre": "Salsa Barbacoa 320g",
+      "categoria": "Aderezos",
+      "precio": 3.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "144731-1_1774588013387.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-27T05:24:19.906Z",
+      "modified_at": "2026-03-27T05:24:19.906Z"
+    },
+    {
+      "id": "prod_1774588196965_61a1oo6gg",
+      "nombre": "Leche evaporada 377ml",
+      "categoria": "Lácteos",
+      "precio": 2.5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "leche_evaporada_vima_377ml_isla360shop-1_1774588196972.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-27T05:24:21.958Z",
+      "modified_at": "2026-03-27T05:24:21.958Z"
+    },
+    {
+      "id": "prod_1774588718809_f6anpwdzt",
+      "nombre": "Mayonesa Vima 450ml",
+      "categoria": "Aderezos",
+      "precio": 3.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "d3eae4e0-a6b0-46f2-b7bc-8126942b81b1-1_1774588718813.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-27T05:24:31.693Z",
+      "modified_at": "2026-03-27T05:24:31.693Z"
+    },
+    {
+      "id": "prod_1774589037954_ne3iqyc5v",
+      "nombre": "Café natural Vima 250g",
+      "categoria": "Despensa",
+      "precio": 7.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "2f8c7d0b-e985-42d9-97b7-20a75e35e87e-1_1774589037972.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-27T05:24:33.909Z",
+      "modified_at": "2026-03-27T05:24:33.909Z"
     }
   ]
 }
