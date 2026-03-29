@@ -990,8 +990,8 @@
       "id": "prod_1769297232608_616ijabck",
       "nombre": "Queso Gouda 3Kg",
       "categoria": "Lácteos",
-      "precio": 34,
-      "descuento": 0,
+      "precio": 37,
+      "descuento": 8.11,
       "mas_vendido": true,
       "nuevo": true,
       "oferta": false,
@@ -1001,7 +1001,7 @@
       "descripcion": "Disfruta de la calidad de Queso Gouda, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-21T03:32:50.297Z"
+      "modified_at": "2026-03-29T00:12:24.133Z"
     },
     {
       "id": "prod_1768441690510_yv6cayff0",
@@ -2087,9 +2087,9 @@
         "ketchup_cosami_1769200134781.jpg"
       ],
       "descripcion": "Descubre el sabor tradicional con el ketchup original de Cosami. Elaborado con tomates frescos y un toque criollo, esta salsa es perfecta para acompañar papas fritas, hamburguesas, carnes y snacks. Su presentación en botella roja con tapa blanca garantiza conservación y fácil aplicación.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-03-29T00:12:24.133Z"
     },
     {
       "id": "prod_1769202654831_7rc37gvmx",
@@ -2869,9 +2869,9 @@
         "13_1772443241212.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-02T09:28:13.442Z",
-      "modified_at": "2026-03-02T09:28:13.442Z"
+      "modified_at": "2026-03-29T00:12:24.134Z"
     },
     {
       "id": "prod_1772443332928_3y6hc8nc9",
@@ -3586,6 +3586,57 @@
       "disponibilidad": true,
       "created_at": "2026-03-27T05:24:33.909Z",
       "modified_at": "2026-03-27T05:24:33.909Z"
+    },
+    {
+      "id": "prod_1774742941861_rn5ai5a43",
+      "nombre": "Queso Criollo x Lb",
+      "categoria": "Lácteos",
+      "precio": 3.15,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000036039_1774742941951.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-29T00:12:27.215Z",
+      "modified_at": "2026-03-29T00:12:27.215Z"
+    },
+    {
+      "id": "prod_1774743001771_4ql9niare",
+      "nombre": "Jalea de Guayaba",
+      "categoria": "Despensa",
+      "precio": 2.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000036038_1774743001854.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-29T00:12:28.450Z",
+      "modified_at": "2026-03-29T00:12:28.450Z"
+    },
+    {
+      "id": "prod_1774743134406_moehq1avd",
+      "nombre": "Boniato x Lb",
+      "categoria": "Verduras",
+      "precio": 0.45,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000036031_1774743134504.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-03-29T00:12:29.483Z",
+      "modified_at": "2026-03-29T00:12:29.483Z"
     }
   ]
 }
