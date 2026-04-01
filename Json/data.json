@@ -1,8 +1,8 @@
 {
-    "id": 1,
+    "id": 2,
     "titulo": "¡NUEVO NUEVO NUEVO 😃😃!",
     "mensaje": "SE VIENE PROMOCIÓN NUEVA...\nPróximamente se lanzará una oferta que no puedes perderte. Atentos que se viene cosa nueva.",
     "subtitulo": "\"Aprovecha ahora, que esto te va a gustar\" ",
-    "tipo": "info",
+    "tipo": "promo",
     "icono": "fas fa-shopping-bag"
 }
