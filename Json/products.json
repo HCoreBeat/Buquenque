@@ -1611,9 +1611,9 @@
         "Paquete_de_papas_Idaho_(5lbs).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de papas Idaho (5lbs), una excelente opción de nuestra categoría Verduras. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-04-01T15:27:07.841Z"
     },
     {
       "id": "prod_1768441690510_covgyshrh",
