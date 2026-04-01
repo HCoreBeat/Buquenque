@@ -1,8 +1,8 @@
 {
     "id": 1,
-    "titulo": "¡Finalmente✨!",
-    "mensaje": "Los Packs han llegado a Buquenque...\nDisfruta de nuestro conjunto de productos diseñados especialmente para ti. Todo más rápido y sencillo",
-    "subtitulo": "\"Aprovecha ahora, que el 14 de febrero está casi aquí\" ",
-    "tipo": "success",
-    "icono": "fas fa-gift"
+    "titulo": "¡NUEVO NUEVO NUEVO 😃😃!",
+    "mensaje": "SE VIENE PROMOCIÓN NUEVA...\nPróximamente se lanzará una oferta que no puedes perderte. Atentos que se viene cosa nueva.",
+    "subtitulo": "\"Aprovecha ahora, que esto te va a gustar\" ",
+    "tipo": "promo",
+    "icono": "fas fa-shopping-bag"
 }
