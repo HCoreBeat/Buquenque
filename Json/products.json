@@ -61,12 +61,12 @@
       "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "Pastilla_de_Pollo_x_unidad.jpg"
+        "pastilla_de_pollo_x_unidad_1775072061265.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pastilla de Pollo x unidad, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-04-01T19:34:32.038Z"
     },
     {
       "id": "prod_1768441690510_gkp20pj1x",
@@ -228,7 +228,7 @@
       "precio": 2.8,
       "descuento": 42.86,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "Mortadella_de_Pollo.jpg"
@@ -236,7 +236,7 @@
       "descripcion": "Disfruta de la calidad de Mortadella de Pollo, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-04-01T19:30:48.658Z"
+      "modified_at": "2026-02-24T19:59:33.573Z"
     },
     {
       "id": "prod_1768923781803_n2hnqahbv",
