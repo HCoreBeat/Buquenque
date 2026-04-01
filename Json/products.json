@@ -228,7 +228,7 @@
       "precio": 2.8,
       "descuento": 42.86,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "Mortadella_de_Pollo.jpg"
@@ -236,7 +236,7 @@
       "descripcion": "Disfruta de la calidad de Mortadella de Pollo, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.573Z"
+      "modified_at": "2026-04-01T19:30:48.658Z"
     },
     {
       "id": "prod_1768923781803_n2hnqahbv",
