@@ -309,7 +309,6 @@
         position: sticky;
         bottom: 0;
         z-index: 10;
-        height: 140px;
     }
 
     .detail-container {
@@ -867,7 +866,7 @@
     }
 
     .cart-total {
-        padding: 0.7rem 0.85rem 4.75rem 0.85rem;
+        padding: 0.7rem 0.85rem 1.75rem 0.85rem;
     }
 
     .cart-total p {
