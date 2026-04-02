@@ -779,12 +779,12 @@
     }
 
     .cart-total {
-        padding: 0.75rem 1rem 4rem 1rem;
+        padding: 0.75rem 1rem 1.25rem 1rem;
     }
 
     .cart-total p {
         font-size: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.85rem;
     }
 
     .checkout-btn {
@@ -848,12 +848,12 @@
     }
 
     .cart-total {
-        padding: 0.7rem 0.85rem 3.75rem 0.85rem;
+        padding: 0.7rem 0.85rem 1.25rem 0.85rem;
     }
 
     .cart-total p {
-        font-size: 1.4rem;
-        margin-bottom: 0.85rem;
+        font-size: 0.95rem;
+        margin-bottom: 0.75rem;
     }
 
     .checkout-btn {

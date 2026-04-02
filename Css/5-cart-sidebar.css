@@ -47,19 +47,21 @@
 }
 
 .cart-header {
-    padding: 0.55rem 1.75rem;
+    padding: 0.4rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--gris-claro);
     background: linear-gradient(135deg, var(--blanco) 0%, var(--gris-claro) 100%);
     color: var(--negro);
+    flex-shrink: 0;
 }
 
 .cart-header h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--negro-claro);
+    margin: 0;
 }
 
 .close-btn {
@@ -86,13 +88,15 @@
 .cart-content {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 60px);
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
 }
 
 .cart-items {
     flex: 1;
     overflow-y: auto;
-    padding: 1.25rem;
+    padding: 1rem;
     min-height: 0;
 }
 
@@ -324,16 +328,16 @@
 
 /* Total del carrito */
 .cart-total {
-    padding: 0.85rem 1rem 4.5rem 1rem;
+    padding: 0.75rem 1rem 1.25rem 1rem;
     border-top: 1px solid var(--gris-claro);
     background-color: var(--gris-claro);
     flex-shrink: 0;
 }
 
 .cart-total p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.85rem;
     display: flex;
     justify-content: space-between;
     color: var(--negro);
@@ -343,13 +347,13 @@
     background-color: var(--color-principal);
     color: var(--negro);
     border: none;
-    padding: 0.9rem;
+    padding: 0.8rem;
     width: 100%;
     border-radius: var(--borde-radius);
     font-weight: 600;
     cursor: pointer;
     transition: var(--transicion);
-    font-size: 1rem;
+    font-size: 0.95rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -452,12 +456,12 @@
 
 /* ========== PANEL DE EVENTO ========== */
 .cart-event-panel {
-    padding: 1rem 0.75rem;
+    padding: 0.85rem 0.65rem;
     border-bottom: 2px solid var(--color-principal);
     border-radius: var(--borde-radius) var(--borde-radius) 0 0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     animation: slideInFromTop 0.5s ease-out;
-    max-height: 280px;
+    max-height: 260px;
     flex-shrink: 0;
     overflow-y: auto;
 }
