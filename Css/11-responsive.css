@@ -309,6 +309,7 @@
         position: sticky;
         bottom: 0;
         z-index: 10;
+        height: 140px;
     }
 
     .detail-container {
@@ -857,7 +858,7 @@
 
     .codes-total-indicator {
         font-size: 0.7rem;
-        padding: 0.3rem;
+        padding: 0rem;
         margin: 0.25rem 0;
     }
 
@@ -866,11 +867,11 @@
     }
 
     .cart-total {
-        padding: 0.7rem 0.85rem 3.75rem 0.85rem;
+        padding: 0.7rem 0.85rem 4.75rem 0.85rem;
     }
 
     .cart-total p {
-        font-size: 1.4rem;
+        font-size: 1rem;
         margin-bottom: 0.85rem;
     }
 
