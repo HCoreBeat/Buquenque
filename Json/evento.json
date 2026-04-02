@@ -7,14 +7,14 @@
     "premio": "5000 CUP",
     "evento": {
         "nombre": "5 Códigos Secretos...",
-        "resumen": "Descubre códigos secretos en productos especiales. Completa los 5 espacios del panel y asegura una compra mínima de 100 Zelle en productos con códigos para participar. Todos los participantes válidos recibirán el premio al finalizar el evento.",
+        "resumen": "Descubre códigos secretos en productos especiales. Completa los 5 espacios del panel y asegura una compra mínima de 100 Zelle en productos con códigos para participar. Todos los participantes válidos recibirán el premio al hacer la entrega.",
         "objetivo": "Reunir 5 códigos secretos diferentes y realizar una compra mínima de 100 Zelle en productos con códigos. Todos los que cumplan estas condiciones serán ganadores.",
         "instrucciones": [
             "Agrega productos con códigos secretos al carrito para desbloquearlos.",
             "Completa los 5 espacios del panel con códigos distintos.",
             "Asegura que el total de productos con códigos en tu compra sea al menos 100 Zelle.",
             "Los códigos permanecen válidos mientras los productos estén en el carrito.",
-            "Al finalizar el evento, todos los participantes válidos recibirán el premio."
+            "Al realizar la entrega, todos los participantes válidos recibirán el premio."
         ],
         "ganadores": {
             "cantidad": "Todos los participantes válidos",

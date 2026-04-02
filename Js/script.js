@@ -1272,7 +1272,7 @@ function showEventModal() {
         <h4 class="event-subtitle">
           <i class="fas fa-trophy"></i> Premio del Evento
         </h4>
-        <p class="event-prize">${evento.premio || '5000 CUP'} (se entrega a participantes válidos al finalizar el evento)</p>
+        <p class="event-prize">${evento.premio || '5000 CUP'} (se entrega a participantes válidos al realizar la entrega)</p>
       </section>
 
       <!-- Resumen -->
