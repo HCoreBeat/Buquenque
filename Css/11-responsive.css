@@ -689,3 +689,175 @@
         padding: 30px 15px;
     }
 }
+
+/* ========== MEDIA QUERIES PARA CARRITO CON EVENTO ========== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .cart-event-panel {
+        max-height: 260px;
+    }
+
+    .secret-codes-grid {
+        gap: 0.6rem;
+    }
+
+    .secret-code-slot {
+        min-height: 40px;
+        font-size: 0.45rem;
+    }
+
+    .codes-total-indicator {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+        margin: 0.4rem 0;
+    }
+
+    .event-banner span {
+        font-size: 1rem;
+    }
+
+    .event-btn {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile (hasta 768px) */
+@media (max-width: 768px) {
+    .cart-event-panel {
+        max-height: 240px;
+        padding: 0.85rem 0.6rem;
+    }
+
+    .event-banner {
+        gap: 0.5rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .event-banner i {
+        font-size: 1.2rem;
+    }
+
+    .event-banner span {
+        font-size: 0.95rem;
+    }
+
+    .event-btn {
+        padding: 0.5rem 0.85rem;
+        font-size: 0.75rem;
+    }
+
+    .event-panel-subtitle {
+        margin: 0 0 0.4rem;
+        font-size: 0.7rem;
+        padding: 0 0.2rem;
+    }
+
+    .secret-codes-panel h4 {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .secret-codes-grid {
+        gap: 0.5rem;
+    }
+
+    .secret-code-slot {
+        min-height: 38px;
+        font-size: 0.42rem;
+    }
+
+    .codes-total-indicator {
+        font-size: 0.75rem;
+        padding: 0.35rem;
+        margin: 0.3rem 0;
+    }
+
+    .cart-items {
+        padding: 1rem;
+    }
+
+    .cart-total {
+        padding: 0.75rem 1rem 4rem 1rem;
+    }
+
+    .cart-total p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .checkout-btn {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Ultra pequeños (menos de 480px) */
+@media (max-width: 480px) {
+    .cart-event-panel {
+        max-height: 220px;
+        padding: 0.75rem 0.5rem;
+    }
+
+    .event-banner {
+        gap: 0.4rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .event-banner i {
+        font-size: 1.1rem;
+    }
+
+    .event-banner span {
+        font-size: 0.9rem;
+    }
+
+    .event-btn {
+        padding: 0.45rem 0.75rem;
+        font-size: 0.7rem;
+    }
+
+    .event-panel-subtitle {
+        margin: 0 0 0.3rem;
+        font-size: 0.65rem;
+    }
+
+    .secret-codes-panel h4 {
+        font-size: 0.8rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .secret-codes-grid {
+        gap: 0.4rem;
+    }
+
+    .secret-code-slot {
+        min-height: 35px;
+        font-size: 0.4rem;
+    }
+
+    .codes-total-indicator {
+        font-size: 0.7rem;
+        padding: 0.3rem;
+        margin: 0.25rem 0;
+    }
+
+    .cart-items {
+        padding: 0.85rem;
+    }
+
+    .cart-total {
+        padding: 0.7rem 0.85rem 3.75rem 0.85rem;
+    }
+
+    .cart-total p {
+        font-size: 1.4rem;
+        margin-bottom: 0.85rem;
+    }
+
+    .checkout-btn {
+        padding: 0.75rem;
+        font-size: 0.85rem;
+    }
+}

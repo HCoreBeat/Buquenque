@@ -4,6 +4,7 @@ let currentProduct = null;
 let categories = [];
 let evento = null;
 let secretCodesFound = new Set();
+let cartTotal = 0; // total del carrito actual
 
 // Snapshot del hash inicial proporcionado por el backend (p. ej. index.html#ID)
 // Esto permite restaurarlo si otro script lo limpiara antes de que procesemos rutas.
@@ -2670,8 +2671,6 @@ function updateCart() {
   if (eventPanel) {
     if (evento && evento.activo) {
       eventPanel.style.display = "block";
-      // Actualizar códigos secretos
-      updateSecretCodesPanel();
     } else {
       eventPanel.style.display = "none";
     }
@@ -2738,6 +2737,8 @@ function updateCart() {
     totalElement.textContent = total.toFixed(2);
   }
 
+  cartTotal = total; // mantener total del carrito para reglas de evento
+  updateSecretCodesPanel();
   updateCartCount();
   
   // Actualizar las secciones de cantidad en los productos visibles
@@ -2859,19 +2860,19 @@ function updateSecretCodesPanel() {
     }
   });
 
-  // Agregar indicador de total de códigos
+  // Agregar indicador de total general del carrito
   let totalIndicator = codesPanel.querySelector(".codes-total-indicator");
-  const codesTotal = calculateCodesTotal();
+  const totalRequerido = 100;
   if (!totalIndicator) {
     totalIndicator = document.createElement("p");
     totalIndicator.className = "codes-total-indicator";
     codesPanel.appendChild(totalIndicator);
   }
-  totalIndicator.textContent = `Total en productos con códigos: $${codesTotal.toFixed(2)} (mínimo $100.00)`;
+  totalIndicator.textContent = `Total del carrito: $${cartTotal.toFixed(2)} (mínimo $${totalRequerido.toFixed(2)})`;
 
-  // Agregar mensaje de completado si todos los códigos están encontrados y el total mínimo alcanzado
+  // Agregar mensaje de completado si todos los códigos están encontrados y el total de carrito mínimo alcanza
   let completionMessage = codesPanel.querySelector(".completion-message");
-  if (secretCodesFound.size === 5 && codesTotal >= 100) {
+  if (secretCodesFound.size === 5 && cartTotal >= totalRequerido) {
     if (!completionMessage) {
       completionMessage = document.createElement("div");
       completionMessage.className = "completion-message";
