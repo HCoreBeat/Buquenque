@@ -21,7 +21,7 @@
       "id": "prod_1768441690510_piqbut8gb",
       "nombre": "Azúcar blanca x lb",
       "categoria": "Despensa",
-      "precio": 1.25,
+      "precio": 0.95,
       "descuento": 20,
       "mas_vendido": false,
       "nuevo": false,
@@ -32,7 +32,7 @@
       "descripcion": "Disfruta de la calidad de Azúcar blanca x lb, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-04-08T17:32:42.416Z"
     },
     {
       "id": "prod_1768441690510_lx2ochyll",
