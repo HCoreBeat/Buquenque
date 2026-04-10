@@ -142,11 +142,11 @@
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
-        padding: 1.5rem 1rem;
+        padding: 0.5rem 0.5rem;
         border: none;
         border-top: 1px solid var(--gris-claro);
         width: 100%;
-        height: 40px;
+        height: 30px;
         margin-left: 0;
         order: 5;
     }

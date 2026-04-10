@@ -324,7 +324,7 @@
 
 .empty-cart-panel i {
     font-size: 3.5rem;
-    color: var(--color-principal-pastel);
+    color: var(--botonA);
     margin-bottom: 1.5rem;
     opacity: 0.8;
 }

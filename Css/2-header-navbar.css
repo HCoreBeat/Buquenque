@@ -348,8 +348,10 @@
 
 .location-info {
     display: flex;
-    flex-direction: column;
+    gap: 0.25rem;
+    flex-direction: row;
     text-align: center;
+    align-items: center;
 }
 
 .location-label {

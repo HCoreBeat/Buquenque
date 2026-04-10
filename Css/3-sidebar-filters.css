@@ -103,9 +103,14 @@
     text-align: center;
 }
 
+.sidebar-categories li:hover i {
+    color: var(--oferta);
+    scale: 2;
+}
+
 .sidebar-categories li:hover {
-    background: rgba(212, 175, 55, 0.1);
-    color: var(--color-principal-pastel);
+    background: rgb(255 195 0 / 30%);
+    color: var(--oferta);
     padding-left: 1.25rem;
 }
 
@@ -243,7 +248,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    border: 2px solid var(--color-principal-pastel);
+    border: 2px solid var(--oferta);
 }
 
 .apply-filter-btn:hover {

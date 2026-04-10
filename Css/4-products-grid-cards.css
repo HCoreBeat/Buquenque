@@ -620,7 +620,7 @@
   justify-content: flex-start;
   gap: 1rem;
   padding: 0.9rem 1rem;
-  background: linear-gradient(135deg, #fdf6e9 0%, #faf0db 100%);
+  background: var(--melocoton-pastel);
   border-radius: 0.6rem;
   box-shadow: 0 2px 8px rgba(212, 175, 55, 0.12);
   animation: slideInLeft 0.5s ease-out;

@@ -519,7 +519,7 @@
 .back-btn {
     background-color: transparent;
     color: var(--color-principal-pastel);
-    border: 2px solid var(--color-principal-pastel);
+    border: 2px solid var(--gris-oscuro);
     padding: 0.85rem 1.75rem;
     border-radius: var(--borde-radius);
     font-weight: 600;
@@ -835,7 +835,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    border: 2px solid var(--color-principal-pastel);
+    border: 2px solid var(--botonA);
 }
 
 .add-to-cart-mini:hover {
