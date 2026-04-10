@@ -1,6 +1,6 @@
 {
     "id": 2,
-    "activo": true,
+    "activo": false,
     "inicio": "2026-04-02T00:00:00",
     "fin": "2026-04-09T23:59:59",
     "titulo": "Nuevo evento disponible por tiempo limitado",
