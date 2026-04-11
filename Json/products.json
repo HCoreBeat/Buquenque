@@ -100,8 +100,7 @@
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-04-03T11:41:35.204Z",
-      "codigo_secreto": "CH30U"
+      "modified_at": "2026-04-03T11:41:35.204Z"
     },
     {
       "id": "prod_1768923054742_dhekmp0os",
@@ -260,8 +259,8 @@
       "id": "prod_1768441690510_jiwy36eez",
       "nombre": "Caja de Malta",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 25,
-      "descuento": 0,
+      "precio": 30,
+      "descuento": 16.67,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
@@ -271,7 +270,7 @@
       "descripcion": "Disfruta de la calidad de Caja de Malta Bucanero, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-24T17:26:49.845Z"
+      "modified_at": "2026-04-11T17:14:56.254Z"
     },
     {
       "id": "prod_1768441690510_lmfmz1hj5",
@@ -373,8 +372,7 @@
       "descripcion": "Disfruta de la calidad de Leche en polvo (1kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-28T03:40:16.782Z",
-      "codigo_secreto": "LP1KG"
+      "modified_at": "2026-02-28T03:40:16.782Z"
     },
     {
       "id": "prod_1769297232608_yu795qbia",
@@ -986,8 +984,7 @@
       "descripcion": "Disfruta de la calidad de Queso Gouda, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-29T00:12:24.133Z",
-      "codigo_secreto": "QG3KG"
+      "modified_at": "2026-03-29T00:12:24.133Z"
     },
     {
       "id": "prod_1768441690510_yv6cayff0",
@@ -1752,8 +1749,7 @@
       "descripcion": "Disfruta de la calidad de Carne de ovejo x lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-28T00:34:13.264Z",
-      "codigo_secreto": "COL1"
+      "modified_at": "2026-02-28T00:34:13.264Z"
     },
     {
       "id": "prod_1768441690510_5bquahf1q",
@@ -1787,8 +1783,7 @@
       "descripcion": "Disfruta de la calidad de Carne de cerdo x lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-21T03:32:40.231Z",
-      "codigo_secreto": "CCXL1"
+      "modified_at": "2026-03-21T03:32:40.231Z"
     },
     {
       "id": "prod_1768509219912_h61h4xal8",
@@ -1907,8 +1902,7 @@
       "descripcion": "Disfruta de la calidad de la chuleta de cerdo natural ideal para tus cenas",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-21T03:32:40.229Z",
-      "codigo_secreto": "CCXL2"
+      "modified_at": "2026-03-21T03:32:40.229Z"
     },
     {
       "id": "prod_1768844669044_qrt1f4m3k",
@@ -2214,8 +2208,7 @@
       "descripcion": "Para una comida rápida, nutritiva y deliciosa, la Carne de Res Sublime (Carne de Rês) es tu mejor aliada. Esta conserva de calidad premium destaca por ser rica en proteínas y totalmente libre de gluten, lo que la hace ideal para diversos estilos de dieta. Ya sea para dorar en la sartén, acompañar tus pastas o preparar bocaditos rápidos, su sabor auténtico y su textura firme te ofrecen la practicidad que necesitas sin sacrificar la calidad.",
       "disponibilidad": true,
       "created_at": "2026-02-01T04:25:54.206Z",
-      "modified_at": "2026-02-01T04:25:54.206Z",
-      "codigo_secreto": "CRES22"
+      "modified_at": "2026-02-01T04:25:54.206Z"
     },
     {
       "id": "prod_1769974779698_q4lst0qbb",
@@ -2402,8 +2395,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-02-16T15:32:04.846Z",
-      "modified_at": "2026-03-27T05:24:31.693Z",
-      "codigo_secreto": "PBB225ML"
+      "modified_at": "2026-03-27T05:24:31.693Z"
     },
     {
       "id": "prod_1771255391271_0s958gn5g",
@@ -2437,8 +2429,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-02-16T15:32:08.917Z",
-      "modified_at": "2026-03-27T05:24:25.179Z",
-      "codigo_secreto": "HT1KG"
+      "modified_at": "2026-03-27T05:24:25.179Z"
     },
     {
       "id": "prod_1771255568932_49z71tujl",
@@ -2710,8 +2701,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-02-28T17:46:04.296Z",
-      "modified_at": "2026-03-21T03:32:47.728Z",
-      "codigo_secreto": "CROQ1KG"
+      "modified_at": "2026-03-21T03:32:47.728Z"
     },
     {
       "id": "prod_1772439257972_9nrd57jde",
@@ -3170,8 +3160,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-12T22:15:54.305Z",
-      "modified_at": "2026-03-12T22:15:54.305Z",
-      "codigo_secreto": "LCERKG"
+      "modified_at": "2026-03-12T22:15:54.305Z"
     },
     {
       "id": "prod_1773448315523_sbogqzd9h",
@@ -3205,8 +3194,7 @@
       "descripcion": "",
       "disponibilidad": false,
       "created_at": "2026-03-18T17:58:50.439Z",
-      "modified_at": "2026-03-18T21:00:01.853Z",
-      "codigo_secreto": "FC500G"
+      "modified_at": "2026-03-18T21:00:01.853Z"
     },
     {
       "id": "prod_1773856436753_ggf4sat5i",
@@ -3223,8 +3211,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-18T17:58:52.816Z",
-      "modified_at": "2026-03-18T21:00:01.854Z",
-      "codigo_secreto": "MD1KG"
+      "modified_at": "2026-03-18T21:00:01.854Z"
     },
     {
       "id": "prod_1773856496057_pv8a4fqmk",
@@ -3241,8 +3228,7 @@
       "descripcion": "",
       "disponibilidad": false,
       "created_at": "2026-03-18T17:58:55.193Z",
-      "modified_at": "2026-03-18T21:00:01.854Z",
-      "codigo_secreto": "PPS1KG"
+      "modified_at": "2026-03-18T21:00:01.854Z"
     },
     {
       "id": "prod_1773856590032_j2m7p5am9",
@@ -3259,8 +3245,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-18T17:58:57.128Z",
-      "modified_at": "2026-03-18T17:58:57.128Z",
-      "codigo_secreto": "CB500G"
+      "modified_at": "2026-03-18T17:58:57.128Z"
     },
     {
       "id": "prod_1773859229838_gdak06f1k",
@@ -3277,8 +3262,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-18T18:42:30.084Z",
-      "modified_at": "2026-03-19T02:10:46.084Z",
-      "codigo_secreto": "PYV4F"
+      "modified_at": "2026-03-19T02:10:46.084Z"
     },
     {
       "id": "prod_1773859339068_wex9cz8jw",
@@ -3295,8 +3279,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-18T18:42:32.336Z",
-      "modified_at": "2026-03-19T02:10:46.085Z",
-      "codigo_secreto": "PYVN4F"
+      "modified_at": "2026-03-19T02:10:46.085Z"
     },
     {
       "id": "prod_1773867595760_b5f1ftr6u",
@@ -3313,8 +3296,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-18T21:00:04.330Z",
-      "modified_at": "2026-03-21T03:32:50.297Z",
-      "codigo_secreto": "FPA500G"
+      "modified_at": "2026-03-21T03:32:50.297Z"
     },
     {
       "id": "prod_1773970206536_b6vii0sye",
@@ -3433,8 +3415,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-21T04:03:01.183Z",
-      "modified_at": "2026-03-21T04:03:01.183Z",
-      "codigo_secreto": "CRC24U"
+      "modified_at": "2026-03-21T04:03:01.183Z"
     },
     {
       "id": "prod_1774065409293_ql7mv8a6d",
@@ -3451,8 +3432,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-21T04:03:03.294Z",
-      "modified_at": "2026-03-21T04:03:03.294Z",
-      "codigo_secreto": "CRN24U"
+      "modified_at": "2026-03-21T04:03:03.294Z"
     },
     {
       "id": "prod_1774065730408_js1d1s8e1",
@@ -3469,8 +3449,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-21T04:03:05.564Z",
-      "modified_at": "2026-03-21T04:03:05.564Z",
-      "codigo_secreto": "CRL24U"
+      "modified_at": "2026-03-21T04:03:05.564Z"
     },
     {
       "id": "prod_1774222439833_s0jwz3gyf",
@@ -3555,8 +3534,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-27T05:24:19.906Z",
-      "modified_at": "2026-03-27T05:24:19.906Z",
-      "codigo_secreto": "SB320G"
+      "modified_at": "2026-03-27T05:24:19.906Z"
     },
     {
       "id": "prod_1774588196965_61a1oo6gg",
@@ -3573,8 +3551,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-27T05:24:21.958Z",
-      "modified_at": "2026-03-27T05:24:21.958Z",
-      "codigo_secreto": "LEV377ML"
+      "modified_at": "2026-03-27T05:24:21.958Z"
     },
     {
       "id": "prod_1774588718809_f6anpwdzt",
@@ -3591,8 +3568,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-27T05:24:31.693Z",
-      "modified_at": "2026-03-27T05:24:31.693Z",
-      "codigo_secreto": "MYV450ML"
+      "modified_at": "2026-03-27T05:24:31.693Z"
     },
     {
       "id": "prod_1774589037954_ne3iqyc5v",
@@ -3609,8 +3585,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-27T05:24:33.909Z",
-      "modified_at": "2026-03-27T05:24:33.909Z",
-      "codigo_secreto": "CNV250G"
+      "modified_at": "2026-03-27T05:24:33.909Z"
     },
     {
       "id": "prod_1774742941861_rn5ai5a43",
@@ -3730,6 +3705,6 @@
       "disponibilidad": true,
       "created_at": "2026-04-08T01:52:37.025Z",
       "modified_at": "2026-04-08T01:52:37.025Z"
-    } 
+    }
   ]
 }
