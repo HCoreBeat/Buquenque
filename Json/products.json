@@ -1940,20 +1940,20 @@
     },
     {
       "id": "prod_1769613603917_5rg815imv",
-      "nombre": "Pollo entero Saera(1300g)",
+      "nombre": "Pollo entero congelado(1800g)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 8,
-      "descuento": 12.5,
+      "precio": 11.29,
+      "descuento": 38,
       "mas_vendido": false,
-      "nuevo": false,
-      "oferta": true,
+      "nuevo": true,
+      "oferta": false,
       "imagenes": [
-        "img_2404_1769613438329.webp"
+        "descarga_1776151869855.jpeg"
       ],
       "descripcion": "Pollo entero fresco\nPollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. Carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-04-14T07:49:58.694Z"
     },
     {
       "id": "prod_1768844669044_5f4r1k3kk",
@@ -2467,20 +2467,20 @@
     },
     {
       "id": "prod_1771255763596_eaz128kna",
-      "nombre": "Atún premium en aceite vegetal 1000g",
+      "nombre": "Atún premium en aceite vegetal 1Kg",
       "categoria": "Despensa",
-      "precio": 15.95,
+      "precio": 13.69,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "44798_1771255763805.jpg"
+        "2_1776152985147.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-02-16T15:32:15.125Z",
-      "modified_at": "2026-03-21T03:32:36.264Z"
+      "modified_at": "2026-04-14T07:50:09.596Z"
     },
     {
       "id": "prod_1771255834189_mbvu28jpy",
@@ -3215,20 +3215,20 @@
     },
     {
       "id": "prod_1773856496057_pv8a4fqmk",
-      "nombre": "Papas Prefritas 1Kg",
+      "nombre": "Papas Prefritas 2.5Kg",
       "categoria": "Despensa",
-      "precio": 4.85,
-      "descuento": 8.25,
+      "precio": 7.99,
+      "descuento": 39.3,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "1000025981_1773856496118.jpg"
+        "3_1776151929617.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-18T17:58:55.193Z",
-      "modified_at": "2026-03-18T21:00:01.854Z"
+      "modified_at": "2026-04-14T07:50:00.205Z"
     },
     {
       "id": "prod_1773856590032_j2m7p5am9",
@@ -3722,6 +3722,193 @@
       "disponibilidad": true,
       "created_at": "2026-04-14T07:24:23.743Z",
       "modified_at": "2026-04-14T07:24:23.743Z"
+    },
+    {
+      "id": "prod_1776151682596_5hem5fvxa",
+      "nombre": "Garbanzos extra 540g",
+      "categoria": "Despensa",
+      "precio": 2.57,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "10_1776151682602.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-14T07:49:53.232Z",
+      "modified_at": "2026-04-14T07:49:53.232Z"
+    },
+    {
+      "id": "prod_1776151712213_3bmsorx6t",
+      "nombre": "Cola de Gambón Argentino 1kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 37.49,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "13_1776151712222.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-14T07:49:54.382Z",
+      "modified_at": "2026-04-14T07:49:54.382Z"
+    },
+    {
+      "id": "prod_1776151741793_5e1uruetg",
+      "nombre": "Choricito Casero 1kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 24.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "4_1776151741802.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-14T07:49:55.393Z",
+      "modified_at": "2026-04-14T07:49:55.393Z"
+    },
+    {
+      "id": "prod_1776151765995_a6s81351f",
+      "nombre": "Queso crema 200g",
+      "categoria": "Lácteos",
+      "precio": 3.29,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "16_1776151766006.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-14T07:49:56.473Z",
+      "modified_at": "2026-04-14T07:49:56.473Z"
+    },
+    {
+      "id": "prod_1776151792418_7gpmewo2g",
+      "nombre": "Chorizo Premiun 300g",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 7.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "11_1776151792428.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-14T07:49:57.667Z",
+      "modified_at": "2026-04-14T07:49:57.667Z"
+    },
+    {
+      "id": "prod_1776151970517_o4p40xl3f",
+      "nombre": "Salchichas miniFrankfurt 1kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 9.95,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "15_1776151970522.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-14T07:50:01.662Z",
+      "modified_at": "2026-04-14T07:50:01.662Z"
+    },
+    {
+      "id": "prod_1776152038867_riytl6qtv",
+      "nombre": "Filetes de Tilapia 1lb",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "7_1776152038878.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-14T07:50:03.339Z",
+      "modified_at": "2026-04-14T07:50:03.339Z"
+    },
+    {
+      "id": "prod_1776152786987_fj2z16ewo",
+      "nombre": "Melocotón en almibar 425g",
+      "categoria": "Despensa",
+      "precio": 1.95,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "14_1776152786993.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-14T07:50:04.893Z",
+      "modified_at": "2026-04-14T07:50:04.893Z"
+    },
+    {
+      "id": "prod_1776152818872_5i4jjxahl",
+      "nombre": "troncho de pescado en aceite vegetal",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 4.35,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "9_1776152818883.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-14T07:50:05.941Z",
+      "modified_at": "2026-04-14T07:50:05.941Z"
+    },
+    {
+      "id": "prod_1776152849127_7omvt0ii2",
+      "nombre": "Alubias Blancas 400g",
+      "categoria": "Despensa",
+      "precio": 2.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "12_1776152849131.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-14T07:50:07.154Z",
+      "modified_at": "2026-04-14T07:50:07.154Z"
+    },
+    {
+      "id": "prod_1776152884782_egny1kw0c",
+      "nombre": "Crema de cacao con avellanas",
+      "categoria": "Confitura",
+      "precio": 3.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "5_1776152884787.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-14T07:50:08.379Z",
+      "modified_at": "2026-04-14T07:50:08.379Z"
     }
   ]
 }
