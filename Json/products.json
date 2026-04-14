@@ -205,57 +205,6 @@
       "modified_at": "2026-04-08T01:52:37.025Z"
     },
     {
-      "id": "prod_1768441690510_a5q147wl5",
-      "nombre": "Galletas de soda Salricas 3 Tacos",
-      "categoria": "Confitura",
-      "precio": 2.05,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Galletas_de_soda_Salricas_3_Tacos.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Galletas de soda Salricas 3 Tacos, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.889Z"
-    },
-    {
-      "id": "prod_1769297232608_fwssmtz8c",
-      "nombre": "Mortadella de Pollo",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 2.8,
-      "descuento": 42.86,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Mortadella_de_Pollo.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Mortadella de Pollo, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.573Z"
-    },
-    {
-      "id": "prod_1768923781803_n2hnqahbv",
-      "nombre": "Refresco Limón (330ml)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 0.8,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Refresco_Limon_(330ml).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Refresco Limón (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-21T04:02:57.118Z"
-    },
-    {
       "id": "prod_1768441690510_jiwy36eez",
       "nombre": "Caja de Malta",
       "categoria": "Bebidas no alcohólicas",
@@ -375,40 +324,6 @@
       "modified_at": "2026-02-28T03:40:16.782Z"
     },
     {
-      "id": "prod_1769297232608_yu795qbia",
-      "nombre": "Nutella de Chocolate (350g)",
-      "categoria": "Confitura",
-      "precio": 3.25,
-      "descuento": 7.69,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": true,
-      "imagenes": [
-        "Nutella_de_Chocolate_(350g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Nutella de Chocolate (350g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-07T02:27:27.298Z"
-    },
-    {
-      "id": "prod_1768441690510_daeyrjgpn",
-      "nombre": "Galletas Lamore (150g)",
-      "categoria": "Confitura",
-      "precio": 1.25,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Galletas_Lamore_(150g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Galletas Lamore (150g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.890Z"
-    },
-    {
       "id": "prod_1768441690510_tf4rwuo62",
       "nombre": "Frijol Negro (500g)",
       "categoria": "Despensa",
@@ -443,40 +358,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1769358949851_dzn6agegg",
-      "nombre": "Jamón Bravo Rápido (2kg)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 24,
-      "descuento": 12.5,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "Jamon_Bravo_Rapido_(2kg).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Jamón Bravo Rápido (2kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-21T03:32:50.298Z"
-    },
-    {
-      "id": "prod_1768441690510_eolc54k6n",
-      "nombre": "Sorbeto de (Fresa Renata) (115g)",
-      "categoria": "Confitura",
-      "precio": 1.15,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Sorbeto_de_Fresa_Renata_(115g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Sorbeto de Fresa Renata (115g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1769226986599_pfsrf2pax",
       "nombre": "Detergente (500g)",
       "categoria": "Aseo y Belleza",
@@ -492,108 +373,6 @@
       "disponibilidad": true,
       "created_at": null,
       "modified_at": null
-    },
-    {
-      "id": "prod_1768441690510_2gldw5j03",
-      "nombre": "Bizcocho Marwa Chocolate (40g)",
-      "categoria": "Confitura",
-      "precio": 0.65,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Bizcocho_Marwa_Chocolate_(40g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Bizcocho Marwa Chocolate (40g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.890Z"
-    },
-    {
-      "id": "prod_1768441690510_p8q4pyl2i",
-      "nombre": "Pack x 6 Manzana 🍎",
-      "categoria": "Despensa",
-      "precio": 6.9,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Pack_x_6_Manzana.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Pack x 6 Manzana 🍎, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-06T21:29:43.204Z"
-    },
-    {
-      "id": "prod_1768441690510_katqqvatc",
-      "nombre": "Galletas de soda Salricas 7 Tacos",
-      "categoria": "Confitura",
-      "precio": 4.27,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Galletas_de_soda_Salricas_7_Tacos.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Galletas de soda Salricas 7 Tacos, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.891Z"
-    },
-    {
-      "id": "prod_1768923781803_6nigzuz4y",
-      "nombre": "Caja de refresco Limón",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 20.99,
-      "descuento": 14.39,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Caja_de_refresco_Limon.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Caja de refresco Limón, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-21T04:02:57.118Z"
-    },
-    {
-      "id": "prod_1768441690510_7odn1isoo",
-      "nombre": "Paquete de íntima 10u",
-      "categoria": "Aseo y Belleza",
-      "precio": 1.9,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Paquete_de_intima_10u.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Paquete de íntima 10u, una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
-      "id": "prod_1768918643793_umkfz2iov",
-      "nombre": "Galletas Monro Vainilla (50g)",
-      "categoria": "Confitura",
-      "precio": 0.7,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Galletas_Monro_Vainilla_(50g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Galletas Monro Vainilla (50g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.891Z"
     },
     {
       "id": "prod_1768441690510_3adjmtv4j",
@@ -613,108 +392,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1768441690510_ui7btz3uy",
-      "nombre": "Jugo de Mango (200ml)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 0.8,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Jugo_de_Mango_(200ml).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Jugo de Mango (200ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-16T17:26:12.282Z"
-    },
-    {
-      "id": "prod_1768441690510_u0qqsmz96",
-      "nombre": "Galletas ShowGol (Dulce de Leche) (76g)",
-      "categoria": "Confitura",
-      "precio": 0.87,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Galletas_ShowGol_Dulce_de_Leche_(76g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Galletas \"ShowGol\" Dulce de Leche (76g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.891Z"
-    },
-    {
-      "id": "prod_1768441690510_ya1ksp6k7",
-      "nombre": "Galletas ShowGol (Chocolate) (76g)",
-      "categoria": "Confitura",
-      "precio": 0.87,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Galletas_ShowGol_Chocolate_(76g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Galletas \"ShowGol\" Chocolate (76g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.892Z"
-    },
-    {
-      "id": "prod_1768441690510_ufxhzyokh",
-      "nombre": "Hígado de pollo (1Kg)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 3.35,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "b1aaf34d-29a1-4767-89cd-84106795e1b2_1770819640542.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Hígado de pollo (1Kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-16T17:17:54.282Z"
-    },
-    {
-      "id": "prod_1768441690510_pk9eys33x",
-      "nombre": "Jugo Tuana Piña (200ml)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 0.7,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Jugo_Tuana_Piña_(200ml).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Jugo Tuana Piña (200ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.572Z"
-    },
-    {
-      "id": "prod_1768441690510_35bofl7sg",
-      "nombre": "Acondicionador SEDAL (620ml)",
-      "categoria": "Aseo y Belleza",
-      "precio": 8.37,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Acondicionador_SEDAL_(620ml).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Acondicionador SEDAL (620ml), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.578Z"
-    },
-    {
       "id": "prod_1769297232608_t1t8j7j86",
       "nombre": "Lomitos de Atún en aceite",
       "categoria": "Cárnicos y Embutidos",
@@ -730,57 +407,6 @@
       "disponibilidad": true,
       "created_at": null,
       "modified_at": "2026-02-11T14:16:04.303Z"
-    },
-    {
-      "id": "prod_1768441690510_nrgnaj8mu",
-      "nombre": "Toallitas Húmedas (80u)",
-      "categoria": "Aseo y Belleza",
-      "precio": 3.8,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Toallitas_Humedas_(80u).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Toallitas Húmedas (80u), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.582Z"
-    },
-    {
-      "id": "prod_1768509219912_8zv9x9m9l",
-      "nombre": "Sorbeto de (Limón Renata) (115g)",
-      "categoria": "Confitura",
-      "precio": 1.15,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Sorbeto_de_Limon_Renata_(115g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Sorbeto de Limón Renata (115g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.892Z"
-    },
-    {
-      "id": "prod_1768509219912_clmam94tm",
-      "nombre": "Sorbeto de (Chocolate Renata) (115g)",
-      "categoria": "Confitura",
-      "precio": 1.15,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Sorbeto_de_Chocolate_Renata_(115g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Sorbeto de Chocolate Renata (115g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.892Z"
     },
     {
       "id": "prod_1768441690510_jeg5mb96s",
@@ -834,23 +460,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1768441690510_ae5wvb8h0",
-      "nombre": "Spam de (Cerdo) (340g)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 2.5,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Spam_de_Cerdo_(340g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Spam de Cerdo (340g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-02T08:28:02.495Z"
-    },
-    {
       "id": "prod_1769297232608_1rpawqvbr",
       "nombre": "Cepillo de diente (/u)",
       "categoria": "Aseo y Belleza",
@@ -885,23 +494,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1768441690510_vxcu9hmme",
-      "nombre": "Paquete de Chupa Chupa (48/u)",
-      "categoria": "Confitura",
-      "precio": 8.57,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Paquete_de_Chupa_Chupa.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Paquete de Chupa Chupa (48/u), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.892Z"
-    },
-    {
       "id": "prod_1768441690510_x8mo0fa06",
       "nombre": "Olla a Presión Eléctrica Eko (6 L)",
       "categoria": "Electrodomésticos",
@@ -915,57 +507,6 @@
       ],
       "descripcion": "Disfruta de la calidad de Olla a Presión Eléctrica \"Eko\" (6 L), una excelente opción de nuestra categoría Electrodomésticos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
-      "id": "prod_1768441690510_4kd0mttf1",
-      "nombre": "Galletas Hello (Fresa) (50g)",
-      "categoria": "Confitura",
-      "precio": 0.59,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Galletas_Hello_Fresa_(50g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Galletas \"Hello\" Fresa (50g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.892Z"
-    },
-    {
-      "id": "prod_1768441690510_4sqo3j0w6",
-      "nombre": "Pechuga de pollo (2Kg)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 14.99,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Pechuga_de_pollo_(2Kg).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Pechuga de pollo (2Kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-21T03:32:47.729Z"
-    },
-    {
-      "id": "prod_1768441690510_cgr6pnapy",
-      "nombre": "Refresco Gaseado Limón (1.5Lt)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 2.49,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Refresco_Gaseado_Limon.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Refresco Gaseado Limón (1.5Lt) Cero Calorías, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
       "created_at": null,
       "modified_at": null
     },
@@ -987,23 +528,6 @@
       "modified_at": "2026-03-29T00:12:24.133Z"
     },
     {
-      "id": "prod_1768441690510_yv6cayff0",
-      "nombre": "Set de Estropajos",
-      "categoria": "Utiles del Hogar",
-      "precio": 1.45,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Set_de_Estropajos.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Set de Estropajos, una excelente opción de nuestra categoría Utiles del Hogar. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.576Z"
-    },
-    {
       "id": "prod_1768441690510_vkkhmof4o",
       "nombre": "Olla Arrocera",
       "categoria": "Electrodomésticos",
@@ -1019,193 +543,6 @@
       "disponibilidad": true,
       "created_at": null,
       "modified_at": null
-    },
-    {
-      "id": "prod_1768441690510_9r6kpw7pk",
-      "nombre": "Pack x 6 Refresco Gaseado Limón (1.5Lt)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 14.5,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Pack_x_6_Refresco_Gaseado_Limon.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Pack x 6 Refresco Gaseado Limón (1.5Lt) Cero Calorías, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
-      "id": "prod_1768441690510_ioggj7ulz",
-      "nombre": "Comino Molido (171.1g)",
-      "categoria": "Aderezos",
-      "precio": 4.39,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Comino_Molido.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Comino Molido (171.1g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-08T17:35:17.712Z"
-    },
-    {
-      "id": "prod_1768441690510_fud7rcsve",
-      "nombre": "Galletas Hello (Vainilla) (50g)",
-      "categoria": "Confitura",
-      "precio": 0.59,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Galletas_Hello_Vainilla_(50g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Galletas \"Hello\" Vainilla (50g), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.893Z"
-    },
-    {
-      "id": "prod_1768441690510_8sc6ztvh1",
-      "nombre": "Caja de jugos sabor Piña (27 x 200ml)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 18.59,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Caja_de_jugos_sabor_Piña.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Caja de jugos sabor Piña (27 x 200ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.571Z"
-    },
-    {
-      "id": "prod_1768441690510_3zn04c14a",
-      "nombre": "Talco para Bebé (200g)",
-      "categoria": "Aseo y Belleza",
-      "precio": 3.8,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Talco_para_Bebe_(200g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Talco para Bebé (200g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.578Z"
-    },
-    {
-      "id": "prod_1768441690510_w8rkr6cte",
-      "nombre": "Pack de 12 Estropajos",
-      "categoria": "Utiles del Hogar",
-      "precio": 3.35,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Pack_de_12_Estropajos.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Pack de 12 Estropajos, una excelente opción de nuestra categoría Utiles del Hogar. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.575Z"
-    },
-    {
-      "id": "prod_1768441690510_ewx9ktgvg",
-      "nombre": "Caja de jugos sabor Mango (30 x 200ml)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 21,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Caja_de_jugos_sabor_Mango.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Caja de jugos sabor Mango (30 x 200ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-12T15:01:18.679Z"
-    },
-    {
-      "id": "prod_1768441690510_hj37vemry",
-      "nombre": "Refresco Gaseado Mate (1.5Lt)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 2.5,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Refresco_Gaseado_Mate.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Refresco Gaseado Mate (1.5Lt) Cero Calorías, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.570Z"
-    },
-    {
-      "id": "prod_1768441690510_cep037qmr",
-      "nombre": "Ajo Granulado (255g)",
-      "categoria": "Aderezos",
-      "precio": 4.37,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Ajo_Granulado_(255g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Ajo Granulado (255g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.585Z"
-    },
-    {
-      "id": "prod_1769227733184_kw7ouwd8b",
-      "nombre": "Pomo de Gelatina (50/u)",
-      "categoria": "Confitura",
-      "precio": 22,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "gemini_generated_image_wguyagwguyagwguy_1769227195926.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Pomo de Gelatina (50/u), una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.893Z"
-    },
-    {
-      "id": "prod_1768441690510_9wq6k0k1z",
-      "nombre": "Pack x 6 Refresco Gaseado Mate (1.5Lt) Cero Calorías",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 15.97,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Pack_x_6_Refresco_Gaseado_Mate.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Pack x 6 Refresco Gaseado Mate (1.5Lt) Cero Calorías, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.571Z"
     },
     {
       "id": "prod_1768441690510_6xn0n5bsd",
@@ -1240,40 +577,6 @@
       "disponibilidad": true,
       "created_at": null,
       "modified_at": null
-    },
-    {
-      "id": "prod_1768441690510_kmipcz11d",
-      "nombre": "Sazonador de carnes (396g)",
-      "categoria": "Aderezos",
-      "precio": 4.37,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Sazonador_de_carnes_(396g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Sazonador de carnes (396g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.585Z"
-    },
-    {
-      "id": "prod_1768441690510_4m16b3ly0",
-      "nombre": "Bicarbonato (453g)",
-      "categoria": "Aderezos",
-      "precio": 5,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Bicarbonato_(453g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Bicarbonato (453g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.586Z"
     },
     {
       "id": "prod_1768441690510_kn64b8pa8",
@@ -1395,23 +698,6 @@
       "modified_at": "2026-02-02T20:45:44.684Z"
     },
     {
-      "id": "prod_1768441690510_pmrqvhwq7",
-      "nombre": "Caja de Pechuga de Pollo (12Kg)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 95.99,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Caja_de_Pechuga_de_Pollo_(12Kg).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Caja de Pechuga de Pollo (12Kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-21T03:32:50.298Z"
-    },
-    {
       "id": "prod_1769399408048_hbcs3qv16",
       "nombre": "EcoFlow DELTA 3 (Clásica)",
       "categoria": "Electrodomésticos",
@@ -1514,40 +800,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1768441690510_5stmkk7i6",
-      "nombre": "Leche condensada 390g",
-      "categoria": "Lácteos",
-      "precio": 1.65,
-      "descuento": 9.09,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Leche_condensada_390g.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Leche condensada 390g, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-21T03:32:50.298Z"
-    },
-    {
-      "id": "prod_1769213534534_s8dqaxn10",
-      "nombre": "Yogurt probiótico de 1L (fresa-natural- guanábana)",
-      "categoria": "Lácteos",
-      "precio": 6,
-      "descuento": 3.33,
-      "mas_vendido": true,
-      "nuevo": false,
-      "oferta": true,
-      "imagenes": [
-        "20053_1769206888567.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Yogurt probiótico de 1L (fresa y platanito), una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-22T20:23:37.699Z"
-    },
-    {
       "id": "prod_1768441690510_ynzwusik9",
       "nombre": "Paquete de azúcar 1kg",
       "categoria": "Despensa",
@@ -1563,40 +815,6 @@
       "disponibilidad": true,
       "created_at": null,
       "modified_at": "2026-04-08T01:52:37.025Z"
-    },
-    {
-      "id": "prod_1769297232608_32lds3bdy",
-      "nombre": "Ketchup Pramesa (300g)",
-      "categoria": "Aderezos",
-      "precio": 1.8,
-      "descuento": 16.67,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Ketchup_Pramesa_(300g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Ketchup Pramesa (300g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.586Z"
-    },
-    {
-      "id": "prod_1768441690510_p9644ie5y",
-      "nombre": "Paquete de papas Idaho (5lbs)",
-      "categoria": "Verduras",
-      "precio": 9.97,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Paquete_de_papas_Idaho_(5lbs).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Paquete de papas Idaho (5lbs), una excelente opción de nuestra categoría Verduras. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-04-01T15:27:07.841Z"
     },
     {
       "id": "prod_1768441690510_covgyshrh",
@@ -1684,40 +902,6 @@
       "modified_at": "2026-03-07T22:30:01.538Z"
     },
     {
-      "id": "prod_1769297232608_u1gkj9nbs",
-      "nombre": "Paquete de muslo de pollo (2kg)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 5.5,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Paquete_de_muslo_de_pollo_(2kg).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Paquete de muslo de pollo (2kg), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
-      "id": "prod_1769183074158_cdylhgc2i",
-      "nombre": "Tanqueta de mayonesa 4lts",
-      "categoria": "Aderezos",
-      "precio": 16,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Tanqueta_de_mayonesa_4lts.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Tanqueta de mayonesa 4lts, una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1768441690510_ujn45fhvi",
       "nombre": "Bolsa de pan 10u",
       "categoria": "Despensa",
@@ -1801,23 +985,6 @@
       "disponibilidad": true,
       "created_at": null,
       "modified_at": null
-    },
-    {
-      "id": "prod_1768441690510_5huk1nzry",
-      "nombre": "Chicle sin azúcar 70u",
-      "categoria": "Confitura",
-      "precio": 4.5,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Chicle_sin_azucar_70u.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Chicle sin azúcar 70u, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.577Z"
     },
     {
       "id": "prod_1768441690510_aa0pwzj5i",
@@ -1905,23 +1072,6 @@
       "modified_at": "2026-03-21T03:32:40.229Z"
     },
     {
-      "id": "prod_1768844669044_qrt1f4m3k",
-      "nombre": "Sándwich de nata (helado tipo sándwich de vainilla)50g",
-      "categoria": "Postres",
-      "precio": 1.14,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "29332_1769974867696.jpg"
-      ],
-      "descripcion": "Delicioso sándwich helado elaborado con suaves galletas tipo bizcocho rellenas de cremosa nata sabor vainilla. Ideal para disfrutar bien frío, perfecto como postre o merienda refrescante.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-01T19:43:02.128Z"
-    },
-    {
       "id": "prod_1769612979664_j0trpj4ig",
       "nombre": "Vinagre Gourmet con Especias – 500 ml",
       "categoria": "Aderezos",
@@ -1956,23 +1106,6 @@
       "modified_at": "2026-04-14T07:49:58.694Z"
     },
     {
-      "id": "prod_1768844669044_5f4r1k3kk",
-      "nombre": "1kg de queso gouda",
-      "categoria": "Lácteos",
-      "precio": 12,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "29331_1769974898927.jpg"
-      ],
-      "descripcion": "Disfruta del queso gouda Aldaketa x kg excelente producto para sus desayunos y meriendas",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-12T15:01:18.678Z"
-    },
-    {
       "id": "prod_1768918643793_wff5w2f61",
       "nombre": "Frijoles rojos x(lbs)",
       "categoria": "Despensa",
@@ -1988,40 +1121,6 @@
       "disponibilidad": true,
       "created_at": null,
       "modified_at": "2026-03-02T08:28:02.494Z"
-    },
-    {
-      "id": "prod_1768920078698_xdo268cet",
-      "nombre": "Caja de refresco naranja(24u)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 17.97,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "img_2088_1768919882647.jpeg"
-      ],
-      "descripcion": "Disfruta del refresco de naranja x cajas de 24u ideal para meriendas",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-04T17:37:15.679Z"
-    },
-    {
-      "id": "prod_1768920589823_5nbf1b3sb",
-      "nombre": "Refresco naranja(330ml)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 0.8,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "img_2090_1768920359065.jpeg"
-      ],
-      "descripcion": "Disfruta del refresco de naranja x unidad excelente producto para meriendas",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-21T04:02:57.118Z"
     },
     {
       "id": "prod_1769200481205_vpc09blss",
@@ -2041,40 +1140,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1769202654831_llgiogu7v",
-      "nombre": "Salsa de Tomate Rayan – 340g",
-      "categoria": "Aderezos",
-      "precio": 2.14,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "rayan_ketchup_1769200070307.jpg"
-      ],
-      "descripcion": "Dale sabor a tus comidas con la clásica salsa de tomate Rayan. Elaborada con tomates seleccionados, esta presentación de 340 g es perfecta para acompañar pastas, carnes, snacks y recetas criollas. Su textura suave y sabor equilibrado la convierten en un básico imprescindible en tu cocina.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.586Z"
-    },
-    {
-      "id": "prod_1769202654831_u5kvi6lhi",
-      "nombre": "Ketchup Cosami Original",
-      "categoria": "Aderezos",
-      "precio": 1.99,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "ketchup_cosami_1769200134781.jpg"
-      ],
-      "descripcion": "Descubre el sabor tradicional con el ketchup original de Cosami. Elaborado con tomates frescos y un toque criollo, esta salsa es perfecta para acompañar papas fritas, hamburguesas, carnes y snacks. Su presentación en botella roja con tapa blanca garantiza conservación y fácil aplicación.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-29T00:12:24.133Z"
-    },
-    {
       "id": "prod_1769202654831_7rc37gvmx",
       "nombre": "Giardino Mostaza Premium – 300ml",
       "categoria": "Aderezos",
@@ -2090,57 +1155,6 @@
       "disponibilidad": true,
       "created_at": null,
       "modified_at": "2026-03-27T05:24:32.837Z"
-    },
-    {
-      "id": "prod_1769295656223_amswxv2gt",
-      "nombre": "Bacon Almirez ElPozo – Paquete 3kg",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 28,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "23115_1769289701125.jpg"
-      ],
-      "descripcion": "Calidad profesional para tu cocina o negocio. El bacon Almirez de ElPozo está diseñado para hostelería, con cortes precisos y sin impurezas. Libre de gluten, lactosa, piel, ternilla y fécula, este producto garantiza sabor puro y textura ideal para desayunos, sándwiches, pizzas y platos criollos.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-21T23:54:40.023Z"
-    },
-    {
-      "id": "prod_1769974779697_582345678",
-      "nombre": "Lomo de cerdo ahumado x (lbs)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 4,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "29330_1769974950700.jpg"
-      ],
-      "descripcion": "Lomo de cerdo ahumado cuidadosamente, de textura tierna y jugosa, con un sabor profundo y equilibrado. Su proceso de ahumado realza la carne y le aporta un aroma irresistible.\nIdeal para servir frío o caliente, en comidas especiales o del día a día.\n\n💯 Calidad superior y sabor auténtic",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-06T15:19:04.496Z"
-    },
-    {
-      "id": "prod_1769974779697_w3rc3zge7",
-      "nombre": "Pollo entero asado(1300g)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 10,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "29035_1769920673262.jpg"
-      ],
-      "descripcion": "Pollo entero asado lentamente, con piel dorada y crujiente y una carne jugosa y tierna por dentro. Sazonado con una mezcla especial de especias que realza su sabor natural y auténtico.\nIdeal para compartir y disfrutar en cualquier ocasión.\n\n💯 Calidad, sabor y frescura garantizados",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-02-08T17:35:17.711Z"
     },
     {
       "id": "prod_1769398503693_qcw6jw6ui",
@@ -2160,40 +1174,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1769399997761_cesvzwr9h",
-      "nombre": "Nutella Ferreo(350g)",
-      "categoria": "Confitura",
-      "precio": 7.67,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "90efea5c-8865-4fc0-81d5-28e921765b9b_1769399647305.jpeg"
-      ],
-      "descripcion": "Disfruta de la crema de avellanas con cacao Nutella Ferreo de 350g ideal para desayunos,meriendas y para compartir en familia y amigos",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-17T20:22:14.986Z"
-    },
-    {
-      "id": "prod_1769974779697_ub9f4j1l3",
-      "nombre": "Macarela al natural(425g)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 2.8,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "29337_1769974960573.jpg"
-      ],
-      "descripcion": "Disfruta de la Macarela un producto importado de Europa rinde para 4 personas ideal para cenas almuerzos y más",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-03-06T18:08:28.218Z"
-    },
-    {
       "id": "prod_1769920633225_umws2zt0k",
       "nombre": "Carne de Res enlatada Sublime",
       "categoria": "Despensa",
@@ -2209,23 +1189,6 @@
       "disponibilidad": true,
       "created_at": "2026-02-01T04:25:54.206Z",
       "modified_at": "2026-02-01T04:25:54.206Z"
-    },
-    {
-      "id": "prod_1769974779698_q4lst0qbb",
-      "nombre": "Jugo de (Piña)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 0.7,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "29034_1769920829022.jpg"
-      ],
-      "descripcion": "Disfruta de la delicia y frescura del jugo de piña. ideal para meriendas y refrescar en cualquier horario",
-      "disponibilidad": false,
-      "created_at": "2026-02-01T04:45:45.320Z",
-      "modified_at": "2026-02-24T19:59:33.571Z"
     },
     {
       "id": "prod_1769974779698_8olg1rh5p",
@@ -2245,40 +1208,6 @@
       "modified_at": "2026-02-01T04:45:46.636Z"
     },
     {
-      "id": "prod_1770066469203_y2eeslg2t",
-      "nombre": "Pasta de Tomate (Holland Park)",
-      "categoria": "Despensa",
-      "precio": 1.35,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "1377fbfe-49b3-4a92-8515-13149de037da_1770066469220.jpg"
-      ],
-      "descripcion": "Pasta de Tomate Holland Park Eleva el sabor de tus recetas con la Pasta de Tomate Holland Park. Esta pasta concentrada de alta calidad viene en una práctica presentación de lata de 400g, ideal para aportar un color rojo intenso y una textura espesa a tus salsas, guisos y estofados. Elaborada con tomates seleccionados, es un producto libre de organismos genéticamente modificados (GMO FREE), garantizando un ingrediente más natural y saludable para tu cocina. Su sabor profundo y auténtico es la bas",
-      "disponibilidad": false,
-      "created_at": "2026-02-02T21:08:14.224Z",
-      "modified_at": "2026-03-02T08:28:02.494Z"
-    },
-    {
-      "id": "prod_1770068151315_vd46lv3pi",
-      "nombre": "Mdm Polaco 11kg",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 20,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "picadillo_mdm_1770068151335.jpg"
-      ],
-      "descripcion": "Mdm Polaco de alta calida. Tabletas de 11kg",
-      "disponibilidad": false,
-      "created_at": "2026-02-02T21:36:01.806Z",
-      "modified_at": "2026-02-24T19:24:15.440Z"
-    },
-    {
       "id": "prod_1770819915685_uohxroax1",
       "nombre": "Saco de Arroz 25Kg",
       "categoria": "Despensa",
@@ -2294,40 +1223,6 @@
       "disponibilidad": true,
       "created_at": "2026-02-11T14:25:26.248Z",
       "modified_at": "2026-03-14T00:31:59.757Z"
-    },
-    {
-      "id": "prod_1770820966994_c9d402x6t",
-      "nombre": "Paquete de Mollejas de pollo (5lb)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 5.5,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "paquete_de_mollejas_de_pollo_5lbs_1770820967011.jpg"
-      ],
-      "descripcion": "Las meores Mollejas del mercado",
-      "disponibilidad": false,
-      "created_at": "2026-02-11T14:42:57.739Z",
-      "modified_at": "2026-02-12T15:01:18.679Z"
-    },
-    {
-      "id": "prod_1770927044510_a0fr6jdmw",
-      "nombre": "Paquete de cuartos de Pollo",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 15,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "41995_1770927044794.jpg"
-      ],
-      "descripcion": "Paquete de 10 lbs de Cuartos de pollo",
-      "disponibilidad": false,
-      "created_at": "2026-02-12T20:12:15.288Z",
-      "modified_at": "2026-03-21T23:54:40.024Z"
     },
     {
       "id": "prod_1770927123433_kjav7smv7",
@@ -2364,23 +1259,6 @@
       "modified_at": "2026-02-16T15:32:01.169Z"
     },
     {
-      "id": "prod_1771255241157_ynjpgsmfe",
-      "nombre": "Vinagre de vino blanco 1l",
-      "categoria": "Despensa",
-      "precio": 3.9,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "44791_1771255241374.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-02-16T15:32:02.790Z",
-      "modified_at": "2026-03-21T23:54:40.024Z"
-    },
-    {
       "id": "prod_1771255296430_p8ultevvt",
       "nombre": "Pasta para bocaditos 225ml",
       "categoria": "Despensa",
@@ -2396,23 +1274,6 @@
       "disponibilidad": true,
       "created_at": "2026-02-16T15:32:04.846Z",
       "modified_at": "2026-03-27T05:24:31.693Z"
-    },
-    {
-      "id": "prod_1771255391271_0s958gn5g",
-      "nombre": "Café natural Vima",
-      "categoria": "Despensa",
-      "precio": 8,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "44795_1771255391489.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-02-16T15:32:07.002Z",
-      "modified_at": "2026-02-28T03:40:16.781Z"
     },
     {
       "id": "prod_1771255455739_z92mxmjqj",
@@ -2517,74 +1378,6 @@
       "modified_at": "2026-04-05T22:52:37.026Z"
     },
     {
-      "id": "prod_1771810113359_uesbogopo",
-      "nombre": "Café la llave",
-      "categoria": "Despensa",
-      "precio": 9.99,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "1000017942_1773335569342.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-02-23T01:29:52.808Z",
-      "modified_at": "2026-03-12T18:47:37.240Z"
-    },
-    {
-      "id": "prod_1771810173233_jpshzwww8",
-      "nombre": "Café Sello rojo",
-      "categoria": "Despensa",
-      "precio": 11,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "49658_1771810173377.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-02-23T01:29:54.739Z",
-      "modified_at": "2026-03-04T17:37:15.679Z"
-    },
-    {
-      "id": "prod_1771953658499_27m8gu8j4",
-      "nombre": "Caja de néctar de Mango",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 27,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "img-20260223-wa0003_1771953658515.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-02-24T17:26:46.378Z",
-      "modified_at": "2026-03-06T18:08:28.218Z"
-    },
-    {
-      "id": "prod_1771953720825_4cyznc1dm",
-      "nombre": "Néctar de Mango",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 1.25,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "images_1771953720841.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-02-24T17:26:48.187Z",
-      "modified_at": "2026-03-06T18:08:28.218Z"
-    },
-    {
       "id": "prod_1771953998923_b4sri6e8j",
       "nombre": "Malta Bucanero",
       "categoria": "Bebidas no alcohólicas",
@@ -2636,57 +1429,6 @@
       "modified_at": "2026-03-21T03:32:47.727Z"
     },
     {
-      "id": "prod_1772070039908_h8liucaq8",
-      "nombre": "Cubeta de Galletas de Soda",
-      "categoria": "Confitura",
-      "precio": 11.47,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "img-20260225-wa0007_1772070039928.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-02-26T01:40:53.594Z",
-      "modified_at": "2026-03-06T18:08:28.219Z"
-    },
-    {
-      "id": "prod_1772238681809_9kzilq1ry",
-      "nombre": "Helado Nestle 450ml (Fresa)",
-      "categoria": "Lácteos",
-      "precio": 4.97,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "53955_1772238682027.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-02-28T00:34:11.632Z",
-      "modified_at": "2026-03-21T03:32:50.303Z"
-    },
-    {
-      "id": "prod_1772238758846_9o5c439un",
-      "nombre": "Helado Nestle 450ml (Vainilla)",
-      "categoria": "Lácteos",
-      "precio": 4.97,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "53954_1772238759054.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-02-28T00:34:13.259Z",
-      "modified_at": "2026-03-21T03:32:50.304Z"
-    },
-    {
       "id": "prod_1772300754323_lz1rnolgm",
       "nombre": "Paquete de Croquetas de pollo 1Kg",
       "categoria": "Cárnicos y Embutidos",
@@ -2702,23 +1444,6 @@
       "disponibilidad": true,
       "created_at": "2026-02-28T17:46:04.296Z",
       "modified_at": "2026-03-21T03:32:47.728Z"
-    },
-    {
-      "id": "prod_1772439257972_9nrd57jde",
-      "nombre": "Lomo de cerdo x lbs",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 4.66,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "gemini_generated_image_iycg83iycg83iycg_1772439257986.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-02T08:27:54.950Z",
-      "modified_at": "2026-03-21T03:32:50.297Z"
     },
     {
       "id": "prod_1772439456822_kktbprsor",
@@ -2840,23 +1565,6 @@
       "modified_at": "2026-03-02T09:28:12.194Z"
     },
     {
-      "id": "prod_1772443241201_48vmhs1v2",
-      "nombre": "Harina de Trigo 1Kg",
-      "categoria": "Despensa",
-      "precio": 2.89,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "13_1772443241212.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-02T09:28:13.442Z",
-      "modified_at": "2026-03-29T00:12:24.134Z"
-    },
-    {
       "id": "prod_1772443332928_3y6hc8nc9",
       "nombre": "Jabón de Baño AURA (Rosa)",
       "categoria": "Utiles del Hogar",
@@ -2976,23 +1684,6 @@
       "modified_at": "2026-03-21T03:32:50.302Z"
     },
     {
-      "id": "prod_1772645829533_juot68g28",
-      "nombre": "Caja de refresco de cola",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 20.99,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "shopping_1772645829590.webp"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-04T17:37:18.050Z",
-      "modified_at": "2026-03-21T04:02:57.118Z"
-    },
-    {
       "id": "prod_1772732759012_tojcqpnpu",
       "nombre": "Sorbetes bon o bon",
       "categoria": "Confitura",
@@ -3044,57 +1735,6 @@
       "modified_at": "2026-03-06T18:08:31.245Z"
     },
     {
-      "id": "prod_1772914860563_b3sx7nre1",
-      "nombre": "Café Candado",
-      "categoria": "Despensa",
-      "precio": 5.95,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "1000013227_1772914860652.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-07T20:23:37.282Z",
-      "modified_at": "2026-03-26T17:53:23.770Z"
-    },
-    {
-      "id": "prod_1772914905520_up2ong8ic",
-      "nombre": "Café expresso",
-      "categoria": "Despensa",
-      "precio": 6.99,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "1000013226_1772914905598.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-07T20:23:38.575Z",
-      "modified_at": "2026-03-26T17:53:23.771Z"
-    },
-    {
-      "id": "prod_1772915007949_dyxi8pspk",
-      "nombre": "Leche en polvo capri",
-      "categoria": "Lácteos",
-      "precio": 11.49,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "1000013225_1772915008032.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-07T20:23:40.123Z",
-      "modified_at": "2026-03-14T00:31:59.756Z"
-    },
-    {
       "id": "prod_1772916022776_bilx1sk92",
       "nombre": "Pack x 12 Néctar de Piña (12x330ml)",
       "categoria": "Bebidas no alcohólicas",
@@ -3129,23 +1769,6 @@
       "modified_at": "2026-03-07T20:42:14.137Z"
     },
     {
-      "id": "prod_1773335786764_jrf2rysk1",
-      "nombre": "Café El Morro",
-      "categoria": "Despensa",
-      "precio": 9.99,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "1000017943_1773335786871.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-12T17:17:35.495Z",
-      "modified_at": "2026-03-12T18:47:37.241Z"
-    },
-    {
       "id": "prod_1773353745359_tc7llj26g",
       "nombre": "Lomo de Cerdo deshuesado x Kg",
       "categoria": "Cárnicos y Embutidos",
@@ -3178,23 +1801,6 @@
       "disponibilidad": true,
       "created_at": "2026-03-14T00:32:03.512Z",
       "modified_at": "2026-03-14T00:32:03.512Z"
-    },
-    {
-      "id": "prod_1773856297593_nx28za218",
-      "nombre": "Fresa Congelada",
-      "categoria": "Frutas",
-      "precio": 3.9,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "1000025983_1773856297672.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-18T17:58:50.439Z",
-      "modified_at": "2026-03-18T21:00:01.853Z"
     },
     {
       "id": "prod_1773856436753_ggf4sat5i",
@@ -3299,40 +1905,6 @@
       "modified_at": "2026-03-21T03:32:50.297Z"
     },
     {
-      "id": "prod_1773970206536_b6vii0sye",
-      "nombre": "Refresco Gaseado de Cola",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 2.49,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "1000027182_1773970206629.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-20T01:30:19.558Z",
-      "modified_at": "2026-03-20T01:30:19.558Z"
-    },
-    {
-      "id": "prod_17739702444_b6vii0sye",
-      "nombre": "Refresco Gaseado de Naranja",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 2.49,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "naranja_17739702445.webp"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-04-03T01:30:19.558Z",
-      "modified_at": "2026-04-03T01:30:19.558Z"
-    },
-    {
       "id": "prod_1774015812916_vgwyv0fp2",
       "nombre": "Picadillo de pollo 400g",
       "categoria": "Cárnicos y Embutidos",
@@ -3365,23 +1937,6 @@
       "disponibilidad": true,
       "created_at": "2026-03-21T03:32:40.227Z",
       "modified_at": "2026-03-21T03:32:40.227Z"
-    },
-    {
-      "id": "prod_1774062867183_31g8j5q3v",
-      "nombre": "Atún en aceite vegetal 140g",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 2.5,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "img_1774062867199.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-21T03:32:47.726Z",
-      "modified_at": "2026-03-21T23:54:40.024Z"
     },
     {
       "id": "prod_1774063422149_kzpdkp3om",
