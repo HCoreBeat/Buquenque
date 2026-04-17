@@ -2464,6 +2464,57 @@
       "disponibilidad": true,
       "created_at": "2026-04-14T07:50:08.379Z",
       "modified_at": "2026-04-14T07:50:08.379Z"
+    },
+    {
+      "id": "prod_1776408366475_c7fpx7qya",
+      "nombre": "Mejillones por kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 7,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "42400_1776408366626.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-17T06:49:39.997Z",
+      "modified_at": "2026-04-17T06:49:39.997Z"
+    },
+    {
+      "id": "prod_1776408427183_xuedabnzn",
+      "nombre": "Paquete de detergente 9kg",
+      "categoria": "Aseo y Belleza",
+      "precio": 17.49,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "42402_1776408427324.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-17T06:49:41.227Z",
+      "modified_at": "2026-04-17T06:49:41.227Z"
+    },
+    {
+      "id": "prod_1776408550912_nhajoiiqh",
+      "nombre": "Porrón de aceite 17.5lts",
+      "categoria": "Despensa",
+      "precio": 47.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "42401_1776408551062.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-17T06:49:43.373Z",
+      "modified_at": "2026-04-17T06:49:43.373Z"
     }
   ]
 }
