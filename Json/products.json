@@ -108,16 +108,16 @@
       "categoria": "Bebidas alcohólicas",
       "precio": 6.99,
       "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": true,
+      "mas_vendido": false,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "La_Baronne.jpg"
       ],
       "descripcion": "Elegante Vino Espumoso La Baronne Demi-Sec Rosé, con un contenido de 750 ml y 10% de volumen de alcohol. Ideal para celebraciones y brindis especiales.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-04-18T01:09:17.706Z"
     },
     {
       "id": "prod_1769030417838_noe5sa2wa",
@@ -516,16 +516,16 @@
       "categoria": "Lácteos",
       "precio": 37,
       "descuento": 8.11,
-      "mas_vendido": true,
-      "nuevo": true,
+      "mas_vendido": false,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000025979_1773856707635.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Queso Gouda, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-03-29T00:12:24.133Z"
+      "modified_at": "2026-04-18T01:09:17.707Z"
     },
     {
       "id": "prod_1768441690510_vkkhmof4o",
