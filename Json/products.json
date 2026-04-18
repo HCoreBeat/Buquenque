@@ -516,16 +516,16 @@
       "categoria": "Lácteos",
       "precio": 37,
       "descuento": 8.11,
-      "mas_vendido": true,
-      "nuevo": true,
+      "mas_vendido": false,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000025979_1773856707635.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Queso Gouda, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-03-29T00:12:24.133Z"
+      "modified_at": "2026-04-18T01:12:28.647Z"
     },
     {
       "id": "prod_1768441690510_vkkhmof4o",
@@ -2030,15 +2030,15 @@
       "precio": 13.85,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "1000030505_1774222653906.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-22T23:41:32.672Z",
-      "modified_at": "2026-04-18T01:11:32.192Z"
+      "modified_at": "2026-03-22T23:41:32.672Z"
     },
     {
       "id": "prod_1774222778857_b1qujwhp4",
@@ -2047,15 +2047,15 @@
       "precio": 23.97,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "1000030506_1774222778932.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-22T23:41:33.926Z",
-      "modified_at": "2026-04-18T01:11:32.192Z"
+      "modified_at": "2026-03-22T23:41:33.926Z"
     },
     {
       "id": "prod_1774222827787_4bvaa0jmo",
