@@ -108,16 +108,16 @@
       "categoria": "Bebidas alcohólicas",
       "precio": 6.99,
       "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": true,
+      "mas_vendido": false,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "La_Baronne.jpg"
       ],
       "descripcion": "Elegante Vino Espumoso La Baronne Demi-Sec Rosé, con un contenido de 750 ml y 10% de volumen de alcohol. Ideal para celebraciones y brindis especiales.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-04-18T08:31:25.727Z"
     },
     {
       "id": "prod_1769030417838_noe5sa2wa",
@@ -2030,15 +2030,15 @@
       "precio": 13.85,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000030505_1774222653906.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-22T23:41:32.672Z",
-      "modified_at": "2026-03-22T23:41:32.672Z"
+      "modified_at": "2026-04-18T08:31:25.727Z"
     },
     {
       "id": "prod_1774222778857_b1qujwhp4",
@@ -2047,15 +2047,15 @@
       "precio": 23.97,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000030506_1774222778932.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-22T23:41:33.926Z",
-      "modified_at": "2026-03-22T23:41:33.926Z"
+      "modified_at": "2026-04-18T08:31:25.728Z"
     },
     {
       "id": "prod_1774222827787_4bvaa0jmo",
