@@ -2515,6 +2515,40 @@
       "disponibilidad": true,
       "created_at": "2026-04-17T06:49:43.373Z",
       "modified_at": "2026-04-17T06:49:43.373Z"
+    },
+    {
+      "id": "prod_1776590805262_gsxaukooi",
+      "nombre": "Leche en polvo Aloy 1Kg",
+      "categoria": "Lácteos",
+      "precio": 12,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "9a4161471fc5b9122a2aab_1776590805282.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-19T09:28:48.364Z",
+      "modified_at": "2026-04-19T09:28:48.364Z"
+    },
+    {
+      "id": "prod_1776590917088_17s74pewj",
+      "nombre": "Leche en polvo Entera macro food 1kg",
+      "categoria": "Lácteos",
+      "precio": 9.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "leche_macrofood_1776590917109.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-19T09:28:51.094Z",
+      "modified_at": "2026-04-19T09:28:51.094Z"
     }
   ]
 }
