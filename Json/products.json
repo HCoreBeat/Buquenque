@@ -1095,15 +1095,15 @@
       "precio": 11.29,
       "descuento": 38,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "descarga_1776151869855.jpeg"
       ],
       "descripcion": "Pollo entero fresco\nPollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. Carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-04-14T07:49:58.694Z"
+      "modified_at": "2026-04-22T06:16:58.898Z"
     },
     {
       "id": "prod_1768918643793_wff5w2f61",
@@ -1435,15 +1435,15 @@
       "precio": 9.95,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000006772_1772300754422.png"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-28T17:46:04.296Z",
-      "modified_at": "2026-03-21T03:32:47.728Z"
+      "modified_at": "2026-04-22T06:16:58.898Z"
     },
     {
       "id": "prod_1772439456822_kktbprsor",
@@ -2200,15 +2200,15 @@
       "precio": 14.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000041621_1775429399333.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-05T22:52:32.936Z",
-      "modified_at": "2026-04-05T22:52:32.936Z"
+      "modified_at": "2026-04-22T06:16:58.897Z"
     },
     {
       "id": "prod_1775429427960_tscsekfei",
@@ -2285,15 +2285,15 @@
       "precio": 2.57,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "10_1776151682602.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-14T07:49:53.232Z",
-      "modified_at": "2026-04-14T07:49:53.232Z"
+      "modified_at": "2026-04-22T06:16:58.897Z"
     },
     {
       "id": "prod_1776151712213_3bmsorx6t",
