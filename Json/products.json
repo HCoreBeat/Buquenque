@@ -312,7 +312,7 @@
       "categoria": "Despensa",
       "precio": 10,
       "descuento": 20,
-      "mas_vendido": true,
+      "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
@@ -321,7 +321,7 @@
       "descripcion": "Disfruta de la calidad de Leche en polvo (1kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-28T03:40:16.782Z"
+      "modified_at": "2026-04-24T06:56:13.689Z"
     },
     {
       "id": "prod_1768441690510_tf4rwuo62",
@@ -975,7 +975,7 @@
       "categoria": "Cárnicos y Embutidos",
       "precio": 60,
       "descuento": 0,
-      "mas_vendido": true,
+      "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
       "imagenes": [
@@ -984,7 +984,7 @@
       "descripcion": "Disfruta de la calidad de Pernil asado de 20lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-04-24T06:56:13.689Z"
     },
     {
       "id": "prod_1768441690510_aa0pwzj5i",
