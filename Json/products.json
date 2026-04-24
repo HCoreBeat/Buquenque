@@ -217,9 +217,9 @@
         "img-20260223-wa0002_1771953859593.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Caja de Malta Bucanero, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-04-11T17:14:56.254Z"
+      "modified_at": "2026-04-24T16:53:30.362Z"
     },
     {
       "id": "prod_1768441690510_lmfmz1hj5",
@@ -1390,9 +1390,9 @@
         "whatsapp_image_2023-03-07_at_115047_am_1771953998949.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-24T17:26:52.227Z",
-      "modified_at": "2026-02-24T17:26:52.227Z"
+      "modified_at": "2026-04-24T16:53:30.362Z"
     },
     {
       "id": "prod_1772069781750_na7wo0yhn",
@@ -1730,9 +1730,9 @@
         "9e48614d-8e0f-48a2-9f31-041aaecafa33_1772820254147.jpeg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-06T18:08:31.245Z",
-      "modified_at": "2026-03-06T18:08:31.245Z"
+      "modified_at": "2026-04-24T16:53:30.362Z"
     },
     {
       "id": "prod_1772916022776_bilx1sk92",
