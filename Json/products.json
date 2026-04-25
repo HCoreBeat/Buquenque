@@ -2350,18 +2350,18 @@
       "id": "prod_1776151792418_7gpmewo2g",
       "nombre": "Chorizo Premiun 300g",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 7.99,
+      "precio": 7.75,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "11_1776151792428.jpg"
+        "gemini_generated_image_z0cdasz0cdasz0cd_1777105167409.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-14T07:49:57.667Z",
-      "modified_at": "2026-04-14T07:49:57.667Z"
+      "modified_at": "2026-04-25T08:27:34.380Z"
     },
     {
       "id": "prod_1776151970517_o4p40xl3f",
@@ -2549,6 +2549,193 @@
       "disponibilidad": true,
       "created_at": "2026-04-19T09:28:51.094Z",
       "modified_at": "2026-04-19T09:28:51.094Z"
+    },
+    {
+      "id": "prod_1777104839776_bmwky6d4m",
+      "nombre": "Paquete de Cuartos de pollo 11lbs",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 14,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "images_1777104839806.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-25T08:27:28.481Z",
+      "modified_at": "2026-04-25T08:27:28.481Z"
+    },
+    {
+      "id": "prod_1777104949342_f0hmt1vea",
+      "nombre": "Rollitos de primavera 200g",
+      "categoria": "Despensa",
+      "precio": 1.85,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "238115_1777104949366.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-25T08:27:29.952Z",
+      "modified_at": "2026-04-25T08:27:29.952Z"
+    },
+    {
+      "id": "prod_1777104996420_aqe312i99",
+      "nombre": "Guisante Vima 1kg",
+      "categoria": "Despensa",
+      "precio": 4.47,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "8034-chicharo-entero-congelado-vima-1-kg_1777104996457.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-25T08:27:31.430Z",
+      "modified_at": "2026-04-25T08:27:31.430Z"
+    },
+    {
+      "id": "prod_1777105074342_bnolew50n",
+      "nombre": "Garbanzos Vima 2.5kg",
+      "categoria": "Despensa",
+      "precio": 8.79,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "3d85c876-f63d-465b-b8ea-2fe91b23fd2a_1777105074365.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-25T08:27:33.171Z",
+      "modified_at": "2026-04-25T08:27:33.171Z"
+    },
+    {
+      "id": "prod_1777105220813_glq0vi9ad",
+      "nombre": "Mini ponquesito Clasica",
+      "categoria": "Confitura",
+      "precio": 3.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_1777105220828.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-25T08:27:37.161Z",
+      "modified_at": "2026-04-25T08:27:37.161Z"
+    },
+    {
+      "id": "prod_1777105277694_ws3jb30bh",
+      "nombre": "Mini ponquesito Chispita",
+      "categoria": "Confitura",
+      "precio": 3.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img-1_1777105277709.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-25T08:27:38.483Z",
+      "modified_at": "2026-04-25T08:27:38.483Z"
+    },
+    {
+      "id": "prod_1777105356172_kuna0r9z3",
+      "nombre": "Mini ponquesito marmol",
+      "categoria": "Confitura",
+      "precio": 3.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img-2_1777105356187.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-25T08:27:39.900Z",
+      "modified_at": "2026-04-25T08:27:39.900Z"
+    },
+    {
+      "id": "prod_1777105417411_8vcu9pcyg",
+      "nombre": "Salsa de Soja Vima 150ml",
+      "categoria": "Aderezos",
+      "precio": 1.7,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "af6a8ff5-cbec-49c0-883c-4156d07ba7d8_1777105417431.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-25T08:27:41.219Z",
+      "modified_at": "2026-04-25T08:27:41.219Z"
+    },
+    {
+      "id": "prod_1777105488594_7as6xu96r",
+      "nombre": "Macedonia de verduras 535g",
+      "categoria": "Aderezos",
+      "precio": 3.37,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "cuba-alimentos-restaurantes-viajes-envios-medicina-macedonia-vegetales-vima-535g_1777105488610.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-25T08:27:42.536Z",
+      "modified_at": "2026-04-25T08:27:42.536Z"
+    },
+    {
+      "id": "prod_1777105551780_1qdxfj31j",
+      "nombre": "Paquete de puré de papa en copos 1kg",
+      "categoria": "Despensa",
+      "precio": 8.95,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "44aae64a-4101-4cce-b9a1-e636c98d0c4e_1777105551796.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-25T08:27:43.924Z",
+      "modified_at": "2026-04-25T08:27:43.924Z"
+    },
+    {
+      "id": "prod_1777105643022_j2j9t764k",
+      "nombre": "Caja de cuartos de pollo de 33lbs",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 38,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "205331_1777105643038.jpg"
+      ],
+      "descripcion": "contiene 3 paquetes de 11lbs",
+      "disponibilidad": true,
+      "created_at": "2026-04-25T08:27:45.177Z",
+      "modified_at": "2026-04-25T08:27:45.177Z"
     }
   ]
 }
