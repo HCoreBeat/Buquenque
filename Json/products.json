@@ -1594,9 +1594,9 @@
         "6_1772443528725.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-02T09:28:22.234Z",
-      "modified_at": "2026-03-02T09:28:22.234Z"
+      "modified_at": "2026-05-01T15:42:48.193Z"
     },
     {
       "id": "prod_1772443579416_ssrc7h8pg",
@@ -1611,9 +1611,9 @@
         "7_1772443579439.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-02T09:28:23.263Z",
-      "modified_at": "2026-03-02T09:28:23.263Z"
+      "modified_at": "2026-05-01T15:42:48.193Z"
     },
     {
       "id": "prod_1772443613305_eh6i8vglo",
@@ -1628,9 +1628,9 @@
         "5_1772443613342.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-02T09:28:24.506Z",
-      "modified_at": "2026-03-02T09:28:24.506Z"
+      "modified_at": "2026-05-01T15:42:48.194Z"
     },
     {
       "id": "prod_1772443671662_3zlv75nd6",
@@ -1662,9 +1662,9 @@
         "1000010549_1772732759103.webp"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-05T17:46:45.716Z",
-      "modified_at": "2026-03-05T17:46:45.716Z"
+      "modified_at": "2026-05-01T15:42:48.193Z"
     },
     {
       "id": "prod_1772732799999_4pu74vvsy",
@@ -1764,9 +1764,9 @@
         "1000018949_1773448315601.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-14T00:32:03.512Z",
-      "modified_at": "2026-03-14T00:32:03.512Z"
+      "modified_at": "2026-05-01T15:42:48.193Z"
     },
     {
       "id": "prod_1773856436753_ggf4sat5i",
@@ -1917,9 +1917,9 @@
         "oip_1774063422183.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-21T03:32:50.297Z",
-      "modified_at": "2026-03-21T03:32:50.297Z"
+      "modified_at": "2026-05-01T15:42:48.191Z"
     },
     {
       "id": "prod_1774065369289_dj3b4r62t",
@@ -2580,9 +2580,9 @@
         "img_1777105220828.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-25T08:27:37.161Z",
-      "modified_at": "2026-04-25T08:27:37.161Z"
+      "modified_at": "2026-05-01T15:42:48.193Z"
     },
     {
       "id": "prod_1777105277694_ws3jb30bh",
