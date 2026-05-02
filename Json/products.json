@@ -716,20 +716,20 @@
     },
     {
       "id": "prod_1768441690510_ok1axebuc",
-      "nombre": "Malta Guajira (330ml)",
+      "nombre": "Malta Guajira (1500ml)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 1.15,
-      "descuento": 0,
+      "precio": 3.25,
+      "descuento": 64.62,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "Malta_Guajira_(330ml).jpg"
+        "1000065558_1777745548754.jpg"
       ],
-      "descripcion": "Disfruta de la calidad de Malta Guajira (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
+      "descripcion": "Disfruta de la calidad de Malta Guajira (1500ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-05-02T18:19:55.432Z"
     },
     {
       "id": "prod_1768441690510_14e74xnoh",
@@ -1976,18 +1976,18 @@
       "id": "prod_1774222439833_s0jwz3gyf",
       "nombre": "Jamón Bravo 2kg",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 22.97,
+      "precio": 22.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "1000030508_1774222439937.jpg"
+        "1000065528_1777745976144.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-22T23:41:29.685Z",
-      "modified_at": "2026-03-22T23:41:29.685Z"
+      "modified_at": "2026-05-02T18:20:01.823Z"
     },
     {
       "id": "prod_1774222653850_9m6grgvh0",
@@ -2702,6 +2702,125 @@
       "disponibilidad": true,
       "created_at": "2026-04-27T11:40:05.520Z",
       "modified_at": "2026-04-27T11:40:05.520Z"
+    },
+    {
+      "id": "prod_1777744697829_j6ymprakj",
+      "nombre": "Caja de Malta Boa",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 24,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000066084_1777744697930.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-02T18:19:49.866Z",
+      "modified_at": "2026-05-02T18:19:49.866Z"
+    },
+    {
+      "id": "prod_1777744940773_l4rwx3dni",
+      "nombre": "Galletas Saltitacos",
+      "categoria": "Confitura",
+      "precio": 5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000066092_1777744940863.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-02T18:19:51.308Z",
+      "modified_at": "2026-05-02T18:19:51.308Z"
+    },
+    {
+      "id": "prod_1777745055131_1nw9hbsff",
+      "nombre": "Frazada de piso",
+      "categoria": "Utiles del Hogar",
+      "precio": 0.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000066091_1777745055238.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-02T18:19:52.590Z",
+      "modified_at": "2026-05-02T18:19:52.590Z"
+    },
+    {
+      "id": "prod_1777745328446_ztbmwzow3",
+      "nombre": "Sardina Entera 1lb",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 4.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000065559_1777745328605.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-02T18:19:54.071Z",
+      "modified_at": "2026-05-02T18:19:54.071Z"
+    },
+    {
+      "id": "prod_1777745695199_ib8pmu14r",
+      "nombre": "Ponquesitos Dulces",
+      "categoria": "Confitura",
+      "precio": 0.6,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000065557_1777745695299.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-02T18:19:57.820Z",
+      "modified_at": "2026-05-02T18:19:57.820Z"
+    },
+    {
+      "id": "prod_1777745771069_ajaergvdx",
+      "nombre": "Donut Dulce",
+      "categoria": "Confitura",
+      "precio": 0.6,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000065556_1777745771183.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-02T18:19:59.089Z",
+      "modified_at": "2026-05-02T18:19:59.089Z"
+    },
+    {
+      "id": "prod_1777745831018_3zjzns3pq",
+      "nombre": "Pelly sabor tocino",
+      "categoria": "Confitura",
+      "precio": 0.6,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000065529_1777745831122.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-02T18:20:00.390Z",
+      "modified_at": "2026-05-02T18:20:00.390Z"
     }
   ]
 }
