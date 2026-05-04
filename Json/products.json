@@ -999,9 +999,9 @@
         "rayan_chocolate.jpg"
       ],
       "descripcion": "Mezcla en polvo sabor chocolate para preparar bebidas cremosas. Presentación llamativa con personaje infantil, ideal para atraer a niños y familias. Contiene leche y cacao, y se promociona como un producto nuevo.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-03-21T04:03:05.564Z"
+      "modified_at": "2026-05-04T15:38:06.090Z"
     },
     {
       "id": "prod_1768443205852_jk51wnt6q",
@@ -1169,9 +1169,9 @@
         "img_2343_1769367903617.png"
       ],
       "descripcion": "Sabor equilibrado que complementa sin opacar el café. Textura liviana que aporta cremosidad sin necesidad de lácteos. Fácil de disolver, ideal para usar en servicio rápido o autoservicio.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-05-04T15:38:06.090Z"
     },
     {
       "id": "prod_1769920633225_umws2zt0k",
@@ -1529,57 +1529,6 @@
       "disponibilidad": true,
       "created_at": "2026-03-02T09:28:12.194Z",
       "modified_at": "2026-03-02T09:28:12.194Z"
-    },
-    {
-      "id": "prod_1772443332928_3y6hc8nc9",
-      "nombre": "Jabón de Baño AURA (Rosa)",
-      "categoria": "Utiles del Hogar",
-      "precio": 0.69,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "8_1772443332946.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": true,
-      "created_at": "2026-03-02T09:28:14.614Z",
-      "modified_at": "2026-03-02T09:28:14.614Z"
-    },
-    {
-      "id": "prod_1772443369943_z7ttwozkg",
-      "nombre": "Jabón de Baño AURA (Orquidea)",
-      "categoria": "Utiles del Hogar",
-      "precio": 0.69,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "9_1772443369968.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": true,
-      "created_at": "2026-03-02T09:28:15.663Z",
-      "modified_at": "2026-03-02T09:28:15.663Z"
-    },
-    {
-      "id": "prod_1772443402814_5gmy9e8s0",
-      "nombre": "Jabón de Baño AURA (Aloevera)",
-      "categoria": "Utiles del Hogar",
-      "precio": 0.69,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "10_1772443402831.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": true,
-      "created_at": "2026-03-02T09:28:16.862Z",
-      "modified_at": "2026-03-02T09:28:16.862Z"
     },
     {
       "id": "prod_1772443528708_c9r8jr80o",
