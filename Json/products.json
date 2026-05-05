@@ -89,8 +89,8 @@
       "id": "prod_1768783820711_rmnry541r",
       "nombre": "Cartón de Huevos",
       "categoria": "Despensa",
-      "precio": 11,
-      "descuento": 19.55,
+      "precio": 11.5,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -100,7 +100,7 @@
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-04-24T17:24:03.484Z"
+      "modified_at": "2026-05-05T16:22:32.075Z"
     },
     {
       "id": "prod_1768923054742_dhekmp0os",
@@ -220,23 +220,6 @@
       "disponibilidad": false,
       "created_at": null,
       "modified_at": "2026-04-24T16:53:30.362Z"
-    },
-    {
-      "id": "prod_1768441690510_lmfmz1hj5",
-      "nombre": "Frazada de Piso",
-      "categoria": "Utiles del Hogar",
-      "precio": 1.5,
-      "descuento": 33.33,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Frazada_de_Piso.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Frazada de Piso, una excelente opción de nuestra categoría Utiles del Hogar. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": "2026-02-24T19:59:33.577Z"
     },
     {
       "id": "prod_1768441690510_nm24ia7xr",
@@ -404,9 +387,9 @@
         "gemini_generated_image_wxgamswxgamswxga_1770818983218.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Atún en Aceite Vegetal (170g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-02-11T14:16:04.303Z"
+      "modified_at": "2026-05-05T16:22:32.074Z"
     },
     {
       "id": "prod_1768441690510_jeg5mb96s",
@@ -693,9 +676,9 @@
         "Pasta_de_Tomate_Oderich_(350g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pasta de Tomate 🍅 Oderich (350g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-02-02T20:45:44.684Z"
+      "modified_at": "2026-05-05T16:22:29.231Z"
     },
     {
       "id": "prod_1769399408048_hbcs3qv16",
@@ -956,8 +939,8 @@
       "id": "prod_1768443205852_ac2tz1k6u",
       "nombre": "Carne de cerdo x lbs",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 3.07,
-      "descuento": 2.28,
+      "precio": 3.75,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -967,7 +950,7 @@
       "descripcion": "Disfruta de la calidad de Carne de cerdo x lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-21T03:32:40.231Z"
+      "modified_at": "2026-05-05T16:22:32.074Z"
     },
     {
       "id": "prod_1768509219912_h61h4xal8",
@@ -1058,8 +1041,8 @@
       "id": "prod_1769612979664_6f4o3BE2I",
       "nombre": "Chuleta de cerdo x lb",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 3.37,
-      "descuento": 1.78,
+      "precio": 3.75,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
@@ -1069,7 +1052,7 @@
       "descripcion": "Disfruta de la calidad de la chuleta de cerdo natural ideal para tus cenas",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-21T03:32:40.229Z"
+      "modified_at": "2026-05-05T16:22:32.075Z"
     },
     {
       "id": "prod_1769612979664_j0trpj4ig",
@@ -1203,9 +1186,9 @@
         "29033_1769921130545.jpg"
       ],
       "descripcion": "Disfruta de la delicia y frescura del jugo de frutas mixtas ideal para meriendas y refrescar en cualquier horario",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-01T04:45:46.636Z",
-      "modified_at": "2026-02-01T04:45:46.636Z"
+      "modified_at": "2026-05-05T16:22:29.231Z"
     },
     {
       "id": "prod_1770819915685_uohxroax1",
@@ -1356,9 +1339,9 @@
         "44801_1771255834329.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-16T15:32:16.523Z",
-      "modified_at": "2026-02-16T15:32:16.523Z"
+      "modified_at": "2026-05-05T16:22:29.230Z"
     },
     {
       "id": "prod_1771953998923_b4sri6e8j",
@@ -1781,9 +1764,9 @@
         "1000026018_1773859229936.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-18T18:42:30.084Z",
-      "modified_at": "2026-03-19T02:10:46.084Z"
+      "modified_at": "2026-05-05T16:22:29.231Z"
     },
     {
       "id": "prod_1773859339068_wex9cz8jw",
@@ -2546,9 +2529,9 @@
         "img-1_1777105277709.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-25T08:27:38.483Z",
-      "modified_at": "2026-04-25T08:27:38.483Z"
+      "modified_at": "2026-05-05T16:22:32.071Z"
     },
     {
       "id": "prod_1777105356172_kuna0r9z3",
@@ -2563,9 +2546,9 @@
         "img-2_1777105356187.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-25T08:27:39.900Z",
-      "modified_at": "2026-04-25T08:27:39.900Z"
+      "modified_at": "2026-05-05T16:22:32.071Z"
     },
     {
       "id": "prod_1777105417411_8vcu9pcyg",
@@ -2631,9 +2614,9 @@
         "205331_1777105643038.jpg"
       ],
       "descripcion": "contiene 3 paquetes de 11lbs",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-25T08:27:45.177Z",
-      "modified_at": "2026-04-25T08:27:45.177Z"
+      "modified_at": "2026-05-05T16:22:32.073Z"
     },
     {
       "id": "prod_1777289998552_upjj1k1o7",
