@@ -9,7 +9,7 @@ const DYNAMIC_CONFIG = {
   // Orden dinámico inteligente
   newProductBoostHours: 48,          // Horas de boost máximo para productos nuevos
   newProductFadeoutHours: 72,        // Horas para que desaparezca el boost
-  recentProductsCount: 5,             // Cantidad de productos "Recién añadidos"
+  recentProductsCount: 9,             // Cantidad de productos "Recién añadidos"
   
   // Rotación aleatoria
   normalOrderPercent: 70,             // 70% orden normal
@@ -44,31 +44,38 @@ function daysBetween(date1, date2) {
 
 /**
  * Obtiene la fecha de creación de un producto
- * Si no existe created_at, genera una basada en el ID del producto (consistente)
+ * Prioriza: created_at real > modified_at real > ID timestamp > fallback actual
  */
 function getProductCreatedDate(product) {
+  // 1. Usar created_at si existe y es válido
   if (product.created_at) {
-    return new Date(product.created_at);
-  }
-  
-  // Generar una fecha consistente basada en el ID
-  if (product.id) {
-    // Extraer timestamp del ID si existe (formato: prod_157XXXXX_XXXXX)
-    const match = product.id.match(/prod_(\d+)_/);
-    if (match && match[1]) {
-      return new Date(parseInt(match[1]));
+    const date = new Date(product.created_at);
+    if (!isNaN(date.getTime())) {
+      return date;
     }
   }
   
-  // Fallback: fecha aleatoria pero consistente para este producto
-  const seed = product.nombre.split('').reduce((a, b) => {
-    a = ((a << 5) - a) + b.charCodeAt(0);
-    return a & a;
-  }, 0);
-  const dayOffset = Math.abs(seed) % 30;
-  const date = new Date();
-  date.setDate(date.getDate() - dayOffset);
-  return date;
+  // 2. Usar modified_at si existe y es válido
+  if (product.modified_at) {
+    const date = new Date(product.modified_at);
+    if (!isNaN(date.getTime())) {
+      return date;
+    }
+  }
+  
+  // 3. Extraer timestamp del ID si existe (formato: prod_XXXXXXXXX_XXXXX)
+  if (product.id) {
+    const match = product.id.match(/prod_(\d+)_/);
+    if (match && match[1] && match[1].length >= 10) {
+      const timestamp = parseInt(match[1]);
+      if (!isNaN(timestamp) && timestamp > 0) {
+        return new Date(timestamp);
+      }
+    }
+  }
+  
+  // 4. Fallback: fecha actual (significa que no tiene información confiable)
+  return new Date();
 }
 
 /**
@@ -236,7 +243,8 @@ function getProductBadges(product, currentTime = getCurrentTimestamp()) {
 
 /**
  * Filtra productos "Recién añadidos"
- * Retorna los productos más nuevos (últimos N days)
+ * Solo incluye productos con data de creación/modificación REAL
+ * Retorna los productos más nuevos (últimos 7 días)
  */
 function getRecentProducts(productsArray, count = DYNAMIC_CONFIG.recentProductsCount, currentTime = getCurrentTimestamp()) {
   if (!productsArray || productsArray.length === 0) return [];
@@ -244,17 +252,39 @@ function getRecentProducts(productsArray, count = DYNAMIC_CONFIG.recentProductsC
   // Filtrar solo disponibles
   const available = productsArray.filter(p => p.disponibilidad !== false);
   
-  // Filtrar productos de los últimos 14 días
-  const recent = available.filter(p => {
-    const createdDate = getProductCreatedDate(p);
-    const daysOld = daysBetween(createdDate, new Date(currentTime));
-    return daysOld <= 14; // Últimas 2 semanas
+  // Filtrar SOLO productos con created_at o modified_at REAL
+  // Esto excluye productos sin información de creación verificable
+  const recentCandidates = available.filter(p => {
+    // Solo incluir si tiene created_at O modified_at real
+    const hasRealCreatedAt = p.created_at && new Date(p.created_at).getTime() > 0;
+    const hasRealModifiedAt = p.modified_at && new Date(p.modified_at).getTime() > 0;
+    return hasRealCreatedAt || hasRealModifiedAt;
   });
   
-  // Ordenar por más nuevos primero
+  // Filtrar productos de los últimos 7 días (más estricto que antes)
+  const recent = recentCandidates.filter(p => {
+    // Priorizar created_at, si no está disponible usar modified_at
+    let refDate = null;
+    if (p.created_at) {
+      refDate = new Date(p.created_at);
+    } else if (p.modified_at) {
+      refDate = new Date(p.modified_at);
+    }
+    
+    if (!refDate || isNaN(refDate.getTime())) return false;
+    
+    const daysOld = daysBetween(refDate, new Date(currentTime));
+    return daysOld <= 7; // Últimos 7 días en lugar de 14
+  });
+  
+  // Ordenar por más nuevos primero (priorizar created_at)
   recent.sort((a, b) => {
-    const dateA = getProductCreatedDate(a).getTime();
-    const dateB = getProductCreatedDate(b).getTime();
+    const dateA = a.created_at 
+      ? new Date(a.created_at).getTime() 
+      : (a.modified_at ? new Date(a.modified_at).getTime() : 0);
+    const dateB = b.created_at 
+      ? new Date(b.created_at).getTime() 
+      : (b.modified_at ? new Date(b.modified_at).getTime() : 0);
     return dateB - dateA;
   });
   

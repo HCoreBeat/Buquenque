@@ -48,6 +48,55 @@ function productIsAvailable(p) {
   return true;
 }
 
+function findCurrentCartItemData(cartItem) {
+  const storedData = cartItem.product || cartItem.pack;
+  if (!storedData) return null;
+
+  if (cartItem.pack) {
+    return storedData;
+  }
+
+  const itemId = storedData.id != null ? String(storedData.id) : null;
+  if (itemId && Array.isArray(products)) {
+    let productMatch = products.find((p) => p.id && String(p.id) === itemId);
+    if (productMatch) {
+      if (productMatch.isGrouped && Array.isArray(productMatch.variants)) {
+        const variantMatch = productMatch.variants.find((v) => v.id && String(v.id) === itemId);
+        return variantMatch || productMatch;
+      }
+      return productMatch;
+    }
+
+    for (const p of products) {
+      if (p.isGrouped && Array.isArray(p.variants)) {
+        const variantMatch = p.variants.find((v) => v.id && String(v.id) === itemId);
+        if (variantMatch) return variantMatch;
+      }
+    }
+  }
+
+  if (storedData.nombre && Array.isArray(products)) {
+    let nameMatch = products.find((p) => p.nombre === storedData.nombre);
+    if (nameMatch) return nameMatch;
+
+    const variantMatch = products
+      .flatMap((p) => (p.isGrouped ? p.variants : []))
+      .find((v) => v.nombre === storedData.nombre);
+    if (variantMatch) return variantMatch;
+  }
+
+  return null;
+}
+
+function getCartItemDisplayData(cartItem) {
+  return findCurrentCartItemData(cartItem) || cartItem.product || cartItem.pack || null;
+}
+
+function isCartItemCurrentlyAvailable(cartItem) {
+  const currentData = findCurrentCartItemData(cartItem);
+  return currentData ? productIsAvailable(currentData) : false;
+}
+
 // Normaliza strings eliminando tildes/diacríticos — usado para búsqueda insensible a acentos
 function normalizeString(str) {
   return str ? String(str).normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/[\u0300-\u036f]/g, '') : '';
@@ -2687,10 +2736,13 @@ function updateCart() {
     cart.forEach((item, index) => {
       // Determinar si es pack o producto
       const isPack = item.isPack || item.pack;
-      const itemData = isPack ? item.pack : item.product;
-      
-      if (!itemData) return;
-      
+      const storedItemData = isPack ? item.pack : item.product;
+      if (!storedItemData) return;
+
+      const currentItemData = getCartItemDisplayData(item);
+      const isAvailable = isCartItemCurrentlyAvailable(item);
+      const itemData = currentItemData || storedItemData;
+
       // Calcular precio con descuento si aplica
       const isOnSale = itemData.oferta && itemData.descuento > 0;
       const unitPrice = isOnSale
@@ -2698,17 +2750,42 @@ function updateCart() {
         : itemData.precio;
 
       const itemTotal = unitPrice * item.quantity;
-      total += itemTotal;
+      if (isAvailable) {
+        total += itemTotal;
+      }
 
       // Determinar imagen (packs usan imagen, productos usan imagenes[0])
       const imageSrc = isPack 
         ? `Images/Packs/${itemData.imagen}`
-        : `Images/products/${itemData.imagenes[0]}`;
+        : `Images/products/${itemData.imagenes && itemData.imagenes[0] ? itemData.imagenes[0] : ''}`;
       
       const badgeType = isPack ? 'pack' : 'product';
+      const availabilityNotice = isAvailable
+        ? ''
+        : '<p class="cart-item-status">Este producto ya no está disponible.</p>';
+
+      const controlsHtml = isAvailable
+        ? `
+                    <button class="cart-quantity-btn decrease-btn" onclick="updateCartQuantity(${index}, -1, event)">-</button>
+                    <span class="cart-quantity">${item.quantity}</span>
+                    <button class="cart-quantity-btn increase-btn" onclick="updateCartQuantity(${index}, 1, event)">+</button>
+                    <button class="delete-item-btn" onclick="removeFromCart(${index}, event)">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                `
+        : `
+                    <div class="cart-item-controls unavailable">
+                        <button class="delete-item-btn" onclick="removeFromCart(${index}, event)">
+                            <i class="fas fa-trash-alt"></i> Eliminar
+                        </button>
+                    </div>
+                `;
+
+      const priceLabel = isAvailable ? `$${unitPrice.toFixed(2)} c/u` : `<span class="unavailable-price">$${unitPrice.toFixed(2)} c/u</span>`;
+      const displayedTotal = isAvailable ? `$${itemTotal.toFixed(2)}` : '$0.00';
 
       const itemEl = document.createElement("div");
-      itemEl.className = `cart-item cart-item-${badgeType}`;
+      itemEl.className = `cart-item cart-item-${badgeType}${isAvailable ? '' : ' unavailable'}`;
       itemEl.innerHTML = `
                 ${
                   isOnSale
@@ -2719,16 +2796,12 @@ function updateCart() {
                 <div class="cart-item-info">
                     <p>${itemData.nombre}</p>
                     <p class="cart-item-type">${isPack ? '[Pack]' : '[Producto]'}</p>
-                    <p>$${unitPrice.toFixed(2)} c/u</p>
+                    <p>${priceLabel}</p>
+                    ${availabilityNotice}
                     <div class="cart-item-controls">
-                        <button class="cart-quantity-btn decrease-btn" onclick="updateCartQuantity(${index}, -1, event)">-</button>
-                        <span class="cart-quantity">${item.quantity}</span>
-                        <button class="cart-quantity-btn increase-btn" onclick="updateCartQuantity(${index}, 1, event)">+</button>
-                        <button class="delete-item-btn" onclick="removeFromCart(${index}, event)">
-                            <i class="fas fa-trash-alt"></i>
-                        </button>
+                        ${controlsHtml}
                     </div>
-                    <p>Total: $${itemTotal.toFixed(2)}</p>
+                    <p>Total: ${displayedTotal}</p>
                 </div>
             `;
       cartItems.appendChild(itemEl);

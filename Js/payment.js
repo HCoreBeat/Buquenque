@@ -420,22 +420,109 @@ function showPaymentNotification(message, type = 'info') {
     return notification;
 }
 
+function getCurrentCartItemData(cartItem) {
+    const itemData = cartItem.product || cartItem.pack;
+    if (!itemData) return null;
+
+    if (cartItem.pack) {
+        return itemData;
+    }
+
+    const itemId = itemData.id != null ? String(itemData.id) : null;
+    const productList = typeof products !== 'undefined' && Array.isArray(products)
+        ? products
+        : (Array.isArray(window.products) ? window.products : []);
+
+    if (itemId && Array.isArray(productList)) {
+        let match = productList.find((p) => p.id && String(p.id) === itemId);
+        if (match) {
+            if (match.isGrouped && Array.isArray(match.variants)) {
+                const variantMatch = match.variants.find((v) => v.id && String(v.id) === itemId);
+                return variantMatch || match;
+            }
+            return match;
+        }
+
+        for (const p of productList) {
+            if (p.isGrouped && Array.isArray(p.variants)) {
+                const variantMatch = p.variants.find((v) => v.id && String(v.id) === itemId);
+                if (variantMatch) return variantMatch;
+            }
+        }
+    }
+
+    if (itemData.nombre && Array.isArray(productList)) {
+        const nameMatch = productList.find((p) => p.nombre === itemData.nombre);
+        if (nameMatch) return nameMatch;
+
+        const variantMatch = productList
+            .flatMap((p) => (p.isGrouped ? p.variants : []))
+            .find((v) => v.nombre === itemData.nombre);
+        if (variantMatch) return variantMatch;
+    }
+
+    return null;
+}
+
+function getCurrentCartCart() {
+    if (typeof cart !== 'undefined' && Array.isArray(cart)) {
+        return cart;
+    }
+
+    const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
+    return Array.isArray(storedCart) ? storedCart : [];
+}
+
+function getUnavailableCartItems() {
+    const cartItems = getCurrentCartCart();
+    if (!Array.isArray(cartItems)) {
+        return [];
+    }
+
+    return cartItems.filter(item => {
+        const itemData = item.product || item.pack;
+        if (!itemData || item.quantity <= 0) return false;
+        return !isAvailableForPayment(item);
+    });
+}
+
+function isAvailableForPayment(cartItem) {
+    const itemData = cartItem.product || cartItem.pack;
+    if (!itemData || cartItem.quantity <= 0) return false;
+    if (cartItem.pack) {
+        return itemData.disponible !== false;
+    }
+    const currentData = getCurrentCartItemData(cartItem);
+    return currentData ? currentData.disponibilidad !== false : false;
+}
+
 function validateCartBeforeCheckout() {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const unavailableItems = getUnavailableCartItems();
+    if (unavailableItems.length > 0) {
+        const plural = unavailableItems.length > 1 ? 'productos no disponibles' : 'producto no disponible';
+        showPaymentNotification(`Hay ${unavailableItems.length} ${plural} en el carrito. Elimínalos para continuar.`, 'error');
+        return false;
+    }
+
+    const cart = getValidatedCart();
     if (cart.length === 0) {
-        showPaymentNotification('Añade productos al carrito primero', 'error');
+        showPaymentNotification('No hay productos disponibles para pagar. Añade productos disponibles al carrito.', 'error');
         return false;
     }
     return true;
 }
 
 function getValidatedCart() {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    if (!Array.isArray(cart)) {
+    const cartItems = getCurrentCartCart();
+    if (!Array.isArray(cartItems)) {
         throw new Error('Formato de carrito inválido');
     }
-    // Permitir tanto productos como packs
-    return cart.filter(item => (item.product || item.pack) && item.quantity > 0);
+
+    return cartItems.filter(item => {
+        const itemData = item.product || item.pack;
+        if (!itemData || item.quantity <= 0) return false;
+        return isAvailableForPayment(item);
+    });
 }
 
 function validateForm() {
