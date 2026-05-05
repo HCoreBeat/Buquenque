@@ -290,23 +290,6 @@
       "modified_at": "2026-03-02T08:27:50.909Z"
     },
     {
-      "id": "prod_1769919470708_wghwn1olf",
-      "nombre": "Leche en polvo (1kg)",
-      "categoria": "Despensa",
-      "precio": 10,
-      "descuento": 20,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "Leche_en_polvo_(1kg).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Leche en polvo (1kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": "2026-04-24T06:56:13.689Z"
-    },
-    {
       "id": "prod_1768441690510_tf4rwuo62",
       "nombre": "Frijol Negro (500g)",
       "categoria": "Despensa",
