@@ -1616,23 +1616,6 @@
       "modified_at": "2026-03-05T17:46:47.308Z"
     },
     {
-      "id": "prod_1772820254113_06vdipx9o",
-      "nombre": "Jugo Nezka de Mango",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 1.5,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "9e48614d-8e0f-48a2-9f31-041aaecafa33_1772820254147.jpeg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-06T18:08:31.245Z",
-      "modified_at": "2026-04-24T16:53:30.362Z"
-    },
-    {
       "id": "prod_1772916022776_bilx1sk92",
       "nombre": "Pack x 12 Néctar de Piña (12x330ml)",
       "categoria": "Bebidas no alcohólicas",
@@ -1852,23 +1835,6 @@
       "disponibilidad": false,
       "created_at": "2026-03-21T03:32:50.297Z",
       "modified_at": "2026-05-01T15:42:48.191Z"
-    },
-    {
-      "id": "prod_1774065369289_dj3b4r62t",
-      "nombre": "Caja de refresco 24u (Cola)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 18.95,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "images_1774065369299.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": true,
-      "created_at": "2026-03-21T04:03:01.183Z",
-      "modified_at": "2026-03-21T04:03:01.183Z"
     },
     {
       "id": "prod_1774065409293_ql7mv8a6d",
@@ -2736,6 +2702,40 @@
       "disponibilidad": true,
       "created_at": "2026-05-02T18:19:59.089Z",
       "modified_at": "2026-05-02T18:19:59.089Z"
+    },
+    {
+      "id": "prod_1778000129093_n2p8n70fp",
+      "nombre": "Pomo de Refresco 1.5lts (Naranja)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 2.49,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000067953_1778000129145.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-05T16:56:31.855Z",
+      "modified_at": "2026-05-05T16:56:31.855Z"
+    },
+    {
+      "id": "prod_1778000167417_ei33ur4id",
+      "nombre": "Pomo de Refresco 1.5lts (Cola)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 2.49,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "1000067954_1778000167497.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-05T16:56:34.143Z",
+      "modified_at": "2026-05-05T16:56:34.143Z"
     }
   ]
 }
