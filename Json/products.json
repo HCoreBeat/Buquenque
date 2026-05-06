@@ -327,18 +327,18 @@
       "id": "prod_1769226986599_pfsrf2pax",
       "nombre": "Detergente (500g)",
       "categoria": "Aseo y Belleza",
-      "precio": 1.75,
-      "descuento": 26.29,
+      "precio": 1.97,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "20261_1769214002102.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Detergente (500g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-05-06T13:17:51.278Z"
     },
     {
       "id": "prod_1768441690510_3adjmtv4j",
