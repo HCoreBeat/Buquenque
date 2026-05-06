@@ -47,9 +47,9 @@
         "Chupa_Chupa_x_unidad.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Chupa Chupa x unidad, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-05-06T09:55:38.755Z"
+      "modified_at": "2026-02-22T18:38:18.888Z"
     },
     {
       "id": "prod_1768441690510_8ocdeke0z",
@@ -61,12 +61,12 @@
       "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "img_4792_1774201832297.jpeg"
+        "pastilla_de_pollo_x_unidad_1775072061265.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pastilla de Pollo x unidad, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-06T09:55:38.216Z"
+      "modified_at": "2026-04-01T19:34:32.038Z"
     },
     {
       "id": "prod_1768441690510_gkp20pj1x",
@@ -90,17 +90,17 @@
       "nombre": "Cartón de Huevos",
       "categoria": "Despensa",
       "precio": 11.5,
-      "descuento": 4.61,
-      "mas_vendido": false,
+      "descuento": 0,
+      "mas_vendido": true,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
-        "050-carton-de-huevos-x-30-u-blancos_1771961041735.jpg"
+        "1000058960_1777051427739.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-06T09:55:38.755Z"
+      "modified_at": "2026-05-05T16:22:32.075Z"
     },
     {
       "id": "prod_1768923054742_dhekmp0os",
@@ -129,12 +129,12 @@
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "img_4792_1774194834880.jpeg"
+        "1000030509_1774222522175.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Refresco Instantáneo (2Lt), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-06T09:55:30.248Z"
+      "modified_at": "2026-03-22T23:41:31.056Z"
     },
     {
       "id": "prod_1768441690510_ma2k8r01f",
@@ -481,8 +481,8 @@
       "nombre": "Queso Gouda 3Kg",
       "categoria": "Lácteos",
       "precio": 37,
-      "descuento": 8.11,
-      "mas_vendido": false,
+      "descuento": 2.03,
+      "mas_vendido": true,
       "nuevo": false,
       "oferta": true,
       "imagenes": [
@@ -491,7 +491,7 @@
       "descripcion": "Disfruta de la calidad de Queso Gouda, una excelente opción de nuestra categoría Lácteos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-06T09:55:38.756Z"
+      "modified_at": "2026-05-06T09:57:19.457Z"
     },
     {
       "id": "prod_1768441690510_vkkhmof4o",
@@ -1197,15 +1197,15 @@
       "precio": 60,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
-      "oferta": true,
+      "nuevo": true,
+      "oferta": false,
       "imagenes": [
         "41994_1770927123619.jpg"
       ],
       "descripcion": "Esta caja contiene 4 paquetes de 10lbs de cuartos de pollo",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-12T20:12:17.667Z",
-      "modified_at": "2026-05-06T09:55:31.279Z"
+      "modified_at": "2026-04-26T11:15:48.446Z"
     },
     {
       "id": "prod_1771255174691_cpxbapmjz",
