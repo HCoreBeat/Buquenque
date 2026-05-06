@@ -1429,3 +1429,28 @@
     color: var(--azul-destacado);
     font-weight: 700;
 }
+
+/* ========== CART ITEM INFO BANNER ========== */
+.cart-item-info-banner {
+  background-color: #e8f4f8;
+  border-left: 3px solid #0077be;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0 0 0;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  color: #004b6f;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  animation: fadeInUp 0.3s ease-out;
+}
+
+.cart-item-info-banner i {
+  font-size: 0.9rem;
+  color: #0077be;
+  flex-shrink: 0;
+}
+
+.cart-item-info-banner:hover {
+  background-color: #dce9f0;
+}

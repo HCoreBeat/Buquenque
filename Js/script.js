@@ -3,6 +3,7 @@ let products = [];
 let currentProduct = null;
 let categories = [];
 let evento = null;
+let info = [];
 let secretCodesFound = new Set();
 let cartTotal = 0; // total del carrito actual
 
@@ -500,6 +501,25 @@ async function loadEvento() {
     console.error("Error cargando evento:", error);
     evento = null;
   }
+}
+
+// Cargar información de productos (anuncios/info)
+async function loadInfo() {
+  try {
+    const response = await fetch("Json/info.json");
+    if (!response.ok) throw new Error("Error al cargar info");
+    info = await response.json();
+  } catch (error) {
+    console.error("Error cargando info:", error);
+    info = [];
+  }
+}
+
+// Obtener información de un producto por su ID
+function getProductInfo(productId) {
+  if (!productId || !Array.isArray(info)) return null;
+  const infoItem = info.find(item => item.id === productId || item.id === String(productId));
+  return infoItem ? infoItem.info : null;
 }
 
 // Cargar productos (local o remoto)
@@ -1678,6 +1698,15 @@ function renderProducts(productsToRender = products) {
                           <span class="total-votes">0 votos</span>
                       </div>
                   </div>
+                  
+                  ${
+                    (function() {
+                      const productInfo = getProductInfo(displayProduct.id);
+                      return productInfo 
+                        ? `<div class="product-info-banner"><i class="fas fa-info-circle"></i> ${productInfo}</div>`
+                        : '';
+                    })()
+                  }
               </div>
           `;
       
@@ -2797,6 +2826,14 @@ function updateCart() {
                     <p>${itemData.nombre}</p>
                     <p class="cart-item-type">${isPack ? '[Pack]' : '[Producto]'}</p>
                     <p>${priceLabel}</p>
+                    ${
+                      (function() {
+                        const cartItemInfo = !isPack ? getProductInfo(itemData.id) : null;
+                        return cartItemInfo 
+                          ? `<div class="cart-item-info-banner"><i class="fas fa-info-circle"></i> ${cartItemInfo}</div>`
+                          : '';
+                      })()
+                    }
                     ${availabilityNotice}
                     <div class="cart-item-controls">
                         ${controlsHtml}
@@ -3874,8 +3911,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (__initialLocationHash) window.location.hash = __initialLocationHash;
     }
   }
-  // Cargar productos, packs y evento en paralelo y esperar todos para que el manejo de rutas tenga los datasets disponibles
-  await Promise.all([loadProducts(), loadPacks(), loadEvento()]);
+  // Cargar productos, packs, evento e info en paralelo y esperar todos para que el manejo de rutas tenga los datasets disponibles
+  await Promise.all([loadProducts(), loadPacks(), loadEvento(), loadInfo()]);
   
   // Verificar y mostrar automáticamente el modal de evento si es nuevo
   checkAndShowEventModal();
@@ -3903,6 +3940,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   } else if (window.location.hash) {
     // si no hay pathname product, procesar hash como antes
     await handleRouteChange();
+  } else {
+    // Si no hay pathname ni hash, renderizar la vista principal
+    renderProducts();
+    renderBestSellers();
+    renderCategoriesCircle();
   }
 
   // Debounce para búsqueda en tiempo real

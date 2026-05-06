@@ -1026,3 +1026,29 @@
 .rating-meta{
     display: grid;
 }
+
+/* ========== PRODUCT INFO BANNER ========== */
+.product-info-banner {
+  background-color: #e8f4f8;
+  border-left: 4px solid #0077be;
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #004b6f;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  animation: slideInUp 0.3s ease-out;
+}
+
+.product-info-banner i {
+  font-size: 1rem;
+  color: #0077be;
+  flex-shrink: 0;
+}
+
+.product-info-banner:hover {
+  background-color: #dce9f0;
+  border-left-color: #005a99;
+}
