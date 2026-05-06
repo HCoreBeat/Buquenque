@@ -1860,15 +1860,15 @@
       "precio": 22.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000065528_1777745976144.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-22T23:41:29.685Z",
-      "modified_at": "2026-05-02T18:20:01.823Z"
+      "modified_at": "2026-05-06T21:13:58.061Z"
     },
     {
       "id": "prod_1774222653850_9m6grgvh0",
