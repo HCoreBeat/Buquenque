@@ -523,9 +523,9 @@
         "1000012332_1772832335861.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pack x 12 Néctar de Pera 🍐 (12x330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-03-06T21:29:49.718Z"
+      "modified_at": "2026-05-06T21:15:52.989Z"
     },
     {
       "id": "prod_1768441690510_gbbyirl3n",
@@ -1860,15 +1860,15 @@
       "precio": 22.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "1000065528_1777745976144.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-22T23:41:29.685Z",
-      "modified_at": "2026-05-06T21:13:58.061Z"
+      "modified_at": "2026-05-02T18:20:01.823Z"
     },
     {
       "id": "prod_1774222653850_9m6grgvh0",
