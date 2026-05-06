@@ -211,7 +211,7 @@
       "precio": 30,
       "descuento": 16.67,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img-20260223-wa0002_1771953859593.jpg"
@@ -219,7 +219,7 @@
       "descripcion": "Disfruta de la calidad de Caja de Malta Bucanero, una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-04-24T16:53:30.362Z"
+      "modified_at": "2026-05-06T21:29:49.215Z"
     },
     {
       "id": "prod_1768441690510_nm24ia7xr",
@@ -234,9 +234,9 @@
         "Manzana.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Manzana 🍎 x unidad, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-04-22T16:27:53.966Z"
+      "modified_at": "2026-05-06T21:29:49.215Z"
     },
     {
       "id": "prod_1768509219912_orvyg0rkr",
@@ -523,9 +523,9 @@
         "1000012332_1772832335861.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pack x 12 Néctar de Pera 🍐 (12x330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-03-06T21:29:49.718Z"
+      "modified_at": "2026-05-06T21:29:49.215Z"
     },
     {
       "id": "prod_1768441690510_gbbyirl3n",
@@ -576,7 +576,7 @@
       "descripcion": "Disfruta de la calidad de Néctar de Pera 🍐 (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-05-06T21:17:19.805Z"
+      "modified_at": "2026-05-06T21:29:49.215Z"
     },
     {
       "id": "prod_1768441690510_oqd90ndvr",
@@ -777,10 +777,10 @@
       "imagenes": [
         "aa58eee2-0e44-479e-959b-88bbd3cb5f2a_1770819322436.jpg"
       ],
-      "descripcion": "Disfruta de la calidad de Paquete de azúcar 1kg, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
+      "descripcion": "Disfruta de la calidad de Paquete de azúcar porsionado 1kg, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-04-08T01:52:37.025Z"
+      "modified_at": "2026-05-06T21:29:49.215Z"
     },
     {
       "id": "prod_1768441690510_covgyshrh",
@@ -820,7 +820,7 @@
       "id": "prod_1768441690510_1q2faykkk",
       "nombre": "Plátano (por unidad)",
       "categoria": "Frutas",
-      "precio": 0.31,
+      "precio": 0.35,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -831,7 +831,7 @@
       "descripcion": "Disfruta de la calidad de Plátano (por unidad), una excelente opción de nuestra categoría Frutas. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-05-06T21:29:49.215Z"
     },
     {
       "id": "prod_1768441690510_8q6y9td5k",
@@ -871,8 +871,8 @@
       "id": "prod_1768441690510_ujn45fhvi",
       "nombre": "Bolsa de pan 10u",
       "categoria": "Despensa",
-      "precio": 1.9,
-      "descuento": 5.26,
+      "precio": 1.99,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -882,14 +882,14 @@
       "descripcion": "Disfruta de la calidad de Bolsa de pan 10u, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-21T03:32:45.427Z"
+      "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
       "id": "prod_1768441690510_h5qqrqz06",
       "nombre": "Carne de ovejo x lbs",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 2.37,
-      "descuento": 15.61,
+      "precio": 2.57,
+      "descuento": 0,
       "mas_vendido": true,
       "nuevo": false,
       "oferta": false,
@@ -899,7 +899,7 @@
       "descripcion": "Disfruta de la calidad de Carne de ovejo x lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-28T00:34:13.264Z"
+      "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
       "id": "prod_1768441690510_5bquahf1q",
@@ -1398,7 +1398,7 @@
       "id": "prod_1772439529396_kh3fahrr4",
       "nombre": "Saco de azúcar blanca 25kg",
       "categoria": "Despensa",
-      "precio": 44.99,
+      "precio": 47.85,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -1409,7 +1409,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-02T08:28:01.312Z",
-      "modified_at": "2026-03-21T03:32:47.728Z"
+      "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
       "id": "prod_1772439588460_8m93dd12m",
@@ -1418,15 +1418,15 @@
       "precio": 12.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "7f4366cd-137c-45bd-9f15-7f2f1305f218_1772439588470.jpeg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-02T08:28:02.493Z",
-      "modified_at": "2026-03-02T08:28:02.493Z"
+      "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
       "id": "prod_1772442996727_xhrueb4xd",
@@ -1452,15 +1452,15 @@
       "precio": 0.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "4_1772443082836.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-02T09:28:09.573Z",
-      "modified_at": "2026-03-02T09:28:09.573Z"
+      "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
       "id": "prod_1772443116146_uf8w44jee",
@@ -1469,15 +1469,15 @@
       "precio": 0.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "2_1772443116169.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-02T09:28:10.867Z",
-      "modified_at": "2026-03-02T09:28:10.867Z"
+      "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
       "id": "prod_1772443156297_sas4u1yhr",
@@ -1486,15 +1486,15 @@
       "precio": 0.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "3_1772443156319.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-02T09:28:12.194Z",
-      "modified_at": "2026-03-02T09:28:12.194Z"
+      "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
       "id": "prod_1772443528708_c9r8jr80o",
@@ -1577,9 +1577,9 @@
         "1000010549_1772732759103.webp"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-05T17:46:45.716Z",
-      "modified_at": "2026-05-01T15:42:48.193Z"
+      "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
       "id": "prod_1772732799999_4pu74vvsy",
@@ -1860,15 +1860,15 @@
       "precio": 22.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000065528_1777745976144.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-22T23:41:29.685Z",
-      "modified_at": "2026-05-02T18:20:01.823Z"
+      "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
       "id": "prod_1774222653850_9m6grgvh0",
@@ -2095,7 +2095,7 @@
       "id": "prod_1776151451302_wkzwq860c",
       "nombre": "Pack de 4 Yogurts (Fresa, Platanito, Natural, Macedonia)",
       "categoria": "Lácteos",
-      "precio": 2.9,
+      "precio": 2.97,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -2106,24 +2106,24 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-14T07:24:23.743Z",
-      "modified_at": "2026-04-14T07:24:23.743Z"
+      "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
       "id": "prod_1776151682596_5hem5fvxa",
       "nombre": "Garbanzos extra 540g",
       "categoria": "Despensa",
-      "precio": 2.57,
+      "precio": 3.75,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "10_1776151682602.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-04-14T07:49:53.232Z",
-      "modified_at": "2026-04-22T06:16:58.897Z"
+      "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
       "id": "prod_1776151712213_3bmsorx6t",
@@ -2181,17 +2181,17 @@
       "nombre": "Chorizo Premiun 300g",
       "categoria": "Cárnicos y Embutidos",
       "precio": 7.75,
-      "descuento": 0,
+      "descuento": 3.23,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "gemini_generated_image_z0cdasz0cdasz0cd_1777105167409.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-14T07:49:57.667Z",
-      "modified_at": "2026-04-25T08:27:34.380Z"
+      "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
       "id": "prod_1776151970517_o4p40xl3f",
