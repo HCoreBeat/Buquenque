@@ -939,8 +939,8 @@
       "id": "prod_1768509219912_h61h4xal8",
       "nombre": "Pernil asado de 20lbs",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 60,
-      "descuento": 0,
+      "precio": 70,
+      "descuento": 14.29,
       "mas_vendido": true,
       "nuevo": false,
       "oferta": false,
@@ -950,7 +950,7 @@
       "descripcion": "Disfruta de la calidad de Pernil asado de 20lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-04-24T06:56:13.689Z"
+      "modified_at": "2026-05-06T00:11:13.322Z"
     },
     {
       "id": "prod_1768441690510_aa0pwzj5i",
