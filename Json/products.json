@@ -523,9 +523,9 @@
         "1000012332_1772832335861.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pack x 12 Néctar de Pera 🍐 (12x330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-06T21:15:52.989Z"
+      "modified_at": "2026-03-06T21:29:49.718Z"
     },
     {
       "id": "prod_1768441690510_gbbyirl3n",
@@ -574,9 +574,9 @@
         "Nectar_de_Pera.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Néctar de Pera 🍐 (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-03-06T18:08:31.247Z"
+      "modified_at": "2026-05-06T21:17:19.805Z"
     },
     {
       "id": "prod_1768441690510_oqd90ndvr",
