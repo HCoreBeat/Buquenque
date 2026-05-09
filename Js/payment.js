@@ -497,6 +497,12 @@ function isAvailableForPayment(cartItem) {
 }
 
 function validateCartBeforeCheckout() {
+    // Validar si hay un mensaje bloqueando el checkout
+    if (messageNotificationSystem && messageNotificationSystem.isWithinDateRange && messageNotificationSystem.messageData) {
+        showPaymentNotification('⚠️ ' + messageNotificationSystem.messageData.mensaje, 'error');
+        return false;
+    }
+
     const unavailableItems = getUnavailableCartItems();
     if (unavailableItems.length > 0) {
         const plural = unavailableItems.length > 1 ? 'productos no disponibles' : 'producto no disponible';
