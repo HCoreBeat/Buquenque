@@ -2336,15 +2336,15 @@
       "precio": 47.97,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "42401_1776408551062.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-17T06:49:43.373Z",
-      "modified_at": "2026-04-17T06:49:43.373Z"
+      "modified_at": "2026-05-11T16:08:51.058Z"
     },
     {
       "id": "prod_1776590805262_gsxaukooi",
