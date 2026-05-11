@@ -2,7 +2,7 @@
     {
         "id": 22,
         "mensaje": "Aviso importante: A partir de las 6:00 PM no estaremos aceptando nuevos pedidos. Los servicios se reanudarán el domingo a las 11:59 PM. Gracias por su comprensión.",
-        "activo": true,
+        "activo": false,
         "inicio": "2026-05-09T18:00:00Z",
         "fin": "2026-05-10T23:59:00Z"
     }
