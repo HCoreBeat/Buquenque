@@ -141,17 +141,17 @@
       "nombre": "Aceite (1L)",
       "categoria": "Despensa",
       "precio": 4.29,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": true,
-      "oferta": false,
+      "descuento": 12.59,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": true,
       "imagenes": [
         "25b95336-b112-48ef-a3f1-8ebeee4148a7_1772439363384.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Aceite (1L), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-03-21T03:32:47.728Z"
+      "modified_at": "2026-05-12T13:56:49.868Z"
     },
     {
       "id": "prod_1768441690510_ijaa8o33p",
