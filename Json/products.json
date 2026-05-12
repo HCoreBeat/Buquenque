@@ -2739,7 +2739,7 @@
     },
     {
       "id": "prod_1778595064048_5hp84hf26",
-      "nombre": "Galleta Renata de vainilla con relleno sabor fresa 112g",
+      "nombre": "Galleta Renata de vainilla con relleno(fresa) 112g",
       "categoria": "Confitura",
       "precio": 0.97,
       "descuento": 0,
@@ -2752,24 +2752,7 @@
       "descripcion": "Galletas vainilla rellenas con crema de fresa Renata 112g",
       "disponibilidad": true,
       "created_at": "2026-05-12T14:11:10.262Z",
-      "modified_at": "2026-05-12T14:11:10.262Z"
-    },
-    {
-      "id": "prod_1778595291530_wtnnih8au",
-      "nombre": "Galleta Renata  de chocolate con relleno de (vainilla)",
-      "categoria": "Confitura",
-      "precio": 0.95,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "img_6472_1778595291534.webp"
-      ],
-      "descripcion": "",
-      "disponibilidad": true,
-      "created_at": "2026-05-12T14:15:19.514Z",
-      "modified_at": "2026-05-12T14:15:19.514Z"
+      "modified_at": "2026-05-12T14:17:30.817Z"
     }
   ]
 }
