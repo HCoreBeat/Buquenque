@@ -2787,6 +2787,40 @@
       "disponibilidad": true,
       "created_at": "2026-05-12T14:44:26.263Z",
       "modified_at": "2026-05-12T14:44:26.263Z"
+    },
+    {
+      "id": "prod_1778606658661_zqzsx1hhm",
+      "nombre": "Jabón Baño Marwa 100g",
+      "categoria": "Aseo y Belleza",
+      "precio": 0.6,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_6480_1778606658665.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-12T17:28:38.357Z",
+      "modified_at": "2026-05-12T17:28:38.357Z"
+    },
+    {
+      "id": "prod_1778606897506_iifkq4njh",
+      "nombre": "Barra de jabón de lavar 370g",
+      "categoria": "Aseo y Belleza",
+      "precio": 1.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "93df1d5e-5d81-4841-9191-8cbdc47d7d82_1778606897524.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-12T17:28:39.703Z",
+      "modified_at": "2026-05-12T17:28:39.703Z"
     }
   ]
 }
