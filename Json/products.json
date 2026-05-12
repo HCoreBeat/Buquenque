@@ -2753,6 +2753,23 @@
       "disponibilidad": true,
       "created_at": "2026-05-12T14:11:10.262Z",
       "modified_at": "2026-05-12T14:17:30.817Z"
+    },
+    {
+      "id": "prod_1778595625992_9ob5mvx8f",
+      "nombre": "Galleta chocolate relleno(vainilla)112g",
+      "categoria": "Confitura",
+      "precio": 0.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_6472_1778595625995.webp"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-12T14:20:35.836Z",
+      "modified_at": "2026-05-12T14:20:35.836Z"
     }
   ]
 }
