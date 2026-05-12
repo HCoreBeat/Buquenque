@@ -5,17 +5,17 @@
       "nombre": "Paquete de cuartos de pollo 10 lbs",
       "categoria": "Cárnicos y Embutidos",
       "precio": 14,
-      "descuento": 0,
+      "descuento": 1.79,
       "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
+      "nuevo": false,
+      "oferta": true,
       "imagenes": [
         "62e082f4_1774062351324.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-12T13:52:52.030Z"
+      "modified_at": "2026-05-12T13:54:23.228Z"
     },
     {
       "id": "prod_1768441690510_piqbut8gb",
