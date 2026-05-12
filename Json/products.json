@@ -2738,21 +2738,21 @@
       "modified_at": "2026-05-05T17:18:03.742Z"
     },
     {
-      "id": "prod_1778594647765_wpmozdfte",
-      "nombre": "Caja de aceite 1L 12unidades",
-      "categoria": "Aderezos",
-      "precio": 39.45,
+      "id": "prod_1778595064048_5hp84hf26",
+      "nombre": "Galleta Renata de vainilla con relleno sabor fresa 112g",
+      "categoria": "Confitura",
+      "precio": 0.97,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "img_3156_1778594647769.jpeg"
+        "img_6471_1778595064056.jpeg"
       ],
-      "descripcion": "Caja de aceite de 1litro de 12unidades",
+      "descripcion": "Galletas vainilla rellenas con crema de fresa Renata 112g",
       "disponibilidad": true,
-      "created_at": "2026-05-12T14:04:15.612Z",
-      "modified_at": "2026-05-12T14:04:15.612Z"
+      "created_at": "2026-05-12T14:11:10.262Z",
+      "modified_at": "2026-05-12T14:11:10.262Z"
     }
   ]
 }
