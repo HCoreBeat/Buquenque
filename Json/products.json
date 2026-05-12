@@ -2821,6 +2821,23 @@
       "disponibilidad": true,
       "created_at": "2026-05-12T17:28:39.703Z",
       "modified_at": "2026-05-12T17:28:39.703Z"
+    },
+    {
+      "id": "prod_1778607093995_4o1n9e9bz",
+      "nombre": "Desodorante Dove de pepino 72h",
+      "categoria": "Aseo y Belleza",
+      "precio": 5.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_6476_1778607094003.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-12T17:31:44.250Z",
+      "modified_at": "2026-05-12T17:31:44.250Z"
     }
   ]
 }
