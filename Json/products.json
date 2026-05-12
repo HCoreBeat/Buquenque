@@ -6,16 +6,16 @@
       "categoria": "Cárnicos y Embutidos",
       "precio": 14,
       "descuento": 0,
-      "mas_vendido": true,
+      "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
       "imagenes": [
         "62e082f4_1774062351324.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-05-12T13:34:57.554Z"
+      "modified_at": "2026-04-26T11:15:48.447Z"
     },
     {
       "id": "prod_1768441690510_piqbut8gb",
@@ -430,17 +430,17 @@
       "nombre": "Cepillo de diente (/u)",
       "categoria": "Aseo y Belleza",
       "precio": 1.07,
-      "descuento": 25.23,
+      "descuento": 29.91,
       "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
+      "nuevo": false,
+      "oferta": true,
       "imagenes": [
         "Cepillo_de_diente.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cepillo de diente (/u), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-05-12T13:48:05.275Z"
     },
     {
       "id": "prod_1768441690510_lwhf9zf9m",
@@ -769,7 +769,7 @@
       "id": "prod_1768441690510_ynzwusik9",
       "nombre": "Paquete de azúcar 1kg",
       "categoria": "Despensa",
-      "precio": 1.77,
+      "precio": 2.17,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -780,7 +780,7 @@
       "descripcion": "Disfruta de la calidad de Paquete de azúcar porsionado 1kg, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-06T21:29:49.215Z"
+      "modified_at": "2026-05-12T13:48:05.275Z"
     },
     {
       "id": "prod_1768441690510_covgyshrh",
@@ -1401,15 +1401,15 @@
       "precio": 47.85,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "c4c5f51b-6cb1-41f0-bfa0-ffa820643fd0_1772439529416.jpeg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-02T08:28:01.312Z",
-      "modified_at": "2026-05-06T21:29:49.216Z"
+      "modified_at": "2026-05-12T13:48:05.275Z"
     },
     {
       "id": "prod_1772439588460_8m93dd12m",
@@ -2132,15 +2132,15 @@
       "precio": 37.49,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "13_1776151712222.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-14T07:49:54.382Z",
-      "modified_at": "2026-04-14T07:49:54.382Z"
+      "modified_at": "2026-05-12T13:48:05.276Z"
     },
     {
       "id": "prod_1776151741793_5e1uruetg",
@@ -2149,15 +2149,15 @@
       "precio": 24.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "4_1776151741802.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-14T07:49:55.393Z",
-      "modified_at": "2026-04-14T07:49:55.393Z"
+      "modified_at": "2026-05-12T13:48:05.276Z"
     },
     {
       "id": "prod_1776151765995_a6s81351f",
@@ -2200,15 +2200,15 @@
       "precio": 9.95,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "15_1776151970522.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-14T07:50:01.662Z",
-      "modified_at": "2026-04-14T07:50:01.662Z"
+      "modified_at": "2026-05-12T13:48:05.276Z"
     },
     {
       "id": "prod_1776152038867_riytl6qtv",
@@ -2319,15 +2319,15 @@
       "precio": 17.49,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "42402_1776408427324.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-17T06:49:41.227Z",
-      "modified_at": "2026-04-17T06:49:41.227Z"
+      "modified_at": "2026-05-12T13:48:05.276Z"
     },
     {
       "id": "prod_1776408550912_nhajoiiqh",
@@ -2387,15 +2387,15 @@
       "precio": 14,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "images_1777104839806.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-25T08:27:28.481Z",
-      "modified_at": "2026-04-25T08:27:28.481Z"
+      "modified_at": "2026-05-12T13:48:05.275Z"
     },
     {
       "id": "prod_1777104949342_f0hmt1vea",
@@ -2569,20 +2569,20 @@
     },
     {
       "id": "prod_1777289998552_upjj1k1o7",
-      "nombre": "Pasta dental Coolwhite",
+      "nombre": "Pasta dental Charcoal White 115g",
       "categoria": "Utiles del Hogar",
-      "precio": 0.95,
+      "precio": 1.37,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "1000061501_1777289998618.jpg"
+        "img_6469_1778593665750.png"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-27T11:40:05.520Z",
-      "modified_at": "2026-04-27T11:40:05.520Z"
+      "modified_at": "2026-05-12T13:48:10.951Z"
     },
     {
       "id": "prod_1777744697829_j6ymprakj",
