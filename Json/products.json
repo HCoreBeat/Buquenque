@@ -1248,15 +1248,15 @@
       "precio": 2.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1e5ea189-5e50-4723-a842-7e857be51e7d-1_1774588319065.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-16T15:32:08.917Z",
-      "modified_at": "2026-03-27T05:24:25.179Z"
+      "modified_at": "2026-05-12T16:53:52.142Z"
     },
     {
       "id": "prod_1771255568932_49z71tujl",
@@ -1322,9 +1322,9 @@
         "44801_1771255834329.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-02-16T15:32:16.523Z",
-      "modified_at": "2026-05-05T16:22:29.230Z"
+      "modified_at": "2026-05-12T16:53:52.142Z"
     },
     {
       "id": "prod_1771953998923_b4sri6e8j",
@@ -1348,17 +1348,17 @@
       "nombre": "Sumo de Limon 500ml",
       "categoria": "Despensa",
       "precio": 4.17,
-      "descuento": 0,
+      "descuento": 10.07,
       "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
+      "nuevo": false,
+      "oferta": true,
       "imagenes": [
         "img-20260225-wa0008_1772069960687.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-02-26T01:40:51.525Z",
-      "modified_at": "2026-03-21T03:32:47.727Z"
+      "modified_at": "2026-05-12T16:53:52.142Z"
     },
     {
       "id": "prod_1772300754323_lz1rnolgm",
@@ -1498,20 +1498,20 @@
     },
     {
       "id": "prod_1772443528708_c9r8jr80o",
-      "nombre": "Galletas Renata (Fresa)",
+      "nombre": "Sorbeto Renata (Fresa)",
       "categoria": "Confitura",
       "precio": 1.16,
-      "descuento": 0,
+      "descuento": 16.38,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "6_1772443528725.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-02T09:28:22.234Z",
-      "modified_at": "2026-05-01T15:42:48.193Z"
+      "modified_at": "2026-05-12T16:53:52.142Z"
     },
     {
       "id": "prod_1772443579416_ssrc7h8pg",
@@ -1859,16 +1859,16 @@
       "categoria": "Cárnicos y Embutidos",
       "precio": 22.5,
       "descuento": 0,
-      "mas_vendido": true,
+      "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000065528_1777745976144.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-22T23:41:29.685Z",
-      "modified_at": "2026-05-12T16:46:50.726Z"
+      "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
       "id": "prod_1774222653850_9m6grgvh0",
