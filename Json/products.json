@@ -1859,16 +1859,16 @@
       "categoria": "Cárnicos y Embutidos",
       "precio": 22.5,
       "descuento": 0,
-      "mas_vendido": false,
+      "mas_vendido": true,
       "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000065528_1777745976144.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-22T23:41:29.685Z",
-      "modified_at": "2026-05-06T21:29:49.216Z"
+      "modified_at": "2026-05-12T16:46:50.726Z"
     },
     {
       "id": "prod_1774222653850_9m6grgvh0",
