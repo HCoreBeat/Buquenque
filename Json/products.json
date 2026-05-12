@@ -6,16 +6,16 @@
       "categoria": "Cárnicos y Embutidos",
       "precio": 14,
       "descuento": 0,
-      "mas_vendido": true,
+      "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
       "imagenes": [
         "62e082f4_1774062351324.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-05-12T13:32:12.326Z"
+      "modified_at": "2026-04-26T11:15:48.447Z"
     },
     {
       "id": "prod_1768441690510_piqbut8gb",
@@ -299,12 +299,12 @@
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "44853_1771258483850.jpg"
+        "62f30fa8-c2ad-417c-9eb6-38d2b77acbe6_1778592841673.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Frijol Negro (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-16T16:17:46.571Z"
+      "modified_at": "2026-05-12T13:34:12.312Z"
     },
     {
       "id": "prod_1768441690510_ify26lfde",
