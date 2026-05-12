@@ -2770,6 +2770,23 @@
       "disponibilidad": true,
       "created_at": "2026-05-12T14:21:58.837Z",
       "modified_at": "2026-05-12T14:42:04.911Z"
+    },
+    {
+      "id": "prod_1778597057858_evfhlyfvj",
+      "nombre": "Galleta Renata (vainilla)",
+      "categoria": "Confitura",
+      "precio": 0.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_6472_1778597057862.webp"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-12T14:44:26.263Z",
+      "modified_at": "2026-05-12T14:44:26.263Z"
     }
   ]
 }
