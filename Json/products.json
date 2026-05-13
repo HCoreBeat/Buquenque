@@ -2838,6 +2838,91 @@
       "disponibilidad": true,
       "created_at": "2026-05-12T17:35:48.849Z",
       "modified_at": "2026-05-12T17:35:48.849Z"
+    },
+    {
+      "id": "prod_1778630888133_0e5bf6jsc",
+      "nombre": "Paquete de caramelos surtidos 3lbs",
+      "categoria": "Confitura",
+      "precio": 7.5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1000077330_1778630888265.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-13T00:13:12.789Z",
+      "modified_at": "2026-05-13T00:13:12.789Z"
+    },
+    {
+      "id": "prod_1778630940473_bcv60b3g9",
+      "nombre": "Bombón de chocolate y frutilla 5u",
+      "categoria": "Confitura",
+      "precio": 1.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1000077333_1778630940615.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-13T00:13:32.326Z",
+      "modified_at": "2026-05-13T00:13:32.326Z"
+    },
+    {
+      "id": "prod_1778631075468_44abvh7y7",
+      "nombre": "Chupa chupa popmania maxxi (Frutilla)",
+      "categoria": "Confitura",
+      "precio": 3.45,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1000077336_1778631075600.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-13T00:13:34.408Z",
+      "modified_at": "2026-05-13T00:13:34.408Z"
+    },
+    {
+      "id": "prod_1778631117927_2hnqu593w",
+      "nombre": "Chupa chupa popmania maxxi (Cereza)",
+      "categoria": "Confitura",
+      "precio": 3.45,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1000077339_1778631118037.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-13T00:13:36.516Z",
+      "modified_at": "2026-05-13T00:13:36.516Z"
+    },
+    {
+      "id": "prod_1778631168846_0w09psecj",
+      "nombre": "Sorbeto nutro 75g de fresa",
+      "categoria": "Confitura",
+      "precio": 0.7,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1000077342_1778631168952.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-13T00:13:41.775Z",
+      "modified_at": "2026-05-13T00:13:41.775Z"
     }
   ]
 }
