@@ -2957,6 +2957,23 @@
       "disponibilidad": true,
       "created_at": "2026-05-15T00:37:14.864Z",
       "modified_at": "2026-05-15T00:37:14.864Z"
+    },
+    {
+      "id": "prod_1778805686292_ieyg7a4n3",
+      "nombre": "Caja de Sorbeto nutro 24u (vainilla)",
+      "categoria": "Confitura",
+      "precio": 13.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_6615_1778805686300.png"
+      ],
+      "descripcion": "Caja de Sorbeto Nutro 24u sabor vainilla",
+      "disponibilidad": true,
+      "created_at": "2026-05-15T00:45:11.537Z",
+      "modified_at": "2026-05-15T00:45:11.537Z"
     }
   ]
 }
