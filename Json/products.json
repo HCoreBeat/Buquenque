@@ -39,17 +39,17 @@
       "nombre": "Chupa Chupa x unidad",
       "categoria": "Confitura",
       "precio": 0.25,
-      "descuento": 0,
+      "descuento": 32,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "Chupa_Chupa_x_unidad.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Chupa Chupa x unidad, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-02-22T18:38:18.888Z"
+      "modified_at": "2026-05-15T00:02:49.714Z"
     },
     {
       "id": "prod_1768441690510_8ocdeke0z",
