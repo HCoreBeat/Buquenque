@@ -2974,6 +2974,57 @@
       "disponibilidad": true,
       "created_at": "2026-05-15T00:45:11.537Z",
       "modified_at": "2026-05-15T00:45:11.537Z"
+    },
+    {
+      "id": "prod_1779297367428_bmc729tj1",
+      "nombre": "Barra de Jamón York 800g",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 10,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1000081771_1779297367489.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-20T17:19:02.138Z",
+      "modified_at": "2026-05-20T17:19:02.138Z"
+    },
+    {
+      "id": "prod_1779297405433_otlql24m5",
+      "nombre": "Mortadella Criolla 800g",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 8.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1000081772_1779297405485.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-20T17:19:05.622Z",
+      "modified_at": "2026-05-20T17:19:05.622Z"
+    },
+    {
+      "id": "prod_1779297528751_a1st8d8ee",
+      "nombre": "Caja de nectar de mango 24u",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 27,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1000081773_1779297528813.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-20T17:19:09.772Z",
+      "modified_at": "2026-05-20T17:19:09.772Z"
     }
   ]
 }
