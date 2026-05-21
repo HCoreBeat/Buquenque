@@ -523,9 +523,9 @@
         "1000012332_1772832335861.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pack x 12 Néctar de Pera 🍐 (12x330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-06T21:29:49.215Z"
+      "modified_at": "2026-05-21T12:01:20.619Z"
     },
     {
       "id": "prod_1768441690510_gbbyirl3n",
@@ -574,9 +574,9 @@
         "Nectar_de_Pera.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Néctar de Pera 🍐 (330ml), una excelente opción de nuestra categoría Bebidas no alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-06T21:29:49.215Z"
+      "modified_at": "2026-05-21T12:01:20.619Z"
     },
     {
       "id": "prod_1768441690510_oqd90ndvr",
@@ -2920,9 +2920,9 @@
         "1000077827_1778688960365.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-13T00:13:41.775Z",
-      "modified_at": "2026-05-13T16:24:22.639Z"
+      "modified_at": "2026-05-21T12:01:20.619Z"
     },
     {
       "id": "prod_1778689868277_3y4kwdx7u",
@@ -2965,15 +2965,15 @@
       "precio": 13.75,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img_6615_1778805686300.png"
       ],
       "descripcion": "Caja de Sorbeto Nutro 24u sabor vainilla",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-15T00:45:11.537Z",
-      "modified_at": "2026-05-15T00:45:11.537Z"
+      "modified_at": "2026-05-21T12:01:20.619Z"
     },
     {
       "id": "prod_1779297367428_bmc729tj1",
