@@ -421,9 +421,9 @@
         "Cerveza_Calatrava_(330ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cerveza \"Calatrava\" (330ml), una excelente opción de nuestra categoría Bebidas alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-05-22T20:49:58.847Z"
     },
     {
       "id": "prod_1769297232608_1rpawqvbr",
@@ -540,9 +540,9 @@
         "Caja_de_Cerveza_Calatrava.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Caja de Cerveza \"Calatrava\", una excelente opción de nuestra categoría Bebidas alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-05-22T20:49:58.847Z"
     },
     {
       "id": "prod_1768441690510_kn64b8pa8",
@@ -625,9 +625,9 @@
         "Cerveza_Parranda_(330ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cerveza \"Parranda\" (330ml), una excelente opción de nuestra categoría Bebidas alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-05-22T20:49:58.847Z"
     },
     {
       "id": "prod_1768441690510_49wu34kui",
@@ -642,9 +642,9 @@
         "Pack_x_6_Cerveza_Parranda_(6x330ml).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Pack x 6 Cerveza \"Parranda\" (6x330ml), una excelente opción de nuestra categoría Bebidas alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-05-22T20:49:58.847Z"
     },
     {
       "id": "prod_1768441690510_7pj6exbyx",
