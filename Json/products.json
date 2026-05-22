@@ -1820,40 +1820,6 @@
       "modified_at": "2026-05-01T15:42:48.191Z"
     },
     {
-      "id": "prod_1774065409293_ql7mv8a6d",
-      "nombre": "Caja de refresco 24u (Naranja)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 18.95,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "refrescofrisednl_1774065409309.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": true,
-      "created_at": "2026-03-21T04:03:03.294Z",
-      "modified_at": "2026-03-21T04:03:03.294Z"
-    },
-    {
-      "id": "prod_1774065730408_js1d1s8e1",
-      "nombre": "Caja de refresco 24u (Limon)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 18.95,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "ckroa2ckroa2ckro_1774065730427.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": true,
-      "created_at": "2026-03-21T04:03:05.564Z",
-      "modified_at": "2026-03-21T04:03:05.564Z"
-    },
-    {
       "id": "prod_1774222439833_s0jwz3gyf",
       "nombre": "Jamón Bravo 2kg",
       "categoria": "Cárnicos y Embutidos",
@@ -3025,6 +2991,91 @@
       "disponibilidad": true,
       "created_at": "2026-05-20T17:19:09.772Z",
       "modified_at": "2026-05-20T17:19:09.772Z"
+    },
+    {
+      "id": "prod_1779468122529_ajoyuz11y",
+      "nombre": "Caja de Bombón 30u (Chocolate)",
+      "categoria": "Confitura",
+      "precio": 7.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1000083074_1779468122608.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-22T16:51:02.124Z",
+      "modified_at": "2026-05-22T16:51:02.124Z"
+    },
+    {
+      "id": "prod_1779468214397_abvbwgjsu",
+      "nombre": "Caja de Bombón 30u (Crema de cacahuete, maní y oblea)",
+      "categoria": "Confitura",
+      "precio": 7.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1000083073_1779468214523.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-22T16:51:04.734Z",
+      "modified_at": "2026-05-22T16:51:04.734Z"
+    },
+    {
+      "id": "prod_1779468419722_3gb4z1pr1",
+      "nombre": "Caja de refresco Rayan (cola)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 15.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1000083071_1779468419841.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-22T16:51:07.625Z",
+      "modified_at": "2026-05-22T16:51:07.625Z"
+    },
+    {
+      "id": "prod_1779468598674_3w4zhfylf",
+      "nombre": "Caja de refresco Rayan (naranja)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 15.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1000083072_1779468598738.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-22T16:51:11.678Z",
+      "modified_at": "2026-05-22T16:51:11.678Z"
+    },
+    {
+      "id": "prod_1779468627017_2lonrcdvr",
+      "nombre": "Caja de refresco Rayan (limón)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 15.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1000083070_1779468627139.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-05-22T16:51:14.371Z",
+      "modified_at": "2026-05-22T16:51:14.371Z"
     }
   ]
 }
