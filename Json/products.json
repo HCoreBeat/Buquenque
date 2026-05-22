@@ -1435,15 +1435,15 @@
       "precio": 0.79,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1_1772442996785.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-02T09:28:08.269Z",
-      "modified_at": "2026-03-02T09:28:08.269Z"
+      "modified_at": "2026-05-22T20:48:34.852Z"
     },
     {
       "id": "prod_1772443082815_a8j9zfyoy",
@@ -1537,15 +1537,15 @@
       "precio": 1.16,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "5_1772443613342.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-02T09:28:24.506Z",
-      "modified_at": "2026-05-01T15:42:48.194Z"
+      "modified_at": "2026-05-22T20:48:34.853Z"
     },
     {
       "id": "prod_1772443671662_3zlv75nd6",
@@ -1832,9 +1832,9 @@
         "1000065528_1777745976144.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-22T23:41:29.685Z",
-      "modified_at": "2026-05-06T21:29:49.216Z"
+      "modified_at": "2026-05-22T20:48:34.853Z"
     },
     {
       "id": "prod_1774222653850_9m6grgvh0",
@@ -2268,15 +2268,15 @@
       "precio": 7,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "42400_1776408366626.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-17T06:49:39.997Z",
-      "modified_at": "2026-04-17T06:49:39.997Z"
+      "modified_at": "2026-05-22T20:48:34.853Z"
     },
     {
       "id": "prod_1776408427183_xuedabnzn",
@@ -2308,9 +2308,9 @@
         "42401_1776408551062.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-04-17T06:49:43.373Z",
-      "modified_at": "2026-05-11T16:08:51.058Z"
+      "modified_at": "2026-05-22T20:48:34.853Z"
     },
     {
       "id": "prod_1776590805262_gsxaukooi",
@@ -2710,15 +2710,15 @@
       "precio": 0.97,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img_6471_1778595064056.jpeg"
       ],
       "descripcion": "Galletas vainilla rellenas con crema de fresa Renata 112g",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-12T14:11:10.262Z",
-      "modified_at": "2026-05-12T14:42:04.910Z"
+      "modified_at": "2026-05-22T20:48:34.853Z"
     },
     {
       "id": "prod_1778595713221_lspbt3t48",
@@ -2727,15 +2727,15 @@
       "precio": 0.97,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img_6473_1778595713229.webp"
       ],
       "descripcion": "Galleta chocolate rellena con crema de chocolate",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-12T14:21:58.837Z",
-      "modified_at": "2026-05-12T14:42:04.911Z"
+      "modified_at": "2026-05-22T20:48:34.853Z"
     },
     {
       "id": "prod_1778597057858_evfhlyfvj",
@@ -2744,15 +2744,15 @@
       "precio": 0.97,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img_6472_1778597057862.webp"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-12T14:44:26.263Z",
-      "modified_at": "2026-05-12T14:44:26.263Z"
+      "modified_at": "2026-05-22T20:48:34.853Z"
     },
     {
       "id": "prod_1778606658661_zqzsx1hhm",
@@ -2778,15 +2778,15 @@
       "precio": 1.75,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "93df1d5e-5d81-4841-9191-8cbdc47d7d82_1778606897524.jpeg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-12T17:28:39.703Z",
-      "modified_at": "2026-05-12T17:28:39.703Z"
+      "modified_at": "2026-05-22T20:48:34.853Z"
     },
     {
       "id": "prod_1778607321781_sbqte5wko",
