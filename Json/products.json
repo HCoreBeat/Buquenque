@@ -1520,7 +1520,7 @@
       "precio": 1.16,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "7_1772443579439.jpg"
@@ -1528,16 +1528,16 @@
       "descripcion": "",
       "disponibilidad": false,
       "created_at": "2026-03-02T09:28:23.263Z",
-      "modified_at": "2026-05-22T20:56:26.342Z"
+      "modified_at": "2026-05-01T15:42:48.193Z"
     },
     {
       "id": "prod_1772443613305_eh6i8vglo",
-      "nombre": "Galletas Renata (Chocolate)",
+      "nombre": "Sorbeto Renata (Chocolate)",
       "categoria": "Confitura",
       "precio": 1.16,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "5_1772443613342.jpg"
@@ -1545,7 +1545,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-02T09:28:24.506Z",
-      "modified_at": "2026-05-22T20:56:26.343Z"
+      "modified_at": "2026-05-22T20:59:35.440Z"
     },
     {
       "id": "prod_1772443671662_3zlv75nd6",
