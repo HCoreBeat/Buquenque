@@ -90,7 +90,7 @@
       "nombre": "Cartón de Huevos",
       "categoria": "Despensa",
       "precio": 11.5,
-      "descuento": 0,
+      "descuento": 18.52,
       "mas_vendido": true,
       "nuevo": false,
       "oferta": false,
@@ -100,7 +100,7 @@
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-05T16:22:32.075Z"
+      "modified_at": "2026-05-28T23:57:12.513Z"
     },
     {
       "id": "prod_1768923054742_dhekmp0os",
