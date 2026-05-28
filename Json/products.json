@@ -1282,15 +1282,15 @@
       "precio": 3.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "44797_1771255644014.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-16T15:32:12.756Z",
-      "modified_at": "2026-02-16T15:32:12.756Z"
+      "modified_at": "2026-05-28T16:30:08.660Z"
     },
     {
       "id": "prod_1771255763596_eaz128kna",
@@ -1690,15 +1690,15 @@
       "precio": 7.99,
       "descuento": 39.3,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "3_1776151929617.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-18T17:58:55.193Z",
-      "modified_at": "2026-04-14T07:50:00.205Z"
+      "modified_at": "2026-05-28T16:30:08.660Z"
     },
     {
       "id": "prod_1773856590032_j2m7p5am9",
@@ -2217,15 +2217,15 @@
       "precio": 4.35,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "9_1776152818883.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-14T07:50:05.941Z",
-      "modified_at": "2026-04-14T07:50:05.941Z"
+      "modified_at": "2026-05-28T16:30:08.661Z"
     },
     {
       "id": "prod_1776152849127_7omvt0ii2",
@@ -2308,9 +2308,9 @@
         "42401_1776408551062.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-17T06:49:43.373Z",
-      "modified_at": "2026-05-22T20:48:34.853Z"
+      "modified_at": "2026-05-28T16:30:08.660Z"
     },
     {
       "id": "prod_1776590805262_gsxaukooi",
