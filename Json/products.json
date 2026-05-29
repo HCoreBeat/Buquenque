@@ -1398,18 +1398,18 @@
       "id": "prod_1772439529396_kh3fahrr4",
       "nombre": "Saco de azúcar blanca 25kg",
       "categoria": "Despensa",
-      "precio": 47.85,
+      "precio": 49.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "c4c5f51b-6cb1-41f0-bfa0-ffa820643fd0_1772439529416.jpeg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-02T08:28:01.312Z",
-      "modified_at": "2026-05-12T13:48:05.275Z"
+      "modified_at": "2026-05-29T00:16:44.524Z"
     },
     {
       "id": "prod_1772439588460_8m93dd12m",
