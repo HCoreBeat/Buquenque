@@ -872,7 +872,7 @@ function filterByCategory(category) {
 }
 
 // Buscar productos (ahora en tiempo real)
-function searchProducts() {
+function searchProducts(showSuggestions = true) {
   const searchInput = document.getElementById("search-input");
   const productsContainer = document.getElementById("products-container");
   const noResultsMessage = document.getElementById("no-results-message");
@@ -951,8 +951,11 @@ function searchProducts() {
   }
 
   // Actualizar dropdown de sugerencias en tiempo real
-  try { renderSearchSuggestions(getSearchSuggestions(normalizedTerm, 6)); } catch(e) { /* safe */ }
-
+  if (showSuggestions) {
+    try { renderSearchSuggestions(getSearchSuggestions(normalizedTerm, 6)); } catch(e) { /* safe */ }
+  } else {
+    clearSearchSuggestions();
+  }
 
   if (filteredProducts.length > 0) {
     renderProducts(filteredProducts);
@@ -2183,27 +2186,27 @@ async function showProductDetail(arg) {
   ];
 
   // Sección de productos sugeridos mejorada
-  const suggestedProductsHTML =
-    suggestedProducts.length > 0
-      ? `
+  const suggestedProductsHTML = `
         <div class="suggested-products-section">
             <div class="section-header">
                 <h3 class="section-title">Productos relacionados</h3>
                 <div class="section-divider"></div>
             </div>
-            <div class="suggested-products-carousel">
-                ${suggestedProducts
-                  .map((suggested) => {
-                    const isOnSaleSuggested =
-                      suggested.oferta && suggested.descuento > 0;
-                    const finalPriceSuggested = isOnSaleSuggested
-                      ? (
-                          suggested.precio *
-                          (1 - suggested.descuento / 100)
-                        ).toFixed(2)
-                      : suggested.precio.toFixed(2);
+            ${
+              suggestedProducts.length > 0
+                ? `<div class="suggested-products-carousel">
+                    ${suggestedProducts
+                      .map((suggested) => {
+                        const isOnSaleSuggested =
+                          suggested.oferta && suggested.descuento > 0;
+                        const finalPriceSuggested = isOnSaleSuggested
+                          ? (
+                              suggested.precio *
+                              (1 - suggested.descuento / 100)
+                            ).toFixed(2)
+                          : suggested.precio.toFixed(2);
 
-                    return `
+                        return `
                         <div class="suggested-item">
                             <div class="suggested-badges">
                                 ${
@@ -2228,8 +2231,8 @@ async function showProductDetail(arg) {
                                 <img src="Images/products/${
                                   suggested.imagenes[0]
                                 }" alt="${
-                      suggested.cleanName || suggested.nombre
-                    }" loading="lazy" decoding="async">
+                          suggested.cleanName || suggested.nombre
+                        }" loading="lazy" decoding="async">
                             </div>
                             <div class="suggested-details">
                                 <h4 class="suggested-name" onclick="showProductDetail('${encodeURIComponent(
@@ -2259,12 +2262,12 @@ async function showProductDetail(arg) {
                             </div>
                         </div>
                     `;
-                  })
-                  .join("")}
-            </div>
-        </div>
-    `
-      : "";
+                      })
+                      .join("")}
+                </div>`
+                : '<div class="no-suggestions">No hay productos relacionados disponibles en este momento.</div>'
+            }
+        </div>`; 
 
   detailContainer.innerHTML = `
         <div class="detail-container">
@@ -2445,6 +2448,7 @@ function getSuggestedProducts(currentProduct, count = 6) {
   const sameCategory = products.filter(
     (p) =>
       p.categoria === currentCategory &&
+      p.disponibilidad &&
       !excludedIds.includes(p.id) &&
       p.id !== baseProduct.id
   );
@@ -2453,6 +2457,7 @@ function getSuggestedProducts(currentProduct, count = 6) {
   const featuredProducts = products.filter(
     (p) =>
       p.categoria !== currentCategory &&
+      p.disponibilidad &&
       !excludedIds.includes(p.id) &&
       (p.mas_vendido || p.nuevo || p.oferta)
   );
@@ -2699,11 +2704,11 @@ function addToCart(productName, fromDetail = false, event) {
     const quantityElement = document.getElementById("detail-quantity");
     quantity = quantityElement ? parseInt(quantityElement.textContent) || 1 : 1;
   } else {
-    // Modificado para manejar productos con variantes
-    const productCard = event.target.closest(".product-card");
-    if (!productCard) return;
-
-    const quantityElement = productCard.querySelector(".product-quantity");
+    // No todos los botones mini están dentro de un product-card.
+    const productCard = event?.target?.closest?.(".product-card");
+    const quantityElement = productCard
+      ? productCard.querySelector(".product-quantity")
+      : null;
     quantity = quantityElement ? parseInt(quantityElement.textContent) || 1 : 1;
   }
 
@@ -3991,7 +3996,8 @@ document.addEventListener("DOMContentLoaded", async () => {
           e.preventDefault();
           active.dispatchEvent(new MouseEvent('mousedown'));
         } else {
-          searchProducts();
+          e.preventDefault();
+          searchProducts(false);
         }
       } else if (e.key === 'Escape') {
         clearSearchSuggestions();
@@ -4015,9 +4021,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     });
 
-    // Reposicionar al hacer resize/scroll para mantener el dropdown pegado al input
+    // Reposicionar al hacer resize para mantener el dropdown pegado al input
     window.addEventListener('resize', () => positionSearchSuggestions());
-    window.addEventListener('scroll', () => positionSearchSuggestions(), { passive: true });
+    window.addEventListener('scroll', () => {
+      const container = document.getElementById('search-suggestions');
+      if (container && container.style.display === 'block') {
+        clearSearchSuggestions();
+      }
+    }, { passive: true });
 
     // Click fuera -> cerrar
     document.addEventListener('click', (ev) => {
