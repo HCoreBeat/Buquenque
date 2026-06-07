@@ -103,23 +103,6 @@
       "modified_at": "2026-05-29T00:00:53.876Z"
     },
     {
-      "id": "prod_1768923054742_dhekmp0os",
-      "nombre": "Vino Espumoso La Baronne Demi-Sec Rosé (750 ml)",
-      "categoria": "Bebidas alcohólicas",
-      "precio": 6.99,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "La_Baronne.jpg"
-      ],
-      "descripcion": "Elegante Vino Espumoso La Baronne Demi-Sec Rosé, con un contenido de 750 ml y 10% de volumen de alcohol. Ideal para celebraciones y brindis especiales.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-04-18T08:31:25.727Z"
-    },
-    {
       "id": "prod_1769030417838_noe5sa2wa",
       "nombre": "Refresco Instantáneo (2Lt)",
       "categoria": "Bebidas no alcohólicas",
@@ -138,20 +121,20 @@
     },
     {
       "id": "prod_1768441690510_ma2k8r01f",
-      "nombre": "Aceite (1L)",
+      "nombre": "Aceite (900ml)",
       "categoria": "Despensa",
       "precio": 4.29,
-      "descuento": 12.59,
+      "descuento": 7.46,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": true,
       "imagenes": [
-        "25b95336-b112-48ef-a3f1-8ebeee4148a7_1772439363384.jpeg"
+        "0b8b7822-e816-4496-8090-04c17871dff7_1780866183343.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Aceite (1L), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-06-07T02:08:47.598Z"
+      "modified_at": "2026-06-07T21:05:07.464Z"
     },
     {
       "id": "prod_1768441690510_ijaa8o33p",
