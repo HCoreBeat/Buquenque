@@ -149,9 +149,9 @@
         "25b95336-b112-48ef-a3f1-8ebeee4148a7_1772439363384.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Aceite (1L), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-05-12T13:58:26.852Z"
+      "modified_at": "2026-06-07T02:08:47.598Z"
     },
     {
       "id": "prod_1768441690510_ijaa8o33p",
@@ -1877,15 +1877,15 @@
       "precio": 8.69,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000030507_1774222827857.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-22T23:41:35.203Z",
-      "modified_at": "2026-03-22T23:41:35.203Z"
+      "modified_at": "2026-06-07T02:08:47.598Z"
     },
     {
       "id": "prod_1774588013360_4mvfuxndo",
@@ -2030,15 +2030,15 @@
       "precio": 8,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000041619_1775429464584.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-05T22:52:37.025Z",
-      "modified_at": "2026-04-05T22:52:37.025Z"
+      "modified_at": "2026-06-07T02:08:47.597Z"
     },
     {
       "id": "prod_1775429464494_g3",
@@ -2183,15 +2183,15 @@
       "precio": 5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "7_1776152038878.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-14T07:50:03.339Z",
-      "modified_at": "2026-04-14T07:50:03.339Z"
+      "modified_at": "2026-06-07T02:08:47.598Z"
     },
     {
       "id": "prod_1776152786987_fj2z16ewo",
@@ -2319,15 +2319,15 @@
       "precio": 12,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "9a4161471fc5b9122a2aab_1776590805282.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-19T09:28:48.364Z",
-      "modified_at": "2026-04-19T09:28:48.364Z"
+      "modified_at": "2026-06-07T02:08:47.599Z"
     },
     {
       "id": "prod_1776590917088_17s74pewj",
@@ -2693,15 +2693,15 @@
       "precio": 0.6,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000067984_1778001465045.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-05T17:18:03.742Z",
-      "modified_at": "2026-05-05T17:18:03.742Z"
+      "modified_at": "2026-06-07T02:08:47.598Z"
     },
     {
       "id": "prod_1778595064048_5hp84hf26",
