@@ -1,8 +1,8 @@
 {
-    "id": 1,
-    "titulo": "¡HELLO THERE 😃😃!",
-    "mensaje": "Tenemos productos completamente nuevos y renovados. Mira nuestras novedades por favor.",
-    "subtitulo": "\"Aprovecha ahora, que esto te va a gustar, y no dudes en contactar si tienes alguna duda\" ",
+    "id": 3,
+    "titulo": "¡El día de papá 🧓🧓!",
+    "mensaje": "¡El Día del Padre ya está aquí! Encuentra el regalo perfecto para papá en nuestra tienda. 🎁",
+    "subtitulo": "\"Papá sienpre ha sido el mejor\" ",
     "tipo": "success",
-    "icono": "fas fa-check-circle"
+    "icono": "fas fa-award"
 }
