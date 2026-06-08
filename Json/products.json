@@ -1908,18 +1908,18 @@
       "id": "prod_1774588718809_f6anpwdzt",
       "nombre": "Mayonesa Vima 450ml",
       "categoria": "Aderezos",
-      "precio": 3.99,
+      "precio": 5.45,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "d3eae4e0-a6b0-46f2-b7bc-8126942b81b1-1_1774588718813.jpg"
+        "1000094814_1780931785896.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-27T05:24:31.693Z",
-      "modified_at": "2026-03-27T05:24:31.693Z"
+      "modified_at": "2026-06-08T15:16:47.988Z"
     },
     {
       "id": "prod_1774589037954_ne3iqyc5v",
