@@ -654,14 +654,14 @@
       "descuento": 6.25,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "19e8b363-aeb1-4ce5-a570-0f54b02ec5c8_1769398843533.jpeg"
       ],
       "descripcion": "Cable EcoFlow Serie DLETA con Estación de Energía Portátil DELTA 3 Clásica (Gris Claro), Carga 7 Veces Más Rápida, 45min 80% Cargado, Batería LiFePO4 de 1024Wh para 10 Años, Salida Potente de 1800W, Expansión Flexible, Batería Solar para Uso en el Hogar o al Aire Libre",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-06-10T17:55:43.667Z"
     },
     {
       "id": "prod_1768441690510_ok1axebuc",
