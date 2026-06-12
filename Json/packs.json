@@ -131,7 +131,36 @@
         "x1 Bolsa de leche"
       ],
       "created_at": null,
-      "modified_at": "2026-03-22T17:39:08.159Z"
+      "modified_at": "2026-03-22T17:39:08.159Z",
+      "precioFinal": 35,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/Packs/pack_merienda_familiar.jpg",
+      "searchText": "pack merienda familiar pack un combo ideal para preparar meriendas abundantes y deliciosas. incluye pan, lácteos y embutidos frescos para toda la familia."
+    },
+    {
+      "id": "6",
+      "nombre": "Cena para 25 personas",
+      "categoria": "Pack",
+      "precio": 180,
+      "descuento": 0,
+      "top": true,
+      "nuevo": false,
+      "oferta": false,
+      "disponible": true,
+      "imagenes": [
+        "e7bf71ac-7a47-4705-9ddc-f92017b1e03b_1781288583729.jpeg"
+      ],
+      "imagen": "e7bf71ac-7a47-4705-9ddc-f92017b1e03b_1781288583729.jpeg",
+      "descripcion": "",
+      "caracteristicas": [
+        "- Tamales (Pude variar a matajibaro)",
+        "- Ensalada de Tomate y Col",
+        "- Congris",
+        "- Pernil Asado de 20lbs",
+        "- Cake doble panetela tres leches con dedicatoria",
+        "- Caja de Malta Bucanero"
+      ],
+      "created_at": "2026-06-12T18:23:15.689Z",
+      "modified_at": "2026-06-12T18:23:15.689Z"
     }
   ]
 }
