@@ -25,7 +25,7 @@ class MessageNotificationSystem {
         this.autoCloseTimeout = null;
         
         // DEBUG
-        this.debugMode = true;
+        this.debugMode = false;
     }
 
     /**
@@ -467,20 +467,14 @@ let messageNotificationSystem = null;
 
 // Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', async () => {
-    console.log('🚀 [MessageNotificationSystem] DOMContentLoaded disparado - Inicializando...');
     
     // Pequeña pausa para asegurar que otros scripts hayan terminado su inicialización
     await new Promise(resolve => setTimeout(resolve, 500));
 
-    console.log('✅ [MessageNotificationSystem] Tiempo de espera completado - Creando instancia...');
     messageNotificationSystem = new MessageNotificationSystem();
     
-    console.log('🔄 [MessageNotificationSystem] Limpiando almacenamiento antiguo...');
     messageNotificationSystem.cleanOldStorage();
     
-    console.log('📋 [MessageNotificationSystem] Iniciando sistema...');
     await messageNotificationSystem.init();
     
-    console.log('✅ [MessageNotificationSystem] Sistema completamente inicializado');
-    console.log('💡 Tip: Ejecuta messageNotificationSystem.getDebugInfo() para ver detalles');
 });

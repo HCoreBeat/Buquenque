@@ -146,5 +146,4 @@ const paymentAutofill = new PaymentAutofill();
 document.addEventListener('DOMContentLoaded', () => {
     // El inicializador real se llamará desde showPaymentSection()
     // Este evento solo asegura que la clase esté disponible
-    console.log('Sistema de autocompletado de payment inicializado');
 });

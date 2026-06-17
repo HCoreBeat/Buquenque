@@ -788,11 +788,31 @@
 
 .category-card-title {
     font-family: 'Segoe UI', system-ui, sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #1d1d1f;
+    font-size: 1.55rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     margin: 0;
-    line-height: 1.25;
+    line-height: 1.1;
+    position: relative;
+    color: transparent;
+    background: linear-gradient(90deg, #f97316, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0 1px 1px rgba(17, 24, 39, 0.08);
+    padding-bottom: 0.55rem;
+}
+
+.category-card-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3.75rem;
+    height: 0.28rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(249, 115, 22, 0.95), rgba(236, 72, 153, 0.95));
+    box-shadow: 0 10px 20px rgba(236, 72, 153, 0.16);
 }
 
 /* Card Body - Grid Layout */

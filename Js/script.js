@@ -1869,6 +1869,48 @@ function changeProductVariant(thumbElement, baseName, variantIndex, event) {
   });
 }
 
+function packIsAvailable(pack) {
+  return pack && pack.disponible !== false;
+}
+
+function packIsBestSeller(pack) {
+  return (
+    pack &&
+    (pack.top === true || pack.mas_vendido === true || pack["mas_vendido"] === true || pack["más_vendido"] === true)
+  );
+}
+
+function getPackFinalPrice(pack) {
+  if (!pack) return 0;
+  if (typeof pack.precioFinal === 'number' && pack.precioFinal !== 0) {
+    return pack.precioFinal;
+  }
+  return pack.precio || 0;
+}
+
+function sortBestSellersEntries(entries) {
+  if (!Array.isArray(entries)) return [];
+
+  return entries
+    .map((entry) => {
+      let score = 0;
+
+      if (entry.type === 'pack') {
+        score += 1000; // Packs deben aparecer casi siempre antes que productos
+        if (entry.item.top) score += 50;
+        if (entry.item.oferta) score += 20;
+        if (entry.item.nuevo) score += 10;
+      } else {
+        score += calculateProductScore(entry.item);
+        if (entry.item.mas_vendido) score += 30;
+      }
+
+      return { entry, score };
+    })
+    .sort((a, b) => b.score - a.score)
+    .map((item) => item.entry);
+}
+
 /**
  * Renderiza los productos más vendidos en una sección horizontal con scroll
  */
@@ -1878,20 +1920,36 @@ function renderBestSellers() {
   if (!bestSellersScroll) return;
 
   // Filtrar solo productos con mas_vendido: true
-  let bestSellers = products.filter(
+  let productBestSellers = products.filter(
     (product) => product.mas_vendido === true && productIsAvailable(product)
+  );
+  let packBestSellers = packs.filter(
+    (pack) => packIsBestSeller(pack) && packIsAvailable(pack)
   );
 
   // ===== APLICAR ORDENAMIENTO DINÁMICO A BEST SELLERS =====
-  if (bestSellers.length > 0 && typeof sortBestSellersDynamic === 'function') {
+  if (productBestSellers.length > 0 && typeof sortBestSellersDynamic === 'function') {
     try {
-      bestSellers = sortBestSellersDynamic(bestSellers);
+      productBestSellers = sortBestSellersDynamic(productBestSellers);
     } catch (e) {
       console.warn('[Dynamic] Error ordenando best sellers:', e);
     }
   }
 
-  // Si no hay productos, ocultar la sección
+  let bestSellers = [
+    ...productBestSellers.map((product) => ({ type: 'product', item: product })),
+    ...packBestSellers.map((pack) => ({ type: 'pack', item: pack }))
+  ];
+
+  if (typeof sortBestSellersEntries === 'function') {
+    try {
+      bestSellers = sortBestSellersEntries(bestSellers);
+    } catch (e) {
+      console.warn('[Dynamic] Error ordenando best sellers mixtos:', e);
+    }
+  }
+
+  // Si no hay productos ni packs, ocultar la sección
   if (bestSellers.length === 0) {
     document.querySelector(".best-sellers-section").style.display = "none";
     return;
@@ -1900,53 +1958,53 @@ function renderBestSellers() {
   // Limpiar el contenedor
   bestSellersScroll.innerHTML = "";
 
-  // Crear cards para cada producto más vendido
-  bestSellers.forEach((product, index) => {
-    const displayProduct = product.isGrouped
-      ? product.variants[product.currentVariant]
-      : product;
-    const isOnSale = displayProduct.oferta && displayProduct.descuento > 0;
-    const finalPrice = isOnSale
-      ? (displayProduct.precio * (1 - displayProduct.descuento / 100)).toFixed(
-          2
-        )
-      : displayProduct.precio.toFixed(2);
+  // Crear cards para cada producto o pack más vendido
+  bestSellers.forEach((entry, index) => {
+    const isPack = entry.type === 'pack';
+    const displayItem = entry.item;
+    const name = displayItem.nombre || '';
+    const category = isPack ? displayItem.categoria || 'Pack' : displayItem.categoria;
+    const imageSrc = isPack
+      ? `Images/Packs/${displayItem.imagenes?.[0] || displayItem.imagen || 'pack-placeholder.svg'}`
+      : `Images/products/${displayItem.imagenes?.[0] || displayItem.imagen || 'product-placeholder.svg'}`;
+    const priceValue = isPack ? getPackFinalPrice(displayItem) : displayItem.precio;
+    const isOnSale = displayItem.oferta && displayItem.descuento > 0;
+    const finalPrice = Number(priceValue).toFixed(2);
 
     const card = document.createElement("div");
     card.className = "best-seller-card";
     card.style.animationDelay = `${index * 0.05}s`;
     card.onclick = () =>
-      showProductDetail(encodeURIComponent(displayProduct.nombre));
+      isPack
+        ? showPackDetail(encodeURIComponent(name))
+        : showProductDetail(encodeURIComponent(name));
 
     card.innerHTML = `
             <div class="best-seller-image-container">
                 <span class="best-seller-badge">
-                    <i class="fas fa-fire"></i> TOP
+                    <i class="fas fa-fire"></i> ${isPack ? 'PACK TOP' : 'TOP'}
                 </span>
-                 <img src="Images/products/${displayProduct.imagenes[0]}" 
+                 <img src="${imageSrc}" 
                      class="best-seller-image" 
-                     alt="${
-                       displayProduct.nombre
-                     }" loading="lazy" decoding="async">
+                     alt="${name}" loading="lazy" decoding="async"
+                     onerror="this.src='Images/${isPack ? 'pack-placeholder.svg' : 'product-placeholder.svg'}'">
             </div>
             
             <div class="best-seller-info">
                 <div class="best-seller-category">
-                    ${displayProduct.categoria}
+                    ${category}
                 </div>
                 
                 <h3 class="best-seller-title">
-                    ${displayProduct.nombre}
+                    ${name}
                 </h3>
                 
                 <div class="best-seller-price">
                     ${
                       isOnSale
                         ? `
-                        <span class="best-seller-price-original">${displayProduct.precio.toFixed(
-                          2
-                        )} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-xs"></span>
-                        <span class="best-seller-discount">-${Math.round(displayProduct.descuento)}%</span>
+                        <span class="best-seller-price-original">${Number(displayItem.precio).toFixed(2)} <img src="Images/Zelle.svg" alt="Zelle" class="currency-icon price-xs"></span>
+                        <span class="best-seller-discount">-${Math.round(displayItem.descuento)}%</span>
                     `
                         : ""
                     }
