@@ -1909,17 +1909,17 @@
       "nombre": "Café natural Vima 250g",
       "categoria": "Despensa",
       "precio": 7.99,
-      "descuento": 0,
+      "descuento": 24.91,
       "mas_vendido": true,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "2f8c7d0b-e985-42d9-97b7-20a75e35e87e-1_1774589037972.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-27T05:24:33.909Z",
-      "modified_at": "2026-03-27T05:24:33.909Z"
+      "modified_at": "2026-06-20T22:09:49.436Z"
     },
     {
       "id": "prod_1774742941861_rn5ai5a43",
@@ -3076,23 +3076,6 @@
       "disponibilidad": true,
       "created_at": "2026-06-20T21:56:28.722Z",
       "modified_at": "2026-06-20T21:56:28.722Z"
-    },
-    {
-      "id": "prod_1781993142817_9bmqfsasl",
-      "nombre": "Café Espresso Sello Rojo (283g)",
-      "categoria": "Despensa",
-      "precio": 6.75,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "img_7895_1781993142824.jpeg"
-      ],
-      "descripcion": "Café Sello Rojo colombiano",
-      "disponibilidad": true,
-      "created_at": "2026-06-20T22:06:03.397Z",
-      "modified_at": "2026-06-20T22:06:03.397Z"
     }
   ]
 }
