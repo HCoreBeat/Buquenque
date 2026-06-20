@@ -2143,23 +2143,6 @@
       "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
-      "id": "prod_1776151970517_o4p40xl3f",
-      "nombre": "Salchichas miniFrankfurt 1kg",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 9.95,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "15_1776151970522.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-04-14T07:50:01.662Z",
-      "modified_at": "2026-05-12T13:48:05.276Z"
-    },
-    {
       "id": "prod_1776152038867_riytl6qtv",
       "nombre": "Filetes de Tilapia 1lb",
       "categoria": "Cárnicos y Embutidos",
