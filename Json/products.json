@@ -3076,6 +3076,23 @@
       "disponibilidad": true,
       "created_at": "2026-06-20T21:56:28.722Z",
       "modified_at": "2026-06-20T21:56:28.722Z"
+    },
+    {
+      "id": "prod_1781993142817_9bmqfsasl",
+      "nombre": "Café Espresso Sello Rojo (283g)",
+      "categoria": "Despensa",
+      "precio": 6.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_7895_1781993142824.jpeg"
+      ],
+      "descripcion": "Café Sello Rojo colombiano",
+      "disponibilidad": true,
+      "created_at": "2026-06-20T22:06:03.397Z",
+      "modified_at": "2026-06-20T22:06:03.397Z"
     }
   ]
 }
