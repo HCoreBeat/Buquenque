@@ -90,7 +90,7 @@
       "nombre": "Cartón de Huevos",
       "categoria": "Despensa",
       "precio": 11.5,
-      "descuento": 18.52,
+      "descuento": 34.78,
       "mas_vendido": true,
       "nuevo": false,
       "oferta": true,
@@ -100,7 +100,7 @@
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-29T00:00:53.876Z"
+      "modified_at": "2026-06-20T21:53:14.411Z"
     },
     {
       "id": "prod_1769030417838_noe5sa2wa",
@@ -123,18 +123,18 @@
       "id": "prod_1768441690510_ma2k8r01f",
       "nombre": "Aceite (900ml)",
       "categoria": "Despensa",
-      "precio": 4.29,
-      "descuento": 7.46,
+      "precio": 4.5,
+      "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
-      "oferta": true,
+      "nuevo": true,
+      "oferta": false,
       "imagenes": [
         "0b8b7822-e816-4496-8090-04c17871dff7_1780866183343.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Aceite (1L), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-06-07T21:05:07.464Z"
+      "modified_at": "2026-06-20T21:53:03.571Z"
     },
     {
       "id": "prod_1768441690510_ijaa8o33p",
@@ -251,9 +251,9 @@
         "Galletas_de_Soda_con_Mantequilla_Doricas.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Galletas de Soda con Mantequilla Doricas, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-03-21T03:32:40.230Z"
+      "modified_at": "2026-06-20T21:53:03.571Z"
     },
     {
       "id": "prod_1768441690510_7gy02c75y",
@@ -274,20 +274,20 @@
     },
     {
       "id": "prod_1768441690510_tf4rwuo62",
-      "nombre": "Frijol Negro (500g)",
+      "nombre": "Frijol Negro (1kg)",
       "categoria": "Despensa",
-      "precio": 1.7,
+      "precio": 2.25,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "62f30fa8-c2ad-417c-9eb6-38d2b77acbe6_1778592841673.jpeg"
+        "img_7892_1781990884448.jpeg"
       ],
-      "descripcion": "Disfruta de la calidad de Frijol Negro (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
+      "descripcion": "Disfruta de la calidad de Frijol Negro (1kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-12T13:34:12.312Z"
+      "modified_at": "2026-06-20T21:53:05.801Z"
     },
     {
       "id": "prod_1768441690510_ify26lfde",
@@ -308,20 +308,20 @@
     },
     {
       "id": "prod_1769226986599_pfsrf2pax",
-      "nombre": "Detergente (500g)",
+      "nombre": "Detergente Defá Fragancia lavanda  (1kg)",
       "categoria": "Aseo y Belleza",
-      "precio": 1.97,
+      "precio": 2.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "20261_1769214002102.jpg"
+        "img_7894_1781991373653.png"
       ],
-      "descripcion": "Disfruta de la calidad de Detergente (500g), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
+      "descripcion": "Disfruta de la calidad de Detergente (1kg), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-06T13:17:51.278Z"
+      "modified_at": "2026-06-20T21:53:12.463Z"
     },
     {
       "id": "prod_1768441690510_3adjmtv4j",
@@ -424,23 +424,6 @@
       "disponibilidad": true,
       "created_at": null,
       "modified_at": "2026-05-12T13:48:05.275Z"
-    },
-    {
-      "id": "prod_1768441690510_lwhf9zf9m",
-      "nombre": "Sazón completo (340g)",
-      "categoria": "Aderezos",
-      "precio": 4.7,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Sazon_completo_(340g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Sazón completo (340g), una excelente opción de nuestra categoría Aderezos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
     },
     {
       "id": "prod_1768441690510_x8mo0fa06",
@@ -1109,7 +1092,7 @@
       "id": "prod_1769398503693_qcw6jw6ui",
       "nombre": "Coffee Mate(155porciones)",
       "categoria": "Despensa",
-      "precio": 5.5,
+      "precio": 6,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -1118,9 +1101,9 @@
         "img_2343_1769367903617.png"
       ],
       "descripcion": "Sabor equilibrado que complementa sin opacar el café. Textura liviana que aporta cremosidad sin necesidad de lácteos. Fácil de disolver, ideal para usar en servicio rápido o autoservicio.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-04T15:38:06.090Z"
+      "modified_at": "2026-06-20T21:53:14.410Z"
     },
     {
       "id": "prod_1769920633225_umws2zt0k",
@@ -1382,17 +1365,17 @@
       "nombre": "Saco de azúcar blanca 25kg",
       "categoria": "Despensa",
       "precio": 49.99,
-      "descuento": 0,
+      "descuento": 5.98,
       "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
+      "nuevo": false,
+      "oferta": true,
       "imagenes": [
         "c4c5f51b-6cb1-41f0-bfa0-ffa820643fd0_1772439529416.jpeg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-02T08:28:01.312Z",
-      "modified_at": "2026-05-29T00:27:48.157Z"
+      "modified_at": "2026-06-20T21:53:14.410Z"
     },
     {
       "id": "prod_1772439588460_8m93dd12m",
@@ -1696,9 +1679,9 @@
         "1000025980_1773856590101.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-18T17:58:57.128Z",
-      "modified_at": "2026-05-04T16:26:33.064Z"
+      "modified_at": "2026-06-20T21:53:14.411Z"
     },
     {
       "id": "prod_1773859229838_gdak06f1k",
@@ -1724,15 +1707,15 @@
       "precio": 2.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000026017_1773859339140.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-18T18:42:32.336Z",
-      "modified_at": "2026-03-19T02:10:46.085Z"
+      "modified_at": "2026-06-20T21:53:14.410Z"
     },
     {
       "id": "prod_1773867595760_b5f1ftr6u",
@@ -1758,15 +1741,15 @@
       "precio": 2.35,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000028649_1774015812999.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-20T14:10:33.366Z",
-      "modified_at": "2026-03-20T14:10:33.366Z"
+      "modified_at": "2026-06-20T21:53:14.410Z"
     },
     {
       "id": "prod_1774061850971_c8jyb0gq1",
@@ -1790,26 +1773,26 @@
       "nombre": "Néctar de Mango 250ml",
       "categoria": "Bebidas no alcohólicas",
       "precio": 1.5,
-      "descuento": 0,
+      "descuento": 36.67,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "oip_1774063422183.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-21T03:32:50.297Z",
-      "modified_at": "2026-05-01T15:42:48.191Z"
+      "modified_at": "2026-06-20T21:53:14.410Z"
     },
     {
       "id": "prod_1774222439833_s0jwz3gyf",
       "nombre": "Jamón Bravo 2kg",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 22.5,
+      "precio": 25,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "1000065528_1777745976144.jpg"
@@ -1817,7 +1800,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-22T23:41:29.685Z",
-      "modified_at": "2026-05-22T20:48:34.853Z"
+      "modified_at": "2026-06-20T21:53:14.410Z"
     },
     {
       "id": "prod_1774222653850_9m6grgvh0",
@@ -2028,23 +2011,23 @@
       "nombre": "Paca de Arroz 30 bolsas 1Kg / 66lbs",
       "categoria": "Despensa",
       "precio": 45,
-      "descuento": 0,
+      "descuento": 11.11,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "paca_arroz.jpg"
       ],
       "descripcion": "Trae un total de 30 bolsas de arros de 1kg cada una haciendo un total de 66lbs",
       "disponibilidad": true,
       "created_at": "2026-04-08T01:52:37.025Z",
-      "modified_at": "2026-05-05T23:56:39.701Z"
+      "modified_at": "2026-06-20T21:53:14.411Z"
     },
     {
       "id": "prod_1776151451302_wkzwq860c",
-      "nombre": "Pack de 4 Yogurts (Fresa, Platanito, Natural, Macedonia)",
+      "nombre": "Pack de 4 Yogures (Plátano ,Macedonia)",
       "categoria": "Lácteos",
-      "precio": 2.97,
+      "precio": 3,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -2055,7 +2038,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-14T07:24:23.743Z",
-      "modified_at": "2026-05-06T21:29:49.216Z"
+      "modified_at": "2026-06-20T21:53:14.411Z"
     },
     {
       "id": "prod_1776151682596_5hem5fvxa",
@@ -2143,6 +2126,23 @@
       "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
+      "id": "prod_1776151970517_o4p40xl3f",
+      "nombre": "Salchichas miniFrankfurt 1kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 9.95,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "15_1776151970522.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": false,
+      "created_at": "2026-04-14T07:50:01.662Z",
+      "modified_at": "2026-05-12T13:48:05.276Z"
+    },
+    {
       "id": "prod_1776152038867_riytl6qtv",
       "nombre": "Filetes de Tilapia 1lb",
       "categoria": "Cárnicos y Embutidos",
@@ -2217,15 +2217,15 @@
       "precio": 3.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "5_1776152884787.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-14T07:50:08.379Z",
-      "modified_at": "2026-04-14T07:50:08.379Z"
+      "modified_at": "2026-06-20T21:53:14.411Z"
     },
     {
       "id": "prod_1776408366475_c7fpx7qya",
@@ -2368,17 +2368,17 @@
       "nombre": "Garbanzos Vima 2.5kg",
       "categoria": "Despensa",
       "precio": 8.79,
-      "descuento": 0,
+      "descuento": 20.48,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "3d85c876-f63d-465b-b8ea-2fe91b23fd2a_1777105074365.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-25T08:27:33.171Z",
-      "modified_at": "2026-04-25T08:27:33.171Z"
+      "modified_at": "2026-06-20T21:53:14.411Z"
     },
     {
       "id": "prod_1777105220813_glq0vi9ad",
@@ -2470,17 +2470,17 @@
       "nombre": "Paquete de puré de papa en copos 1kg",
       "categoria": "Despensa",
       "precio": 8.95,
-      "descuento": 0,
+      "descuento": 33.52,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "44aae64a-4101-4cce-b9a1-e636c98d0c4e_1777105551796.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-25T08:27:43.924Z",
-      "modified_at": "2026-04-25T08:27:43.924Z"
+      "modified_at": "2026-06-20T21:53:14.411Z"
     },
     {
       "id": "prod_1777105643022_j2j9t764k",
@@ -2521,17 +2521,17 @@
       "nombre": "Caja de Malta Boa",
       "categoria": "Bebidas no alcohólicas",
       "precio": 24,
-      "descuento": 0,
+      "descuento": 16.67,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "1000066084_1777744697930.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-05-02T18:19:49.866Z",
-      "modified_at": "2026-05-02T18:19:49.866Z"
+      "modified_at": "2026-06-20T21:53:14.411Z"
     },
     {
       "id": "prod_1777744940773_l4rwx3dni",
@@ -2572,17 +2572,17 @@
       "nombre": "Sardina Entera 1lb",
       "categoria": "Cárnicos y Embutidos",
       "precio": 4.97,
-      "descuento": 0,
+      "descuento": 19.52,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "1000065559_1777745328605.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-05-02T18:19:54.071Z",
-      "modified_at": "2026-05-02T18:19:54.071Z"
+      "modified_at": "2026-06-20T21:53:14.411Z"
     },
     {
       "id": "prod_1777745695199_ib8pmu14r",
@@ -2946,17 +2946,17 @@
       "nombre": "Caja de nectar de mango 24u",
       "categoria": "Bebidas no alcohólicas",
       "precio": 27,
-      "descuento": 0,
+      "descuento": 23.15,
       "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
+      "nuevo": true,
+      "oferta": true,
       "imagenes": [
         "1000081773_1779297528813.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-05-20T17:19:09.772Z",
-      "modified_at": "2026-05-20T17:19:09.772Z"
+      "modified_at": "2026-06-20T21:53:14.411Z"
     },
     {
       "id": "prod_1779468122529_ajoyuz11y",
