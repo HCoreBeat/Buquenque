@@ -3059,6 +3059,23 @@
       "disponibilidad": true,
       "created_at": "2026-06-07T21:19:13.215Z",
       "modified_at": "2026-06-07T21:19:13.215Z"
+    },
+    {
+      "id": "prod_1781992568846_o6abtahci",
+      "nombre": "Salchichas de pollo(10u)",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 2.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_7891_1781992568868.png"
+      ],
+      "descripcion": "Paquete de salchichas de 10u de pollo ahumadas",
+      "disponibilidad": true,
+      "created_at": "2026-06-20T21:56:28.722Z",
+      "modified_at": "2026-06-20T21:56:28.722Z"
     }
   ]
 }
