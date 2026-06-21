@@ -3067,15 +3067,15 @@
       "precio": 2.75,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "img_7891_1781992568868.png"
+        "img_7891_1781992568868_1782019494976.jpg"
       ],
       "descripcion": "Paquete de salchichas de 10u de pollo ahumadas",
       "disponibilidad": true,
       "created_at": "2026-06-20T21:56:28.722Z",
-      "modified_at": "2026-06-20T21:56:28.722Z"
+      "modified_at": "2026-06-21T05:25:24.117Z"
     },
     {
       "id": "prod_1782001815822_n5g1trxf9",
