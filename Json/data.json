@@ -1,8 +1,8 @@
 {
-    "id": 3,
-    "titulo": "¡El día de papá 🧓🧓!",
-    "mensaje": "¡El Día del Padre ya está aquí! Encuentra el regalo perfecto para papá en nuestra tienda. 🎁",
-    "subtitulo": "\"Papá sienpre ha sido el mejor\" ",
-    "tipo": "success",
-    "icono": "fas fa-award"
+    "id": 1,
+    "titulo": "¿Llenaste el carrito y te diste la vuelta? 🛒✨",
+    "mensaje": "Los antojos no se dejan para mañana. Entra ahora, finaliza tu compra en un par de clics y nosotros nos encargamos de llevártelo todo listo. ¡No dejes que se agoten!",
+    "subtitulo": "\"Lo mejor para ti\" ",
+    "tipo": "info",
+    "icono": "fas fa-truck"
 }
