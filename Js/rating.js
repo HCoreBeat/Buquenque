@@ -94,7 +94,7 @@ export async function sendRating(productId, rating) {
   }
 
   locks.set(productId, true);
-  const starsContainer = document.querySelector(`#product-${productId} .stars`);
+  const starsContainer = getStarsContainer(productId);
   // Feedback mínimo: deshabilitar clicks y atenuar visualmente
   if (starsContainer) {
     starsContainer.dataset.loading = "true";
@@ -146,11 +146,27 @@ export async function sendRating(productId, rating) {
 // Encuentra nodos relevantes para un productId (cards y detalle)
 function findProductNodes(productId) {
   const nodes = [];
-  const byId = document.querySelector(`#product-${productId}`);
-  if (byId) nodes.push(byId);
-  const byData = document.querySelector(`[data-product-id="${productId}"]`);
-  if (byData) nodes.push(byData);
-  return nodes;
+  const targetId = String(productId || '').trim();
+  if (!targetId) return nodes;
+
+  document.querySelectorAll(`[id="product-${targetId}"]`).forEach((node) => nodes.push(node));
+
+  document.querySelectorAll('[data-product-id]').forEach((node) => {
+    if (String(node.dataset.productId || '').trim() === targetId) {
+      nodes.push(node);
+    }
+  });
+
+  return nodes.filter((node, index, arr) => arr.indexOf(node) === index);
+}
+
+function getStarsContainer(productId) {
+  const nodes = findProductNodes(productId);
+  for (const node of nodes) {
+    const stars = node.querySelector('.stars');
+    if (stars) return stars;
+  }
+  return null;
 }
 
 // Caché local en memoria para ratings (reduce fetchs repetidos)

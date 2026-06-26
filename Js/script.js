@@ -1602,6 +1602,7 @@ function renderProducts(productsToRender = products) {
       productEl.className = "product-card";
       // Asignar el id esperado por el módulo de ratings: product-<productId>
       productEl.id = `product-${displayProduct.id}`;
+      productEl.dataset.productId = displayProduct.id;
 
       // ===== AGREGAR CLASE SI ES PRODUCTO RECIENTE =====
       const recentProducts = getRecentProducts ? getRecentProducts(availableProducts) : [];
@@ -2496,7 +2497,7 @@ async function showProductDetail(arg) {
                 }
                 
                 <!-- Rating estilo Amazon -->
-                <div class="detail-rating" data-product-id="${product.id}">
+                <div class="detail-rating" id="product-${product.id}" data-product-id="${product.id}">
                     <div class="detail-rating-top">
                         <div class="stars"></div>
                         <div class="detail-rating-meta">
