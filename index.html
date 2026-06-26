@@ -206,6 +206,19 @@
             </div>
         </section>
 
+        <section class="flash-deals-section" id="flash-deals-section" style="display: none;">
+            <div class="flash-deals-container">
+                <div class="flash-deals-header">
+                    <div>
+                        <p class="flash-deals-kicker"><i class="fas fa-bolt"></i> Ofertas relámpago</p>
+                        <h2>Antes de que se acaben</h2>
+                    </div>
+                    <div class="flash-deals-timer" id="flash-deals-timer">Termina en --:--:--</div>
+                </div>
+                <div class="flash-deals-scroll" id="flash-deals-scroll"></div>
+            </div>
+        </section>
+
         <!-- Sección de Category Card - Packs -->
         <section class="category-card-section" id="category-card-section">
             <div class="category-card-container">
@@ -272,11 +285,14 @@
                 </div>
                 <div class="cart-items" id="cart-items"></div>
                 <div class="empty-cart-panel" id="empty-cart-panel">
-                    <i class="fas fa-shopping-basket"></i>
-                    <h3>Tu carrito está vacío</h3>
-                    <p>Explora nuestros productos y encuentra algo especial</p>
-                    <button class="continue-btn" onclick="toggleCart()">Seguir
-                        comprando</button>
+                    <div class="empty-cart-panel-content">
+                        <i class="fas fa-shopping-basket"></i>
+                        <h3>Tu carrito está vacío</h3>
+                        <p>Explora nuestros productos y encuentra algo especial</p>
+                        <button class="continue-btn" onclick="toggleCart()">Seguir
+                            comprando</button>
+                    </div>
+                    <div class="empty-cart-recommendations" id="empty-cart-recommendations"></div>
                 </div>
                 <div class="cart-total">
                     <p>Total: $<span id="total">0.00</span></p>

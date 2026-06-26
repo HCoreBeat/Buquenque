@@ -20,6 +20,7 @@ const __initialLocationHash = (function () {
 // Caches y utilidades para optimización
 let carouselSlidesCache = null;
 let carouselIndicatorsCache = null;
+let flashDealsTimerInterval = null;
 
 // Debounce helper
 function debounce(fn, wait) {
@@ -30,6 +31,33 @@ function debounce(fn, wait) {
   };
 }
 const SEARCH_DEBOUNCE_MS = 250;
+
+function isMainHomepageView() {
+  const pathIsProductDetail = window.location.pathname.startsWith("/p/");
+  const detailVisible = document.getElementById("product-detail")?.style.display === "block";
+  const packsDetailVisible = document.getElementById("packs-detail")?.style.display === "block";
+  const hash = decodeURIComponent((window.location.hash || "").substring(1) || "");
+  const isCategoryRoute = hash.startsWith("category=");
+  const isPacksRoute = hash === "packs";
+  const isPackRoute = Boolean(
+    Array.isArray(packs) && packs.some((pack) => pack.nombre === hash || pack.id?.toString() === hash)
+  );
+  const isProductRoute = Boolean(hash && findProductByIdOrName(hash));
+
+  return !pathIsProductDetail && !detailVisible && !packsDetailVisible && !isCategoryRoute && !isPacksRoute && !isPackRoute && !isProductRoute;
+}
+
+function setFlashDealsSectionVisible(visible) {
+  const flashDealsSection = document.getElementById("flash-deals-section");
+  if (!flashDealsSection) return;
+
+  const shouldShow = visible && isMainHomepageView();
+  flashDealsSection.style.display = shouldShow ? "block" : "none";
+
+  if (shouldShow) {
+    renderFlashDeals();
+  }
+}
 
 // Helper to determine if a product (or grouped product) should be considered available
 function productIsAvailable(p) {
@@ -608,6 +636,7 @@ async function loadProducts(sourceUrl = "/Json/products.json") {
     renderCategories();
     initPriceFilter();
     renderProducts();
+    renderFlashDeals();
     renderBestSellers();
     renderCategoriesCircle();
     updateCartCount();
@@ -824,7 +853,7 @@ function filterByCategory(category) {
     if (categoryBackButtonWrapper) {
       categoryBackButtonWrapper.style.display = "block";
     }
-    // Ocultar packs, category-card y best-sellers
+    // Ocultar packs, category-card, best-sellers y flash-deals
     hidePacksDetail();
     if (categoryCardSection) {
       categoryCardSection.style.display = "none";
@@ -832,6 +861,7 @@ function filterByCategory(category) {
     if (bestSellersSection) {
       bestSellersSection.style.display = "none";
     }
+    setFlashDealsSectionVisible(false);
     // Actualizar URL con pushState para la categoría
     const categoryHash = `category=${encodeURIComponent(category)}`;
     if (window.location.hash.substring(1) !== categoryHash) {
@@ -849,6 +879,7 @@ function filterByCategory(category) {
     if (bestSellersSection) {
       bestSellersSection.style.display = "block";
     }
+    setFlashDealsSectionVisible(true);
     // Limpiar URL cuando vuelve a "Todo" (solo si hay hash actual)
     if (window.location.hash && window.location.hash !== "#") {
       window.history.pushState({ category: "Todo" }, "Todas las categorías", "#");
@@ -913,6 +944,7 @@ function searchProducts(showSuggestions = true) {
     if (bestSellersSection) bestSellersSection.style.display = "block";
     if (categoryCardSection) categoryCardSection.style.display = "block";
     if (categoriesCircleSection) categoriesCircleSection.style.display = "block";
+    setFlashDealsSectionVisible(true);
     if (packsDetailContainer) packsDetailContainer.style.display = "none";
   }
 
@@ -1914,6 +1946,100 @@ function sortBestSellersEntries(entries) {
 /**
  * Renderiza los productos más vendidos en una sección horizontal con scroll
  */
+function getFlashDealProducts() {
+  if (!Array.isArray(products) || products.length === 0) return [];
+
+  const onSaleProducts = products.filter((product) => productIsAvailable(product) && product.oferta === true);
+  if (onSaleProducts.length === 0) return [];
+
+  const shuffled = [...onSaleProducts].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, Math.min(4, shuffled.length));
+}
+
+function getFlashDealTimeLeft() {
+  const now = new Date();
+  const nextMidnight = new Date(now);
+  nextMidnight.setHours(24, 0, 0, 0);
+  const diff = nextMidnight.getTime() - now.getTime();
+
+  if (diff <= 0) {
+    return { hours: 0, minutes: 0, seconds: 0 }; 
+  }
+
+  const hours = Math.floor(diff / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  return { hours, minutes, seconds };
+}
+
+function updateFlashDealsTimer() {
+  const timerElement = document.getElementById("flash-deals-timer");
+  if (!timerElement) return;
+
+  const { hours, minutes, seconds } = getFlashDealTimeLeft();
+  timerElement.textContent = `Termina en ${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+}
+
+function renderFlashDeals() {
+  const section = document.getElementById("flash-deals-section");
+  const flashDealsScroll = document.getElementById("flash-deals-scroll");
+
+  if (!section || !flashDealsScroll) return;
+
+  if (!isMainHomepageView()) {
+    section.style.display = "none";
+    if (flashDealsTimerInterval) {
+      clearInterval(flashDealsTimerInterval);
+      flashDealsTimerInterval = null;
+    }
+    return;
+  }
+
+  const flashDeals = getFlashDealProducts();
+
+  if (!flashDeals.length) {
+    section.style.display = "none";
+    if (flashDealsTimerInterval) {
+      clearInterval(flashDealsTimerInterval);
+      flashDealsTimerInterval = null;
+    }
+    return;
+  }
+
+  section.style.display = "block";
+  flashDealsScroll.innerHTML = "";
+
+  flashDeals.forEach((product) => {
+    const finalPrice = (product.precio * (1 - product.descuento / 100)).toFixed(2);
+    const card = document.createElement("article");
+    card.className = "flash-deal-card";
+    card.onclick = () => showProductDetail(encodeURIComponent(product.nombre));
+
+    card.innerHTML = `
+      <div class="flash-deal-image-container">
+        <span class="flash-deal-badge">Flash</span>
+        <img class="flash-deal-image" src="Images/products/${product.imagenes?.[0] || product.imagen || 'product-placeholder.svg'}" alt="${product.nombre}" loading="lazy" decoding="async" onerror="this.src='Images/product-placeholder.svg'">
+      </div>
+      <div class="flash-deal-info">
+        <h3 class="flash-deal-title">${product.nombre}</h3>
+        <div class="flash-deal-price">
+          <span class="flash-deal-price-current">$${finalPrice}</span>
+          <span class="flash-deal-price-original">$${Number(product.precio).toFixed(2)}</span>
+          <span class="flash-deal-discount">-${Math.round(product.descuento)}%</span>
+        </div>
+        <button class="flash-deal-cta" onclick="event.stopPropagation(); addToCart('${encodeURIComponent(product.nombre)}', false, event)">Añadir rápido</button>
+      </div>
+    `;
+
+    flashDealsScroll.appendChild(card);
+  });
+
+  updateFlashDealsTimer();
+  if (flashDealsTimerInterval) clearInterval(flashDealsTimerInterval);
+  flashDealsTimerInterval = setInterval(updateFlashDealsTimer, 1000);
+}
+
 function renderBestSellers() {
   const bestSellersScroll = document.getElementById("best-sellers-scroll");
 
@@ -2146,6 +2272,7 @@ async function showProductDetail(arg) {
   // elementos de UI a ocultar antes de mostrar el detalle
   if (bannerContainer) bannerContainer.style.display = "none";
   if (bestSellersSection) bestSellersSection.style.display = "none";
+  setFlashDealsSectionVisible(false);
   const categoriesCircleSection = document.querySelector(".categories-circle-section");
   if (categoriesCircleSection) categoriesCircleSection.style.display = "none";
   const categoryCardSection = document.getElementById("category-card-section");
@@ -2325,7 +2452,12 @@ async function showProductDetail(arg) {
                 </div>`
                 : '<div class="no-suggestions">No hay productos relacionados disponibles en este momento.</div>'
             }
-        </div>`; 
+        </div>`;
+
+  const frequentlyBoughtTogetherHTML = generateFrequentlyBoughtTogetherHTML(
+    product,
+    suggestedProducts.slice(0, 2)
+  );
 
   detailContainer.innerHTML = `
         <div class="detail-container">
@@ -2451,6 +2583,8 @@ async function showProductDetail(arg) {
                         ${specs.join("")}
                     </ul>
                 </div>
+
+                ${frequentlyBoughtTogetherHTML}
             </div>
             
             <div class="back-btn-container">
@@ -2718,6 +2852,9 @@ function hideProductDetail() {
     bestSellersSection.style.display = "block"; // <-- MUESTRA LOS BEST-SELLERS
   }
 
+  // Mostrar la sección de ofertas relámpago cuando se vuelve a la página principal
+  setFlashDealsSectionVisible(true);
+
   // Mostrar la sección de categorías circulares cuando se vuelve a la página principal
   const categoriesCircleSection = document.querySelector(".categories-circle-section");
   if (categoriesCircleSection) {
@@ -2736,6 +2873,132 @@ function hideProductDetail() {
   }
 
   currentProduct = null;
+}
+
+function generateFrequentlyBoughtTogetherHTML(mainProduct, suggestedProducts) {
+  const bundleProducts = [mainProduct, ...(Array.isArray(suggestedProducts) ? suggestedProducts : [])]
+    .filter(Boolean)
+    .filter((product, index, arr) => arr.findIndex((item) => item && item.nombre === product.nombre) === index)
+    .slice(0, 3);
+
+  if (bundleProducts.length < 2) return "";
+
+  const totalBundlePrice = bundleProducts.reduce((sum, product) => {
+    const isOnSale = product?.oferta && product?.descuento > 0;
+    const unitPrice = isOnSale
+      ? product.precio * (1 - product.descuento / 100)
+      : product.precio;
+    return sum + unitPrice;
+  }, 0);
+
+  const bundleProductNames = bundleProducts.map((product) => product.nombre);
+
+  const bundleItemsHTML = bundleProducts
+    .map((product, index) => {
+      const isOnSale = product?.oferta && product?.descuento > 0;
+      const finalPrice = isOnSale
+        ? (product.precio * (1 - product.descuento / 100)).toFixed(2)
+        : product.precio.toFixed(2);
+      const imageSrc = product?.imagenes?.[0]
+        ? `Images/products/${product.imagenes[0]}`
+        : "Images/products/placeholder-product.jpg";
+
+      return `
+        <div class="fbt-product-card">
+          <div class="fbt-image-wrap">
+            <img src="${imageSrc}" alt="${product.cleanName || product.nombre}" loading="lazy" decoding="async">
+          </div>
+          <div class="fbt-product-info">
+            <h4>${product.cleanName || product.nombre}</h4>
+            <p class="fbt-price">$${finalPrice}</p>
+          </div>
+        </div>
+        ${index < bundleProducts.length - 1 ? '<div class="fbt-plus"><i class="fas fa-plus"></i></div>' : ""}
+      `;
+    })
+    .join("");
+
+  return `
+    <div class="frequently-bought-together">
+      <div class="fbt-header">
+        <h3>Comprados juntos habitualmente</h3>
+        <p>Agrega este combo en un solo clic y ahorra tiempo.</p>
+      </div>
+      <div class="fbt-items">
+        ${bundleItemsHTML}
+      </div>
+      <div class="fbt-action-box">
+        <div class="fbt-total">
+          <span>Total del combo</span>
+          <strong>$${totalBundlePrice.toFixed(2)}</strong>
+        </div>
+        <button class="fbt-add-btn" onclick='addBundleToCart(${JSON.stringify(bundleProductNames)}, event)'>
+          <i class="fas fa-cart-plus"></i> Añadir combo
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+function addBundleToCart(productNames, event) {
+  if (event) event.stopPropagation();
+
+  const normalizedNames = Array.isArray(productNames)
+    ? [...new Set(productNames.filter(Boolean).map((name) => decodeURIComponent(String(name))))]
+    : [decodeURIComponent(String(productNames))];
+
+  if (normalizedNames.length === 0) return;
+
+  let addedProducts = [];
+  let totalAddedQuantity = 0;
+
+  for (const decodedName of normalizedNames) {
+    const product =
+      products.find((p) => p.nombre === decodedName) ||
+      products
+        .flatMap((p) => (p.isGrouped ? p.variants : []))
+        .find((v) => v.nombre === decodedName);
+
+    if (!product) continue;
+
+    if (!product.disponibilidad) {
+      showCartNotification("Este producto está agotado", 1, "error");
+      return;
+    }
+
+    const existingItem = cart.find((item) => {
+      const itemData = item.product || item.pack;
+      return itemData && itemData.nombre === decodedName;
+    });
+
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      cart.push({ product: product, quantity: 1 });
+    }
+
+    addedProducts.push(product);
+    totalAddedQuantity += 1;
+  }
+
+  if (addedProducts.length === 0) return;
+
+  if (evento && evento.activo) {
+    const newlyFoundCodes = addedProducts.filter(
+      (product) => product.codigo_secreto && !secretCodesFound.has(product.codigo_secreto)
+    );
+
+    newlyFoundCodes.forEach((product) => secretCodesFound.add(product.codigo_secreto));
+
+    if (newlyFoundCodes.length > 0) {
+      showCartNotification("¡Código encontrado!", 1, "success");
+    }
+  }
+
+  updateCart();
+  saveCart();
+  showCartNotification("Productos del bundle", totalAddedQuantity);
+  updateAllProductQuantitySections();
 }
 
 // Carrito
@@ -2797,6 +3060,75 @@ function addToCart(productName, fromDetail = false, event) {
   if (fromDetail && evento && evento.activo && product.codigo_secreto) {
     updateProductDetailSecretIndicator(product);
   }
+}
+
+function getRecommendedPacksForEmptyCart() {
+  if (!Array.isArray(packs) || packs.length === 0) return [];
+
+  const availablePacks = packs.filter((pack) => pack && pack.disponible !== false);
+  if (availablePacks.length === 0) return [];
+
+  const recommended = [...availablePacks]
+    .sort((a, b) => {
+      const aScore = (a.top ? 2 : 0) + (a.nuevo ? 1 : 0);
+      const bScore = (b.top ? 2 : 0) + (b.nuevo ? 1 : 0);
+      return bScore - aScore;
+    })
+    .slice(0, 3);
+
+  return recommended;
+}
+
+function renderEmptyCartRecommendations() {
+  const emptyPanel = document.getElementById("empty-cart-panel");
+  const recommendationsContainer = document.getElementById("empty-cart-recommendations");
+
+  if (!emptyPanel || !recommendationsContainer) return;
+
+  if (cart.length > 0) {
+    recommendationsContainer.innerHTML = "";
+    recommendationsContainer.style.display = "none";
+    return;
+  }
+
+  const recommendedPacks = getRecommendedPacksForEmptyCart();
+
+  if (recommendedPacks.length === 0) {
+    recommendationsContainer.innerHTML = "";
+    recommendationsContainer.style.display = "none";
+    return;
+  }
+
+  const cardsHTML = recommendedPacks.map((pack) => {
+    const badges = [];
+    if (pack.top) badges.push('<span class="empty-cart-rec-badge top">Más vendido</span>');
+    if (pack.nuevo) badges.push('<span class="empty-cart-rec-badge nuevo">Nuevo</span>');
+
+    const price = pack.descuento > 0
+      ? (pack.precio * (1 - pack.descuento / 100)).toFixed(2)
+      : pack.precio.toFixed(2);
+    const description = pack.descripcion ? pack.descripcion : "Ideal para completar tu compra con un pack práctico.";
+    const imagePath = `Images/Packs/${pack.imagen}`;
+
+    return `
+      <article class="empty-cart-rec-card">
+        <img class="empty-cart-rec-image" src="${imagePath}" alt="${pack.nombre}" loading="lazy" onerror="this.src='Images/pack-placeholder.svg'">
+        <div class="empty-cart-rec-info">
+          <div class="empty-cart-rec-badges">${badges.join('')}</div>
+          <h4>${pack.nombre}</h4>
+          <p>${description}</p>
+          <div class="empty-cart-rec-price">$${price}</div>
+          <button class="empty-cart-quick-add-btn" onclick="addPackToCart('${encodeURIComponent(pack.nombre)}', event)">Añadir rápido</button>
+        </div>
+      </article>
+    `;
+  }).join("");
+
+  recommendationsContainer.innerHTML = `
+    <div class="empty-cart-recommendations-title">También te pueden interesar</div>
+    <div class="empty-cart-recommendations-list">${cardsHTML}</div>
+  `;
+  recommendationsContainer.style.display = "block";
 }
 
 function updateCart() {
@@ -2911,6 +3243,7 @@ function updateCart() {
   }
 
   cartTotal = total; // mantener total del carrito para reglas de evento
+  renderEmptyCartRecommendations();
   updateSecretCodesPanel();
   updateCartCount();
   
@@ -3520,6 +3853,7 @@ async function loadPacks() {
     });
 
     renderCategoryCard();
+    renderEmptyCartRecommendations();
   } catch (error) {
     console.error("Error al cargar packs:", error);
   }
@@ -3594,6 +3928,7 @@ function showAllPacks() {
   if (categoriesCircleSection) categoriesCircleSection.style.display = "none";
   if (bannerContainer) bannerContainer.style.display = "none";
   if (bestSellersSection) bestSellersSection.style.display = "none";
+  setFlashDealsSectionVisible(false);
   if (productsContainer) productsContainer.style.display = "none";
   
   // Mostrar panel de packs
@@ -3620,6 +3955,7 @@ function renderPacksDetail() {
   if (categoriesCircleSection) categoriesCircleSection.style.display = "none";
   if (bannerContainer) bannerContainer.style.display = "none";
   if (bestSellersSection) bestSellersSection.style.display = "none";
+  setFlashDealsSectionVisible(false);
   if (productsContainer) productsContainer.style.display = "none";
   if (detailContainer) {
     detailContainer.style.display = "none";
@@ -3730,6 +4066,7 @@ function showPackDetail(packName, event) {
   const categoriesCircleSection = document.querySelector(".categories-circle-section");
   const bannerContainer = document.querySelector(".carousel-container");
   const bestSellersSection = document.querySelector(".best-sellers-section");
+  const flashDealsSection = document.getElementById("flash-deals-section");
   const productsContainer = document.getElementById("products-container");
   const packsDetailContainer = document.getElementById("packs-detail");
   
@@ -3737,6 +4074,7 @@ function showPackDetail(packName, event) {
   if (categoriesCircleSection) categoriesCircleSection.style.display = "none";
   if (bannerContainer) bannerContainer.style.display = "none";
   if (bestSellersSection) bestSellersSection.style.display = "none";
+  setFlashDealsSectionVisible(false);
   if (productsContainer) productsContainer.style.display = "none";
   if (packsDetailContainer) packsDetailContainer.style.display = "none";
   
@@ -3878,6 +4216,7 @@ function hidePackDetail() {
   if (categoriesCircleSection) categoriesCircleSection.style.display = "block";
   if (bannerContainer) bannerContainer.style.display = "block";
   if (bestSellersSection) bestSellersSection.style.display = "block";
+  setFlashDealsSectionVisible(true);
   if (productsContainer) productsContainer.style.display = "grid";
 }
 
@@ -3931,6 +4270,7 @@ function hidePacksDetail() {
   const categoriesCircleSection = document.querySelector(".categories-circle-section");
   const bannerContainer = document.querySelector(".carousel-container");
   const bestSellersSection = document.querySelector(".best-sellers-section");
+  const flashDealsSection = document.getElementById("flash-deals-section");
   const productsContainer = document.getElementById("products-container");
   
   if (packsDetailContainer) {
@@ -3956,6 +4296,7 @@ function hidePacksDetail() {
   if (categoriesCircleSection) categoriesCircleSection.style.display = "block";
   if (bannerContainer) bannerContainer.style.display = "block";
   if (bestSellersSection) bestSellersSection.style.display = "block";
+  setFlashDealsSectionVisible(true);
   if (productsContainer) productsContainer.style.display = "grid";
 }
 

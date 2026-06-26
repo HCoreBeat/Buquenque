@@ -19,9 +19,57 @@ function initializePaymentSystem() {
     const paymentForm = document.getElementById('payment-form');
     if (paymentForm) {
         paymentForm.addEventListener('submit', processPayment);
+        paymentForm.addEventListener('click', handlePaymentSubmitClick);
     }
 
     injectPaymentStyles();
+}
+
+function handlePaymentSubmitClick(e) {
+    const submitBtn = e.target.closest('.submit-btn');
+    if (!submitBtn) return;
+
+    const form = submitBtn.closest('form');
+    if (!form) return;
+
+    if (isProcessingPayment || form.getAttribute('data-submitting') === 'true') {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        return;
+    }
+
+    beginPaymentSubmission(form, submitBtn);
+}
+
+function beginPaymentSubmission(form, submitBtn) {
+    if (!form) return;
+
+    form.setAttribute('data-submitting', 'true');
+    isProcessingPayment = true;
+
+    if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.dataset.originalText = submitBtn.textContent.trim();
+        submitBtn.textContent = 'Procesando...';
+    }
+}
+
+function resetPaymentSubmissionState(form = document.getElementById('payment-form')) {
+    const submitBtn = form?.querySelector('.submit-btn');
+
+    if (form) {
+        form.removeAttribute('data-submitting');
+        form.classList.remove('is-submitting');
+    }
+
+    isProcessingPayment = false;
+
+    if (submitBtn) {
+        submitBtn.disabled = false;
+        if (submitBtn.dataset.originalText) {
+            submitBtn.textContent = submitBtn.dataset.originalText;
+        }
+    }
 }
 
 // Función para enviar estadísticas de visualización de página
@@ -145,6 +193,8 @@ function showPaymentSection() {
     const checkbox = document.getElementById('location-confirm');
     if (checkbox) checkbox.checked = false;
 
+    resetPaymentSubmissionState();
+
     // cargar lista de países compatibles
     loadPaymentCountryList();
 }
@@ -252,11 +302,16 @@ let isProcessingPayment = false; // bandera para evitar envíos múltiples
 async function processPayment(e) {
     e.preventDefault();
 
+    const form = e.target;
+    const submitBtn = form?.querySelector('.submit-btn');
+
     // protección contra doble envío
-    if (isProcessingPayment) {
+    if (isProcessingPayment || form?.getAttribute('data-submitting') === 'true') {
         console.warn('El pago ya está en proceso, espera un momento.');
         return;
     }
+
+    beginPaymentSubmission(form, submitBtn);
 
     // chequear checkbox de confirmación de país
     const checkbox = document.getElementById('location-confirm');
@@ -264,10 +319,6 @@ async function processPayment(e) {
         showPaymentNotification('Marca la casilla después de leer la lista y verificar que tu país aparece entre los compatibles.', 'error');
         return;
     }
-
-    isProcessingPayment = true;
-    const submitBtn = e.target.querySelector('.submit-btn');
-    if (submitBtn) submitBtn.disabled = true;
 
     const loadingNotification = showPaymentNotification('Procesando tu pedido...', 'loading');
 
@@ -340,11 +391,9 @@ async function processPayment(e) {
             }, 300);
         }
     } finally {
-        // restaurar bandera y reactivar botón después de unos segundos
         setTimeout(() => {
-            isProcessingPayment = false;
-            if (submitBtn) submitBtn.disabled = false;
-        }, 3000);
+            resetPaymentSubmissionState(form);
+        }, 1500);
     }
 }
 
