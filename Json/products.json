@@ -324,23 +324,6 @@
       "modified_at": "2026-06-20T21:53:12.463Z"
     },
     {
-      "id": "prod_1768441690510_3adjmtv4j",
-      "nombre": "Protector Diario (18u)",
-      "categoria": "Aseo y Belleza",
-      "precio": 1.4,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Protector_Diario_(18u).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Protector Diario (18u), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
-      "created_at": null,
-      "modified_at": null
-    },
-    {
       "id": "prod_1769297232608_t1t8j7j86",
       "nombre": "Lomitos de Atún en aceite",
       "categoria": "Cárnicos y Embutidos",
