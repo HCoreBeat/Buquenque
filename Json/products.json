@@ -1515,20 +1515,20 @@
     },
     {
       "id": "prod_1772443671662_3zlv75nd6",
-      "nombre": "Leche condensada La Keka",
+      "nombre": "Leche condensada 390g",
       "categoria": "Lácteos",
       "precio": 1.97,
-      "descuento": 7.11,
+      "descuento": 11.17,
       "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
+      "nuevo": false,
+      "oferta": true,
       "imagenes": [
-        "11_1772443671681.jpg"
+        "bd617d35-e71d-447e-8621-bc02d549a7e6_1782605707616.jpeg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-02T09:28:25.562Z",
-      "modified_at": "2026-03-21T03:32:50.302Z"
+      "modified_at": "2026-06-28T00:15:19.572Z"
     },
     {
       "id": "prod_1772732759012_tojcqpnpu",
@@ -2297,20 +2297,20 @@
     },
     {
       "id": "prod_1776590917088_17s74pewj",
-      "nombre": "Leche en polvo Entera macro food 1kg",
+      "nombre": "Leche en Polvo 1kg",
       "categoria": "Lácteos",
-      "precio": 9.75,
+      "precio": 10,
       "descuento": 0,
-      "mas_vendido": false,
+      "mas_vendido": true,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
         "leche_macrofood_1776590917109.jpg"
       ],
-      "descripcion": "",
-      "disponibilidad": false,
+      "descripcion": "Leche entera ,en polvo Macro Food",
+      "disponibilidad": true,
       "created_at": "2026-04-19T09:28:51.094Z",
-      "modified_at": "2026-06-26T16:10:17.945Z"
+      "modified_at": "2026-06-28T00:15:17.313Z"
     },
     {
       "id": "prod_1777104839776_bmwky6d4m",
