@@ -278,8 +278,8 @@
 }
 
 .cart-notification.removed {
-    background: var(--rojo-oferta);
-    color: white;
+    background: var(--rojo-mas-vendido);
+    color: var(--color-principal);
     display: flex;
     align-items: center;
     gap: 0.5rem;

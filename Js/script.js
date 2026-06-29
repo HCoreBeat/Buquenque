@@ -30,6 +30,108 @@ function debounce(fn, wait) {
     t = setTimeout(() => fn.apply(this, args), wait);
   };
 }
+
+// Floating panel for mobile detail: variables
+let __detailFloatingObserver = null;
+let __detailFloatingPanel = null;
+
+function initDetailFloatingPanel(product) {
+  // remove if exists
+  removeDetailFloatingPanel();
+
+  if (!product) return;
+
+  // only enable on small viewports
+  if (window.innerWidth > 900) return;
+
+  const panel = document.createElement('div');
+  panel.className = 'detail-floating-panel';
+  panel.id = 'detail-floating-panel';
+  panel.setAttribute('aria-hidden', 'true');
+
+  const imgSrc = product.imagenes && product.imagenes[0] ? `Images/products/${product.imagenes[0]}` : '';
+
+  panel.innerHTML = `
+    <div class="dfp-inner">
+      <div class="dfp-thumb">
+        <img src="${imgSrc}" alt="${product.cleanName}" class="dfp-image" />
+      </div>
+      <div class="dfp-body">
+        <div class="dfp-title">${product.cleanName}</div>
+        <div class="dfp-actions">
+          <button class="dfp-add-btn add-to-cart-btn" ${!product.disponibilidad ? 'disabled' : ''}>
+            <i class="fas fa-cart-plus"></i>
+            ${!product.disponibilidad ? 'Agotado' : 'Añadir'}
+          </button>
+        </div>
+      </div>
+      <button class="dfp-close" aria-label="Cerrar">×</button>
+    </div>
+  `;
+
+  document.body.appendChild(panel);
+  __detailFloatingPanel = panel;
+
+  // wire actions
+  const addBtn = panel.querySelector('.dfp-add-btn');
+  if (addBtn) {
+    addBtn.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      // call existing addToCart, using product name and detail flag
+      try { addToCart(product.nombre, true, ev); } catch (e) { console.error(e); }
+    });
+  }
+  const closeBtn = panel.querySelector('.dfp-close');
+  if (closeBtn) closeBtn.addEventListener('click', () => hideProductDetail());
+
+  // observe visibility of main image and add button
+  const mainImg = document.getElementById('main-product-image');
+  const addBtnInDoc = document.querySelector('#product-detail .add-to-cart-btn');
+
+  const onChange = () => {
+    try {
+      const imgRect = mainImg ? mainImg.getBoundingClientRect() : null;
+      const addRect = addBtnInDoc ? addBtnInDoc.getBoundingClientRect() : null;
+      const imgVisible = imgRect ? (imgRect.bottom > 0 && imgRect.top < window.innerHeight) : false;
+      const addVisible = addRect ? (addRect.bottom > 0 && addRect.top < window.innerHeight) : false;
+
+      // show panel when image is not visible and add button is not visible
+      if (!imgVisible && !addVisible && window.innerWidth <= 900) {
+        panel.classList.add('show');
+        panel.setAttribute('aria-hidden', 'false');
+      } else {
+        panel.classList.remove('show');
+        panel.setAttribute('aria-hidden', 'true');
+      }
+    } catch (err) {
+      console.warn('Error en onChange panel flotante', err);
+    }
+  };
+
+  // use scroll and resize listeners instead of IntersectionObserver for robustness
+  window.addEventListener('scroll', onChange, { passive: true });
+  window.addEventListener('resize', onChange);
+
+  // store cleanup handler
+  __detailFloatingObserver = { onChange };
+
+  // initial check
+  setTimeout(onChange, 60);
+}
+
+function removeDetailFloatingPanel() {
+  try {
+    if (__detailFloatingPanel) {
+      __detailFloatingPanel.remove();
+      __detailFloatingPanel = null;
+    }
+    if (__detailFloatingObserver) {
+      window.removeEventListener('scroll', __detailFloatingObserver.onChange);
+      window.removeEventListener('resize', __detailFloatingObserver.onChange);
+      __detailFloatingObserver = null;
+    }
+  } catch (e) { console.warn(e); }
+}
 const SEARCH_DEBOUNCE_MS = 250;
 
 function isMainHomepageView() {
@@ -2526,22 +2628,6 @@ async function showProductDetail(arg) {
                     `
                     }
                 </div>
-
-                <!-- AVISO DE COSTO DE DOMICILIO -->
-                <div class="delivery-info">
-                    <span
-                        style="display:block; padding:12px 16px; background:#ffffff; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); font-size:1em; color:#2c2c2c; line-height:1.55;">
-                        <span class="envio-badge"> ✓ Envío </span>
-
-                        <i class="fas fa-truck-fast"></i>
-                        <br>
-                        Envío gratuito dentro del municipio. Entrega en 24–48 horas. Para envíos
-                        fuera del municipio, el costo del domicilio se coordina al confirmar el
-                        pedido.
-                    </span>
-
-                </div>
-                <!-- FIN AVISO DOMICILIO -->
                 
                 <div class="quantity-section">
                     <label class="quantity-label">Cantidad:</label>
@@ -2597,6 +2683,13 @@ async function showProductDetail(arg) {
             ${suggestedProductsHTML}
         </div>
     `;
+
+  // Initialize mobile floating add-to-cart panel for product detail
+  try {
+    initDetailFloatingPanel(product);
+  } catch (err) {
+    console.warn('No fue posible inicializar el panel flotante del detalle:', err);
+  }
 
   productsContainer.style.display = "none";
   detailContainer.style.display = "block";
@@ -2872,6 +2965,8 @@ function hideProductDetail() {
     detailContainer.style.display = "none";
     detailContainer.innerHTML = "";
   }
+  // remove floating panel and observers when leaving detail
+  try { removeDetailFloatingPanel(); } catch (e) { /* ignore */ }
 
   currentProduct = null;
 }

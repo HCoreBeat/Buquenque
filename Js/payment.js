@@ -38,7 +38,18 @@ function handlePaymentSubmitClick(e) {
         return;
     }
 
-    beginPaymentSubmission(form, submitBtn);
+    // Quick client-side check: require the user to confirm their country
+    const checkbox = document.getElementById('location-confirm');
+    if (checkbox && !checkbox.checked) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        showPaymentNotification('Marca la casilla después de leer la lista y verificar que tu país aparece entre los compatibles.', 'error');
+        return;
+    }
+
+    // Do not call beginPaymentSubmission here; let the submit handler
+    // (`processPayment`) start the submission flow so there's a single
+    // place that sets and resets the submitting state.
 }
 
 function beginPaymentSubmission(form, submitBtn) {
@@ -311,22 +322,33 @@ async function processPayment(e) {
         return;
     }
 
-    beginPaymentSubmission(form, submitBtn);
-
-    // chequear checkbox de confirmación de país
+    // chequear checkbox de confirmación de país BEFORE starting submission
     const checkbox = document.getElementById('location-confirm');
     if (checkbox && !checkbox.checked) {
         showPaymentNotification('Marca la casilla después de leer la lista y verificar que tu país aparece entre los compatibles.', 'error');
         return;
     }
 
+    // validar carrito antes de bloquear UI
+    let cart;
+    try {
+        cart = getValidatedCart();
+        if (cart.length === 0) {
+            showPaymentNotification('Tu carrito está vacío', 'error');
+            return;
+        }
+    } catch (err) {
+        showPaymentNotification('Error validando el carrito: ' + (err.message || err), 'error');
+        return;
+    }
+
+    // Ahora sí iniciamos la UX de envío para evitar condiciones de carrera
+    beginPaymentSubmission(form, submitBtn);
+
     const loadingNotification = showPaymentNotification('Procesando tu pedido...', 'loading');
 
     try {
-        const cart = getValidatedCart();
-        if (cart.length === 0) {
-            throw new Error('Tu carrito está vacío');
-        }
+        // usamos la variable `cart` validada arriba
 
         const formData = validateForm(); // Info del cliente del formulario
         const userData = await gatherUserData(); // Info de IP y país
