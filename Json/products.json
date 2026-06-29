@@ -123,7 +123,7 @@
       "id": "prod_1768441690510_ma2k8r01f",
       "nombre": "Aceite (900ml)",
       "categoria": "Despensa",
-      "precio": 4.5,
+      "precio": 4.85,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -134,7 +134,7 @@
       "descripcion": "Disfruta de la calidad de Aceite (1L), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-06-20T21:53:03.571Z"
+      "modified_at": "2026-06-29T18:24:58.993Z"
     },
     {
       "id": "prod_1768441690510_ijaa8o33p",
@@ -310,7 +310,7 @@
       "id": "prod_1769226986599_pfsrf2pax",
       "nombre": "Detergente Defá Fragancia lavanda  (1kg)",
       "categoria": "Aseo y Belleza",
-      "precio": 2.5,
+      "precio": 3.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -321,7 +321,7 @@
       "descripcion": "Disfruta de la calidad de Detergente (1kg), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-06-20T21:53:12.463Z"
+      "modified_at": "2026-06-29T18:24:58.993Z"
     },
     {
       "id": "prod_1768441690510_3adjmtv4j",
@@ -735,7 +735,7 @@
       "id": "prod_1768441690510_ynzwusik9",
       "nombre": "Paquete de azúcar 1kg",
       "categoria": "Despensa",
-      "precio": 2.17,
+      "precio": 2.5,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -746,7 +746,7 @@
       "descripcion": "Disfruta de la calidad de Paquete de azúcar porsionado 1kg, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-12T13:48:05.275Z"
+      "modified_at": "2026-06-29T18:24:58.993Z"
     },
     {
       "id": "prod_1768441690510_covgyshrh",
@@ -880,9 +880,9 @@
         "Galletas_Petit_Biscuits_de_coco_80g.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Galletas Petit Biscuits de coco 80g, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-03-21T03:32:40.230Z"
+      "modified_at": "2026-06-29T18:24:58.993Z"
     },
     {
       "id": "prod_1768443205852_ac2tz1k6u",
@@ -1021,23 +1021,6 @@
       "modified_at": null
     },
     {
-      "id": "prod_1769613603917_5rg815imv",
-      "nombre": "Pollo entero congelado(1800g)",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 11.29,
-      "descuento": 38,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "descarga_1776151869855.jpeg"
-      ],
-      "descripcion": "Pollo entero fresco\nPollo entero de alta calidad, ideal para asar, guisar, hornear o preparar en diferentes recetas. Carne jugosa, suave y con excelente sabor, perfecto para comidas familiares y ocasiones especiales.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-04-22T06:16:58.898Z"
-    },
-    {
       "id": "prod_1768918643793_wff5w2f61",
       "nombre": "Frijoles rojos x(lbs)",
       "categoria": "Despensa",
@@ -1092,7 +1075,7 @@
       "id": "prod_1769398503693_qcw6jw6ui",
       "nombre": "Coffee Mate(155porciones)",
       "categoria": "Despensa",
-      "precio": 6,
+      "precio": 7,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -1103,7 +1086,7 @@
       "descripcion": "Sabor equilibrado que complementa sin opacar el café. Textura liviana que aporta cremosidad sin necesidad de lácteos. Fácil de disolver, ideal para usar en servicio rápido o autoservicio.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-06-20T21:53:14.410Z"
+      "modified_at": "2026-06-29T18:25:04.831Z"
     },
     {
       "id": "prod_1769920633225_umws2zt0k",
@@ -1121,57 +1104,6 @@
       "disponibilidad": true,
       "created_at": "2026-02-01T04:25:54.206Z",
       "modified_at": "2026-02-01T04:25:54.206Z"
-    },
-    {
-      "id": "prod_1769974779698_8olg1rh5p",
-      "nombre": "Jugo de (Frutas Mixtas)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 0.7,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "29033_1769921130545.jpg"
-      ],
-      "descripcion": "Disfruta de la delicia y frescura del jugo de frutas mixtas ideal para meriendas y refrescar en cualquier horario",
-      "disponibilidad": false,
-      "created_at": "2026-02-01T04:45:46.636Z",
-      "modified_at": "2026-05-05T16:22:29.231Z"
-    },
-    {
-      "id": "prod_1770819915685_uohxroax1",
-      "nombre": "Saco de Arroz 25Kg",
-      "categoria": "Despensa",
-      "precio": 47,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "3c780799-c4c7-444e-b98b-c75c8f9ed8a7_1770819915698.jpeg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-02-11T14:25:26.248Z",
-      "modified_at": "2026-04-22T12:14:24.286Z"
-    },
-    {
-      "id": "prod_1770927123433_kjav7smv7",
-      "nombre": "Caja de pollo",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 60,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "41994_1770927123619.jpg"
-      ],
-      "descripcion": "Esta caja contiene 4 paquetes de 10lbs de cuartos de pollo",
-      "disponibilidad": false,
-      "created_at": "2026-02-12T20:12:17.667Z",
-      "modified_at": "2026-04-26T11:15:48.446Z"
     },
     {
       "id": "prod_1771255174691_cpxbapmjz",
@@ -1242,27 +1174,10 @@
       "modified_at": "2026-02-16T15:32:10.534Z"
     },
     {
-      "id": "prod_1771255643827_anfwn47zs",
-      "nombre": "Troncho de pescado en tomate 425g",
-      "categoria": "Despensa",
-      "precio": 3.99,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "44797_1771255644014.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-02-16T15:32:12.756Z",
-      "modified_at": "2026-05-28T16:30:08.660Z"
-    },
-    {
       "id": "prod_1771255763596_eaz128kna",
       "nombre": "Atún premium en aceite vegetal 1Kg",
       "categoria": "Despensa",
-      "precio": 13.69,
+      "precio": 15,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -1273,7 +1188,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-02-16T15:32:15.125Z",
-      "modified_at": "2026-04-14T07:50:09.596Z"
+      "modified_at": "2026-06-29T18:25:11.860Z"
     },
     {
       "id": "prod_1771255834189_mbvu28jpy",
@@ -1282,15 +1197,15 @@
       "precio": 4,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "44801_1771255834329.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-16T15:32:16.523Z",
-      "modified_at": "2026-05-12T16:53:52.142Z"
+      "modified_at": "2026-06-29T18:25:11.860Z"
     },
     {
       "id": "prod_1771953998923_b4sri6e8j",
@@ -1314,17 +1229,17 @@
       "nombre": "Sumo de Limon 500ml",
       "categoria": "Despensa",
       "precio": 4.17,
-      "descuento": 10.07,
+      "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
-      "oferta": true,
+      "nuevo": true,
+      "oferta": false,
       "imagenes": [
         "img-20260225-wa0008_1772069960687.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-02-26T01:40:51.525Z",
-      "modified_at": "2026-05-12T16:53:52.142Z"
+      "modified_at": "2026-06-29T18:25:11.860Z"
     },
     {
       "id": "prod_1772300754323_lz1rnolgm",
@@ -1350,7 +1265,7 @@
       "precio": 47,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "a660893b-e60c-4c3b-95eb-19da7b26f75e_1772439456839.jpeg"
@@ -1358,41 +1273,24 @@
       "descripcion": "",
       "disponibilidad": false,
       "created_at": "2026-03-02T08:28:00.164Z",
-      "modified_at": "2026-04-22T12:14:24.285Z"
+      "modified_at": "2026-06-29T18:25:11.860Z"
     },
     {
       "id": "prod_1772439529396_kh3fahrr4",
       "nombre": "Saco de azúcar blanca 25kg",
       "categoria": "Despensa",
-      "precio": 49.99,
-      "descuento": 5.98,
+      "precio": 50,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "c4c5f51b-6cb1-41f0-bfa0-ffa820643fd0_1772439529416.jpeg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-02T08:28:01.312Z",
-      "modified_at": "2026-06-26T20:37:07.532Z"
-    },
-    {
-      "id": "prod_1772439588460_8m93dd12m",
-      "nombre": "Vino Rose",
-      "categoria": "Bebidas alcohólicas",
-      "precio": 12.99,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "7f4366cd-137c-45bd-9f15-7f2f1305f218_1772439588470.jpeg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-02T08:28:02.493Z",
-      "modified_at": "2026-05-06T21:29:49.216Z"
+      "modified_at": "2026-06-29T18:25:11.860Z"
     },
     {
       "id": "prod_1772442996727_xhrueb4xd",
@@ -1518,17 +1416,17 @@
       "nombre": "Leche condensada 390g",
       "categoria": "Lácteos",
       "precio": 1.97,
-      "descuento": 11.17,
+      "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
-      "oferta": true,
+      "nuevo": true,
+      "oferta": false,
       "imagenes": [
         "bd617d35-e71d-447e-8621-bc02d549a7e6_1782605707616.jpeg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-02T09:28:25.562Z",
-      "modified_at": "2026-06-28T00:15:19.572Z"
+      "modified_at": "2026-06-29T18:25:14.742Z"
     },
     {
       "id": "prod_1772732759012_tojcqpnpu",
@@ -1637,17 +1535,17 @@
       "nombre": "Maíz Dulce 1Kg",
       "categoria": "Despensa",
       "precio": 4.99,
-      "descuento": 24.85,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "1000025982_1773856436849.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-18T17:58:52.816Z",
-      "modified_at": "2026-06-26T20:37:07.533Z"
+      "modified_at": "2026-06-29T18:25:14.742Z"
     },
     {
       "id": "prod_1773856496057_pv8a4fqmk",
@@ -1773,17 +1671,17 @@
       "nombre": "Néctar de Mango 250ml",
       "categoria": "Bebidas no alcohólicas",
       "precio": 1.5,
-      "descuento": 36.67,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "oip_1774063422183.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-21T03:32:50.297Z",
-      "modified_at": "2026-06-20T21:53:14.410Z"
+      "modified_at": "2026-06-29T18:25:14.742Z"
     },
     {
       "id": "prod_1774222439833_s0jwz3gyf",
@@ -1875,17 +1773,17 @@
       "nombre": "Leche evaporada 377ml",
       "categoria": "Lácteos",
       "precio": 2.5,
-      "descuento": 30,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "leche_evaporada_vima_377ml_isla360shop-1_1774588196972.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-27T05:24:21.958Z",
-      "modified_at": "2026-06-26T20:37:07.533Z"
+      "modified_at": "2026-06-29T18:25:14.742Z"
     },
     {
       "id": "prod_1774588718809_f6anpwdzt",
@@ -1909,51 +1807,51 @@
       "nombre": "Café natural Vima 250g",
       "categoria": "Despensa",
       "precio": 7.99,
-      "descuento": 24.91,
+      "descuento": 0,
       "mas_vendido": true,
       "nuevo": true,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "2f8c7d0b-e985-42d9-97b7-20a75e35e87e-1_1774589037972.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-27T05:24:33.909Z",
-      "modified_at": "2026-06-20T22:09:49.436Z"
+      "modified_at": "2026-06-29T18:25:14.742Z"
     },
     {
       "id": "prod_1774742941861_rn5ai5a43",
       "nombre": "Queso Criollo x Lb",
       "categoria": "Lácteos",
       "precio": 3.15,
-      "descuento": 9.52,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "1000036039_1774742941951.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-29T00:12:27.215Z",
-      "modified_at": "2026-06-26T20:37:07.533Z"
+      "modified_at": "2026-06-29T18:25:14.742Z"
     },
     {
       "id": "prod_1774743001771_4ql9niare",
       "nombre": "Jalea de Guayaba",
       "categoria": "Despensa",
       "precio": 2.99,
-      "descuento": 41.47,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "1000036038_1774743001854.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-29T00:12:28.450Z",
-      "modified_at": "2026-06-26T20:37:07.533Z"
+      "modified_at": "2026-06-29T18:25:14.742Z"
     },
     {
       "id": "prod_1774743134406_moehq1avd",
@@ -2011,17 +1909,17 @@
       "nombre": "Paca de Arroz 30 bolsas 1Kg / 66lbs",
       "categoria": "Despensa",
       "precio": 45,
-      "descuento": 13.33,
+      "descuento": 0,
       "mas_vendido": true,
       "nuevo": true,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "paca_arroz.jpg"
       ],
       "descripcion": "Trae un total de 30 bolsas de arros de 1kg cada una haciendo un total de 66lbs",
       "disponibilidad": true,
       "created_at": "2026-04-08T01:52:37.025Z",
-      "modified_at": "2026-06-26T20:37:07.533Z"
+      "modified_at": "2026-06-29T18:25:14.742Z"
     },
     {
       "id": "prod_1776151451302_wkzwq860c",
@@ -2058,40 +1956,6 @@
       "modified_at": "2026-05-06T21:29:49.216Z"
     },
     {
-      "id": "prod_1776151712213_3bmsorx6t",
-      "nombre": "Cola de Gambón Argentino 1kg",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 37.49,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "13_1776151712222.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-04-14T07:49:54.382Z",
-      "modified_at": "2026-05-12T13:48:05.276Z"
-    },
-    {
-      "id": "prod_1776151741793_5e1uruetg",
-      "nombre": "Choricito Casero 1kg",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 24.99,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "4_1776151741802.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-04-14T07:49:55.393Z",
-      "modified_at": "2026-05-12T13:48:05.276Z"
-    },
-    {
       "id": "prod_1776151765995_a6s81351f",
       "nombre": "Queso crema 200g",
       "categoria": "Lácteos",
@@ -2124,40 +1988,6 @@
       "disponibilidad": false,
       "created_at": "2026-04-14T07:49:57.667Z",
       "modified_at": "2026-06-26T20:18:09.886Z"
-    },
-    {
-      "id": "prod_1776151970517_o4p40xl3f",
-      "nombre": "Salchichas miniFrankfurt 1kg",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 9.95,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "15_1776151970522.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-04-14T07:50:01.662Z",
-      "modified_at": "2026-05-12T13:48:05.276Z"
-    },
-    {
-      "id": "prod_1776152038867_riytl6qtv",
-      "nombre": "Filetes de Tilapia 1lb",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 5,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "7_1776152038878.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-04-14T07:50:03.339Z",
-      "modified_at": "2026-06-07T02:08:47.598Z"
     },
     {
       "id": "prod_1776152786987_fj2z16ewo",
@@ -2215,34 +2045,17 @@
       "nombre": "Crema de cacao con avellanas",
       "categoria": "Confitura",
       "precio": 3.99,
-      "descuento": 6.02,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "5_1776152884787.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-14T07:50:08.379Z",
-      "modified_at": "2026-06-26T20:37:07.533Z"
-    },
-    {
-      "id": "prod_1776408366475_c7fpx7qya",
-      "nombre": "Mejillones por kg",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 7,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "42400_1776408366626.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-04-17T06:49:39.997Z",
-      "modified_at": "2026-05-22T20:48:34.853Z"
+      "modified_at": "2026-06-29T18:25:16.359Z"
     },
     {
       "id": "prod_1776408427183_xuedabnzn",
@@ -2351,17 +2164,17 @@
       "nombre": "Guisante Vima 1kg",
       "categoria": "Despensa",
       "precio": 4.47,
-      "descuento": 20.81,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "8034-chicharo-entero-congelado-vima-1-kg_1777104996457.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-25T08:27:31.430Z",
-      "modified_at": "2026-06-26T20:37:07.533Z"
+      "modified_at": "2026-06-29T18:25:18.075Z"
     },
     {
       "id": "prod_1777105074342_bnolew50n",
@@ -2453,17 +2266,17 @@
       "nombre": "Macedonia de verduras 535g",
       "categoria": "Aderezos",
       "precio": 3.37,
-      "descuento": 19.88,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "cuba-alimentos-restaurantes-viajes-envios-medicina-macedonia-vegetales-vima-535g_1777105488610.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-25T08:27:42.536Z",
-      "modified_at": "2026-06-26T20:37:07.533Z"
+      "modified_at": "2026-06-29T18:25:18.075Z"
     },
     {
       "id": "prod_1777105551780_1qdxfj31j",
@@ -2521,17 +2334,17 @@
       "nombre": "Caja de Malta Boa",
       "categoria": "Bebidas no alcohólicas",
       "precio": 24,
-      "descuento": 25,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "1000066084_1777744697930.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-05-02T18:19:49.866Z",
-      "modified_at": "2026-06-26T20:37:07.533Z"
+      "modified_at": "2026-06-29T18:25:18.075Z"
     },
     {
       "id": "prod_1777744940773_l4rwx3dni",
@@ -2776,17 +2589,17 @@
       "nombre": "Paquete de caramelos surtidos 3lbs",
       "categoria": "Confitura",
       "precio": 7.5,
-      "descuento": 16.67,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "1000077330_1778630888265.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-05-13T00:13:12.789Z",
-      "modified_at": "2026-06-26T20:37:07.534Z"
+      "modified_at": "2026-06-29T18:25:18.075Z"
     },
     {
       "id": "prod_1778630940473_bcv60b3g9",
@@ -2946,7 +2759,7 @@
       "nombre": "Caja de nectar de mango 24u",
       "categoria": "Bebidas no alcohólicas",
       "precio": 27,
-      "descuento": 23.15,
+      "descuento": 12.04,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": true,
@@ -2956,7 +2769,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-05-20T17:19:09.772Z",
-      "modified_at": "2026-06-20T21:53:14.411Z"
+      "modified_at": "2026-06-29T18:25:18.075Z"
     },
     {
       "id": "prod_1779468122529_ajoyuz11y",
@@ -2996,7 +2809,7 @@
       "id": "prod_1779468419722_3gb4z1pr1",
       "nombre": "Caja de refresco Rayan (cola)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 15.75,
+      "precio": 18.97,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -3007,24 +2820,24 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-05-22T16:51:07.625Z",
-      "modified_at": "2026-05-22T16:51:07.625Z"
+      "modified_at": "2026-06-29T18:25:18.075Z"
     },
     {
       "id": "prod_1779468598674_3w4zhfylf",
-      "nombre": "Caja de refresco Rayan (naranja)",
+      "nombre": "Caja de refresco (naranja,cola y limón)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 15.75,
+      "precio": 20,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "1000083072_1779468598738.jpg"
+        "afe50f2a-4fff-4e59-93c1-55223b706734_1782757353161.jpeg"
       ],
-      "descripcion": "",
+      "descripcion": "Cajas de refresco cola limón y naranja",
       "disponibilidad": true,
       "created_at": "2026-05-22T16:51:11.678Z",
-      "modified_at": "2026-05-22T16:51:11.678Z"
+      "modified_at": "2026-06-29T18:25:19.853Z"
     },
     {
       "id": "prod_1779468627017_2lonrcdvr",
@@ -3081,7 +2894,7 @@
       "id": "prod_1782001815822_n5g1trxf9",
       "nombre": "Cafe Espresso Sello Rojo(283g)",
       "categoria": "Despensa",
-      "precio": 6.75,
+      "precio": 8,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -3092,7 +2905,7 @@
       "descripcion": "Café Espresso Sello Rojo colombiano",
       "disponibilidad": true,
       "created_at": "2026-06-21T00:30:23.061Z",
-      "modified_at": "2026-06-21T00:30:23.061Z"
+      "modified_at": "2026-06-29T18:25:21.133Z"
     },
     {
       "id": "prod_1782504884491_2t4hvb17l",
