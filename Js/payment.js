@@ -65,6 +65,33 @@ function beginPaymentSubmission(form, submitBtn) {
     }
 }
 
+function createProcessingOverlay() {
+    if (document.querySelector('.processing-overlay')) return;
+    const overlay = document.createElement('div');
+    overlay.className = 'processing-overlay';
+    // prevent pointer events to underlying content
+    overlay.style.pointerEvents = 'auto';
+    document.body.appendChild(overlay);
+    // ensure no background scroll
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => overlay.classList.add('active'), 10);
+}
+
+function removeProcessingOverlay() {
+    const overlay = document.querySelector('.processing-overlay');
+    if (!overlay) return;
+    overlay.classList.remove('active');
+    setTimeout(() => {
+        overlay.remove();
+        // restore body scroll only if no other modal/overlay is active
+        const modal = document.getElementById('order-confirmation-modal');
+        const paymentSection = document.getElementById('payment-section');
+        if (!(modal && modal.classList.contains('active')) && !(paymentSection && paymentSection.classList.contains('active'))) {
+            document.body.style.overflow = '';
+        }
+    }, 260);
+}
+
 function resetPaymentSubmissionState(form = document.getElementById('payment-form')) {
     const submitBtn = form?.querySelector('.submit-btn');
 
@@ -344,6 +371,8 @@ async function processPayment(e) {
 
     // Ahora sí iniciamos la UX de envío para evitar condiciones de carrera
     beginPaymentSubmission(form, submitBtn);
+    // block UI visually while processing
+    try { createProcessingOverlay(); } catch (e) { console.warn(e); }
 
     const loadingNotification = showPaymentNotification('Procesando tu pedido...', 'loading');
 
@@ -415,6 +444,7 @@ async function processPayment(e) {
     } finally {
         setTimeout(() => {
             resetPaymentSubmissionState(form);
+            try { removeProcessingOverlay(); } catch (e) { /* ignore */ }
         }, 1500);
     }
 }
@@ -430,10 +460,10 @@ function showOrderConfirmationModal() {
         referenceElement.textContent = orderReference;
     }
     
+    // prevent background scroll and ensure modal is on top
+    document.body.style.overflow = 'hidden';
     modal.style.display = 'flex';
-    setTimeout(() => {
-        modal.classList.add('active');
-    }, 10);
+    setTimeout(() => modal.classList.add('active'), 10);
 }
 
 /**
@@ -457,6 +487,8 @@ function closeConfirmationAndGoHome() {
     setTimeout(() => {
         modal.style.display = 'none';
         // Asegúrate de que goToHome() exista en tu script.js o donde sea
+        // restore body scroll
+        document.body.style.overflow = '';
         if (typeof goToHome === 'function') goToHome(); 
     }, 300);
 }
@@ -470,10 +502,30 @@ function showPaymentNotification(message, type = 'info') {
 
     const notification = document.createElement('div');
     notification.className = `payment-notification ${type}`;
+
+    const titleMap = {
+        loading: 'Procesando',
+        success: 'Pedido recibido',
+        error: 'Error',
+        info: 'Información'
+    };
+
+    // Use simple glyphs and a CSS spinner instead of inline SVGs (improves contrast and reliability)
+    const glyphs = {
+        loading: '<div class="loading-spinner" aria-hidden="true"></div>',
+        success: '<span class="notification-glyph">✓</span>',
+        error: '<span class="notification-glyph">✕</span>',
+        info: '<span class="notification-glyph">ℹ</span>'
+    };
+
+    const iconHTML = glyphs[type] || glyphs.info;
+    const title = titleMap[type] || titleMap.info;
+
     notification.innerHTML = `
-        <div class="notification-content">
-            ${type === 'loading' ? '<div class="loading-spinner"></div>' : ''}
-            <p>${message}</p>
+        <div class="notification-icon">${iconHTML}</div>
+        <div class="notification-body">
+            <div class="notification-title">${title}</div>
+            <div class="notification-text">${message}</div>
         </div>
     `;
 
@@ -709,64 +761,97 @@ function injectPaymentStyles() {
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            padding: 15px 25px;
-            border-radius: 8px;
-            font-weight: 600;
+            padding: 14px 22px;
+            border-radius: 12px;
+            font-weight: 700;
             opacity: 0;
-            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-            z-index: 5000;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-            max-width: 400px;
-            min-width: 280px;
-            text-align: center;
+            transition: opacity 0.28s cubic-bezier(0.2,0,0,1), transform 0.28s cubic-bezier(0.2,0,0,1);
+            z-index: 10002; /* sitúa la notificación por encima del overlay */
+            box-shadow: 0 10px 30px rgba(12,24,36,0.18);
+            max-width: 460px;
+            min-width: 260px;
+            text-align: left;
             display: flex;
             align-items: center;
-            gap: 12px; /* Espaciado entre elementos */
+            gap: 12px;
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255,255,255,0.06);
+            background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,250,250,0.96));
+            color: var(--negro);
         }
 
-        /* Animación para mostrar la notificación */
+        /* Professional notification layout */
+        .payment-notification {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
         .payment-notification.show {
             opacity: 1;
             transform: translateX(-50%) translateY(-10px);
         }
 
-        /* Contenido interno de la notificación */
-        .payment-notification .notification-content {
+        .payment-notification .notification-icon {
+            width: 44px;
+            height: 44px;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-grow: 1;
+            border-radius: 10px;
+            flex-shrink: 0;
+            background: rgba(255,255,255,0.92);
+            box-shadow: 0 3px 10px rgba(12,24,36,0.08);
+            color: var(--negro);
         }
 
-        /* Estilos diferenciados por tipo de notificación */
-        .payment-notification.info {
-            background: #2196F3;
-            color: white;
+        .payment-notification .notification-body {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
         }
 
-        .payment-notification.success {
-            background: #2A9D8F;
-            color: white;
+        .payment-notification .notification-title {
+            font-size: 0.98rem;
+            font-weight: 800;
+            color: var(--negro);
+            line-height: 1;
         }
 
-        .payment-notification.error {
-            background: #f44336;
-            color: white;
+        .payment-notification .notification-text {
+            font-size: 0.9rem;
+            color: rgba(12,24,36,0.8);
+            line-height: 1.2;
+            max-width: 360px;
         }
 
-        .payment-notification.loading {
-            background: #D4AF37;
-            color: white;
+        /* Variants using project palette variables - use solid icon backgrounds for contrast */
+        .payment-notification.info { border-color: rgba(21,101,192,0.12); }
+        .payment-notification.info .notification-icon { background: var(--azul-destacado, #1565c0); color: #fff; }
+        .payment-notification.success { border-color: rgba(46,125,50,0.12); }
+        .payment-notification.success .notification-icon { background: var(--verde-oscuro, #2e7d32); color: #fff; }
+        .payment-notification.error { border-color: rgba(198,40,40,0.12); }
+        .payment-notification.error .notification-icon { background: var(--rojo-oscuro, #c62828); color: #fff; }
+        .payment-notification.loading { border-color: rgba(255,206,18,0.12); }
+        .payment-notification.loading .notification-icon { background: var(--botonA, #fdd835); color: #111; }
+
+        /* Glyph inside the icon */
+        .notification-glyph {
+            font-size: 1.05rem;
+            font-weight: 800;
+            line-height: 1;
+            display: inline-block;
         }
 
         /* Estilos del spinner de carga */
         .loading-spinner {
             width: 20px;
             height: 20px;
-            border: 4px solid rgba(255,255,255,0.3);
             border-radius: 50%;
-            border-top: 4px solid white;
+            border: 4px solid rgba(255,255,255,0.35);
+            border-top-color: currentColor; /* visible against colored icon background */
             animation: spin 0.8s linear infinite;
+            box-sizing: border-box;
         }
 
         @keyframes spin {
@@ -789,6 +874,26 @@ function injectPaymentStyles() {
         }
 
         .payment-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Overlay específico para cuando se está procesando el pago */
+        .processing-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.55);
+            z-index: 9000; /* debajo de las notificaciones */
+            opacity: 0;
+            transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+            pointer-events: none;
+            display: block;
+        }
+
+        .processing-overlay.active {
             opacity: 1;
             pointer-events: auto;
         }
