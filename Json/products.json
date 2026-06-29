@@ -2823,23 +2823,6 @@
       "modified_at": "2026-06-29T18:25:18.075Z"
     },
     {
-      "id": "prod_1779468598674_3w4zhfylf",
-      "nombre": "Caja de refresco (naranja,cola y limón)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 20,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "afe50f2a-4fff-4e59-93c1-55223b706734_1782757353161.jpeg"
-      ],
-      "descripcion": "Cajas de refresco cola limón y naranja",
-      "disponibilidad": true,
-      "created_at": "2026-05-22T16:51:11.678Z",
-      "modified_at": "2026-06-29T18:25:19.853Z"
-    },
-    {
       "id": "prod_1779468627017_2lonrcdvr",
       "nombre": "Caja de refresco Rayan (limón)",
       "categoria": "Bebidas no alcohólicas",
