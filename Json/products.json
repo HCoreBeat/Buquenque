@@ -2923,6 +2923,23 @@
       "disponibilidad": true,
       "created_at": "2026-06-28T00:20:37.980Z",
       "modified_at": "2026-06-28T00:20:37.980Z"
+    },
+    {
+      "id": "prod_1783117441092_bcgd430qr",
+      "nombre": "Helado crema de 4lts La Finquita (Fresa)",
+      "categoria": "Lácteos",
+      "precio": 15,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "1000110898_1783117441188.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-03T22:24:22.778Z",
+      "modified_at": "2026-07-03T22:24:22.778Z"
     }
   ]
 }
