@@ -2940,6 +2940,125 @@
       "disponibilidad": true,
       "created_at": "2026-07-03T22:24:22.778Z",
       "modified_at": "2026-07-03T22:24:22.778Z"
+    },
+    {
+      "id": "prod_1783195106846_tb78bxf75",
+      "nombre": "Frijol Negro Rainha 1kg",
+      "categoria": "Despensa",
+      "precio": 2.35,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "frijol-photoroom-500x500_1783195106876.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-04T20:05:29.160Z",
+      "modified_at": "2026-07-04T20:05:29.160Z"
+    },
+    {
+      "id": "prod_1783195226581_0l1k0snog",
+      "nombre": "Mayonesa HollandPark (250ml)",
+      "categoria": "Aderezos",
+      "precio": 3.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "8523557c-6f41-488f-920b-374dd3bae6fd_1783195226596.jfif"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-04T20:05:30.600Z",
+      "modified_at": "2026-07-04T20:05:30.600Z"
+    },
+    {
+      "id": "prod_1783195258767_j38ma7vme",
+      "nombre": "Mayonesa HollandPark (500ml)",
+      "categoria": "Aderezos",
+      "precio": 5.55,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "aceaa92e-f769-470c-a32c-f75c91c5bc73_1783195258782.jfif"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-04T20:05:32.247Z",
+      "modified_at": "2026-07-04T20:05:32.247Z"
+    },
+    {
+      "id": "prod_1783195440299_fe2rii4uh",
+      "nombre": "Caja de jugo Badelli 27u (Mango)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 17,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "mango_1783195440304.jfif"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-04T20:05:33.830Z",
+      "modified_at": "2026-07-04T20:05:33.830Z"
+    },
+    {
+      "id": "prod_1783195468051_z3qwn6fbc",
+      "nombre": "Caja de jugo Badelli 27u (Manzana)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 17,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "manzana_1783195468065.jfif"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-04T20:05:35.214Z",
+      "modified_at": "2026-07-04T20:05:35.214Z"
+    },
+    {
+      "id": "prod_1783195499520_uvaabc80h",
+      "nombre": "Caja de jugo Badelli 27u (Melocotón)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 17,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "melocoton_1783195499535.jfif"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-04T20:05:36.750Z",
+      "modified_at": "2026-07-04T20:05:36.750Z"
+    },
+    {
+      "id": "prod_1783195521971_w0o3afhhc",
+      "nombre": "Caja de jugo Badelli 27u (Coctel)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 17,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "coctel_1783195521983.jfif"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-04T20:05:38.082Z",
+      "modified_at": "2026-07-04T20:05:38.082Z"
     }
   ]
 }
