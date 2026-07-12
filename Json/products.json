@@ -376,7 +376,7 @@
     },
     {
       "id": "prod_1768441690510_jnja8jl1s",
-      "nombre": "Servilletas (100u)",
+      "nombre": "Servilletas (50u)",
       "categoria": "Aseo y Belleza",
       "precio": 1.9,
       "descuento": 0,
@@ -386,10 +386,10 @@
       "imagenes": [
         "Servilletas_(100u).jpg"
       ],
-      "descripcion": "Disfruta de la calidad de Servilletas (100u), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
+      "descripcion": "Disfruta de la calidad de Servilletas (50u), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-07-12T14:32:52.046Z"
     },
     {
       "id": "prod_1768441690510_nim7b1t3a",
@@ -1689,7 +1689,7 @@
       "categoria": "Cárnicos y Embutidos",
       "precio": 25,
       "descuento": 21,
-      "mas_vendido": false,
+      "mas_vendido": true,
       "nuevo": false,
       "oferta": true,
       "imagenes": [
@@ -1698,7 +1698,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-22T23:41:29.685Z",
-      "modified_at": "2026-07-11T20:33:49.897Z"
+      "modified_at": "2026-07-12T14:32:52.046Z"
     },
     {
       "id": "prod_1774222653850_9m6grgvh0",
