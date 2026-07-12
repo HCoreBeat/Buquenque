@@ -121,6 +121,59 @@
     flex-shrink: 0;
 }
 
+.cart-minimum-banner {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.7rem 0.8rem;
+    margin-bottom: 0.7rem;
+    border-radius: var(--borde-radius);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(212, 175, 55, 0.04));
+    color: var(--negro);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.cart-minimum-banner.warning {
+    border-color: rgba(230, 57, 70, 0.25);
+    background: linear-gradient(135deg, rgba(230, 57, 70, 0.12), rgba(230, 57, 70, 0.04));
+    color: var(--rojo-mas-vendido);
+}
+
+.cart-minimum-banner.ok {
+    border-color: rgba(34, 197, 94, 0.25);
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.12), rgba(34, 197, 94, 0.04));
+    color: #15803d;
+}
+
+.cart-minimum-banner i {
+    color: inherit;
+    font-size: 1rem;
+}
+
+.cart-minimum-banner .currency-icon {
+    height: 0.9em;
+    margin: 0 0.18rem;
+    display: inline-block;
+    vertical-align: -0.12em;
+}
+
+.cart-minimum-banner.warning .currency-icon {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(90%) saturate(850%) hue-rotate(330deg) brightness(94%) contrast(95%);
+}
+
+.cart-minimum-banner.ok .currency-icon {
+    filter: brightness(0) saturate(100%) invert(29%) sepia(92%) saturate(380%) hue-rotate(92deg) brightness(92%) contrast(95%);
+}
+
+.checkout-btn.disabled,
+.checkout-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
+
 /* Producto en carrito */
 .cart-item {
     display: flex;

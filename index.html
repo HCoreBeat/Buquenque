@@ -295,8 +295,12 @@
                     <div class="empty-cart-recommendations" id="empty-cart-recommendations"></div>
                 </div>
                 <div class="cart-total">
+                    <div class="cart-minimum-banner" id="cart-minimum-banner" role="status" aria-live="polite">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>Faltan <strong>10.00</strong> <img src="Images/zelle_oscuro.svg" alt="Zelle" class="currency-icon price-xs"> para llegar al mínimo de pedido.</span>
+                    </div>
                     <p>Total: $<span id="total">0.00</span></p>
-                    <button class="checkout-btn">Finalizar Compra</button>
+                    <button class="checkout-btn" type="button">Finalizar Compra</button>
                 </div>
             </div>
         </div>
@@ -355,15 +359,12 @@
                         </div>
                         <div class="security-notice-content">
                             <h3 class="security-notice-title">
-                                <i class="fas fa-lock"></i> Compra Segura - Sin Datos Bancarios en Línea
+                                <i class="fas fa-lock"></i> Compra Segura
                             </h3>
                             <p class="security-notice-text">
                                 Esta tienda no cuenta con pasarela de pago
                                 integrada, lo que hace que tu información sea
-                                <strong>completamente segura</strong>. Tus datos
-                                de tarjeta nunca serán procesados a través de
-                                nuestro sistema ya que no necesita agregarla
-                                para proceder con la compra.
+                                <strong>completamente segura</strong>.
                             </p>
                             <p class="security-notice-text">
                                 Una vez confirmes tu pedido, nos pondremos en

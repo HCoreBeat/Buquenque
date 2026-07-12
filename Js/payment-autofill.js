@@ -9,7 +9,8 @@ class PaymentAutofill {
         this.fields = {
             fullName: 'full-name',
             email: 'email',
-            phone: 'phone'
+            phone: 'phone',
+            locationConfirm: 'location-confirm'
         };
     }
 
@@ -29,12 +30,13 @@ class PaymentAutofill {
     /**
      * Guarda los datos en localStorage
      */
-    saveData(fullName, email, phone) {
+    saveData(fullName, email, phone, locationConfirm = false) {
         try {
             const data = {
                 fullName: fullName.trim(),
                 email: email.trim(),
                 phone: phone.trim(),
+                locationConfirm: Boolean(locationConfirm),
                 lastUpdated: new Date().toISOString()
             };
             localStorage.setItem(this.storageKey, JSON.stringify(data));
@@ -66,6 +68,11 @@ class PaymentAutofill {
                 phoneInput.value = savedData.phone;
             }
 
+            const locationConfirmInput = document.getElementById(this.fields.locationConfirm);
+            if (locationConfirmInput) {
+                locationConfirmInput.checked = Boolean(savedData.locationConfirm);
+            }
+
             console.log('Campos completados automáticamente');
         }
     }
@@ -77,6 +84,7 @@ class PaymentAutofill {
         const fullNameInput = document.getElementById(this.fields.fullName);
         const emailInput = document.getElementById(this.fields.email);
         const phoneInput = document.getElementById(this.fields.phone);
+        const locationConfirmInput = document.getElementById(this.fields.locationConfirm);
 
         const handleInputChange = () => {
             this.updateStorage();
@@ -96,6 +104,11 @@ class PaymentAutofill {
             phoneInput.addEventListener('change', handleInputChange);
             phoneInput.addEventListener('blur', handleInputChange);
         }
+
+        if (locationConfirmInput) {
+            locationConfirmInput.addEventListener('change', handleInputChange);
+            locationConfirmInput.addEventListener('click', handleInputChange);
+        }
     }
 
     /**
@@ -105,13 +118,15 @@ class PaymentAutofill {
         const fullNameInput = document.getElementById(this.fields.fullName);
         const emailInput = document.getElementById(this.fields.email);
         const phoneInput = document.getElementById(this.fields.phone);
+        const locationConfirmInput = document.getElementById(this.fields.locationConfirm);
 
         const fullName = fullNameInput?.value || '';
         const email = emailInput?.value || '';
         const phone = phoneInput?.value || '';
+        const locationConfirm = locationConfirmInput?.checked || false;
 
-        if (fullName || email || phone) {
-            this.saveData(fullName, email, phone);
+        if (fullName || email || phone || locationConfirmInput) {
+            this.saveData(fullName, email, phone, locationConfirm);
         }
     }
 

@@ -227,10 +227,6 @@ function showPaymentSection() {
         showPaymentNotification('Error al cargar los productos', 'error');
     }
 
-    // resetear checkbox de confirmación cada vez que se abre el formulario
-    const checkbox = document.getElementById('location-confirm');
-    if (checkbox) checkbox.checked = false;
-
     resetPaymentSubmissionState();
 
     // cargar lista de países compatibles
@@ -286,6 +282,8 @@ function updateOrderSummary() {
 
     const cart = getValidatedCart();
     let total = 0;
+    const minimumBanner = document.getElementById('payment-minimum-banner');
+    const submitBtn = document.getElementById('payment-form')?.querySelector('.submit-btn');
 
     orderSummary.innerHTML = cart.map(item => {
         // Determinar si es pack o producto
@@ -332,6 +330,24 @@ function updateOrderSummary() {
         `;
     }
 
+    if (minimumBanner) {
+        const isMet = total >= MINIMUM_ORDER_TOTAL;
+        const remaining = Math.max(0, MINIMUM_ORDER_TOTAL - total);
+        minimumBanner.classList.toggle('warning', !isMet);
+        minimumBanner.classList.toggle('ok', isMet);
+        minimumBanner.innerHTML = `
+            <i class="fas ${isMet ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i>
+            <span>${isMet ? 'Tu pedido cumple con el mínimo de 10 <img src="Images/zelle_oscuro.svg" alt="Zelle" class="currency-icon price-xs">.' : `Faltan <strong>${remaining.toFixed(2)}</strong> <img src="Images/zelle_oscuro.svg" alt="Zelle" class="currency-icon price-xs"> para alcanzar el mínimo de pedido.`}</span>
+        `;
+    }
+
+    if (submitBtn) {
+        const canSubmit = total >= MINIMUM_ORDER_TOTAL;
+        submitBtn.disabled = !canSubmit;
+        submitBtn.classList.toggle('disabled', !canSubmit);
+        submitBtn.textContent = canSubmit ? 'Confirmar Pedido' : 'Completa el mínimo de 10 Zelle';
+    }
+
     paymentTotal.textContent = `$${total.toFixed(2)}`;
 }
 
@@ -362,6 +378,21 @@ async function processPayment(e) {
         cart = getValidatedCart();
         if (cart.length === 0) {
             showPaymentNotification('Tu carrito está vacío', 'error');
+            return;
+        }
+
+        const cartTotalValue = cart.reduce((sum, item) => {
+            const itemData = item.product || item.pack;
+            if (!itemData) return sum;
+            const price = itemData.oferta
+                ? itemData.precio * (1 - itemData.descuento / 100)
+                : itemData.precio;
+            return sum + (price * item.quantity);
+        }, 0);
+
+        if (cartTotalValue < MINIMUM_ORDER_TOTAL) {
+            const remaining = (MINIMUM_ORDER_TOTAL - cartTotalValue).toFixed(2);
+            showPaymentNotification(`El pedido mínimo es de 10 <img src="Images/zelle_oscuro.svg" alt="Zelle" class="currency-icon price-xs">. Faltan ${remaining} <img src="Images/zelle_oscuro.svg" alt="Zelle" class="currency-icon price-xs"> para continuar.`, 'error');
             return;
         }
     } catch (err) {
@@ -638,6 +669,22 @@ function validateCartBeforeCheckout() {
         showPaymentNotification('No hay productos disponibles para pagar. Añade productos disponibles al carrito.', 'error');
         return false;
     }
+
+    const cartTotalValue = cart.reduce((sum, item) => {
+        const itemData = item.product || item.pack;
+        if (!itemData) return sum;
+        const price = itemData.oferta
+            ? itemData.precio * (1 - itemData.descuento / 100)
+            : itemData.precio;
+        return sum + (price * item.quantity);
+    }, 0);
+
+    if (cartTotalValue < MINIMUM_ORDER_TOTAL) {
+        const remaining = (MINIMUM_ORDER_TOTAL - cartTotalValue).toFixed(2);
+        showPaymentNotification(`El pedido mínimo es de 10 <img src="Images/zelle_oscuro.svg" alt="Zelle" class="currency-icon price-xs">. Faltan ${remaining} <img src="Images/zelle_oscuro.svg" alt="Zelle" class="currency-icon price-xs"> para continuar.`, 'error');
+        return false;
+    }
+
     return true;
 }
 

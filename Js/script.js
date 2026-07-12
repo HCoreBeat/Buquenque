@@ -6,6 +6,7 @@ let evento = null;
 let info = [];
 let secretCodesFound = new Set();
 let cartTotal = 0; // total del carrito actual
+const MINIMUM_ORDER_TOTAL = 10;
 
 // Snapshot del hash inicial proporcionado por el backend (p. ej. index.html#ID)
 // Esto permite restaurarlo si otro script lo limpiara antes de que procesemos rutas.
@@ -3227,6 +3228,29 @@ function renderEmptyCartRecommendations() {
   recommendationsContainer.style.display = "block";
 }
 
+function updateMinimumOrderNotice(totalAmount = cartTotal) {
+  const banner = document.getElementById("cart-minimum-banner");
+  const checkoutBtn = document.querySelector(".checkout-btn");
+
+  if (!banner) return;
+
+  const isMet = totalAmount >= MINIMUM_ORDER_TOTAL;
+  const remaining = Math.max(0, MINIMUM_ORDER_TOTAL - totalAmount);
+
+  banner.classList.toggle("warning", !isMet);
+  banner.classList.toggle("ok", isMet);
+  banner.innerHTML = `
+    <i class="fas ${isMet ? "fa-check-circle" : "fa-exclamation-circle"}"></i>
+    <span>${isMet ? `Tu pedido cumple con el mínimo de 10 <img src="Images/zelle_oscuro.svg" alt="Zelle" class="currency-icon price-xs">.` : `Faltan <strong>${remaining.toFixed(2)}</strong> <img src="Images/zelle_oscuro.svg" alt="Zelle" class="currency-icon price-xs"> para llegar al mínimo de pedido.`}</span>
+  `;
+
+  if (checkoutBtn) {
+    checkoutBtn.disabled = !isMet;
+    checkoutBtn.classList.toggle("disabled", !isMet);
+    checkoutBtn.setAttribute("aria-disabled", (!isMet).toString());
+  }
+}
+
 function updateCart() {
   const cartItems = document.getElementById("cart-items");
   const totalElement = document.getElementById("total");
@@ -3339,6 +3363,7 @@ function updateCart() {
   }
 
   cartTotal = total; // mantener total del carrito para reglas de evento
+  updateMinimumOrderNotice(total);
   renderEmptyCartRecommendations();
   updateSecretCodesPanel();
   updateCartCount();
