@@ -1259,23 +1259,6 @@
       "modified_at": "2026-04-22T06:16:58.898Z"
     },
     {
-      "id": "prod_1772439456822_kktbprsor",
-      "nombre": "Saco de Arroz supreme 55lbs",
-      "categoria": "Despensa",
-      "precio": 47,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "a660893b-e60c-4c3b-95eb-19da7b26f75e_1772439456839.jpeg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-02T08:28:00.164Z",
-      "modified_at": "2026-06-29T18:25:11.860Z"
-    },
-    {
       "id": "prod_1772439529396_kh3fahrr4",
       "nombre": "Saco de azúcar blanca 25kg",
       "categoria": "Despensa",
@@ -3127,6 +3110,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-12T16:38:10.734Z",
       "modified_at": "2026-07-12T16:38:10.734Z"
+    },
+    {
+      "id": "prod_1784050450186_cd965lvlm",
+      "nombre": "Saco de carbón",
+      "categoria": "Utiles del Hogar",
+      "precio": 7.69,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "697f10cb-ebc4-4d60-99f6-622bd05d7085_1784050450201.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-14T17:34:30.569Z",
+      "modified_at": "2026-07-14T17:34:30.569Z"
     }
   ]
 }
