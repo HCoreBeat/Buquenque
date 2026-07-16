@@ -922,8 +922,8 @@
       "id": "prod_1768441690510_aa0pwzj5i",
       "nombre": "Rayan Chocolate",
       "categoria": "Despensa",
-      "precio": 4.78,
-      "descuento": 10.46,
+      "precio": 4.99,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
@@ -931,9 +931,9 @@
         "rayan_chocolate.jpg"
       ],
       "descripcion": "Mezcla en polvo sabor chocolate para preparar bebidas cremosas. Presentación llamativa con personaje infantil, ideal para atraer a niños y familias. Contiene leche y cacao, y se promociona como un producto nuevo.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-05-04T15:38:06.090Z"
+      "modified_at": "2026-07-16T19:05:09.481Z"
     },
     {
       "id": "prod_1768443205852_jk51wnt6q",
@@ -1008,17 +1008,17 @@
       "nombre": "Vinagre Gourmet con Especias – 500 ml",
       "categoria": "Aderezos",
       "precio": 2.14,
-      "descuento": 0,
+      "descuento": 8.88,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "24581_1769417124019.jpg"
       ],
       "descripcion": "Vinagre gourmet elaborado con una cuidadosa mezcla de especias, ideal para realzar el sabor de ensaladas, carnes, marinados y aderezos. Aporta un toque intenso y aromático a tus comidas.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-07-16T19:05:09.481Z"
     },
     {
       "id": "prod_1768918643793_wff5w2f61",
@@ -1229,17 +1229,17 @@
       "nombre": "Sumo de Limon 500ml",
       "categoria": "Despensa",
       "precio": 4.17,
-      "descuento": 0,
+      "descuento": 34.05,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "img-20260225-wa0008_1772069960687.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-02-26T01:40:51.525Z",
-      "modified_at": "2026-06-29T18:25:11.860Z"
+      "modified_at": "2026-07-16T19:05:09.481Z"
     },
     {
       "id": "prod_1772300754323_lz1rnolgm",
@@ -1263,17 +1263,17 @@
       "nombre": "Saco de azúcar blanca 25kg",
       "categoria": "Despensa",
       "precio": 50,
-      "descuento": 0,
+      "descuento": 4.44,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "c4c5f51b-6cb1-41f0-bfa0-ffa820643fd0_1772439529416.jpeg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-02T08:28:01.312Z",
-      "modified_at": "2026-06-29T18:25:11.860Z"
+      "modified_at": "2026-07-16T19:05:09.481Z"
     },
     {
       "id": "prod_1772442996727_xhrueb4xd",
@@ -1416,17 +1416,17 @@
       "nombre": "Sorbetes bon o bon",
       "categoria": "Confitura",
       "precio": 0.75,
-      "descuento": 0,
+      "descuento": 40,
       "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
+      "nuevo": false,
+      "oferta": true,
       "imagenes": [
         "1000010549_1772732759103.webp"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-05T17:46:45.716Z",
-      "modified_at": "2026-05-06T21:29:49.216Z"
+      "modified_at": "2026-07-16T19:05:09.481Z"
     },
     {
       "id": "prod_1772732799999_4pu74vvsy",
@@ -1518,17 +1518,17 @@
       "nombre": "Maíz Dulce 1Kg",
       "categoria": "Despensa",
       "precio": 4.99,
-      "descuento": 0,
+      "descuento": 24.85,
       "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
+      "nuevo": false,
+      "oferta": true,
       "imagenes": [
         "1000025982_1773856436849.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-18T17:58:52.816Z",
-      "modified_at": "2026-06-29T18:25:14.742Z"
+      "modified_at": "2026-07-16T19:05:09.481Z"
     },
     {
       "id": "prod_1773856496057_pv8a4fqmk",
@@ -1603,17 +1603,17 @@
       "nombre": "Filetes de Panga",
       "categoria": "Cárnicos y Embutidos",
       "precio": 3.99,
-      "descuento": 0,
+      "descuento": 12.28,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "1000026115_1773867595842.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-18T21:00:04.330Z",
-      "modified_at": "2026-03-21T03:32:50.297Z"
+      "modified_at": "2026-07-16T19:05:09.481Z"
     },
     {
       "id": "prod_1774015812916_vgwyv0fp2",
@@ -1756,17 +1756,17 @@
       "nombre": "Leche evaporada 377ml",
       "categoria": "Lácteos",
       "precio": 2.5,
-      "descuento": 0,
+      "descuento": 20.4,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "leche_evaporada_vima_377ml_isla360shop-1_1774588196972.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-27T05:24:21.958Z",
-      "modified_at": "2026-06-29T18:25:14.742Z"
+      "modified_at": "2026-07-16T19:05:09.482Z"
     },
     {
       "id": "prod_1774588718809_f6anpwdzt",
@@ -1790,34 +1790,34 @@
       "nombre": "Café natural Vima 250g",
       "categoria": "Despensa",
       "precio": 7.99,
-      "descuento": 0,
-      "mas_vendido": true,
-      "nuevo": true,
-      "oferta": false,
+      "descuento": 13.02,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": true,
       "imagenes": [
         "2f8c7d0b-e985-42d9-97b7-20a75e35e87e-1_1774589037972.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-27T05:24:33.909Z",
-      "modified_at": "2026-06-29T18:25:14.742Z"
+      "modified_at": "2026-07-16T19:05:09.482Z"
     },
     {
       "id": "prod_1774742941861_rn5ai5a43",
       "nombre": "Queso Criollo x Lb",
       "categoria": "Lácteos",
       "precio": 3.15,
-      "descuento": 0,
+      "descuento": 28.57,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "1000036039_1774742941951.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-29T00:12:27.215Z",
-      "modified_at": "2026-06-29T18:25:14.742Z"
+      "modified_at": "2026-07-16T19:05:09.482Z"
     },
     {
       "id": "prod_1774743001771_4ql9niare",
@@ -2147,24 +2147,24 @@
       "nombre": "Guisante Vima 1kg",
       "categoria": "Despensa",
       "precio": 4.47,
-      "descuento": 0,
+      "descuento": 44.07,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "8034-chicharo-entero-congelado-vima-1-kg_1777104996457.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-25T08:27:31.430Z",
-      "modified_at": "2026-06-29T18:25:18.075Z"
+      "modified_at": "2026-07-16T19:05:09.482Z"
     },
     {
       "id": "prod_1777105074342_bnolew50n",
       "nombre": "Garbanzos Vima 2.5kg",
       "categoria": "Despensa",
       "precio": 8.79,
-      "descuento": 20.48,
+      "descuento": 31.74,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": true,
@@ -2174,7 +2174,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-25T08:27:33.171Z",
-      "modified_at": "2026-06-20T21:53:14.411Z"
+      "modified_at": "2026-07-16T19:05:09.482Z"
     },
     {
       "id": "prod_1777105220813_glq0vi9ad",
@@ -2249,17 +2249,17 @@
       "nombre": "Macedonia de verduras 535g",
       "categoria": "Aderezos",
       "precio": 3.37,
-      "descuento": 0,
+      "descuento": 18.4,
       "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
+      "nuevo": false,
+      "oferta": true,
       "imagenes": [
         "cuba-alimentos-restaurantes-viajes-envios-medicina-macedonia-vegetales-vima-535g_1777105488610.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-25T08:27:42.536Z",
-      "modified_at": "2026-06-29T18:25:18.075Z"
+      "modified_at": "2026-07-16T19:05:09.482Z"
     },
     {
       "id": "prod_1777105551780_1qdxfj31j",
@@ -2317,17 +2317,17 @@
       "nombre": "Caja de Malta Boa",
       "categoria": "Bebidas no alcohólicas",
       "precio": 24,
-      "descuento": 0,
+      "descuento": 25,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "1000066084_1777744697930.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-05-02T18:19:49.866Z",
-      "modified_at": "2026-06-29T18:25:18.075Z"
+      "modified_at": "2026-07-16T19:05:09.482Z"
     },
     {
       "id": "prod_1777744940773_l4rwx3dni",
@@ -2402,17 +2402,17 @@
       "nombre": "Donut Dulce",
       "categoria": "Confitura",
       "precio": 0.6,
-      "descuento": 0,
+      "descuento": 16.67,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "1000065556_1777745771183.jpg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-05-02T18:19:59.089Z",
-      "modified_at": "2026-05-02T18:19:59.089Z"
+      "modified_at": "2026-07-16T19:05:09.482Z"
     },
     {
       "id": "prod_1778000129093_n2p8n70fp",
@@ -2657,17 +2657,17 @@
       "nombre": "Chocolate Bon o Bon wafer 8u",
       "categoria": "Confitura",
       "precio": 3.75,
-      "descuento": 0,
+      "descuento": 26.67,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "1000077840_1778689868378.webp"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-05-13T16:31:43.332Z",
-      "modified_at": "2026-05-13T16:31:43.332Z"
+      "modified_at": "2026-07-16T19:05:09.482Z"
     },
     {
       "id": "prod_1778805120168_k4cioz6iy",
@@ -2733,9 +2733,9 @@
         "1000081772_1779297405485.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-20T17:19:05.622Z",
-      "modified_at": "2026-05-20T17:19:05.622Z"
+      "modified_at": "2026-07-16T19:05:09.482Z"
     },
     {
       "id": "prod_1779297528751_a1st8d8ee",
