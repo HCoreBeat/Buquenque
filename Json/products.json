@@ -42,14 +42,14 @@
       "descuento": 32,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "Chupa_Chupa_x_unidad.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Chupa Chupa x unidad, una excelente opción de nuestra categoría Confitura. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-05-15T00:10:56.174Z"
+      "modified_at": "2026-07-17T18:52:00.855Z"
     },
     {
       "id": "prod_1768441690510_8ocdeke0z",
@@ -2580,9 +2580,9 @@
         "1000077330_1778630888265.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-13T00:13:12.789Z",
-      "modified_at": "2026-06-29T18:25:18.075Z"
+      "modified_at": "2026-07-17T18:52:00.853Z"
     },
     {
       "id": "prod_1778630940473_bcv60b3g9",
@@ -2614,9 +2614,9 @@
         "1000077336_1778631075600.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-13T00:13:34.408Z",
-      "modified_at": "2026-05-13T00:13:34.408Z"
+      "modified_at": "2026-07-17T18:52:00.854Z"
     },
     {
       "id": "prod_1778631117927_2hnqu593w",
@@ -2631,9 +2631,9 @@
         "1000077339_1778631118037.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-13T00:13:36.516Z",
-      "modified_at": "2026-05-13T00:13:36.516Z"
+      "modified_at": "2026-07-17T18:52:00.855Z"
     },
     {
       "id": "prod_1778631168846_0w09psecj",
