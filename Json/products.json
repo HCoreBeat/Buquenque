@@ -2716,9 +2716,9 @@
         "1000081771_1779297367489.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-20T17:19:02.138Z",
-      "modified_at": "2026-05-20T17:19:02.138Z"
+      "modified_at": "2026-07-19T12:13:20.248Z"
     },
     {
       "id": "prod_1779297405433_otlql24m5",
