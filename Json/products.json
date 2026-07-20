@@ -361,18 +361,18 @@
       "id": "prod_1768441690510_jeg5mb96s",
       "nombre": "Jamonilla de (Pollo) (340g)",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 2.37,
+      "precio": 2.75,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "Spam_de_Pollo_(340g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Spam de Pollo (340g), una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-07-16T17:00:10.070Z"
+      "modified_at": "2026-07-20T23:06:23.945Z"
     },
     {
       "id": "prod_1768441690510_jnja8jl1s",
@@ -1095,15 +1095,15 @@
       "precio": 2.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "28912_1769919939950.jpg"
       ],
       "descripcion": "Para una comida rápida, nutritiva y deliciosa, la Carne de Res Sublime (Carne de Rês) es tu mejor aliada. Esta conserva de calidad premium destaca por ser rica en proteínas y totalmente libre de gluten, lo que la hace ideal para diversos estilos de dieta. Ya sea para dorar en la sartén, acompañar tus pastas o preparar bocaditos rápidos, su sabor auténtico y su textura firme te ofrecen la practicidad que necesitas sin sacrificar la calidad.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-02-01T04:25:54.206Z",
-      "modified_at": "2026-02-01T04:25:54.206Z"
+      "modified_at": "2026-07-20T23:06:23.946Z"
     },
     {
       "id": "prod_1771255174691_cpxbapmjz",
@@ -1143,18 +1143,18 @@
       "id": "prod_1771255455739_z92mxmjqj",
       "nombre": "Harina de trigo Vima 1kg",
       "categoria": "Despensa",
-      "precio": 2.5,
+      "precio": 3.35,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "1e5ea189-5e50-4723-a842-7e857be51e7d-1_1774588319065.jpg"
+        "38047edf-0ef8-4005-a021-55751f0dbf4b_1784587911032.jpeg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-02-16T15:32:08.917Z",
-      "modified_at": "2026-05-12T16:53:52.142Z"
+      "modified_at": "2026-07-20T23:06:25.998Z"
     },
     {
       "id": "prod_1771255568932_49z71tujl",
@@ -1568,7 +1568,7 @@
       "id": "prod_1773859229838_gdak06f1k",
       "nombre": "Pack x4 Yogurt Vima (Fresa)",
       "categoria": "Despensa",
-      "precio": 2.99,
+      "precio": 4.25,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -1577,26 +1577,26 @@
         "1000026018_1773859229936.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-18T18:42:30.084Z",
-      "modified_at": "2026-05-05T16:22:29.231Z"
+      "modified_at": "2026-07-20T23:06:27.352Z"
     },
     {
       "id": "prod_1773859339068_wex9cz8jw",
       "nombre": "Pack x4 Yogurt Vima (Natural)",
       "categoria": "Despensa",
-      "precio": 2.99,
+      "precio": 4.25,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "1000026017_1773859339140.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-18T18:42:32.336Z",
-      "modified_at": "2026-06-20T21:53:14.410Z"
+      "modified_at": "2026-07-20T23:06:27.352Z"
     },
     {
       "id": "prod_1773867595760_b5f1ftr6u",
@@ -1671,7 +1671,7 @@
       "nombre": "Jamón Bravo 2kg",
       "categoria": "Cárnicos y Embutidos",
       "precio": 25,
-      "descuento": 21,
+      "descuento": 5,
       "mas_vendido": true,
       "nuevo": false,
       "oferta": true,
@@ -1681,7 +1681,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-03-22T23:41:29.685Z",
-      "modified_at": "2026-07-12T14:32:52.046Z"
+      "modified_at": "2026-07-20T23:06:27.352Z"
     },
     {
       "id": "prod_1774222653850_9m6grgvh0",
@@ -1781,9 +1781,9 @@
         "1000094814_1780931785896.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-27T05:24:31.693Z",
-      "modified_at": "2026-06-08T15:16:47.988Z"
+      "modified_at": "2026-07-20T23:06:27.352Z"
     },
     {
       "id": "prod_1774589037954_ne3iqyc5v",
@@ -1874,18 +1874,18 @@
       "id": "prod_1775429464494_gg97byto8",
       "nombre": "Paquete de Muslo de pollo 4.4lb",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 8,
+      "precio": 9.95,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "1000041619_1775429464584.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-04-05T22:52:37.025Z",
-      "modified_at": "2026-06-07T02:08:47.597Z"
+      "modified_at": "2026-07-20T23:06:27.352Z"
     },
     {
       "id": "prod_1775429464494_g3",
@@ -1996,15 +1996,15 @@
       "precio": 4.35,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "9_1776152818883.jpg"
+        "7ea8edec-04cc-4df2-be71-3709ef75335e_1784588519396.jpeg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-04-14T07:50:05.941Z",
-      "modified_at": "2026-05-28T16:30:08.661Z"
+      "modified_at": "2026-07-20T23:06:28.574Z"
     },
     {
       "id": "prod_1776152849127_7omvt0ii2",
@@ -2319,15 +2319,15 @@
       "precio": 24,
       "descuento": 25,
       "mas_vendido": false,
-      "nuevo": true,
-      "oferta": true,
+      "nuevo": false,
+      "oferta": false,
       "imagenes": [
         "1000066084_1777744697930.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-02T18:19:49.866Z",
-      "modified_at": "2026-07-16T19:05:09.482Z"
+      "modified_at": "2026-07-20T23:06:29.694Z"
     },
     {
       "id": "prod_1777744940773_l4rwx3dni",
@@ -2523,15 +2523,15 @@
       "precio": 0.6,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img_6480_1778606658665.jpeg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-12T17:28:38.357Z",
-      "modified_at": "2026-05-12T17:28:38.357Z"
+      "modified_at": "2026-07-20T23:06:29.694Z"
     },
     {
       "id": "prod_1778606897506_iifkq4njh",
@@ -2554,7 +2554,7 @@
       "id": "prod_1778607321781_sbqte5wko",
       "nombre": "Jabón de lavar 150g",
       "categoria": "Aseo y Belleza",
-      "precio": 0.8,
+      "precio": 0.95,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -2565,7 +2565,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-05-12T17:35:48.849Z",
-      "modified_at": "2026-05-12T17:35:48.849Z"
+      "modified_at": "2026-07-20T23:06:29.695Z"
     },
     {
       "id": "prod_1778630888133_0e5bf6jsc",
@@ -2809,8 +2809,8 @@
       "id": "prod_1779468627017_2lonrcdvr",
       "nombre": "Caja de refresco Rayan (limón)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 15.75,
-      "descuento": 0,
+      "precio": 18.95,
+      "descuento": 0.53,
       "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
@@ -2820,7 +2820,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-05-22T16:51:14.371Z",
-      "modified_at": "2026-05-22T16:51:14.371Z"
+      "modified_at": "2026-07-20T23:06:29.695Z"
     },
     {
       "id": "prod_1780867059345_appdawmz7",
