@@ -1605,15 +1605,15 @@
       "precio": 3.99,
       "descuento": 12.28,
       "mas_vendido": false,
-      "nuevo": true,
-      "oferta": true,
+      "nuevo": false,
+      "oferta": false,
       "imagenes": [
         "1000026115_1773867595842.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-18T21:00:04.330Z",
-      "modified_at": "2026-07-16T19:05:09.481Z"
+      "modified_at": "2026-07-20T12:09:38.956Z"
     },
     {
       "id": "prod_1774015812916_vgwyv0fp2",
