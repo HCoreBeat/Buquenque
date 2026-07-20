@@ -1991,7 +1991,7 @@
     },
     {
       "id": "prod_1776152818872_5i4jjxahl",
-      "nombre": "troncho de pescado en aceite vegetal",
+      "nombre": "Troncho de pescado en (aceite vegetal) 425g",
       "categoria": "Cárnicos y Embutidos",
       "precio": 4.35,
       "descuento": 0,
@@ -2004,7 +2004,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-14T07:50:05.941Z",
-      "modified_at": "2026-07-20T23:14:34.826Z"
+      "modified_at": "2026-07-20T23:15:52.391Z"
     },
     {
       "id": "prod_1776152849127_7omvt0ii2",
@@ -3149,7 +3149,7 @@
       "id": "prod_1784589150816_v1cacjqbz",
       "nombre": "Troncho de pescado en (salsa de tomate) 425g",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 3.35,
+      "precio": 4.35,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -3160,7 +3160,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-07-20T23:14:34.826Z",
-      "modified_at": "2026-07-20T23:14:34.826Z"
+      "modified_at": "2026-07-20T23:15:52.392Z"
     }
   ]
 }
