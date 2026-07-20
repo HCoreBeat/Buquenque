@@ -1991,7 +1991,7 @@
     },
     {
       "id": "prod_1776152818872_5i4jjxahl",
-      "nombre": "Troncho de pescado en (aceite vegetal) 425g",
+      "nombre": "troncho de pescado en aceite vegetal",
       "categoria": "Cárnicos y Embutidos",
       "precio": 4.35,
       "descuento": 0,
@@ -2004,7 +2004,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-14T07:50:05.941Z",
-      "modified_at": "2026-07-20T23:15:52.391Z"
+      "modified_at": "2026-07-20T23:14:34.826Z"
     },
     {
       "id": "prod_1776152849127_7omvt0ii2",
@@ -3149,7 +3149,7 @@
       "id": "prod_1784589150816_v1cacjqbz",
       "nombre": "Troncho de pescado en (salsa de tomate) 425g",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 4.35,
+      "precio": 3.35,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -3160,7 +3160,75 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-07-20T23:14:34.826Z",
-      "modified_at": "2026-07-20T23:15:52.392Z"
+      "modified_at": "2026-07-20T23:14:34.826Z"
+    },
+    {
+      "id": "prod_1784589611692_facli6wmp",
+      "nombre": "Caja de jabón Dove (3u)",
+      "categoria": "Aseo y Belleza",
+      "precio": 5.35,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "3ce7de48-4fbb-4410-838b-506daf4c8570_1784589611704.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-20T23:25:20.483Z",
+      "modified_at": "2026-07-20T23:25:20.483Z"
+    },
+    {
+      "id": "prod_1784589691078_anguehmxs",
+      "nombre": "Paquete de azúcar blanca Vima 1kg",
+      "categoria": "Despensa",
+      "precio": 2.66,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "7fa03828-575d-4304-a84d-8e23c9b5951a_1784589691090.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-20T23:25:21.895Z",
+      "modified_at": "2026-07-20T23:25:21.895Z"
+    },
+    {
+      "id": "prod_1784589816369_vaw9fwk69",
+      "nombre": "Maíz dulce en grano 425g",
+      "categoria": "Despensa",
+      "precio": 2.25,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "4f58589f-fd88-4935-a81c-4a5d2e15c939_1784589816371.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-20T23:25:23.090Z",
+      "modified_at": "2026-07-20T23:25:23.090Z"
+    },
+    {
+      "id": "prod_1784589914440_7bzzxsl06",
+      "nombre": "Spaghetti Vima (400g)",
+      "categoria": "Despensa",
+      "precio": 0.9,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "a85cdc07-9b6c-475b-a80e-7180a009915b_1784589914442.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-20T23:25:24.317Z",
+      "modified_at": "2026-07-20T23:25:24.317Z"
     }
   ]
 }
