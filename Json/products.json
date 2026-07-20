@@ -3229,6 +3229,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-20T23:25:24.317Z",
       "modified_at": "2026-07-20T23:25:24.317Z"
+    },
+    {
+      "id": "prod_1784590063403_tp11dkbww",
+      "nombre": "Leche condensada Vima 390g",
+      "categoria": "Lácteos",
+      "precio": 2.25,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "b5802b51-3c95-437e-b488-7a8224adb30e_1784590063408.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-20T23:28:06.288Z",
+      "modified_at": "2026-07-20T23:28:06.288Z"
     }
   ]
 }
