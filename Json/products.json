@@ -3127,6 +3127,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-14T17:34:30.569Z",
       "modified_at": "2026-07-15T15:45:35.581Z"
+    },
+    {
+      "id": "prod_1784556857504_9mg1h593k",
+      "nombre": "Jabón de Tocador Natural 125g",
+      "categoria": "Aseo y Belleza",
+      "precio": 0.95,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "images-1_1784556857515.jfif"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-20T14:14:22.961Z",
+      "modified_at": "2026-07-20T14:14:22.961Z"
     }
   ]
 }
