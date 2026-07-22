@@ -823,15 +823,15 @@
       "precio": 3.99,
       "descuento": 2.26,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "Paquete_de_cafe_Dufiltro_(250g).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de café Dufiltro (250g), una excelente opción de nuestra categoría Cafetería. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-03-07T22:30:01.538Z"
+      "modified_at": "2026-07-22T16:58:18.387Z"
     },
     {
       "id": "prod_1768441690510_ujn45fhvi",
@@ -1044,15 +1044,15 @@
       "precio": 3.74,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "paquete_galleta_de_sal_1769200017513.jpg"
       ],
       "descripcion": "Disfruta el sabor auténtico de nuestras galletas de sal criollas, elaboradas con receta tradicional y textura crujiente. Perfectas para acompañar desayunos, meriendas o como base para tus combinaciones favoritas. Empacadas con cuidado en bolsa transparente para conservar su frescura y calidad.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-07-22T16:58:18.388Z"
     },
     {
       "id": "prod_1769202654831_7rc37gvmx",
