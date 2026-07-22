@@ -846,9 +846,9 @@
         "Bolsa_de_pan_10u.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Bolsa de pan 10u, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-05-06T21:29:49.216Z"
+      "modified_at": "2026-07-22T12:09:39.474Z"
     },
     {
       "id": "prod_1768441690510_h5qqrqz06",
