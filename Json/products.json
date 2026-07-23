@@ -3263,6 +3263,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-23T01:27:54.573Z",
       "modified_at": "2026-07-23T01:27:54.573Z"
+    },
+    {
+      "id": "prod_1784771014675_loffpvpsn",
+      "nombre": "Estación de energía portátil (2400w)",
+      "categoria": "Electrodomésticos",
+      "precio": 900,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "0cf84d2e-956d-474e-9d6d-a6276acd6f4d_1784771014688.jpeg"
+      ],
+      "descripcion": "Carga completa en solo 55minutos",
+      "disponibilidad": true,
+      "created_at": "2026-07-23T01:44:01.613Z",
+      "modified_at": "2026-07-23T01:44:01.613Z"
     }
   ]
 }
