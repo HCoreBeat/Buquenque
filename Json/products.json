@@ -10,12 +10,12 @@
       "nuevo": false,
       "oferta": false,
       "imagenes": [
-        "img_8125_1782504956846.jpeg"
+        "img_8766_1784768269294.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de cuartos de pollo 10 lbs, una excelente opción de nuestra categoría Cárnicos y Embutidos. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-06-28T08:41:06.986Z"
+      "modified_at": "2026-07-23T00:58:32.869Z"
     },
     {
       "id": "prod_1768441690510_piqbut8gb",
@@ -217,9 +217,9 @@
         "Manzana.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Manzana 🍎 x unidad, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-05-06T21:29:49.215Z"
+      "modified_at": "2026-07-23T00:58:17.343Z"
     },
     {
       "id": "prod_1768509219912_orvyg0rkr",
@@ -336,9 +336,9 @@
         "Protector_Diario_(18u).jpg"
       ],
       "descripcion": "Disfruta de la calidad de Protector Diario (18u), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-07-23T00:58:17.343Z"
     },
     {
       "id": "prod_1769297232608_t1t8j7j86",
@@ -738,15 +738,15 @@
       "precio": 2.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "aa58eee2-0e44-479e-959b-88bbd3cb5f2a_1770819322436.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Paquete de azúcar porsionado 1kg, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-06-29T18:24:58.993Z"
+      "modified_at": "2026-07-23T00:58:17.343Z"
     },
     {
       "id": "prod_1768441690510_covgyshrh",
@@ -1050,9 +1050,9 @@
         "paquete_galleta_de_sal_1769200017513.jpg"
       ],
       "descripcion": "Disfruta el sabor auténtico de nuestras galletas de sal criollas, elaboradas con receta tradicional y textura crujiente. Perfectas para acompañar desayunos, meriendas o como base para tus combinaciones favoritas. Empacadas con cuidado en bolsa transparente para conservar su frescura y calidad.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-07-22T16:58:18.388Z"
+      "modified_at": "2026-07-23T00:58:17.343Z"
     },
     {
       "id": "prod_1769202654831_7rc37gvmx",
@@ -1401,15 +1401,15 @@
       "precio": 1.97,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "bd617d35-e71d-447e-8621-bc02d549a7e6_1782605707616.jpeg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-02T09:28:25.562Z",
-      "modified_at": "2026-06-29T18:25:14.742Z"
+      "modified_at": "2026-07-23T00:58:17.343Z"
     },
     {
       "id": "prod_1772732759012_tojcqpnpu",
@@ -1419,14 +1419,14 @@
       "descuento": 40,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "1000010549_1772732759103.webp"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-05T17:46:45.716Z",
-      "modified_at": "2026-07-16T19:05:09.481Z"
+      "modified_at": "2026-07-23T00:58:17.343Z"
     },
     {
       "id": "prod_1772732799999_4pu74vvsy",
@@ -1759,14 +1759,14 @@
       "descuento": 20.4,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "leche_evaporada_vima_377ml_isla360shop-1_1774588196972.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-03-27T05:24:21.958Z",
-      "modified_at": "2026-07-16T19:05:09.482Z"
+      "modified_at": "2026-07-23T00:58:17.343Z"
     },
     {
       "id": "prod_1774588718809_f6anpwdzt",
@@ -2132,15 +2132,15 @@
       "precio": 1.85,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "238115_1777104949366.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-04-25T08:27:29.952Z",
-      "modified_at": "2026-04-25T08:27:29.952Z"
+      "modified_at": "2026-07-23T00:58:17.343Z"
     },
     {
       "id": "prod_1777104996420_aqe312i99",
@@ -2404,21 +2404,21 @@
       "precio": 0.6,
       "descuento": 16.67,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "1000065556_1777745771183.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-05-02T18:19:59.089Z",
-      "modified_at": "2026-07-22T17:11:27.305Z"
+      "modified_at": "2026-07-23T00:58:17.343Z"
     },
     {
       "id": "prod_1778000129093_n2p8n70fp",
       "nombre": "Pomo de Refresco 1.5lts (Naranja)",
       "categoria": "Bebidas no alcohólicas",
-      "precio": 2.49,
+      "precio": 2.95,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -2429,7 +2429,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-05-05T16:56:31.855Z",
-      "modified_at": "2026-05-05T16:56:31.855Z"
+      "modified_at": "2026-07-23T00:58:17.343Z"
     },
     {
       "id": "prod_1778000167417_ei33ur4id",
@@ -2660,14 +2660,14 @@
       "descuento": 26.67,
       "mas_vendido": false,
       "nuevo": false,
-      "oferta": true,
+      "oferta": false,
       "imagenes": [
         "1000077840_1778689868378.webp"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-13T16:31:43.332Z",
-      "modified_at": "2026-07-16T19:05:09.482Z"
+      "modified_at": "2026-07-23T00:58:17.343Z"
     },
     {
       "id": "prod_1778805120168_k4cioz6iy",
@@ -2789,55 +2789,21 @@
       "modified_at": "2026-05-22T16:51:04.734Z"
     },
     {
-      "id": "prod_1779468419722_3gb4z1pr1",
-      "nombre": "Caja de refresco Rayan (cola)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 18.97,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "1000083071_1779468419841.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": true,
-      "created_at": "2026-05-22T16:51:07.625Z",
-      "modified_at": "2026-06-29T18:25:18.075Z"
-    },
-    {
-      "id": "prod_1779468627017_2lonrcdvr",
-      "nombre": "Caja de refresco Rayan (limón)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 18.95,
-      "descuento": 0.53,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "1000083070_1779468627139.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": true,
-      "created_at": "2026-05-22T16:51:14.371Z",
-      "modified_at": "2026-07-20T23:06:29.695Z"
-    },
-    {
       "id": "prod_1780867059345_appdawmz7",
       "nombre": "Caja de Barra Snack Bon Bon (24u)",
       "categoria": "Confitura",
       "precio": 10,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img_7239_1780867059349.jpeg"
       ],
       "descripcion": "Caja de 24unidades de barras snack forradas de chocolate y maní",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-06-07T21:19:13.215Z",
-      "modified_at": "2026-06-07T21:19:13.215Z"
+      "modified_at": "2026-07-23T00:58:22.656Z"
     },
     {
       "id": "prod_1781992568846_o6abtahci",
@@ -2846,15 +2812,15 @@
       "precio": 2.75,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "img_7891_1781992568868_1782019494976.jpg"
+        "img_8762_1784767676608.jpeg"
       ],
       "descripcion": "Paquete de salchichas de 10u de pollo ahumadas",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-06-20T21:56:28.722Z",
-      "modified_at": "2026-07-20T17:40:51.607Z"
+      "modified_at": "2026-07-23T00:58:25.446Z"
     },
     {
       "id": "prod_1782001815822_n5g1trxf9",
@@ -2883,12 +2849,12 @@
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "img_8126_1782504884503.jpeg"
+        "img_3668_1784768040103.jpeg"
       ],
       "descripcion": "Cajas de cuartos de pollo de 40lbs formato de 4 paquete de 10lbs cada uno",
       "disponibilidad": true,
       "created_at": "2026-06-26T20:16:07.405Z",
-      "modified_at": "2026-06-26T20:16:07.405Z"
+      "modified_at": "2026-07-23T00:58:28.822Z"
     },
     {
       "id": "prod_1782605932077_d2od04209",
@@ -3016,15 +2982,15 @@
       "precio": 17,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "melocoton_1783195499535.jfif"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-07-04T20:05:36.750Z",
-      "modified_at": "2026-07-21T17:32:21.321Z"
+      "modified_at": "2026-07-23T00:58:31.353Z"
     },
     {
       "id": "prod_1783195521971_w0o3afhhc",
