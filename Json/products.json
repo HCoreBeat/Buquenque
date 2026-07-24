@@ -1758,15 +1758,15 @@
       "precio": 2.5,
       "descuento": 20.4,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "leche_evaporada_vima_377ml_isla360shop-1_1774588196972.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-03-27T05:24:21.958Z",
-      "modified_at": "2026-07-23T00:58:17.343Z"
+      "modified_at": "2026-07-24T02:08:21.148Z"
     },
     {
       "id": "prod_1774588718809_f6anpwdzt",
@@ -1880,12 +1880,12 @@
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "1000041619_1775429464584.jpg"
+        "img_8806_1784858535871.png"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-04-05T22:52:37.025Z",
-      "modified_at": "2026-07-20T23:06:27.352Z"
+      "modified_at": "2026-07-24T02:08:24.077Z"
     },
     {
       "id": "prod_1775429464494_g3",
@@ -2214,7 +2214,7 @@
       "id": "prod_1777105356172_kuna0r9z3",
       "nombre": "Mini ponquesito marmol",
       "categoria": "Confitura",
-      "precio": 3.97,
+      "precio": 4.25,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
@@ -2223,9 +2223,9 @@
         "img-2_1777105356187.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-04-25T08:27:39.900Z",
-      "modified_at": "2026-05-05T16:22:32.071Z"
+      "modified_at": "2026-07-24T02:08:25.112Z"
     },
     {
       "id": "prod_1777105417411_8vcu9pcyg",
@@ -2597,9 +2597,9 @@
         "1000077333_1778630940615.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-05-13T00:13:32.326Z",
-      "modified_at": "2026-05-13T00:13:32.326Z"
+      "modified_at": "2026-07-24T02:08:25.112Z"
     },
     {
       "id": "prod_1778631075468_44abvh7y7",
@@ -2903,9 +2903,9 @@
         "frijol-photoroom-500x500_1783195106876.png"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-07-04T20:05:29.160Z",
-      "modified_at": "2026-07-04T20:05:29.160Z"
+      "modified_at": "2026-07-24T02:08:25.112Z"
     },
     {
       "id": "prod_1783195226581_0l1k0snog",
@@ -3096,20 +3096,20 @@
     },
     {
       "id": "prod_1784556857504_9mg1h593k",
-      "nombre": "Jabón de Tocador Natural 125g",
+      "nombre": "Jabón de tocador con Aloe Vera 125g",
       "categoria": "Aseo y Belleza",
       "precio": 0.95,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "images-1_1784556857515.jfif"
+        "img_8804_1784858878307.png"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-07-20T14:14:22.961Z",
-      "modified_at": "2026-07-20T14:14:22.961Z"
+      "modified_at": "2026-07-24T02:08:27.447Z"
     },
     {
       "id": "prod_1784589150816_v1cacjqbz",
