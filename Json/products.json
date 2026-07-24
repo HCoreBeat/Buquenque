@@ -91,16 +91,16 @@
       "categoria": "Despensa",
       "precio": 11.5,
       "descuento": 0,
-      "mas_vendido": true,
+      "mas_vendido": false,
       "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000058960_1777051427739.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-06-29T18:04:40.292Z"
+      "modified_at": "2026-07-24T01:44:42.770Z"
     },
     {
       "id": "prod_1769030417838_noe5sa2wa",
@@ -279,15 +279,15 @@
       "precio": 2.8,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img_7892_1781990884448.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Frijol Negro (1kg), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-06-29T18:04:40.292Z"
+      "modified_at": "2026-07-24T01:44:42.770Z"
     },
     {
       "id": "prod_1768441690510_ify26lfde",
@@ -3280,6 +3280,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-23T01:44:01.613Z",
       "modified_at": "2026-07-23T01:44:01.613Z"
+    },
+    {
+      "id": "prod_1784857478863_eijr7r7lw",
+      "nombre": "Detergente Defá fragancia Floral 1kg",
+      "categoria": "Aseo y Belleza",
+      "precio": 3.5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_8801_1784857478879.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-24T01:44:52.757Z",
+      "modified_at": "2026-07-24T01:44:52.757Z"
     }
   ]
 }
