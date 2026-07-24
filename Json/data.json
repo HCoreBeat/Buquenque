@@ -1,8 +1,8 @@
 {
-    "id": 1,
-    "titulo": "¿Llenaste el carrito y te diste la vuelta? 🛒✨",
-    "mensaje": "Los antojos no se dejan para mañana. Entra ahora, finaliza tu compra en un par de clics y nosotros nos encargamos de llevártelo todo listo. ¡No dejes que se agoten!",
-    "subtitulo": "\"Lo mejor para ti\" ",
-    "tipo": "info",
-    "icono": "fas fa-truck"
+  "id": 3,
+  "titulo": "Pide hoy y paga cuando te llegue 🚚💨",
+  "mensaje": "Dejaste cosas en el carrito, pero no te preocupes: haz tu pedido ahora sin pagar nada por adelantado y coordinamos todo al momento de la entrega en tu casa.",
+  "subtitulo": "\"Cero riesgos, 100% comodidad\"",
+  "tipo": "info",
+  "icono": "fas fa-truck"
 }

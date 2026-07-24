@@ -234,32 +234,6 @@
     margin: 0 0.5rem;
 }
 
-/* Número de referencia */
-.order-reference {
-    margin: 0.9rem 0;
-    padding: 0.6rem;
-    background: rgba(12,24,36,0.03);
-    border: 1px dashed rgba(12,24,36,0.06);
-    border-radius: 8px;
-}
-
-.reference-label {
-    font-size: 0.85rem;
-    color: var(--gris-medio);
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.reference-number {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--negro);
-    font-family: 'Courier New', monospace;
-    letter-spacing: 1.6px;
-}
-
 /* Información de contacto mejorada */
 .contact-info {
     margin: 1rem 0;
@@ -442,20 +416,6 @@
         flex: 0.3;
         height: 1.5px;
         margin: 0 0.25rem;
-    }
-
-    .order-reference {
-        margin: 1.25rem 0;
-        padding: 0.75rem;
-    }
-
-    .reference-label {
-        font-size: 0.8rem;
-    }
-
-    .reference-number {
-        font-size: 1.2rem;
-        letter-spacing: 1px;
     }
 
     .contact-info {

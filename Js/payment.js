@@ -484,29 +484,9 @@ function showOrderConfirmationModal() {
     const modal = document.getElementById('order-confirmation-modal');
     if (!modal) return;
     
-    // Generar número de referencia único
-    const orderReference = generateOrderReference();
-    const referenceElement = document.getElementById('order-reference-number');
-    if (referenceElement) {
-        referenceElement.textContent = orderReference;
-    }
-    
-    // prevent background scroll and ensure modal is on top
     document.body.style.overflow = 'hidden';
     modal.style.display = 'flex';
     setTimeout(() => modal.classList.add('active'), 10);
-}
-
-/**
- * Genera un número de referencia único para la orden
- */
-function generateOrderReference() {
-    const date = new Date();
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const day = String(date.getDate()).padStart(2, '0');
-    const random = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
-    return `#ORD-${year}${month}${day}${random}`;
 }
 
 // También necesitamos la función para cerrar el modal (ya está en el HTML pero no en el JS)

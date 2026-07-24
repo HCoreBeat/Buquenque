@@ -271,8 +271,11 @@ const CAROUSEL_AUTOPLAY_DELAY = 10000; // 10 segundos
 
 // Función para ir al inicio
 function goToHome() {
-  window.location.hash = "";
-  // hideProductDetail will be called via handleRouteChange when hash changes
+  const targetUrl = "/#";
+  if (window.location.pathname !== "/" || window.location.hash !== "#") {
+    history.pushState({}, "Inicio", targetUrl);
+  }
+  handleRouteChange().catch(console.error);
 }
 
 // Función auxiliar: busca un producto por ID o nombre (dual mode)
@@ -499,8 +502,11 @@ async function handleRouteChange() {
   if (productInfo && productInfo.product) {
     await showProductDetail(productInfo);
   } else {
-    // No encontrado, volver al home (sin tocar pathname)
-    window.location.hash = "";
+    // No encontrado, volver al home con ruta limpia /#
+    const homeUrl = "/#";
+    if (window.location.pathname !== "/" || window.location.hash !== "#") {
+      window.history.replaceState(null, "Inicio", homeUrl);
+    }
   }
 }
 
@@ -983,9 +989,10 @@ function filterByCategory(category) {
       bestSellersSection.style.display = "block";
     }
     setFlashDealsSectionVisible(true);
-    // Limpiar URL cuando vuelve a "Todo" (solo si hay hash actual)
-    if (window.location.hash && window.location.hash !== "#") {
-      window.history.pushState({ category: "Todo" }, "Todas las categorías", "#");
+    // Limpiar URL cuando vuelve a "Todo" y forzar la ruta limpia con hash
+    const homeUrl = "/#";
+    if (window.location.pathname !== "/" || window.location.hash !== "#") {
+      window.history.pushState({ category: "Todo" }, "Todas las categorías", homeUrl);
     }
   }
 
@@ -2367,7 +2374,10 @@ async function showProductDetail(arg) {
   // si el producto no existe no hacemos nada y regresamos al home
   if (!info || !info.product) {
     if (!window.location.pathname.startsWith('/p/')) {
-      window.location.hash = "";
+      const homeUrl = "/#";
+      if (window.location.pathname !== "/" || window.location.hash !== "#") {
+        window.history.replaceState(null, "Inicio", homeUrl);
+      }
     }
     hideProductDetail();
     return;
@@ -2966,6 +2976,12 @@ function hideProductDetail() {
     detailContainer.style.display = "none";
     detailContainer.innerHTML = "";
   }
+
+  const homeUrl = "/#";
+  if (window.location.pathname !== "/" || window.location.hash !== "#") {
+    history.replaceState(null, "Inicio", homeUrl);
+  }
+
   // remove floating panel and observers when leaving detail
   try { removeDetailFloatingPanel(); } catch (e) { /* ignore */ }
 
@@ -4329,8 +4345,11 @@ function hidePackDetail() {
     detailContainer.innerHTML = "";
   }
   
-  // Limpiar hash del historial
-  window.location.hash = "";
+  // Volver al home con ruta limpia /#
+  const homeUrl = "/#";
+  if (window.location.pathname !== "/" || window.location.hash !== "#") {
+    window.history.replaceState(null, "Inicio", homeUrl);
+  }
   
   // Mostrar elementos principales
   if (categoryCardSection) categoryCardSection.style.display = "block";
@@ -4409,7 +4428,8 @@ function hidePacksDetail() {
   const currentHashDecoded = decodeURIComponent(window.location.hash.substring(1) || '');
   if (currentHashDecoded === 'packs') {
     // Si el hash es 'packs' dejarlo vacío para volver al contenido principal
-    window.location.hash = "";
+    const homeUrl = "/#";
+    window.history.replaceState(null, "Inicio", homeUrl);
   }
   
   // Mostrar elementos principales

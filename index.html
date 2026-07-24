@@ -1,598 +1,563 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Buquenque Shop - Tu Tienda Online de Comida Fresca y Productos
-            Esenciales</title>
 
-        <meta name="description"
-            content="En Buquenque Shop, tu tienda online de confianza, encuentra una amplia variedad de productos alimenticios frescos, víveres, y artículos esenciales para tu hogar. ¡Calidad y entrega rápida en Cuba!">
-        <meta name="keywords"
-            content="Buquenque Shop, tienda online de comida, productos frescos, víveres, alimentos, despensa, abarrotes, entregas a domicilio, comida a domicilio, compras online, ofertas de comida, Cuba">
-        <meta name="author" content="Buquenque y Afiliados H.A">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buquenque Shop - Tu Tienda Online de Comida Fresca y Productos
+        Esenciales</title>
 
-        <meta property="og:title"
-            content="Buquenque Shop - Comida Fresca y Esenciales a Domicilio">
-        <meta property="og:description"
-            content="En Buquenque Shop, tu tienda online de confianza, encuentra una amplia variedad de productos alimenticios frescos, víveres, y artículos esenciales para tu hogar. ¡Calidad y entrega rápida en Cuba!">
-        <meta property="og:image"
-            content="https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/social-share-banner.jpg">
-        <meta property="og:type" content="website">
-        <meta property="og:locale" content="es_ES">
+    <meta name="description"
+        content="En Buquenque Shop, tu tienda online de confianza, encuentra una amplia variedad de productos alimenticios frescos, víveres, y artículos esenciales para tu hogar. ¡Calidad y entrega rápida en Cuba!">
+    <meta name="keywords"
+        content="Buquenque Shop, tienda online de comida, productos frescos, víveres, alimentos, despensa, abarrotes, entregas a domicilio, comida a domicilio, compras online, ofertas de comida, Cuba">
+    <meta name="author" content="Buquenque y Afiliados H.A">
 
-        <link rel="icon" type="image/png" href="Images/favicon.png">
-        <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
+    <meta property="og:title" content="Buquenque Shop - Comida Fresca y Esenciales a Domicilio">
+    <meta property="og:description"
+        content="En Buquenque Shop, tu tienda online de confianza, encuentra una amplia variedad de productos alimenticios frescos, víveres, y artículos esenciales para tu hogar. ¡Calidad y entrega rápida en Cuba!">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/social-share-banner.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
 
-        <!-- CSS Modular -->
-        <link rel="stylesheet" href="Css/1-variables-reset.css">
-        <link rel="stylesheet" href="Css/2-header-navbar.css">
-        <link rel="stylesheet" href="Css/3-sidebar-filters.css">
-        <link rel="stylesheet" href="Css/4-products-grid-cards.css">
-        <link rel="stylesheet" href="Css/5-cart-sidebar.css">
-        <link rel="stylesheet" href="Css/6-product-detail.css">
-        <link rel="stylesheet" href="Css/7-payment.css">
-        <link rel="stylesheet" href="Css/8-carousel.css">
-        <link rel="stylesheet" href="Css/9-components.css">
-        <link rel="stylesheet" href="Css/10-animations-utilities.css">
-        <link rel="stylesheet" href="Css/11-responsive.css">
-        <link rel="stylesheet" href="Css/12-best-sellers.css">
-        <link rel="stylesheet" href="Css/13-notifications.css">
-        <link rel="stylesheet" href="Css/14-categories-circle.css">
-        <link rel="stylesheet" href="Css/15-dynamic-system.css">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
 
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-        <base href="./">
-    </head>
-    <body>
-        <!-- Overlay para el sidebar -->
-        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <!-- CSS Modular -->
+    <link rel="stylesheet" href="Css/1-variables-reset.css">
+    <link rel="stylesheet" href="Css/2-header-navbar.css">
+    <link rel="stylesheet" href="Css/3-sidebar-filters.css">
+    <link rel="stylesheet" href="Css/4-products-grid-cards.css">
+    <link rel="stylesheet" href="Css/5-cart-sidebar.css">
+    <link rel="stylesheet" href="Css/6-product-detail.css">
+    <link rel="stylesheet" href="Css/7-payment.css">
+    <link rel="stylesheet" href="Css/8-carousel.css">
+    <link rel="stylesheet" href="Css/9-components.css">
+    <link rel="stylesheet" href="Css/10-animations-utilities.css">
+    <link rel="stylesheet" href="Css/11-responsive.css">
+    <link rel="stylesheet" href="Css/12-best-sellers.css">
+    <link rel="stylesheet" href="Css/13-notifications.css">
+    <link rel="stylesheet" href="Css/14-categories-circle.css">
+    <link rel="stylesheet" href="Css/15-dynamic-system.css">
 
-        <!-- Overlay para el carrito -->
-        <div class="cart-overlay" id="cart-overlay"></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <base href="./">
+</head>
 
-        <!-- Menú lateral para móvil -->
-        <aside class="sidebar" id="sidebar">
-            <button class="close-sidebar" id="close-sidebar">
-                <i class="fas fa-times"></i>
-            </button>
+<body>
+    <!-- Overlay para el sidebar -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
-            <div class="sidebar-header">
-                <h3>Filtros</h3>
-            </div>
+    <!-- Overlay para el carrito -->
+    <div class="cart-overlay" id="cart-overlay"></div>
 
-            <div class="sidebar-section">
-                <h4 class="sidebar-title">Categorías</h4>
-                <ul class="sidebar-categories" id="sidebar-categories">
-                    <!-- Las categorías se llenarán dinámicamente -->
-                </ul>
-            </div>
+    <!-- Menú lateral para móvil -->
+    <aside class="sidebar" id="sidebar">
+        <button class="close-sidebar" id="close-sidebar">
+            <i class="fas fa-times"></i>
+        </button>
 
-            <div class="sidebar-section">
-                <h4 class="sidebar-title">Rango de Precios</h4>
-                <div class="price-filter">
-                    <div class="price-inputs">
-                        <div class="price-input-group">
-                            <label for="min-price">Mínimo</label>
-                            <input type="number" id="min-price"
-                                placeholder="0 cup" min="0">
-                        </div>
-                        <div class="price-input-group">
-                            <label for="max-price">Máximo</label>
-                            <input type="number" id="max-price"
-                                placeholder="Max cup" min="0">
-                        </div>
-                    </div>
-                    <div class="price-slider">
-                        <div class="price-slider-track"></div>
-                        <input type="range" id="price-slider-min"
-                            class="price-range" min="0" max="1000" value="0">
-                        <input type="range" id="price-slider-max"
-                            class="price-range" min="0" max="1000" value="1000">
-                    </div>
-                    <button class="apply-filter-btn" id="apply-price-filter">
-                        <i class="fas fa-filter"></i> Aplicar Filtros
-                    </button>
-                </div>
-            </div>
-        </aside>
-
-        <header class="header">
-            <div class="header-top">
-                <!-- Menú hamburguesa solo en móvil -->
-                <button class="menu-toggle" id="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-
-                <!-- Logo -->
-                <img src="Images/LOGO.png" alt="Buquenque Logo"
-                    class="logo logo-img" onclick="goToHome()">
-
-                <!-- Barra de búsqueda -->
-                <div class="search-container">
-                    <input type="text" id="search-input"
-                        placeholder="Buscar productos...">
-                    <button class="search-btn" onclick="searchProducts(false)">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-
-                <!-- Panel de Ubicación -->
-                <div class="location-panel">
-                    <i class="fas fa-map-marker-alt location-icon"></i>
-                    <div class="location-info">
-                        <p class="location-label">Entregas en:</p>
-                        <p class="location-city">Las Tunas</p>
-                    </div>
-                </div>
-
-                <!-- Carrito -->
-                <button class="cart-btn" onclick="toggleCart()">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span id="cart-count">0</span>
-                </button>
-            </div>
-
-            <!-- Categorías (solo en desktop) -->
-            <nav class="categories-nav">
-                <ul class="categories-list" id="categories-list">
-                    <!-- Las categorías se llenarán dinámicamente -->
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Carrusel de Banners -->
-        <div class="carousel-container">
-            <div class="carousel-wrapper">
-                <!-- Slide 1 -->
-                <div class="carousel-slide active" data-slide="0">
-                    <img src="Images/Banner_1.jpg" alt="Banner 1"
-                        class="carousel-image" loading="lazy" decoding="async">
-                    <div class="carousel-text-overlay">
-                        <h2 class="carousel-title animate-text">Calidad garantizada</h2>
-                        <p class="carousel-subtitle animate-text-delay">Buquenque a la orden del día</p>
-                    </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="carousel-slide" data-slide="1">
-                    <img src="Images/Banner_2.jpg" alt="Banner 2"
-                        class="carousel-image" loading="lazy" decoding="async">
-                    <div class="carousel-text-overlay">
-                        <h2 class="carousel-title animate-text">Envíos rápidos, compras seguras</h2>
-                        <p class="carousel-subtitle animate-text-delay">Entrega en 24 horas o menos</p>
-                    </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="carousel-slide" data-slide="2">
-                    <img src="Images/Banner_3.jpg" alt="Banner 3"
-                        class="carousel-image" loading="lazy" decoding="async">
-                    <div class="carousel-text-overlay">
-                        <h2 class="carousel-title animate-text">Compra fácil,</h2>
-                        <p class="carousel-subtitle animate-text-delay">recibe rápido y seguro.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Botones de navegación -->
-            <button class="carousel-btn carousel-btn-prev" id="carousel-prev"
-                aria-label="Slide anterior">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-btn carousel-btn-next" id="carousel-next"
-                aria-label="Siguiente slide">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-
-            <!-- Indicadores de slides -->
-            <div class="carousel-indicators">
-                <button class="carousel-indicator active" data-slide="0"
-                    aria-label="Ir al slide 1"></button>
-                <button class="carousel-indicator" data-slide="1"
-                    aria-label="Ir al slide 2"></button>
-                <button class="carousel-indicator" data-slide="2"
-                    aria-label="Ir al slide 3"></button>
-            </div>
+        <div class="sidebar-header">
+            <h3>Filtros</h3>
         </div>
 
-        <!-- Sección de Productos Más Vendidos -->
-        <section class="best-sellers-section">
-            <div class="best-sellers-container">
-                <div class="best-sellers-scroll" id="best-sellers-scroll">
-                    <!-- Cards de productos más vendidos se cargarán aquí -->
-                </div>
-            </div>
-        </section>
-
-        <section class="flash-deals-section" id="flash-deals-section" style="display: none;">
-            <div class="flash-deals-container">
-                <div class="flash-deals-header">
-                    <div>
-                        <p class="flash-deals-kicker"><i class="fas fa-bolt"></i> Ofertas relámpago</p>
-                        <h2>Antes de que se acaben</h2>
-                    </div>
-                    <div class="flash-deals-timer" id="flash-deals-timer">Termina en --:--:--</div>
-                </div>
-                <div class="flash-deals-scroll" id="flash-deals-scroll"></div>
-            </div>
-        </section>
-
-        <!-- Sección de Category Card - Packs -->
-        <section class="category-card-section" id="category-card-section">
-            <div class="category-card-container">
-                <div id="category-card-panel" class="category-card">
-                    <div class="category-card-header">
-                        <h2 class="category-card-title">Packs Disponibles</h2>
-                    </div>
-                    <div class="category-card-body" id="category-card-items">
-                        <!-- Los packs se cargarán dinámicamente aquí -->
-                    </div>
-                    <div class="category-card-footer">
-                        <button class="category-card-link" onclick="showAllPacks()">Ver más packs disponibles</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Categorías Circulares -->
-        <section class="categories-circle-section">
-            <div class="categories-circle-container">
-                <h2 class="categories-circle-title">Explora Nuestras Categorías</h2>
-                <div class="categories-circle-scroll" id="categories-circle-scroll">
-                    <!-- Categorías circulares se cargarán aquí -->
-                </div>
-            </div>
-        </section>
-
-        <main id="main-content">
-            <div class="category-back-button-wrapper" id="category-back-button-wrapper" style="display: none;">
-                <button class="category-back-button" onclick="filterByCategory('Todo')">
-                    <i class="fas fa-chevron-left"></i> Volver a todas las categorías
-                </button>
-            </div>
-            <div class="products-grid" id="products-container"></div>
-            <div class="product-detail" id="product-detail"
-                style="display: none;"></div>
-            <div class="packs-detail" id="packs-detail"
-                style="display: none;"></div>
-        </main>
-
-        <div class="cart-sidebar" id="cart">
-            <div class="cart-header">
-                <h2><i class="fas fa-shopping-cart"></i> Tu Carrito</h2>
-                <button class="close-btn" onclick="toggleCart()">×</button>
-            </div>
-            <div class="cart-content">
-                <div class="cart-event-panel" id="cart-event-panel" style="display: none;">
-                    <div class="event-banner">
-                        <i class="fas fa-calendar-alt"></i>
-                        <span>Evento</span>
-                        <button class="event-btn" onclick="showEventModal()">Ver Evento</button>
-                    </div>
-                    <p class="event-panel-subtitle">Completa 5 códigos y compra mínimo 100 Zelle en productos con códigos para ganar 5000 CUP.</p>
-                    <div class="secret-codes-panel" id="secret-codes-panel">
-                        <h4>Códigos Secretos Encontrados:</h4>
-                        <div class="secret-codes-grid" id="secret-codes-grid">
-                            <div class="secret-code-slot" data-index="0"></div>
-                            <div class="secret-code-slot" data-index="1"></div>
-                            <div class="secret-code-slot" data-index="2"></div>
-                            <div class="secret-code-slot" data-index="3"></div>
-                            <div class="secret-code-slot" data-index="4"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-items" id="cart-items"></div>
-                <div class="empty-cart-panel" id="empty-cart-panel">
-                    <div class="empty-cart-panel-content">
-                        <i class="fas fa-shopping-basket"></i>
-                        <h3>Tu carrito está vacío</h3>
-                        <p>Explora nuestros productos y encuentra algo especial</p>
-                        <button class="continue-btn" onclick="toggleCart()">Seguir
-                            comprando</button>
-                    </div>
-                    <div class="empty-cart-recommendations" id="empty-cart-recommendations"></div>
-                </div>
-                <div class="cart-total">
-                    <div class="cart-minimum-banner" id="cart-minimum-banner" role="status" aria-live="polite">
-                        <i class="fas fa-exclamation-circle"></i>
-                        <span>Faltan <strong>10.00</strong> <img src="Images/zelle_oscuro.svg" alt="Zelle" class="currency-icon price-xs"> para llegar al mínimo de pedido.</span>
-                    </div>
-                    <p>Total: $<span id="total">0.00</span></p>
-                    <button class="checkout-btn" type="button">Finalizar Compra</button>
-                </div>
-            </div>
+        <div class="sidebar-section">
+            <h4 class="sidebar-title">Categorías</h4>
+            <ul class="sidebar-categories" id="sidebar-categories">
+                <!-- Las categorías se llenarán dinámicamente -->
+            </ul>
         </div>
 
-        <!-- Panel de carrito vacío -->
-        <div class="empty-cart-modal" id="empty-cart-modal">
-            <div class="empty-cart-content">
+        <div class="sidebar-section">
+            <h4 class="sidebar-title">Rango de Precios</h4>
+            <div class="price-filter">
+                <div class="price-inputs">
+                    <div class="price-input-group">
+                        <label for="min-price">Mínimo</label>
+                        <input type="number" id="min-price" placeholder="0 cup" min="0">
+                    </div>
+                    <div class="price-input-group">
+                        <label for="max-price">Máximo</label>
+                        <input type="number" id="max-price" placeholder="Max cup" min="0">
+                    </div>
+                </div>
+                <div class="price-slider">
+                    <div class="price-slider-track"></div>
+                    <input type="range" id="price-slider-min" class="price-range" min="0" max="1000" value="0">
+                    <input type="range" id="price-slider-max" class="price-range" min="0" max="1000" value="1000">
+                </div>
+                <button class="apply-filter-btn" id="apply-price-filter">
+                    <i class="fas fa-filter"></i> Aplicar Filtros
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <header class="header">
+        <div class="header-top">
+            <!-- Menú hamburguesa solo en móvil -->
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Logo -->
+            <img src="Images/LOGO.png" alt="Buquenque Logo" class="logo logo-img" onclick="goToHome()">
+
+            <!-- Barra de búsqueda -->
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar productos...">
+                <button class="search-btn" onclick="searchProducts(false)">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- Panel de Ubicación -->
+            <div class="location-panel">
+                <i class="fas fa-map-marker-alt location-icon"></i>
+                <div class="location-info">
+                    <p class="location-label">Entregas en:</p>
+                    <p class="location-city">Las Tunas</p>
+                </div>
+            </div>
+
+            <!-- Carrito -->
+            <button class="cart-btn" onclick="toggleCart()">
                 <i class="fas fa-shopping-cart"></i>
-                <h3>Tu carrito está vacío</h3>
-                <p>Añade productos para continuar con tu compra</p>
-                <button class="continue-shopping-btn"
-                    onclick="closeEmptyCartModal()">Seguir comprando</button>
-            </div>
+                <span id="cart-count">0</span>
+            </button>
         </div>
 
-        <!-- Modal de Evento -->
-        <div class="event-modal" id="event-modal">
-            <div class="event-modal-content">
-                <!-- Encabezado del modal -->
-                <div class="event-modal-header">
-                    <div class="event-modal-title">
-                        <i class="fas fa-star"></i>
-                        <div>
-                          <h2 id="event-title">Evento Especial</h2>
-                          <p id="event-modal-subtitle" class="event-modal-subtitle">Gana 5000 CUP al completar 5 códigos</p>
-                        </div>
-                    </div>
-                    <button class="event-modal-close" id="event-modal-close">&times;</button>
-                </div>
+        <!-- Categorías (solo en desktop) -->
+        <nav class="categories-nav">
+            <ul class="categories-list" id="categories-list">
+                <!-- Las categorías se llenarán dinámicamente -->
+            </ul>
+        </nav>
+    </header>
 
-                <!-- Cuerpo del modal con scroll -->
-                <div class="event-modal-body">
-                    <!-- Contenido dinámico del evento -->
-                    <div id="event-modal-body" class="event-modal-content-wrapper">
-                        <!-- Se carga dinámicamente desde script.js -->
-                    </div>
+    <!-- Carrusel de Banners -->
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active" data-slide="0">
+                <img src="Images/Banner_1.jpg" alt="Banner 1" class="carousel-image" loading="lazy" decoding="async">
+                <div class="carousel-text-overlay">
+                    <h2 class="carousel-title animate-text">Calidad garantizada</h2>
+                    <p class="carousel-subtitle animate-text-delay">Buquenque a la orden del día</p>
                 </div>
             </div>
-        </div>
 
-        <!-- Payment Section -->
-        <section id="payment-section" class="payment-section hidden">
-            <div class="payment-container">
-                <div class="payment-header">
-                    <h2><i class="fas fa-file-invoice-dollar"></i> Finalizar
-                        Compra</h2>
-                    <button class="close-btn"
-                        onclick="hidePaymentSection()">×</button>
-                </div>
-
-                <!-- Segmento de Información de Seguridad -->
-                <div class="security-notice-container">
-                    <div class="security-notice">
-                        <div class="security-notice-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="security-notice-content">
-                            <h3 class="security-notice-title">
-                                <i class="fas fa-lock"></i> Compra Segura
-                            </h3>
-                            <p class="security-notice-text">
-                                Esta tienda no cuenta con pasarela de pago
-                                integrada, lo que hace que tu información sea
-                                <strong>completamente segura</strong>.
-                            </p>
-                            <p class="security-notice-text">
-                                Una vez confirmes tu pedido, nos pondremos en
-                                contacto directo contigo para coordinar los
-                                detalles de pago y la confirmación de tu compra.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <form id="payment-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="full-name"><i class="fas fa-user"></i>
-                                Tu Nombre Completo (Comprador)</label>
-                            <input type="text" id="full-name" name="full-name"
-                                placeholder="Ej: Hugo Alejandro Martínez" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email"><i class="fas fa-envelope"></i>
-                                Correo Electrónico</label>
-                            <input type="email" id="email" name="email"
-                                placeholder="tu@correo.com" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone"><i class="fas fa-mobile-alt"></i>
-                                Tu Número de Teléfono (Para confirmar tu pedido)</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Ej: +1 234 567 8901" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="address"><i
-                                    class="fas fa-map-marker-alt"></i>
-                                Dirección de Entrega</label>
-                            <input type="text" id="address" name="address"
-                                placeholder="Ej: Calle Principal 123, Apto 4B" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="delivery-person"><i class="fas fa-user-check"></i>
-                                Nombre de Persona que Recibe</label>
-                            <input type="text" id="delivery-person" name="delivery-person"
-                                placeholder="Ej: María Alejandra Rodríguez" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="delivery-phone"><i class="fas fa-phone-alt"></i>
-                                Teléfono de Persona que Recibe</label>
-                            <input type="tel" id="delivery-phone" name="delivery-phone"
-                                placeholder="Ej: +1 234 567 8901" required>
-                        </div>
-                    </div>
-
-                    <div class="delivery-message">
-                        <div class="delivery-info-item">
-                            <i class="fas fa-check-circle"></i>
-                            <p><strong>✓ Envío gratuito dentro del municipio</strong></p>
-                        </div>
-                        <div class="delivery-info-item">
-                            <i class="fas fa-shipping-fast"></i>
-                            <p>Entrega en 24-48 horas. Fuera del municipio, el costo del domicilio se coordina al confirmar.</p>
-                        </div>
-                    </div>
-
-                    <h3 class="order-summary-title"><i
-                            class="fas fa-shopping-cart"></i> Resumen de tu
-                        Pedido</h3>
-                    <div class="order-summary" id="order-summary">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th><i class="fas fa-box-open"></i>
-                                        Producto</th>
-                                    <th><i class="fas fa-hashtag"></i>
-                                        Cantidad</th>
-                                    <th><i class="fas fa-tag"></i> Precio
-                                        Unitario</th>
-                                    <th><i class="fas fa-calculator"></i>
-                                        Total</th>
-                                </tr>
-                            </thead>
-                            <tbody id="summary-items">
-                                <!-- Productos se llenan dinámicamente -->
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="order-total">
-                        <p>Total a pagar: <span
-                                id="payment-total">0.00</span></p>
-                    </div>
-
-                    <!-- listado de países disponibles -->
-                    <div id="payment-country-list" class="country-list">
-                        <!-- se rellenará dinámicamente al abrir el formulario -->
-                    </div>
-
-                    <!-- checkbox de confirmación de país compatible -->
-                    <div class="form-group location-confirm-group">
-                        <input type="checkbox" id="location-confirm" name="location-confirm">
-                        <label for="location-confirm">He leído la lista y mi país es compatible</label>
-                    </div>
-
-                    <div class="payment-actions">
-                        <button type="submit" class="submit-btn">Confirmar
-                            Pedido</button>
-                        <button type="button" class="cancel-btn"
-                            onclick="hidePaymentSection()">Cancelar</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-content">
-                    <div class="footer-section">
-                        <h3 class="footer-brand">Buquenque Shop</h3>
-                        <p class="footer-tagline">Tu tienda online de confianza para productos frescos y esenciales</p>
-                    </div>
-                    <div class="footer-divider"></div>
-                    <div class="footer-section">
-                        <p class="footer-info"><i class="fas fa-phone"></i> +53 55884661</p>
-                        <p class="footer-info"><i class="fas fa-envelope"></i> soporte.buquenque@gmail.com</p>
-                    </div>
-                </div>
-                <div class="footer-credits">
-                    <p class="footer-text">© 2026 Buquenque y Afiliados. Todos los derechos reservados.</p>
-                    <p class="footer-developer">Desarrollado por <strong>HLab</strong></p>
+            <!-- Slide 2 -->
+            <div class="carousel-slide" data-slide="1">
+                <img src="Images/Banner_2.jpg" alt="Banner 2" class="carousel-image" loading="lazy" decoding="async">
+                <div class="carousel-text-overlay">
+                    <h2 class="carousel-title animate-text">Envíos rápidos, compras seguras</h2>
+                    <p class="carousel-subtitle animate-text-delay">Entrega en 24 horas o menos</p>
                 </div>
             </div>
-        </footer>
 
-        <!-- Panel de confirmación de compra -->
-        <div class="order-confirmation-modal" id="order-confirmation-modal">
-            <div class="order-confirmation-content">
-                <div class="confirmation-header">
-                    <div class="confirmation-icon-wrapper">
-                        <div class="confirmation-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <div class="confirmation-icon-glow"></div>
-                    </div>
-                </div>
-
-                <div class="confirmation-main">
-                    <h2>¡Pedido Confirmado!</h2>
-                    <p class="confirmation-message">Gracias por tu compra en
-                        Buquenque Shop. Estamos procesando tu pedido y nos
-                        pondremos en contacto contigo pronto.</p>
-
-                    <div class="order-status-steps">
-                        <div class="step-item completed">
-                            <div class="step-icon"><i
-                                    class="fas fa-credit-card"></i></div>
-                            <div class="step-label">Pedido realizado</div>
-                        </div>
-                        <div class="step-divider"></div>
-                        <div class="step-item active">
-                            <div class="step-icon"><i
-                                    class="fas fa-box-open"></i></div>
-                            <div class="step-label">Procesando</div>
-                        </div>
-                        <div class="step-divider"></div>
-                        <div class="step-item">
-                            <div class="step-icon"><i
-                                    class="fas fa-truck"></i></div>
-                            <div class="step-label">En Envío</div>
-                        </div>
-                    </div>
-
-                    <div class="order-reference">
-                        <p class="reference-label">Número de Referencia</p>
-                        <p class="reference-number"
-                            id="order-reference-number">#ORD-2026010001</p>
-                    </div>
-
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon"><i
-                                    class="fas fa-phone-alt"></i></div>
-                            <div class="contact-detail">
-                                <p class="contact-label">Teléfono</p>
-                                <p class="contact-value">+53 55884661</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i
-                                    class="fas fa-envelope"></i></div>
-                            <div class="contact-detail">
-                                <p class="contact-label">Correo</p>
-                                <p
-                                    class="contact-value">soporte.buquenque@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="confirmation-actions">
-                        <button class="back-to-home-btn"
-                            onclick="closeConfirmationAndGoHome()">
-                            <i class="fas fa-chevron-left"></i> Volver a la
-                            tienda
-                        </button>
-                    </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide" data-slide="2">
+                <img src="Images/Banner_3.jpg" alt="Banner 3" class="carousel-image" loading="lazy" decoding="async">
+                <div class="carousel-text-overlay">
+                    <h2 class="carousel-title animate-text">Compra fácil,</h2>
+                    <p class="carousel-subtitle animate-text-delay">recibe rápido y seguro.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Botón flotante de WhatsApp -->
-        <div class="whatsapp-float" onclick="openWhatsApp()">
-            <img src="Images/whatsapp.svg" alt="Contactar por WhatsApp"
-                class="whatsapp-icon">
-            <span class="whatsapp-tooltip">¡Contáctanos!</span>
-        </div>
+        <!-- Botones de navegación -->
+        <button class="carousel-btn carousel-btn-prev" id="carousel-prev" aria-label="Slide anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn carousel-btn-next" id="carousel-next" aria-label="Siguiente slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
 
-        <script src="Js/notifications.js"></script>
-        <script src="Js/message-notification-system.js"></script>
-        <script src="Js/afiliados.js"></script>
-        <script src="Js/script.js"></script>
-        <script src="Js/dynamic-system.js"></script>
-        <script type="module">
-          import { initRatings } from './Js/rating.js';
-          document.addEventListener('DOMContentLoaded', () => { initRatings(); });
-        </script>
-        <script src="Js/payment-autofill.js"></script>
-        <script src="Js/payment.js"></script>
-    </body>
+        <!-- Indicadores de slides -->
+        <div class="carousel-indicators">
+            <button class="carousel-indicator active" data-slide="0" aria-label="Ir al slide 1"></button>
+            <button class="carousel-indicator" data-slide="1" aria-label="Ir al slide 2"></button>
+            <button class="carousel-indicator" data-slide="2" aria-label="Ir al slide 3"></button>
+        </div>
+    </div>
+
+    <!-- Sección de Productos Más Vendidos -->
+    <section class="best-sellers-section">
+        <div class="best-sellers-container">
+            <div class="best-sellers-scroll" id="best-sellers-scroll">
+                <!-- Cards de productos más vendidos se cargarán aquí -->
+            </div>
+        </div>
+    </section>
+
+    <section class="flash-deals-section" id="flash-deals-section" style="display: none;">
+        <div class="flash-deals-container">
+            <div class="flash-deals-header">
+                <div>
+                    <p class="flash-deals-kicker"><i class="fas fa-bolt"></i> Ofertas relámpago</p>
+                    <h2>Antes de que se acaben</h2>
+                </div>
+                <div class="flash-deals-timer" id="flash-deals-timer">Termina en --:--:--</div>
+            </div>
+            <div class="flash-deals-scroll" id="flash-deals-scroll"></div>
+        </div>
+    </section>
+
+    <!-- Sección de Category Card - Packs -->
+    <section class="category-card-section" id="category-card-section">
+        <div class="category-card-container">
+            <div id="category-card-panel" class="category-card">
+                <div class="category-card-header">
+                    <h2 class="category-card-title">Packs Disponibles</h2>
+                </div>
+                <div class="category-card-body" id="category-card-items">
+                    <!-- Los packs se cargarán dinámicamente aquí -->
+                </div>
+                <div class="category-card-footer">
+                    <button class="category-card-link" onclick="showAllPacks()">Ver más packs disponibles</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Categorías Circulares -->
+    <section class="categories-circle-section">
+        <div class="categories-circle-container">
+            <h2 class="categories-circle-title">Explora Nuestras Categorías</h2>
+            <div class="categories-circle-scroll" id="categories-circle-scroll">
+                <!-- Categorías circulares se cargarán aquí -->
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="category-back-button-wrapper" id="category-back-button-wrapper" style="display: none;">
+            <button class="category-back-button" onclick="filterByCategory('Todo')">
+                <i class="fas fa-chevron-left"></i> Volver a todas las categorías
+            </button>
+        </div>
+        <div class="products-grid" id="products-container"></div>
+        <div class="product-detail" id="product-detail" style="display: none;"></div>
+        <div class="packs-detail" id="packs-detail" style="display: none;"></div>
+    </main>
+
+    <div class="cart-sidebar" id="cart">
+        <div class="cart-header">
+            <h2><i class="fas fa-shopping-cart"></i> Tu Carrito</h2>
+            <button class="close-btn" onclick="toggleCart()">×</button>
+        </div>
+        <div class="cart-content">
+            <div class="cart-event-panel" id="cart-event-panel" style="display: none;">
+                <div class="event-banner">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Evento</span>
+                    <button class="event-btn" onclick="showEventModal()">Ver Evento</button>
+                </div>
+                <p class="event-panel-subtitle">Completa 5 códigos y compra mínimo 100 Zelle en productos con códigos
+                    para ganar 5000 CUP.</p>
+                <div class="secret-codes-panel" id="secret-codes-panel">
+                    <h4>Códigos Secretos Encontrados:</h4>
+                    <div class="secret-codes-grid" id="secret-codes-grid">
+                        <div class="secret-code-slot" data-index="0"></div>
+                        <div class="secret-code-slot" data-index="1"></div>
+                        <div class="secret-code-slot" data-index="2"></div>
+                        <div class="secret-code-slot" data-index="3"></div>
+                        <div class="secret-code-slot" data-index="4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-items" id="cart-items"></div>
+            <div class="empty-cart-panel" id="empty-cart-panel">
+                <div class="empty-cart-panel-content">
+                    <i class="fas fa-shopping-basket"></i>
+                    <h3>Tu carrito está vacío</h3>
+                    <p>Explora nuestros productos y encuentra algo especial</p>
+                    <button class="continue-btn" onclick="toggleCart()">Seguir
+                        comprando</button>
+                </div>
+                <div class="empty-cart-recommendations" id="empty-cart-recommendations"></div>
+            </div>
+            <div class="cart-total">
+                <div class="cart-minimum-banner" id="cart-minimum-banner" role="status" aria-live="polite">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Faltan <strong>10.00</strong> <img src="Images/zelle_oscuro.svg" alt="Zelle"
+                            class="currency-icon price-xs"> para llegar al mínimo de pedido.</span>
+                </div>
+                <p>Total: $<span id="total">0.00</span></p>
+                <button class="checkout-btn" type="button">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel de carrito vacío -->
+    <div class="empty-cart-modal" id="empty-cart-modal">
+        <div class="empty-cart-content">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>Tu carrito está vacío</h3>
+            <p>Añade productos para continuar con tu compra</p>
+            <button class="continue-shopping-btn" onclick="closeEmptyCartModal()">Seguir comprando</button>
+        </div>
+    </div>
+
+    <!-- Modal de Evento -->
+    <div class="event-modal" id="event-modal">
+        <div class="event-modal-content">
+            <!-- Encabezado del modal -->
+            <div class="event-modal-header">
+                <div class="event-modal-title">
+                    <i class="fas fa-star"></i>
+                    <div>
+                        <h2 id="event-title">Evento Especial</h2>
+                        <p id="event-modal-subtitle" class="event-modal-subtitle">Gana 5000 CUP al completar 5 códigos
+                        </p>
+                    </div>
+                </div>
+                <button class="event-modal-close" id="event-modal-close">&times;</button>
+            </div>
+
+            <!-- Cuerpo del modal con scroll -->
+            <div class="event-modal-body">
+                <!-- Contenido dinámico del evento -->
+                <div id="event-modal-body" class="event-modal-content-wrapper">
+                    <!-- Se carga dinámicamente desde script.js -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Section -->
+    <section id="payment-section" class="payment-section hidden">
+        <div class="payment-container">
+            <div class="payment-header">
+                <h2><i class="fas fa-file-invoice-dollar"></i> Finalizar
+                    Compra</h2>
+                <button class="close-btn" onclick="hidePaymentSection()">×</button>
+            </div>
+
+            <!-- Segmento de Información de Seguridad -->
+            <div class="security-notice-container">
+                <div class="security-notice">
+                    <div class="security-notice-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="security-notice-content">
+                        <h3 class="security-notice-title">
+                            <i class="fas fa-lock"></i>Lea esto - No se paga ahora
+                        </h3>
+                        <p class="security-notice-text">
+                            <strong>¡Pagas cuando recibes en tu casa!</strong> Sin riesgos.
+                        </p>
+                        <p class="security-notice-text">
+                            Una vez entregado tu pedido, nos pondremos en contacto contigo por <strong>WhatsApp</strong>
+                            para coordinar el pago de manera fácil y rápida.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <form id="payment-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="full-name"><i class="fas fa-user"></i>
+                            Tu Nombre Completo (Comprador)</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Ej: Hugo Alejandro Martínez"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i>
+                            Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-mobile-alt"></i>
+                            Tu Número de Teléfono (Para confirmar tu pedido)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Ej: +1 234 567 8901" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address"><i class="fas fa-map-marker-alt"></i>
+                            Dirección para Entregar</label>
+                        <input type="text" id="address" name="address" placeholder="Ej: Calle Principal 123, Apto 4B"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="delivery-person"><i class="fas fa-user-check"></i>
+                            Nombre de Persona que Recibe</label>
+                        <input type="text" id="delivery-person" name="delivery-person"
+                            placeholder="Ej: María Alejandra Rodríguez" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery-phone"><i class="fas fa-phone-alt"></i>
+                            Teléfono de Persona que Recibe</label>
+                        <input type="tel" id="delivery-phone" name="delivery-phone" placeholder="Ej: +1 234 567 8901"
+                            required>
+                    </div>
+                </div>
+
+                <div class="delivery-message">
+                    <div class="delivery-info-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p><strong>✓ Envío gratuito dentro del municipio</strong></p>
+                    </div>
+                    <div class="delivery-info-item">
+                        <i class="fas fa-shipping-fast"></i>
+                        <p>Entrega en 24-48 horas. Fuera del municipio, el costo del domicilio se coordina al confirmar.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="order-summary-title"><i class="fas fa-shopping-cart"></i> Resumen de tu
+                    Pedido</h3>
+                <div class="order-summary" id="order-summary">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><i class="fas fa-box-open"></i>
+                                    Producto</th>
+                                <th><i class="fas fa-hashtag"></i>
+                                    Cantidad</th>
+                                <th><i class="fas fa-tag"></i> Precio
+                                    Unitario</th>
+                                <th><i class="fas fa-calculator"></i>
+                                    Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="summary-items">
+                            <!-- Productos se llenan dinámicamente -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="order-total">
+                    <p>Total a pagar: <span id="payment-total">0.00</span></p>
+                </div>
+
+                <!-- listado de países disponibles -->
+                <div id="payment-country-list" class="country-list">
+                    <!-- se rellenará dinámicamente al abrir el formulario -->
+                </div>
+
+                <!-- checkbox de confirmación de país compatible -->
+                <div class="form-group location-confirm-group">
+                    <input type="checkbox" id="location-confirm" name="location-confirm">
+                    <label for="location-confirm">He leído la lista y mi país es compatible</label>
+                </div>
+
+                <div class="payment-actions">
+                    <button type="submit" class="submit-btn">Confirmar
+                        Pedido</button>
+                    <button type="button" class="cancel-btn" onclick="hidePaymentSection()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-brand">Buquenque Shop</h3>
+                    <p class="footer-tagline">Tu tienda online de confianza para productos frescos y esenciales</p>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-section">
+                    <p class="footer-info"><i class="fas fa-phone"></i> +53 55884661</p>
+                    <p class="footer-info"><i class="fas fa-envelope"></i> soporte.buquenque@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-credits">
+                <p class="footer-text">© 2026 Buquenque y Afiliados. Todos los derechos reservados.</p>
+                <p class="footer-developer">Desarrollado por <strong>HLab</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Panel de confirmación de compra -->
+    <div class="order-confirmation-modal" id="order-confirmation-modal">
+        <div class="order-confirmation-content">
+            <div class="confirmation-header">
+                <div class="confirmation-icon-wrapper">
+                    <div class="confirmation-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="confirmation-icon-glow"></div>
+                </div>
+            </div>
+
+            <div class="confirmation-main">
+                <h2>¡Pedido Confirmado!</h2>
+                <p class="confirmation-message">Gracias por tu compra en
+                    Buquenque Shop. Estamos procesando tu pedido y nos
+                    pondremos en contacto contigo pronto.</p>
+
+                <div class="order-status-steps">
+                    <div class="step-item completed">
+                        <div class="step-icon"><i class="fas fa-credit-card"></i></div>
+                        <div class="step-label">Pedido realizado</div>
+                    </div>
+                    <div class="step-divider"></div>
+                    <div class="step-item active">
+                        <div class="step-icon"><i class="fas fa-box-open"></i></div>
+                        <div class="step-label">Procesando</div>
+                    </div>
+                    <div class="step-divider"></div>
+                    <div class="step-item">
+                        <div class="step-icon"><i class="fas fa-truck"></i></div>
+                        <div class="step-label">En Envío</div>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-detail">
+                            <p class="contact-label">Teléfono</p>
+                            <p class="contact-value">+53 55884661</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-detail">
+                            <p class="contact-label">Correo</p>
+                            <p class="contact-value">soporte.buquenque@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="confirmation-actions">
+                    <button class="back-to-home-btn" onclick="closeConfirmationAndGoHome()">
+                        <i class="fas fa-chevron-left"></i> Volver a la
+                        tienda
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <img src="Images/whatsapp.svg" alt="Contactar por WhatsApp" class="whatsapp-icon">
+        <span class="whatsapp-tooltip">¡Contáctanos!</span>
+    </div>
+
+    <script src="Js/notifications.js"></script>
+    <script src="Js/message-notification-system.js"></script>
+    <script src="Js/afiliados.js"></script>
+    <script src="Js/script.js"></script>
+    <script src="Js/dynamic-system.js"></script>
+    <script type="module">
+        import { initRatings } from './Js/rating.js';
+        document.addEventListener('DOMContentLoaded', () => { initRatings(); });
+    </script>
+    <script src="Js/payment-autofill.js"></script>
+    <script src="Js/payment.js"></script>
+</body>
+
 </html>
