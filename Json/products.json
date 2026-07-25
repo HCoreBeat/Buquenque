@@ -3314,6 +3314,142 @@
       "disponibilidad": true,
       "created_at": "2026-07-24T02:22:36.632Z",
       "modified_at": "2026-07-24T02:22:36.632Z"
+    },
+    {
+      "id": "prod_1785007500417_2e29k0yvi",
+      "nombre": "Jalea de Guayaba (2.5lbs)",
+      "categoria": "Postres",
+      "precio": 3.35,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_8884_1785007500434.png"
+      ],
+      "descripcion": "Jalea de guayaba grande de 2.5lbs al natural excelente calidad de producto",
+      "disponibilidad": true,
+      "created_at": "2026-07-25T19:45:56.000Z",
+      "modified_at": "2026-07-25T19:45:56.000Z"
+    },
+    {
+      "id": "prod_1785007985646_f320smlth",
+      "nombre": "Mortadella Siciliana Bravo con aceituna 2kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 22.5,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_8885_1785007985662.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-25T19:45:58.727Z",
+      "modified_at": "2026-07-25T19:45:58.727Z"
+    },
+    {
+      "id": "prod_1785008105196_9xp35kn4w",
+      "nombre": "Salchichón al ajo (Bravo) 2kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 23.97,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_8886_1785008105212.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-25T19:46:01.140Z",
+      "modified_at": "2026-07-25T19:46:01.140Z"
+    },
+    {
+      "id": "prod_1785008299914_lma1l1mu4",
+      "nombre": "Paquete de leche en polvo Muuucha 1kg",
+      "categoria": "Despensa",
+      "precio": 9.95,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_8887_1785008299931.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-25T19:46:05.345Z",
+      "modified_at": "2026-07-25T19:46:05.345Z"
+    },
+    {
+      "id": "prod_1785008452377_om73hjfth",
+      "nombre": "Picadillo mixto condimentado 400g",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 2.55,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_8888_1785008452394.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-25T19:46:09.606Z",
+      "modified_at": "2026-07-25T19:46:09.606Z"
+    },
+    {
+      "id": "prod_1785008550308_zbu4wcg8m",
+      "nombre": "Jamón Barra (Bravo) 2kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 19.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_8889_1785008550314.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-25T19:46:14.915Z",
+      "modified_at": "2026-07-25T19:46:14.915Z"
+    },
+    {
+      "id": "prod_1785008620497_a5aaa5cuc",
+      "nombre": "Masa de chorizo 400g",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 3.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_8890_1785008620504.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-25T19:46:18.010Z",
+      "modified_at": "2026-07-25T19:46:18.010Z"
+    },
+    {
+      "id": "prod_1785008748813_m1xlswbjy",
+      "nombre": "Salchichón de cerdo y pollo 500g M.La Favorita",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 3.8,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_8891_1785008748818.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-25T19:46:19.864Z",
+      "modified_at": "2026-07-25T19:46:19.864Z"
     }
   ]
 }
