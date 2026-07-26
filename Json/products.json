@@ -2812,15 +2812,15 @@
       "precio": 8,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img_7895_1782001815824.jpeg"
       ],
       "descripcion": "Café Espresso Sello Rojo colombiano",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-06-21T00:30:23.061Z",
-      "modified_at": "2026-06-29T18:25:21.133Z"
+      "modified_at": "2026-07-26T00:41:50.346Z"
     },
     {
       "id": "prod_1782504884491_2t4hvb17l",
