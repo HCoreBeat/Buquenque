@@ -3518,6 +3518,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-26T02:01:10.419Z",
       "modified_at": "2026-07-26T02:01:10.419Z"
+    },
+    {
+      "id": "prod_1785086282206_16omaak3b",
+      "nombre": "Ventilador Recargable modelo x11/20000MAH",
+      "categoria": "Electrodomésticos",
+      "precio": 84.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "915b76cf-2ff0-4536-b361-bda7b8b1757a_1785086282210.jpeg"
+      ],
+      "descripcion": "ESPECIFICACIONES\nBatería y Autonomía: Su batería de 20,000 mAh ofrece una larga duración, de 14 a 60 horas continuas, dependiendo de la velocidad usada.\n• Q Funciones:\n• Velocidad: Tiene 4 velocidades de aire ajustables.\n• Iluminación: Incluye 3 niveles de luz LED, útil para iluminar en la oscuridad.",
+      "disponibilidad": true,
+      "created_at": "2026-07-26T17:18:10.481Z",
+      "modified_at": "2026-07-26T17:18:10.481Z"
     }
   ]
 }
