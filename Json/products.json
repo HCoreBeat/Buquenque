@@ -3450,6 +3450,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-26T00:54:18.684Z",
       "modified_at": "2026-07-26T00:54:18.684Z"
+    },
+    {
+      "id": "prod_1785027649789_f8g1f3s8y",
+      "nombre": "Sopa instantánea 80g (res)",
+      "categoria": "Despensa",
+      "precio": 0.8,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_8897_1785027649792.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-26T01:00:57.312Z",
+      "modified_at": "2026-07-26T01:00:57.312Z"
     }
   ]
 }
