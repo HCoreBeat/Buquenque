@@ -92,15 +92,15 @@
       "precio": 11.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "1000058960_1777051427739.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-07-24T01:44:42.770Z"
+      "modified_at": "2026-07-26T00:59:19.541Z"
     },
     {
       "id": "prod_1769030417838_noe5sa2wa",
@@ -129,12 +129,12 @@
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "0b8b7822-e816-4496-8090-04c17871dff7_1780866183343.jpeg"
+        "img_8896_1785027375283.jpeg"
       ],
       "descripcion": "Disfruta de la calidad de Aceite (1L), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": "2026-06-29T18:24:58.993Z"
+      "modified_at": "2026-07-26T00:59:22.397Z"
     },
     {
       "id": "prod_1768441690510_ijaa8o33p",
@@ -155,7 +155,7 @@
     },
     {
       "id": "prod_1768441690510_ovzxwkud2",
-      "nombre": "Sopa instantánea sabor Pollo (80g)",
+      "nombre": "Sopa instantánea 80g (Pollo)",
       "categoria": "Despensa",
       "precio": 0.8,
       "descuento": 0,
@@ -168,7 +168,7 @@
       "descripcion": "Disfruta de la calidad de Sopa instantánea sabor Pollo (80g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
       "disponibilidad": true,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-07-26T00:59:23.683Z"
     },
     {
       "id": "prod_1768441690510_x6vswdewh",
