@@ -710,9 +710,9 @@
         "Cake_tres_leches.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cake tres leches, una excelente opción de nuestra categoría Postres. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-07-26T02:03:21.561Z"
     },
     {
       "id": "prod_1768441690510_xc116ddyp",
