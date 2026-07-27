@@ -3535,6 +3535,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-26T17:18:10.481Z",
       "modified_at": "2026-07-26T17:18:10.481Z"
+    },
+    {
+      "id": "prod_1785195967997_6poe4i6k4",
+      "nombre": "Samsung Galaxy A17",
+      "categoria": "Electrodomésticos",
+      "precio": 195,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "d2f59967-5925-4bfd-9411-5dded9b3f091_1785195968000.jpeg"
+      ],
+      "descripcion": "-RAM 4GB\n- Almacenamiento: 128GB\n-Cámara: 50MP+5MP+2PM \n-Pantalla: Súper AMOLED 6.7’’1080x2340 Pixels 90Hz\n-Batería 5000mAh\nAccesorios incluidos: cargador ,cable cover mica de cristal",
+      "disponibilidad": true,
+      "created_at": "2026-07-27T23:46:18.163Z",
+      "modified_at": "2026-07-27T23:46:18.163Z"
     }
   ]
 }
