@@ -3552,6 +3552,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-27T23:46:18.163Z",
       "modified_at": "2026-07-27T23:46:18.163Z"
+    },
+    {
+      "id": "prod_1785196321748_0en325dzm",
+      "nombre": "Xiaoomi Redmi Note 15",
+      "categoria": "Electrodomésticos",
+      "precio": 285,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "98afe08b-838c-4dce-81e1-d57bb50e4972_1785196321763.jpeg"
+      ],
+      "descripcion": "Cámara:\n108MP Ultra Cámara:\nCaptura cada detaile con claridad\nMemoria:\n8GB RAM + 255GB\nAlmacenamientc:\nEspacio y fluidez\nProcesador:\nMediatek Dimensity 7050:\nPotencia y rendimiento\nBatería:\n5000mAh: Energía para todo tu día\nPantalla:\n6.67\" FHD+ AMOLED\n120Hz: Experiencia inmersiva y fluida\nResistencia\nDiséno Duradero\nREDMI Note 15\nDene\nPre noro\nthes wee\nXIAMI\nTERRATS\nANCLSELEN\nOC3а IЯS0S\n108MP ULTRA\n6.67\" FHD+\n5000mAh\n$285USD\n8GB / 256GB\nCargador\nCable\nCover\nMica de cristal",
+      "disponibilidad": true,
+      "created_at": "2026-07-27T23:52:14.780Z",
+      "modified_at": "2026-07-27T23:52:14.780Z"
     }
   ]
 }
