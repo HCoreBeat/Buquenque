@@ -3620,6 +3620,72 @@
       "disponibilidad": true,
       "created_at": "2026-07-28T00:43:47.345Z",
       "modified_at": "2026-07-28T00:43:47.345Z"
+    },
+    {
+      "id": "prod_1785199649744_3s3sjupqd",
+      "nombre": "Xiaomi Redmi 15C",
+      "categoria": "Electrodomésticos",
+      "precio": 165,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "30bddbaf-8871-42e3-bf7b-f0af7f79a518_1785199649749.jpeg"
+      ],
+      "descripcion": "Rendimiento confiable y pantalla vibrante para tu día a día\nCámara:\n50MP Ultra Cámara: Captura cada detaile con claridad\nPantalla:\n6.9\" FHD+ AMOLED 120Hz:\nExperiencia inmersiva y fluida\nBatería:\n6000mAh: Energía para todo tu dia\nRendimiento:\nRAM\n6GB RAM + 128GB\nAlmacenamiento:\nEspacio y fluidez\nProcesador:\nCPU\nMediatek Helio\nPotencia y rendimiento\nREDMI\nREDMI\n15C\n50MP Al Triple\nCamara\n6GB + 128GB\n6.9\" Pantala\n6000MAh\nBaterie\nCarga Rápide\n50MP ULTRA\n6.9\" FHD+\n$165 USD\nPRECIO ESPECIAL\n6000mAh\n6GB",
+      "disponibilidad": true,
+      "created_at": "2026-07-28T00:51:27.296Z",
+      "modified_at": "2026-07-28T00:51:27.296Z"
+    },
+    {
+      "id": "prod_1785199694556_qll8q6g6g",
+      "nombre": "Xiaomi Redmi Note 14",
+      "categoria": "Electrodomésticos",
+      "precio": 210,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [],
+      "descripcion": "Rendimiento confiable y gran pantalla para tu dia a día\nRAM\nCámara:\n108MP:\nCaptura cada detalle con claridad\nPantalla:\n6,67\" 1080 x 2400 px:\nColores vibrantes y gran resolución\nBatería:\n5500mAh: Energía para todo tu día\nRendimiento:\n6GB RAM + 128GB\nAlmacenamiento::\nEspacio para todo\nProcesador:\nOcta-Core:\nVelociddo y eficiencia\nRedmi Note\n14\nRedmi\n108MP TRIPLE\n6,67\" FHD+\n$210 USD\nPRECIO ESPECIAL\n5500 mAh\n6GB / 128GB\nAccesorios includos:\nCargador\nCable\nCover\nMica de\nCristal",
+      "disponibilidad": true,
+      "created_at": "2026-07-28T00:51:27.296Z",
+      "modified_at": "2026-07-28T00:51:27.296Z"
+    },
+    {
+      "id": "prod_1785199808565_65vmd6v3x",
+      "nombre": "Samsung Galaxy F07",
+      "categoria": "Electrodomésticos",
+      "precio": 145,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "0613d725-9a12-4a29-ab8e-fe20019317fe_1785199808582.jpeg"
+      ],
+      "descripcion": "Rendimiento accesible y gran batería\nRAM E\nCámara:\n50MP:\nCaptura cada detalle con claridad\nPantalla:\n6.7\" HD+: Gran visualización y experiencia inmersiva\nBatería:\n5000mAh: Energía para todo tu dia\nRendimiento:\n4GB RAM + 64GB\nAlmacenamiento:\nEspacio para todo\nProcesador:\nProcesador Eficiente:\nRendimiento suave y confidble\n50MP SINGLE\n6.7\" HD+\n$145 USD\n5000mAh\n4GB / 64GB\nAccesorios incluidos:",
+      "disponibilidad": true,
+      "created_at": "2026-07-28T00:51:34.434Z",
+      "modified_at": "2026-07-28T00:51:34.434Z"
+    },
+    {
+      "id": "prod_1785199880300_6009n6qu5",
+      "nombre": "Honor Play 9T",
+      "categoria": "Electrodomésticos",
+      "precio": 205,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "68cf994a-cd10-440c-bbe7-125a2f3f2712_1785199880304.jpeg"
+      ],
+      "descripcion": "Rendimiento accesible y gran pantalla\nCámara:\n108MP + 2MP Dual\nCámara: Captura cada detalle con claridad\nPantalla:\n6.77\" TGT:\nGran tamaño y experiencia visual\nBatería:\n5200 mAh: Energía para todo tu dia\nRendimiento:\n8GB RAM + 256GB\nAlmacenamiento:\nEspacio para todo\nProcesador:\nProcesador Eficiente:\nVelocidad y eficiencia\nHONOF\n108MP DUAL\n6.77\" TGT\n$205 USD\nPRECIO ESPECIAL\n5200 mAh\n8GB / 256GB\nAccesorios includos:\nCargador\nCable\nCover\nMica de\nFabrica",
+      "disponibilidad": true,
+      "created_at": "2026-07-28T00:51:39.921Z",
+      "modified_at": "2026-07-28T00:51:39.921Z"
     }
   ]
 }
