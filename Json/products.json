@@ -2858,7 +2858,7 @@
     },
     {
       "id": "prod_1783117441092_bcgd430qr",
-      "nombre": "Helado crema de 4lts La Finquita (Fresa)",
+      "nombre": "Helado crema de 4lts La Finquita (Mango)",
       "categoria": "Lácteos",
       "precio": 15,
       "descuento": 0,
@@ -2871,7 +2871,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-07-03T22:24:22.778Z",
-      "modified_at": "2026-07-03T22:24:22.778Z"
+      "modified_at": "2026-07-28T13:44:32.054Z"
     },
     {
       "id": "prod_1783195106846_tb78bxf75",
