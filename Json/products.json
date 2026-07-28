@@ -3586,6 +3586,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-27T23:56:40.983Z",
       "modified_at": "2026-07-27T23:56:40.983Z"
+    },
+    {
+      "id": "prod_1785196902031_f18vwjn4j",
+      "nombre": "Samsung Galaxy A16",
+      "categoria": "Electrodomésticos",
+      "precio": 180,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "01f7e4c2-cab8-47e1-89c3-519f3e5b8a00_1785196902035.jpeg"
+      ],
+      "descripcion": "Rendimiento confiable y gran pantalla para tu dia a dia\nRAM\nCámara:\n50MP Triple Cámara:\nCaptura cado detelle con claridad\nPantalla:\n6.7\" 1080 x 2340 px:\nColores vibrantes y gran resolución\nBatería:\n5000 mAh: Energia para todo tu dia\nRendimiente:\n4GB RAM + 128GB\nAlmacenamiento:\nEspacio para todo\nProcesador:\nProcesador Octa-Core:\nVelocidad y eficiencia\n50MP TRIPLE\n6.7\" 1080p+\n$180 USD\n5000 mAh\n4GB / 128GB\nAccesorios incluidos:",
+      "disponibilidad": true,
+      "created_at": "2026-07-28T00:02:29.164Z",
+      "modified_at": "2026-07-28T00:02:29.164Z"
     }
   ]
 }
