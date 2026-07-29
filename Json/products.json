@@ -2869,9 +2869,9 @@
         "1000110898_1783117441188.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-07-03T22:24:22.778Z",
-      "modified_at": "2026-07-28T13:44:32.054Z"
+      "modified_at": "2026-07-29T15:19:45.818Z"
     },
     {
       "id": "prod_1783195106846_tb78bxf75",
@@ -2937,9 +2937,9 @@
         "mango_1783195440304.jfif"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-07-04T20:05:33.830Z",
-      "modified_at": "2026-07-04T20:05:33.830Z"
+      "modified_at": "2026-07-29T15:19:45.819Z"
     },
     {
       "id": "prod_1783195468051_z3qwn6fbc",
@@ -3447,9 +3447,9 @@
         "img_8895_1785027251359.png"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-07-26T00:54:18.684Z",
-      "modified_at": "2026-07-26T00:54:18.684Z"
+      "modified_at": "2026-07-29T15:19:45.819Z"
     },
     {
       "id": "prod_1785027649789_f8g1f3s8y",
