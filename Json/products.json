@@ -3727,10 +3727,10 @@
       "id": "prod_1785348830014_qb8bg0mcx",
       "nombre": "Papel Higiénico doble capa 4u",
       "categoria": "Aseo y Belleza",
-      "precio": 2.15,
+      "precio": 2.4,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "img_9081_1785348830028.jpeg"
@@ -3738,7 +3738,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-07-29T18:15:01.892Z",
-      "modified_at": "2026-07-29T18:15:01.892Z"
+      "modified_at": "2026-07-29T18:15:58.553Z"
     }
   ]
 }
