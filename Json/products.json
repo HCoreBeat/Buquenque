@@ -2750,9 +2750,9 @@
         "1000083074_1779468122608.jpg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-05-22T16:51:02.124Z",
-      "modified_at": "2026-07-29T18:39:57.046Z"
+      "modified_at": "2026-05-22T16:51:02.124Z"
     },
     {
       "id": "prod_1779468214397_abvbwgjsu",
@@ -3022,9 +3022,9 @@
         "98b8db78-1559-49e6-982d-8e2fcf94a383_1783803462951.jfif"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-07-11T20:59:57.033Z",
-      "modified_at": "2026-07-11T20:59:57.033Z"
+      "modified_at": "2026-07-29T18:40:46.669Z"
     },
     {
       "id": "prod_1783803493141_wysxivcd5",
@@ -3039,9 +3039,9 @@
         "3997c143-4c5d-4e4d-8dfa-f70568cb3edc_1783803493149.jfif"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-07-11T20:59:58.404Z",
-      "modified_at": "2026-07-11T20:59:58.404Z"
+      "modified_at": "2026-07-29T18:40:46.669Z"
     },
     {
       "id": "prod_1783874275072_nte7602ad",
