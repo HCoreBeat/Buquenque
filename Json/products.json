@@ -3727,10 +3727,10 @@
       "id": "prod_1785348830014_qb8bg0mcx",
       "nombre": "Papel Higiénico doble capa 4u",
       "categoria": "Aseo y Belleza",
-      "precio": 2.4,
+      "precio": 2.15,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img_9081_1785348830028.jpeg"
@@ -3738,7 +3738,41 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-07-29T18:15:01.892Z",
-      "modified_at": "2026-07-29T18:17:42.194Z"
+      "modified_at": "2026-07-29T18:15:01.892Z"
+    },
+    {
+      "id": "prod_1785349390612_1skbbpi2z",
+      "nombre": "Flan Pascual 4u",
+      "categoria": "Postres",
+      "precio": 3.25,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9083_1785349390622.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-29T18:31:21.630Z",
+      "modified_at": "2026-07-29T18:31:21.630Z"
+    },
+    {
+      "id": "prod_1785349874196_rtvzaogs0",
+      "nombre": "Pasta dental Colgate MaxFresh150ml",
+      "categoria": "Aseo y Belleza",
+      "precio": 3.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9084_1785349874203.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-29T18:31:22.992Z",
+      "modified_at": "2026-07-29T18:31:22.992Z"
     }
   ]
 }
