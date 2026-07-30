@@ -3790,6 +3790,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-30T19:33:01.266Z",
       "modified_at": "2026-07-30T19:33:01.266Z"
+    },
+    {
+      "id": "prod_1785440235073_bl2o2ukqf",
+      "nombre": "Café la Llave (283g)",
+      "categoria": "Despensa",
+      "precio": 12.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9126_1785440235082.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-30T19:37:21.029Z",
+      "modified_at": "2026-07-30T19:37:21.029Z"
     }
   ]
 }
