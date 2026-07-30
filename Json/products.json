@@ -3773,6 +3773,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-29T18:31:22.992Z",
       "modified_at": "2026-07-29T18:31:22.992Z"
+    },
+    {
+      "id": "prod_1785439796559_qps05w7yu",
+      "nombre": "Paquete Café Bustelo 283g",
+      "categoria": "Despensa",
+      "precio": 15,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9125_1785439796563.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-30T19:30:04.935Z",
+      "modified_at": "2026-07-30T19:30:04.935Z"
     }
   ]
 }
