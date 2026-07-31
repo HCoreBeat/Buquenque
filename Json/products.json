@@ -3858,6 +3858,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-31T13:18:28.546Z",
       "modified_at": "2026-07-31T13:18:28.546Z"
+    },
+    {
+      "id": "prod_1785540229713_0bi5ywyi7",
+      "nombre": "LINTERNACAMPING 5800T \"6LED\"",
+      "categoria": "Utiles del Hogar",
+      "precio": 15,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "992286e8-1f27-43a8-97fd-4ac5e96b4b66_1785540229718.jpeg"
+      ],
+      "descripcion": "RECARGABLE USB\nAlimentación conveniente para tus aventuras\n•0\n6 LUCES LED DE ALTO BRILLO\nIluminación potente y eficiente\nDISEÑO COMPACTO Y PLEGABLE\nFácil de guardar y transportar\nRESISTENCIA A\nSALPICADURAS\n(Ideal para uso en exteriores)\nTU COMPAÑERO DE CONFIANZA AL AIRE LIBRE",
+      "disponibilidad": true,
+      "created_at": "2026-07-31T23:24:07.088Z",
+      "modified_at": "2026-07-31T23:24:07.088Z"
     }
   ]
 }
