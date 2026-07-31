@@ -3894,21 +3894,21 @@
       "modified_at": "2026-07-31T23:29:28.726Z"
     },
     {
-      "id": "prod_1785540706796_5zof86xyv",
-      "nombre": "BISIMOTO YOAZAKY 707 2026",
+      "id": "prod_1785540862825_sriql0jog",
+      "nombre": "Bicicleta CAROMA P7",
       "categoria": "Electrodomésticos",
-      "precio": 2000,
+      "precio": 550,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "c76d397e-da20-4727-a776-edc153c7d37e_1785540706801.jpeg"
+        "d0694c59-d914-4cb2-a67f-6055f0b3d3a4_1785540862829.jpeg"
       ],
-      "descripcion": "Bicimoto YOAZAKY  2026. \n\n• 3000 Watts\n• 48 Volt • 45 Ampere \n• Autonomía: 100 KM• Luces LED \n• Alarma • Bocina ( bluetooth )",
+      "descripcion": "MOTOR POTENTE\n750W\nRendimiento superior para subir pendientes y mayor aceleración.\nCAROMA P7\nPOTENCIA, COMODIDAD Y LIBERTAD\nAUTONOMÍA\nHASTA 48 KM\nBatería de litio 48V de alta capacidad para más recorrido.\nLLANTAS\n14\"\nLlantas grandes para mayor estabilidad, agarre y comodidad.\nESPECIFICACIONES\nVelocidad máxima: hasta 40 km/h\nBatería: Litio 48V\nTiempo de carga: 5 horas\nPantalla digital\nLuces LED delantera y trasera\nAsiento removible\nCanasta trasera de carga\nDiseño plegable y práctico",
       "disponibilidad": true,
-      "created_at": "2026-07-31T23:31:51.347Z",
-      "modified_at": "2026-07-31T23:31:51.347Z"
+      "created_at": "2026-07-31T23:34:28.839Z",
+      "modified_at": "2026-07-31T23:34:28.839Z"
     }
   ]
 }
