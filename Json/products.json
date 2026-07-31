@@ -3841,6 +3841,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-31T13:08:13.090Z",
       "modified_at": "2026-07-31T13:08:13.090Z"
+    },
+    {
+      "id": "prod_1785503511911_8mmfwc2p9",
+      "nombre": "Colchón EKO Tamaño Camero",
+      "categoria": "Utiles del Hogar",
+      "precio": 170,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "85ca8494-612e-4a55-8fe9-2e26f2fd2397_1785503511914.jpeg"
+      ],
+      "descripcion": "137cmx190cmx20cm",
+      "disponibilidad": true,
+      "created_at": "2026-07-31T13:12:00.179Z",
+      "modified_at": "2026-07-31T13:12:00.179Z"
     }
   ]
 }
