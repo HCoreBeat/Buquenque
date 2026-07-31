@@ -3858,6 +3858,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-31T13:16:07.314Z",
       "modified_at": "2026-07-31T13:16:07.314Z"
+    },
+    {
+      "id": "prod_1785503901545_62ryi4eki",
+      "nombre": "SMART TV 55pulgadas",
+      "categoria": "Electrodomésticos",
+      "precio": 430,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "17879403-1c8a-4fd2-bea4-5b746e96ebbb_1785503901549.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-07-31T13:18:28.546Z",
+      "modified_at": "2026-07-31T13:18:28.546Z"
     }
   ]
 }
