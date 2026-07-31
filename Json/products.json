@@ -3875,6 +3875,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-31T23:24:07.088Z",
       "modified_at": "2026-07-31T23:24:07.088Z"
+    },
+    {
+      "id": "prod_1785540395617_uuknmhkq9",
+      "nombre": "Bici moto Topmaq Evolution 2026",
+      "categoria": "Electrodomésticos",
+      "precio": 2300,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "e7126316-a936-4715-ae83-0d004ce921c8_1785540395620.jpeg"
+      ],
+      "descripcion": "+120km\n4\nAh\nCaracterísticas:\n48V/45Ah",
+      "disponibilidad": true,
+      "created_at": "2026-07-31T23:26:39.996Z",
+      "modified_at": "2026-07-31T23:26:39.996Z"
     }
   ]
 }
