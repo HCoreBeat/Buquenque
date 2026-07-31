@@ -3824,6 +3824,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-31T12:59:03.411Z",
       "modified_at": "2026-07-31T12:59:03.411Z"
+    },
+    {
+      "id": "prod_1785502884459_m8wwih09y",
+      "nombre": "Linterna Camping 5800T 6LED",
+      "categoria": "Electrodomésticos",
+      "precio": 15,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "992286e8-1f27-43a8-97fd-4ac5e96b4b66_1785502884465.jpeg"
+      ],
+      "descripcion": "RECARGABLE USB\nAlimentación conveniente para tus aventuras\n•0\n6 LUCES LED DE ALTO BRILLO\nIluminación potente y eficiente\nDISEÑO COMPACTO Y PLEGABLE\nFácil de guardar y transportar\nRESISTENCIA A\nSALPICADURAS\n(Ideal para uso en exteriores)\nTU COMPAÑERO DE CONFIANZA AL AIRE LIBRE",
+      "disponibilidad": true,
+      "created_at": "2026-07-31T13:01:31.590Z",
+      "modified_at": "2026-07-31T13:01:31.590Z"
     }
   ]
 }
