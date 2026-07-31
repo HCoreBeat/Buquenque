@@ -438,9 +438,9 @@
         "Olla_a_Presion_Electrica.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Olla a Presión Eléctrica \"Eko\" (6 L), una excelente opción de nuestra categoría Electrodomésticos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-07-31T13:29:22.816Z"
     },
     {
       "id": "prod_1769297232608_616ijabck",
@@ -472,9 +472,9 @@
         "Olla_Arrocera.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Olla Arrocera, una excelente opción de nuestra categoría Electrodomésticos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-07-31T13:29:22.817Z"
     },
     {
       "id": "prod_1768441690510_6xn0n5bsd",
@@ -523,9 +523,9 @@
         "Nevera_Eko.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Nevera Eko (3.5 pies), una excelente opción de nuestra categoría Electrodomésticos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": null
+      "modified_at": "2026-07-31T13:29:22.817Z"
     },
     {
       "id": "prod_1768441690510_8y1zmbeir",
@@ -628,23 +628,6 @@
       "disponibilidad": false,
       "created_at": null,
       "modified_at": "2026-05-05T16:22:29.231Z"
-    },
-    {
-      "id": "prod_1769399408048_hbcs3qv16",
-      "nombre": "EcoFlow DELTA 3 (Clásica)",
-      "categoria": "Electrodomésticos",
-      "precio": 800,
-      "descuento": 6.25,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "19e8b363-aeb1-4ce5-a570-0f54b02ec5c8_1769398843533.jpeg"
-      ],
-      "descripcion": "Cable EcoFlow Serie DLETA con Estación de Energía Portátil DELTA 3 Clásica (Gris Claro), Carga 7 Veces Más Rápida, 45min 80% Cargado, Batería LiFePO4 de 1024Wh para 10 Años, Salida Potente de 1800W, Expansión Flexible, Batería Solar para Uso en el Hogar o al Aire Libre",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-06-10T17:55:43.667Z"
     },
     {
       "id": "prod_1768441690510_ok1axebuc",
