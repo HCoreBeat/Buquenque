@@ -3877,21 +3877,21 @@
       "modified_at": "2026-07-31T23:24:07.088Z"
     },
     {
-      "id": "prod_1785540395617_uuknmhkq9",
-      "nombre": "Bici moto Topmaq Evolution 2026",
+      "id": "prod_1785540563576_ofmqm7f7s",
+      "nombre": "Bicicleta eléctrica Plegable",
       "categoria": "Electrodomésticos",
-      "precio": 2300,
+      "precio": 650,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "e7126316-a936-4715-ae83-0d004ce921c8_1785540395620.jpeg"
+        "53626499-5576-49d7-ae1d-f16597c14c8e_1785540563581.jpeg"
       ],
-      "descripcion": "+120km\n4\nAh\nCaracterísticas:\n48V/45Ah",
+      "descripcion": "POTENCIA • COMODIDAD • RENDIMIENTO\n.****\nCONDICION\nNUEVA\nPLEGABLE\nFÁCIL DE GUARDAR Y TRANSPORTAR\nDOS ASIENTOS\nMÁS COMODIDAD\nPARA TI Y TU\nACOMPAÑANTE\n26 SPORT\n\nVELOCIDAD MÁXIMA\n40.23 KM/H\n(25 МРН)\n\nALCANCE\n35.41 - 64.37 KM\nPOR CARGA\n(22 - 40 MILLAS)\n\nNEUMÁTICOS DE 14\"\nNEUMÁTICOS DE ALTA CALIDAD\n\nBATERÍA\n15AH\nBATERÍA DE ALTO\nRENDIMIENTO\n\nSISTEMA DE FRENOS\nFRENO DE DISCO\nTRASERO\nMAYOR SEGURIDAD\nY CONTROL\nKG\nCAPACIDAD\nDOS ASIENTOS\n(PILOTO Y PASAJERO)\nSOPORTA MAYOR\nPESO Y COMODIDAD\nPOTENCIA\n1200W\nPEA",
       "disponibilidad": true,
-      "created_at": "2026-07-31T23:26:39.996Z",
-      "modified_at": "2026-07-31T23:26:39.996Z"
+      "created_at": "2026-07-31T23:29:28.726Z",
+      "modified_at": "2026-07-31T23:29:28.726Z"
     }
   ]
 }
