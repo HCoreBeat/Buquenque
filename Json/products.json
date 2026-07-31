@@ -3892,6 +3892,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-31T23:29:28.726Z",
       "modified_at": "2026-07-31T23:29:28.726Z"
+    },
+    {
+      "id": "prod_1785540706796_5zof86xyv",
+      "nombre": "BISIMOTO YOAZAKY 707 2026",
+      "categoria": "Electrodomésticos",
+      "precio": 2000,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "c76d397e-da20-4727-a776-edc153c7d37e_1785540706801.jpeg"
+      ],
+      "descripcion": "Bicimoto YOAZAKY  2026. \n\n• 3000 Watts\n• 48 Volt • 45 Ampere \n• Autonomía: 100 KM• Luces LED \n• Alarma • Bocina ( bluetooth )",
+      "disponibilidad": true,
+      "created_at": "2026-07-31T23:31:51.347Z",
+      "modified_at": "2026-07-31T23:31:51.347Z"
     }
   ]
 }
