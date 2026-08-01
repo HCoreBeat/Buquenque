@@ -3960,6 +3960,23 @@
       "disponibilidad": true,
       "created_at": "2026-08-01T02:35:44.375Z",
       "modified_at": "2026-08-01T02:35:44.375Z"
+    },
+    {
+      "id": "prod_1785551988557_twfheku9u",
+      "nombre": "Nevera 7pie Jinghan",
+      "categoria": "Electrodomésticos",
+      "precio": 360,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9203_1785551988569.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-08-01T02:40:12.582Z",
+      "modified_at": "2026-08-01T02:40:12.582Z"
     }
   ]
 }
