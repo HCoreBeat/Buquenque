@@ -3943,6 +3943,23 @@
       "disponibilidad": true,
       "created_at": "2026-08-01T02:07:39.089Z",
       "modified_at": "2026-08-01T02:07:39.089Z"
+    },
+    {
+      "id": "prod_1785551737240_08vu5vov5",
+      "nombre": "Olla de presión Saco de 5lts",
+      "categoria": "Electrodomésticos",
+      "precio": 30,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9201_1785551737248.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-08-01T02:35:44.375Z",
+      "modified_at": "2026-08-01T02:35:44.375Z"
     }
   ]
 }
