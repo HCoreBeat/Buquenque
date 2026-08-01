@@ -3962,21 +3962,21 @@
       "modified_at": "2026-08-01T02:35:44.375Z"
     },
     {
-      "id": "prod_1785551988557_twfheku9u",
-      "nombre": "Nevera 7pie Jinghan",
+      "id": "prod_1785552282211_9j1qehjt5",
+      "nombre": "Nevera 3.5pie Estelectric",
       "categoria": "Electrodomésticos",
-      "precio": 360,
+      "precio": 280,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "img_9203_1785551988569.png"
+        "img_9205_1785552282225.png"
       ],
-      "descripcion": "",
+      "descripcion": "1 mes de garantía",
       "disponibilidad": true,
-      "created_at": "2026-08-01T02:40:12.582Z",
-      "modified_at": "2026-08-01T02:40:12.582Z"
+      "created_at": "2026-08-01T02:44:56.609Z",
+      "modified_at": "2026-08-01T02:44:56.609Z"
     }
   ]
 }
