@@ -3909,6 +3909,23 @@
       "disponibilidad": true,
       "created_at": "2026-07-31T23:34:28.839Z",
       "modified_at": "2026-07-31T23:34:28.839Z"
+    },
+    {
+      "id": "prod_1785548494310_fwm4i43ht",
+      "nombre": "Garbanzos 500g",
+      "categoria": "Despensa",
+      "precio": 2.45,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9196_1785548494318.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-08-01T01:41:38.561Z",
+      "modified_at": "2026-08-01T01:41:38.561Z"
     }
   ]
 }
