@@ -4011,6 +4011,23 @@
       "disponibilidad": true,
       "created_at": "2026-08-01T02:58:49.430Z",
       "modified_at": "2026-08-01T02:58:49.430Z"
+    },
+    {
+      "id": "prod_1785553339314_7u2l7lth9",
+      "nombre": "Lavadora automática 9kg LG",
+      "categoria": "Electrodomésticos",
+      "precio": 380,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9211_1785553339322.png"
+      ],
+      "descripcion": "1 mes de garantía",
+      "disponibilidad": true,
+      "created_at": "2026-08-01T03:03:24.625Z",
+      "modified_at": "2026-08-01T03:03:24.625Z"
     }
   ]
 }
