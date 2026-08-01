@@ -4028,6 +4028,23 @@
       "disponibilidad": true,
       "created_at": "2026-08-01T03:07:40.142Z",
       "modified_at": "2026-08-01T03:07:40.142Z"
+    },
+    {
+      "id": "prod_1785553855267_izu6lvoa6",
+      "nombre": "Lavadora automática Milexus 7.5kg",
+      "categoria": "Electrodomésticos",
+      "precio": 290,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9215_1785553855276.png"
+      ],
+      "descripcion": "1 mes de garantía",
+      "disponibilidad": true,
+      "created_at": "2026-08-01T03:11:01.769Z",
+      "modified_at": "2026-08-01T03:11:01.769Z"
     }
   ]
 }
