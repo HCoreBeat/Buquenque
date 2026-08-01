@@ -4030,21 +4030,21 @@
       "modified_at": "2026-08-01T03:07:40.142Z"
     },
     {
-      "id": "prod_1785553855267_izu6lvoa6",
-      "nombre": "Lavadora automática Milexus 7.5kg",
+      "id": "prod_1785554077744_fnr6zwf4s",
+      "nombre": "Lavadora secadora a vapor 11kg EKO",
       "categoria": "Electrodomésticos",
-      "precio": 290,
+      "precio": 630,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "img_9215_1785553855276.png"
+        "39098930-e754-4165-a011-1c9a2df23c10_1785554077750.jpeg"
       ],
-      "descripcion": "1 mes de garantía",
+      "descripcion": "LAVADORA\nSECADORA\nAL VAPOR\nEKO\n11 KG\nSISTEMA\nAL VAPOR\nLAVADO + SECADO en un solo equipo\nTECNOLOGÍA VAPOR\n(STEAM CARE)\nMAYOR HIGIENE y eliminación de olores\nIDEAL PARA apartamentos / ahorro de espacio\nPROGRAMAS\nINTELIGENTES\nDISEÑO MODERNO\nFRONTAL",
       "disponibilidad": true,
-      "created_at": "2026-08-01T03:11:01.769Z",
-      "modified_at": "2026-08-01T03:11:01.769Z"
+      "created_at": "2026-08-01T03:14:42.514Z",
+      "modified_at": "2026-08-01T03:14:42.514Z"
     }
   ]
 }
