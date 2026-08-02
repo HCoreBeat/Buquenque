@@ -1378,23 +1378,6 @@
       "modified_at": "2026-05-22T21:00:00.483Z"
     },
     {
-      "id": "prod_1772443671662_3zlv75nd6",
-      "nombre": "Leche condensada 390g",
-      "categoria": "Lácteos",
-      "precio": 1.97,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "bd617d35-e71d-447e-8621-bc02d549a7e6_1782605707616.jpeg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-02T09:28:25.562Z",
-      "modified_at": "2026-07-23T00:58:17.343Z"
-    },
-    {
       "id": "prod_1772732759012_tojcqpnpu",
       "nombre": "Sorbetes bon o bon",
       "categoria": "Confitura",
@@ -2041,38 +2024,21 @@
       "modified_at": "2026-05-28T16:30:08.660Z"
     },
     {
-      "id": "prod_1776590805262_gsxaukooi",
-      "nombre": "Leche en polvo Aloy 1Kg",
-      "categoria": "Lácteos",
-      "precio": 12,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "9a4161471fc5b9122a2aab_1776590805282.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-04-19T09:28:48.364Z",
-      "modified_at": "2026-06-07T02:08:47.599Z"
-    },
-    {
       "id": "prod_1776590917088_17s74pewj",
-      "nombre": "Leche en Polvo 1kg",
+      "nombre": "Leche en Polvo Macro Food 1kg",
       "categoria": "Lácteos",
       "precio": 12,
       "descuento": 16.67,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "leche_macrofood_1776590917109.jpg"
       ],
-      "descripcion": "Leche entera ,en polvo Macro Food",
-      "disponibilidad": false,
+      "descripcion": "Leche entera ,en polvo Macro Food de 1kg",
+      "disponibilidad": true,
       "created_at": "2026-04-19T09:28:51.094Z",
-      "modified_at": "2026-07-25T19:50:33.130Z"
+      "modified_at": "2026-08-02T17:21:18.431Z"
     },
     {
       "id": "prod_1777104839776_bmwky6d4m",
@@ -3347,7 +3313,7 @@
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-07-25T19:46:05.345Z",
-      "modified_at": "2026-07-25T19:46:05.345Z"
+      "modified_at": "2026-08-02T17:21:18.432Z"
     },
     {
       "id": "prod_1785008452377_om73hjfth",
