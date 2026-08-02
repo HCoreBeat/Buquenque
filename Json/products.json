@@ -2027,8 +2027,8 @@
       "id": "prod_1776590917088_17s74pewj",
       "nombre": "Leche en Polvo Macro Food 1kg",
       "categoria": "Lácteos",
-      "precio": 12,
-      "descuento": 16.67,
+      "precio": 10,
+      "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
@@ -2038,7 +2038,7 @@
       "descripcion": "Leche entera ,en polvo Macro Food de 1kg",
       "disponibilidad": true,
       "created_at": "2026-04-19T09:28:51.094Z",
-      "modified_at": "2026-08-02T17:29:11.589Z"
+      "modified_at": "2026-08-02T17:31:54.611Z"
     },
     {
       "id": "prod_1777104839776_bmwky6d4m",
