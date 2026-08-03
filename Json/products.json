@@ -4028,6 +4028,57 @@
       "disponibilidad": true,
       "created_at": "2026-08-02T16:43:40.619Z",
       "modified_at": "2026-08-02T16:43:40.619Z"
+    },
+    {
+      "id": "prod_1785709508800_97rwjz1l0",
+      "nombre": "Confitura de (Fresa) 🍓 340g",
+      "categoria": "Confitura",
+      "precio": 3.2,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9279_1785709508809.png"
+      ],
+      "descripcion": "La confitura de fresa se elabora mediante la cocción de la fruta en almíbar azucarado. El propósito original de esta preparación fue conservar la fruta y sus propiedades para que estuviese disponible durante largos periodos de tiempo.\n\nLas confituras de fruta son un producto de consumo habitual en los desayunos y también se utilizan como acompañamiento de postres, quesos o yogures.\n\nNutricionalmente, la confitura aporta carbohidratos, fibra y vitaminas y minerales propios de las frutas.",
+      "disponibilidad": true,
+      "created_at": "2026-08-03T17:22:53.167Z",
+      "modified_at": "2026-08-03T17:22:53.167Z"
+    },
+    {
+      "id": "prod_1785709743535_0w58t0r2d",
+      "nombre": "Confitura de (Albaricoque) 340g",
+      "categoria": "Confitura",
+      "precio": 3.2,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9280_1785709743542.png"
+      ],
+      "descripcion": "La confitura de Albaricoque se elabora mediante la cocción de la fruta en almíbar azucarado. El propósito original de esta preparación fue conservar la fruta y sus propiedades para que estuviese disponible durante largos periodos de tiempo.\n\nLas confituras de fruta son un producto de consumo habitual en los desayunos y también se utilizan como acompañamiento de postres, quesos o yogures.\n\nNutricionalmente, la confitura aporta carbohidratos, fibra y vitaminas y minerales propios de las frutas.",
+      "disponibilidad": true,
+      "created_at": "2026-08-03T17:22:59.000Z",
+      "modified_at": "2026-08-03T17:22:59.000Z"
+    },
+    {
+      "id": "prod_1785709852633_knsg5pad8",
+      "nombre": "Confitura de(Melocotón) 340g",
+      "categoria": "Confitura",
+      "precio": 3.2,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9281_1785709852638.png"
+      ],
+      "descripcion": "La confitura de melocotón 🍑 se elabora mediante la cocción de la fruta en almíbar azucarado. El propósito original de esta preparación fue conservar la fruta y sus propiedades para que estuviese disponible durante largos periodos de tiempo.\n\nLas confituras de fruta son un producto de consumo habitual en los desayunos y también se utilizan como acompañamiento de postres, quesos o yogures.\n\nNutricionalmente, la confitura aporta carbohidratos, fibra y vitaminas y minerales propios de las frutas.",
+      "disponibilidad": true,
+      "created_at": "2026-08-03T17:23:19.644Z",
+      "modified_at": "2026-08-03T17:23:19.644Z"
     }
   ]
 }
