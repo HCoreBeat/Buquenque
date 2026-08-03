@@ -4079,6 +4079,40 @@
       "disponibilidad": true,
       "created_at": "2026-08-03T17:23:19.644Z",
       "modified_at": "2026-08-03T17:23:19.644Z"
+    },
+    {
+      "id": "prod_1785778271250_6056q7bp3",
+      "nombre": "Pomo de Refresco 1.5lts (Mate)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 2.95,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9328_1785778271253.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-08-03T17:32:32.723Z",
+      "modified_at": "2026-08-03T17:32:32.723Z"
+    },
+    {
+      "id": "prod_1785778328335_iutgb3lr3",
+      "nombre": "Pomo de Refresco 1.5lts ( Limón)",
+      "categoria": "Bebidas no alcohólicas",
+      "precio": 2.95,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9329_1785778328339.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-08-03T17:32:35.902Z",
+      "modified_at": "2026-08-03T17:32:35.902Z"
     }
   ]
 }
