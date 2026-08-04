@@ -1463,23 +1463,6 @@
       "modified_at": "2026-05-03T14:13:39.759Z"
     },
     {
-      "id": "prod_1773448315523_sbogqzd9h",
-      "nombre": "Saco de arroz Grano Dorado",
-      "categoria": "Despensa",
-      "precio": 45,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "1000018949_1773448315601.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-03-14T00:32:03.512Z",
-      "modified_at": "2026-05-01T15:42:48.193Z"
-    },
-    {
       "id": "prod_1773856436753_ggf4sat5i",
       "nombre": "Maíz Dulce 1Kg",
       "categoria": "Despensa",
@@ -4147,6 +4130,23 @@
       "disponibilidad": true,
       "created_at": "2026-08-04T19:17:36.548Z",
       "modified_at": "2026-08-04T22:26:40.572Z"
+    },
+    {
+      "id": "prod_1785885416123_s7hjeujac",
+      "nombre": "Chuletas de Res 1kg",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 7.15,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9357_1785885416131.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-08-04T23:21:27.193Z",
+      "modified_at": "2026-08-04T23:21:27.193Z"
     }
   ]
 }
