@@ -4115,21 +4115,21 @@
       "modified_at": "2026-08-03T17:32:35.902Z"
     },
     {
-      "id": "prod_1785869892974_a5f9h96g4",
-      "nombre": "Jamonada de Res (5lbs)",
+      "id": "prod_1785870504960_lifcf3wpp",
+      "nombre": "Costillas de Res 1kg",
       "categoria": "Cárnicos y Embutidos",
-      "precio": 3.8,
+      "precio": 7.9,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": true,
       "oferta": false,
       "imagenes": [
-        "img_9359_1785869892976.jpeg"
+        "img_9358_1785870504970.jpeg"
       ],
-      "descripcion": "Jamonada especial de res 5lbs ideal para desayunos almuerzo y cenas",
+      "descripcion": "",
       "disponibilidad": true,
-      "created_at": "2026-08-04T18:58:40.757Z",
-      "modified_at": "2026-08-04T18:58:40.757Z"
+      "created_at": "2026-08-04T19:08:38.624Z",
+      "modified_at": "2026-08-04T19:08:38.624Z"
     }
   ]
 }
