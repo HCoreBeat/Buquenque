@@ -4113,6 +4113,23 @@
       "disponibilidad": true,
       "created_at": "2026-08-03T17:32:35.902Z",
       "modified_at": "2026-08-03T17:32:35.902Z"
+    },
+    {
+      "id": "prod_1785869892974_a5f9h96g4",
+      "nombre": "Jamonada de Res (5lbs)",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 3.8,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9359_1785869892976.jpeg"
+      ],
+      "descripcion": "Jamonada especial de res 5lbs ideal para desayunos almuerzo y cenas",
+      "disponibilidad": true,
+      "created_at": "2026-08-04T18:58:40.757Z",
+      "modified_at": "2026-08-04T18:58:40.757Z"
     }
   ]
 }
