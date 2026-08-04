@@ -4164,6 +4164,23 @@
       "disponibilidad": true,
       "created_at": "2026-08-04T23:25:16.525Z",
       "modified_at": "2026-08-04T23:25:16.525Z"
+    },
+    {
+      "id": "prod_1785886150212_97sgqe6cp",
+      "nombre": "Picadillo de res 400g",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 2.35,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9362_1785886150216.jpeg"
+      ],
+      "descripcion": "Picadillo natural de carne de res 400g",
+      "disponibilidad": true,
+      "created_at": "2026-08-04T23:29:17.604Z",
+      "modified_at": "2026-08-04T23:29:17.604Z"
     }
   ]
 }
