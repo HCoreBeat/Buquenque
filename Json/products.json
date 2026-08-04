@@ -4119,17 +4119,17 @@
       "nombre": "Costillas de Res 1kg",
       "categoria": "Cárnicos y Embutidos",
       "precio": 7.9,
-      "descuento": 0,
+      "descuento": 9.49,
       "mas_vendido": false,
       "nuevo": true,
-      "oferta": false,
+      "oferta": true,
       "imagenes": [
         "img_9358_1785870504970.jpeg"
       ],
       "descripcion": "",
       "disponibilidad": true,
       "created_at": "2026-08-04T19:08:38.624Z",
-      "modified_at": "2026-08-04T19:08:38.624Z"
+      "modified_at": "2026-08-04T22:38:08.425Z"
     },
     {
       "id": "prod_1785871036154_z4s8gjp9c",
@@ -4147,23 +4147,6 @@
       "disponibilidad": true,
       "created_at": "2026-08-04T19:17:36.548Z",
       "modified_at": "2026-08-04T22:26:40.572Z"
-    },
-    {
-      "id": "prod_1785883052836_1verh14h6",
-      "nombre": "Saco de Arroz largo 25kg (55lbs)",
-      "categoria": "Despensa",
-      "precio": 45,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "img_9370_1785883052843.png"
-      ],
-      "descripcion": "",
-      "disponibilidad": true,
-      "created_at": "2026-08-04T22:37:39.918Z",
-      "modified_at": "2026-08-04T22:37:39.918Z"
     }
   ]
 }
