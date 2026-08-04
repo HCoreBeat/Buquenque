@@ -256,23 +256,6 @@
       "modified_at": "2026-06-20T21:53:03.571Z"
     },
     {
-      "id": "prod_1768441690510_7gy02c75y",
-      "nombre": "Codito (500g)",
-      "categoria": "Despensa",
-      "precio": 1.25,
-      "descuento": 14.4,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "1473fdae-98bc-4aa0-9203-f0df6ded16d8_1772439113364.jpeg"
-      ],
-      "descripcion": "Disfruta de la calidad de Codito (500g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-07-13T17:34:14.515Z"
-    },
-    {
       "id": "prod_1768441690510_tf4rwuo62",
       "nombre": "Frijol Negro (1kg)",
       "categoria": "Despensa",
@@ -290,23 +273,6 @@
       "modified_at": "2026-07-24T01:44:42.770Z"
     },
     {
-      "id": "prod_1768441690510_ify26lfde",
-      "nombre": "Papel Sanitario",
-      "categoria": "Aseo y Belleza",
-      "precio": 2.4,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Papel_Sanitario.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Papel Sanitario, una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-07-29T18:15:01.893Z"
-    },
-    {
       "id": "prod_1769226986599_pfsrf2pax",
       "nombre": "Detergente Defá Fragancia lavanda  (1kg)",
       "categoria": "Aseo y Belleza",
@@ -322,23 +288,6 @@
       "disponibilidad": true,
       "created_at": null,
       "modified_at": "2026-06-29T18:24:58.993Z"
-    },
-    {
-      "id": "prod_1768441690510_3adjmtv4j",
-      "nombre": "Protector Diario (18u)",
-      "categoria": "Aseo y Belleza",
-      "precio": 1.4,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Protector_Diario_(18u).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Protector Diario (18u), una excelente opción de nuestra categoría Aseo y Belleza. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-07-23T00:58:17.343Z"
     },
     {
       "id": "prod_1769297232608_t1t8j7j86",
@@ -392,23 +341,6 @@
       "modified_at": "2026-07-12T14:32:52.046Z"
     },
     {
-      "id": "prod_1768441690510_nim7b1t3a",
-      "nombre": "Cerveza Calatrava (330ml)",
-      "categoria": "Bebidas alcohólicas",
-      "precio": 1.05,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Cerveza_Calatrava_(330ml).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Cerveza \"Calatrava\" (330ml), una excelente opción de nuestra categoría Bebidas alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-05-22T20:49:58.847Z"
-    },
-    {
       "id": "prod_1769297232608_1rpawqvbr",
       "nombre": "Cepillo de diente (/u)",
       "categoria": "Aseo y Belleza",
@@ -424,23 +356,6 @@
       "disponibilidad": true,
       "created_at": null,
       "modified_at": "2026-05-12T13:48:05.275Z"
-    },
-    {
-      "id": "prod_1768441690510_x8mo0fa06",
-      "nombre": "Olla a Presión Eléctrica Eko (6 L)",
-      "categoria": "Electrodomésticos",
-      "precio": 87.52,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Olla_a_Presion_Electrica.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Olla a Presión Eléctrica \"Eko\" (6 L), una excelente opción de nuestra categoría Electrodomésticos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-07-31T13:29:22.816Z"
     },
     {
       "id": "prod_1769297232608_616ijabck",
@@ -460,23 +375,6 @@
       "modified_at": "2026-05-06T09:57:19.457Z"
     },
     {
-      "id": "prod_1768441690510_vkkhmof4o",
-      "nombre": "Olla Arrocera",
-      "categoria": "Electrodomésticos",
-      "precio": 55.98,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Olla_Arrocera.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Olla Arrocera, una excelente opción de nuestra categoría Electrodomésticos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-07-31T13:29:22.817Z"
-    },
-    {
       "id": "prod_1768441690510_6xn0n5bsd",
       "nombre": "Pack x 12 Néctar de Pera 🍐 (12x330ml)",
       "categoria": "Bebidas no alcohólicas",
@@ -492,40 +390,6 @@
       "disponibilidad": true,
       "created_at": null,
       "modified_at": "2026-05-21T12:01:20.619Z"
-    },
-    {
-      "id": "prod_1768441690510_gbbyirl3n",
-      "nombre": "Caja de Cerveza Calatrava",
-      "categoria": "Bebidas alcohólicas",
-      "precio": 24,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Caja_de_Cerveza_Calatrava.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Caja de Cerveza \"Calatrava\", una excelente opción de nuestra categoría Bebidas alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-05-22T20:49:58.847Z"
-    },
-    {
-      "id": "prod_1768441690510_kn64b8pa8",
-      "nombre": "Nevera Eko (3.5 pies)",
-      "categoria": "Electrodomésticos",
-      "precio": 260,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Nevera_Eko.jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Nevera Eko (3.5 pies), una excelente opción de nuestra categoría Electrodomésticos. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-07-31T13:29:22.817Z"
     },
     {
       "id": "prod_1768441690510_8y1zmbeir",
@@ -577,57 +441,6 @@
       "disponibilidad": true,
       "created_at": null,
       "modified_at": "2026-03-06T21:29:46.672Z"
-    },
-    {
-      "id": "prod_1768441690510_vau86780j",
-      "nombre": "Cerveza Parranda (330ml)",
-      "categoria": "Bebidas alcohólicas",
-      "precio": 0.75,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Cerveza_Parranda_(330ml).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Cerveza \"Parranda\" (330ml), una excelente opción de nuestra categoría Bebidas alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-05-22T20:49:58.847Z"
-    },
-    {
-      "id": "prod_1768441690510_49wu34kui",
-      "nombre": "Pack x 6 Cerveza Parranda (6x330ml)",
-      "categoria": "Bebidas alcohólicas",
-      "precio": 4.15,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Pack_x_6_Cerveza_Parranda_(6x330ml).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Pack x 6 Cerveza \"Parranda\" (6x330ml), una excelente opción de nuestra categoría Bebidas alcohólicas. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-05-22T20:49:58.847Z"
-    },
-    {
-      "id": "prod_1768441690510_7pj6exbyx",
-      "nombre": "Pasta de Tomate (Oderich)",
-      "categoria": "Despensa",
-      "precio": 1.7,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "Pasta_de_Tomate_Oderich_(350g).jpg"
-      ],
-      "descripcion": "Disfruta de la calidad de Pasta de Tomate 🍅 Oderich (350g), una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": false,
-      "created_at": null,
-      "modified_at": "2026-05-05T16:22:29.231Z"
     },
     {
       "id": "prod_1768441690510_ok1axebuc",
@@ -1206,23 +1019,6 @@
       "disponibilidad": false,
       "created_at": "2026-02-24T17:26:52.227Z",
       "modified_at": "2026-04-24T16:53:30.362Z"
-    },
-    {
-      "id": "prod_1772069960674_5cjim17vs",
-      "nombre": "Sumo de Limon 500ml",
-      "categoria": "Despensa",
-      "precio": 4.17,
-      "descuento": 34.05,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": true,
-      "imagenes": [
-        "img-20260225-wa0008_1772069960687.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": true,
-      "created_at": "2026-02-26T01:40:51.525Z",
-      "modified_at": "2026-07-16T19:05:09.481Z"
     },
     {
       "id": "prod_1772300754323_lz1rnolgm",
@@ -2039,6 +1835,23 @@
       "disponibilidad": false,
       "created_at": "2026-04-25T08:27:29.952Z",
       "modified_at": "2026-07-23T00:58:17.343Z"
+    },
+    {
+      "id": "prod_1777104996420_aqe312i99",
+      "nombre": "Guisante Vima 1kg",
+      "categoria": "Despensa",
+      "precio": 4.47,
+      "descuento": 44.07,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": true,
+      "imagenes": [
+        "8034-chicharo-entero-congelado-vima-1-kg_1777104996457.jpg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-04-25T08:27:31.430Z",
+      "modified_at": "2026-07-16T19:05:09.482Z"
     },
     {
       "id": "prod_1777105074342_bnolew50n",
