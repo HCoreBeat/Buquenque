@@ -4130,6 +4130,23 @@
       "disponibilidad": true,
       "created_at": "2026-08-04T19:08:38.624Z",
       "modified_at": "2026-08-04T19:08:38.624Z"
+    },
+    {
+      "id": "prod_1785871036154_z4s8gjp9c",
+      "nombre": "Jamonada de Res 5lbs",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 3.75,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9359_1785871036158.jpeg"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-08-04T19:17:36.548Z",
+      "modified_at": "2026-08-04T19:17:36.548Z"
     }
   ]
 }
