@@ -4138,32 +4138,15 @@
       "precio": 3.75,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "img_9359_1785871036158.jpeg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-08-04T19:17:36.548Z",
-      "modified_at": "2026-08-04T19:17:36.548Z"
-    },
-    {
-      "id": "prod_1785871344875_1u4a37yt3",
-      "nombre": "Chuletas de res 1kg",
-      "categoria": "Cárnicos y Embutidos",
-      "precio": 7.95,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": true,
-      "oferta": false,
-      "imagenes": [
-        "img_9357_1785871344880.jpeg"
-      ],
-      "descripcion": "",
-      "disponibilidad": true,
-      "created_at": "2026-08-04T19:25:26.659Z",
-      "modified_at": "2026-08-04T19:25:26.659Z"
+      "modified_at": "2026-08-04T20:59:23.995Z"
     }
   ]
 }
