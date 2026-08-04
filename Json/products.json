@@ -4147,6 +4147,23 @@
       "disponibilidad": true,
       "created_at": "2026-08-04T23:21:27.193Z",
       "modified_at": "2026-08-04T23:21:27.193Z"
+    },
+    {
+      "id": "prod_1785885830777_vz1mx4xb3",
+      "nombre": "Saco de Arroz grano largo 25kg (55lbs)",
+      "categoria": "Despensa",
+      "precio": 45,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9370_1785885830783.png"
+      ],
+      "descripcion": "",
+      "disponibilidad": true,
+      "created_at": "2026-08-04T23:25:16.525Z",
+      "modified_at": "2026-08-04T23:25:16.525Z"
     }
   ]
 }
