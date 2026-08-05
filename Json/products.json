@@ -87,20 +87,20 @@
     },
     {
       "id": "prod_1768783820711_rmnry541r",
-      "nombre": "Cartón de Huevos 30u",
+      "nombre": "Cartón de Huevos",
       "categoria": "Despensa",
       "precio": 11.5,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "1000058960_1777051427739.jpg"
       ],
       "descripcion": "Disfruta de la calidad de Cartón de Huevos, una excelente opción de nuestra categoría Despensa. Ideal para el hogar y elaborado con los mejores estándares.",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": null,
-      "modified_at": "2026-08-05T14:55:26.011Z"
+      "modified_at": "2026-07-27T20:08:12.886Z"
     },
     {
       "id": "prod_1769030417838_noe5sa2wa",
@@ -3943,6 +3943,23 @@
       "disponibilidad": true,
       "created_at": "2026-08-04T23:25:16.525Z",
       "modified_at": "2026-08-04T23:25:16.525Z"
+    },
+    {
+      "id": "prod_1785942013903_sxphxhljj",
+      "nombre": "Picadillo de res 400g",
+      "categoria": "Cárnicos y Embutidos",
+      "precio": 2.35,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": true,
+      "oferta": false,
+      "imagenes": [
+        "img_9362_1785942013906.jpeg"
+      ],
+      "descripcion": "Picadillo natural de carne de res",
+      "disponibilidad": true,
+      "created_at": "2026-08-05T15:00:24.068Z",
+      "modified_at": "2026-08-05T15:00:24.068Z"
     }
   ]
 }
