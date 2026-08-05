@@ -24,7 +24,10 @@
         "- Caja de Malta Bucanero"
       ],
       "created_at": "2026-06-12T18:23:15.689Z",
-      "modified_at": "2026-07-29T21:11:28.978Z"
+      "modified_at": "2026-07-29T21:11:28.978Z",
+      "precioFinal": 180,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/Packs/e7bf71ac-7a47-4705-9ddc-f92017b1e03b_1781288583729.jpeg",
+      "searchText": "cena para 25 personas pack la cena puede ser ordenada  para la cantidad de persona que usted desee solo póngase en contacto con nosotros para coordinar precio y ajustar para su cantidad de personas"
     },
     {
       "id": "1",
@@ -33,9 +36,9 @@
       "precio": 30,
       "descuento": 0,
       "top": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
-      "disponible": true,
+      "disponible": false,
       "imagenes": [
         "pack_1.jpg"
       ],
@@ -48,10 +51,7 @@
         "x1 Pasta de tomate 400 g"
       ],
       "created_at": null,
-      "modified_at": "2026-03-20T14:42:03.544Z",
-      "precioFinal": 30,
-      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/Packs/pack_1.jpg",
-      "searchText": "pack esencial familiar pack la solución perfecta para asegurar los alimentos fundamentales de tu hogar. este pack está diseñado para cubrir las necesidades básicas de proteínas y granos, ofreciendo productos de calidad a un precio inigualable. ideal para quienes buscan practicidad y ahorro en su compra semanal."
+      "modified_at": "2026-08-05T18:14:22.882Z"
     },
     {
       "id": "2",
@@ -102,7 +102,10 @@
         "x10 plátanos macho"
       ],
       "created_at": null,
-      "modified_at": "2026-07-29T21:11:28.978Z"
+      "modified_at": "2026-07-29T21:11:28.978Z",
+      "precioFinal": 20,
+      "imagenUrl": "https://raw.githubusercontent.com/HCoreBeat/Buquenque/main/Images/Packs/pack_hogar_criollo.jpg",
+      "searchText": "pack hogar criollo pack un pack práctico y completo para el día a día del hogar, con alimentos básicos y frescos ideales para comidas criollas."
     },
     {
       "id": "4",
