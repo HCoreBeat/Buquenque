@@ -1,4 +1,4 @@
-const BACKEND = 'https://backend-buquenque.onrender.com';
+const BACKEND = 'https://backend-buquenque-flt8.onrender.com';
 
 document.addEventListener('DOMContentLoaded', () => {
     initializePaymentSystem();
