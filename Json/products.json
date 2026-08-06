@@ -2126,23 +2126,6 @@
       "modified_at": "2026-07-23T00:58:17.343Z"
     },
     {
-      "id": "prod_1778000167417_ei33ur4id",
-      "nombre": "Pomo de Refresco 1.5lts (Cola)",
-      "categoria": "Bebidas no alcohólicas",
-      "precio": 2.49,
-      "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
-      "oferta": false,
-      "imagenes": [
-        "1000067954_1778000167497.jpg"
-      ],
-      "descripcion": "",
-      "disponibilidad": false,
-      "created_at": "2026-05-05T16:56:34.143Z",
-      "modified_at": "2026-07-03T14:52:53.399Z"
-    },
-    {
       "id": "prod_1778001464975_diexd9v4e",
       "nombre": "Pelly sabor tocino",
       "categoria": "Confitura",
@@ -2829,15 +2812,15 @@
       "precio": 2.66,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "7fa03828-575d-4304-a84d-8e23c9b5951a_1784589691090.jpeg"
       ],
       "descripcion": "",
-      "disponibilidad": false,
+      "disponibilidad": true,
       "created_at": "2026-07-20T23:25:21.895Z",
-      "modified_at": "2026-08-06T00:57:29.265Z"
+      "modified_at": "2026-07-20T23:25:21.895Z"
     },
     {
       "id": "prod_1784589816369_vaw9fwk69",
