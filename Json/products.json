@@ -2812,15 +2812,15 @@
       "precio": 2.66,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": true,
+      "nuevo": false,
       "oferta": false,
       "imagenes": [
         "7fa03828-575d-4304-a84d-8e23c9b5951a_1784589691090.jpeg"
       ],
       "descripcion": "",
-      "disponibilidad": true,
+      "disponibilidad": false,
       "created_at": "2026-07-20T23:25:21.895Z",
-      "modified_at": "2026-07-20T23:25:21.895Z"
+      "modified_at": "2026-08-06T01:20:32.193Z"
     },
     {
       "id": "prod_1784589816369_vaw9fwk69",
